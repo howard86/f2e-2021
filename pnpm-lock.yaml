@@ -158,7 +158,7 @@ importers:
         version: 4.0.7
       '@types/mapbox-gl':
         specifier: ^2.7.11
-        version: 2.7.11
+        version: 2.7.21
       '@types/wellknown':
         specifier: ^0.5.4
         version: 0.5.4
@@ -271,7 +271,7 @@ importers:
         version: 7.22.5
       '@types/mapbox-gl':
         specifier: ^2.7.11
-        version: 2.7.11
+        version: 2.7.21
       '@types/wellknown':
         specifier: ^0.5.4
         version: 0.5.4
@@ -2855,8 +2855,8 @@ packages:
       minimatch: 9.0.2
     dev: true
 
-  /@types/geojson@7946.0.10:
-    resolution: {integrity: sha512-Nmh0K3iWQJzniTuPRcJn5hxXkfB1T1pgB89SBig5PlJQU5yocazeu4jATJlaA0GYFKWMqDdvYemoSnF2pXgLVA==}
+  /@types/geojson@7946.0.16:
+    resolution: {integrity: sha512-6C8nqWur3j98U6+lXDfTUWIfgvZU+EumvpHKcYjujKH7woYyLj2sUmff0tRhrqM7BohUw7Pz3ZB1jj2gW9Fvmg==}
     dev: true
 
   /@types/hoist-non-react-statics@3.3.1:
@@ -2895,10 +2895,10 @@ packages:
   /@types/lodash@4.14.195:
     resolution: {integrity: sha512-Hwx9EUgdwf2GLarOjQp5ZH8ZmblzcbTBC2wtQWNKARBSxM9ezRIAUpeDTgoQRAFB0+8CNWXVA9+MaSOzOF3nPg==}
 
-  /@types/mapbox-gl@2.7.11:
-    resolution: {integrity: sha512-4vSwPSTQIawZTFRiTY2R74aZwAiM9gE6KGj871xdyAPpa+DmEObXxQQXqL2PsMH31/rP9nxJ2Kv0boeTVJMXVw==}
+  /@types/mapbox-gl@2.7.21:
+    resolution: {integrity: sha512-Dx9MuF2kKgT/N22LsMUB4b3acFZh9clVqz9zv1fomoiPoBrJolwYxpWA/9LPO/2N0xWbKi4V+pkjTaFkkx/4wA==}
     dependencies:
-      '@types/geojson': 7946.0.10
+      '@types/geojson': 7946.0.16
     dev: true
 
   /@types/minimatch@3.0.5:
@@ -3713,7 +3713,7 @@ packages:
       normalize-path: 3.0.0
       readdirp: 3.6.0
     optionalDependencies:
-      fsevents: 2.3.2
+      fsevents: 2.3.3
     dev: true
 
   /chownr@2.0.0:
@@ -5301,8 +5301,8 @@ packages:
     resolution: {integrity: sha512-OO0pH2lK6a0hZnAdau5ItzHPI6pUlvI7jMVnxUQRtw4owF2wk8lOSabtGDCTP4Ggrg2MbGnWO9X8K1t4+fGMDw==}
     dev: true
 
-  /fsevents@2.3.2:
-    resolution: {integrity: sha512-xiqMQR4xAeHTuB9uWm+fFRcIOgKBMiOBP+eXiyT7jsgVCq1bkVygt00oASowB7EdtpOHaaPgKt812P9ab+DDKA==}
+  /fsevents@2.3.3:
+    resolution: {integrity: sha512-5xoDfX+fL7faATnagmWPpbFtwh/R77WmMMqqHGS65C3vvB0YHrgF+B1YmZ3441tMj5n63k0212XNoJwzlhffQw==}
     engines: {node: ^8.16.0 || ^10.6.0 || >=11.0.0}
     os: [darwin]
     requiresBuild: true
@@ -5659,7 +5659,7 @@ packages:
       source-map: 0.6.1
       wordwrap: 1.0.0
     optionalDependencies:
-      uglify-js: 3.17.4
+      uglify-js: 3.19.3
     dev: true
 
   /hard-rejection@2.1.0:
@@ -9139,8 +9139,8 @@ packages:
     hasBin: true
     dev: true
 
-  /uglify-js@3.17.4:
-    resolution: {integrity: sha512-T9q82TJI9e/C1TAxYvfb16xO120tMVFZrGA3f9/P4424DNu6ypK103y0GPFVa17yotwSyZW5iYXgjYHkGrJW/g==}
+  /uglify-js@3.19.3:
+    resolution: {integrity: sha512-v3Xu+yuwBXisp6QYTcH4UbH+xYJXqnq2m/LtQVWKWzYc1iehYnLixoQDN9FH6/j9/oybfd6W9Ghwkl8+UMKTKQ==}
     engines: {node: '>=0.8.0'}
     hasBin: true
     requiresBuild: true
