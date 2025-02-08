@@ -157,8 +157,8 @@ importers:
         specifier: ^4.0.7
         version: 4.0.7
       '@types/mapbox-gl':
-        specifier: ^2.7.11
-        version: 2.7.11
+        specifier: ^3.0.0
+        version: 3.4.1
       '@types/wellknown':
         specifier: ^0.5.4
         version: 0.5.4
@@ -270,8 +270,8 @@ importers:
         specifier: ^7.22.5
         version: 7.22.5
       '@types/mapbox-gl':
-        specifier: ^2.7.11
-        version: 2.7.11
+        specifier: ^3.0.0
+        version: 3.4.1
       '@types/wellknown':
         specifier: ^0.5.4
         version: 0.5.4
@@ -2895,8 +2895,8 @@ packages:
   /@types/lodash@4.14.195:
     resolution: {integrity: sha512-Hwx9EUgdwf2GLarOjQp5ZH8ZmblzcbTBC2wtQWNKARBSxM9ezRIAUpeDTgoQRAFB0+8CNWXVA9+MaSOzOF3nPg==}
 
-  /@types/mapbox-gl@2.7.11:
-    resolution: {integrity: sha512-4vSwPSTQIawZTFRiTY2R74aZwAiM9gE6KGj871xdyAPpa+DmEObXxQQXqL2PsMH31/rP9nxJ2Kv0boeTVJMXVw==}
+  /@types/mapbox-gl@3.4.1:
+    resolution: {integrity: sha512-NsGKKtgW93B+UaLPti6B7NwlxYlES5DpV5Gzj9F75rK5ALKsqSk15CiEHbOnTr09RGbr6ZYiCdI+59NNNcAImg==}
     dependencies:
       '@types/geojson': 7946.0.10
     dev: true
