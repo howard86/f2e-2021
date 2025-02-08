@@ -45,7 +45,7 @@
     "@emotion/react": "^11.11.1",
     "@emotion/styled": "^11.11.0",
     "@f2e/tdx": "workspace:^0.2.0",
-    "@reduxjs/toolkit": "^1.9.5",
+    "@reduxjs/toolkit": "^2.0.0",
     "framer-motion": "^10.12.18",
     "lodash.debounce": "^4.0.8",
     "lodash.throttle": "^4.1.1",
