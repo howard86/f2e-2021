@@ -1,3 +1,5 @@
+'use client';
+
 import {
   Box,
   Container,
@@ -8,14 +10,41 @@ import {
   Tabs,
 } from '@chakra-ui/react';
 import { Cities, type City, CityMap } from '@f2e/tdx';
-import { motion, type Variants } from 'framer-motion';
+import { LazyMotion, m, type Variants } from 'framer-motion';
+import dynamic from 'next/dynamic';
+import Image from 'next/image';
 import { type ChangeEvent, useState } from 'react';
 
 import CycleCard from '@/components/cycle-card';
-import MapView from '@/components/map';
+import background from '@/map.jpg';
 import { useGetCyclingByCityQuery } from '@/services/local';
 
-const MotionGrid = motion.create(SimpleGrid);
+// Server-rendered stand-in so the background paints before mapbox-gl loads.
+const MapPlaceholder = () => (
+  <Box h="calc(100vh - 128px)" maxW="fill-available">
+    <Box h="full" overflow="hidden" pos="fixed" top="0" w="full">
+      <Image
+        alt="背景"
+        fill
+        priority
+        sizes="100vw"
+        src={background}
+        style={{ objectFit: 'cover', objectPosition: 'center' }}
+      />
+    </Box>
+  </Box>
+);
+
+const MapView = dynamic(() => import('@/components/map'), {
+  loading: MapPlaceholder,
+  ssr: false,
+});
+
+const MotionGrid = m.create(SimpleGrid);
+
+// Defer the animation engine until the cycling grid first renders.
+const loadMotionFeatures = () =>
+  import('framer-motion').then((mod) => mod.domAnimation);
 
 const variants: Variants = {
   hidden: { opacity: 0 },
@@ -29,7 +58,7 @@ const variants: Variants = {
   },
 };
 
-const HomePage = () => {
+const HomeView = () => {
   const [tabIndex, setTabIndex] = useState(0);
   const [selectedCity, setSelectedCity] = useState<City>();
   const { data, isFetching } = useGetCyclingByCityQuery(selectedCity, {
@@ -138,25 +167,27 @@ const HomePage = () => {
               />
             </Flex>
             {data?.success && !isFetching && (
-              <MotionGrid
-                animate="show"
-                columns={[1, 2, 4]}
-                gap={[4, 8]}
-                initial="hidden"
-                my={[4, 8]}
-                variants={variants}
-              >
-                {data.data.map((path) => (
-                  <CycleCard
-                    city={CityMap[path.City] as City}
-                    geoJson={path.geoJson}
-                    key={`${path.CityCode}-${path.Town}-${path.RouteName}-${path.RoadSectionStart}-${path.RoadSectionEnd}`}
-                    length={path.CyclingLength}
-                    name={path.RouteName}
-                    onToggle={onToggle}
-                  />
-                ))}
-              </MotionGrid>
+              <LazyMotion features={loadMotionFeatures} strict>
+                <MotionGrid
+                  animate="show"
+                  columns={[1, 2, 4]}
+                  gap={[4, 8]}
+                  initial="hidden"
+                  my={[4, 8]}
+                  variants={variants}
+                >
+                  {data.data.map((path) => (
+                    <CycleCard
+                      city={CityMap[path.City] as City}
+                      geoJson={path.geoJson}
+                      key={`${path.CityCode}-${path.Town}-${path.RouteName}-${path.RoadSectionStart}-${path.RoadSectionEnd}`}
+                      length={path.CyclingLength}
+                      name={path.RouteName}
+                      onToggle={onToggle}
+                    />
+                  ))}
+                </MotionGrid>
+              </LazyMotion>
             )}
           </Container>
         </Tabs.Content>
@@ -165,4 +196,4 @@ const HomePage = () => {
   );
 };
 
-export default HomePage;
+export default HomeView;

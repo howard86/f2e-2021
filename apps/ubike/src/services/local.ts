@@ -1,12 +1,12 @@
 import type { City } from '@f2e/tdx';
 import { createApi, fetchBaseQuery } from '@reduxjs/toolkit/query/react';
-import type { SuccessApiResponse } from 'next-api-handler';
 
-import type { BikeCyclingWithGeoJson } from '@/pages/api/cyclings';
 import type {
+  BikeCyclingWithGeoJson,
   NormalisedBikeStation,
   StationQueryParam,
-} from '@/pages/api/stations';
+  SuccessApiResponse,
+} from '@/types/api';
 
 const ONE_HOUR = 60 * 60;
 

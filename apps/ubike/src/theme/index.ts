@@ -6,7 +6,13 @@ import styles from './styles';
 const config = defineConfig({
   globalCss: styles,
   theme: {
-    tokens: { colors },
+    tokens: {
+      colors,
+      fonts: {
+        body: { value: 'var(--font-roboto), sans-serif' },
+        heading: { value: 'var(--font-roboto), sans-serif' },
+      },
+    },
   },
 });
 
