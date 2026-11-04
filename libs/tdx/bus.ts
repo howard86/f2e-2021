@@ -1,200 +1,39 @@
-import type { ApiParam, NearByApiParam, TdxService } from './base';
+import {
+  type ApiParam,
+  type NearByApiParam,
+  type TdxService,
+  toODataQuery,
+} from './base';
 import type { City } from './constants';
+import type { PtxServiceDtoBusSpecificationV2BusStation } from './generated/bus-advanced-v2';
+import { busApiStationNearBy2851 } from './generated/bus-advanced-v2';
+import type {
+  PtxServiceDtoBusSpecificationV2BusDisplayStopOfRoute,
+  PtxServiceDtoBusSpecificationV2BusN1EstimateTime,
+  PtxServiceDtoBusSpecificationV2BusRoute,
+  PtxServiceDtoBusSpecificationV2BusShape,
+} from './generated/bus-basic-v2';
+import {
+  cityBusApiDisplayStopOfRoute20381,
+  cityBusApiEstimatedTimeOfArrival20321,
+  cityBusApiRoute2035,
+  cityBusApiRoute20351,
+  cityBusApiShape20421,
+} from './generated/bus-basic-v2';
 
-export interface BusRoute {
-  AuthorityID: string;
-  BusRouteType: number;
-  City: string;
-  CityCode: string;
-  DepartureStopNameEn: string;
-  DepartureStopNameZh: string;
-  DestinationStopNameEn: string;
-  DestinationStopNameZh: string;
-  FareBufferZoneDescriptionEn: string;
-  FareBufferZoneDescriptionZh: string;
-  HasSubRoutes: boolean;
-  Operators: [
-    {
-      OperatorID: string;
-      OperatorName: {
-        Zh_tw: string;
-        En: string;
-      };
-      OperatorCode: string;
-      OperatorNo: string;
-    },
-  ];
-  ProviderID: string;
-  RouteID: string;
-  RouteMapImageUrl: string;
-  RouteName: {
-    Zh_tw: string;
-    En: string;
-  };
-  RouteUID: string;
-  SubRoutes: [
-    {
-      SubRouteUID: string;
-      SubRouteID: string;
-      OperatorIDs: [string];
-      SubRouteName: {
-        Zh_tw: string;
-        En: string;
-      };
-      Headsign: string;
-      HeadsignEn: string;
-      Direction: number;
-      FirstBusTime: string;
-      LastBusTime: string;
-      HolidayFirstBusTime: string;
-      HolidayLastBusTime: string;
-    },
-  ];
-  TicketPriceDescriptionEn: string;
-  TicketPriceDescriptionZh: string;
-  UpdateTime: string;
-  VersionID: number;
-}
+export type BusRoute = PtxServiceDtoBusSpecificationV2BusRoute;
 
-export interface BusEstimation {
-  CurrentStop: string;
-  DataTime: string;
-  DestinationStop: string;
-  Direction: number;
-  Estimates: [
-    {
-      PlateNumb: string;
-      EstimateTime: number;
-      IsLastBus: boolean;
-      VehicleStopStatus: number;
-    },
-  ];
-  EstimateTime: number;
-  IsLastBus: boolean;
-  MessageType: number;
-  NextBusTime: string;
-  PlateNumb: string;
-  RouteID: string;
-  RouteName: {
-    Zh_tw: string;
-    En: string;
-  };
-  RouteUID: string;
-  SrcRecTime: string;
-  SrcTransTime: string;
-  SrcUpdateTime: string;
-  StopCountDown: number;
-  StopID: string;
-  StopName: {
-    Zh_tw: string;
-    En: string;
-  };
-  StopSequence: number;
-  StopStatus: number;
-  StopUID: string;
-  SubRouteID: string;
-  SubRouteName: {
-    Zh_tw: string;
-    En: string;
-  };
-  SubRouteUID: string;
-  TransTime: string;
-  UpdateTime: string;
-}
+export type BusEstimation = PtxServiceDtoBusSpecificationV2BusN1EstimateTime;
 
-export interface BusStopOfRoute {
-  Direction: BusDirection;
-  RouteID: string;
-  RouteName: {
-    Zh_tw: string;
-    En: string;
-  };
-  RouteUID: string;
-  Stops: [
-    {
-      StopUID: string;
-      StopID: string;
-      StopName: {
-        Zh_tw: string;
-        En: string;
-      };
-      StopBoarding: number;
-      StopSequence: number;
-      StopPosition: {
-        PositionLon: number;
-        PositionLat: number;
-        GeoHash: string;
-      };
-      StationID: string;
-      StationGroupID: string;
-      LocationCityCode: string;
-    },
-  ];
-  UpdateTime: string;
-  VersionID: number;
-}
+// The spec types Direction as a plain number; narrow it to the known values.
+export type BusStopOfRoute = Omit<
+  PtxServiceDtoBusSpecificationV2BusDisplayStopOfRoute,
+  'Direction'
+> & { Direction: BusDirection };
 
-export interface BusStation {
-  Bearing: string;
-  LocationCityCode: string;
-  StationAddress: string;
-  StationGroupID: string;
-  StationID: string;
-  StationName: {
-    Zh_tw: string;
-    En: string;
-  };
-  StationPosition: {
-    PositionLon: number;
-    PositionLat: number;
-    GeoHash: string;
-  };
-  StationUID: string;
-  Stops: [
-    {
-      StopUID: string;
-      StopID: string;
-      StopName: {
-        Zh_tw: string;
-        En: string;
-      };
-      RouteUID: string;
-      RouteID: string;
-      RouteName: {
-        Zh_tw: string;
-        En: string;
-      };
-    },
-  ];
-  UpdateTime: string;
-  VersionID: number;
-}
+export type BusStation = PtxServiceDtoBusSpecificationV2BusStation;
 
-export interface BusShape {
-  Direction: number;
-  EncodedPolyline: string;
-  Geometry: string;
-  RouteID: string;
-  RouteName: {
-    Zh_tw: string;
-    En: string;
-  };
-  RouteUID: string;
-  SubRouteID: string;
-  SubRouteName: {
-    Zh_tw: string;
-    En: string;
-  };
-  SubRouteUID: string;
-  UpdateTime: string;
-  VersionID: number;
-}
-
-type BusPropertyType =
-  | 'Route'
-  | 'EstimatedTimeOfArrival'
-  | 'DisplayStopOfRoute'
-  | 'Shape';
+export type BusShape = PtxServiceDtoBusSpecificationV2BusShape;
 
 export const BusDirection = {
   去程: 0,
@@ -215,52 +54,102 @@ export const BusStopStatus = {
 
 export type BusStopStatus = (typeof BusStopStatus)[keyof typeof BusStopStatus];
 
-export class BusService {
-  private readonly BASE_PATH = '/basic/v2/Bus';
+const withRouteFilter = (routeName: string, params?: ApiParam): ApiParam => ({
+  filter: `RouteName/Zh_tw eq '${routeName}'`,
+  ...params,
+});
 
+export class BusService {
   private readonly service: TdxService;
 
   constructor(service: TdxService) {
     this.service = service;
   }
 
-  getBusRoutesByCity(
+  async getBusRoutesByCity(
     city: City,
     params: ApiParam = this.service.DEFAULT_API_PARAMS,
   ) {
-    return this.service.get<BusRoute[]>(
-      `${this.BASE_PATH}/Route/City/${city}`,
-      params,
-    );
+    const { data } = await cityBusApiRoute2035({
+      client: this.service.basic,
+      path: { City: city as never },
+      query: toODataQuery(params),
+      throwOnError: true,
+    });
+
+    return data as BusRoute[];
   }
 
-  getBusStationNearBy(params: NearByApiParam) {
-    return this.service.get<BusStation[]>(
-      '/advance/v2/Bus/Station/NearBy',
-      params,
-    );
+  async getBusStationNearBy(params: NearByApiParam) {
+    const { data } = await busApiStationNearBy2851({
+      client: this.service.advanced,
+      query: {
+        ...toODataQuery(params),
+        $spatialFilter: params.spatialFilter,
+      },
+      throwOnError: true,
+    });
+
+    return data as BusStation[];
   }
 
-  getBusShapesByCityAndRouteName =
-    this.generateGetByRouteNameAndCity<BusShape>('Shape');
+  async getBusShapesByCityAndRouteName(
+    city: City,
+    routeName: string,
+    params?: ApiParam,
+  ) {
+    const { data } = await cityBusApiShape20421({
+      client: this.service.basic,
+      path: { City: city as never, RouteName: routeName },
+      query: toODataQuery(withRouteFilter(routeName, params)),
+      throwOnError: true,
+    });
 
-  getBusRoutesByCityAndRouteName =
-    this.generateGetByRouteNameAndCity<BusRoute>('Route');
+    return data as BusShape[];
+  }
 
-  getBusEstimationsByCityAndRouteName =
-    this.generateGetByRouteNameAndCity<BusEstimation>('EstimatedTimeOfArrival');
+  async getBusRoutesByCityAndRouteName(
+    city: City,
+    routeName: string,
+    params?: ApiParam,
+  ) {
+    const { data } = await cityBusApiRoute20351({
+      client: this.service.basic,
+      path: { City: city as never, RouteName: routeName },
+      query: toODataQuery(withRouteFilter(routeName, params)),
+      throwOnError: true,
+    });
 
-  getBusStopOfRoutesByCityAndRouteName =
-    this.generateGetByRouteNameAndCity<BusStopOfRoute>('DisplayStopOfRoute');
+    return data as BusRoute[];
+  }
 
-  private generateGetByRouteNameAndCity<T>(type: BusPropertyType) {
-    return async (city: City, routeName: string, params?: ApiParam) =>
-      this.service.get<T[]>(
-        `${this.BASE_PATH}/${type}/City/${city}/${routeName}`,
-        {
-          filter: `RouteName/Zh_tw eq '${routeName}'`,
-          ...params,
-        },
-      );
+  async getBusEstimationsByCityAndRouteName(
+    city: City,
+    routeName: string,
+    params?: ApiParam,
+  ) {
+    const { data } = await cityBusApiEstimatedTimeOfArrival20321({
+      client: this.service.basic,
+      path: { City: city as never, RouteName: routeName },
+      query: toODataQuery(withRouteFilter(routeName, params)),
+      throwOnError: true,
+    });
+
+    return data as BusEstimation[];
+  }
+
+  async getBusStopOfRoutesByCityAndRouteName(
+    city: City,
+    routeName: string,
+    params?: ApiParam,
+  ) {
+    const { data } = await cityBusApiDisplayStopOfRoute20381({
+      client: this.service.basic,
+      path: { City: city as never, RouteName: routeName },
+      query: toODataQuery(withRouteFilter(routeName, params)),
+      throwOnError: true,
+    });
+
+    return data as BusStopOfRoute[];
   }
 }

@@ -4,7 +4,8 @@
     "esModuleInterop": true,
     "declaration": true,
     "noEmit": false,
-    "outDir": "build"
+    "outDir": "build",
+    "rootDir": "."
   },
-  "include": ["*.ts"]
+  "include": ["*.ts", "generated/**/*.ts"]
 }

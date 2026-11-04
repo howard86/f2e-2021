@@ -69,6 +69,18 @@ Use Turbo directly when you need a filtered task:
 bunx turbo run dev --filter=@f2e/bus
 ```
 
+The TDX API client in `libs/tdx/generated/` is generated from TDX's OpenAPI
+specs and is not committed. Turbo runs the `generate` task before every
+`build` and caches it. It reads the OpenAPI specs committed in
+`libs/tdx/specs/`, so it needs no network access. Refresh the committed specs
+from TDX (validated, with retries) with:
+
+```bash
+bun run update:tdx-specs
+```
+
+`bun run generate:tdx` then rebuilds the client from the committed copies.
+
 Quality commands:
 
 ```bash

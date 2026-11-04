@@ -1,5 +1,15 @@
-import { TdxService } from './base';
+import { type ApiParam, TdxService, toODataQuery } from './base';
 import { type City, CityMap } from './constants';
+import {
+  type Attraction,
+  type Event,
+  tourism0101,
+  tourism0201,
+  tourism0301,
+  tourism0701,
+  type Hotel as V2Hotel,
+  type Restaurant as V2Restaurant,
+} from './generated/tourism-v2';
 
 export interface ScenicSpot extends TourismCommonProperty {
   Class1: string;
@@ -95,69 +105,23 @@ export type TourismPropertyType =
 
 type TourismV2PropertyType = 'Attraction' | 'Restaurant' | 'Hotel' | 'Event';
 
-interface TourismV2Item {
-  AssetsClass?: number;
-  AttractionClasses?: number[];
-  AttractionID?: string;
-  AttractionName?: string;
-  CuisineClasses?: number[];
-  Description?: string;
-  EndDateTime?: string;
-  EventClasses?: number[];
-  EventID?: string;
-  EventName?: string;
-  FeeInfo?: string;
-  HotelClasses?: number[];
-  HotelID?: string;
-  HotelName?: string;
-  HotelStars?: number;
-  Images?: Array<{
-    Description?: string;
-    Name?: string;
-    URL?: string;
-  }>;
-  LocatedCities?: Array<{ City?: string }>;
-  MapURLs?: string[];
-  Organizations?: Array<{
-    Faxes?: string[];
-    Name?: string;
-  }>;
-  ParkingInfo?: string;
-  Participant?: string;
-  PositionLat?: number;
-  PositionLon?: number;
-  PostalAddress?: {
-    City?: string;
-    StreetAddress?: string;
-    Town?: string;
-    ZipCode?: string;
-  };
-  Remarks?: string;
-  RestaurantID?: string;
-  RestaurantName?: string;
-  RoomInfo?: string;
-  ServiceInfo?: string;
-  ServiceTimeInfo?: string;
-  StartDateTime?: string;
-  Tags?: string[];
-  Telephones?: Array<{
-    Ext?: number;
-    Tel?: string;
-  }>;
-  TrafficInfo?: string;
-  UpdateTime?: string;
-  WebsiteUrl?: string;
-}
-
-interface TourismV2Response {
-  value: TourismV2Item[];
-}
+type TourismV2Item = Partial<Attraction> &
+  Partial<Event> &
+  Partial<V2Hotel> &
+  Partial<V2Restaurant>;
 
 const V2_TYPE_MAP: Record<TourismPropertyType, TourismV2PropertyType> = {
   Activity: 'Event',
   Hotel: 'Hotel',
   Restaurant: 'Restaurant',
   ScenicSpot: 'Attraction',
+};
+
+const V2_OPERATIONS = {
+  Activity: tourism0701,
+  Hotel: tourism0301,
+  Restaurant: tourism0201,
+  ScenicSpot: tourism0101,
 };
 
 const mapClasses = (classes?: number[]) =>
@@ -334,8 +298,6 @@ const translateOrderBy = (orderBy?: string) =>
     .replaceAll('TicketInfo', 'FeeInfo');
 
 export class TourismService {
-  private readonly BASE_PATH = '/tourism/service/odata/V2/Tourism';
-
   private readonly service: TdxService;
 
   constructor(service: TdxService) {
@@ -390,7 +352,7 @@ export class TourismService {
 
   private async getItems<T>(
     type: TourismPropertyType,
-    params: import('./base').ApiParam,
+    params: ApiParam,
     city?: City,
   ): Promise<T[]> {
     const filter = [
@@ -399,18 +361,21 @@ export class TourismService {
     ]
       .filter(Boolean)
       .join(' and ');
-    const response = await this.service.get<TourismV2Response>(
-      `${this.BASE_PATH}/${V2_TYPE_MAP[type]}`,
-      {
-        ...(filter ? { filter } : {}),
-        ...(params.orderBy
-          ? { orderBy: translateOrderBy(params.orderBy) }
-          : {}),
-        ...(params.skip === undefined ? {} : { skip: params.skip }),
-        ...(params.top === undefined ? {} : { top: params.top }),
+    const { data } = await V2_OPERATIONS[type]({
+      client: this.service.tourism,
+      query: {
+        ...toODataQuery({
+          filter,
+          orderBy: translateOrderBy(params.orderBy),
+          top: params.top,
+        }),
+        // The tourism spec types $skip as a number.
+        $skip: params.skip ? Number(params.skip) : undefined,
       },
-    );
+      throwOnError: true,
+    });
+    const items = (data as { value?: TourismV2Item[] }).value ?? [];
 
-    return response.value.map((item) => mapTourismItem(type, item) as T);
+    return items.map((item) => mapTourismItem(type, item) as T);
   }
 }

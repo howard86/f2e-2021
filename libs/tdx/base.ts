@@ -1,3 +1,9 @@
+import {
+  type Client,
+  createClient,
+  createConfig,
+} from './generated/bus-basic-v2/client';
+
 export interface NearByApiParam extends ApiParam {
   spatialFilter: string;
 }
@@ -28,6 +34,16 @@ const getRequiredParam = (
 
   return value;
 };
+
+export const toODataQuery = (params: ApiParam) => ({
+  $filter: params.filter || undefined,
+  $format: 'JSON' as const,
+  $orderby: params.orderBy || undefined,
+  $select: params.select || undefined,
+  // TDX types $skip as a string in most operations.
+  $skip: params.skip ? String(params.skip) : undefined,
+  $top: params.top ? Number(params.top) : undefined,
+});
 
 const fetchWithRateLimitRetry = async (...args: Parameters<typeof fetch>) => {
   let response = await fetch(...args);
@@ -62,20 +78,26 @@ export class TdxService {
 
   DEFAULT_API_PARAMS: ApiParam = { top: 20 };
 
+  readonly basic: Client;
+
+  readonly advanced: Client;
+
+  readonly tourism: Client;
+
   constructor(params: Partial<TdxServiceParams>) {
     this.clientId = getRequiredParam(params, 'clientId');
     this.clientSecret = getRequiredParam(params, 'clientSecret');
     this.baseUrl = getRequiredParam(params, 'baseUrl');
+    this.basic = this.createClient('basic');
+    this.advanced = this.createClient('advanced');
+    this.tourism = this.createClient('tourism');
   }
 
   static checkExistence<T>(items: T[]): T | null {
     return items.length > 0 ? items[0] : null;
   }
 
-  async get<T, P extends ApiParam = ApiParam>(
-    path: string,
-    params: P,
-  ): Promise<T> {
+  private async getAccessToken() {
     if (
       !(this.accessToken && this.expirationTimestamp) ||
       this.expirationTimestamp <= Date.now()
@@ -95,32 +117,32 @@ export class TdxService {
       throw new Error('Already refreshed existed token');
     }
 
-    const query = new URLSearchParams();
+    return this.accessToken;
+  }
 
-    for (const key of Object.keys(params)) {
-      if (params[key]) {
-        query.append(`$${key === 'orderBy' ? 'orderby' : key}`, params[key]);
-      }
-    }
-
-    query.append('$format', 'JSON');
-
-    const response = await fetchWithRateLimitRetry(
-      `${this.baseUrl}/api${encodeURI(path)}?${query.toString()}`,
-      {
-        headers: {
-          Accept: 'application/json',
-          Authorization: `Bearer ${this.accessToken}`,
-        },
-      },
+  private createClient(server: 'advanced' | 'basic' | 'tourism') {
+    const client = createClient(
+      createConfig({
+        auth: () => this.getAccessToken(),
+        baseUrl: `${this.baseUrl}/api/${server}`,
+        fetch: fetchWithRateLimitRetry,
+      }),
     );
 
-    if (!response.ok) {
-      const body = await response.text();
-      throw new Error(`TDX ${response.status} ${path}: ${body.slice(0, 200)}`);
-    }
+    client.interceptors.response.use(async (response, request) => {
+      if (!response.ok) {
+        const body = await response.text();
+        const path = new URL(request.url).pathname.slice('/api'.length);
 
-    return response.json();
+        throw new Error(
+          `TDX ${response.status} ${path}: ${body.slice(0, 200)}`,
+        );
+      }
+
+      return response;
+    });
+
+    return client;
   }
 
   private async refreshToken() {

@@ -9,6 +9,11 @@
   "typings": "build/index.d.ts",
   "scripts": {
     "build": "tsc",
-    "clean": "rm -r build"
+    "clean": "rm -r build",
+    "generate": "bun scripts/generate.ts",
+    "update-specs": "bun scripts/update-specs.ts"
+  },
+  "devDependencies": {
+    "@hey-api/openapi-ts": "0.99.0"
   }
 }

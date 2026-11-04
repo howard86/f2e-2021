@@ -1,0 +1,5207 @@
+{
+  "openapi": "3.0.4",
+  "info": {
+    "title": "觀光資訊資料庫開放資料",
+    "description": "交通部觀光署蒐集各政府機關所發布空間化觀光資訊，內容包含旅遊景點、活動訊息、餐飲美食及旅館民宿、旅遊服務站點、步道、自行車道等資料，提供完整之觀光 GIS 基礎資料給業者進行加值應用，發布給所需之使用者，創造觀光發展及全新的商品與服務，提供遊客無縫隙旅遊資訊服務。觀光資料標準 V2.1 資料，請參考「[觀光資料標準 V2.1](https://media.taiwan.net.tw/Upload/觀光資料標準V2.1.pdf)」\n\n使用本服務需先註冊為會員，透過API金鑰才能呼叫，歡迎各產政學單位介接使用。\n計費方式：</br>\n計次：不計入</br>\n計量：不計入</br>\n\n如有任何使用上的問題，請您使用Email或電話聯繫觀光服務承辦與維運團隊：</br>\n\n`交通部觀光署邱湘淩:`</br>\n`Email : chl@tad.gov.tw `</br>\n`Tel : 02-23491500#8764 `</br>\n\n`維運廠商(台灣地理資訊中心):`</br>\n`Email : s711331614@tgic.org.tw `</br>\n`Tel : 02-23931122#886 `</br>\n---\n##### API使用說明與注意事項：\n1. 如您尚未註冊平臺會員帳號，或未以帳號登入，您將僅能以「訪客模式」使用平臺服務，包含：限以瀏覽器存取，限使用`【基礎服務】`，且限制每個呼叫來源端IP每日存取至多20次。。\n2. 如您已註冊平臺會員帳號，請務必確保在存取服務(包含瀏覽器、程式呼叫API)時帶入您的API金鑰，方能以「會員模式」使用完整平臺服務，包含平臺各類資料服務，如`【基礎服務】`、`【進階服務】`、`【加值服務】`、`【歷史服務】`、`【圖資服務】`、`【第三方服務】`等。\n3. 建議您立即[註冊平臺會員帳號](/register)，依您用量需求訂閱服務方案，並於[【會員中心->資料服務->API金鑰】](/user/dataservice/key)取得API金鑰(即Client Id和Client Secret資訊)。\n4. 會員訂閱服務方案之級別不同，將決定其API金鑰之存取頻率有不同限制，各個方案的存取頻率限制說明請參考[訂閱收費](/pricing)。\n5. 以瀏覽器帶入API金鑰之操作方式：請點選Swagger UI上的Authorize按鈕，依指示填入Client Id和Client Secret資訊並進行驗證，驗證完成後可開始於Swagger UI使用API。\n6. 以程式呼叫API帶入API金鑰之操作方式：請參考[範例程式](https://github.com/tdxmotc/SampleCode)。\n7. 不論您是以瀏覽器或是以程式呼叫API，所有服務存取行為均將被記錄並定期檢視，以確保系統資源使用的合理分配與避免遭受濫用。\n\nAPI OAS文本 :[請點我](https://tdx.transportdata.tw/webapi/File/Swagger/V3/0aed433a-9e95-404d-974c-4e70e29ae460)",
+    "termsOfService": "https://tdx.transportdata.tw/term",
+    "contact": {
+      "name": "TDX客服信箱",
+      "email": "tdx@motc.gov.tw"
+    },
+    "license": {
+      "name": "政府資料開放授權條款－第1版",
+      "url": "https://data.gov.tw/license"
+    },
+    "version": "V2"
+  },
+  "servers": [
+    {
+      "url": "https://tdx.transportdata.tw/api/tourism"
+    }
+  ],
+  "paths": {
+    "/service/odata/V2/Tourism/Nearby": {
+      "get": {
+        "tags": [
+          "Relation 關聯資料"
+        ],
+        "summary": "取得指定座標鄰近之觀光與交通場站資料",
+        "description": "空間查詢結果涵蓋鄰近之景點、餐飲店家、旅館民宿、旅遊服務站點、步道、自行車道、活動等觀光資料，以及市區公車站位/站牌、公路客運站位/站牌、公共自行車租借站點、捷運車站、高鐵車站、臺鐵車站、機場、港口、停車場等交通場站資料。",
+        "operationId": "Tourism_0001",
+        "parameters": [
+          {
+            "name": "X",
+            "in": "query",
+            "description": "坐標經度",
+            "required": true,
+            "schema": {
+              "type": "number",
+              "format": "double",
+              "default": 121.55642
+            }
+          },
+          {
+            "name": "Y",
+            "in": "query",
+            "description": "坐標緯度",
+            "required": true,
+            "schema": {
+              "type": "number",
+              "format": "double",
+              "default": 25.04178
+            }
+          },
+          {
+            "name": "Distance",
+            "in": "query",
+            "description": "距離(公尺)，上限為 1000",
+            "required": true,
+            "schema": {
+              "maximum": 1000,
+              "minimum": 0,
+              "type": "integer",
+              "format": "int32",
+              "default": 500
+            }
+          },
+          {
+            "name": "$select",
+            "in": "query",
+            "description": "挑選",
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "關聯資料",
+            "content": {
+              "application/json;odata.metadata=none": {
+                "schema": {
+                  "$ref": "#/components/schemas/RelationData"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/service/odata/V2/Tourism/Attraction": {
+      "get": {
+        "tags": [
+          "Attraction 景點資料"
+        ],
+        "summary": "取得景點基本資料",
+        "description": "描述景點基本資料，包括唯一識別碼、名稱、空間資料、地址、聯絡電話，以及景點類型、文化資產級別等內容。",
+        "operationId": "Tourism_0101",
+        "parameters": [
+          {
+            "name": "$select",
+            "in": "query",
+            "description": "挑選",
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "$filter",
+            "in": "query",
+            "description": "過濾",
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "$orderby",
+            "in": "query",
+            "description": "排序",
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "$top",
+            "in": "query",
+            "description": "取前幾筆",
+            "schema": {
+              "maximum": 500,
+              "type": "integer",
+              "default": 10
+            }
+          },
+          {
+            "name": "$skip",
+            "in": "query",
+            "description": "跳過前幾筆",
+            "schema": {
+              "type": "integer"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "景點基本資料",
+            "content": {
+              "application/json;odata.metadata=none": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/Attraction"
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/service/odata/V2/Tourism/Attraction/{AttractionID}": {
+      "get": {
+        "tags": [
+          "Attraction 景點資料"
+        ],
+        "summary": "取得[指定編號]的景點基本資料",
+        "description": "描述景點基本資料，包括唯一識別碼、名稱、空間資料、地址、聯絡電話，以及景點類型、文化資產級別等內容。",
+        "operationId": "Tourism_0102",
+        "parameters": [
+          {
+            "name": "AttractionID",
+            "in": "path",
+            "description": "景點編號",
+            "required": true,
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "$select",
+            "in": "query",
+            "description": "挑選",
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "景點基本資料",
+            "content": {
+              "application/json;odata.metadata=none": {
+                "schema": {
+                  "$ref": "#/components/schemas/Attraction"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/service/odata/V2/Tourism/Attraction/ServiceTime": {
+      "get": {
+        "tags": [
+          "Attraction 景點資料"
+        ],
+        "summary": "取得景點營運時間資料",
+        "description": "描述景點營運時間說明，包括營運時段之起迄，以及營運服務日等內容。",
+        "operationId": "Tourism_0103",
+        "parameters": [
+          {
+            "name": "$select",
+            "in": "query",
+            "description": "挑選",
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "$filter",
+            "in": "query",
+            "description": "過濾",
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "$orderby",
+            "in": "query",
+            "description": "排序",
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "$top",
+            "in": "query",
+            "description": "取前幾筆",
+            "schema": {
+              "maximum": 500,
+              "type": "integer",
+              "default": 10
+            }
+          },
+          {
+            "name": "$skip",
+            "in": "query",
+            "description": "跳過前幾筆",
+            "schema": {
+              "type": "integer"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "景點營運時間資料",
+            "content": {
+              "application/json;odata.metadata=none": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/AttractionServiceTime"
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/service/odata/V2/Tourism/Attraction/{AttractionID}/ServiceTime": {
+      "get": {
+        "tags": [
+          "Attraction 景點資料"
+        ],
+        "summary": "取得[指定編號]的景點營運時間資料",
+        "description": "描述景點營運時間說明，包括營運時段之起迄，以及營運服務日等內容。",
+        "operationId": "Tourism_0104",
+        "parameters": [
+          {
+            "name": "AttractionID",
+            "in": "path",
+            "description": "景點編號",
+            "required": true,
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "$select",
+            "in": "query",
+            "description": "挑選",
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "景點營運時間資料",
+            "content": {
+              "application/json;odata.metadata=none": {
+                "schema": {
+                  "$ref": "#/components/schemas/AttractionServiceTime"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/service/odata/V2/Tourism/Attraction/{AttractionID}/Relations": {
+      "get": {
+        "tags": [
+          "Relation 關聯資料"
+        ],
+        "summary": "取得指定景點鄰近之觀光與交通場站資料",
+        "description": "空間查詢結果涵蓋鄰近之景點、餐飲店家、旅館民宿、旅遊服務站點、步道、自行車道、活動等觀光資料，以及市區公車站位/站牌、公路客運站位/站牌、公共自行車租借站點、捷運車站、高鐵車站、臺鐵車站、機場、港口、停車場等交通場站資料。",
+        "operationId": "Tourism_0002",
+        "parameters": [
+          {
+            "name": "AttractionID",
+            "in": "path",
+            "description": "景點編號",
+            "required": true,
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "Distance",
+            "in": "query",
+            "description": "距離(公尺)，上限為 1000",
+            "required": true,
+            "schema": {
+              "maximum": 1000,
+              "minimum": 0,
+              "type": "integer",
+              "format": "int32",
+              "default": 500
+            }
+          },
+          {
+            "name": "$select",
+            "in": "query",
+            "description": "挑選",
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "景點關聯資料",
+            "content": {
+              "application/json;odata.metadata=none": {
+                "schema": {
+                  "$ref": "#/components/schemas/AttractionRelation"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/service/odata/V2/Tourism/AttractionFee": {
+      "get": {
+        "tags": [
+          "Attraction 景點資料"
+        ],
+        "summary": "取得景點收費資料",
+        "description": "描述景點收費資料，包括收費/票券名稱、詳細介紹、價格等內容。",
+        "operationId": "Tourism_0105",
+        "parameters": [
+          {
+            "name": "$select",
+            "in": "query",
+            "description": "挑選",
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "$filter",
+            "in": "query",
+            "description": "過濾",
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "$orderby",
+            "in": "query",
+            "description": "排序",
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "$top",
+            "in": "query",
+            "description": "取前幾筆",
+            "schema": {
+              "maximum": 500,
+              "type": "integer",
+              "default": 10
+            }
+          },
+          {
+            "name": "$skip",
+            "in": "query",
+            "description": "跳過前幾筆",
+            "schema": {
+              "type": "integer"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "景點收費資料",
+            "content": {
+              "application/json;odata.metadata=none": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/AttractionFee"
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/service/odata/V2/Tourism/AttractionFee/{AttractionID}": {
+      "get": {
+        "tags": [
+          "Attraction 景點資料"
+        ],
+        "summary": "取得[指定編號]的景點收費資料",
+        "description": "描述景點收費資料，包括收費/票券名稱、詳細介紹、價格等內容。",
+        "operationId": "Tourism_0106",
+        "parameters": [
+          {
+            "name": "AttractionID",
+            "in": "path",
+            "description": "景點編號",
+            "required": true,
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "$select",
+            "in": "query",
+            "description": "挑選",
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "景點收費資料",
+            "content": {
+              "application/json;odata.metadata=none": {
+                "schema": {
+                  "$ref": "#/components/schemas/AttractionFee"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/service/odata/V2/Tourism/Restaurant": {
+      "get": {
+        "tags": [
+          "Restaurant 餐飲店家資料"
+        ],
+        "summary": "取得餐飲店家基本資料",
+        "description": "描述餐飲店家基本資料，包括唯一識別碼、名稱、空間資料、地址、聯絡電話，以及料理類型、特色等內容。",
+        "operationId": "Tourism_0201",
+        "parameters": [
+          {
+            "name": "$select",
+            "in": "query",
+            "description": "挑選",
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "$filter",
+            "in": "query",
+            "description": "過濾",
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "$orderby",
+            "in": "query",
+            "description": "排序",
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "$top",
+            "in": "query",
+            "description": "取前幾筆",
+            "schema": {
+              "maximum": 500,
+              "type": "integer",
+              "default": 10
+            }
+          },
+          {
+            "name": "$skip",
+            "in": "query",
+            "description": "跳過前幾筆",
+            "schema": {
+              "type": "integer"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "餐飲店家基本資料",
+            "content": {
+              "application/json;odata.metadata=none": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/Restaurant"
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/service/odata/V2/Tourism/Restaurant/{RestaurantID}": {
+      "get": {
+        "tags": [
+          "Restaurant 餐飲店家資料"
+        ],
+        "summary": "取得[指定編號]的餐飲店家基本資料",
+        "description": "描述餐飲餐飲店家基本資料，包括唯一識別碼、名稱、空間資料、地址、聯絡電話，以及料理類型、特色等內容。",
+        "operationId": "Tourism_0202",
+        "parameters": [
+          {
+            "name": "RestaurantID",
+            "in": "path",
+            "description": "餐飲店家編號",
+            "required": true,
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "$select",
+            "in": "query",
+            "description": "挑選",
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "餐飲店家基本資料",
+            "content": {
+              "application/json;odata.metadata=none": {
+                "schema": {
+                  "$ref": "#/components/schemas/Restaurant"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/service/odata/V2/Tourism/Restaurant/ServiceTime": {
+      "get": {
+        "tags": [
+          "Restaurant 餐飲店家資料"
+        ],
+        "summary": "取得餐飲店家營運時間資料",
+        "description": "描述餐飲店家營運時間說明，包括營運時段之起迄，以及營運服務日等內容。",
+        "operationId": "Tourism_0203",
+        "parameters": [
+          {
+            "name": "$select",
+            "in": "query",
+            "description": "挑選",
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "$filter",
+            "in": "query",
+            "description": "過濾",
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "$orderby",
+            "in": "query",
+            "description": "排序",
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "$top",
+            "in": "query",
+            "description": "取前幾筆",
+            "schema": {
+              "maximum": 500,
+              "type": "integer",
+              "default": 10
+            }
+          },
+          {
+            "name": "$skip",
+            "in": "query",
+            "description": "跳過前幾筆",
+            "schema": {
+              "type": "integer"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "餐飲店家營運時間資料",
+            "content": {
+              "application/json;odata.metadata=none": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/RestaurantServiceTime"
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/service/odata/V2/Tourism/Restaurant/{RestaurantID}/ServiceTime": {
+      "get": {
+        "tags": [
+          "Restaurant 餐飲店家資料"
+        ],
+        "summary": "取得[指定編號]的餐飲店家營運時間資料",
+        "description": "描述餐飲店家營運時間說明，包括營運時段之起迄，以及營運服務日等內容。",
+        "operationId": "Tourism_0204",
+        "parameters": [
+          {
+            "name": "RestaurantID",
+            "in": "path",
+            "description": "餐飲店家編號",
+            "required": true,
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "$select",
+            "in": "query",
+            "description": "挑選",
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "餐飲店家營運時間資料",
+            "content": {
+              "application/json;odata.metadata=none": {
+                "schema": {
+                  "$ref": "#/components/schemas/RestaurantServiceTime"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/service/odata/V2/Tourism/Hotel": {
+      "get": {
+        "tags": [
+          "Hotel 旅館民宿資料"
+        ],
+        "summary": "取得旅館民宿基本資料",
+        "description": "描述旅館民宿基本資料，包括唯一識別碼、證號、名稱、空間資料、地址、聯絡電話，以及旅館民宿類型、星級旅館、入住及退房時間等內容。",
+        "operationId": "Tourism_0301",
+        "parameters": [
+          {
+            "name": "$select",
+            "in": "query",
+            "description": "挑選",
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "$filter",
+            "in": "query",
+            "description": "過濾",
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "$orderby",
+            "in": "query",
+            "description": "排序",
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "$top",
+            "in": "query",
+            "description": "取前幾筆",
+            "schema": {
+              "maximum": 500,
+              "type": "integer",
+              "default": 10
+            }
+          },
+          {
+            "name": "$skip",
+            "in": "query",
+            "description": "跳過前幾筆",
+            "schema": {
+              "type": "integer"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "旅館民宿基本資料",
+            "content": {
+              "application/json;odata.metadata=none": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/Hotel"
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/service/odata/V2/Tourism/Hotel/{HotelID}": {
+      "get": {
+        "tags": [
+          "Hotel 旅館民宿資料"
+        ],
+        "summary": "取得[指定編號]的旅館民宿基本資料",
+        "description": "描述旅館民宿基本資料，包括唯一識別碼、證號、名稱、空間資料、地址、聯絡電話，以及旅館民宿類型、星級旅館、入住及退房時間等內容。",
+        "operationId": "Tourism_0302",
+        "parameters": [
+          {
+            "name": "HotelID",
+            "in": "path",
+            "description": "旅館民宿編號",
+            "required": true,
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "$select",
+            "in": "query",
+            "description": "挑選",
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "旅館民宿基本資料",
+            "content": {
+              "application/json;odata.metadata=none": {
+                "schema": {
+                  "$ref": "#/components/schemas/Hotel"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/service/odata/V2/Tourism/TourismServiceSite": {
+      "get": {
+        "tags": [
+          "TourismServiceSite 旅遊服務站點資料"
+        ],
+        "summary": "取得旅遊服務站點基本資料",
+        "description": "描述旅遊服務站點基本資料，包括唯一識別碼、名稱、空間資料、地址、聯絡電話，以及站點類型、服務特色等內容。",
+        "operationId": "Tourism_0401",
+        "parameters": [
+          {
+            "name": "$select",
+            "in": "query",
+            "description": "挑選",
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "$filter",
+            "in": "query",
+            "description": "過濾",
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "$orderby",
+            "in": "query",
+            "description": "排序",
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "$top",
+            "in": "query",
+            "description": "取前幾筆",
+            "schema": {
+              "maximum": 500,
+              "type": "integer",
+              "default": 10
+            }
+          },
+          {
+            "name": "$skip",
+            "in": "query",
+            "description": "跳過前幾筆",
+            "schema": {
+              "type": "integer"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "旅遊服務站點基本資料",
+            "content": {
+              "application/json;odata.metadata=none": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/TourismServiceSite"
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/service/odata/V2/Tourism/TourismServiceSite/{TourismServiceSiteID}": {
+      "get": {
+        "tags": [
+          "TourismServiceSite 旅遊服務站點資料"
+        ],
+        "summary": "取得[指定編號]的旅遊服務站點基本資料",
+        "description": "描述旅遊服務站點基本資料，包括唯一識別碼、名稱、空間資料、地址、聯絡電話，以及站點類型、服務特色等內容。",
+        "operationId": "Tourism_0402",
+        "parameters": [
+          {
+            "name": "TourismServiceSiteID",
+            "in": "path",
+            "description": "旅遊服務站點編號",
+            "required": true,
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "$select",
+            "in": "query",
+            "description": "挑選",
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "旅遊服務站點基本資料",
+            "content": {
+              "application/json;odata.metadata=none": {
+                "schema": {
+                  "$ref": "#/components/schemas/TourismServiceSite"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/service/odata/V2/Tourism/Trail": {
+      "get": {
+        "tags": [
+          "Trail 步道資料"
+        ],
+        "summary": "取得步道基本資料",
+        "description": "描述步道基本資料，包括唯一識別碼、名稱、空間資料、地址、聯絡電話，以及步道類型、長度、海拔高度等內容。",
+        "operationId": "Tourism_0501",
+        "parameters": [
+          {
+            "name": "$select",
+            "in": "query",
+            "description": "挑選",
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "$filter",
+            "in": "query",
+            "description": "過濾",
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "$orderby",
+            "in": "query",
+            "description": "排序",
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "$top",
+            "in": "query",
+            "description": "取前幾筆",
+            "schema": {
+              "maximum": 500,
+              "type": "integer",
+              "default": 10
+            }
+          },
+          {
+            "name": "$skip",
+            "in": "query",
+            "description": "跳過前幾筆",
+            "schema": {
+              "type": "integer"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "步道基本資料",
+            "content": {
+              "application/json;odata.metadata=none": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/Trail"
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/service/odata/V2/Tourism/Trail/{TrailID}": {
+      "get": {
+        "tags": [
+          "Trail 步道資料"
+        ],
+        "summary": "取得[指定編號]的步道基本資料",
+        "description": "描述步道基本資料，包括唯一識別碼、名稱、空間資料、地址、聯絡電話，以及步道類型、長度、海拔高度等內容。",
+        "operationId": "Tourism_0502",
+        "parameters": [
+          {
+            "name": "TrailID",
+            "in": "path",
+            "description": "步道編號",
+            "required": true,
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "$select",
+            "in": "query",
+            "description": "挑選",
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "步道基本資料",
+            "content": {
+              "application/json;odata.metadata=none": {
+                "schema": {
+                  "$ref": "#/components/schemas/Trail"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/service/odata/V2/Tourism/TrailFacility": {
+      "get": {
+        "tags": [
+          "Trail 步道資料"
+        ],
+        "summary": "取得步道周邊設施基本資料",
+        "description": "描述步道周邊設施基本資料，包括設施唯一識別碼、名稱、空間資料、設施類型、描述等內容。",
+        "operationId": "Tourism_0503",
+        "parameters": [
+          {
+            "name": "$select",
+            "in": "query",
+            "description": "挑選",
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "$filter",
+            "in": "query",
+            "description": "過濾",
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "$orderby",
+            "in": "query",
+            "description": "排序",
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "$top",
+            "in": "query",
+            "description": "取前幾筆",
+            "schema": {
+              "maximum": 500,
+              "type": "integer",
+              "default": 10
+            }
+          },
+          {
+            "name": "$skip",
+            "in": "query",
+            "description": "跳過前幾筆",
+            "schema": {
+              "type": "integer"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "步道周邊設施基本資料",
+            "content": {
+              "application/json;odata.metadata=none": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/TrailFacility"
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/service/odata/V2/Tourism/TrailFacility/{TrailID}": {
+      "get": {
+        "tags": [
+          "Trail 步道資料"
+        ],
+        "summary": "取得[指定步道編號]的周邊設施資料",
+        "description": "描述步道周邊設施基本資料，包括設施唯一識別碼、名稱、空間資料、設施類型、描述等內容。",
+        "operationId": "Tourism_0504",
+        "parameters": [
+          {
+            "name": "TrailID",
+            "in": "path",
+            "description": "步道編號",
+            "required": true,
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "$select",
+            "in": "query",
+            "description": "挑選",
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "步道周邊設施資料",
+            "content": {
+              "application/json;odata.metadata=none": {
+                "schema": {
+                  "$ref": "#/components/schemas/TrailFacility"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/service/odata/V2/Tourism/CyclingRoute": {
+      "get": {
+        "tags": [
+          "CyclingRoute 自行車道資料"
+        ],
+        "summary": "取得自行車道基本資料",
+        "description": "描述自行車道基本資料，包括唯一識別碼、名稱、空間資料、地址、聯絡電話，以及自行車道類型、長度等內容。",
+        "operationId": "Tourism_0601",
+        "parameters": [
+          {
+            "name": "$select",
+            "in": "query",
+            "description": "挑選",
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "$filter",
+            "in": "query",
+            "description": "過濾",
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "$orderby",
+            "in": "query",
+            "description": "排序",
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "$top",
+            "in": "query",
+            "description": "取前幾筆",
+            "schema": {
+              "maximum": 500,
+              "type": "integer",
+              "default": 10
+            }
+          },
+          {
+            "name": "$skip",
+            "in": "query",
+            "description": "跳過前幾筆",
+            "schema": {
+              "type": "integer"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "自行車道基本資料",
+            "content": {
+              "application/json;odata.metadata=none": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/CyclingRoute"
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/service/odata/V2/Tourism/CyclingRoute/{CyclingRouteID}": {
+      "get": {
+        "tags": [
+          "CyclingRoute 自行車道資料"
+        ],
+        "summary": "取得[指定編號]的自行車道基本資料",
+        "description": "描述自行車道基本資料，包括唯一識別碼、名稱、空間資料、地址、聯絡電話，以及自行車道類型、長度等內容。",
+        "operationId": "Tourism_0602",
+        "parameters": [
+          {
+            "name": "CyclingRouteID",
+            "in": "path",
+            "description": "自行車道編號",
+            "required": true,
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "$select",
+            "in": "query",
+            "description": "挑選",
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "自行車道基本資料",
+            "content": {
+              "application/json;odata.metadata=none": {
+                "schema": {
+                  "$ref": "#/components/schemas/CyclingRoute"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/service/odata/V2/Tourism/CyclingRouteFacility": {
+      "get": {
+        "tags": [
+          "CyclingRoute 自行車道資料"
+        ],
+        "summary": "取得自行車道周邊設施基本資料",
+        "description": "描述自行車道周邊設施基本資料，包括設施唯一識別碼、名稱、空間資料、設施類型、描述等內容。",
+        "operationId": "Tourism_0603",
+        "parameters": [
+          {
+            "name": "$select",
+            "in": "query",
+            "description": "挑選",
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "$filter",
+            "in": "query",
+            "description": "過濾",
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "$orderby",
+            "in": "query",
+            "description": "排序",
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "$top",
+            "in": "query",
+            "description": "取前幾筆",
+            "schema": {
+              "maximum": 500,
+              "type": "integer",
+              "default": 10
+            }
+          },
+          {
+            "name": "$skip",
+            "in": "query",
+            "description": "跳過前幾筆",
+            "schema": {
+              "type": "integer"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "自行車道周邊設施基本資料",
+            "content": {
+              "application/json;odata.metadata=none": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/CyclingRouteFacility"
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/service/odata/V2/Tourism/CyclingRouteFacility/{CyclingRouteID}": {
+      "get": {
+        "tags": [
+          "CyclingRoute 自行車道資料"
+        ],
+        "summary": "取得[指定自行車道編號]的周邊設施資料",
+        "description": "描述自行車道周邊設施基本資料，包括設施唯一識別碼、名稱、空間資料、設施類型、描述等內容。",
+        "operationId": "Tourism_0604",
+        "parameters": [
+          {
+            "name": "CyclingRouteID",
+            "in": "path",
+            "description": "自行車道編號",
+            "required": true,
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "$select",
+            "in": "query",
+            "description": "挑選",
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "自行車道周邊設施資料",
+            "content": {
+              "application/json;odata.metadata=none": {
+                "schema": {
+                  "$ref": "#/components/schemas/CyclingRouteFacility"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/service/odata/V2/Tourism/Event": {
+      "get": {
+        "tags": [
+          "Event 活動資料"
+        ],
+        "summary": "取得活動基本資料",
+        "description": "描述活動基本資料，包括唯一識別碼、名稱、空間資料、地址、聯絡電話，以及活動類型、參與對象、起始與結束日期時間等內容。",
+        "operationId": "Tourism_0701",
+        "parameters": [
+          {
+            "name": "$select",
+            "in": "query",
+            "description": "挑選",
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "$filter",
+            "in": "query",
+            "description": "過濾",
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "$orderby",
+            "in": "query",
+            "description": "排序",
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "$top",
+            "in": "query",
+            "description": "取前幾筆",
+            "schema": {
+              "maximum": 500,
+              "type": "integer",
+              "default": 10
+            }
+          },
+          {
+            "name": "$skip",
+            "in": "query",
+            "description": "跳過前幾筆",
+            "schema": {
+              "type": "integer"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "活動基本資料",
+            "content": {
+              "application/json;odata.metadata=none": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/Event"
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/service/odata/V2/Tourism/Event/{EventID}": {
+      "get": {
+        "tags": [
+          "Event 活動資料"
+        ],
+        "summary": "取得[指定編號]的活動基本資料",
+        "description": "描述活動基本資料，包括唯一識別碼、名稱、空間資料、地址、聯絡電話，以及活動類型、參與對象、起始與結束日期時間等內容。",
+        "operationId": "Tourism_0702",
+        "parameters": [
+          {
+            "name": "EventID",
+            "in": "path",
+            "description": "活動編號",
+            "required": true,
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "$select",
+            "in": "query",
+            "description": "挑選",
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "活動基本資料",
+            "content": {
+              "application/json;odata.metadata=none": {
+                "schema": {
+                  "$ref": "#/components/schemas/Event"
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  },
+  "components": {
+    "schemas": {
+      "PTX.Service.DTO.Bike.Specification.V2.BikeStation": {
+        "title": "BikeStation",
+        "required": [
+          "UpdateTime"
+        ],
+        "type": "object",
+        "properties": {
+          "StationUID": {
+            "title": "String",
+            "type": "string",
+            "description": "站點唯一識別代碼，規則為 {業管機關代碼} + {StationID}，其中 {業管機關代碼} 可於Authority API中的AuthorityCode欄位查詢",
+            "nullable": true,
+            "xml": {
+              "name": "StationUID"
+            }
+          },
+          "StationID": {
+            "title": "String",
+            "type": "string",
+            "description": "站點代碼",
+            "nullable": true,
+            "xml": {
+              "name": "StationID"
+            }
+          },
+          "AuthorityID": {
+            "title": "String",
+            "type": "string",
+            "description": "業管單位代碼",
+            "nullable": true,
+            "xml": {
+              "name": "AuthorityID"
+            }
+          },
+          "StationName": {
+            "title": "NameType",
+            "allOf": [
+              {
+                "$ref": "#/components/schemas/PTX.Service.DTO.Shared.Specification.V2.Base.NameType"
+              }
+            ],
+            "description": "站點名稱",
+            "nullable": true,
+            "xml": {
+              "name": "NameType"
+            }
+          },
+          "StationPosition": {
+            "title": "PointType",
+            "allOf": [
+              {
+                "$ref": "#/components/schemas/PTX.Service.DTO.Shared.Specification.V2.Base.PointType"
+              }
+            ],
+            "description": "站點位置",
+            "nullable": true,
+            "xml": {
+              "name": "PointType"
+            }
+          },
+          "StationAddress": {
+            "title": "NameType",
+            "allOf": [
+              {
+                "$ref": "#/components/schemas/PTX.Service.DTO.Shared.Specification.V2.Base.NameType"
+              }
+            ],
+            "description": "站點地址",
+            "nullable": true,
+            "xml": {
+              "name": "NameType"
+            }
+          },
+          "StopDescription": {
+            "title": "String",
+            "type": "string",
+            "description": "站點描述",
+            "nullable": true,
+            "xml": {
+              "name": "StopDescription"
+            }
+          },
+          "BikesCapacity": {
+            "type": "integer",
+            "description": "可容納之自行車總數",
+            "format": "int32",
+            "nullable": true
+          },
+          "ServiceType": {
+            "title": "Int32",
+            "type": "integer",
+            "description": "服務類型 : [1:'YouBike1.0',2:'YouBike2.0',3:'Moovo']",
+            "format": "int32",
+            "nullable": true
+          },
+          "SrcUpdateTime": {
+            "type": "string",
+            "description": "來源端平台資料更新時間(ISO8601格式:yyyy-MM-ddTHH:mm:sszzz)",
+            "format": "date-time",
+            "nullable": true
+          },
+          "UpdateTime": {
+            "title": "DateTime",
+            "type": "string",
+            "description": "資料更新日期時間(ISO8601格式:yyyy-MM-ddTHH:mm:sszzz)",
+            "format": "date-time"
+          }
+        },
+        "additionalProperties": false,
+        "description": "自行車站點資訊",
+        "xml": {
+          "name": "BikeStation"
+        }
+      },
+      "PTX.Service.DTO.Bike.Specification.V2.BikeStation0": {
+        "$ref": "#/components/schemas/PTX.Service.DTO.Bike.Specification.V2.BikeStation"
+      },
+      "PTX.Service.DTO.Shared.Specification.V2.Base.NameType": {
+        "title": "NameType",
+        "required": [
+          "Zh_tw"
+        ],
+        "type": "object",
+        "properties": {
+          "Zh_tw": {
+            "title": "String",
+            "minLength": 1,
+            "type": "string",
+            "description": "中文繁體名稱",
+            "xml": {
+              "name": "Zh_tw"
+            }
+          },
+          "En": {
+            "title": "String",
+            "type": "string",
+            "description": "英文名稱",
+            "nullable": true,
+            "xml": {
+              "name": "En"
+            }
+          },
+          "Ja": {
+            "title": "String",
+            "type": "string",
+            "description": "日文名稱",
+            "nullable": true,
+            "xml": {
+              "name": "Ja"
+            }
+          },
+          "Ko": {
+            "title": "String",
+            "type": "string",
+            "description": "韓文名稱",
+            "nullable": true,
+            "xml": {
+              "name": "Ko"
+            }
+          }
+        },
+        "additionalProperties": false,
+        "description": "名稱資料型別",
+        "xml": {
+          "name": "NameType"
+        }
+      },
+      "PTX.Service.DTO.Shared.Specification.V2.Base.PointType": {
+        "title": "PointType",
+        "type": "object",
+        "properties": {
+          "PositionLon": {
+            "type": "number",
+            "description": "位置經度(WGS84)",
+            "format": "double",
+            "nullable": true
+          },
+          "PositionLat": {
+            "type": "number",
+            "description": "位置緯度(WGS84)",
+            "format": "double",
+            "nullable": true
+          },
+          "GeoHash": {
+            "title": "String",
+            "type": "string",
+            "description": "地理空間編碼",
+            "nullable": true,
+            "xml": {
+              "name": "GeoHash"
+            }
+          }
+        },
+        "additionalProperties": false,
+        "description": "座標資料型別",
+        "xml": {
+          "name": "PointType"
+        }
+      },
+      "PTX.Service.DTO.Shared.Specification.V3.Base.DisplayHealth": {
+        "title": "DisplayHealth",
+        "required": [
+          "Inbound",
+          "Outbound",
+          "ServiceID",
+          "ServiceName"
+        ],
+        "type": "object",
+        "properties": {
+          "ServiceID": {
+            "title": "String",
+            "minLength": 1,
+            "type": "string",
+            "description": "API服務代碼",
+            "xml": {
+              "name": "ServiceID"
+            }
+          },
+          "ServiceName": {
+            "title": "String",
+            "minLength": 1,
+            "type": "string",
+            "description": "API服務中文名稱",
+            "xml": {
+              "name": "ServiceName"
+            }
+          },
+          "Inbound": {
+            "title": "Inbound",
+            "allOf": [
+              {
+                "$ref": "#/components/schemas/PTX.Service.DTO.Shared.Specification.V3.Base.Inbound"
+              }
+            ],
+            "description": "本平台資料來源轉入狀態",
+            "nullable": true,
+            "xml": {
+              "name": "Inbound"
+            }
+          },
+          "Outbound": {
+            "title": "Outbound",
+            "allOf": [
+              {
+                "$ref": "#/components/schemas/PTX.Service.DTO.Shared.Specification.V3.Base.Outbound"
+              }
+            ],
+            "description": "本平台API狀態",
+            "nullable": true,
+            "xml": {
+              "name": "Outbound"
+            }
+          }
+        },
+        "additionalProperties": false,
+        "description": "API服務健康狀態",
+        "xml": {
+          "name": "DisplayHealth"
+        }
+      },
+      "PTX.Service.DTO.Shared.Specification.V3.Base.Inbound": {
+        "title": "Inbound",
+        "required": [
+          "CheckTime",
+          "Status"
+        ],
+        "type": "object",
+        "properties": {
+          "CheckTime": {
+            "title": "DateTime",
+            "type": "string",
+            "description": "檢核時間",
+            "format": "date-time"
+          },
+          "Status": {
+            "title": "Int32",
+            "type": "integer",
+            "description": "檢核結果狀態 : [0:'失敗',1:'成功',2:'資料清洗中']",
+            "format": "int32"
+          },
+          "Reason": {
+            "title": "String",
+            "type": "string",
+            "description": "檢核失敗原因",
+            "nullable": true,
+            "xml": {
+              "name": "Reason"
+            }
+          }
+        },
+        "additionalProperties": false,
+        "description": "本平台資料來源轉入狀態",
+        "xml": {
+          "name": "Inbound"
+        }
+      },
+      "PTX.Service.DTO.Shared.Specification.V3.Base.Outbound": {
+        "title": "Outbound",
+        "required": [
+          "CheckTime",
+          "Status"
+        ],
+        "type": "object",
+        "properties": {
+          "CheckTime": {
+            "title": "DateTime",
+            "type": "string",
+            "description": "檢核時間",
+            "format": "date-time"
+          },
+          "Status": {
+            "title": "Int32",
+            "type": "integer",
+            "description": "檢核結果狀態 : [0:'失敗',1:'成功',2:'資料清洗中']",
+            "format": "int32"
+          },
+          "Reason": {
+            "title": "String",
+            "type": "string",
+            "description": "檢核失敗原因",
+            "nullable": true,
+            "xml": {
+              "name": "Reason"
+            }
+          }
+        },
+        "additionalProperties": false,
+        "description": "本平台API狀態",
+        "xml": {
+          "name": "Outbound"
+        }
+      },
+      "PTX.Service.DTO.Bike.Specification.V2.BikeAvailability": {
+        "title": "BikeAvailability",
+        "required": [
+          "UpdateTime"
+        ],
+        "type": "object",
+        "properties": {
+          "StationUID": {
+            "title": "String",
+            "type": "string",
+            "description": "站點唯一識別代碼，規則為 {業管機關代碼} + {StationID}，其中 {業管機關代碼} 可於Authority API中的AuthorityCode欄位查詢",
+            "nullable": true,
+            "xml": {
+              "name": "StationUID"
+            }
+          },
+          "StationID": {
+            "title": "String",
+            "type": "string",
+            "description": "站點代碼",
+            "nullable": true,
+            "xml": {
+              "name": "StationID"
+            }
+          },
+          "ServiceStatus": {
+            "title": "Int32",
+            "type": "integer",
+            "description": "服務狀態 : [0:'停止營運',1:'正常營運',2:'暫停營運']",
+            "format": "int32"
+          },
+          "ServiceType": {
+            "title": "Int32",
+            "type": "integer",
+            "description": "服務類型 : [1:'YouBike1.0',2:'YouBike2.0',3:'Moovo']",
+            "format": "int32",
+            "nullable": true
+          },
+          "AvailableRentBikes": {
+            "type": "integer",
+            "description": "可租借車數",
+            "format": "int32",
+            "nullable": true
+          },
+          "AvailableReturnBikes": {
+            "type": "integer",
+            "description": "可歸還車數",
+            "format": "int32",
+            "nullable": true
+          },
+          "SrcUpdateTime": {
+            "type": "string",
+            "description": "來源端平台資料更新時間(ISO8601格式:yyyy-MM-ddTHH:mm:sszzz)",
+            "format": "date-time",
+            "nullable": true
+          },
+          "UpdateTime": {
+            "title": "DateTime",
+            "type": "string",
+            "description": "資料更新日期時間(ISO8601格式:yyyy-MM-ddTHH:mm:sszzz)",
+            "format": "date-time"
+          },
+          "AvailableRentBikesDetail": {
+            "title": "AvailableRentBikesDetail",
+            "allOf": [
+              {
+                "$ref": "#/components/schemas/PTX.Service.DTO.Bike.Implementation.V2.AvailableRentBikesDetail"
+              }
+            ],
+            "description": "可租借一般自行車、電動輔助車數量",
+            "nullable": true,
+            "xml": {
+              "name": "AvailableRentBikesDetail"
+            }
+          }
+        },
+        "additionalProperties": false,
+        "description": "自行車站點剩餘數量資訊",
+        "xml": {
+          "name": "BikeAvailability"
+        }
+      },
+      "PTX.Service.DTO.Bike.Specification.V2.BikeAvailability1": {
+        "$ref": "#/components/schemas/PTX.Service.DTO.Bike.Specification.V2.BikeAvailability"
+      },
+      "PTX.Service.DTO.Bike.Implementation.V2.AvailableRentBikesDetail": {
+        "title": "AvailableRentBikesDetail",
+        "type": "object",
+        "properties": {
+          "GeneralBikes": {
+            "title": "Int32",
+            "type": "integer",
+            "description": "一般自行車可租借車數",
+            "format": "int32"
+          },
+          "ElectricBikes": {
+            "title": "Int32",
+            "type": "integer",
+            "description": "電動輔助車可租借車數",
+            "format": "int32"
+          }
+        },
+        "additionalProperties": false,
+        "xml": {
+          "name": "AvailableRentBikesDetail"
+        }
+      },
+      "PTX.Service.DTO.Bike.Specification.V2.BikeShape": {
+        "title": "BikeShape",
+        "required": [
+          "City",
+          "CityCode",
+          "EncodedPolyline",
+          "Geometry",
+          "RouteName",
+          "UpdateTime"
+        ],
+        "type": "object",
+        "properties": {
+          "Geometry": {
+            "title": "String",
+            "minLength": 1,
+            "type": "string",
+            "description": "well-known text，為路線軌跡資料",
+            "xml": {
+              "name": "Geometry"
+            }
+          },
+          "EncodedPolyline": {
+            "title": "String",
+            "minLength": 1,
+            "type": "string",
+            "description": "路線軌跡編碼(encoded polyline)",
+            "xml": {
+              "name": "EncodedPolyline"
+            }
+          },
+          "RouteName": {
+            "title": "String",
+            "minLength": 1,
+            "type": "string",
+            "description": "路線名稱",
+            "xml": {
+              "name": "RouteName"
+            }
+          },
+          "AuthorityName": {
+            "title": "String",
+            "type": "string",
+            "description": "業管機關名稱（可能包含多個業管機關）",
+            "nullable": true,
+            "xml": {
+              "name": "AuthorityName"
+            }
+          },
+          "CityCode": {
+            "title": "String",
+            "minLength": 1,
+            "type": "string",
+            "description": "路線所在縣市代碼",
+            "xml": {
+              "name": "CityCode"
+            }
+          },
+          "City": {
+            "title": "String",
+            "minLength": 1,
+            "type": "string",
+            "description": "路線所在縣市名稱",
+            "xml": {
+              "name": "City"
+            }
+          },
+          "Town": {
+            "title": "String",
+            "type": "string",
+            "description": "路線所在鄉鎮名稱（可能包含多個鄉鎮）",
+            "nullable": true,
+            "xml": {
+              "name": "Town"
+            }
+          },
+          "RoadSectionStart": {
+            "title": "String",
+            "type": "string",
+            "description": "路線起點描述",
+            "nullable": true,
+            "xml": {
+              "name": "RoadSectionStart"
+            }
+          },
+          "RoadSectionEnd": {
+            "title": "String",
+            "type": "string",
+            "description": "路線迄點描述",
+            "nullable": true,
+            "xml": {
+              "name": "RoadSectionEnd"
+            }
+          },
+          "Direction": {
+            "title": "String",
+            "type": "string",
+            "description": "自行車道車行方向",
+            "nullable": true,
+            "xml": {
+              "name": "Direction"
+            }
+          },
+          "CyclingType": {
+            "title": "String",
+            "type": "string",
+            "description": "自行車道類型",
+            "nullable": true,
+            "xml": {
+              "name": "CyclingType"
+            }
+          },
+          "CyclingLength": {
+            "type": "number",
+            "description": "自行車道長度",
+            "format": "double",
+            "nullable": true
+          },
+          "FinishedTime": {
+            "title": "String",
+            "type": "string",
+            "description": "自行車道完工日期時間",
+            "nullable": true,
+            "xml": {
+              "name": "FinishedTime"
+            }
+          },
+          "UpdateTime": {
+            "title": "DateTime",
+            "type": "string",
+            "description": "資料更新日期時間(ISO8601格式:yyyy-MM-ddTHH:mm:sszzz)",
+            "format": "date-time"
+          }
+        },
+        "additionalProperties": false,
+        "xml": {
+          "name": "BikeShape"
+        }
+      },
+      "PTX.Service.DTO.Bike.Specification.V2.BikeShape2": {
+        "$ref": "#/components/schemas/PTX.Service.DTO.Bike.Specification.V2.BikeShape"
+      },
+      "RelationData": {
+        "type": "object",
+        "properties": {
+          "RelationClass": {
+            "type": "string",
+            "description": "關聯類型",
+            "nullable": true
+          },
+          "UpdateTime": {
+            "type": "string",
+            "description": "資料更新日期時間",
+            "format": "date-time"
+          },
+          "RelatedAttractions": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/RelatedAttraction"
+            },
+            "description": "關聯景點資訊",
+            "nullable": true
+          },
+          "RelatedRestaurants": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/RelatedRestaurant"
+            },
+            "description": "關聯餐飲店家資訊",
+            "nullable": true
+          },
+          "RelatedHotels": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/RelatedHotel"
+            },
+            "description": "關聯旅館民宿資訊",
+            "nullable": true
+          },
+          "RelatedTourismServiceSites": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/RelatedTourismServiceSite"
+            },
+            "description": "關聯旅遊服務站點資訊",
+            "nullable": true
+          },
+          "RelatedTrails": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/RelatedTrail"
+            },
+            "description": "關聯步道資訊",
+            "nullable": true
+          },
+          "RelatedCyclingRoutes": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/RelatedCyclingRoute"
+            },
+            "description": "關聯自行車道資訊",
+            "nullable": true
+          },
+          "RelatedEvents": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/RelatedEvent"
+            },
+            "description": "關聯活動資訊",
+            "nullable": true
+          },
+          "RelatedBusStations": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/RelatedBusStation"
+            },
+            "description": "關聯市區公車站位資訊",
+            "nullable": true
+          },
+          "RelatedBusStops": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/RelatedBusStop"
+            },
+            "description": "關聯市區公車站牌資訊",
+            "nullable": true
+          },
+          "RelatedInterCityBusStations": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/RelatedInterCityBusStation"
+            },
+            "description": "關聯公路客運站位資訊",
+            "nullable": true
+          },
+          "RelatedInterCityBusStops": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/RelatedInterCityBusStop"
+            },
+            "description": "關聯公路客運站牌資訊",
+            "nullable": true
+          },
+          "RelatedBikeStations": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/RelatedBikeStation"
+            },
+            "description": "關聯公共自行車租借站位資訊",
+            "nullable": true
+          },
+          "RelatedMetroStations": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/RelatedMetroStation"
+            },
+            "description": "關聯捷運車站資訊",
+            "nullable": true
+          },
+          "RelatedThsrRailStations": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/RelatedRailStation"
+            },
+            "description": "關聯高鐵車站資訊",
+            "nullable": true
+          },
+          "RelatedTraRailStations": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/RelatedRailStation"
+            },
+            "description": "關聯臺鐵車站資訊",
+            "nullable": true
+          },
+          "RelatedAirports": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/RelatedAirport"
+            },
+            "description": "關聯機場資訊",
+            "nullable": true
+          },
+          "RelatedPorts": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/RelatedPort"
+            },
+            "description": "關聯港口資訊",
+            "nullable": true
+          },
+          "RelatedCityCarParks": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/RelatedCarPark"
+            },
+            "description": "關聯縣市停車場資訊",
+            "nullable": true
+          },
+          "RelatedTourismCarParks": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/RelatedCarPark"
+            },
+            "description": "關聯觀光景點停車場資訊",
+            "nullable": true
+          },
+          "RelatedPortCarParks": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/RelatedCarPark"
+            },
+            "description": "關聯港口停車場資訊",
+            "nullable": true
+          },
+          "RelatedRailStationCarParks": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/RelatedCarPark"
+            },
+            "description": "關聯軌道車站停車場資訊",
+            "nullable": true
+          },
+          "RelatedFreewayCarParks": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/RelatedCarPark"
+            },
+            "description": "關聯高速公路服務區停車場資訊",
+            "nullable": true
+          },
+          "RelatedAirportCarParks": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/RelatedCarPark"
+            },
+            "description": "關聯機場停車場資訊",
+            "nullable": true
+          }
+        },
+        "additionalProperties": false,
+        "description": "關聯資料"
+      },
+      "RelatedAttraction": {
+        "type": "object",
+        "properties": {
+          "AttractionID": {
+            "type": "string",
+            "description": "景點唯一識別碼",
+            "nullable": true
+          },
+          "AttractionName": {
+            "type": "string",
+            "description": "景點名稱",
+            "nullable": true
+          },
+          "PositionLat": {
+            "type": "number",
+            "description": "景點坐標緯度",
+            "format": "double",
+            "nullable": true
+          },
+          "PositionLon": {
+            "type": "number",
+            "description": "景點坐標經度",
+            "format": "double",
+            "nullable": true
+          }
+        },
+        "additionalProperties": false,
+        "description": "關聯景點資料"
+      },
+      "RelatedRestaurant": {
+        "type": "object",
+        "properties": {
+          "RestaurantID": {
+            "type": "string",
+            "description": "餐飲店家唯一識別碼",
+            "nullable": true
+          },
+          "RestaurantName": {
+            "type": "string",
+            "description": "餐飲店家名稱",
+            "nullable": true
+          },
+          "PositionLat": {
+            "type": "number",
+            "description": "餐飲店家坐標緯度",
+            "format": "double",
+            "nullable": true
+          },
+          "PositionLon": {
+            "type": "number",
+            "description": "餐飲店家坐標經度",
+            "format": "double",
+            "nullable": true
+          }
+        },
+        "additionalProperties": false,
+        "description": "關聯餐飲店家資料"
+      },
+      "RelatedHotel": {
+        "type": "object",
+        "properties": {
+          "HotelID": {
+            "type": "string",
+            "description": "旅館民宿唯一識別碼",
+            "nullable": true
+          },
+          "HotelName": {
+            "type": "string",
+            "description": "旅館民宿名稱",
+            "nullable": true
+          },
+          "PositionLat": {
+            "type": "number",
+            "description": "旅館民宿坐標緯度",
+            "format": "double",
+            "nullable": true
+          },
+          "PositionLon": {
+            "type": "number",
+            "description": "旅館民宿坐標經度",
+            "format": "double",
+            "nullable": true
+          }
+        },
+        "additionalProperties": false,
+        "description": "關聯旅館民宿資料"
+      },
+      "RelatedTourismServiceSite": {
+        "type": "object",
+        "properties": {
+          "TourismServiceSiteID": {
+            "type": "string",
+            "description": "旅遊服務站點唯一識別碼",
+            "nullable": true
+          },
+          "TourismServiceSiteName": {
+            "type": "string",
+            "description": "旅遊服務站點名稱",
+            "nullable": true
+          },
+          "PositionLat": {
+            "type": "number",
+            "description": "旅遊服務站點坐標緯度",
+            "format": "double",
+            "nullable": true
+          },
+          "PositionLon": {
+            "type": "number",
+            "description": "旅遊服務站點坐標經度",
+            "format": "double",
+            "nullable": true
+          }
+        },
+        "additionalProperties": false,
+        "description": "關聯旅遊服務站點資料"
+      },
+      "RelatedTrail": {
+        "type": "object",
+        "properties": {
+          "TrailID": {
+            "type": "string",
+            "description": "步道唯一識別碼",
+            "nullable": true
+          },
+          "TrailName": {
+            "type": "string",
+            "description": "步道名稱",
+            "nullable": true
+          },
+          "PositionLat": {
+            "type": "number",
+            "description": "步道坐標緯度",
+            "format": "double",
+            "nullable": true
+          },
+          "PositionLon": {
+            "type": "number",
+            "description": "步道坐標經度",
+            "format": "double",
+            "nullable": true
+          }
+        },
+        "additionalProperties": false,
+        "description": "關聯步道資料"
+      },
+      "RelatedCyclingRoute": {
+        "type": "object",
+        "properties": {
+          "CyclingRouteID": {
+            "type": "string",
+            "description": "自行車道唯一識別碼",
+            "nullable": true
+          },
+          "CyclingRouteName": {
+            "type": "string",
+            "description": "自行車道名稱",
+            "nullable": true
+          },
+          "PositionLat": {
+            "type": "number",
+            "description": "自行車道坐標緯度",
+            "format": "double",
+            "nullable": true
+          },
+          "PositionLon": {
+            "type": "number",
+            "description": "自行車道坐標經度",
+            "format": "double",
+            "nullable": true
+          }
+        },
+        "additionalProperties": false,
+        "description": "關聯自行車道資料"
+      },
+      "RelatedEvent": {
+        "type": "object",
+        "properties": {
+          "EventID": {
+            "type": "string",
+            "description": "活動唯一識別碼",
+            "nullable": true
+          },
+          "EventName": {
+            "type": "string",
+            "description": "活動名稱",
+            "nullable": true
+          },
+          "PositionLat": {
+            "type": "number",
+            "description": "活動坐標緯度",
+            "format": "double",
+            "nullable": true
+          },
+          "PositionLon": {
+            "type": "number",
+            "description": "活動坐標經度",
+            "format": "double",
+            "nullable": true
+          }
+        },
+        "additionalProperties": false,
+        "description": "關聯活動資料"
+      },
+      "RelatedBusStation": {
+        "type": "object",
+        "properties": {
+          "StationUID": {
+            "type": "string",
+            "description": "站位唯一識別代碼",
+            "nullable": true
+          },
+          "StationID": {
+            "type": "string",
+            "description": "站位代碼",
+            "nullable": true
+          },
+          "StationName": {
+            "type": "string",
+            "description": "站位名稱",
+            "nullable": true
+          },
+          "PositionLat": {
+            "type": "number",
+            "description": "坐標緯度",
+            "format": "double",
+            "nullable": true
+          },
+          "PositionLon": {
+            "type": "number",
+            "description": "坐標經度",
+            "format": "double",
+            "nullable": true
+          }
+        },
+        "additionalProperties": false,
+        "description": "關聯市區公車站位資料"
+      },
+      "RelatedBusStop": {
+        "type": "object",
+        "properties": {
+          "StopUID": {
+            "type": "string",
+            "description": "站牌唯一識別代碼",
+            "nullable": true
+          },
+          "StopID": {
+            "type": "string",
+            "description": "站牌代碼",
+            "nullable": true
+          },
+          "StopName": {
+            "type": "string",
+            "description": "站牌名稱",
+            "nullable": true
+          },
+          "PositionLat": {
+            "type": "number",
+            "description": "坐標緯度",
+            "format": "double",
+            "nullable": true
+          },
+          "PositionLon": {
+            "type": "number",
+            "description": "坐標經度",
+            "format": "double",
+            "nullable": true
+          }
+        },
+        "additionalProperties": false,
+        "description": "關聯市區公車站牌資料"
+      },
+      "RelatedInterCityBusStation": {
+        "type": "object",
+        "properties": {
+          "StationUID": {
+            "type": "string",
+            "description": "站位唯一識別代碼",
+            "nullable": true
+          },
+          "StationID": {
+            "type": "string",
+            "description": "站位代碼",
+            "nullable": true
+          },
+          "StationName": {
+            "type": "string",
+            "description": "站位名稱",
+            "nullable": true
+          },
+          "PositionLat": {
+            "type": "number",
+            "description": "坐標緯度",
+            "format": "double",
+            "nullable": true
+          },
+          "PositionLon": {
+            "type": "number",
+            "description": "坐標經度",
+            "format": "double",
+            "nullable": true
+          }
+        },
+        "additionalProperties": false,
+        "description": "關聯公路客運站位資料"
+      },
+      "RelatedInterCityBusStop": {
+        "type": "object",
+        "properties": {
+          "StopUID": {
+            "type": "string",
+            "description": "站牌唯一識別代碼",
+            "nullable": true
+          },
+          "StopID": {
+            "type": "string",
+            "description": "站牌代碼",
+            "nullable": true
+          },
+          "StopName": {
+            "type": "string",
+            "description": "站牌名稱",
+            "nullable": true
+          },
+          "PositionLat": {
+            "type": "number",
+            "description": "坐標緯度",
+            "format": "double",
+            "nullable": true
+          },
+          "PositionLon": {
+            "type": "number",
+            "description": "坐標經度",
+            "format": "double",
+            "nullable": true
+          }
+        },
+        "additionalProperties": false,
+        "description": "關聯公路客運站牌資料"
+      },
+      "RelatedBikeStation": {
+        "type": "object",
+        "properties": {
+          "StationUID": {
+            "type": "string",
+            "description": "站點唯一識別代碼",
+            "nullable": true
+          },
+          "StationID": {
+            "type": "string",
+            "description": "站點代碼",
+            "nullable": true
+          },
+          "StationName": {
+            "type": "string",
+            "description": "站點名稱",
+            "nullable": true
+          },
+          "PositionLat": {
+            "type": "number",
+            "description": "坐標緯度",
+            "format": "double",
+            "nullable": true
+          },
+          "PositionLon": {
+            "type": "number",
+            "description": "坐標經度",
+            "format": "double",
+            "nullable": true
+          }
+        },
+        "additionalProperties": false,
+        "description": "關聯公共自行車租借站點資料"
+      },
+      "RelatedMetroStation": {
+        "type": "object",
+        "properties": {
+          "StationUID": {
+            "type": "string",
+            "description": "車站唯一識別代碼",
+            "nullable": true
+          },
+          "StationID": {
+            "type": "string",
+            "description": "車站代碼",
+            "nullable": true
+          },
+          "StationName": {
+            "type": "string",
+            "description": "車站名稱",
+            "nullable": true
+          },
+          "PositionLat": {
+            "type": "number",
+            "description": "坐標緯度",
+            "format": "double",
+            "nullable": true
+          },
+          "PositionLon": {
+            "type": "number",
+            "description": "坐標經度",
+            "format": "double",
+            "nullable": true
+          }
+        },
+        "additionalProperties": false,
+        "description": "關聯捷運車站資料"
+      },
+      "RelatedRailStation": {
+        "type": "object",
+        "properties": {
+          "StationUID": {
+            "type": "string",
+            "description": "車站唯一識別代碼",
+            "nullable": true
+          },
+          "StationID": {
+            "type": "string",
+            "description": "車站代碼",
+            "nullable": true
+          },
+          "StationName": {
+            "type": "string",
+            "description": "車站名稱",
+            "nullable": true
+          },
+          "PositionLat": {
+            "type": "number",
+            "description": "坐標緯度",
+            "format": "double",
+            "nullable": true
+          },
+          "PositionLon": {
+            "type": "number",
+            "description": "坐標經度",
+            "format": "double",
+            "nullable": true
+          }
+        },
+        "additionalProperties": false,
+        "description": "關聯軌道車站資料"
+      },
+      "RelatedAirport": {
+        "type": "object",
+        "properties": {
+          "AirportID": {
+            "type": "string",
+            "description": "機場代碼",
+            "nullable": true
+          },
+          "AirportName": {
+            "type": "string",
+            "description": "機場名稱",
+            "nullable": true
+          },
+          "PositionLat": {
+            "type": "number",
+            "description": "坐標緯度",
+            "format": "double",
+            "nullable": true
+          },
+          "PositionLon": {
+            "type": "number",
+            "description": "坐標經度",
+            "format": "double",
+            "nullable": true
+          }
+        },
+        "additionalProperties": false,
+        "description": "關聯機場資料"
+      },
+      "RelatedPort": {
+        "type": "object",
+        "properties": {
+          "PortID": {
+            "type": "string",
+            "description": "港口代碼",
+            "nullable": true
+          },
+          "PortName": {
+            "type": "string",
+            "description": "港口名稱",
+            "nullable": true
+          },
+          "PositionLat": {
+            "type": "number",
+            "description": "坐標緯度",
+            "format": "double",
+            "nullable": true
+          },
+          "PositionLon": {
+            "type": "number",
+            "description": "坐標經度",
+            "format": "double",
+            "nullable": true
+          }
+        },
+        "additionalProperties": false,
+        "description": "關聯港口資料"
+      },
+      "RelatedCarPark": {
+        "type": "object",
+        "properties": {
+          "CarParkID": {
+            "type": "string",
+            "description": "停車場代碼",
+            "nullable": true
+          },
+          "CarParkName": {
+            "type": "string",
+            "description": "停車場名稱",
+            "nullable": true
+          },
+          "PositionLat": {
+            "type": "number",
+            "description": "坐標緯度",
+            "format": "double",
+            "nullable": true
+          },
+          "PositionLon": {
+            "type": "number",
+            "description": "坐標經度",
+            "format": "double",
+            "nullable": true
+          }
+        },
+        "additionalProperties": false,
+        "description": "關聯停車場資料"
+      },
+      "Attraction": {
+        "type": "object",
+        "properties": {
+          "AttractionID": {
+            "type": "string",
+            "description": "景點唯一識別碼",
+            "nullable": true
+          },
+          "AttractionName": {
+            "type": "string",
+            "description": "景點名稱",
+            "nullable": true
+          },
+          "AlternateNames": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            },
+            "description": "別名",
+            "nullable": true
+          },
+          "Description": {
+            "type": "string",
+            "description": "景點文字描述",
+            "nullable": true
+          },
+          "PositionLat": {
+            "type": "number",
+            "description": "景點坐標緯度",
+            "format": "double"
+          },
+          "PositionLon": {
+            "type": "number",
+            "description": "景點坐標經度",
+            "format": "double"
+          },
+          "Geometry": {
+            "type": "string",
+            "description": "面形空間資料",
+            "nullable": true
+          },
+          "AttractionClasses": {
+            "type": "array",
+            "items": {
+              "type": "integer",
+              "format": "int32"
+            },
+            "description": "景點類型",
+            "nullable": true
+          },
+          "PostalAddress": {
+            "$ref": "#/components/schemas/PostalAddressType"
+          },
+          "Telephones": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/TelephoneType"
+            },
+            "description": "聯絡電話",
+            "nullable": true
+          },
+          "Images": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/ImageType"
+            },
+            "description": "影像/照片",
+            "nullable": true
+          },
+          "Organizations": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/OrganizationType"
+            },
+            "description": "組織/單位",
+            "nullable": true
+          },
+          "ServiceTimeInfo": {
+            "type": "string",
+            "description": "營運時間文字描述",
+            "nullable": true
+          },
+          "TrafficInfo": {
+            "type": "string",
+            "description": "交通資訊文字描述",
+            "nullable": true
+          },
+          "ParkingInfo": {
+            "type": "string",
+            "description": "停車場資訊文字描述",
+            "nullable": true
+          },
+          "Facilities": {
+            "type": "array",
+            "items": {
+              "type": "integer",
+              "format": "int32"
+            },
+            "description": "提供設施資訊",
+            "nullable": true
+          },
+          "ServiceStatus": {
+            "type": "integer",
+            "description": "營運狀態",
+            "format": "int32",
+            "nullable": true
+          },
+          "IsPublicAccess": {
+            "type": "integer",
+            "description": "是否為向公眾開放場域",
+            "format": "int32",
+            "nullable": true
+          },
+          "IsAccessibleForFree": {
+            "type": "integer",
+            "description": "免費入場",
+            "format": "int32",
+            "nullable": true
+          },
+          "FeeInfo": {
+            "type": "string",
+            "description": "收費資訊文字描述",
+            "nullable": true
+          },
+          "PaymentMethods": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            },
+            "description": "付款方式",
+            "nullable": true
+          },
+          "LocatedCities": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/LocatedCityType"
+            },
+            "description": "關聯區域所在縣市鄉鎮",
+            "nullable": true
+          },
+          "WebsiteUrl": {
+            "type": "string",
+            "description": "官網網址",
+            "nullable": true
+          },
+          "ReservationURLs": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            },
+            "description": "預約網站資訊",
+            "nullable": true
+          },
+          "MapURLs": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            },
+            "description": "簡圖或地圖網址",
+            "nullable": true
+          },
+          "SameAsURLs": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            },
+            "description": "同義於…網址資訊",
+            "nullable": true
+          },
+          "SocialMediaURLs": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/SocialMediaUrlType"
+            },
+            "description": "社群媒體資訊",
+            "nullable": true
+          },
+          "VisitDuration": {
+            "type": "integer",
+            "description": "建議停留時間(分鐘)",
+            "format": "int32",
+            "nullable": true
+          },
+          "AssetsClass": {
+            "type": "integer",
+            "description": "文化資產級別",
+            "format": "int32",
+            "nullable": true
+          },
+          "Tags": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            },
+            "description": "標籤",
+            "nullable": true
+          },
+          "Remarks": {
+            "type": "string",
+            "description": "備註資訊",
+            "nullable": true
+          },
+          "UpdateTime": {
+            "type": "string",
+            "description": "資料更新日期時間",
+            "format": "date-time"
+          }
+        },
+        "additionalProperties": false,
+        "description": "景點基本資料"
+      },
+      "Attraction0": {
+        "$ref": "#/components/schemas/Attraction"
+      },
+      "PostalAddressType": {
+        "type": "object",
+        "properties": {
+          "City": {
+            "type": "string",
+            "description": "縣市名稱",
+            "nullable": true
+          },
+          "CityCode": {
+            "type": "string",
+            "description": "縣市代碼",
+            "nullable": true
+          },
+          "Town": {
+            "type": "string",
+            "description": "行政區(鄉鎮區)名稱",
+            "nullable": true
+          },
+          "TownCode": {
+            "type": "string",
+            "description": "行政區(鄉鎮區)代碼",
+            "nullable": true
+          },
+          "ZipCode": {
+            "type": "string",
+            "description": "郵遞區號",
+            "nullable": true
+          },
+          "StreetAddress": {
+            "type": "string",
+            "description": "街道名稱",
+            "nullable": true
+          }
+        },
+        "additionalProperties": false,
+        "description": "郵政地址資料"
+      },
+      "TelephoneType": {
+        "type": "object",
+        "properties": {
+          "Tel": {
+            "type": "string",
+            "description": "市話",
+            "nullable": true
+          },
+          "Ext": {
+            "type": "integer",
+            "description": "分機",
+            "format": "int32",
+            "nullable": true
+          }
+        },
+        "additionalProperties": false,
+        "description": "聯絡電話資料"
+      },
+      "ImageType": {
+        "type": "object",
+        "properties": {
+          "Name": {
+            "type": "string",
+            "description": "名稱",
+            "nullable": true
+          },
+          "Description": {
+            "type": "string",
+            "description": "文字描述",
+            "nullable": true
+          },
+          "URL": {
+            "type": "string",
+            "description": "網址",
+            "nullable": true
+          },
+          "Width": {
+            "type": "integer",
+            "description": "寬度",
+            "format": "int32",
+            "nullable": true
+          },
+          "Height": {
+            "type": "integer",
+            "description": "高度",
+            "format": "int32",
+            "nullable": true
+          },
+          "Keywords": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            },
+            "description": "關鍵字",
+            "nullable": true
+          }
+        },
+        "additionalProperties": false,
+        "description": "影像資料"
+      },
+      "OrganizationType": {
+        "type": "object",
+        "properties": {
+          "Name": {
+            "type": "string",
+            "description": "組織/單位名稱",
+            "nullable": true
+          },
+          "Class": {
+            "type": "string",
+            "description": "組織/單位類型",
+            "nullable": true
+          },
+          "TaxCode": {
+            "type": "string",
+            "description": "營利事業暨扣繳單位統一編號",
+            "nullable": true
+          },
+          "AgencyCode": {
+            "type": "string",
+            "description": "機關代碼",
+            "nullable": true
+          },
+          "URL": {
+            "type": "string",
+            "description": "網址",
+            "nullable": true
+          },
+          "Telephones": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/TelephoneType"
+            },
+            "description": "聯絡電話",
+            "nullable": true
+          },
+          "MobilePhones": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            },
+            "description": "行動電話",
+            "nullable": true
+          },
+          "Faxes": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            },
+            "description": "傳真電話",
+            "nullable": true
+          },
+          "Email": {
+            "type": "string",
+            "description": "電子信箱",
+            "nullable": true
+          }
+        },
+        "additionalProperties": false,
+        "description": "組織/單位資料"
+      },
+      "LocatedCityType": {
+        "type": "object",
+        "properties": {
+          "Name": {
+            "type": "string",
+            "description": "名稱",
+            "nullable": true
+          },
+          "Class": {
+            "type": "integer",
+            "description": "類型",
+            "format": "int32"
+          },
+          "City": {
+            "type": "string",
+            "description": "縣市名稱",
+            "nullable": true
+          },
+          "CityCode": {
+            "type": "string",
+            "description": "縣市代碼",
+            "nullable": true
+          },
+          "Town": {
+            "type": "string",
+            "description": "行政區(鄉鎮區)名稱",
+            "nullable": true
+          },
+          "TownCode": {
+            "type": "string",
+            "description": "行政區(鄉鎮區)代碼",
+            "nullable": true
+          }
+        },
+        "additionalProperties": false,
+        "description": "關聯區域所在縣市資料"
+      },
+      "SocialMediaUrlType": {
+        "type": "object",
+        "properties": {
+          "Name": {
+            "type": "string",
+            "description": "名稱",
+            "nullable": true
+          },
+          "Description": {
+            "type": "string",
+            "description": "文字描述",
+            "nullable": true
+          },
+          "Class": {
+            "type": "string",
+            "description": "類型",
+            "nullable": true
+          },
+          "URL": {
+            "type": "string",
+            "description": "網址",
+            "nullable": true
+          },
+          "Keywords": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            },
+            "description": "關鍵字",
+            "nullable": true
+          },
+          "Tags": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            },
+            "description": "標籤",
+            "nullable": true
+          }
+        },
+        "additionalProperties": false,
+        "description": "社群媒體資料"
+      },
+      "AttractionServiceTime": {
+        "type": "object",
+        "properties": {
+          "AttractionID": {
+            "type": "string",
+            "description": "景點唯一識別碼",
+            "nullable": true
+          },
+          "AttractionName": {
+            "type": "string",
+            "description": "景點名稱",
+            "nullable": true
+          },
+          "ServiceTimes": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/TimePeriodType"
+            },
+            "description": "營運時間資訊",
+            "nullable": true
+          },
+          "UpdateTime": {
+            "type": "string",
+            "description": "資料更新日期時間",
+            "format": "date-time"
+          }
+        },
+        "additionalProperties": false,
+        "description": "景點營運時間資料"
+      },
+      "AttractionServiceTime1": {
+        "$ref": "#/components/schemas/AttractionServiceTime"
+      },
+      "TimePeriodType": {
+        "type": "object",
+        "properties": {
+          "Name": {
+            "type": "string",
+            "description": "名稱",
+            "nullable": true
+          },
+          "Description": {
+            "type": "string",
+            "description": "文字描述",
+            "nullable": true
+          },
+          "ServiceDays": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            },
+            "description": "營運服務日",
+            "nullable": true
+          },
+          "StartTime": {
+            "type": "string",
+            "description": "起始時間",
+            "nullable": true
+          },
+          "EndTime": {
+            "type": "string",
+            "description": "結束時間",
+            "nullable": true
+          },
+          "EffectiveDate": {
+            "type": "string",
+            "description": "有效期限起始",
+            "nullable": true
+          },
+          "ExpireDate": {
+            "type": "string",
+            "description": "有效期限結束",
+            "nullable": true
+          }
+        },
+        "additionalProperties": false,
+        "description": "時段說明資料"
+      },
+      "AttractionRelation": {
+        "type": "object",
+        "properties": {
+          "AttractionID": {
+            "type": "string",
+            "description": "景點唯一識別碼",
+            "nullable": true
+          },
+          "AttractionName": {
+            "type": "string",
+            "description": "景點名稱",
+            "nullable": true
+          },
+          "PositionLat": {
+            "type": "number",
+            "description": "景點坐標緯度",
+            "format": "double"
+          },
+          "PositionLon": {
+            "type": "number",
+            "description": "景點坐標經度",
+            "format": "double"
+          },
+          "UpdateTime": {
+            "type": "string",
+            "description": "資料更新日期時間",
+            "format": "date-time"
+          },
+          "RelatedAttractions": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/RelatedAttraction"
+            },
+            "description": "關聯景點資訊",
+            "nullable": true
+          },
+          "RelatedRestaurants": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/RelatedRestaurant"
+            },
+            "description": "關聯餐飲店家資訊",
+            "nullable": true
+          },
+          "RelatedHotels": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/RelatedHotel"
+            },
+            "description": "關聯旅館民宿資訊",
+            "nullable": true
+          },
+          "RelatedTourismServiceSites": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/RelatedTourismServiceSite"
+            },
+            "description": "關聯旅遊服務站點資訊",
+            "nullable": true
+          },
+          "RelatedTrails": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/RelatedTrail"
+            },
+            "description": "關聯步道資訊",
+            "nullable": true
+          },
+          "RelatedCyclingRoutes": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/RelatedCyclingRoute"
+            },
+            "description": "關聯自行車道資訊",
+            "nullable": true
+          },
+          "RelatedEvents": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/RelatedEvent"
+            },
+            "description": "關聯活動資訊",
+            "nullable": true
+          },
+          "RelatedBusStations": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/RelatedBusStation"
+            },
+            "description": "關聯市區公車站位資訊",
+            "nullable": true
+          },
+          "RelatedBusStops": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/RelatedBusStop"
+            },
+            "description": "關聯市區公車站牌資訊",
+            "nullable": true
+          },
+          "RelatedInterCityBusStations": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/RelatedInterCityBusStation"
+            },
+            "description": "關聯公路客運站位資訊",
+            "nullable": true
+          },
+          "RelatedInterCityBusStops": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/RelatedInterCityBusStop"
+            },
+            "description": "關聯公路客運站牌資訊",
+            "nullable": true
+          },
+          "RelatedBikeStations": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/RelatedBikeStation"
+            },
+            "description": "關聯公共自行車租借站位資訊",
+            "nullable": true
+          },
+          "RelatedMetroStations": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/RelatedMetroStation"
+            },
+            "description": "關聯捷運車站資訊",
+            "nullable": true
+          },
+          "RelatedThsrRailStations": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/RelatedRailStation"
+            },
+            "description": "關聯高鐵車站資訊",
+            "nullable": true
+          },
+          "RelatedTraRailStations": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/RelatedRailStation"
+            },
+            "description": "關聯臺鐵車站資訊",
+            "nullable": true
+          },
+          "RelatedAirports": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/RelatedAirport"
+            },
+            "description": "關聯機場資訊",
+            "nullable": true
+          },
+          "RelatedPorts": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/RelatedPort"
+            },
+            "description": "關聯港口資訊",
+            "nullable": true
+          },
+          "RelatedCityCarParks": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/RelatedCarPark"
+            },
+            "description": "關聯縣市停車場資訊",
+            "nullable": true
+          },
+          "RelatedTourismCarParks": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/RelatedCarPark"
+            },
+            "description": "關聯觀光景點停車場資訊",
+            "nullable": true
+          },
+          "RelatedPortCarParks": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/RelatedCarPark"
+            },
+            "description": "關聯港口停車場資訊",
+            "nullable": true
+          },
+          "RelatedRailStationCarParks": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/RelatedCarPark"
+            },
+            "description": "關聯軌道車站停車場資訊",
+            "nullable": true
+          },
+          "RelatedFreewayCarParks": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/RelatedCarPark"
+            },
+            "description": "關聯高速公路服務區停車場資訊",
+            "nullable": true
+          },
+          "RelatedAirportCarParks": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/RelatedCarPark"
+            },
+            "description": "關聯機場停車場資訊",
+            "nullable": true
+          }
+        },
+        "additionalProperties": false,
+        "description": "景點關聯資料"
+      },
+      "AttractionFee": {
+        "type": "object",
+        "properties": {
+          "AttractionID": {
+            "type": "string",
+            "description": "景點唯一識別碼",
+            "nullable": true
+          },
+          "AttractionName": {
+            "type": "string",
+            "description": "景點名稱",
+            "nullable": true
+          },
+          "Fees": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/FeeType"
+            },
+            "description": "收費資訊",
+            "nullable": true
+          },
+          "UpdateTime": {
+            "type": "string",
+            "description": "資料更新日期時間",
+            "format": "date-time"
+          }
+        },
+        "additionalProperties": false,
+        "description": "景點收費資料"
+      },
+      "AttractionFee2": {
+        "$ref": "#/components/schemas/AttractionFee"
+      },
+      "FeeType": {
+        "type": "object",
+        "properties": {
+          "Name": {
+            "type": "string",
+            "description": "名稱",
+            "nullable": true
+          },
+          "Price": {
+            "type": "integer",
+            "description": "價格",
+            "format": "int32"
+          },
+          "Description": {
+            "type": "string",
+            "description": "文字描述",
+            "nullable": true
+          },
+          "URL": {
+            "type": "string",
+            "description": "網址",
+            "nullable": true
+          }
+        },
+        "additionalProperties": false,
+        "description": "收費說明資料"
+      },
+      "Restaurant": {
+        "type": "object",
+        "properties": {
+          "RestaurantID": {
+            "type": "string",
+            "description": "餐飲店家唯一識別碼",
+            "nullable": true
+          },
+          "RestaurantName": {
+            "type": "string",
+            "description": "餐飲店家名稱",
+            "nullable": true
+          },
+          "AlternateNames": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            },
+            "description": "別名",
+            "nullable": true
+          },
+          "Description": {
+            "type": "string",
+            "description": "餐飲店家文字描述",
+            "nullable": true
+          },
+          "PositionLat": {
+            "type": "number",
+            "description": "餐飲店家坐標緯度",
+            "format": "double"
+          },
+          "PositionLon": {
+            "type": "number",
+            "description": "餐飲店家坐標經度",
+            "format": "double"
+          },
+          "Geometry": {
+            "type": "string",
+            "description": "面形空間資料",
+            "nullable": true
+          },
+          "CuisineClasses": {
+            "type": "array",
+            "items": {
+              "type": "integer",
+              "format": "int32"
+            },
+            "description": "餐飲店家類型",
+            "nullable": true
+          },
+          "PostalAddress": {
+            "$ref": "#/components/schemas/PostalAddressType"
+          },
+          "Telephones": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/TelephoneType"
+            },
+            "description": "聯絡電話",
+            "nullable": true
+          },
+          "Images": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/ImageType"
+            },
+            "description": "影像/照片",
+            "nullable": true
+          },
+          "Organizations": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/OrganizationType"
+            },
+            "description": "組織/單位",
+            "nullable": true
+          },
+          "ServiceTimeInfo": {
+            "type": "string",
+            "description": "營運時間文字描述",
+            "nullable": true
+          },
+          "TrafficInfo": {
+            "type": "string",
+            "description": "交通資訊文字描述",
+            "nullable": true
+          },
+          "ParkingInfo": {
+            "type": "string",
+            "description": "停車場資訊文字描述",
+            "nullable": true
+          },
+          "Facilities": {
+            "type": "array",
+            "items": {
+              "type": "integer",
+              "format": "int32"
+            },
+            "description": "提供設施資訊",
+            "nullable": true
+          },
+          "ServiceStatus": {
+            "type": "integer",
+            "description": "營運狀態",
+            "format": "int32",
+            "nullable": true
+          },
+          "PaymentMethods": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            },
+            "description": "付款方式",
+            "nullable": true
+          },
+          "LocatedCities": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/LocatedCityType"
+            },
+            "description": "關聯區域所在縣市鄉鎮",
+            "nullable": true
+          },
+          "WebsiteUrl": {
+            "type": "string",
+            "description": "官網網址",
+            "nullable": true
+          },
+          "ReservationURLs": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            },
+            "description": "預約網站資訊",
+            "nullable": true
+          },
+          "MapURLs": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            },
+            "description": "簡圖或地圖網址",
+            "nullable": true
+          },
+          "SameAsURLs": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            },
+            "description": "同義於…網址資訊",
+            "nullable": true
+          },
+          "SocialMediaURLs": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/SocialMediaUrlType"
+            },
+            "description": "社群媒體資訊",
+            "nullable": true
+          },
+          "RestaurantFeatures": {
+            "type": "array",
+            "items": {
+              "type": "integer",
+              "format": "int32"
+            },
+            "description": "餐飲店家特色資料",
+            "nullable": true
+          },
+          "Remarks": {
+            "type": "string",
+            "description": "備註資訊",
+            "nullable": true
+          },
+          "UpdateTime": {
+            "type": "string",
+            "description": "資料更新日期時間",
+            "format": "date-time"
+          }
+        },
+        "additionalProperties": false,
+        "description": "餐飲店家基本資料"
+      },
+      "Restaurant3": {
+        "$ref": "#/components/schemas/Restaurant"
+      },
+      "RestaurantServiceTime": {
+        "type": "object",
+        "properties": {
+          "RestaurantID": {
+            "type": "string",
+            "description": "餐飲店家唯一識別碼",
+            "nullable": true
+          },
+          "RestaurantName": {
+            "type": "string",
+            "description": "餐飲店家名稱",
+            "nullable": true
+          },
+          "ServiceTimes": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/TimePeriodType"
+            },
+            "description": "營運時間資訊",
+            "nullable": true
+          },
+          "UpdateTime": {
+            "type": "string",
+            "description": "資料更新日期時間",
+            "format": "date-time"
+          }
+        },
+        "additionalProperties": false,
+        "description": "餐飲店家營運時間資料"
+      },
+      "RestaurantServiceTime4": {
+        "$ref": "#/components/schemas/RestaurantServiceTime"
+      },
+      "Hotel": {
+        "type": "object",
+        "properties": {
+          "HotelID": {
+            "type": "string",
+            "description": "旅館民宿唯一識別碼",
+            "nullable": true
+          },
+          "HotelLicenseNumber": {
+            "type": "string",
+            "description": "旅館民宿證號",
+            "nullable": true
+          },
+          "HotelName": {
+            "type": "string",
+            "description": "旅館民宿名稱",
+            "nullable": true
+          },
+          "AlternateNames": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            },
+            "description": "別名",
+            "nullable": true
+          },
+          "Description": {
+            "type": "string",
+            "description": "旅館民宿文字描述",
+            "nullable": true
+          },
+          "PositionLat": {
+            "type": "number",
+            "description": "旅館民宿坐標緯度",
+            "format": "double"
+          },
+          "PositionLon": {
+            "type": "number",
+            "description": "旅館民宿坐標經度",
+            "format": "double"
+          },
+          "Geometry": {
+            "type": "string",
+            "description": "面形空間資料",
+            "nullable": true
+          },
+          "HotelClasses": {
+            "type": "array",
+            "items": {
+              "type": "integer",
+              "format": "int32"
+            },
+            "description": "旅館民宿類型",
+            "nullable": true
+          },
+          "HotelStars": {
+            "type": "integer",
+            "description": "星級旅館",
+            "format": "int32",
+            "nullable": true
+          },
+          "TaiwanHost": {
+            "type": "integer",
+            "description": "好客民宿",
+            "format": "int32",
+            "nullable": true
+          },
+          "HotelCertificationMarks": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/HotelCertificationMarkType"
+            },
+            "description": "旅館民宿標章/認證資料",
+            "nullable": true
+          },
+          "PostalAddress": {
+            "$ref": "#/components/schemas/PostalAddressType"
+          },
+          "Telephones": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/TelephoneType"
+            },
+            "description": "聯絡電話",
+            "nullable": true
+          },
+          "Images": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/ImageType"
+            },
+            "description": "影像/照片",
+            "nullable": true
+          },
+          "Organizations": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/OrganizationType"
+            },
+            "description": "組織/單位",
+            "nullable": true
+          },
+          "ServiceTimeInfo": {
+            "type": "string",
+            "description": "營運時間文字描述",
+            "nullable": true
+          },
+          "TrafficInfo": {
+            "type": "string",
+            "description": "交通資訊文字描述",
+            "nullable": true
+          },
+          "ParkingInfo": {
+            "type": "string",
+            "description": "停車場資訊文字描述",
+            "nullable": true
+          },
+          "Facilities": {
+            "type": "array",
+            "items": {
+              "type": "integer",
+              "format": "int32"
+            },
+            "description": "提供設施資訊",
+            "nullable": true
+          },
+          "ServiceStatus": {
+            "type": "integer",
+            "description": "營運狀態",
+            "format": "int32",
+            "nullable": true
+          },
+          "PaymentMethods": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            },
+            "description": "付款方式",
+            "nullable": true
+          },
+          "LocatedCities": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/LocatedCityType"
+            },
+            "description": "關聯區域所在縣市鄉鎮",
+            "nullable": true
+          },
+          "WebsiteUrl": {
+            "type": "string",
+            "description": "官網網址",
+            "nullable": true
+          },
+          "ReservationURLs": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            },
+            "description": "預約網站資訊",
+            "nullable": true
+          },
+          "MapURLs": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            },
+            "description": "簡圖或地圖網址",
+            "nullable": true
+          },
+          "SameAsURLs": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            },
+            "description": "同義於…網址資訊",
+            "nullable": true
+          },
+          "SocialMediaURLs": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/SocialMediaUrlType"
+            },
+            "description": "社群媒體資訊",
+            "nullable": true
+          },
+          "RoomInfo": {
+            "type": "string",
+            "description": "房型、價目及數量",
+            "nullable": true
+          },
+          "ServiceInfo": {
+            "type": "string",
+            "description": "旅館民宿服務內容",
+            "nullable": true
+          },
+          "TotalRooms": {
+            "type": "integer",
+            "description": "房間數",
+            "format": "int32",
+            "nullable": true
+          },
+          "LowestPrice": {
+            "type": "integer",
+            "description": "參考最低房價",
+            "format": "int32",
+            "nullable": true
+          },
+          "CeilingPrice": {
+            "type": "integer",
+            "description": "參考最高房價",
+            "format": "int32",
+            "nullable": true
+          },
+          "TotalCapacity": {
+            "type": "integer",
+            "description": "總容納人數",
+            "format": "int32",
+            "nullable": true
+          },
+          "AccessibleRooms": {
+            "type": "integer",
+            "description": "無障礙客房數",
+            "format": "int32",
+            "nullable": true
+          },
+          "Toilets": {
+            "type": "integer",
+            "description": "公共廁所數",
+            "format": "int32",
+            "nullable": true
+          },
+          "LiftingEquipments": {
+            "type": "integer",
+            "description": "昇降設備數",
+            "format": "int32",
+            "nullable": true
+          },
+          "ParkingSpaces": {
+            "type": "integer",
+            "description": "停車車位數",
+            "format": "int32",
+            "nullable": true
+          },
+          "CheckTimes": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/CheckTimeType"
+            },
+            "description": "入住及退房時間說明",
+            "nullable": true
+          },
+          "Remarks": {
+            "type": "string",
+            "description": "備註資訊",
+            "nullable": true
+          },
+          "UpdateTime": {
+            "type": "string",
+            "description": "資料更新日期時間",
+            "format": "date-time"
+          }
+        },
+        "additionalProperties": false,
+        "description": "旅館民宿基本資料"
+      },
+      "Hotel5": {
+        "$ref": "#/components/schemas/Hotel"
+      },
+      "HotelCertificationMarkType": {
+        "type": "object",
+        "properties": {
+          "HotelCertificationMarkClass": {
+            "type": "integer",
+            "description": "旅館民宿標章/認證類型代碼",
+            "format": "int32",
+            "nullable": true
+          },
+          "HotelCertificationMarkNumber": {
+            "type": "string",
+            "description": "旅館民宿標章/認證證號或編號",
+            "nullable": true
+          },
+          "HotelCertificationMarkLevel": {
+            "type": "string",
+            "description": "旅館民宿標章/認證等級",
+            "nullable": true
+          }
+        },
+        "additionalProperties": false,
+        "description": "旅館民宿標章/認證資料"
+      },
+      "CheckTimeType": {
+        "type": "object",
+        "properties": {
+          "Name": {
+            "type": "string",
+            "description": "名稱",
+            "nullable": true
+          },
+          "Description": {
+            "type": "string",
+            "description": "文字描述",
+            "nullable": true
+          },
+          "ServiceDays": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            },
+            "description": "營運服務日",
+            "nullable": true
+          },
+          "CheckInTime": {
+            "type": "string",
+            "description": "入住時間",
+            "nullable": true
+          },
+          "CheckOutTime": {
+            "type": "string",
+            "description": "退房時間",
+            "nullable": true
+          },
+          "EffectiveDate": {
+            "type": "string",
+            "description": "有效期限起始",
+            "format": "date-time",
+            "nullable": true
+          },
+          "ExpireDate": {
+            "type": "string",
+            "description": "有效期限結束",
+            "format": "date-time",
+            "nullable": true
+          }
+        },
+        "additionalProperties": false,
+        "description": "入住及退房時間說明資料"
+      },
+      "TourismServiceSite": {
+        "type": "object",
+        "properties": {
+          "TourismServiceSiteID": {
+            "type": "string",
+            "description": "旅遊服務站點唯一識別碼",
+            "nullable": true
+          },
+          "TourismServiceSiteName": {
+            "type": "string",
+            "description": "旅遊服務站點名稱",
+            "nullable": true
+          },
+          "AlternateNames": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            },
+            "description": "別名",
+            "nullable": true
+          },
+          "Description": {
+            "type": "string",
+            "description": "旅遊服務站點文字描述",
+            "nullable": true
+          },
+          "PositionLat": {
+            "type": "number",
+            "description": "旅遊服務站點坐標緯度",
+            "format": "double"
+          },
+          "PositionLon": {
+            "type": "number",
+            "description": "旅遊服務站點坐標經度",
+            "format": "double"
+          },
+          "Geometry": {
+            "type": "string",
+            "description": "面形空間資料",
+            "nullable": true
+          },
+          "TourismServiceSiteClasses": {
+            "type": "array",
+            "items": {
+              "type": "integer",
+              "format": "int32"
+            },
+            "description": "旅遊服務站點類型",
+            "nullable": true
+          },
+          "PostalAddress": {
+            "$ref": "#/components/schemas/PostalAddressType"
+          },
+          "Telephones": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/TelephoneType"
+            },
+            "description": "聯絡電話",
+            "nullable": true
+          },
+          "Images": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/ImageType"
+            },
+            "description": "影像/照片",
+            "nullable": true
+          },
+          "Organizations": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/OrganizationType"
+            },
+            "description": "組織/單位",
+            "nullable": true
+          },
+          "ServiceTimeInfo": {
+            "type": "string",
+            "description": "營運時間文字描述",
+            "nullable": true
+          },
+          "TrafficInfo": {
+            "type": "string",
+            "description": "交通資訊文字描述",
+            "nullable": true
+          },
+          "ParkingInfo": {
+            "type": "string",
+            "description": "停車場資訊文字描述",
+            "nullable": true
+          },
+          "Facilities": {
+            "type": "array",
+            "items": {
+              "type": "integer",
+              "format": "int32"
+            },
+            "description": "提供設施資訊",
+            "nullable": true
+          },
+          "ServiceStatus": {
+            "type": "integer",
+            "description": "營運狀態",
+            "format": "int32",
+            "nullable": true
+          },
+          "PaymentMethods": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            },
+            "description": "付款方式",
+            "nullable": true
+          },
+          "LocatedCities": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/LocatedCityType"
+            },
+            "description": "關聯區域所在縣市鄉鎮",
+            "nullable": true
+          },
+          "WebsiteUrl": {
+            "type": "string",
+            "description": "官網網址",
+            "nullable": true
+          },
+          "ReservationURLs": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            },
+            "description": "預約網站資訊",
+            "nullable": true
+          },
+          "MapURLs": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            },
+            "description": "簡圖或地圖網址",
+            "nullable": true
+          },
+          "SameAsURLs": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            },
+            "description": "同義於…網址資訊",
+            "nullable": true
+          },
+          "SocialMediaURLs": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/SocialMediaUrlType"
+            },
+            "description": "社群媒體資訊",
+            "nullable": true
+          },
+          "TourismServiceSiteFeatures": {
+            "type": "array",
+            "items": {
+              "type": "integer",
+              "format": "int32"
+            },
+            "description": "旅遊服務站點之服務特色",
+            "nullable": true
+          },
+          "Remarks": {
+            "type": "string",
+            "description": "備註資訊",
+            "nullable": true
+          },
+          "UpdateTime": {
+            "type": "string",
+            "description": "資料更新日期時間",
+            "format": "date-time"
+          }
+        },
+        "additionalProperties": false,
+        "description": "旅遊服務站點基本資料"
+      },
+      "TourismServiceSite6": {
+        "$ref": "#/components/schemas/TourismServiceSite"
+      },
+      "Trail": {
+        "type": "object",
+        "properties": {
+          "TrailID": {
+            "type": "string",
+            "description": "步道唯一識別碼",
+            "nullable": true
+          },
+          "TrailName": {
+            "type": "string",
+            "description": "步道名稱",
+            "nullable": true
+          },
+          "AlternateNames": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            },
+            "description": "別名",
+            "nullable": true
+          },
+          "Description": {
+            "type": "string",
+            "description": "步道文字描述",
+            "nullable": true
+          },
+          "Geometry": {
+            "type": "string",
+            "description": "步道線形空間資料",
+            "nullable": true
+          },
+          "TrailClass": {
+            "type": "integer",
+            "description": "步道類型",
+            "format": "int32",
+            "nullable": true
+          },
+          "PostalAddress": {
+            "$ref": "#/components/schemas/PostalAddressType"
+          },
+          "Telephones": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/TelephoneType"
+            },
+            "description": "聯絡電話",
+            "nullable": true
+          },
+          "Images": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/ImageType"
+            },
+            "description": "影像/照片",
+            "nullable": true
+          },
+          "Organizations": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/OrganizationType"
+            },
+            "description": "組織/單位",
+            "nullable": true
+          },
+          "ServiceTimeInfo": {
+            "type": "string",
+            "description": "營運時間文字描述",
+            "nullable": true
+          },
+          "TrafficInfo": {
+            "type": "string",
+            "description": "交通資訊文字描述",
+            "nullable": true
+          },
+          "ParkingInfo": {
+            "type": "string",
+            "description": "停車場資訊文字描述",
+            "nullable": true
+          },
+          "Facilities": {
+            "type": "array",
+            "items": {
+              "type": "integer",
+              "format": "int32"
+            },
+            "description": "提供設施資訊",
+            "nullable": true
+          },
+          "ServiceStatus": {
+            "type": "integer",
+            "description": "營運狀態",
+            "format": "int32",
+            "nullable": true
+          },
+          "IsPublicAccess": {
+            "type": "integer",
+            "description": "是否為向公眾開放場域",
+            "format": "int32",
+            "nullable": true
+          },
+          "IsAccessibleForFree": {
+            "type": "integer",
+            "description": "免費入場",
+            "format": "int32",
+            "nullable": true
+          },
+          "FeeInfo": {
+            "type": "string",
+            "description": "收費資訊文字描述",
+            "nullable": true
+          },
+          "PaymentMethods": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            },
+            "description": "付款方式",
+            "nullable": true
+          },
+          "LocatedCities": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/LocatedCityType"
+            },
+            "description": "關聯區域所在縣市鄉鎮",
+            "nullable": true
+          },
+          "WebsiteUrl": {
+            "type": "string",
+            "description": "官網網址",
+            "nullable": true
+          },
+          "ReservationURLs": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            },
+            "description": "預約網站資訊",
+            "nullable": true
+          },
+          "MapURLs": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            },
+            "description": "簡圖或地圖網址",
+            "nullable": true
+          },
+          "SameAsURLs": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            },
+            "description": "同義於…網址資訊",
+            "nullable": true
+          },
+          "SocialMediaURLs": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/SocialMediaUrlType"
+            },
+            "description": "社群媒體資訊",
+            "nullable": true
+          },
+          "VisitDuration": {
+            "type": "integer",
+            "description": "步道步行時間(分鐘)",
+            "format": "int32",
+            "nullable": true
+          },
+          "IsCircle": {
+            "type": "integer",
+            "description": "是否為環型步道",
+            "format": "int32",
+            "nullable": true
+          },
+          "TrailLength": {
+            "type": "number",
+            "description": "步道長度(公尺)",
+            "format": "double",
+            "nullable": true
+          },
+          "TrailHeight": {
+            "type": "number",
+            "description": "海拔高度(公尺)",
+            "format": "double",
+            "nullable": true
+          },
+          "Pavements": {
+            "type": "array",
+            "items": {
+              "type": "integer",
+              "format": "int32"
+            },
+            "description": "步道路面狀況類型",
+            "nullable": true
+          },
+          "HasPermitStop": {
+            "type": "integer",
+            "description": "是否有入山/入園管制",
+            "format": "int32",
+            "nullable": true
+          },
+          "BestVisitMonths": {
+            "type": "string",
+            "description": "最佳造訪月份",
+            "nullable": true
+          },
+          "BranchNo": {
+            "type": "integer",
+            "description": "步道分岔路段編號",
+            "format": "int32",
+            "nullable": true
+          },
+          "Remarks": {
+            "type": "string",
+            "description": "備註資訊",
+            "nullable": true
+          },
+          "UpdateTime": {
+            "type": "string",
+            "description": "資料更新日期時間",
+            "format": "date-time"
+          }
+        },
+        "additionalProperties": false,
+        "description": "步道基本資料"
+      },
+      "Trail7": {
+        "$ref": "#/components/schemas/Trail"
+      },
+      "TrailFacility": {
+        "type": "object",
+        "properties": {
+          "TrailID": {
+            "type": "string",
+            "description": "步道唯一識別碼",
+            "nullable": true
+          },
+          "TrailName": {
+            "type": "string",
+            "description": "步道名稱",
+            "nullable": true
+          },
+          "Facilities": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/TrailFacilityType"
+            },
+            "description": "周邊設施資料",
+            "nullable": true
+          },
+          "UpdateTime": {
+            "type": "string",
+            "description": "資料更新日期時間",
+            "format": "date-time"
+          }
+        },
+        "additionalProperties": false,
+        "description": "步道周邊設施資料"
+      },
+      "TrailFacility8": {
+        "$ref": "#/components/schemas/TrailFacility"
+      },
+      "TrailFacilityType": {
+        "type": "object",
+        "properties": {
+          "TrailFacilityID": {
+            "type": "string",
+            "description": "步道周邊設施唯一識別碼",
+            "nullable": true
+          },
+          "TrailFacilityName": {
+            "type": "string",
+            "description": "步道周邊設施名稱",
+            "nullable": true
+          },
+          "PositionLat": {
+            "type": "number",
+            "description": "坐標緯度",
+            "format": "double"
+          },
+          "PositionLon": {
+            "type": "number",
+            "description": "坐標經度",
+            "format": "double"
+          },
+          "PostalAddress": {
+            "$ref": "#/components/schemas/PostalAddressType"
+          },
+          "Description": {
+            "type": "string",
+            "description": "步道周邊設施文字描述",
+            "nullable": true
+          }
+        },
+        "additionalProperties": false,
+        "description": "周邊設施資料"
+      },
+      "CyclingRoute": {
+        "type": "object",
+        "properties": {
+          "CyclingRouteID": {
+            "type": "string",
+            "description": "自行車道唯一識別碼",
+            "nullable": true
+          },
+          "CyclingRouteName": {
+            "type": "string",
+            "description": "自行車道名稱",
+            "nullable": true
+          },
+          "AlternateNames": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            },
+            "description": "別名",
+            "nullable": true
+          },
+          "Description": {
+            "type": "string",
+            "description": "自行車道文字描述",
+            "nullable": true
+          },
+          "Geometry": {
+            "type": "string",
+            "description": "自行車道線形空間資料",
+            "nullable": true
+          },
+          "CyclingRouteClass": {
+            "type": "integer",
+            "description": "自行車道類型",
+            "format": "int32",
+            "nullable": true
+          },
+          "PostalAddress": {
+            "$ref": "#/components/schemas/PostalAddressType"
+          },
+          "Telephones": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/TelephoneType"
+            },
+            "description": "聯絡電話",
+            "nullable": true
+          },
+          "Images": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/ImageType"
+            },
+            "description": "影像/照片",
+            "nullable": true
+          },
+          "Organizations": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/OrganizationType"
+            },
+            "description": "組織/單位",
+            "nullable": true
+          },
+          "ServiceTimeInfo": {
+            "type": "string",
+            "description": "營運時間文字描述",
+            "nullable": true
+          },
+          "TrafficInfo": {
+            "type": "string",
+            "description": "交通資訊文字描述",
+            "nullable": true
+          },
+          "ParkingInfo": {
+            "type": "string",
+            "description": "停車場資訊文字描述",
+            "nullable": true
+          },
+          "Facilities": {
+            "type": "array",
+            "items": {
+              "type": "integer",
+              "format": "int32"
+            },
+            "description": "提供設施資訊",
+            "nullable": true
+          },
+          "ServiceStatus": {
+            "type": "integer",
+            "description": "營運狀態",
+            "format": "int32",
+            "nullable": true
+          },
+          "IsPublicAccess": {
+            "type": "integer",
+            "description": "是否為向公眾開放場域",
+            "format": "int32",
+            "nullable": true
+          },
+          "IsAccessibleForFree": {
+            "type": "integer",
+            "description": "免費入場",
+            "format": "int32",
+            "nullable": true
+          },
+          "FeeInfo": {
+            "type": "string",
+            "description": "收費資訊文字描述",
+            "nullable": true
+          },
+          "PaymentMethods": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            },
+            "description": "付款方式",
+            "nullable": true
+          },
+          "LocatedCities": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/LocatedCityType"
+            },
+            "description": "關聯區域所在縣市鄉鎮",
+            "nullable": true
+          },
+          "WebsiteUrl": {
+            "type": "string",
+            "description": "官網網址",
+            "nullable": true
+          },
+          "ReservationURLs": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            },
+            "description": "預約網站資訊",
+            "nullable": true
+          },
+          "MapURLs": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            },
+            "description": "簡圖或地圖網址",
+            "nullable": true
+          },
+          "SameAsURLs": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            },
+            "description": "同義於…網址資訊",
+            "nullable": true
+          },
+          "SocialMediaURLs": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/SocialMediaUrlType"
+            },
+            "description": "社群媒體資訊",
+            "nullable": true
+          },
+          "VisitDuration": {
+            "type": "integer",
+            "description": "自行車道騎行時間(分鐘)",
+            "format": "int32",
+            "nullable": true
+          },
+          "IsCircle": {
+            "type": "integer",
+            "description": "是否為環型自行車道",
+            "format": "int32",
+            "nullable": true
+          },
+          "CyclingLength": {
+            "type": "number",
+            "description": "自行車道長度(公尺)",
+            "format": "double",
+            "nullable": true
+          },
+          "CyclingWidth": {
+            "type": "number",
+            "description": "自行車道寬度(公尺)",
+            "format": "double",
+            "nullable": true
+          },
+          "RoadWidth": {
+            "type": "number",
+            "description": "所屬道路寬度(公尺)",
+            "format": "double",
+            "nullable": true
+          },
+          "CyclingAltitude": {
+            "type": "number",
+            "description": "自行車道航點高度(公尺)",
+            "format": "double",
+            "nullable": true
+          },
+          "Slope": {
+            "type": "number",
+            "description": "自行車道路段坡度(公尺)",
+            "format": "double",
+            "nullable": true
+          },
+          "Pavements": {
+            "type": "array",
+            "items": {
+              "type": "integer",
+              "format": "int32"
+            },
+            "description": "自行車道鋪面",
+            "nullable": true
+          },
+          "HasLamp": {
+            "type": "integer",
+            "description": "自行車道路照明設備",
+            "format": "int32",
+            "nullable": true
+          },
+          "Direction": {
+            "type": "integer",
+            "description": "自行車道車行方向",
+            "format": "int32",
+            "nullable": true
+          },
+          "CyclingType": {
+            "type": "integer",
+            "description": "自行車道道路型式",
+            "format": "int32",
+            "nullable": true
+          },
+          "NetworkType": {
+            "type": "integer",
+            "description": "是否為地方路網",
+            "format": "int32",
+            "nullable": true
+          },
+          "ConstructionStatus": {
+            "type": "integer",
+            "description": "建設狀況",
+            "format": "int32",
+            "nullable": true
+          },
+          "Structure": {
+            "type": "integer",
+            "description": "道路結構",
+            "format": "int32",
+            "nullable": true
+          },
+          "BranchNo": {
+            "type": "integer",
+            "description": "自行車道分岔路段編號",
+            "format": "int32",
+            "nullable": true
+          },
+          "Remarks": {
+            "type": "string",
+            "description": "備註資訊",
+            "nullable": true
+          },
+          "UpdateTime": {
+            "type": "string",
+            "description": "資料更新日期時間",
+            "format": "date-time"
+          }
+        },
+        "additionalProperties": false,
+        "description": "自行車道基本資料"
+      },
+      "CyclingRoute9": {
+        "$ref": "#/components/schemas/CyclingRoute"
+      },
+      "CyclingRouteFacility": {
+        "type": "object",
+        "properties": {
+          "CyclingRouteID": {
+            "type": "string",
+            "description": "自行車道唯一識別碼",
+            "nullable": true
+          },
+          "CyclingRouteName": {
+            "type": "string",
+            "description": "自行車道名稱",
+            "nullable": true
+          },
+          "Facilities": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/CyclingRouteFacilityType"
+            },
+            "description": "周邊設施資料",
+            "nullable": true
+          },
+          "UpdateTime": {
+            "type": "string",
+            "description": "資料更新日期時間",
+            "format": "date-time"
+          }
+        },
+        "additionalProperties": false,
+        "description": "自行車道周邊設施資料"
+      },
+      "CyclingRouteFacility10": {
+        "$ref": "#/components/schemas/CyclingRouteFacility"
+      },
+      "CyclingRouteFacilityType": {
+        "type": "object",
+        "properties": {
+          "CyclingRouteFacilityID": {
+            "type": "string",
+            "description": "自行車道周邊設施唯一識別碼",
+            "nullable": true
+          },
+          "CyclingRouteFacilityName": {
+            "type": "string",
+            "description": "自行車道周邊設施名稱",
+            "nullable": true
+          },
+          "PositionLat": {
+            "type": "number",
+            "description": "坐標緯度",
+            "format": "double"
+          },
+          "PositionLon": {
+            "type": "number",
+            "description": "坐標經度",
+            "format": "double"
+          },
+          "PostalAddress": {
+            "$ref": "#/components/schemas/PostalAddressType"
+          },
+          "Description": {
+            "type": "string",
+            "description": "自行車道周邊設施文字描述",
+            "nullable": true
+          }
+        },
+        "additionalProperties": false,
+        "description": "周邊設施資料"
+      },
+      "Event": {
+        "type": "object",
+        "properties": {
+          "EventID": {
+            "type": "string",
+            "description": "活動唯一識別碼",
+            "nullable": true
+          },
+          "EventName": {
+            "type": "string",
+            "description": "活動名稱",
+            "nullable": true
+          },
+          "AlternateNames": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            },
+            "description": "別名",
+            "nullable": true
+          },
+          "Description": {
+            "type": "string",
+            "description": "活動文字描述",
+            "nullable": true
+          },
+          "PositionLat": {
+            "type": "number",
+            "description": "活動坐標緯度",
+            "format": "double"
+          },
+          "PositionLon": {
+            "type": "number",
+            "description": "活動坐標經度",
+            "format": "double"
+          },
+          "Geometry": {
+            "type": "string",
+            "description": "面形空間資料",
+            "nullable": true
+          },
+          "EventClasses": {
+            "type": "array",
+            "items": {
+              "type": "integer",
+              "format": "int32"
+            },
+            "description": "活動類型",
+            "nullable": true
+          },
+          "PostalAddress": {
+            "$ref": "#/components/schemas/PostalAddressType"
+          },
+          "Telephones": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/TelephoneType"
+            },
+            "description": "聯絡電話",
+            "nullable": true
+          },
+          "Images": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/ImageType"
+            },
+            "description": "影像/照片",
+            "nullable": true
+          },
+          "Organizations": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/OrganizationType"
+            },
+            "description": "組織/單位",
+            "nullable": true
+          },
+          "TrafficInfo": {
+            "type": "string",
+            "description": "交通資訊文字描述",
+            "nullable": true
+          },
+          "ParkingInfo": {
+            "type": "string",
+            "description": "停車場資訊文字描述",
+            "nullable": true
+          },
+          "Facilities": {
+            "type": "array",
+            "items": {
+              "type": "integer",
+              "format": "int32"
+            },
+            "description": "提供設施資訊",
+            "nullable": true
+          },
+          "IsAccessibleForFree": {
+            "type": "integer",
+            "description": "免費入場",
+            "format": "int32",
+            "nullable": true
+          },
+          "FeeInfo": {
+            "type": "string",
+            "description": "收費資訊文字描述",
+            "nullable": true
+          },
+          "PaymentMethods": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            },
+            "description": "付款方式",
+            "nullable": true
+          },
+          "LocatedCities": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/LocatedCityType"
+            },
+            "description": "關聯區域所在縣市鄉鎮",
+            "nullable": true
+          },
+          "WebsiteUrl": {
+            "type": "string",
+            "description": "官網網址",
+            "nullable": true
+          },
+          "ReservationURLs": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            },
+            "description": "預約網站資訊",
+            "nullable": true
+          },
+          "MapURLs": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            },
+            "description": "簡圖或地圖網址",
+            "nullable": true
+          },
+          "SameAsURLs": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            },
+            "description": "同義於…網址資訊",
+            "nullable": true
+          },
+          "SocialMediaURLs": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/SocialMediaUrlType"
+            },
+            "description": "社群媒體資訊",
+            "nullable": true
+          },
+          "Participant": {
+            "type": "string",
+            "description": "參與對象",
+            "nullable": true
+          },
+          "StartDateTime": {
+            "type": "string",
+            "description": "起始日期時間",
+            "format": "date-time"
+          },
+          "EndDateTime": {
+            "type": "string",
+            "description": "結束日期時間",
+            "format": "date-time"
+          },
+          "EventStatus": {
+            "type": "string",
+            "description": "活動狀態",
+            "nullable": true
+          },
+          "PreviousStartDates": {
+            "type": "array",
+            "items": {
+              "type": "string",
+              "format": "date-time"
+            },
+            "description": "先前排定之活動起始日期",
+            "nullable": true
+          },
+          "CalendarURLs": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            },
+            "description": "行事曆網址",
+            "nullable": true
+          },
+          "Tags": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            },
+            "description": "標籤",
+            "nullable": true
+          },
+          "Remarks": {
+            "type": "string",
+            "description": "備註資訊",
+            "nullable": true
+          },
+          "UpdateTime": {
+            "type": "string",
+            "description": "資料更新日期時間",
+            "format": "date-time"
+          }
+        },
+        "additionalProperties": false,
+        "description": "活動基本資料"
+      },
+      "Event11": {
+        "$ref": "#/components/schemas/Event"
+      }
+    },
+    "securitySchemes": {
+      "TDX": {
+        "type": "oauth2",
+        "description": "TDX會員可至【會員專區-資料服務-服務金鑰】功能頁面，從預設金鑰(或建立新的金鑰)取得Client Id和Client Secret資訊，分別輸入至下方client_id和client_secret欄位、按下Authorize按鈕，即可開始於Swagger介面呼叫TDX API。",
+        "flows": {
+          "clientCredentials": {
+            "tokenUrl": "https://tdx.transportdata.tw/auth/realms/TDXConnect/protocol/openid-connect/token",
+            "scopes": {}
+          }
+        }
+      }
+    }
+  },
+  "security": [
+    {
+      "TDX": []
+    }
+  ]
+}
