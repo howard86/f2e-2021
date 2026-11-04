@@ -285,9 +285,15 @@ const mapTourismItem = (
   }
 };
 
+const TRAILING_AND = / and $/u;
+
+// TDX's Tourism V2 answers 500 to any filter on the Images collection
+// (`any()`, `any(i: i/URL ne null)`, `$count`), so the legacy "has a picture"
+// clause is dropped; cards without one fall back to /static/fallback.jpg.
 const translateFilter = (filter?: string) =>
   filter
-    ?.replaceAll('Picture/PictureUrl1 ne null', 'Images/any()')
+    ?.replace(/\bPicture\/PictureUrl1 ne null(?: and )?/gu, '')
+    .replace(TRAILING_AND, '')
     .replace(/\bAddress ne null\b/gu, 'PostalAddress/StreetAddress ne null')
     .replace(/\bCity ne null\b/gu, 'PostalAddress/City ne null');
 
