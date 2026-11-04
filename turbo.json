@@ -2,7 +2,7 @@
   "$schema": "https://turbo.build/schema.json",
   "tasks": {
     "build": {
-      "dependsOn": ["^build"],
+      "dependsOn": ["^generate", "generate"],
       "env": [
         "NEXT_PUBLIC_GOOGLE_MAP_API_KEY",
         "NEXT_PUBLIC_MAPBOX_ACCESS_TOKEN",
@@ -13,13 +13,18 @@
         "TDX_CLIENT_ID",
         "TDX_CLIENT_SECRET"
       ],
-      "inputs": ["$TURBO_DEFAULT$", ".env.*local"],
-      "outputs": [".next/**", "!.next/cache/**", "build/**"]
+      "inputs": ["$TURBO_DEFAULT$", ".env.*local", "$TURBO_ROOT$/.env*.local"],
+      "outputs": [".next/**", "!.next/cache/**"]
     },
     "dev": {
-      "dependsOn": ["^build"],
+      "dependsOn": ["^generate", "generate"],
       "cache": false,
       "persistent": true
+    },
+    "generate": {
+      "cache": true,
+      "inputs": ["scripts/**", "specs/**", "package.json"],
+      "outputs": ["generated/**"]
     },
     "start": {
       "dependsOn": ["build"],
@@ -27,7 +32,7 @@
       "persistent": true
     },
     "typecheck": {
-      "dependsOn": ["^build", "^typecheck"],
+      "dependsOn": ["^generate", "generate"],
       "outputs": []
     }
   }

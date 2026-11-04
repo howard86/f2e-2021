@@ -1,3 +1,5 @@
+'use client';
+
 import {
   type CreateToasterProps,
   createToaster,
@@ -5,16 +7,13 @@ import {
   Stack,
   Toast,
   Toaster,
+  type ToastOptions,
 } from '@chakra-ui/react';
 import { useCallback } from 'react';
 
-type AppToastOptions = Parameters<
-  ReturnType<typeof createToaster>['create']
->[0] & {
-  status?: NonNullable<
-    Parameters<ReturnType<typeof createToaster>['create']>[0]['type']
-  >;
-};
+interface AppToastOptions extends Omit<ToastOptions, 'type'> {
+  status?: ToastOptions['type'];
+}
 
 const DEFAULT_OPTIONS: AppToastOptions = {
   closable: true,

@@ -1,4 +1,5 @@
-import { BikeService, TdxService } from '@f2e/tdx';
+import { BikeService } from '@f2e/tdx-bike';
+import { TdxService } from '@f2e/tdx-core';
 
 const service = new TdxService({
   baseUrl: process.env.TDX_BASE_URL,

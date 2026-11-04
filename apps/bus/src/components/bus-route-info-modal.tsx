@@ -9,7 +9,7 @@ import {
   useBreakpointValue,
   VStack,
 } from '@chakra-ui/react';
-import type { BusRoute } from '@f2e/tdx';
+import type { BusRoute } from '@f2e/tdx-bus';
 import { type ChangeEvent, useState } from 'react';
 import { MdClose } from 'react-icons/md';
 import { getBusRouteDestinations, getSubRouteTime } from '@/utils/bus';

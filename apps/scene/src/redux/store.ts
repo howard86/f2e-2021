@@ -4,17 +4,12 @@ import reducer from './reducer';
 
 const isDev = process.env.NODE_ENV !== 'production';
 
-const configureAppStore = () => {
-  const store = configureStore({
+export const makeStore = () =>
+  configureStore({
     devTools: isDev,
     middleware: (getDefaultMiddleware) =>
       getDefaultMiddleware().concat(localApi.middleware),
     reducer,
   });
 
-  return store;
-};
-
-const store = configureAppStore();
-
-export default store;
+export type AppStore = ReturnType<typeof makeStore>;

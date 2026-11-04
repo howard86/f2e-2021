@@ -1,6 +1,6 @@
 import { Box, Flex, Heading, HStack, Portal, Tooltip } from '@chakra-ui/react';
-import { type City, CityMap } from '@f2e/tdx';
-import { motion, type Variants } from 'framer-motion';
+import { type City, CityMap } from '@f2e/tdx-core';
+import { m, type Variants } from 'framer-motion';
 import type { GeoJSONMultiLineString } from 'wellknown';
 import useAppToast from '@/hooks/use-app-toast';
 import type { Coordinate } from '@/services/mapbox';
@@ -20,7 +20,7 @@ interface CycleCardProps {
   onToggle: VoidFunction;
 }
 
-const MotionBox = motion.create(Box);
+const MotionBox = m.create(Box);
 const DIFFICULTY_STARS = ['easy', 'medium', 'hard', 'expert'] as const;
 
 const variants: Variants = {

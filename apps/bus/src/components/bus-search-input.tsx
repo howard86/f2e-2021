@@ -1,5 +1,5 @@
 import { Input, type InputProps, NativeSelect } from '@chakra-ui/react';
-import { Cities, type City, CityMap } from '@f2e/tdx';
+import { Cities, type City, CityMap } from '@f2e/tdx-core';
 import { type ChangeEventHandler, memo } from 'react';
 
 interface BusSearchInputProps {

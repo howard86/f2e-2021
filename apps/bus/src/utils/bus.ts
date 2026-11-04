@@ -1,4 +1,4 @@
-import { type BusEstimation, type BusRoute, BusStopStatus } from '@f2e/tdx';
+import { type BusEstimation, type BusRoute, BusStopStatus } from '@f2e/tdx-bus';
 
 import { getMinute } from './string';
 

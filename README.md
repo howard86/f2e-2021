@@ -1,7 +1,7 @@
 # f2e-2021
 
 Monorepo for the [2021 F2E challenge](https://2021.thef2e.com/), built with
-Next.js Pages Router, React, Chakra UI, Bun, and Turbo.
+Next.js App Router, React, Chakra UI, Bun, and Turbo.
 
 Special thanks to:
 
@@ -20,15 +20,17 @@ Special thanks to:
   [Viola](https://www.linkedin.com/in/violaleeee)
 - `apps/bus` — [Taiwan Bus](https://bus.howardism.dev), designed by
   [Hanali](https://www.behance.net/cfc5cf51)
-- `libs/tdx` — shared transport-data client
+- `libs/tdx-core` — shared TDX client: auth, rate-limit retry, city constants
+- `libs/tdx-bus`, `libs/tdx-bike`, `libs/tdx-tourism` — per-domain TDX
+  services, one per app, so Vercel only redeploys the app whose domain changed
 
-All three apps retain the Next.js Pages Router and use
+All three apps use the Next.js App Router and
 [Mapbox GL JS](https://docs.mapbox.com/mapbox-gl-js/guides/) for maps.
 
 ## Requirements
 
-- [Bun](https://bun.sh/) 1.3.14
-- [Node.js](https://nodejs.org/) 24.x
+- [Bun](https://bun.sh/) 1.4.4 — the only runtime: Next.js runs under
+  `bun --bun next`, and Vercel functions use the Bun runtime (`vercel.json`)
 
 Install the locked dependencies:
 
@@ -36,13 +38,16 @@ Install the locked dependencies:
 bun install --frozen-lockfile
 ```
 
-Copy the environment template for each app you want to run, then fill in its
-required values:
+Copy the shared TDX template and fill in your key; all three apps load it:
 
 ```bash
-cp apps/bus/.env.sample apps/bus/.env.local
-cp apps/scene/.env.sample apps/scene/.env.local
-cp apps/ubike/.env.sample apps/ubike/.env.local
+cp .env.sample .env.local
+```
+
+For app-specific keys (Mapbox, Google Maps, CWA), copy the app template too:
+
+```bash
+cp apps/<app>/.env.sample apps/<app>/.env.local
 ```
 
 ## Commands
@@ -68,6 +73,18 @@ Use Turbo directly when you need a filtered task:
 ```bash
 bunx turbo run dev --filter=@f2e/bus
 ```
+
+Each domain package's TDX client (`libs/tdx-*/generated/`) is generated from
+TDX's OpenAPI specs and is not committed. Turbo runs the `generate` task before every
+`build` and caches it. It reads the OpenAPI specs committed in
+each package's `specs/`, so it needs no network access. Refresh the committed specs
+from TDX (validated, with retries) with:
+
+```bash
+bun run update:tdx-specs
+```
+
+`bun run generate:tdx` then rebuilds the client from the committed copies.
 
 Quality commands:
 

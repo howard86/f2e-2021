@@ -1,12 +1,9 @@
 import { defineGlobalStyles } from '@chakra-ui/react';
 
 const styles = defineGlobalStyles({
-  '#__next': {
-    h: 'full',
-  },
   body: {
     color: 'text.body',
-    fontFamily: 'Noto Sans TC, sans-serif',
+    fontFamily: 'body',
     h: 'full',
   },
   'h1, h2, h3, h4, h5': {

@@ -4,7 +4,7 @@ import type { ReactNode } from 'react';
 import Footer from './footer';
 import Header from './header';
 
-export interface LayoutProps extends BoxProps {
+interface LayoutProps extends BoxProps {
   children: ReactNode;
   gradientColor: string;
   mainColor: BoxProps['color'];

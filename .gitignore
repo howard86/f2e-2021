@@ -40,3 +40,6 @@ tsconfig.tsbuildinfo
 
 # turbo
 .turbo
+
+# generated TDX API client (bun run generate:tdx)
+libs/*/generated/

@@ -1,0 +1,23 @@
+import { type City, CitySet } from '@f2e/tdx-core';
+
+import { busService } from '@/services/tdx';
+import { badRequest, handleApi, notFound } from '@/utils/api';
+
+export const dynamic = 'force-dynamic';
+
+export const GET = (request: Request) =>
+  handleApi(() => {
+    const { searchParams } = new URL(request.url);
+    const city = searchParams.get('city') as City | null;
+    const route = searchParams.get('route');
+
+    if (city === null || route === null) {
+      throw badRequest();
+    }
+
+    if (!CitySet.has(city)) {
+      throw notFound();
+    }
+
+    return busService.getBusEstimationsByCityAndRouteName(city, route);
+  });

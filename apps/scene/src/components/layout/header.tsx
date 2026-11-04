@@ -1,3 +1,5 @@
+'use client';
+
 import {
   Avatar,
   Box,
@@ -8,7 +10,7 @@ import {
   Separator,
 } from '@chakra-ui/react';
 import throttle from 'lodash.throttle';
-import { useRouter } from 'next/router';
+import { useRouter } from 'next/navigation';
 import { useEffect, useRef, useState } from 'react';
 import { FiSearch } from 'react-icons/fi';
 import ROUTES from '@/constants/routes';

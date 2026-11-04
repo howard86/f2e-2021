@@ -1,10 +1,13 @@
-import type { BusEstimation, BusRoute, BusStation, City } from '@f2e/tdx';
+import type { BusEstimation, BusRoute, BusStation } from '@f2e/tdx-bus';
+import type { City } from '@f2e/tdx-core';
 import { createEntityAdapter, type EntityState } from '@reduxjs/toolkit';
 import { createApi, fetchBaseQuery } from '@reduxjs/toolkit/query/react';
-import type { SuccessApiResponse } from 'next-api-handler';
 
-import type { BusEstimationParam } from '@/pages/api/bus-estimation';
-import type { StationQueryParam } from '@/pages/api/bus-nearby';
+import type {
+  BusEstimationParam,
+  StationQueryParam,
+  SuccessApiResponse,
+} from '@/types/api';
 
 const busEstimationAdapter = createEntityAdapter<BusEstimation, string>({
   selectId: (busEstimation) => busEstimation.StopUID,

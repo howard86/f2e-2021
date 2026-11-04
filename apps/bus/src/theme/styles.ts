@@ -1,9 +1,6 @@
 const styles = {
-  '#__next': {
-    h: 'full',
-  },
   body: {
-    fontFamily: 'Noto Sans TC, sans-serif',
+    fontFamily: 'var(--font-noto-sans-tc), sans-serif',
     h: 'full',
   },
   html: {

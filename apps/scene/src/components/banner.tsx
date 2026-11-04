@@ -1,5 +1,5 @@
 import { Button, Flex, type FlexProps, Text } from '@chakra-ui/react';
-import { useRouter } from 'next/router';
+import NextLink from 'next/link';
 
 interface BannerProps extends FlexProps {
   hideButton?: boolean;
@@ -15,40 +15,32 @@ const Banner = ({
   mainColor,
   hideButton,
   ...props
-}: BannerProps) => {
-  const router = useRouter();
-
-  const onClick = () => {
-    router.push(href);
-  };
-
-  return (
-    <Flex
-      align="center"
-      bg={mainColor}
-      justify="space-between"
-      my="10"
-      px={[6, 8, 12]}
-      py="2"
-      {...props}
-    >
-      <Text as="h2" color="white" textStyle="headline-2">
-        {title}
-      </Text>
-      {!hideButton && (
-        <Button
-          _hover={{ bg: 'white', color: mainColor }}
-          borderWidth="3px"
-          color="white"
-          onClick={onClick}
-          rounded="xl"
-          variant="outline"
-        >
-          查看更多
-        </Button>
-      )}
-    </Flex>
-  );
-};
+}: BannerProps) => (
+  <Flex
+    align="center"
+    bg={mainColor}
+    justify="space-between"
+    my="10"
+    px={[6, 8, 12]}
+    py="2"
+    {...props}
+  >
+    <Text as="h2" color="white" textStyle="headline-2">
+      {title}
+    </Text>
+    {!hideButton && (
+      <Button
+        _hover={{ bg: 'white', color: mainColor }}
+        asChild
+        borderWidth="3px"
+        color="white"
+        rounded="xl"
+        variant="outline"
+      >
+        <NextLink href={href}>查看更多</NextLink>
+      </Button>
+    )}
+  </Flex>
+);
 
 export default Banner;

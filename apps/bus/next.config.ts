@@ -1,0 +1,38 @@
+import { existsSync } from 'node:fs';
+import { join } from 'node:path';
+
+import type { NextConfig } from 'next';
+
+// Shared TDX credentials live in the repo-root .env.local. Next only loads
+// env files from the app directory, and @next/env's loadEnvConfig is cached
+// after that first load, so read the root file directly. Variables already
+// set (shell, Vercel, app-level .env files) win.
+const rootEnvFile = join(import.meta.dirname, '../../.env.local');
+if (existsSync(rootEnvFile)) {
+  process.loadEnvFile(rootEnvFile);
+}
+
+const config: NextConfig = {
+  experimental: {
+    optimizePackageImports: ['@chakra-ui/react', 'react-icons'],
+  },
+  outputFileTracingRoot: join(import.meta.dirname, '../..'),
+  reactStrictMode: true,
+  rewrites: async () => [
+    {
+      destination: '/api/bus-estimation',
+      source: '/api/bus/estimation',
+    },
+    {
+      destination: '/api/bus-nearby',
+      source: '/api/bus/nearby',
+    },
+    {
+      destination: '/api/bus-route',
+      source: '/api/bus/route',
+    },
+  ],
+  transpilePackages: ['@f2e/tdx-core', '@f2e/tdx-bus'],
+};
+
+export default config;

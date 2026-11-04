@@ -13,7 +13,7 @@ import {
   type BusEstimation,
   type BusRoute,
   type BusStopOfRoute,
-} from '@f2e/tdx';
+} from '@f2e/tdx-bus';
 import type { Dispatch, SetStateAction } from 'react';
 import { BiChevronLeft, BiChevronRight } from 'react-icons/bi';
 import { MdClose } from 'react-icons/md';

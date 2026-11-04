@@ -1,0 +1,19 @@
+{
+  "name": "@f2e/tdx-bike",
+  "version": "0.1.0",
+  "private": true,
+  "description": "Based utilised to connect to PTX API",
+  "license": "UNLICENSED",
+  "author": "Howard Tai <howard@howardism.dev>",
+  "exports": {
+    ".": "./index.ts"
+  },
+  "scripts": {
+    "generate": "bun scripts/generate.ts",
+    "typecheck": "bun check",
+    "update-specs": "bun scripts/update-specs.ts"
+  },
+  "dependencies": {
+    "@f2e/tdx-core": "workspace:*"
+  }
+}

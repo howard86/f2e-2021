@@ -11,7 +11,12 @@ const config = defineConfig({
       button: Button,
     },
     textStyles: Text,
-    tokens: { colors },
+    tokens: {
+      colors,
+      fonts: {
+        body: { value: 'var(--font-noto-sans-tc), sans-serif' },
+      },
+    },
   },
 });
 
