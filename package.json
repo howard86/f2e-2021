@@ -1,15 +1,7 @@
 {
   "name": "f2e",
-  "engines": {
-    "node": "24.x"
-  },
+  "private": true,
   "description": "A collection of unlicensed work for f2e open challenge",
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/Howard86/f2e-2011"
-  },
-  "author": "Howard Tai <howard@howardism.dev>",
-  "license": "UNLICENSED",
   "keywords": [
     "template",
     "next.js",
@@ -23,51 +15,60 @@
     "husky",
     "commitlint"
   ],
+  "homepage": "https://github.com/Howard86/f2e-2011",
   "bugs": {
     "url": "https://github.com/Howard86/f2e-2011/issues"
   },
-  "homepage": "https://github.com/Howard86/f2e-2011",
-  "private": true,
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Howard86/f2e-2011"
+  },
+  "license": "UNLICENSED",
+  "author": "Howard Tai <howard@howardism.dev>",
   "workspaces": [
     "apps/*",
     "libs/*"
   ],
   "scripts": {
     "build": "turbo run build",
+    "build:bus": "turbo run build --filter=@f2e/bus",
     "build:scene": "turbo run build --filter=@f2e/scene",
     "build:ubike": "turbo run build --filter=@f2e/ubike",
-    "build:bus": "turbo run build --filter=@f2e/bus",
+    "check": "ultracite check",
+    "dev:bus": "turbo run dev --filter=@f2e/bus",
     "dev:scene": "turbo run dev --filter=@f2e/scene",
     "dev:ubike": "turbo run dev --filter=@f2e/ubike",
-    "dev:bus": "turbo run dev --filter=@f2e/bus",
+    "fix": "ultracite fix",
+    "knip": "knip",
+    "prepare": "husky",
+    "start:bus": "turbo run start --filter=@f2e/bus",
     "start:scene": "turbo run start --filter=@f2e/scene",
     "start:ubike": "turbo run start --filter=@f2e/ubike",
-    "start:bus": "turbo run start --filter=@f2e/bus",
-    "check": "ultracite check",
-    "fix": "ultracite fix",
-    "typecheck": "turbo run typecheck",
-    "knip": "knip",
-    "prepare": "husky"
+    "typecheck": "turbo run typecheck"
+  },
+  "devDependencies": {
+    "@biomejs/biome": "2.6.5",
+    "@commitlint/cli": "^21.2.4",
+    "@commitlint/config-conventional": "^21.2.4",
+    "@types/bun": "^1.4.4",
+    "@types/lodash.throttle": "^4.1.9",
+    "@types/node": "^26.6.6",
+    "@types/react": "19.3.0",
+    "@types/react-dom": "19.3.0",
+    "husky": "^9.1.7",
+    "knip": "6.44.1",
+    "lint-staged": "^17.6.0",
+    "turbo": "2.11.10",
+    "typescript": "^7.0.2",
+    "ultracite": "8.1.1"
+  },
+  "packageManager": "bun@1.4.4",
+  "engines": {
+    "bun": ">=1.4.4"
   },
   "knip": {
     "ignoreDependencies": [
       "@biomejs/biome"
     ]
-  },
-  "devDependencies": {
-    "@biomejs/biome": "2.5.5",
-    "@commitlint/cli": "^21.2.1",
-    "@commitlint/config-conventional": "^21.2.0",
-    "@types/lodash.throttle": "^4.1.9",
-    "@types/node": "^24.13.3",
-    "@types/react": "19.2.17",
-    "@types/react-dom": "19.2.3",
-    "husky": "^9.1.7",
-    "knip": "6.23.0",
-    "lint-staged": "^17.2.0",
-    "turbo": "2.10.7",
-    "typescript": "^6.0.3",
-    "ultracite": "7.9.4"
-  },
-  "packageManager": "bun@1.3.14"
+  }
 }

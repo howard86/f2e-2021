@@ -8,7 +8,7 @@ updates:
     groups:
       bun-dependencies:
         patterns:
-          - '*'
+          - "*"
     ignore:
       - dependency-name: react
         update-types:
@@ -22,13 +22,13 @@ updates:
       - dependency-name: typescript
         update-types:
           - version-update:semver-major
-      - dependency-name: '@types/react'
+      - dependency-name: "@types/react"
         update-types:
           - version-update:semver-major
-      - dependency-name: '@types/react-dom'
+      - dependency-name: "@types/react-dom"
         update-types:
           - version-update:semver-major
-      - dependency-name: '@types/node'
+      - dependency-name: "@types/node"
         update-types:
           - version-update:semver-major
 
@@ -39,4 +39,4 @@ updates:
     groups:
       github-actions:
         patterns:
-          - '*'
+          - "*"

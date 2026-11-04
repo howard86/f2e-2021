@@ -1,14 +1,14 @@
 {
   "name": "@f2e/tdx",
   "version": "0.2.0",
+  "private": true,
   "description": "Based utilised to connect to PTX API",
+  "license": "UNLICENSED",
+  "author": "Howard Tai <howard@howardism.dev>",
   "main": "build/index.js",
   "typings": "build/index.d.ts",
-  "author": "Howard Tai <howard@howardism.dev>",
-  "license": "UNLICENSED",
-  "private": true,
   "scripts": {
-    "clean": "rm -r build",
-    "build": "tsc"
+    "build": "tsc",
+    "clean": "rm -r build"
   }
 }

@@ -324,8 +324,8 @@ const mapTourismItem = (
 const translateFilter = (filter?: string) =>
   filter
     ?.replaceAll('Picture/PictureUrl1 ne null', 'Images/any()')
-    .replace(/\bAddress ne null\b/g, 'PostalAddress/StreetAddress ne null')
-    .replace(/\bCity ne null\b/g, 'PostalAddress/City ne null');
+    .replace(/\bAddress ne null\b/gu, 'PostalAddress/StreetAddress ne null')
+    .replace(/\bCity ne null\b/gu, 'PostalAddress/City ne null');
 
 const translateOrderBy = (orderBy?: string) =>
   orderBy

@@ -1,5 +1,5 @@
 {
-  "$schema": "https://biomejs.dev/schemas/2.5.5/schema.json",
+  "$schema": "https://biomejs.dev/schemas/2.6.5/schema.json",
   "extends": [
     "ultracite/biome/core",
     "ultracite/biome/react",
@@ -18,6 +18,18 @@
       "quoteStyle": "single",
       "semicolons": "always",
       "trailingCommas": "all"
+    }
+  },
+  "linter": {
+    "rules": {
+      "a11y": {
+        // Ultracite treats any `*.Label` as a <label>; Chakra's Tag.Label is a
+        // <span> and Field.Label is bound to its control via Field.Root.
+        "noLabelWithoutControl": {
+          "level": "error",
+          "options": { "labelComponents": [] }
+        }
+      }
     }
   },
   "overrides": [
