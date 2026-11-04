@@ -1,8 +1,8 @@
-import { dirname, join } from 'node:path';
-import { fileURLToPath } from 'node:url';
+import { join } from 'node:path';
 
-/** @type{import('next').NextConfig} */
-const config = {
+import type { NextConfig } from 'next';
+
+const config: NextConfig = {
   experimental: {
     cpus: 1,
     optimizePackageImports: ['@chakra-ui/react', 'react-icons'],
@@ -10,7 +10,7 @@ const config = {
     // pages burst past TDX's rate limit and fail the build.
     staticGenerationMaxConcurrency: 1,
   },
-  outputFileTracingRoot: join(dirname(fileURLToPath(import.meta.url)), '../..'),
+  outputFileTracingRoot: join(import.meta.dirname, '../..'),
   reactStrictMode: true,
 };
 

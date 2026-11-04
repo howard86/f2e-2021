@@ -1,12 +1,12 @@
-import { dirname, join } from 'node:path';
-import { fileURLToPath } from 'node:url';
+import { join } from 'node:path';
 
-/** @type{import('next').NextConfig} */
-const config = {
+import type { NextConfig } from 'next';
+
+const config: NextConfig = {
   experimental: {
     optimizePackageImports: ['@chakra-ui/react', 'react-icons'],
   },
-  outputFileTracingRoot: join(dirname(fileURLToPath(import.meta.url)), '../..'),
+  outputFileTracingRoot: join(import.meta.dirname, '../..'),
   reactStrictMode: true,
   rewrites: async () => [
     {
