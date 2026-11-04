@@ -1,7 +1,7 @@
 # f2e-2021
 
 Monorepo for the [2021 F2E challenge](https://2021.thef2e.com/), built with
-Next.js Pages Router, React, Chakra UI, Bun, and Turbo.
+Next.js App Router, React, Chakra UI, Bun, and Turbo.
 
 Special thanks to:
 
@@ -22,13 +22,13 @@ Special thanks to:
   [Hanali](https://www.behance.net/cfc5cf51)
 - `libs/tdx` — shared transport-data client
 
-All three apps retain the Next.js Pages Router and use
+All three apps use the Next.js App Router and
 [Mapbox GL JS](https://docs.mapbox.com/mapbox-gl-js/guides/) for maps.
 
 ## Requirements
 
-- [Bun](https://bun.sh/) 1.3.14
-- [Node.js](https://nodejs.org/) 24.x
+- [Bun](https://bun.sh/) 1.4.4 — the only runtime: Next.js runs under
+  `bun --bun next`, and Vercel functions use the Bun runtime (`vercel.json`)
 
 Install the locked dependencies:
 

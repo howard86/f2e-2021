@@ -65,10 +65,5 @@
   "packageManager": "bun@1.4.4",
   "engines": {
     "bun": ">=1.4.4"
-  },
-  "knip": {
-    "ignoreDependencies": [
-      "@biomejs/biome"
-    ]
   }
 }
