@@ -1,7 +1,6 @@
 import type { Metadata } from 'next';
 
 import Layout from '@/components/layout/layout';
-import { RESTAURANTS_PAGE_PROPS } from '@/constants/page-props';
 import { DEFAULT_FETCHED_CARD_NUMBER } from '@/constants/pagination';
 import { mapRestaurantToPlaceCard, tourismService } from '@/services/tdx';
 import RestaurantsView from './view';
@@ -24,7 +23,7 @@ const RestaurantsPage = async () => {
   });
 
   return (
-    <Layout {...RESTAURANTS_PAGE_PROPS}>
+    <Layout colorPalette="restaurants">
       <RestaurantsView
         restaurants={restaurants.map(mapRestaurantToPlaceCard)}
       />

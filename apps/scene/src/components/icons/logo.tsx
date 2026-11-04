@@ -1681,7 +1681,7 @@ const Logo = (props: IconProps) => (
     <path
       d="M172.344 128.358H172.254H194.095C183.718 127.156 172.344 128.358 172.344 128.358Z"
       fill="none"
-      stroke="transports.main"
+      stroke="transports.solid"
       strokeMiterlimit="10"
     />
     <path

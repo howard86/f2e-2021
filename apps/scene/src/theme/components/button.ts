@@ -12,12 +12,12 @@ const Button = defineRecipe({
       },
       subtle: {
         _focusVisible: {
-          bgColor: 'scenes.main',
-          color: 'white',
+          bgColor: 'colorPalette.solid',
+          color: 'colorPalette.contrast',
         },
         _hover: {
-          bgColor: 'scenes.main',
-          color: 'white',
+          bgColor: 'colorPalette.solid',
+          color: 'colorPalette.contrast',
         },
         bgColor: 'gray.100',
         flexShrink: 0,

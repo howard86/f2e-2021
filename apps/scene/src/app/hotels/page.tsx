@@ -1,7 +1,6 @@
 import type { Metadata } from 'next';
 
 import Layout from '@/components/layout/layout';
-import { HOTELS_LIST_PAGE_PROPS } from '@/constants/page-props';
 import { DEFAULT_FETCHED_CARD_NUMBER } from '@/constants/pagination';
 import { mapHotelToPlaceCard, tourismService } from '@/services/tdx';
 import HotelsView from './view';
@@ -24,7 +23,7 @@ const HotelsPage = async () => {
   });
 
   return (
-    <Layout {...HOTELS_LIST_PAGE_PROPS}>
+    <Layout colorPalette="hotels">
       <HotelsView hotels={hotels.map(mapHotelToPlaceCard)} />
     </Layout>
   );

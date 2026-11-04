@@ -11,12 +11,14 @@ const config = defineConfig({
     recipes: {
       button: Button,
     },
+    semanticTokens: {
+      colors,
+    },
     slotRecipes: {
       imageCard,
     },
     textStyles: Text,
     tokens: {
-      colors,
       fonts: {
         body: { value: 'var(--font-noto-sans-tc), sans-serif' },
       },

@@ -61,7 +61,7 @@ const WeatherCarousel = ({ weathers, ...props }: WeatherCarouselProps) => {
           rounded: ['none', 'full'],
         },
       }}
-      maxW="container.md"
+      maxW="3xl"
       pos="relative"
     >
       <Box display={['none', 'inline']} flexGrow={1} />

@@ -55,7 +55,7 @@ const MenuPopover = ({ buttonBgColor, ...props }: MenuPopoverProps) => {
               >
                 {ROUTES.map((route) => (
                   <RouteLink
-                    _hover={{ color: 'scenes.main' }}
+                    _hover={{ color: 'colorPalette.solid' }}
                     href={route.href}
                     key={route.label}
                     onClick={onClose}

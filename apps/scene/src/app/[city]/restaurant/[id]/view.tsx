@@ -36,7 +36,7 @@ const RestaurantView = ({ restaurant }: RestaurantViewProps) => {
       <Flex
         bgGradient="to-b"
         flexDir="column"
-        gradientFrom="restaurants.light"
+        gradientFrom="colorPalette.muted"
         gradientTo="white"
         pt="16"
       >

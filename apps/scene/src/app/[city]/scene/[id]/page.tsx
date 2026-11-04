@@ -4,7 +4,6 @@ import { notFound } from 'next/navigation';
 import { cache } from 'react';
 
 import Layout from '@/components/layout/layout';
-import { SCENES_PAGE_PROPS } from '@/constants/page-props';
 import { tourismService } from '@/services/tdx';
 import SceneView from './view';
 
@@ -60,7 +59,7 @@ const ScenePage = async ({ params }: { params: Promise<ScenePageParams> }) => {
   }
 
   return (
-    <Layout {...SCENES_PAGE_PROPS}>
+    <Layout colorPalette="scenes">
       <SceneView scene={scene} />
     </Layout>
   );

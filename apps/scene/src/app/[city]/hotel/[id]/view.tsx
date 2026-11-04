@@ -38,7 +38,7 @@ const HotelView = ({ hotel }: HotelViewProps) => {
       <Flex
         bgGradient="to-b"
         flexDir="column"
-        gradientFrom="restaurants.light"
+        gradientFrom="colorPalette.muted"
         gradientTo="white"
         pt="16"
       >

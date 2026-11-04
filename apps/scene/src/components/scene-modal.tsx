@@ -43,7 +43,7 @@ const SceneModal = ({ onClose, ...props }: SceneModalProps) => {
   };
 
   const menuGroupStyle: BoxProps = {
-    bgColor: 'scenes.main',
+    bgColor: 'colorPalette.solid',
     color: 'white',
     fontSize: 'lg',
     m: 0,
@@ -65,7 +65,11 @@ const SceneModal = ({ onClose, ...props }: SceneModalProps) => {
         <Dialog.Backdrop />
         <Dialog.Positioner>
           <Dialog.Content>
-            <Dialog.Header bgColor="scenes.main" color="white" roundedTop="md">
+            <Dialog.Header
+              bgColor="colorPalette.solid"
+              color="white"
+              roundedTop="md"
+            >
               <Dialog.Title>進階搜尋</Dialog.Title>
             </Dialog.Header>
             <Dialog.CloseTrigger asChild>
