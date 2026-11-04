@@ -2,9 +2,9 @@ name: CI
 
 on:
   push:
-    branches: [main]
+    branches: [ main ]
   pull_request:
-    branches: [main]
+    branches: [ main ]
 
 jobs:
   ci:
@@ -12,6 +12,5 @@ jobs:
     permissions:
       contents: read
     with:
-      node-version: '24'
       run-test: false
       run-build: false
