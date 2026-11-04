@@ -6,17 +6,11 @@
   "license": "UNLICENSED",
   "author": "Howard Tai <howard@howardism.dev>",
   "exports": {
-    ".": {
-      "types": "./build/index.d.ts",
-      "default": "./build/index.js"
-    },
+    ".": "./index.ts",
     "./codegen": "./codegen.ts"
   },
-  "main": "build/index.js",
-  "typings": "build/index.d.ts",
   "scripts": {
-    "build": "tsc",
-    "clean": "rm -r build"
+    "typecheck": "bun check"
   },
   "devDependencies": {
     "@hey-api/openapi-ts": "0.99.0"

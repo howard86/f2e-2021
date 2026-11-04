@@ -30,7 +30,7 @@
     "build": "bun --bun next build",
     "dev": "bun --bun next dev",
     "start": "bun --bun next start",
-    "typecheck": "tsc --noEmit"
+    "typecheck": "bun check"
   },
   "dependencies": {
     "@chakra-ui/react": "3.38.0",
