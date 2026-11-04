@@ -4,7 +4,7 @@ import background from '@/background.png';
 import Image from '@/components/image';
 import MapView from './map';
 
-export interface LayoutProps {
+interface LayoutProps {
   children: ReactNode;
   hideLocate?: boolean;
   showMap?: boolean;

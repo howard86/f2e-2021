@@ -3,6 +3,9 @@ import { fileURLToPath } from 'node:url';
 
 /** @type{import('next').NextConfig} */
 const config = {
+  experimental: {
+    optimizePackageImports: ['@chakra-ui/react', 'react-icons'],
+  },
   outputFileTracingRoot: join(dirname(fileURLToPath(import.meta.url)), '../..'),
   reactStrictMode: true,
   rewrites: async () => [

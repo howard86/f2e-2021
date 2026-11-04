@@ -40,6 +40,10 @@ const config = defineConfig({
     },
     tokens: {
       colors,
+      fonts: {
+        body: { value: 'var(--font-noto-sans-tc), sans-serif' },
+        heading: { value: 'var(--font-noto-sans-tc), sans-serif' },
+      },
       gradients: {
         background: {
           value:

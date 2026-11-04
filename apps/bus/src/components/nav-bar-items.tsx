@@ -1,5 +1,5 @@
 import { HStack, type StackProps } from '@chakra-ui/react';
-import { useRouter } from 'next/router';
+import { usePathname } from 'next/navigation';
 
 import LogoIcon from './icons/logo';
 import RouteLink from './route-link';
@@ -9,7 +9,7 @@ interface NavBarItemsProps {
 }
 
 const NavBarItems = ({ display }: NavBarItemsProps) => {
-  const router = useRouter();
+  const pathname = usePathname();
 
   return (
     <>
@@ -20,13 +20,13 @@ const NavBarItems = ({ display }: NavBarItemsProps) => {
         <RouteLink
           href="/city"
           mr={6}
-          textShadow={router.pathname === '/city' ? 'text' : undefined}
+          textShadow={pathname === '/city' ? 'text' : undefined}
         >
           公車定位
         </RouteLink>
         <RouteLink
           href="/nearby"
-          textShadow={router.pathname === '/nearby' ? 'text' : undefined}
+          textShadow={pathname === '/nearby' ? 'text' : undefined}
         >
           附近站牌
         </RouteLink>

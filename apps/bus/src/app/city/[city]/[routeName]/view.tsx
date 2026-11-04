@@ -1,3 +1,5 @@
+'use client';
+
 import {
   Box,
   Circle,
@@ -18,21 +20,13 @@ import {
   type BusRoute,
   type BusStopOfRoute,
   type City,
-  CityMap,
-  CitySet,
 } from '@f2e/tdx';
-import type {
-  GetStaticPathsResult,
-  GetStaticPropsContext,
-  GetStaticPropsResult,
-} from 'next';
-import { useRouter } from 'next/router';
-import NextHeadSeo from 'next-head-seo';
+import { useRouter } from 'next/navigation';
 import { useEffect, useState } from 'react';
 import { BiChevronLeft } from 'react-icons/bi';
 import { BsInfoCircle } from 'react-icons/bs';
 import { IoHome } from 'react-icons/io5';
-import { type GeoJSONLineString, parse } from 'wellknown';
+import type { GeoJSONLineString } from 'wellknown';
 
 import BusRouteInfoModal from '@/components/bus-route-info-modal';
 import BusStopDrawer, { ZoomLevel } from '@/components/bus-stop-drawer';
@@ -40,18 +34,17 @@ import { DESKTOP_MAP_LEFT } from '@/components/layout';
 import { useMap } from '@/components/map-context-provider';
 import NavBarItems from '@/components/nav-bar-items';
 import { DESKTOP_DISPLAY, MOBILE_DISPLAY } from '@/constants/style';
-import { ONE_DAY, THIRTY_SEC_IN_MS } from '@/constants/time';
+import { THIRTY_SEC_IN_MS } from '@/constants/time';
 import {
   busEstimationSelector,
   useGetBusEstimationQuery,
 } from '@/services/local';
-import { busService } from '@/services/tdx';
 import theme from '@/theme';
 import { getMiddleElement } from '@/utils/array';
 import { getBusEstimationStatus } from '@/utils/bus';
 import { getTwoDigitString } from '@/utils/string';
 
-interface BusRoutePageProps {
+interface BusRouteViewProps {
   busRoute: BusRoute;
   busStopEntity: RouteStopEntity;
   city: City;
@@ -60,19 +53,19 @@ interface BusRoutePageProps {
   routeName: string;
 }
 
-type RouteStopEntity = Record<BusDirection, BusStopOfRoute>;
+export type RouteStopEntity = Record<BusDirection, BusStopOfRoute>;
 
 const INITIAL_ID = '';
 const STOP_LIST_MAX_HEIGHT = 'calc(100vh - 144px)';
 
-const BusRoutePage = ({
+const BusRouteView = ({
   city,
   routeName,
   busRoute: route,
   geoJson,
   directions,
   busStopEntity: routeStopEntity,
-}: BusRoutePageProps) => {
+}: BusRouteViewProps) => {
   const router = useRouter();
   const tabsProps = useBreakpointValue<
     Omit<Tabs.RootProps, 'children' | 'onValueChange' | 'value'>
@@ -104,7 +97,6 @@ const BusRoutePage = ({
           res.data &&
           busEstimationSelector.selectById(res.data, selectedStopId),
       }),
-      skip: router.isFallback,
     },
   );
 
@@ -141,7 +133,7 @@ const BusRoutePage = ({
   };
 
   useEffect(() => {
-    if (isLoaded || router.isFallback) {
+    if (isLoaded) {
       return;
     }
 
@@ -164,17 +156,10 @@ const BusRoutePage = ({
     };
 
     handleInitialise();
-  }, [
-    divRef,
-    isLoaded,
-    mapContextRef,
-    router.isFallback,
-    selectedBusRoute?.Stops,
-    setLoaded,
-  ]);
+  }, [divRef, isLoaded, mapContextRef, selectedBusRoute?.Stops, setLoaded]);
 
   useEffect(() => {
-    if (!isLoaded || router.isFallback || !routeId) {
+    if (!(isLoaded && routeId)) {
       return;
     }
 
@@ -243,17 +228,10 @@ const BusRoutePage = ({
     };
 
     handleAttachStops();
-  }, [
-    routeId,
-    geoJson,
-    isLoaded,
-    mapContextRef,
-    router.isFallback,
-    selectedBusRoute?.Stops,
-  ]);
+  }, [routeId, geoJson, isLoaded, mapContextRef, selectedBusRoute?.Stops]);
 
   useEffect(() => {
-    if (router.isFallback || !isLoaded || !mapContextRef.current.map) {
+    if (!(isLoaded && mapContextRef.current.map)) {
       return;
     }
 
@@ -276,15 +254,10 @@ const BusRoutePage = ({
     return () => {
       map.off('zoomend', handleZoom);
     };
-  }, [isLoaded, mapContextRef, router.isFallback]);
-
-  if (router.isFallback) {
-    return null;
-  }
+  }, [isLoaded, mapContextRef]);
 
   return (
     <>
-      <NextHeadSeo title={`Iro Bus | ${routeName}-${CityMap[city]}`} />
       <Flex color="white" flexDir="column" h="full" pos="relative">
         <Flex align="center" bg="primary.800" justify="space-between" p={4}>
           <IconButton
@@ -480,87 +453,4 @@ const BusRoutePage = ({
   );
 };
 
-export const getStaticPaths = (): GetStaticPathsResult => ({
-  fallback: 'blocking',
-  paths: [],
-});
-
-export const getStaticProps = async (
-  context: GetStaticPropsContext,
-): Promise<GetStaticPropsResult<BusRoutePageProps>> => {
-  const { routeName } = context.params;
-  const city = context.params.city as City;
-
-  if (
-    typeof routeName !== 'string' ||
-    typeof city !== 'string' ||
-    !CitySet.has(city)
-  ) {
-    return {
-      notFound: true,
-    };
-  }
-
-  const busRoutes = await busService.getBusRoutesByCityAndRouteName(
-    city,
-    routeName,
-  );
-
-  const [busRoute] = busRoutes;
-
-  if (!busRoute) {
-    return {
-      redirect: {
-        destination: '/city',
-        permanent: false,
-      },
-    };
-  }
-
-  const [busShapes, busStops] = await Promise.all([
-    busService.getBusShapesByCityAndRouteName(city, routeName),
-    busService.getBusStopOfRoutesByCityAndRouteName(city, routeName, {
-      filter: `RouteName/Zh_tw eq '${routeName}'`,
-    }),
-  ]);
-
-  const [busShape] = busShapes;
-
-  if (!busShape || busStops.length === 0) {
-    return {
-      redirect: {
-        destination: '/city',
-        permanent: false,
-      },
-    };
-  }
-
-  const directions: BusDirection[] = [];
-  const routeStopEntity = {} as RouteStopEntity;
-
-  for (const routeStop of busStops) {
-    // TODO: might have routes that have multiple directions
-    if (!directions.includes(routeStop.Direction)) {
-      directions.push(routeStop.Direction);
-      routeStopEntity[routeStop.Direction] = routeStop;
-    }
-  }
-
-  return {
-    props: {
-      busRoute,
-      busStopEntity: routeStopEntity,
-      city,
-      directions,
-      geoJson: parse(busShape.Geometry) as GeoJSONLineString,
-      routeName,
-    },
-    revalidate: ONE_DAY,
-  };
-};
-
-BusRoutePage.layoutProps = {
-  showMap: true,
-};
-
-export default BusRoutePage;
+export default BusRouteView;

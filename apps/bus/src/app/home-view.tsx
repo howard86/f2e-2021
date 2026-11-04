@@ -1,3 +1,5 @@
+'use client';
+
 import {
   Box,
   Button,
@@ -17,7 +19,7 @@ import RouteLink from '@/components/route-link';
 import human from '@/human.png';
 import station from '@/station.png';
 
-const HomePage = () => {
+const HomeView = () => {
   const size = useBreakpointValue<ButtonProps['size']>({
     base: 'md',
     md: 'lg',
@@ -107,4 +109,4 @@ const HomePage = () => {
   );
 };
 
-export default HomePage;
+export default HomeView;
