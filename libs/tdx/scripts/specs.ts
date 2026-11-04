@@ -1,9 +1,9 @@
-export const SPEC_URL = 'https://tdx.transportdata.tw/webapi/File/Swagger/V3';
+import type { TdxSpec } from '@f2e/tdx-core/codegen';
 
 // Spec paths are relative to the server URL declared in each spec
 // (https://tdx.transportdata.tw/api/<basic|advanced|tourism>); the runtime
 // clients in client.ts override it with the configured TDX base URL.
-export const SPECS = [
+export const SPECS: TdxSpec[] = [
   { id: '2998e851-81d0-40f5-b26d-77e2f5ac4118', name: 'bus-basic-v2' },
   { id: 'b1b2b02c-b5f3-405f-aff5-7b912b3e8623', name: 'bus-advanced-v2' },
   { id: '2cc9b888-a592-496f-99de-9ab35b7fb70d', name: 'bike-basic-v2' },

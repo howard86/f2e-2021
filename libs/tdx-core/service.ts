@@ -1,8 +1,4 @@
-import {
-  type Client,
-  createClient,
-  createConfig,
-} from './generated/bus-basic-v2/client';
+export type TdxServer = 'basic' | 'advanced' | 'tourism';
 
 export interface NearByApiParam extends ApiParam {
   spatialFilter: string;
@@ -63,6 +59,26 @@ const fetchWithRateLimitRetry = async (...args: Parameters<typeof fetch>) => {
   return response;
 };
 
+export interface TdxClientOptions {
+  auth: () => Promise<string>;
+  baseUrl: string;
+  fetch: typeof fetch;
+}
+
+/** Structural shape of a Hey API client-fetch client, so core needs no generated code. */
+export interface TdxInterceptableClient {
+  interceptors: {
+    response: {
+      use: (
+        fn: (
+          response: Response,
+          request: Request,
+        ) => Response | Promise<Response>,
+      ) => unknown;
+    };
+  };
+}
+
 export class TdxService {
   private readonly clientId: string;
 
@@ -78,19 +94,10 @@ export class TdxService {
 
   DEFAULT_API_PARAMS: ApiParam = { top: 20 };
 
-  readonly basic: Client;
-
-  readonly advanced: Client;
-
-  readonly tourism: Client;
-
   constructor(params: Partial<TdxServiceParams>) {
     this.clientId = getRequiredParam(params, 'clientId');
     this.clientSecret = getRequiredParam(params, 'clientSecret');
     this.baseUrl = getRequiredParam(params, 'baseUrl');
-    this.basic = this.createClient('basic');
-    this.advanced = this.createClient('advanced');
-    this.tourism = this.createClient('tourism');
   }
 
   static checkExistence<T>(items: T[]): T | null {
@@ -120,14 +127,19 @@ export class TdxService {
     return this.accessToken;
   }
 
-  private createClient(server: 'advanced' | 'basic' | 'tourism') {
-    const client = createClient(
-      createConfig({
-        auth: () => this.getAccessToken(),
-        baseUrl: `${this.baseUrl}/api/${server}`,
-        fetch: fetchWithRateLimitRetry,
-      }),
-    );
+  clientOptions(server: TdxServer): TdxClientOptions {
+    return {
+      auth: () => this.getAccessToken(),
+      baseUrl: `${this.baseUrl}/api/${server}`,
+      fetch: fetchWithRateLimitRetry,
+    };
+  }
+
+  createClient<C extends TdxInterceptableClient>(
+    server: TdxServer,
+    create: (options: TdxClientOptions) => C,
+  ): C {
+    const client = create(this.clientOptions(server));
 
     client.interceptors.response.use(async (response, request) => {
       if (!response.ok) {

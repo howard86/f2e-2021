@@ -1,6 +1,5 @@
-export * from './base';
+export * from '@f2e/tdx-core';
 export * from './bike';
 export * from './bus';
-export * from './constants';
 export * from './tourism';
 export * from './utils';

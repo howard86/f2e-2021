@@ -13,7 +13,7 @@
     "generate": "bun scripts/generate.ts",
     "update-specs": "bun scripts/update-specs.ts"
   },
-  "devDependencies": {
-    "@hey-api/openapi-ts": "0.99.0"
+  "dependencies": {
+    "@f2e/tdx-core": "workspace:*"
   }
 }

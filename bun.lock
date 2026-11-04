@@ -86,6 +86,13 @@
     "libs/tdx": {
       "name": "@f2e/tdx",
       "version": "0.2.0",
+      "dependencies": {
+        "@f2e/tdx-core": "workspace:*",
+      },
+    },
+    "libs/tdx-core": {
+      "name": "@f2e/tdx-core",
+      "version": "0.1.0",
       "devDependencies": {
         "@hey-api/openapi-ts": "0.99.0",
       },
@@ -217,6 +224,8 @@
     "@f2e/scene": ["@f2e/scene@workspace:apps/scene"],
 
     "@f2e/tdx": ["@f2e/tdx@workspace:libs/tdx"],
+
+    "@f2e/tdx-core": ["@f2e/tdx-core@workspace:libs/tdx-core"],
 
     "@f2e/ubike": ["@f2e/ubike@workspace:apps/ubike"],
 

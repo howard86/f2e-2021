@@ -34,7 +34,7 @@
   },
   "overrides": [
     {
-      "includes": ["libs/tdx/index.ts"],
+      "includes": ["libs/tdx*/index.ts"],
       "linter": {
         "rules": {
           "performance": {

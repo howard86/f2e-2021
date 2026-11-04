@@ -1,5 +1,10 @@
-import { type ApiParam, TdxService, toODataQuery } from './base';
-import { type City, CityMap } from './constants';
+import {
+  type ApiParam,
+  type City,
+  CityMap,
+  TdxService,
+  toODataQuery,
+} from '@f2e/tdx-core';
 import {
   type Attraction,
   type Event,
@@ -10,6 +15,7 @@ import {
   type Hotel as V2Hotel,
   type Restaurant as V2Restaurant,
 } from './generated/tourism-v2';
+import { createClient, createConfig } from './generated/tourism-v2/client';
 
 export interface ScenicSpot extends TourismCommonProperty {
   Class1: string;
@@ -306,8 +312,13 @@ const translateOrderBy = (orderBy?: string) =>
 export class TourismService {
   private readonly service: TdxService;
 
+  private readonly client: ReturnType<typeof createClient>;
+
   constructor(service: TdxService) {
     this.service = service;
+    this.client = service.createClient('tourism', (o) =>
+      createClient(createConfig(o)),
+    );
   }
 
   getScenicSpotById = this.generateGetById<ScenicSpot>('ScenicSpot');
@@ -368,7 +379,7 @@ export class TourismService {
       .filter(Boolean)
       .join(' and ');
     const { data } = await V2_OPERATIONS[type]({
-      client: this.service.tourism,
+      client: this.client,
       query: {
         ...toODataQuery({
           filter,

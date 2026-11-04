@@ -1,12 +1,16 @@
 import {
   type ApiParam,
+  type City,
   type NearByApiParam,
   type TdxService,
   toODataQuery,
-} from './base';
-import type { City } from './constants';
+} from '@f2e/tdx-core';
 import type { PtxServiceDtoBusSpecificationV2BusStation } from './generated/bus-advanced-v2';
 import { busApiStationNearBy2851 } from './generated/bus-advanced-v2';
+import {
+  createClient as createAdvancedClient,
+  createConfig as createAdvancedConfig,
+} from './generated/bus-advanced-v2/client';
 import type {
   PtxServiceDtoBusSpecificationV2BusDisplayStopOfRoute,
   PtxServiceDtoBusSpecificationV2BusN1EstimateTime,
@@ -20,6 +24,10 @@ import {
   cityBusApiRoute20351,
   cityBusApiShape20421,
 } from './generated/bus-basic-v2';
+import {
+  createClient as createBasicClient,
+  createConfig as createBasicConfig,
+} from './generated/bus-basic-v2/client';
 
 export type BusRoute = PtxServiceDtoBusSpecificationV2BusRoute;
 
@@ -62,8 +70,18 @@ const withRouteFilter = (routeName: string, params?: ApiParam): ApiParam => ({
 export class BusService {
   private readonly service: TdxService;
 
+  private readonly basic: ReturnType<typeof createBasicClient>;
+
+  private readonly advanced: ReturnType<typeof createAdvancedClient>;
+
   constructor(service: TdxService) {
     this.service = service;
+    this.basic = service.createClient('basic', (o) =>
+      createBasicClient(createBasicConfig(o)),
+    );
+    this.advanced = service.createClient('advanced', (o) =>
+      createAdvancedClient(createAdvancedConfig(o)),
+    );
   }
 
   async getBusRoutesByCity(
@@ -71,7 +89,7 @@ export class BusService {
     params: ApiParam = this.service.DEFAULT_API_PARAMS,
   ) {
     const { data } = await cityBusApiRoute2035({
-      client: this.service.basic,
+      client: this.basic,
       path: { City: city as never },
       query: toODataQuery(params),
       throwOnError: true,
@@ -82,7 +100,7 @@ export class BusService {
 
   async getBusStationNearBy(params: NearByApiParam) {
     const { data } = await busApiStationNearBy2851({
-      client: this.service.advanced,
+      client: this.advanced,
       query: {
         ...toODataQuery(params),
         $spatialFilter: params.spatialFilter,
@@ -99,7 +117,7 @@ export class BusService {
     params?: ApiParam,
   ) {
     const { data } = await cityBusApiShape20421({
-      client: this.service.basic,
+      client: this.basic,
       path: { City: city as never, RouteName: routeName },
       query: toODataQuery(withRouteFilter(routeName, params)),
       throwOnError: true,
@@ -114,7 +132,7 @@ export class BusService {
     params?: ApiParam,
   ) {
     const { data } = await cityBusApiRoute20351({
-      client: this.service.basic,
+      client: this.basic,
       path: { City: city as never, RouteName: routeName },
       query: toODataQuery(withRouteFilter(routeName, params)),
       throwOnError: true,
@@ -129,7 +147,7 @@ export class BusService {
     params?: ApiParam,
   ) {
     const { data } = await cityBusApiEstimatedTimeOfArrival20321({
-      client: this.service.basic,
+      client: this.basic,
       path: { City: city as never, RouteName: routeName },
       query: toODataQuery(withRouteFilter(routeName, params)),
       throwOnError: true,
@@ -144,7 +162,7 @@ export class BusService {
     params?: ApiParam,
   ) {
     const { data } = await cityBusApiDisplayStopOfRoute20381({
-      client: this.service.basic,
+      client: this.basic,
       path: { City: city as never, RouteName: routeName },
       query: toODataQuery(withRouteFilter(routeName, params)),
       throwOnError: true,
