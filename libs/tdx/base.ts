@@ -115,13 +115,12 @@ export class TdxService {
       },
     );
 
-    const json = await response.json();
-
     if (!response.ok) {
-      throw new Error(JSON.stringify(json));
+      const body = await response.text();
+      throw new Error(`TDX ${response.status} ${path}: ${body.slice(0, 200)}`);
     }
 
-    return json;
+    return response.json();
   }
 
   private async refreshToken() {
