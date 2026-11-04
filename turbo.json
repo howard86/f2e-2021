@@ -13,7 +13,7 @@
         "TDX_CLIENT_ID",
         "TDX_CLIENT_SECRET"
       ],
-      "inputs": ["$TURBO_DEFAULT$", ".env.*local"],
+      "inputs": ["$TURBO_DEFAULT$", ".env.*local", "$TURBO_ROOT$/.env*.local"],
       "outputs": [".next/**", "!.next/cache/**", "build/**"]
     },
     "dev": {

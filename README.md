@@ -36,13 +36,16 @@ Install the locked dependencies:
 bun install --frozen-lockfile
 ```
 
-Copy the environment template for each app you want to run, then fill in its
-required values:
+Copy the shared TDX template and fill in your key; all three apps load it:
 
 ```bash
-cp apps/bus/.env.sample apps/bus/.env.local
-cp apps/scene/.env.sample apps/scene/.env.local
-cp apps/ubike/.env.sample apps/ubike/.env.local
+cp .env.sample .env.local
+```
+
+For app-specific keys (Mapbox, Google Maps, CWA), copy the app template too:
+
+```bash
+cp apps/<app>/.env.sample apps/<app>/.env.local
 ```
 
 ## Commands
