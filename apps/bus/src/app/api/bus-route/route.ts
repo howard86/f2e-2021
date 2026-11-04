@@ -1,4 +1,4 @@
-import { type City, CitySet } from '@f2e/tdx';
+import { type City, CitySet } from '@f2e/tdx-core';
 
 import { busService } from '@/services/tdx';
 import { badRequest, handleApi } from '@/utils/api';

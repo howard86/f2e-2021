@@ -1,4 +1,4 @@
-import { CityMap } from '@f2e/tdx';
+import { CityMap } from '@f2e/tdx-core';
 import type { Metadata } from 'next';
 
 import CityView from './view';

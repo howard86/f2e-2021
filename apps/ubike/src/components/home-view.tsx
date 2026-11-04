@@ -9,7 +9,7 @@ import {
   Spinner,
   Tabs,
 } from '@chakra-ui/react';
-import { Cities, type City, CityMap } from '@f2e/tdx';
+import { Cities, type City, CityMap } from '@f2e/tdx-core';
 import { LazyMotion, m, type Variants } from 'framer-motion';
 import dynamic from 'next/dynamic';
 import Image from 'next/image';

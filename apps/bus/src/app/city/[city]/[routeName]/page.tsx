@@ -1,4 +1,5 @@
-import { type BusDirection, type City, CityMap, CitySet } from '@f2e/tdx';
+import type { BusDirection } from '@f2e/tdx-bus';
+import { type City, CityMap, CitySet } from '@f2e/tdx-core';
 import type { Metadata } from 'next';
 import { notFound, redirect } from 'next/navigation';
 import { type GeoJSONLineString, parse } from 'wellknown';

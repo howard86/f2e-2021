@@ -11,7 +11,8 @@ import {
   Text,
   VStack,
 } from '@chakra-ui/react';
-import { CityMap, type Hotel } from '@f2e/tdx';
+import { CityMap } from '@f2e/tdx-core';
+import type { Hotel } from '@f2e/tdx-tourism';
 import { AiFillStar } from 'react-icons/ai';
 import { BiChevronRight, BiLinkExternal, BiSync } from 'react-icons/bi';
 import { BsBookmarkPlusFill } from 'react-icons/bs';

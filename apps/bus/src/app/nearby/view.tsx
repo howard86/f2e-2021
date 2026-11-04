@@ -12,7 +12,7 @@ import {
   useBreakpointValue,
   Wrap,
 } from '@chakra-ui/react';
-import { CityMap } from '@f2e/tdx';
+import { CityMap } from '@f2e/tdx-core';
 import { useRouter } from 'next/navigation';
 import { IoHome } from 'react-icons/io5';
 

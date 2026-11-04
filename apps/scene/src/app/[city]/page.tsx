@@ -1,4 +1,4 @@
-import { type City, CitySet } from '@f2e/tdx';
+import { type City, CitySet } from '@f2e/tdx-core';
 import type { Metadata } from 'next';
 import { notFound } from 'next/navigation';
 

@@ -1,4 +1,5 @@
-import type { BusEstimation, BusRoute, BusStation, City } from '@f2e/tdx';
+import type { BusEstimation, BusRoute, BusStation } from '@f2e/tdx-bus';
+import type { City } from '@f2e/tdx-core';
 import { createEntityAdapter, type EntityState } from '@reduxjs/toolkit';
 import { createApi, fetchBaseQuery } from '@reduxjs/toolkit/query/react';
 

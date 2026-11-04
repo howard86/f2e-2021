@@ -1,12 +1,11 @@
+import { CityMap, TdxService } from '@f2e/tdx-core';
 import {
   type Activity,
-  CityMap,
   type Hotel,
   type Restaurant,
   type ScenicSpot,
-  TdxService,
   TourismService,
-} from '@f2e/tdx';
+} from '@f2e/tdx-tourism';
 
 import type { PlaceCardProps } from '@/components/place-card';
 import type { SceneCardProps } from '@/components/scene-card';

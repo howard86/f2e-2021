@@ -11,7 +11,8 @@ import {
   Text,
   VStack,
 } from '@chakra-ui/react';
-import { type Activity, CityMap } from '@f2e/tdx';
+import { CityMap } from '@f2e/tdx-core';
+import type { Activity } from '@f2e/tdx-tourism';
 import {
   BiChevronRight,
   BiLinkExternal,

@@ -1,4 +1,4 @@
-import type { City } from '@f2e/tdx';
+import type { City } from '@f2e/tdx-core';
 
 export interface SuccessApiResponse<T> {
   data: T;

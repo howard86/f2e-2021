@@ -20,7 +20,9 @@ Special thanks to:
   [Viola](https://www.linkedin.com/in/violaleeee)
 - `apps/bus` — [Taiwan Bus](https://bus.howardism.dev), designed by
   [Hanali](https://www.behance.net/cfc5cf51)
-- `libs/tdx` — shared transport-data client
+- `libs/tdx-core` — shared TDX client: auth, rate-limit retry, city constants
+- `libs/tdx-bus`, `libs/tdx-bike`, `libs/tdx-tourism` — per-domain TDX
+  services, one per app, so Vercel only redeploys the app whose domain changed
 
 All three apps use the Next.js App Router and
 [Mapbox GL JS](https://docs.mapbox.com/mapbox-gl-js/guides/) for maps.
@@ -72,10 +74,10 @@ Use Turbo directly when you need a filtered task:
 bunx turbo run dev --filter=@f2e/bus
 ```
 
-The TDX API client in `libs/tdx/generated/` is generated from TDX's OpenAPI
-specs and is not committed. Turbo runs the `generate` task before every
+Each domain package's TDX client (`libs/tdx-*/generated/`) is generated from
+TDX's OpenAPI specs and is not committed. Turbo runs the `generate` task before every
 `build` and caches it. It reads the OpenAPI specs committed in
-`libs/tdx/specs/`, so it needs no network access. Refresh the committed specs
+each package's `specs/`, so it needs no network access. Refresh the committed specs
 from TDX (validated, with retries) with:
 
 ```bash

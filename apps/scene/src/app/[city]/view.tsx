@@ -7,7 +7,7 @@ import {
   Heading,
   SimpleGrid,
 } from '@chakra-ui/react';
-import { type City, CityMap } from '@f2e/tdx';
+import { type City, CityMap } from '@f2e/tdx-core';
 import { useState } from 'react';
 import { BiChevronRight } from 'react-icons/bi';
 

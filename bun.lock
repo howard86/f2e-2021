@@ -28,7 +28,8 @@
         "@chakra-ui/react": "3.38.0",
         "@emotion/cache": "^11",
         "@emotion/react": "^11.14.0",
-        "@f2e/tdx": "workspace:^0.2.0",
+        "@f2e/tdx-bus": "workspace:*",
+        "@f2e/tdx-core": "workspace:*",
         "@reduxjs/toolkit": "^2.14.0",
         "lodash.debounce": "^4.0.8",
         "mapbox-gl": "^3.34.2",
@@ -51,7 +52,8 @@
         "@chakra-ui/react": "3.38.0",
         "@emotion/cache": "^11",
         "@emotion/react": "^11.14.0",
-        "@f2e/tdx": "workspace:^0.2.0",
+        "@f2e/tdx-core": "workspace:*",
+        "@f2e/tdx-tourism": "workspace:*",
         "@reduxjs/toolkit": "^2.14.0",
         "lodash.throttle": "^4.1.1",
         "next": "16.4.5",
@@ -68,7 +70,8 @@
         "@chakra-ui/react": "3.38.0",
         "@emotion/cache": "^11",
         "@emotion/react": "^11.14.0",
-        "@f2e/tdx": "workspace:^0.2.0",
+        "@f2e/tdx-bike": "workspace:*",
+        "@f2e/tdx-core": "workspace:*",
         "@reduxjs/toolkit": "^2.14.0",
         "framer-motion": "^14.9.1",
         "mapbox-gl": "^3.34.2",
@@ -83,9 +86,16 @@
         "@types/wellknown": "^0.5.8",
       },
     },
-    "libs/tdx": {
-      "name": "@f2e/tdx",
-      "version": "0.2.0",
+    "libs/tdx-bike": {
+      "name": "@f2e/tdx-bike",
+      "version": "0.1.0",
+      "dependencies": {
+        "@f2e/tdx-core": "workspace:*",
+      },
+    },
+    "libs/tdx-bus": {
+      "name": "@f2e/tdx-bus",
+      "version": "0.1.0",
       "dependencies": {
         "@f2e/tdx-core": "workspace:*",
       },
@@ -95,6 +105,13 @@
       "version": "0.1.0",
       "devDependencies": {
         "@hey-api/openapi-ts": "0.99.0",
+      },
+    },
+    "libs/tdx-tourism": {
+      "name": "@f2e/tdx-tourism",
+      "version": "0.1.0",
+      "dependencies": {
+        "@f2e/tdx-core": "workspace:*",
       },
     },
   },
@@ -223,9 +240,13 @@
 
     "@f2e/scene": ["@f2e/scene@workspace:apps/scene"],
 
-    "@f2e/tdx": ["@f2e/tdx@workspace:libs/tdx"],
+    "@f2e/tdx-bike": ["@f2e/tdx-bike@workspace:libs/tdx-bike"],
+
+    "@f2e/tdx-bus": ["@f2e/tdx-bus@workspace:libs/tdx-bus"],
 
     "@f2e/tdx-core": ["@f2e/tdx-core@workspace:libs/tdx-core"],
+
+    "@f2e/tdx-tourism": ["@f2e/tdx-tourism@workspace:libs/tdx-tourism"],
 
     "@f2e/ubike": ["@f2e/ubike@workspace:apps/ubike"],
 

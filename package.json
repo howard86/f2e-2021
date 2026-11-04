@@ -39,14 +39,14 @@
     "dev:scene": "turbo run dev --filter=@f2e/scene",
     "dev:ubike": "turbo run dev --filter=@f2e/ubike",
     "fix": "ultracite fix",
-    "generate:tdx": "turbo run generate --filter=@f2e/tdx",
+    "generate:tdx": "turbo run generate",
     "knip": "knip",
     "prepare": "husky",
     "start:bus": "turbo run start --filter=@f2e/bus",
     "start:scene": "turbo run start --filter=@f2e/scene",
     "start:ubike": "turbo run start --filter=@f2e/ubike",
     "typecheck": "turbo run typecheck",
-    "update:tdx-specs": "bun run --filter @f2e/tdx update-specs"
+    "update:tdx-specs": "bun run --filter '@f2e/tdx-*' update-specs"
   },
   "devDependencies": {
     "@biomejs/biome": "2.6.5",

@@ -15,12 +15,8 @@ import {
   useDisclosure,
   VStack,
 } from '@chakra-ui/react';
-import {
-  BusDirection,
-  type BusRoute,
-  type BusStopOfRoute,
-  type City,
-} from '@f2e/tdx';
+import { BusDirection, type BusRoute, type BusStopOfRoute } from '@f2e/tdx-bus';
+import type { City } from '@f2e/tdx-core';
 import { useRouter } from 'next/navigation';
 import { useEffect, useState } from 'react';
 import { BiChevronLeft } from 'react-icons/bi';

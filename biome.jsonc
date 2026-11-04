@@ -6,7 +6,7 @@
     "ultracite/biome/next"
   ],
   "files": {
-    "includes": ["!apps/scene/public/static/logo.svg", "!libs/tdx/specs"]
+    "includes": ["!apps/scene/public/static/logo.svg", "!libs/tdx*/specs"]
   },
   "formatter": {
     "indentStyle": "space",

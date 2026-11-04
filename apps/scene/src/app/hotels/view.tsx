@@ -15,7 +15,7 @@ import {
   Tooltip,
   useDisclosure,
 } from '@chakra-ui/react';
-import { CityMap } from '@f2e/tdx';
+import { CityMap } from '@f2e/tdx-core';
 import type React from 'react';
 import { type ChangeEvent, useEffect, useState } from 'react';
 import { BsCalendar } from 'react-icons/bs';

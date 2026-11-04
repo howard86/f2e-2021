@@ -1,4 +1,4 @@
-import { constructRestaurantsSearch } from '@f2e/tdx';
+import { constructRestaurantsSearch } from '@f2e/tdx-tourism';
 
 import {
   BadRequestException,

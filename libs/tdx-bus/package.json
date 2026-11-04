@@ -1,0 +1,19 @@
+{
+  "name": "@f2e/tdx-bus",
+  "version": "0.1.0",
+  "private": true,
+  "description": "Based utilised to connect to PTX API",
+  "license": "UNLICENSED",
+  "author": "Howard Tai <howard@howardism.dev>",
+  "main": "build/index.js",
+  "typings": "build/index.d.ts",
+  "scripts": {
+    "build": "tsc",
+    "clean": "rm -r build",
+    "generate": "bun scripts/generate.ts",
+    "update-specs": "bun scripts/update-specs.ts"
+  },
+  "dependencies": {
+    "@f2e/tdx-core": "workspace:*"
+  }
+}

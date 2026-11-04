@@ -1,10 +1,5 @@
-import {
-  type ApiParam,
-  type City,
-  CitySet,
-  constructScenesSearch,
-  type ScenicSpot,
-} from '@f2e/tdx';
+import { type ApiParam, type City, CitySet } from '@f2e/tdx-core';
+import { constructScenesSearch, type ScenicSpot } from '@f2e/tdx-tourism';
 
 import {
   BadRequestException,

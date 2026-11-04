@@ -1,4 +1,4 @@
-import { type City, CitySet } from '@f2e/tdx';
+import { type City, CitySet } from '@f2e/tdx-core';
 import { type GeoJSONMultiLineString, parse } from 'wellknown';
 
 import mock from '@/mock-bike.json';

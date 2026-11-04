@@ -10,7 +10,7 @@ import {
   LinkOverlay,
   Text,
 } from '@chakra-ui/react';
-import { type City, CityMap, CitySet } from '@f2e/tdx';
+import { type City, CityMap, CitySet } from '@f2e/tdx-core';
 import debounce from 'lodash.debounce';
 import NextLink from 'next/link';
 import { useRouter } from 'next/navigation';

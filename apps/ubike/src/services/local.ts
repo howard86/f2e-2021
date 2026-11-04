@@ -1,4 +1,4 @@
-import type { City } from '@f2e/tdx';
+import type { City } from '@f2e/tdx-core';
 import { createApi, fetchBaseQuery } from '@reduxjs/toolkit/query/react';
 
 import type {

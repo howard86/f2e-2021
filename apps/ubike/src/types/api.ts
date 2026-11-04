@@ -1,4 +1,8 @@
-import type { BikeAvailability, BikeStation, CyclingShape } from '@f2e/tdx';
+import type {
+  BikeAvailability,
+  BikeStation,
+  CyclingShape,
+} from '@f2e/tdx-bike';
 import type { GeoJSONMultiLineString } from 'wellknown';
 
 export interface SuccessApiResponse<T> {

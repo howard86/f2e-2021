@@ -11,7 +11,8 @@ import {
   Text,
   VStack,
 } from '@chakra-ui/react';
-import { CityMap, type ScenicSpot } from '@f2e/tdx';
+import { CityMap } from '@f2e/tdx-core';
+import type { ScenicSpot } from '@f2e/tdx-tourism';
 import {
   BiChevronRight,
   BiLinkExternal,
