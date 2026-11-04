@@ -41,15 +41,33 @@ export const toODataQuery = (params: ApiParam) => ({
   $top: params.top ? Number(params.top) : undefined,
 });
 
+// TDX allows 5 requests per minute per key and reports the seconds left in
+// the window in `ratelimit-reset`. A scene build makes more calls than that,
+// so a request may need to wait out more than one window.
+const MAX_RATE_LIMIT_RETRIES = 6;
+const MAX_RATE_LIMIT_DELAY_MS = 65_000;
+
+const getRetryDelay = (response: Response, attempt: number) => {
+  const header =
+    response.headers.get('ratelimit-reset') ??
+    response.headers.get('retry-after');
+  const seconds = header === null ? Number.NaN : Number(header);
+  const base = Number.isFinite(seconds)
+    ? (seconds + 1) * 1000
+    : 2 ** attempt * 1000;
+  // Jitter spreads parallel requests across the next window.
+  return Math.min(base + Math.random() * 1000, MAX_RATE_LIMIT_DELAY_MS);
+};
+
 const fetchWithRateLimitRetry = async (...args: Parameters<typeof fetch>) => {
   let response = await fetch(...args);
 
-  for (let attempt = 1; response.status === 429 && attempt <= 2; attempt += 1) {
-    const resetSeconds = Number(response.headers.get('ratelimit-reset'));
-    const delay =
-      Number.isFinite(resetSeconds) && resetSeconds >= 0
-        ? Math.min(resetSeconds + 1, 60) * 1000
-        : attempt * 1000;
+  for (
+    let attempt = 1;
+    response.status === 429 && attempt <= MAX_RATE_LIMIT_RETRIES;
+    attempt += 1
+  ) {
+    const delay = getRetryDelay(response, attempt);
 
     // biome-ignore lint/performance/noAwaitInLoops: rate-limit retries must remain sequential.
     await new Promise((resolve) => setTimeout(resolve, delay));
