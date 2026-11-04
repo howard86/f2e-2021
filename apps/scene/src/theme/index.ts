@@ -2,6 +2,7 @@ import { createSystem, defaultConfig, defineConfig } from '@chakra-ui/react';
 import colors from './colors';
 import Button from './components/button';
 import Text from './components/text';
+import imageCard from './recipes/image-card';
 import styles from './styles';
 
 const config = defineConfig({
@@ -9,6 +10,9 @@ const config = defineConfig({
   theme: {
     recipes: {
       button: Button,
+    },
+    slotRecipes: {
+      imageCard,
     },
     textStyles: Text,
     tokens: {
