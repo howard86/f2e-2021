@@ -1,3 +1,5 @@
+'use client';
+
 import { Box, Flex, IconButton, type StackProps } from '@chakra-ui/react';
 import { useMemo, useState } from 'react';
 import { BiChevronLeft, BiChevronRight } from 'react-icons/bi';

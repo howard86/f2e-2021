@@ -1,3 +1,5 @@
+'use client';
+
 import {
   type BoxProps,
   Button,
@@ -9,7 +11,7 @@ import {
   useDisclosure,
 } from '@chakra-ui/react';
 import { type City, CityMap, counties, majorCities } from '@f2e/tdx';
-import { useRouter } from 'next/router';
+import { useRouter } from 'next/navigation';
 import { useState } from 'react';
 import { FiSearch } from 'react-icons/fi';
 

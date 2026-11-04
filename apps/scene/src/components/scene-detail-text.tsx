@@ -1,3 +1,5 @@
+'use client';
+
 import { Flex, type FlexProps, Icon, Link, Tag } from '@chakra-ui/react';
 import type { IconType } from 'react-icons';
 

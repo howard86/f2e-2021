@@ -1,8 +1,7 @@
 import { createApi, fetchBaseQuery } from '@reduxjs/toolkit/query/react';
-import type { ApiResponse } from 'next-api-handler';
-
 import type { PlaceCardProps } from '@/components/place-card';
 import type { SceneCardProps } from '@/components/scene-card';
+import type { ApiResponse } from '@/lib/api';
 
 export const localApi = createApi({
   baseQuery: fetchBaseQuery({
