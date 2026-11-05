@@ -65,6 +65,7 @@ const PlaceListPage = async ({
         <Box mt="8">
           <Suspense fallback={<PlaceGridSkeleton />} key={suspenseKey}>
             <PlaceResults
+              allCities={params.allCities}
               basePath={basePath}
               city={params.city}
               page={params.page}

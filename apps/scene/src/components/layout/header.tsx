@@ -1,12 +1,14 @@
 import { Flex, type FlexProps, HStack, Link, Text } from '@chakra-ui/react';
 import { RouteLink } from '@f2e/ui/links';
+import { Suspense } from 'react';
 import ROUTES from '@/constants/routes';
 
 import LogoMark from '../icons/logo-mark';
 import GlobalSearch from '../search/global-search';
-import ColorModeToggle from './color-mode-toggle';
+import CityScope from './city-scope';
 import MenuDrawer from './menu-drawer';
 import NavLink from './nav-link';
+import PreferencesMenu from './preferences-menu';
 
 const Header = (props: FlexProps) => (
   <Flex
@@ -63,7 +65,11 @@ const Header = (props: FlexProps) => (
     </HStack>
     <Flex flexGrow={{ base: 1, lg: 0 }} />
     <GlobalSearch />
-    <ColorModeToggle />
+    <PreferencesMenu />
+    {/* Reads the query string, so it needs its own boundary on static pages. */}
+    <Suspense fallback={null}>
+      <CityScope />
+    </Suspense>
   </Flex>
 );
 

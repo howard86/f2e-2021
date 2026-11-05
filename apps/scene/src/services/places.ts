@@ -253,10 +253,11 @@ export const getNearbyPlaces = async (
 export const getTagOptions = (type: PlaceType): TagOption[] =>
   isPlaceType(type) ? getTagOptionsFor(type) : [];
 
-/** Keyword search across every type; throws only when every type failed. */
+/** Keyword search across every type, optionally in one city; throws only when every type failed. */
 export const searchPlaces = async (
   keyword: string,
   limitPerType = DEFAULT_SEARCH_LIMIT,
+  city?: City,
 ): Promise<PlaceSummary[]> => {
   const value = normalizeKeyword(keyword);
 
@@ -266,7 +267,13 @@ export const searchPlaces = async (
 
   const results = await Promise.allSettled(
     PLACE_TYPES.map((type) =>
-      listPlaces({ keyword: value, page: 1, pageSize: limitPerType, type }),
+      listPlaces({
+        city,
+        keyword: value,
+        page: 1,
+        pageSize: limitPerType,
+        type,
+      }),
     ),
   );
   const pages = results.flatMap((result) =>

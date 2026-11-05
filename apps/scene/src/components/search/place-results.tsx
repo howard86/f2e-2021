@@ -12,6 +12,8 @@ import { buildHref, toQueryRecord } from './search-params';
 import UnavailableState from './unavailable-state';
 
 interface PlaceResultsProps {
+  /** Keeps `city=all` on links so the preferred city doesn't re-apply. */
+  allCities?: boolean;
   basePath: string;
   city?: City;
   /** Where 清除篩選 goes; defaults to the base path. */
@@ -30,6 +32,7 @@ interface PlaceResultsProps {
 }
 
 const PlaceResults = async ({
+  allCities,
   basePath,
   city,
   clearHref = basePath,
@@ -42,7 +45,8 @@ const PlaceResults = async ({
   when,
 }: PlaceResultsProps) => {
   const fixedCity = linkQuery !== undefined;
-  const query = linkQuery ?? toQueryRecord({ city, free, q, tag, when });
+  const query =
+    linkQuery ?? toQueryRecord({ allCities, city, free, q, tag, when });
   let result: Awaited<ReturnType<typeof listPlaces>>;
 
   try {

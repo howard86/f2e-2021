@@ -1,11 +1,14 @@
 import { type City, CitySet } from '@f2e/tdx-core';
 
 import { MAX_PAGE } from '@/constants/pagination';
+import { ALL_CITIES } from '@/constants/preferences';
 import type { ActivityWhen } from '@/types/place';
 
 export type RawSearchParams = Record<string, string | string[] | undefined>;
 
 export interface ListParams {
+  /** `?city=all`: every city, overriding the browser's preferred city. */
+  allCities?: boolean;
   city?: City;
   free?: boolean;
   page: number;
@@ -57,6 +60,7 @@ export const parseListParams = (
   const when = first(raw.when);
 
   return {
+    allCities: first(raw.city) === ALL_CITIES || undefined,
     city: parseCity(raw.city),
     free: first(raw.free) === '1' ? true : undefined,
     page: parsePage(raw.page),
@@ -70,7 +74,7 @@ export const parseListParams = (
 export const toQueryRecord = (
   params: Partial<Omit<ListParams, 'free' | 'page'>> & { free?: boolean },
 ): Record<string, string | undefined> => ({
-  city: params.city,
+  city: params.city ?? (params.allCities ? ALL_CITIES : undefined),
   free: params.free ? '1' : undefined,
   q: params.q,
   tag: params.tag,

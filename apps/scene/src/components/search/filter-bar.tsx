@@ -11,6 +11,7 @@ import {
   useTransition,
 } from 'react';
 
+import { ALL_CITIES } from '@/constants/preferences';
 import type { TagOption } from '@/types/place';
 
 import { buildHref } from './search-params';
@@ -64,7 +65,7 @@ const FilterBar = ({
   };
 
   const handleCity = (event: ChangeEvent<HTMLSelectElement>) => {
-    navigate({ ...current, city: event.target.value || undefined });
+    navigate({ ...current, city: event.target.value });
   };
 
   const handleTag = (event: ChangeEvent<HTMLSelectElement>) => {
@@ -108,9 +109,10 @@ const FilterBar = ({
           aria-label="縣市"
           name="city"
           onChange={handleCity}
-          value={city ?? ''}
+          value={city ?? ALL_CITIES}
         >
-          <option value="">全部縣市</option>
+          {/* An explicit `all` keeps the preferred-city redirect from re-applying. */}
+          <option value={ALL_CITIES}>全部縣市</option>
           <optgroup label="直轄市">
             <CityOptions cities={majorCities} />
           </optgroup>

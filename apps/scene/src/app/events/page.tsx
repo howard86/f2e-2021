@@ -13,6 +13,7 @@ import {
 import TabLinks from '@/components/search/tab-links';
 import PageHero from '@/components/ui/page-hero';
 import PlaceGridSkeleton from '@/components/ui/place-grid-skeleton';
+import { ALL_CITIES } from '@/constants/preferences';
 import background from '@/static/background/events.png';
 import wordOne from '@/static/background/events-1.png';
 import wordTwo from '@/static/background/events-2.png';
@@ -34,31 +35,32 @@ const EventsPage = async ({
   searchParams: Promise<RawSearchParams>;
 }) => {
   const params = parseListParams(await searchParams);
-  const { city } = params;
+  const { allCities, city } = params;
+  const cityParam = city ?? (allCities ? ALL_CITIES : undefined);
   const isFree = params.free === true;
   const when = isFree ? undefined : (params.when ?? 'ongoing');
   const activeKey = isFree ? 'free' : when;
 
   const tabs = [
     {
-      href: buildHref('/events', { city, when: 'ongoing' }),
+      href: buildHref('/events', { city: cityParam, when: 'ongoing' }),
       key: 'ongoing',
       label: '進行中',
     },
     {
-      href: buildHref('/events', { city, when: 'upcoming' }),
+      href: buildHref('/events', { city: cityParam, when: 'upcoming' }),
       key: 'upcoming',
       label: '即將開始',
     },
     {
-      href: buildHref('/events', { city, free: '1' }),
+      href: buildHref('/events', { city: cityParam, free: '1' }),
       key: 'free',
       label: '免費',
     },
   ];
   const activeHref = tabs.find((tab) => tab.key === activeKey)?.href ?? '';
   const preserve = isFree ? { free: '1' } : { when };
-  const suspenseKey = `${activeKey}-${city}-${params.page}`;
+  const suspenseKey = `${activeKey}-${cityParam}-${params.page}`;
 
   return (
     <Layout colorPalette="activities">
@@ -75,6 +77,7 @@ const EventsPage = async ({
           <FilterBar city={city} preserve={preserve} showKeyword={false} />
           <Suspense fallback={<PlaceGridSkeleton />} key={suspenseKey}>
             <PlaceResults
+              allCities={allCities}
               basePath="/events"
               city={city}
               clearHref={buildHref('/events', preserve)}

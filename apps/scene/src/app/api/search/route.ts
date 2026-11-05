@@ -1,3 +1,4 @@
+import { toPreferredCity } from '@/constants/preferences';
 import { BadRequestException, getSingleParam, handleGet } from '@/lib/api';
 import { searchPlaces } from '@/services/places';
 
@@ -13,5 +14,9 @@ export const GET = (request: Request) =>
       throw new BadRequestException();
     }
 
-    return searchPlaces(keyword, SUGGESTIONS_PER_TYPE);
+    return searchPlaces(
+      keyword,
+      SUGGESTIONS_PER_TYPE,
+      toPreferredCity(getSingleParam(searchParams, 'city')),
+    );
   }, request);

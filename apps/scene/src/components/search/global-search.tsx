@@ -27,6 +27,7 @@ import {
 } from 'react';
 import { FiSearch } from 'react-icons/fi';
 
+import usePreferredCity from '@/hooks/use-preferred-city';
 import { PLACE_LABEL, type PlaceSummary } from '@/types/place';
 
 const APPLE_PLATFORM = /Mac|iPhone|iPad/u;
@@ -66,10 +67,16 @@ const toSuggestion = (place: PlaceSummary): Suggestion => ({
   title: place.name,
 });
 
-const fetchSuggestions = async (query: string, signal: AbortSignal) => {
-  const response = await fetch(`/api/search?q=${encodeURIComponent(query)}`, {
-    signal,
-  });
+const fetchSuggestions = async (
+  query: string,
+  city: City | undefined,
+  signal: AbortSignal,
+) => {
+  const params = new URLSearchParams({ q: query });
+  if (city) {
+    params.set('city', city);
+  }
+  const response = await fetch(`/api/search?${params.toString()}`, { signal });
 
   if (!response.ok) {
     return [];
@@ -131,6 +138,7 @@ const SuggestionOption = ({
 
 const GlobalSearch = () => {
   const router = useRouter();
+  const { city: preferredCity } = usePreferredCity();
   const listId = useId();
   const inputRef = useRef<HTMLInputElement>(null);
   const [open, setOpen] = useState(false);
@@ -186,7 +194,9 @@ const GlobalSearch = () => {
       setLoading(true);
 
       try {
-        setPlaces(await fetchSuggestions(trimmed, controller.signal));
+        setPlaces(
+          await fetchSuggestions(trimmed, preferredCity, controller.signal),
+        );
       } catch (error) {
         if (!controller.signal.aborted) {
           console.error(error);
@@ -203,7 +213,7 @@ const GlobalSearch = () => {
       clearTimeout(timer);
       controller.abort();
     };
-  }, [open, canSearch, trimmed]);
+  }, [open, canSearch, trimmed, preferredCity]);
 
   const close = useCallback(() => {
     setOpen(false);

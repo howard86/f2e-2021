@@ -2,6 +2,7 @@ import { Box, Container, Stack } from '@chakra-ui/react';
 import type { Metadata } from 'next';
 
 import CityGrid from '@/components/home/city-grid';
+import PreferredCityCard from '@/components/home/preferred-city-card';
 import QuickLinks from '@/components/home/quick-links';
 import Layout from '@/components/layout/layout';
 import SearchForm from '@/components/search/search-form';
@@ -58,6 +59,7 @@ const HomePage = async () => {
       <Container maxW="6xl" py={{ base: 6, md: 10 }}>
         <Stack gap="12">
           <QuickLinks />
+          <PreferredCityCard />
           <WeatherStrip weathers={weathers} />
           {events.items.length > 0 ? (
             <Box colorPalette="activities">
