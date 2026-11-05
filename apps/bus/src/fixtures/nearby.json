@@ -1,0 +1,1390 @@
+[
+  {
+    "StationUID": "TPE1895",
+    "StationName": {
+      "Zh_tw": "臺北車站(鄭州)"
+    },
+    "StationPosition": {
+      "PositionLon": 121.51719764702355,
+      "PositionLat": 25.0484971857801
+    },
+    "LocationCityCode": "TPE",
+    "Stops": [
+      {
+        "StopUID": "TPE20576",
+        "RouteUID": "TPE10262",
+        "RouteName": {
+          "Zh_tw": "2",
+          "En": "2"
+        }
+      },
+      {
+        "StopUID": "TPE35429",
+        "RouteUID": "TPE10278",
+        "RouteName": {
+          "Zh_tw": "669",
+          "En": "669"
+        }
+      },
+      {
+        "StopUID": "TPE36489",
+        "RouteUID": "TPE10452",
+        "RouteName": {
+          "Zh_tw": "641",
+          "En": "641"
+        }
+      },
+      {
+        "StopUID": "TPE22010",
+        "RouteUID": "TPE10471",
+        "RouteName": {
+          "Zh_tw": "615",
+          "En": "615"
+        }
+      },
+      {
+        "StopUID": "TPE39066",
+        "RouteUID": "TPE10823",
+        "RouteName": {
+          "Zh_tw": "260",
+          "En": "260"
+        }
+      },
+      {
+        "StopUID": "TPE39154",
+        "RouteUID": "TPE10824",
+        "RouteName": {
+          "Zh_tw": "260區",
+          "En": "260Shuttle"
+        }
+      },
+      {
+        "StopUID": "TPE40120",
+        "RouteUID": "TPE10891",
+        "RouteName": {
+          "Zh_tw": "14",
+          "En": "14"
+        }
+      },
+      {
+        "StopUID": "TPE12112",
+        "RouteUID": "TPE10893",
+        "RouteName": {
+          "Zh_tw": "274",
+          "En": "274"
+        }
+      },
+      {
+        "StopUID": "TPE41813",
+        "RouteUID": "TPE11156",
+        "RouteName": {
+          "Zh_tw": "218",
+          "En": "218"
+        }
+      },
+      {
+        "StopUID": "TPE208388",
+        "RouteUID": "TPE11157",
+        "RouteName": {
+          "Zh_tw": "218直",
+          "En": "218Express"
+        }
+      },
+      {
+        "StopUID": "TPE15422",
+        "RouteUID": "TPE16112",
+        "RouteName": {
+          "Zh_tw": "310",
+          "En": "310"
+        }
+      },
+      {
+        "StopUID": "TPE214132",
+        "RouteUID": "TPE19178",
+        "RouteName": {
+          "Zh_tw": "260區預",
+          "En": "260Shuttle B"
+        }
+      },
+      {
+        "StopUID": "TPE219889",
+        "RouteUID": "TPE19688",
+        "RouteName": {
+          "Zh_tw": "310區",
+          "En": "310Shuttle"
+        }
+      }
+    ]
+  },
+  {
+    "StationUID": "NWT1895",
+    "StationName": {
+      "Zh_tw": "臺北車站(鄭州)"
+    },
+    "StationPosition": {
+      "PositionLon": 121.51719764702355,
+      "PositionLat": 25.0484971857801
+    },
+    "LocationCityCode": "TPE",
+    "Stops": [
+      {
+        "StopUID": "NWT158307",
+        "RouteUID": "NWT16845",
+        "RouteName": {
+          "Zh_tw": "578",
+          "En": "578"
+        }
+      },
+      {
+        "StopUID": "NWT158317",
+        "RouteUID": "NWT16847",
+        "RouteName": {
+          "Zh_tw": "579",
+          "En": "579"
+        }
+      },
+      {
+        "StopUID": "NWT158496",
+        "RouteUID": "NWT16855",
+        "RouteName": {
+          "Zh_tw": "582",
+          "En": "582"
+        }
+      },
+      {
+        "StopUID": "NWT203684",
+        "RouteUID": "NWT18118",
+        "RouteName": {
+          "Zh_tw": "966",
+          "En": "966"
+        }
+      },
+      {
+        "StopUID": "NWT204345",
+        "RouteUID": "NWT18148",
+        "RouteName": {
+          "Zh_tw": "582經工業區",
+          "En": "582 Industrial Dist."
+        }
+      },
+      {
+        "StopUID": "NWT208933",
+        "RouteUID": "NWT18730",
+        "RouteName": {
+          "Zh_tw": "966副",
+          "En": "966Sub"
+        }
+      },
+      {
+        "StopUID": "NWT209367",
+        "RouteUID": "NWT18760",
+        "RouteName": {
+          "Zh_tw": "966A",
+          "En": "966A"
+        }
+      },
+      {
+        "StopUID": "NWT212607",
+        "RouteUID": "NWT19048",
+        "RouteName": {
+          "Zh_tw": "597",
+          "En": "597"
+        }
+      }
+    ]
+  },
+  {
+    "StationUID": "THB136462",
+    "StationName": {
+      "Zh_tw": "臺北車站(鄭州)"
+    },
+    "StationPosition": {
+      "PositionLon": 121.517615,
+      "PositionLat": 25.048361
+    },
+    "LocationCityCode": "TPE",
+    "Stops": [
+      {
+        "StopUID": "THB300514",
+        "RouteUID": "THB1816",
+        "RouteName": {
+          "Zh_tw": "1816",
+          "En": "1816"
+        }
+      },
+      {
+        "StopUID": "THB300514",
+        "RouteUID": "THB1818",
+        "RouteName": {
+          "Zh_tw": "1818",
+          "En": "1818"
+        }
+      }
+    ]
+  },
+  {
+    "StationUID": "TPE50042",
+    "StationName": {
+      "Zh_tw": "臺北車站(鄭州)"
+    },
+    "StationPosition": {
+      "PositionLon": 121.517471342457,
+      "PositionLat": 25.0488096410266
+    },
+    "LocationCityCode": "TPE",
+    "Stops": [
+      {
+        "StopUID": "TPE188528",
+        "RouteUID": "TPE10262",
+        "RouteName": {
+          "Zh_tw": "2",
+          "En": "2"
+        }
+      },
+      {
+        "StopUID": "TPE35468",
+        "RouteUID": "TPE10278",
+        "RouteName": {
+          "Zh_tw": "669",
+          "En": "669"
+        }
+      },
+      {
+        "StopUID": "TPE182117",
+        "RouteUID": "TPE10423",
+        "RouteName": {
+          "Zh_tw": "622",
+          "En": "622"
+        }
+      },
+      {
+        "StopUID": "TPE56105",
+        "RouteUID": "TPE15711",
+        "RouteName": {
+          "Zh_tw": "市民小巴9",
+          "En": "M9"
+        }
+      }
+    ]
+  },
+  {
+    "StationUID": "THB136440",
+    "StationName": {
+      "Zh_tw": "臺北車站(鄭州)"
+    },
+    "StationPosition": {
+      "PositionLon": 121.51764,
+      "PositionLat": 25.04882
+    },
+    "LocationCityCode": "TPE",
+    "Stops": [
+      {
+        "StopUID": "THB300475",
+        "RouteUID": "THB1915",
+        "RouteName": {
+          "Zh_tw": "1915",
+          "En": "1915"
+        }
+      },
+      {
+        "StopUID": "THB300475",
+        "RouteUID": "THB1916",
+        "RouteName": {
+          "Zh_tw": "1916",
+          "En": "1916"
+        }
+      },
+      {
+        "StopUID": "THB300475",
+        "RouteUID": "THB1917",
+        "RouteName": {
+          "Zh_tw": "1917",
+          "En": "1917"
+        }
+      }
+    ]
+  },
+  {
+    "StationUID": "THB107352",
+    "StationName": {
+      "Zh_tw": "臺北轉運站"
+    },
+    "StationPosition": {
+      "PositionLon": 121.51761,
+      "PositionLat": 25.04887
+    },
+    "LocationCityCode": "TPE",
+    "Stops": [
+      {
+        "StopUID": "THB289792",
+        "RouteUID": "THB1610",
+        "RouteName": {
+          "Zh_tw": "1610",
+          "En": "1610"
+        }
+      },
+      {
+        "StopUID": "THB289792",
+        "RouteUID": "THB1611",
+        "RouteName": {
+          "Zh_tw": "1611",
+          "En": "1611"
+        }
+      },
+      {
+        "StopUID": "THB289792",
+        "RouteUID": "THB1613",
+        "RouteName": {
+          "Zh_tw": "1613",
+          "En": "1613"
+        }
+      },
+      {
+        "StopUID": "THB289792",
+        "RouteUID": "THB1617",
+        "RouteName": {
+          "Zh_tw": "1617",
+          "En": "1617"
+        }
+      },
+      {
+        "StopUID": "THB289792",
+        "RouteUID": "THB1618",
+        "RouteName": {
+          "Zh_tw": "1618",
+          "En": "1618"
+        }
+      },
+      {
+        "StopUID": "THB289792",
+        "RouteUID": "THB1619",
+        "RouteName": {
+          "Zh_tw": "1619",
+          "En": "1619"
+        }
+      },
+      {
+        "StopUID": "THB289792",
+        "RouteUID": "THB1620",
+        "RouteName": {
+          "Zh_tw": "1620",
+          "En": "1620"
+        }
+      },
+      {
+        "StopUID": "THB289792",
+        "RouteUID": "THB1628",
+        "RouteName": {
+          "Zh_tw": "1628",
+          "En": "1628"
+        }
+      },
+      {
+        "StopUID": "THB289792",
+        "RouteUID": "THB1630",
+        "RouteName": {
+          "Zh_tw": "1630",
+          "En": "1630"
+        }
+      },
+      {
+        "StopUID": "THB289792",
+        "RouteUID": "THB1632",
+        "RouteName": {
+          "Zh_tw": "1632",
+          "En": "1632"
+        }
+      },
+      {
+        "StopUID": "THB289792",
+        "RouteUID": "THB1633",
+        "RouteName": {
+          "Zh_tw": "1633",
+          "En": "1633"
+        }
+      },
+      {
+        "StopUID": "THB289792",
+        "RouteUID": "THB1635",
+        "RouteName": {
+          "Zh_tw": "1635",
+          "En": "1635"
+        }
+      },
+      {
+        "StopUID": "THB289792",
+        "RouteUID": "THB1636",
+        "RouteName": {
+          "Zh_tw": "1636",
+          "En": "1636"
+        }
+      },
+      {
+        "StopUID": "THB289792",
+        "RouteUID": "THB1637",
+        "RouteName": {
+          "Zh_tw": "1637",
+          "En": "1637"
+        }
+      },
+      {
+        "StopUID": "THB289792",
+        "RouteUID": "THB1638",
+        "RouteName": {
+          "Zh_tw": "1638",
+          "En": "1638"
+        }
+      },
+      {
+        "StopUID": "THB289792",
+        "RouteUID": "THB1639",
+        "RouteName": {
+          "Zh_tw": "1639",
+          "En": "1639"
+        }
+      },
+      {
+        "StopUID": "THB289792",
+        "RouteUID": "THB1652",
+        "RouteName": {
+          "Zh_tw": "1652",
+          "En": "1652"
+        }
+      },
+      {
+        "StopUID": "THB237066",
+        "RouteUID": "THB1819",
+        "RouteName": {
+          "Zh_tw": "1819",
+          "En": "1819"
+        }
+      },
+      {
+        "StopUID": "THB237066",
+        "RouteUID": "THB1820",
+        "RouteName": {
+          "Zh_tw": "1820",
+          "En": "1820"
+        }
+      },
+      {
+        "StopUID": "THB237066",
+        "RouteUID": "THB1821",
+        "RouteName": {
+          "Zh_tw": "1821",
+          "En": "1821"
+        }
+      },
+      {
+        "StopUID": "THB237066",
+        "RouteUID": "THB1822",
+        "RouteName": {
+          "Zh_tw": "1822",
+          "En": "1822"
+        }
+      },
+      {
+        "StopUID": "THB237066",
+        "RouteUID": "THB1823",
+        "RouteName": {
+          "Zh_tw": "1823",
+          "En": "1823"
+        }
+      },
+      {
+        "StopUID": "THB237066",
+        "RouteUID": "THB1824",
+        "RouteName": {
+          "Zh_tw": "1824",
+          "En": "1824"
+        }
+      },
+      {
+        "StopUID": "THB237066",
+        "RouteUID": "THB1826",
+        "RouteName": {
+          "Zh_tw": "1826",
+          "En": "1826"
+        }
+      },
+      {
+        "StopUID": "THB237066",
+        "RouteUID": "THB1827",
+        "RouteName": {
+          "Zh_tw": "1827",
+          "En": "1827"
+        }
+      },
+      {
+        "StopUID": "THB237066",
+        "RouteUID": "THB1828",
+        "RouteName": {
+          "Zh_tw": "1828",
+          "En": "1828"
+        }
+      },
+      {
+        "StopUID": "THB237066",
+        "RouteUID": "THB1829",
+        "RouteName": {
+          "Zh_tw": "1829",
+          "En": "1829"
+        }
+      },
+      {
+        "StopUID": "THB237066",
+        "RouteUID": "THB1830",
+        "RouteName": {
+          "Zh_tw": "1830",
+          "En": "1830"
+        }
+      },
+      {
+        "StopUID": "THB237066",
+        "RouteUID": "THB1831",
+        "RouteName": {
+          "Zh_tw": "1831",
+          "En": "1831"
+        }
+      },
+      {
+        "StopUID": "THB237066",
+        "RouteUID": "THB1832",
+        "RouteName": {
+          "Zh_tw": "1832",
+          "En": "1832"
+        }
+      },
+      {
+        "StopUID": "THB237066",
+        "RouteUID": "THB1833",
+        "RouteName": {
+          "Zh_tw": "1833",
+          "En": "1833"
+        }
+      },
+      {
+        "StopUID": "THB237066",
+        "RouteUID": "THB1834",
+        "RouteName": {
+          "Zh_tw": "1834",
+          "En": "1834"
+        }
+      },
+      {
+        "StopUID": "THB237066",
+        "RouteUID": "THB1835",
+        "RouteName": {
+          "Zh_tw": "1835",
+          "En": "1835"
+        }
+      },
+      {
+        "StopUID": "THB237066",
+        "RouteUID": "THB1837",
+        "RouteName": {
+          "Zh_tw": "1837",
+          "En": "1837"
+        }
+      },
+      {
+        "StopUID": "THB237066",
+        "RouteUID": "THB1838",
+        "RouteName": {
+          "Zh_tw": "1838",
+          "En": "1838"
+        }
+      },
+      {
+        "StopUID": "THB237066",
+        "RouteUID": "THB1839",
+        "RouteName": {
+          "Zh_tw": "1839",
+          "En": "1839"
+        }
+      },
+      {
+        "StopUID": "THB289792",
+        "RouteUID": "THB1839",
+        "RouteName": {
+          "Zh_tw": "1839",
+          "En": "1839"
+        }
+      },
+      {
+        "StopUID": "THB289796",
+        "RouteUID": "THB1915",
+        "RouteName": {
+          "Zh_tw": "1915",
+          "En": "1915"
+        }
+      },
+      {
+        "StopUID": "THB289796",
+        "RouteUID": "THB1916",
+        "RouteName": {
+          "Zh_tw": "1916",
+          "En": "1916"
+        }
+      },
+      {
+        "StopUID": "THB289796",
+        "RouteUID": "THB1917",
+        "RouteName": {
+          "Zh_tw": "1917",
+          "En": "1917"
+        }
+      },
+      {
+        "StopUID": "THB289793",
+        "RouteUID": "THB2011",
+        "RouteName": {
+          "Zh_tw": "2011",
+          "En": "2011"
+        }
+      },
+      {
+        "StopUID": "THB289792",
+        "RouteUID": "THB7000",
+        "RouteName": {
+          "Zh_tw": "7000",
+          "En": "7000"
+        }
+      },
+      {
+        "StopUID": "THB289792",
+        "RouteUID": "THB7005",
+        "RouteName": {
+          "Zh_tw": "7005",
+          "En": "7005"
+        }
+      },
+      {
+        "StopUID": "THB289798",
+        "RouteUID": "THB7500",
+        "RouteName": {
+          "Zh_tw": "7500",
+          "En": "7500"
+        }
+      },
+      {
+        "StopUID": "THB289792",
+        "RouteUID": "THB7511",
+        "RouteName": {
+          "Zh_tw": "7511",
+          "En": "7511"
+        }
+      },
+      {
+        "StopUID": "THB289798",
+        "RouteUID": "THB7513",
+        "RouteName": {
+          "Zh_tw": "7513",
+          "En": "7513"
+        }
+      },
+      {
+        "StopUID": "THB289799",
+        "RouteUID": "THB9003",
+        "RouteName": {
+          "Zh_tw": "9003",
+          "En": "9003"
+        }
+      },
+      {
+        "StopUID": "THB289800",
+        "RouteUID": "THB9003",
+        "RouteName": {
+          "Zh_tw": "9003",
+          "En": "9003"
+        }
+      }
+    ]
+  },
+  {
+    "StationUID": "TPE1000082",
+    "StationName": {
+      "Zh_tw": "臺北車站(忠孝)"
+    },
+    "StationPosition": {
+      "PositionLon": 121.5167218,
+      "PositionLat": 25.0465408
+    },
+    "LocationCityCode": "TPE",
+    "Stops": [
+      {
+        "StopUID": "TPE34726",
+        "RouteUID": "TPE10181",
+        "RouteName": {
+          "Zh_tw": "205",
+          "En": "205"
+        }
+      },
+      {
+        "StopUID": "TPE35854",
+        "RouteUID": "TPE10415",
+        "RouteName": {
+          "Zh_tw": "221",
+          "En": "221"
+        }
+      },
+      {
+        "StopUID": "TPE35979",
+        "RouteUID": "TPE10416",
+        "RouteName": {
+          "Zh_tw": "232",
+          "En": "232"
+        }
+      },
+      {
+        "StopUID": "TPE37026",
+        "RouteUID": "TPE10481",
+        "RouteName": {
+          "Zh_tw": "265經中央路",
+          "En": "265Zhongyang Rd."
+        }
+      },
+      {
+        "StopUID": "TPE37106",
+        "RouteUID": "TPE10482",
+        "RouteName": {
+          "Zh_tw": "265區",
+          "En": "265Shuttle"
+        }
+      },
+      {
+        "StopUID": "TPE17493",
+        "RouteUID": "TPE10735",
+        "RouteName": {
+          "Zh_tw": "253",
+          "En": "253"
+        }
+      },
+      {
+        "StopUID": "TPE39041",
+        "RouteUID": "TPE10823",
+        "RouteName": {
+          "Zh_tw": "260",
+          "En": "260"
+        }
+      },
+      {
+        "StopUID": "TPE188522",
+        "RouteUID": "TPE10824",
+        "RouteName": {
+          "Zh_tw": "260區",
+          "En": "260Shuttle"
+        }
+      },
+      {
+        "StopUID": "TPE11725",
+        "RouteUID": "TPE10832",
+        "RouteName": {
+          "Zh_tw": "22",
+          "En": "22"
+        }
+      },
+      {
+        "StopUID": "TPE188524",
+        "RouteUID": "TPE10851",
+        "RouteName": {
+          "Zh_tw": "內湖幹線",
+          "En": "Neihu Metro Bus"
+        }
+      },
+      {
+        "StopUID": "TPE10794",
+        "RouteUID": "TPE10911",
+        "RouteName": {
+          "Zh_tw": "212直",
+          "En": "212Express"
+        }
+      },
+      {
+        "StopUID": "TPE10654",
+        "RouteUID": "TPE10912",
+        "RouteName": {
+          "Zh_tw": "212",
+          "En": "212"
+        }
+      },
+      {
+        "StopUID": "TPE11039",
+        "RouteUID": "TPE10942",
+        "RouteName": {
+          "Zh_tw": "257",
+          "En": "257"
+        }
+      },
+      {
+        "StopUID": "TPE40589",
+        "RouteUID": "TPE10961",
+        "RouteName": {
+          "Zh_tw": "262",
+          "En": "262"
+        }
+      },
+      {
+        "StopUID": "TPE40716",
+        "RouteUID": "TPE10962",
+        "RouteName": {
+          "Zh_tw": "262區",
+          "En": "262Shuttle"
+        }
+      },
+      {
+        "StopUID": "TPE41808",
+        "RouteUID": "TPE11156",
+        "RouteName": {
+          "Zh_tw": "218",
+          "En": "218"
+        }
+      },
+      {
+        "StopUID": "TPE208378",
+        "RouteUID": "TPE11157",
+        "RouteName": {
+          "Zh_tw": "218直",
+          "En": "218Express"
+        }
+      },
+      {
+        "StopUID": "TPE42429",
+        "RouteUID": "TPE11171",
+        "RouteName": {
+          "Zh_tw": "265經明德路",
+          "En": "265Mingde Rd."
+        }
+      },
+      {
+        "StopUID": "TPE43183",
+        "RouteUID": "TPE11812",
+        "RouteName": {
+          "Zh_tw": "和平幹線",
+          "En": "Heping Metro Bus"
+        }
+      },
+      {
+        "StopUID": "TPE43835",
+        "RouteUID": "TPE11831",
+        "RouteName": {
+          "Zh_tw": "49",
+          "En": "49"
+        }
+      },
+      {
+        "StopUID": "TPE44155",
+        "RouteUID": "TPE11851",
+        "RouteName": {
+          "Zh_tw": "276",
+          "En": "276"
+        }
+      },
+      {
+        "StopUID": "TPE19152",
+        "RouteUID": "TPE15111",
+        "RouteName": {
+          "Zh_tw": "202",
+          "En": "202"
+        }
+      },
+      {
+        "StopUID": "TPE19236",
+        "RouteUID": "TPE15185",
+        "RouteName": {
+          "Zh_tw": "202區",
+          "En": "202Shuttle"
+        }
+      },
+      {
+        "StopUID": "TPE213571",
+        "RouteUID": "TPE15353",
+        "RouteName": {
+          "Zh_tw": "247",
+          "En": "247"
+        }
+      },
+      {
+        "StopUID": "TPE16691",
+        "RouteUID": "TPE15373",
+        "RouteName": {
+          "Zh_tw": "中山幹線",
+          "En": "Zhongshan Metro Bus"
+        }
+      },
+      {
+        "StopUID": "TPE45005",
+        "RouteUID": "TPE15381",
+        "RouteName": {
+          "Zh_tw": "246",
+          "En": "246"
+        }
+      },
+      {
+        "StopUID": "TPE46018",
+        "RouteUID": "TPE15514",
+        "RouteName": {
+          "Zh_tw": "605",
+          "En": "605"
+        }
+      },
+      {
+        "StopUID": "TPE46117",
+        "RouteUID": "TPE15518",
+        "RouteName": {
+          "Zh_tw": "605新台五",
+          "En": "605Xintaiwu"
+        }
+      },
+      {
+        "StopUID": "TPE15315",
+        "RouteUID": "TPE16111",
+        "RouteName": {
+          "Zh_tw": "307",
+          "En": "307"
+        }
+      },
+      {
+        "StopUID": "TPE15456",
+        "RouteUID": "TPE16112",
+        "RouteName": {
+          "Zh_tw": "310",
+          "En": "310"
+        }
+      },
+      {
+        "StopUID": "TPE15607",
+        "RouteUID": "TPE16121",
+        "RouteName": {
+          "Zh_tw": "604",
+          "En": "604"
+        }
+      },
+      {
+        "StopUID": "TPE58766",
+        "RouteUID": "TPE16131",
+        "RouteName": {
+          "Zh_tw": "265夜",
+          "En": "265Night"
+        }
+      },
+      {
+        "StopUID": "TPE125336",
+        "RouteUID": "TPE16132",
+        "RouteName": {
+          "Zh_tw": "212夜",
+          "En": "212Night"
+        }
+      },
+      {
+        "StopUID": "TPE191233",
+        "RouteUID": "TPE17800",
+        "RouteName": {
+          "Zh_tw": "臺北觀光巴士紅線",
+          "En": "Taipei Sightseeing Bus Red route"
+        }
+      },
+      {
+        "StopUID": "TPE191247",
+        "RouteUID": "TPE17801",
+        "RouteName": {
+          "Zh_tw": "臺北觀光巴士藍線",
+          "En": "Taipei Sightseeing Bus Blue route"
+        }
+      },
+      {
+        "StopUID": "TPE213085",
+        "RouteUID": "TPE19108",
+        "RouteName": {
+          "Zh_tw": "307西藏三民",
+          "En": "307Xizang Sanmin"
+        }
+      },
+      {
+        "StopUID": "TPE214131",
+        "RouteUID": "TPE19178",
+        "RouteName": {
+          "Zh_tw": "260區預",
+          "En": "260Shuttle B"
+        }
+      },
+      {
+        "StopUID": "TPE218321",
+        "RouteUID": "TPE19528",
+        "RouteName": {
+          "Zh_tw": "246預",
+          "En": "246B"
+        }
+      },
+      {
+        "StopUID": "TPE219891",
+        "RouteUID": "TPE19688",
+        "RouteName": {
+          "Zh_tw": "310區",
+          "En": "310Shuttle"
+        }
+      }
+    ]
+  },
+  {
+    "StationUID": "THB136463",
+    "StationName": {
+      "Zh_tw": "臺北車站(東三門)"
+    },
+    "StationPosition": {
+      "PositionLon": 121.518407,
+      "PositionLat": 25.047926
+    },
+    "LocationCityCode": "TPE",
+    "Stops": [
+      {
+        "StopUID": "THB300516",
+        "RouteUID": "THB1813",
+        "RouteName": {
+          "Zh_tw": "1813",
+          "En": "1813"
+        }
+      },
+      {
+        "StopUID": "THB300516",
+        "RouteUID": "THB1814",
+        "RouteName": {
+          "Zh_tw": "1814",
+          "En": "1814"
+        }
+      },
+      {
+        "StopUID": "THB300516",
+        "RouteUID": "THB1815",
+        "RouteName": {
+          "Zh_tw": "1815",
+          "En": "1815"
+        }
+      }
+    ]
+  },
+  {
+    "StationUID": "TPE1165609645",
+    "StationName": {
+      "Zh_tw": "臺北車站(忠孝)"
+    },
+    "StationPosition": {
+      "PositionLon": 121.51776,
+      "PositionLat": 25.046456
+    },
+    "LocationCityCode": "TPE",
+    "Stops": [
+      {
+        "StopUID": "TPE217525",
+        "RouteUID": "TPE17800",
+        "RouteName": {
+          "Zh_tw": "臺北觀光巴士紅線",
+          "En": "Taipei Sightseeing Bus Red route"
+        }
+      },
+      {
+        "StopUID": "TPE217524",
+        "RouteUID": "TPE17801",
+        "RouteName": {
+          "Zh_tw": "臺北觀光巴士藍線",
+          "En": "Taipei Sightseeing Bus Blue route"
+        }
+      },
+      {
+        "StopUID": "TPE222793",
+        "RouteUID": "TPE19755",
+        "RouteName": {
+          "Zh_tw": "新莊-臺北車站",
+          "En": "Xinzhuang-Taipei Main Sta."
+        }
+      }
+    ]
+  },
+  {
+    "StationUID": "TPE1886",
+    "StationName": {
+      "Zh_tw": "臺北車站(忠孝)"
+    },
+    "StationPosition": {
+      "PositionLon": 121.51700353811,
+      "PositionLat": 25.0462559043502
+    },
+    "LocationCityCode": "TPE",
+    "Stops": [
+      {
+        "StopUID": "TPE34753",
+        "RouteUID": "TPE10181",
+        "RouteName": {
+          "Zh_tw": "205",
+          "En": "205"
+        }
+      },
+      {
+        "StopUID": "TPE35941",
+        "RouteUID": "TPE10416",
+        "RouteName": {
+          "Zh_tw": "232",
+          "En": "232"
+        }
+      },
+      {
+        "StopUID": "TPE36055",
+        "RouteUID": "TPE10417",
+        "RouteName": {
+          "Zh_tw": "忠孝幹線",
+          "En": "Zhongxiao Metro Bus"
+        }
+      },
+      {
+        "StopUID": "TPE23260",
+        "RouteUID": "TPE10851",
+        "RouteName": {
+          "Zh_tw": "內湖幹線",
+          "En": "Neihu Metro Bus"
+        }
+      },
+      {
+        "StopUID": "TPE10834",
+        "RouteUID": "TPE10911",
+        "RouteName": {
+          "Zh_tw": "212直",
+          "En": "212Express"
+        }
+      },
+      {
+        "StopUID": "TPE10672",
+        "RouteUID": "TPE10912",
+        "RouteName": {
+          "Zh_tw": "212",
+          "En": "212"
+        }
+      },
+      {
+        "StopUID": "TPE10942",
+        "RouteUID": "TPE10942",
+        "RouteName": {
+          "Zh_tw": "257",
+          "En": "257"
+        }
+      },
+      {
+        "StopUID": "TPE10175",
+        "RouteUID": "TPE11411",
+        "RouteName": {
+          "Zh_tw": "299",
+          "En": "299"
+        }
+      },
+      {
+        "StopUID": "TPE44160",
+        "RouteUID": "TPE11851",
+        "RouteName": {
+          "Zh_tw": "276",
+          "En": "276"
+        }
+      },
+      {
+        "StopUID": "TPE19111",
+        "RouteUID": "TPE15111",
+        "RouteName": {
+          "Zh_tw": "202",
+          "En": "202"
+        }
+      },
+      {
+        "StopUID": "TPE19225",
+        "RouteUID": "TPE15185",
+        "RouteName": {
+          "Zh_tw": "202區",
+          "En": "202Shuttle"
+        }
+      },
+      {
+        "StopUID": "TPE213576",
+        "RouteUID": "TPE15353",
+        "RouteName": {
+          "Zh_tw": "247",
+          "En": "247"
+        }
+      },
+      {
+        "StopUID": "TPE190507",
+        "RouteUID": "TPE15373",
+        "RouteName": {
+          "Zh_tw": "中山幹線",
+          "En": "Zhongshan Metro Bus"
+        }
+      },
+      {
+        "StopUID": "TPE46022",
+        "RouteUID": "TPE15514",
+        "RouteName": {
+          "Zh_tw": "605",
+          "En": "605"
+        }
+      },
+      {
+        "StopUID": "TPE46121",
+        "RouteUID": "TPE15518",
+        "RouteName": {
+          "Zh_tw": "605新台五",
+          "En": "605Xintaiwu"
+        }
+      },
+      {
+        "StopUID": "TPE45492",
+        "RouteUID": "TPE15571",
+        "RouteName": {
+          "Zh_tw": "600",
+          "En": "600"
+        }
+      },
+      {
+        "StopUID": "TPE125357",
+        "RouteUID": "TPE16132",
+        "RouteName": {
+          "Zh_tw": "212夜",
+          "En": "212Night"
+        }
+      }
+    ]
+  },
+  {
+    "StationUID": "TPE1882",
+    "StationName": {
+      "Zh_tw": "臺北車站(忠孝)"
+    },
+    "StationPosition": {
+      "PositionLon": 121.515689438859,
+      "PositionLat": 25.0465635496954
+    },
+    "LocationCityCode": "TPE",
+    "Stops": [
+      {
+        "StopUID": "TPE17858",
+        "RouteUID": "TPE10736",
+        "RouteName": {
+          "Zh_tw": "671",
+          "En": "671"
+        }
+      },
+      {
+        "StopUID": "TPE22818",
+        "RouteUID": "TPE10841",
+        "RouteName": {
+          "Zh_tw": "0東",
+          "En": "0East"
+        }
+      },
+      {
+        "StopUID": "TPE23149",
+        "RouteUID": "TPE10844",
+        "RouteName": {
+          "Zh_tw": "652",
+          "En": "652"
+        }
+      },
+      {
+        "StopUID": "TPE40544",
+        "RouteUID": "TPE10961",
+        "RouteName": {
+          "Zh_tw": "262",
+          "En": "262"
+        }
+      },
+      {
+        "StopUID": "TPE40671",
+        "RouteUID": "TPE10962",
+        "RouteName": {
+          "Zh_tw": "262區",
+          "En": "262Shuttle"
+        }
+      },
+      {
+        "StopUID": "TPE43865",
+        "RouteUID": "TPE11831",
+        "RouteName": {
+          "Zh_tw": "49",
+          "En": "49"
+        }
+      },
+      {
+        "StopUID": "TPE45029",
+        "RouteUID": "TPE15381",
+        "RouteName": {
+          "Zh_tw": "246",
+          "En": "246"
+        }
+      },
+      {
+        "StopUID": "TPE46191",
+        "RouteUID": "TPE15516",
+        "RouteName": {
+          "Zh_tw": "605快",
+          "En": "605Express"
+        }
+      },
+      {
+        "StopUID": "TPE15250",
+        "RouteUID": "TPE16111",
+        "RouteName": {
+          "Zh_tw": "307",
+          "En": "307"
+        }
+      },
+      {
+        "StopUID": "TPE219355",
+        "RouteUID": "TPE16121",
+        "RouteName": {
+          "Zh_tw": "604",
+          "En": "604"
+        }
+      },
+      {
+        "StopUID": "TPE208791",
+        "RouteUID": "TPE18708",
+        "RouteName": {
+          "Zh_tw": "通勤24",
+          "En": "CB24"
+        }
+      },
+      {
+        "StopUID": "TPE213046",
+        "RouteUID": "TPE19108",
+        "RouteName": {
+          "Zh_tw": "307西藏三民",
+          "En": "307Xizang Sanmin"
+        }
+      },
+      {
+        "StopUID": "TPE218345",
+        "RouteUID": "TPE19528",
+        "RouteName": {
+          "Zh_tw": "246預",
+          "En": "246B"
+        }
+      }
+    ]
+  },
+  {
+    "StationUID": "NWT1882",
+    "StationName": {
+      "Zh_tw": "臺北車站(忠孝)"
+    },
+    "StationPosition": {
+      "PositionLon": 121.515689438859,
+      "PositionLat": 25.0465635496954
+    },
+    "LocationCityCode": "TPE",
+    "Stops": [
+      {
+        "StopUID": "NWT171624",
+        "RouteUID": "NWT17360",
+        "RouteName": {
+          "Zh_tw": "藍1",
+          "En": "BL1"
+        }
+      }
+    ]
+  }
+]

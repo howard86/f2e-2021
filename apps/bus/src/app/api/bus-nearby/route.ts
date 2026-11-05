@@ -1,5 +1,6 @@
 import { busService } from '@/services/tdx';
 import { badRequest, handleApi } from '@/utils/api';
+import { loadFixture, serveFixtures } from '@/utils/fixtures';
 
 export const dynamic = 'force-dynamic';
 
@@ -18,6 +19,10 @@ export const GET = (request: Request) =>
 
     if (Number.isNaN(latitude) || Number.isNaN(longitude)) {
       throw badRequest();
+    }
+
+    if (serveFixtures()) {
+      return loadFixture.nearby();
     }
 
     return busService.getBusStationNearBy({

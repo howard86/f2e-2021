@@ -2,6 +2,7 @@ import { type City, CitySet } from '@f2e/tdx-core';
 
 import { busService } from '@/services/tdx';
 import { badRequest, handleApi, notFound } from '@/utils/api';
+import { loadFixture, serveFixtures } from '@/utils/fixtures';
 
 export const dynamic = 'force-dynamic';
 
@@ -17,6 +18,10 @@ export const GET = (request: Request) =>
 
     if (!CitySet.has(city)) {
       throw notFound();
+    }
+
+    if (serveFixtures()) {
+      return loadFixture.estimation();
     }
 
     return busService.getBusEstimationsByCityAndRouteName(city, route);

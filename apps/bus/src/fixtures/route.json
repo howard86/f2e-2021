@@ -1,0 +1,136 @@
+[
+  {
+    "RouteUID": "TPE16111",
+    "RouteID": "16111",
+    "RouteName": {
+      "Zh_tw": "307",
+      "En": "307"
+    },
+    "HasSubRoutes": true,
+    "Operators": [
+      {
+        "OperatorID": "100",
+        "OperatorName": {
+          "Zh_tw": "臺北客運",
+          "En": "Taipei Bus Co., Ltd."
+        },
+        "OperatorCode": "TaipeiBus",
+        "OperatorNo": "1407"
+      },
+      {
+        "OperatorID": "200",
+        "OperatorName": {
+          "Zh_tw": "首都客運",
+          "En": "Capital Bus Co., Ltd."
+        },
+        "OperatorCode": "CapitalBus",
+        "OperatorNo": "0913"
+      }
+    ],
+    "SubRoutes": [
+      {
+        "SubRouteUID": "TPE157462",
+        "SubRouteID": "157462",
+        "OperatorIDs": ["100", "200"],
+        "SubRouteName": {
+          "Zh_tw": "307莒光往板橋前站",
+          "En": "307"
+        },
+        "Direction": 1,
+        "FirstBusTime": "0500",
+        "LastBusTime": "2210",
+        "HolidayFirstBusTime": "0500",
+        "HolidayLastBusTime": "2210"
+      },
+      {
+        "SubRouteUID": "TPE157463",
+        "SubRouteID": "157463",
+        "OperatorIDs": ["100", "200"],
+        "SubRouteName": {
+          "Zh_tw": "307莒光往撫遠街",
+          "En": "307"
+        },
+        "Direction": 0,
+        "FirstBusTime": "0500",
+        "LastBusTime": "2210",
+        "HolidayFirstBusTime": "0500",
+        "HolidayLastBusTime": "2210"
+      }
+    ],
+    "DepartureStopNameZh": "板橋",
+    "DepartureStopNameEn": "Banqiao",
+    "DestinationStopNameZh": "撫遠街",
+    "DestinationStopNameEn": "Fuyuan St.",
+    "TicketPriceDescriptionZh": "兩段票",
+    "FareBufferZoneDescriptionZh": "萬大國小-中和國稅局",
+    "RouteMapImageUrl": "https://ebus.gov.taipei/MapOverview?nid=0100030700",
+    "BusRouteType": 11
+  },
+  {
+    "RouteUID": "TPE19108",
+    "RouteID": "19108",
+    "RouteName": {
+      "Zh_tw": "307西藏三民",
+      "En": "307Xizang Sanmin"
+    },
+    "HasSubRoutes": true,
+    "Operators": [
+      {
+        "OperatorID": "100",
+        "OperatorName": {
+          "Zh_tw": "臺北客運",
+          "En": "Taipei Bus Co., Ltd."
+        },
+        "OperatorCode": "TaipeiBus",
+        "OperatorNo": "1407"
+      },
+      {
+        "OperatorID": "200",
+        "OperatorName": {
+          "Zh_tw": "首都客運",
+          "En": "Capital Bus Co., Ltd."
+        },
+        "OperatorCode": "CapitalBus",
+        "OperatorNo": "0913"
+      }
+    ],
+    "SubRoutes": [
+      {
+        "SubRouteUID": "TPE161407",
+        "SubRouteID": "161407",
+        "OperatorIDs": ["100", "200"],
+        "SubRouteName": {
+          "Zh_tw": "307西藏往板橋前站",
+          "En": "307Xizang Sanmin"
+        },
+        "Direction": 1,
+        "FirstBusTime": "0510",
+        "LastBusTime": "2200",
+        "HolidayFirstBusTime": "0510",
+        "HolidayLastBusTime": "2200"
+      },
+      {
+        "SubRouteUID": "TPE161408",
+        "SubRouteID": "161408",
+        "OperatorIDs": ["100", "200"],
+        "SubRouteName": {
+          "Zh_tw": "307西藏往撫遠街",
+          "En": "307Xizang Sanmin"
+        },
+        "Direction": 0,
+        "FirstBusTime": "0510",
+        "LastBusTime": "2200",
+        "HolidayFirstBusTime": "0510",
+        "HolidayLastBusTime": "2200"
+      }
+    ],
+    "DepartureStopNameZh": "板橋",
+    "DepartureStopNameEn": "Banqiao",
+    "DestinationStopNameZh": "撫遠街",
+    "DestinationStopNameEn": "Fuyuan St.",
+    "TicketPriceDescriptionZh": "兩段票",
+    "FareBufferZoneDescriptionZh": "萬大國小-中和國稅局",
+    "RouteMapImageUrl": "https://ebus.gov.taipei/MapOverview?nid=0100030790",
+    "BusRouteType": 11
+  }
+]

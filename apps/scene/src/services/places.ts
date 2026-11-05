@@ -7,7 +7,11 @@
 import type { City } from '@f2e/tdx-core';
 import { unstable_cache } from 'next/cache';
 import { cache } from 'react';
-
+import {
+  fixtureRecords,
+  fixtureSnapshot,
+  fixturesEnabled,
+} from '@/services/place-fixtures';
 import {
   type PlaceRecord,
   toDetail,
@@ -27,11 +31,12 @@ import {
 import {
   collectSnapshot,
   filterRecords,
+  fitSnapshot,
+  idOf,
+  matchesKeyword,
   nearbyFrom,
   pageRecords,
-  SNAPSHOT_WARN_BYTES,
   searchRecords,
-  snapshotBytes,
   sortRecords,
 } from '@/services/place-snapshot';
 import { tourismService } from '@/services/tdx';
@@ -157,15 +162,10 @@ const runSnapshot = async (
 
     return result as Fetched;
   });
-  const bytes = snapshotBytes(records);
 
-  if (bytes > SNAPSHOT_WARN_BYTES) {
-    console.warn(
-      `[places] ${type}/${city} snapshot is ${bytes} bytes, near the 2 MB data cache limit`,
-    );
-  }
-
-  return records;
+  // Vercel's data cache drops entries over 2 MB, which would refetch the
+  // whole city on every revalidation, so shrink an oversized one first.
+  return fitSnapshot(`${type}/${city}`, records);
 };
 
 const cachedSnapshot = unstable_cache(runSnapshot, ['places:snapshot'], {
@@ -178,8 +178,16 @@ const cachedEventSnapshot = unstable_cache(
 );
 
 const getCitySnapshot = cache(
-  (type: PlaceType, city: City): Promise<PlaceRecord[]> =>
-    (type === 'activity' ? cachedEventSnapshot : cachedSnapshot)(type, city),
+  (type: PlaceType, city: City): Promise<PlaceRecord[]> => {
+    if (fixturesEnabled()) {
+      return fixtureSnapshot(type, city);
+    }
+
+    return (type === 'activity' ? cachedEventSnapshot : cachedSnapshot)(
+      type,
+      city,
+    );
+  },
 );
 
 const fetchById = cache((type: PlaceType, id: string) =>
@@ -194,12 +202,38 @@ export const listPlaces = async (query: PlaceQuery): Promise<PlacePage> => {
     return { hasMore: false, items: [], page: Math.max(1, query.page ?? 1) };
   }
 
-  if (request.city && !query.keyword) {
+  if (request.city && !query.keyword && !fixturesEnabled()) {
     const records = await getCitySnapshot(query.type, request.city);
     const { hasMore, rows } = pageRecords(
       sortRecords(
         query.type,
         filterRecords(query, records, new Date()),
+        query.when,
+      ),
+      request.page,
+      request.pageSize,
+    );
+
+    return {
+      hasMore,
+      items: rows.map((record) => toSummary(query.type, record)),
+      page: request.page,
+    };
+  }
+
+  if (fixturesEnabled()) {
+    // No TDX under `next dev`: query the recorded snapshots locally.
+    const keyword = normalizeKeyword(query.keyword);
+    const all = request.city
+      ? await getCitySnapshot(query.type, request.city)
+      : await fixtureRecords(query.type);
+    const { hasMore, rows } = pageRecords(
+      sortRecords(
+        query.type,
+        filterRecords(query, all, new Date()).filter(
+          (record) =>
+            !keyword || matchesKeyword(toSummary(query.type, record), keyword),
+        ),
         query.when,
       ),
       request.page,
@@ -239,6 +273,14 @@ export const getPlaceDetail = async (
 ): Promise<PlaceDetail | undefined> => {
   if (!(isPlaceType(type) && isValidId(id))) {
     return;
+  }
+
+  if (fixturesEnabled()) {
+    const found = (await fixtureRecords(type)).find(
+      (item) => idOf(type, item) === id,
+    );
+
+    return found ? toDetail(type, found) : undefined;
   }
 
   const record = await fetchById(type, id);
