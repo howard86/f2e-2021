@@ -9,13 +9,12 @@ import {
   SimpleGrid,
 } from '@chakra-ui/react';
 import { type City, CityMap } from '@f2e/tdx-core';
+import { RouteLink } from '@f2e/ui/links';
 import { useState } from 'react';
 import { BiChevronRight } from 'react-icons/bi';
-
 import Background from '@/components/background';
 import Pagination from '@/components/pagination';
 import PlaceCard, { type PlaceCardProps } from '@/components/place-card';
-import RouteLink from '@/components/route-link';
 import SceneCard, { type SceneCardProps } from '@/components/scene-card';
 import SectionBanner from '@/components/section-banner';
 import { DEFAULT_CARD_NUMBER } from '@/constants/pagination';

@@ -1,8 +1,7 @@
 import { SimpleGrid } from '@chakra-ui/react';
+import { EmptyResult, ErrorResult } from '@f2e/ui/result-state';
 import type { ReactNode } from 'react';
-
 import CardGridSkeleton from '@/components/card-grid-skeleton';
-import { EmptyResult, ErrorResult } from '@/components/result-state';
 import SectionBanner from '@/components/section-banner';
 import type useKeywordSearch from '@/hooks/use-keyword-search';
 

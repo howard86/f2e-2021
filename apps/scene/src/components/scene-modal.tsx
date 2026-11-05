@@ -11,11 +11,10 @@ import {
   useDisclosure,
 } from '@chakra-ui/react';
 import { type City, CityMap, counties, majorCities } from '@f2e/tdx-core';
+import { useAppToast } from '@f2e/ui/toast';
 import { useRouter } from 'next/navigation';
 import { useState } from 'react';
 import { FiSearch } from 'react-icons/fi';
-
-import useAppToast from '@/hooks/use-app-toast';
 
 const DEFAULT_MENU_VALUE = '選擇縣市' as const;
 

@@ -10,9 +10,8 @@ import {
   Text,
   useSlotRecipe,
 } from '@chakra-ui/react';
+import { RouteLink } from '@f2e/ui/links';
 import { FiMapPin } from 'react-icons/fi';
-
-import RouteLink from './route-link';
 
 export interface PlaceCardProps extends FlexProps {
   address: string;

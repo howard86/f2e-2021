@@ -15,11 +15,11 @@ import {
   Tooltip,
 } from '@chakra-ui/react';
 import { CityMap } from '@f2e/tdx-core';
+import { useAppToast } from '@f2e/ui/toast';
 import type React from 'react';
 import { type ChangeEvent, type FormEvent, useState } from 'react';
 import { BsCalendar } from 'react-icons/bs';
 import { FiSearch } from 'react-icons/fi';
-
 import Background from '@/components/background';
 import GridCard from '@/components/grid-card';
 import Pagination from '@/components/pagination';
@@ -27,7 +27,6 @@ import PlaceCard, { type PlaceCardProps } from '@/components/place-card';
 import SearchResults from '@/components/search-list-view';
 import SectionBanner from '@/components/section-banner';
 import { DEFAULT_CARD_NUMBER } from '@/constants/pagination';
-import useAppToast from '@/hooks/use-app-toast';
 import useKeywordSearch from '@/hooks/use-keyword-search';
 import { useLazyGetHotelCardsQuery } from '@/services/local';
 import background from '@/static/background/hotels.png';

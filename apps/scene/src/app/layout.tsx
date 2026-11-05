@@ -7,7 +7,7 @@ import Providers from './providers';
 const notoSansTC = Noto_Sans_TC({
   display: 'swap',
   preload: false,
-  variable: '--font-noto-sans-tc',
+  variable: '--font-body',
   weight: ['400', '500', '700'],
 });
 

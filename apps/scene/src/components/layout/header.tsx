@@ -9,6 +9,7 @@ import {
   IconButton,
   Separator,
 } from '@chakra-ui/react';
+import { RouteLink } from '@f2e/ui/links';
 import throttle from 'lodash.throttle';
 import { useRouter } from 'next/navigation';
 import { useEffect, useRef, useState } from 'react';
@@ -17,7 +18,6 @@ import { CATEGORIES, type Category } from '@/constants/categories';
 import ROUTES from '@/constants/routes';
 import getAvatar from '@/services/avatar';
 import Logo from '../icons/logo';
-import RouteLink from '../route-link';
 import MenuPopover from './menu-popover';
 
 const THROTTLED_TIME_MS = 500;

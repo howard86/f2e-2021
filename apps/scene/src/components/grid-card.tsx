@@ -12,7 +12,7 @@ import {
   useSlotRecipe,
 } from '@chakra-ui/react';
 
-import RouteLink from './route-link';
+import { RouteLink } from '@f2e/ui/links';
 
 interface GridCardProps extends GridItemProps {
   href: string;

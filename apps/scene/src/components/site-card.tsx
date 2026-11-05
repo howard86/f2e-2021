@@ -9,9 +9,8 @@ import {
   Text,
   useSlotRecipe,
 } from '@chakra-ui/react';
+import { RouteLink } from '@f2e/ui/links';
 import Image, { type StaticImageData } from 'next/image';
-
-import RouteLink from './route-link';
 
 interface SiteCardProps extends LinkBoxProps {
   href: string;

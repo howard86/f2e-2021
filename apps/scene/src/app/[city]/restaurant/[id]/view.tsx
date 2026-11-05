@@ -13,13 +13,12 @@ import {
 } from '@chakra-ui/react';
 import { CityMap } from '@f2e/tdx-core';
 import type { Restaurant } from '@f2e/tdx-tourism';
+import { RouteLink } from '@f2e/ui/links';
 import { BiChevronRight, BiLinkExternal, BiSync } from 'react-icons/bi';
 import { BsBookmarkPlus } from 'react-icons/bs';
 import { FiClock, FiMapPin, FiPhoneIncoming } from 'react-icons/fi';
 import { MdPhotoAlbum } from 'react-icons/md';
-
 import GoogleMap from '@/components/google-map';
-import RouteLink from '@/components/route-link';
 import SceneDetailBox from '@/components/scene-detail-text';
 
 interface RestaurantViewProps {

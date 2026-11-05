@@ -1,12 +1,22 @@
-import { createSystem, defaultConfig, defineConfig } from '@chakra-ui/react';
+import { defineConfig } from '@chakra-ui/react';
+import { createAppSystem } from '@f2e/ui/system';
 import colors from './colors';
 import Button from './components/button';
 import Text from './components/text';
 import imageCard from './recipes/image-card';
-import styles from './styles';
 
 const config = defineConfig({
-  globalCss: styles,
+  globalCss: {
+    body: {
+      color: 'fg.muted',
+    },
+    'h1, h2, h3, h4, h5': {
+      color: 'fg',
+    },
+    html: {
+      colorPalette: 'scenes',
+    },
+  },
   theme: {
     recipes: {
       button: Button,
@@ -18,12 +28,7 @@ const config = defineConfig({
       imageCard,
     },
     textStyles: Text,
-    tokens: {
-      fonts: {
-        body: { value: 'var(--font-noto-sans-tc), sans-serif' },
-      },
-    },
   },
 });
 
-export default createSystem(defaultConfig, config);
+export default createAppSystem(config);
