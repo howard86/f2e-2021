@@ -1,4 +1,3 @@
-import { Box } from '@chakra-ui/react';
 import { useAppToast } from '@f2e/ui/toast';
 import { useCallback, useRef } from 'react';
 import { ZoomLevel } from '@/components/bus-stop-drawer';
@@ -50,7 +49,7 @@ const useGetLocation = () => {
         lng: geoLocation.coords.longitude,
       };
 
-      const { createJSXMarker: attachJSXMarker } = await import(
+      const { createMarker, createMarkerElement } = await import(
         '@/services/mapbox'
       );
 
@@ -59,15 +58,17 @@ const useGetLocation = () => {
         mapContextRef.current.positionMarker.remove();
       }
 
-      mapContextRef.current.positionMarker = attachJSXMarker(
-        <Box
-          bgImage="url(/current.png)"
-          h="40px"
-          id="current"
-          onClick={flyToCurrent}
-          w="40px"
-          zIndex="modal"
-        />,
+      mapContextRef.current.positionMarker = createMarker(
+        createMarkerElement({
+          id: 'current',
+          onClick: flyToCurrent,
+          style: {
+            backgroundImage: 'url(/current.png)',
+            height: '40px',
+            width: '40px',
+            zIndex: 'var(--chakra-z-index-modal)',
+          },
+        }),
         newPosition.center,
       );
 

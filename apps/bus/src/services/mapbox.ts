@@ -1,6 +1,4 @@
 import mapboxgl from 'mapbox-gl';
-import type { ReactElement } from 'react';
-import { createRoot } from 'react-dom/client';
 import type { GeoJSONLineString } from 'wellknown';
 
 type Coordinate = [number, number];
@@ -32,25 +30,52 @@ export const initialize = (
   });
 };
 
-export const createJSXMarker = (
-  Element: ReactElement,
+export interface MarkerElementOptions {
+  className?: string;
+  id?: string;
+  onClick?: () => void;
+  style?: Partial<CSSStyleDeclaration>;
+  text?: string;
+}
+
+/** Builds a marker's DOM node; nest more with append() where needed. */
+export const createMarkerElement = ({
+  className,
+  id,
+  onClick,
+  style,
+  text,
+}: MarkerElementOptions): HTMLElement => {
+  const element = document.createElement('div');
+
+  if (className) {
+    element.className = className;
+  }
+
+  if (id) {
+    element.id = id;
+  }
+
+  if (text) {
+    element.textContent = text;
+  }
+
+  if (style) {
+    Object.assign(element.style, style);
+  }
+
+  if (onClick) {
+    element.addEventListener('click', onClick);
+  }
+
+  return element;
+};
+
+export const createMarker = (
+  element: HTMLElement,
   coordinates: mapboxgl.LngLatLike,
   options?: mapboxgl.MarkerOptions,
-) => {
-  const node = document.createElement('div');
-  const root = createRoot(node);
-  root.render(Element);
-
-  const marker = new mapboxgl.Marker(node, options).setLngLat(coordinates);
-  const remove = marker.remove.bind(marker);
-  marker.remove = () => {
-    root.unmount();
-    marker.remove = remove;
-    return remove();
-  };
-
-  return marker;
-};
+) => new mapboxgl.Marker(element, options).setLngLat(coordinates);
 
 export const addLayerAndSource = (
   map: mapboxgl.Map,
