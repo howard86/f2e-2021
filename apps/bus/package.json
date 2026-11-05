@@ -30,6 +30,7 @@
     "build": "bun --bun next build",
     "dev": "bun --bun next dev",
     "start": "bun --bun next start",
+    "test": "bun test",
     "typecheck": "bun check"
   },
   "dependencies": {

@@ -15,7 +15,7 @@ import {
   useDisclosure,
   VStack,
 } from '@chakra-ui/react';
-import { BusDirection, type BusRoute, type BusStopOfRoute } from '@f2e/tdx-bus';
+import { BusDirection } from '@f2e/tdx-bus';
 import type { City } from '@f2e/tdx-core';
 import { useRouter } from 'next/navigation';
 import { useEffect, useMemo, useState } from 'react';
@@ -31,22 +31,26 @@ import { useMap } from '@/components/map-context-provider';
 import NavBarItems from '@/components/nav-bar-items';
 import { DESKTOP_DISPLAY, MOBILE_DISPLAY } from '@/constants/style';
 import { THIRTY_SEC_IN_MS } from '@/constants/time';
+import useInView from '@/hooks/use-in-view';
 import { useGetBusEstimation } from '@/services/local';
 import theme from '@/theme';
 import { getMiddleElement } from '@/utils/array';
 import { getBusEstimationStatus } from '@/utils/bus';
+import {
+  getDirectionDestination,
+  getDirectionTabName,
+  type RouteStopEntity,
+} from '@/utils/route-stops';
 import { getTwoDigitString } from '@/utils/string';
 
 interface BusRouteViewProps {
-  busRoute: BusRoute;
   busStopEntity: RouteStopEntity;
   city: City;
   directions: BusDirection[];
   geoJson: GeoJSONLineString;
   routeName: string;
+  routeUid: string;
 }
-
-export type RouteStopEntity = Record<BusDirection, BusStopOfRoute>;
 
 const INITIAL_ID = '';
 const STOP_LIST_MAX_HEIGHT = 'calc(100vh - 144px)';
@@ -54,7 +58,7 @@ const STOP_LIST_MAX_HEIGHT = 'calc(100vh - 144px)';
 const BusRouteView = ({
   city,
   routeName,
-  busRoute: route,
+  routeUid: routeId,
   geoJson,
   directions,
   busStopEntity: routeStopEntity,
@@ -75,14 +79,16 @@ const BusRouteView = ({
   );
   const [selectedStopId, setSelectedStopId] = useState(INITIAL_ID);
   const { divRef, mapContextRef, isLoaded, setLoaded } = useMap();
-  const routeId = (route as BusRoute | undefined)?.RouteUID;
   // TODO: refactor with useReducer
   const extendDisclosure = useDisclosure();
   const { open: isOpen, onClose, onOpen } = useDisclosure();
   const stopDisclosure = useDisclosure();
+  const { inView: isStopListInView, ref: stopListRef } =
+    useInView<HTMLDivElement>();
   const { data } = useGetBusEstimation(
     { city, route: routeName },
     THIRTY_SEC_IN_MS,
+    isStopListInView || stopDisclosure.open,
   );
   const busEstimations = useMemo(
     () =>
@@ -108,16 +114,6 @@ const BusRouteView = ({
 
   const onSwitchTab = (value: string) => {
     setSelectedDirection(Number(value) as BusDirection);
-  };
-
-  const getDirectionName = (direction: BusDirection) => {
-    if (directions.length === 1) {
-      return routeStopEntity[direction].Stops[0].StopName.Zh_tw;
-    }
-
-    return direction === BusDirection.去程
-      ? route.DestinationStopNameZh
-      : route.DepartureStopNameZh;
   };
 
   const onArrowClick = () => {
@@ -347,12 +343,12 @@ const BusRouteView = ({
                 display={MOBILE_DISPLAY}
                 lineClamp={1}
               >
-                {route.RouteName.Zh_tw}
+                {routeName}
               </Heading>
               <Box display={MOBILE_DISPLAY} flexGrow={1} />
               {directions.map((direction) => (
                 <Tabs.Trigger key={direction} value={String(direction)}>
-                  {getDirectionName(direction)}
+                  {getDirectionTabName(routeStopEntity, directions, direction)}
                 </Tabs.Trigger>
               ))}
             </Tabs.List>
@@ -364,6 +360,7 @@ const BusRouteView = ({
               ]}
               maxW={DESKTOP_MAP_LEFT}
               overflowX="hidden"
+              ref={stopListRef}
               transition="ease-in-out"
               transitionDuration="0.35s"
             >
@@ -450,11 +447,20 @@ const BusRouteView = ({
           </Tabs.Root>
         </Flex>
       </Flex>
-      <BusRouteInfoModal isOpen={isOpen} onClose={onClose} route={route} />
+      <BusRouteInfoModal
+        city={city}
+        isOpen={isOpen}
+        onClose={onClose}
+        routeName={routeName}
+        routeUid={routeId}
+      />
       {Boolean(selectedBusEstimation) && (
         <BusStopDrawer
           busEstimation={selectedBusEstimation}
-          busRoute={route}
+          destinationName={getDirectionDestination(
+            routeStopEntity,
+            selectedBusEstimation.Direction as BusDirection,
+          )}
           isOpen={stopDisclosure.open}
           onClose={onDrawerClose}
           selectedBusStop={selectedBusRoute}

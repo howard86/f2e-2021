@@ -7,7 +7,8 @@ import { type GeoJSONLineString, parse } from 'wellknown';
 import { OPEN_GRAPH_BASE } from '@/constants/seo';
 import { busService } from '@/services/tdx';
 import { loadFixture, serveFixtures } from '@/utils/fixtures';
-import BusRouteView, { type RouteStopEntity } from './view';
+import type { RouteStopEntity } from '@/utils/route-stops';
+import BusRouteView from './view';
 
 export const revalidate = 86_400; // ONE_DAY; Next requires a literal
 
@@ -57,14 +58,6 @@ const BusRoutePage = async ({ params }: PageProps) => {
 
   const fixtures = serveFixtures();
 
-  const [busRoute] = fixtures
-    ? await loadFixture.route()
-    : await busService.getBusRoutesByCityAndRouteName(city, routeName);
-
-  if (!busRoute) {
-    redirect('/city');
-  }
-
   const [busShapes, busStops] = await Promise.all([
     fixtures
       ? loadFixture.shape()
@@ -95,12 +88,12 @@ const BusRoutePage = async ({ params }: PageProps) => {
 
   return (
     <BusRouteView
-      busRoute={busRoute}
       busStopEntity={routeStopEntity}
       city={city}
       directions={directions}
       geoJson={parse(busShape.Geometry) as GeoJSONLineString}
       routeName={routeName}
+      routeUid={busStops[0].RouteUID}
     />
   );
 };

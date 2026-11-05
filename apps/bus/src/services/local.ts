@@ -44,11 +44,14 @@ const getCachedJson = <T>(url: string, signal?: AbortSignal) =>
 export const useGetBusEstimation = (
   { city, route }: BusEstimationParam,
   refreshInterval: number,
+  enabled = true,
 ) =>
   useSWR(
-    `/api/bus/estimation?${new URLSearchParams({ city, route })}`,
+    enabled
+      ? `/api/bus/estimation?${new URLSearchParams({ city, route })}`
+      : null,
     (url) => getJson<BusEstimation[]>(url),
-    { refreshInterval },
+    { keepPreviousData: true, refreshInterval },
   );
 
 export const useGetBusRoutes = (params: { city: City; route: string } | null) =>
