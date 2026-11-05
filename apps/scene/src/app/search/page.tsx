@@ -19,6 +19,7 @@ import PlaceGridSkeleton from '@/components/ui/place-grid-skeleton';
 import SectionHeading from '@/components/ui/section-heading';
 import { ALL_CITIES } from '@/constants/preferences';
 import { listPath } from '@/lib/list-paths';
+import { DEFAULT_OG_IMAGE, OPEN_GRAPH_BASE } from '@/lib/seo';
 import { searchPlaces } from '@/services/places';
 import background from '@/static/background/main.png';
 import { PLACE_CATEGORY, PLACE_LABEL, PLACE_TYPES } from '@/types/place';
@@ -33,10 +34,12 @@ export const generateMetadata = async ({
   searchParams,
 }: SearchPageProps): Promise<Metadata> => {
   const q = parseKeyword((await searchParams).q);
+  const title = q ? `搜尋「${q}」` : '搜尋';
 
   return {
+    openGraph: { ...OPEN_GRAPH_BASE, images: [DEFAULT_OG_IMAGE], title },
     robots: { follow: true, index: false },
-    title: q ? `搜尋「${q}」` : '搜尋',
+    title,
   };
 };
 
