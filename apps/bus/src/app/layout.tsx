@@ -4,6 +4,7 @@ import type { Metadata, Viewport } from 'next';
 import { Noto_Sans_TC } from 'next/font/google';
 import type { ReactNode } from 'react';
 
+import { OPEN_GRAPH_BASE, SITE_NAME } from '@/constants/seo';
 import Providers from './providers';
 
 const notoSansTC = Noto_Sans_TC({
@@ -12,7 +13,6 @@ const notoSansTC = Noto_Sans_TC({
   weight: ['400', '500', '700'],
 });
 
-const SITE_NAME = 'Iro Bus';
 const DESCRIPTION = '查詢全台公車路線、即時到站與附近站牌，輕鬆掌握公車動態。';
 const productionHost = process.env.VERCEL_PROJECT_PRODUCTION_URL;
 
@@ -30,12 +30,9 @@ export const metadata: Metadata = {
     productionHost ? `https://${productionHost}` : 'http://localhost:3000',
   ),
   openGraph: {
+    ...OPEN_GRAPH_BASE,
     description: DESCRIPTION,
-    images: [{ alt: SITE_NAME, height: 567, url: '/preview.jpg', width: 830 }],
-    locale: 'zh_TW',
-    siteName: SITE_NAME,
     title: SITE_NAME,
-    type: 'website',
   },
   title: { default: SITE_NAME, template: `%s | ${SITE_NAME}` },
   twitter: { card: 'summary_large_image' },

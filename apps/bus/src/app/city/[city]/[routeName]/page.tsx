@@ -4,6 +4,7 @@ import type { Metadata } from 'next';
 import { notFound, redirect } from 'next/navigation';
 import { type GeoJSONLineString, parse } from 'wellknown';
 
+import { OPEN_GRAPH_BASE } from '@/constants/seo';
 import { busService } from '@/services/tdx';
 import { loadFixture, serveFixtures } from '@/utils/fixtures';
 import BusRouteView, { type RouteStopEntity } from './view';
@@ -32,12 +33,16 @@ export const generateMetadata = async ({
   const name = decode(routeName);
   const cityName = CityMap[decode(city) as City] ?? decode(city);
 
+  const description = `「${name}」${cityName}公車即時動態、站牌與路線圖。`;
+  const title = `${name}-${cityName}`;
+
   return {
     alternates: {
       canonical: `/city/${encodeURIComponent(decode(city))}/${encodeURIComponent(name)}`,
     },
-    description: `「${name}」${cityName}公車即時動態、站牌與路線圖。`,
-    title: `${name}-${cityName}`,
+    description,
+    openGraph: { ...OPEN_GRAPH_BASE, description, title },
+    title,
   };
 };
 
