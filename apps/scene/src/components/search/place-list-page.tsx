@@ -1,4 +1,5 @@
 import { Box, Container } from '@chakra-ui/react';
+import type { Metadata } from 'next';
 import type { StaticImageData } from 'next/image';
 import { notFound } from 'next/navigation';
 import { Suspense } from 'react';
@@ -7,6 +8,7 @@ import Layout from '@/components/layout/layout';
 import PageHero from '@/components/ui/page-hero';
 import PlaceGridSkeleton from '@/components/ui/place-grid-skeleton';
 import { ALL_CITIES } from '@/constants/preferences';
+import { buildListMetadata } from '@/lib/list-metadata';
 import { decodeSegments, listPath, parseListPath } from '@/lib/list-paths';
 import { getTagOptions } from '@/services/places';
 import { PLACE_CATEGORY, PLACE_LABEL, type PlaceType } from '@/types/place';
@@ -21,6 +23,28 @@ interface PlaceListPageProps {
   type: PlaceType;
   wordImages: [StaticImageData, StaticImageData];
 }
+
+/** `generateMetadata` for /scenes, /restaurants and /hotels; {} when the path 404s. */
+export const placeListMetadata = async (
+  type: PlaceType,
+  params: Promise<{ filters?: string[] }>,
+): Promise<Metadata> => {
+  const tagOptions = getTagOptions(type);
+  const parsed = parseListPath(
+    decodeSegments((await params).filters),
+    tagOptions.map((option) => option.value),
+  );
+
+  if (!parsed) {
+    return {};
+  }
+
+  return buildListMetadata({
+    ...parsed,
+    tagLabel: tagOptions.find((option) => option.value === parsed.tag)?.label,
+    type,
+  });
+};
 
 /**
  * Shared body of /scenes, /restaurants and /hotels. Every filter is in the

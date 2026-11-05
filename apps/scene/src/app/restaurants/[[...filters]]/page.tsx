@@ -1,6 +1,8 @@
 import type { Metadata } from 'next';
 
-import PlaceListPage from '@/components/search/place-list-page';
+import PlaceListPage, {
+  placeListMetadata,
+} from '@/components/search/place-list-page';
 import { listStaticParams } from '@/lib/prerender';
 import background from '@/static/background/restaurants.png';
 import wordOne from '@/static/background/restaurants-1.png';
@@ -11,14 +13,11 @@ import wordTwo from '@/static/background/restaurants-2.png';
 export const revalidate = 21_600;
 export const generateStaticParams = listStaticParams;
 
-export const metadata: Metadata = {
-  description: '依縣市與分類找到在地美食。',
-  openGraph: {
-    description: '依縣市與分類找到在地美食。',
-    images: ['/static/background/restaurants.png'],
-  },
-  title: '台灣旅遊導覽網 | 美食',
-};
+export const generateMetadata = ({
+  params,
+}: {
+  params: Promise<{ filters?: string[] }>;
+}): Promise<Metadata> => placeListMetadata('restaurant', params);
 
 const RestaurantsPage = ({
   params,

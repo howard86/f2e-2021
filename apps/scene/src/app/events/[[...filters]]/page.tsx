@@ -10,6 +10,7 @@ import TabLinks from '@/components/search/tab-links';
 import PageHero from '@/components/ui/page-hero';
 import PlaceGridSkeleton from '@/components/ui/place-grid-skeleton';
 import { ALL_CITIES } from '@/constants/preferences';
+import { buildListMetadata } from '@/lib/list-metadata';
 import { decodeSegments, eventsPath, parseEventsPath } from '@/lib/list-paths';
 import { eventsStaticParams } from '@/lib/prerender';
 import background from '@/static/background/events.png';
@@ -18,13 +19,14 @@ import wordTwo from '@/static/background/events-2.png';
 
 const DESCRIPTION = '進行中與即將開始的全台活動、節慶與展覽。';
 
-export const metadata: Metadata = {
-  description: DESCRIPTION,
-  openGraph: {
-    description: DESCRIPTION,
-    images: ['/static/background/events.png'],
-  },
-  title: '台灣旅遊導覽網 | 活動',
+export const generateMetadata = async ({
+  params,
+}: {
+  params: Promise<{ filters?: string[] }>;
+}): Promise<Metadata> => {
+  const parsed = parseEventsPath(decodeSegments((await params).filters));
+
+  return parsed ? buildListMetadata({ ...parsed, type: 'activity' }) : {};
 };
 
 // Major cities are prerendered on Vercel builds, the rest on first request;
