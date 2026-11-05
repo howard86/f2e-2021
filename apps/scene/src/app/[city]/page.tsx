@@ -22,8 +22,8 @@ import getWeathers from '@/services/weather';
 import background from '@/static/background/scenes.png';
 import { PLACE_CATEGORY, PLACE_LABEL, PLACE_TYPES } from '@/types/place';
 
-// Major cities are prerendered on Vercel builds, the rest on first request;
-// then served from the CDN for six hours.
+// Every city renders on first request (see lib/prerender.ts), then is
+// served from the CDN for six hours.
 export const revalidate = 21_600;
 export const generateStaticParams = cityStaticParams;
 

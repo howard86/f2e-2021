@@ -8,8 +8,8 @@ import background from '@/static/background/restaurants.png';
 import wordOne from '@/static/background/restaurants-1.png';
 import wordTwo from '@/static/background/restaurants-2.png';
 
-// Major cities are prerendered on Vercel builds, the rest on first request;
-// then served from the CDN for six hours.
+// The unfiltered list is prerendered on production builds, every filter on
+// first request; then served from the CDN for six hours.
 export const revalidate = 21_600;
 export const generateStaticParams = listStaticParams;
 
