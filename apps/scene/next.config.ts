@@ -56,6 +56,10 @@ const config: NextConfig = {
       source: '/events',
     },
   ],
+  // A prerendered city page waits for its paced TDX requests, often past the
+  // 60 s default; a timed-out attempt keeps spending quota while Next retries
+  // it, so give each page room to finish once.
+  staticPageGenerationTimeout: 600,
   transpilePackages: ['@f2e/tdx-core', '@f2e/tdx-tourism', '@f2e/ui'],
 };
 
