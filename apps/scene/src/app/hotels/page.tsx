@@ -1,32 +1,33 @@
 import type { Metadata } from 'next';
 
-import Layout from '@/components/layout/layout';
-import { DEFAULT_FETCHED_CARD_NUMBER } from '@/constants/pagination';
-import { mapHotelToPlaceCard, tourismService } from '@/services/tdx';
-import HotelsView from './view';
-
-export const revalidate = 21_600;
+import PlaceListPage from '@/components/search/place-list-page';
+import type { RawSearchParams } from '@/components/search/search-params';
+import background from '@/static/background/hotels.png';
+import wordOne from '@/static/background/hotels-1.png';
+import wordTwo from '@/static/background/hotels-2.png';
 
 export const metadata: Metadata = {
+  description: '依縣市與類型比較住宿選擇。',
   openGraph: {
-    description: '住宿',
+    description: '依縣市與類型比較住宿選擇。',
     images: ['/static/background/hotels.png'],
   },
+  title: '台灣旅遊導覽網 | 住宿',
 };
 
-const HotelsPage = async () => {
-  const hotels = await tourismService.getHotels({
-    filter: 'Picture/PictureUrl1 ne null and Address ne null',
-    orderBy: 'SrcUpdateTime desc, ServiceInfo desc',
-    select: 'HotelID,HotelName,City,Address,ServiceInfo,Phone,Picture',
-    top: DEFAULT_FETCHED_CARD_NUMBER,
-  });
-
-  return (
-    <Layout colorPalette="hotels">
-      <HotelsView hotels={hotels.map(mapHotelToPlaceCard)} />
-    </Layout>
-  );
-};
+const HotelsPage = ({
+  searchParams,
+}: {
+  searchParams: Promise<RawSearchParams>;
+}) => (
+  <PlaceListPage
+    basePath="/hotels"
+    image={background}
+    searchParams={searchParams}
+    subtitle="依縣市與類型比較住宿選擇。"
+    type="hotel"
+    wordImages={[wordOne, wordTwo]}
+  />
+);
 
 export default HotelsPage;

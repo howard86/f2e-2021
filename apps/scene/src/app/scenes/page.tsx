@@ -1,40 +1,33 @@
 import type { Metadata } from 'next';
-import { notFound } from 'next/navigation';
 
-import Layout from '@/components/layout/layout';
-import { DEFAULT_FETCHED_REMARK_NUMBER } from '@/constants/pagination';
-import { mapScenicSpotToSceneCard, tourismService } from '@/services/tdx';
-import ScenesView from './view';
-
-export const revalidate = 21_600;
+import PlaceListPage from '@/components/search/place-list-page';
+import type { RawSearchParams } from '@/components/search/search-params';
+import background from '@/static/background/scenes.png';
+import wordOne from '@/static/background/scenes-1.png';
+import wordTwo from '@/static/background/scenes-2.png';
 
 export const metadata: Metadata = {
+  description: '依縣市與分類瀏覽全台景點。',
   openGraph: {
-    description: '景點',
+    description: '依縣市與分類瀏覽全台景點。',
     images: ['/static/background/scenes.png'],
   },
+  title: '台灣旅遊導覽網 | 景點',
 };
 
-const ScenesPage = async () => {
-  let scenes: Awaited<ReturnType<typeof tourismService.getScenicSpots>>;
-
-  try {
-    scenes = await tourismService.getScenicSpots({
-      filter: 'Picture/PictureUrl1 ne null and City ne null',
-      orderBy: 'SrcUpdateTime desc, TicketInfo desc',
-      select: 'ScenicSpotID,ScenicSpotName,City,Picture',
-      top: DEFAULT_FETCHED_REMARK_NUMBER,
-    });
-  } catch (error) {
-    console.error(error);
-    notFound();
-  }
-
-  return (
-    <Layout colorPalette="scenes">
-      <ScenesView scenes={scenes.map(mapScenicSpotToSceneCard)} />
-    </Layout>
-  );
-};
+const ScenesPage = ({
+  searchParams,
+}: {
+  searchParams: Promise<RawSearchParams>;
+}) => (
+  <PlaceListPage
+    basePath="/scenes"
+    image={background}
+    searchParams={searchParams}
+    subtitle="依縣市與分類瀏覽全台景點。"
+    type="scene"
+    wordImages={[wordOne, wordTwo]}
+  />
+);
 
 export default ScenesPage;
