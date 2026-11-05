@@ -8,6 +8,7 @@ import {
   parseKeyword,
   type RawSearchParams,
 } from '@/components/search/search-params';
+import UnavailableState from '@/components/search/unavailable-state';
 import PageHero from '@/components/ui/page-hero';
 import PlaceGrid from '@/components/ui/place-grid';
 import PlaceGridSkeleton from '@/components/ui/place-grid-skeleton';
@@ -39,7 +40,16 @@ export const generateMetadata = async ({
 };
 
 const SearchResults = async ({ q }: { q: string }) => {
-  const places = await searchPlaces(q, LIMIT_PER_TYPE);
+  let places: Awaited<ReturnType<typeof searchPlaces>>;
+
+  try {
+    places = await searchPlaces(q, LIMIT_PER_TYPE);
+  } catch (error) {
+    console.warn('[places] search unavailable', error);
+    return (
+      <UnavailableState retryHref={`/search?q=${encodeURIComponent(q)}`} />
+    );
+  }
 
   if (places.length === 0) {
     return (

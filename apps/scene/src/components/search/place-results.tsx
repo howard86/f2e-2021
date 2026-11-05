@@ -9,6 +9,7 @@ import { type ActivityWhen, PLACE_LABEL, type PlaceType } from '@/types/place';
 
 import EmptyState from './empty-state';
 import { buildHref, toQueryRecord } from './search-params';
+import UnavailableState from './unavailable-state';
 
 interface PlaceResultsProps {
   basePath: string;
@@ -40,18 +41,32 @@ const PlaceResults = async ({
   type,
   when,
 }: PlaceResultsProps) => {
-  const result = await listPlaces({
-    city,
-    free,
-    keyword: q,
-    page,
-    pageSize: DEFAULT_PAGE_SIZE,
-    tag,
-    type,
-    when,
-  });
   const fixedCity = linkQuery !== undefined;
   const query = linkQuery ?? toQueryRecord({ city, free, q, tag, when });
+  let result: Awaited<ReturnType<typeof listPlaces>>;
+
+  try {
+    result = await listPlaces({
+      city,
+      free,
+      keyword: q,
+      page,
+      pageSize: DEFAULT_PAGE_SIZE,
+      tag,
+      type,
+      when,
+    });
+  } catch (error) {
+    console.warn('[places] list unavailable', error);
+    return (
+      <UnavailableState
+        retryHref={buildHref(basePath, {
+          ...query,
+          page: page > 1 ? String(page) : undefined,
+        })}
+      />
+    );
+  }
   const filtered = Boolean((city && !fixedCity) || q || tag || free);
 
   if (result.items.length === 0) {

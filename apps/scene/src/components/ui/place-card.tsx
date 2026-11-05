@@ -62,6 +62,9 @@ const PlaceCard = ({ place }: PlaceCardProps) => (
         as={LinkOverlay}
         href={place.href}
         lineClamp={2}
+        // Detail pages render on demand and each costs several TDX calls;
+        // prefetching a grid of them would exhaust the 5-per-minute quota.
+        prefetch={false}
         textStyle="title-sm"
       >
         {place.name}

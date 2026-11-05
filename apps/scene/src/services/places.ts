@@ -193,16 +193,22 @@ export const getNearbyPlaces = async (
         type === 'activity'
           ? [town, `EndDateTime ge ${today}`].filter(Boolean).join(' and ')
           : town;
-      const { items } = await fetchRecords(
-        type,
-        filter,
-        orderByFor({ type }),
-        NEARBY_FETCH,
-        0,
-        detail.citySlug,
-      );
+      try {
+        const { items } = await fetchRecords(
+          type,
+          filter,
+          orderByFor({ type }),
+          NEARBY_FETCH,
+          0,
+          detail.citySlug,
+        );
 
-      return items.map((record) => ({ record, type }));
+        return items.map((record) => ({ record, type }));
+      } catch (error) {
+        // Nearby places are extra; a rate-limited type is just left out.
+        console.warn(`[places] nearby ${type} unavailable`, error);
+        return [];
+      }
     }),
   );
   const origin = detail.position;
@@ -247,7 +253,7 @@ export const getNearbyPlaces = async (
 export const getTagOptions = (type: PlaceType): TagOption[] =>
   isPlaceType(type) ? getTagOptionsFor(type) : [];
 
-/** Keyword search across every type. */
+/** Keyword search across every type; throws only when every type failed. */
 export const searchPlaces = async (
   keyword: string,
   limitPerType = DEFAULT_SEARCH_LIMIT,
@@ -258,11 +264,19 @@ export const searchPlaces = async (
     return [];
   }
 
-  const pages = await Promise.all(
+  const results = await Promise.allSettled(
     PLACE_TYPES.map((type) =>
       listPlaces({ keyword: value, page: 1, pageSize: limitPerType, type }),
     ),
   );
+  const pages = results.flatMap((result) =>
+    result.status === 'fulfilled' ? [result.value] : [],
+  );
+
+  // Show whichever types answered; fail only when none did.
+  if (pages.length === 0) {
+    throw (results[0] as PromiseRejectedResult).reason;
+  }
 
   return pages.flatMap((page) => page.items);
 };

@@ -12,6 +12,7 @@ const CityGrid = () => (
         borderWidth="1px"
         href={`/${city}`}
         key={city}
+        prefetch={false}
         px="4"
         py="5"
         rounded="lg"
