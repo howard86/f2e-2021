@@ -15,6 +15,7 @@ import {
   type RawSearchParams,
 } from '@/components/search/search-params';
 import TabLinks from '@/components/search/tab-links';
+import UnavailableState from '@/components/search/unavailable-state';
 import PageHero from '@/components/ui/page-hero';
 import PlaceGrid from '@/components/ui/place-grid';
 import PlaceGridSkeleton from '@/components/ui/place-grid-skeleton';
@@ -32,10 +33,8 @@ import {
   type PlaceType,
 } from '@/types/place';
 
-export const revalidate = 21_600;
-
-export const generateStaticParams = () => [];
-
+// Rendered per request: it reads ?tab and ?page, which a statically cached
+// (ISR) route cannot do. Its TDX data is still cached in services/places.ts.
 interface CityPageProps {
   params: Promise<{ city: string }>;
   searchParams: Promise<RawSearchParams>;
@@ -68,7 +67,9 @@ export const generateMetadata = async ({
 };
 
 const CityOverview = async ({ city }: { city: City }) => {
-  const results = await Promise.all(
+  // Each type is fetched on its own so one rate-limited type doesn't blank
+  // the whole overview.
+  const results = await Promise.allSettled(
     PLACE_TYPES.map(async (type) => ({
       page: await listPlaces({
         city,
@@ -79,7 +80,16 @@ const CityOverview = async ({ city }: { city: City }) => {
       type,
     })),
   );
-  const sections = results.filter(({ page }) => page.items.length > 0);
+  const loaded = results.flatMap((result) =>
+    result.status === 'fulfilled' ? [result.value] : [],
+  );
+
+  if (loaded.length === 0) {
+    console.warn('[places] city overview unavailable', city);
+    return <UnavailableState retryHref={`/${city}`} />;
+  }
+
+  const sections = loaded.filter(({ page }) => page.items.length > 0);
 
   if (sections.length === 0) {
     return (
