@@ -10,6 +10,7 @@
   },
   "scripts": {
     "generate": "bun scripts/generate.ts",
+    "test": "bun test",
     "typecheck": "bun check",
     "update-specs": "bun scripts/update-specs.ts"
   },

@@ -21,6 +21,7 @@ import DockIcon from '@/components/icons/dock-icon';
 import background from '@/map.jpg';
 import { useGetStationsByCoordinate } from '@/services/local';
 import type { Coordinate } from '@/services/mapbox';
+import type { NormalisedBikeStation } from '@/types/api';
 import { useMap } from './map-context-provider';
 
 const DEFAULT_ZOOM = 15;
@@ -45,6 +46,8 @@ const MapView = () => {
     returnNumber: 0,
   });
   const divRef = useRef<HTMLDivElement>(null);
+  // Latest data per station, read by reused markers' click handlers.
+  const stationsRef = useRef<NormalisedBikeStation['entities']>({});
   const { open: isOpen, onOpen, onClose } = useDisclosure();
   const { trigger: getStations, isMutating: isFetching } =
     useGetStationsByCoordinate();
@@ -74,15 +77,26 @@ const MapView = () => {
       description: `方圓${searchRadius}公尺內，共有${result.data.uids.length}個 YouBike 站`,
     });
 
+    const nextUids = new Set(result.data.uids);
+
+    for (const [uid, marker] of Object.entries(markersRef.current)) {
+      if (!nextUids.has(uid)) {
+        marker?.remove();
+        delete markersRef.current[uid];
+        delete stationsRef.current[uid];
+      }
+    }
+
     for (const uid of result.data.uids) {
       const station = result.data.entities[uid];
+      stationsRef.current[uid] = station;
 
       if (!stationIdSetRef.current.has(station.StationUID)) {
         stationIdSetRef.current.add(station.StationUID);
       }
 
       if (markersRef.current[station.StationUID]) {
-        markersRef.current[station.StationUID].remove();
+        continue;
       }
 
       const coordinate = [
@@ -95,11 +109,12 @@ const MapView = () => {
         createMarkerElement({
           id: station.StationUID,
           onClick: () => {
+            const latest = stationsRef.current[uid];
             setModalProps({
-              address: station.StationAddress.Zh_tw,
-              name: station.StationName.Zh_tw,
-              rentNumber: station.AvailableRentBikes,
-              returnNumber: station.AvailableReturnBikes,
+              address: latest.StationAddress.Zh_tw,
+              name: latest.StationName.Zh_tw,
+              rentNumber: latest.AvailableRentBikes,
+              returnNumber: latest.AvailableReturnBikes,
             });
             onOpen();
             mapRef.current.flyTo({

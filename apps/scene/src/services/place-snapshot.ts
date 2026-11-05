@@ -6,6 +6,7 @@
 import type { EventV2 } from '@f2e/tdx-tourism';
 
 import {
+  clean,
   distanceKm,
   type LatLng,
   type PlaceRecord,
@@ -300,11 +301,22 @@ export const searchRecords = (
   records: PlaceRecord[],
   keyword: string,
   limit: number,
-) =>
-  records
-    .map((record) => toSummary(type, record))
-    .filter((summary) => matchesKeyword(summary, keyword))
-    .slice(0, limit);
+) => {
+  const matches: PlaceSummary[] = [];
+
+  for (const record of records) {
+    if (matches.length >= limit) {
+      break;
+    }
+    const summary = toSummary(type, record);
+
+    if (matchesKeyword(summary, keyword)) {
+      matches.push(summary);
+    }
+  }
+
+  return matches;
+};
 
 export interface NearbyOrigin {
   id: string;
@@ -325,35 +337,37 @@ export const nearbyFrom = (
   snapshots: { records: PlaceRecord[]; type: PlaceType }[],
   limit: number,
 ): PlaceSummary[] => {
-  const candidates = snapshots
-    .flatMap(({ records, type }) => records.map((record) => ({ record, type })))
-    .map(({ record, type }) => {
+  const seen = new Set<string>();
+  const candidates: { distance: number | undefined; summary: PlaceSummary }[] =
+    [];
+
+  for (const { records, type } of snapshots) {
+    for (const record of records) {
+      if (origin.town && clean(record.PostalAddress.Town) !== origin.town) {
+        continue;
+      }
+      const summary = toSummary(type, record);
+      const key = `${summary.type}\u0000${summary.name}`;
+
+      if (
+        (summary.type === origin.type &&
+          (summary.id === origin.id || summary.name === origin.name)) ||
+        seen.has(key)
+      ) {
+        continue;
+      }
+      seen.add(key);
       const point = positionOf(record);
 
-      return {
+      candidates.push({
         distance:
           origin.position && point
             ? distanceKm(origin.position, point)
             : undefined,
-        summary: toSummary(type, record),
-      };
-    })
-    .filter(({ summary }) => !origin.town || summary.town === origin.town)
-    .filter(
-      ({ summary }) =>
-        !(
-          summary.type === origin.type &&
-          (summary.id === origin.id || summary.name === origin.name)
-        ),
-    )
-    .filter(
-      ({ summary }, index, all) =>
-        all.findIndex(
-          (other) =>
-            other.summary.type === summary.type &&
-            other.summary.name === summary.name,
-        ) === index,
-    );
+        summary,
+      });
+    }
+  }
 
   candidates.sort(
     (a, b) =>

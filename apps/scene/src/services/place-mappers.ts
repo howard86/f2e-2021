@@ -35,7 +35,7 @@ export type PlaceRecord = AttractionV2 | EventV2 | HotelV2 | RestaurantV2;
 const MAX_TAGS = 6;
 const KEY_FACT_LENGTH = 40;
 
-const clean = (value: string | null | undefined) =>
+export const clean = (value: string | null | undefined) =>
   value?.replaceAll('\r\n', '\n').trim() || undefined;
 
 const shorten = (value: string | null | undefined, max = KEY_FACT_LENGTH) => {

@@ -51,7 +51,6 @@ const variants: Variants = {
   show: {
     opacity: 1,
     transition: {
-      staggerChildren: 0.125,
       stiffness: 120,
       type: 'spring',
     },
@@ -177,10 +176,11 @@ const HomeView = () => {
                   my={[4, 8]}
                   variants={variants}
                 >
-                  {data.data.map((path) => (
+                  {data.data.map((path, index) => (
                     <CycleCard
                       city={CityMap[path.City] as City}
                       geoJson={path.geoJson}
+                      index={index}
                       key={`${path.CityCode}-${path.Town}-${path.RouteName}-${path.RoadSectionStart}-${path.RoadSectionEnd}`}
                       length={path.CyclingLength}
                       name={path.RouteName}

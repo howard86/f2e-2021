@@ -16,14 +16,24 @@ export const DESKTOP_MAP_LEFT = '400px';
 const Layout = ({ children, showMap, hideLocate }: LayoutProps) => (
   <Box bgGradient="background" h="full">
     <Box h="full" overflow="hidden" pos="fixed" w="full">
-      <Image
-        alt="background"
+      <Box
+        _motionReduce={{ animation: 'none' }}
         animation="backgroundSlide 60s linear infinite alternate"
-        layout="fill"
-        objectFit="cover"
-        placeholder="blur"
-        src={background}
-      />
+        h="full"
+        left="0"
+        pos="absolute"
+        top="0"
+        w="120%"
+        willChange="transform"
+      >
+        <Image
+          alt="background"
+          layout="fill"
+          objectFit="cover"
+          placeholder="blur"
+          src={background}
+        />
+      </Box>
     </Box>
     <Box
       bottom={[MOBILE_MAP_BOTTOM, 0]}

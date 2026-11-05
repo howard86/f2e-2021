@@ -261,6 +261,45 @@ describe('local search and nearby', () => {
 
     expect(result.map((p) => p.id)).toEqual(['near', 'far']);
   });
+
+  test('nearby without a town dedupes by type and name, keeping the first', () => {
+    const [first] = scenes;
+    const make = (id: string, name: string, dLat: number) =>
+      ({
+        ...first,
+        AttractionID: id,
+        AttractionName: name,
+        PositionLat: Number(first.PositionLat) + dLat,
+        PositionLon: Number(first.PositionLon),
+      }) as unknown as PlaceRecord;
+    const records = [
+      make('a', 'dup', 0.3),
+      make('b', 'dup', 0.01),
+      make('c', 'solo', 0.1),
+    ];
+    const origin = {
+      id: 'origin',
+      name: 'origin',
+      position: {
+        lat: Number(first.PositionLat),
+        lng: Number(first.PositionLon),
+      },
+      type: 'scene' as const,
+    };
+
+    expect(
+      nearbyFrom(origin, [{ records, type: 'scene' }], 6).map((p) => p.id),
+    ).toEqual(['c', 'a']);
+  });
+
+  test('searchRecords keeps record order and stops at the limit', () => {
+    const reference = scenes
+      .map((record) => toSummary('scene', record))
+      .filter((summary) => matchesKeyword(summary, '市'))
+      .slice(0, 3);
+
+    expect(searchRecords('scene', scenes, '市', 3)).toEqual(reference);
+  });
 });
 
 describe('fitSnapshot', () => {

@@ -6,6 +6,8 @@ import { loadFixture, serveFixtures } from '@/utils/fixtures';
 
 export const dynamic = 'force-dynamic';
 
+const CACHE_CONTROL = 'public, s-maxage=86400, stale-while-revalidate=86400';
+
 export const GET = (request: Request) =>
   handleApi(() => {
     const { searchParams } = new URL(request.url);
@@ -24,4 +26,4 @@ export const GET = (request: Request) =>
       filter: undefined,
       top: 20,
     });
-  });
+  }, CACHE_CONTROL);

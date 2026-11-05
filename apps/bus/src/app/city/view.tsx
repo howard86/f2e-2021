@@ -12,7 +12,6 @@ import {
 } from '@chakra-ui/react';
 import { type City, CityMap, CitySet } from '@f2e/tdx-core';
 import { NextImage as Image } from '@f2e/ui/next-image';
-import debounce from 'lodash.debounce';
 import NextLink from 'next/link';
 import { useRouter } from 'next/navigation';
 import { type ChangeEvent, useEffect, useState } from 'react';
@@ -64,13 +63,17 @@ const CityView = () => {
   }, [city]);
 
   useEffect(() => {
-    const debouncedFetch = debounce((route?: string) => {
-      if (route) {
-        setQuery({ city, route });
-      }
+    if (!searchString) {
+      return;
+    }
+
+    const timer = setTimeout(() => {
+      setQuery({ city, route: searchString });
     }, DEBOUNCED_MS);
 
-    debouncedFetch(searchString);
+    return () => {
+      clearTimeout(timer);
+    };
   }, [city, searchString]);
 
   return (

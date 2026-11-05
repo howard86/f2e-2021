@@ -62,8 +62,11 @@ export const BusStopStatus = {
 
 export type BusStopStatus = (typeof BusStopStatus)[keyof typeof BusStopStatus];
 
+/** OData string literal: a single quote is escaped by doubling it. */
+export const escapeODataString = (value: string) => value.replaceAll("'", "''");
+
 const withRouteFilter = (routeName: string, params?: ApiParam): ApiParam => ({
-  filter: `RouteName/Zh_tw eq '${routeName}'`,
+  filter: `RouteName/Zh_tw eq '${escapeODataString(routeName)}'`,
   ...params,
 });
 

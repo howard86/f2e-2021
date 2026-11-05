@@ -2,23 +2,20 @@
 
 import {
   Box,
-  Circle,
   Flex,
   Heading,
   IconButton,
   type IconButtonProps,
   Stack,
   Tabs,
-  Tag,
   Text,
   useBreakpointValue,
   useDisclosure,
-  VStack,
 } from '@chakra-ui/react';
 import { BusDirection } from '@f2e/tdx-bus';
 import type { City } from '@f2e/tdx-core';
 import { useRouter } from 'next/navigation';
-import { useEffect, useMemo, useState } from 'react';
+import { useCallback, useEffect, useMemo, useState } from 'react';
 import { BiChevronLeft } from 'react-icons/bi';
 import { BsInfoCircle } from 'react-icons/bs';
 import { IoHome } from 'react-icons/io5';
@@ -29,6 +26,7 @@ import BusStopDrawer, { ZoomLevel } from '@/components/bus-stop-drawer';
 import { DESKTOP_MAP_LEFT } from '@/components/layout';
 import { useMap } from '@/components/map-context-provider';
 import NavBarItems from '@/components/nav-bar-items';
+import StopRow from '@/components/stop-row';
 import { DESKTOP_DISPLAY, MOBILE_DISPLAY } from '@/constants/style';
 import { THIRTY_SEC_IN_MS } from '@/constants/time';
 import useInView from '@/hooks/use-in-view';
@@ -41,10 +39,11 @@ import {
   getDirectionTabName,
   type RouteStopEntity,
 } from '@/utils/route-stops';
+import type { SlimRouteStopEntity, SlimStop } from '@/utils/slim-route';
 import { getTwoDigitString } from '@/utils/string';
 
 interface BusRouteViewProps {
-  busStopEntity: RouteStopEntity;
+  busStopEntity: SlimRouteStopEntity;
   city: City;
   directions: BusDirection[];
   geoJson: GeoJSONLineString;
@@ -61,8 +60,10 @@ const BusRouteView = ({
   routeUid: routeId,
   geoJson,
   directions,
-  busStopEntity: routeStopEntity,
+  busStopEntity,
 }: BusRouteViewProps) => {
+  // the helpers and drawer only read Stops, which the slim entity carries
+  const routeStopEntity = busStopEntity as RouteStopEntity;
   const router = useRouter();
   const tabsProps = useBreakpointValue<
     Omit<Tabs.RootProps, 'children' | 'onValueChange' | 'value'>
@@ -111,6 +112,31 @@ const BusRouteView = ({
     stopDisclosure.onClose();
     extendDisclosure.onOpen();
   };
+
+  const { onOpen: openStopDrawer } = stopDisclosure;
+  const { onClose: closeExtend } = extendDisclosure;
+
+  const onSelectStop = useCallback(
+    async (stop: SlimStop) => {
+      if (!(mapContextRef.current.map && isLoaded)) {
+        return;
+      }
+
+      const { getPosition } = await import('@/services/mapbox');
+
+      setSelectedStopId(stop.StopUID);
+      openStopDrawer();
+      closeExtend();
+      mapContextRef.current.map.flyTo(
+        getPosition(
+          stop.StopPosition.PositionLat,
+          stop.StopPosition.PositionLon,
+          ZoomLevel.Stop,
+        ),
+      );
+    },
+    [closeExtend, isLoaded, mapContextRef, openStopDrawer],
+  );
 
   const onSwitchTab = (value: string) => {
     setSelectedDirection(Number(value) as BusDirection);
@@ -246,16 +272,33 @@ const BusRouteView = ({
 
     const { map } = mapContextRef.current;
 
+    let syncedMarkers: typeof mapContextRef.current.markers | null = null;
+    let isVisible = false;
+
     const handleZoom = () => {
-      for (const marker of mapContextRef.current.markers) {
-        marker.remove();
+      const { markers } = mapContextRef.current;
+
+      // freshly attached markers are not on the map yet
+      if (markers !== syncedMarkers) {
+        syncedMarkers = markers;
+        isVisible = false;
       }
 
-      if (map.getZoom() >= ZoomLevel.Marker) {
-        for (const marker of mapContextRef.current.markers) {
+      const shouldShow = map.getZoom() >= ZoomLevel.Marker;
+
+      if (shouldShow === isVisible) {
+        return;
+      }
+
+      for (const marker of markers) {
+        if (shouldShow) {
           marker.addTo(map);
+        } else {
+          marker.remove();
         }
       }
+
+      isVisible = shouldShow;
     };
 
     map.on('zoomend', handleZoom);
@@ -310,8 +353,10 @@ const BusRouteView = ({
         <Flex flexDir={['column', 'row-reverse']} flexGrow={1}>
           <Box flexGrow={1} overflowY="auto" />
           <Tabs.Root
+            lazyMount
             // biome-ignore lint/performance/noJsxPropsBind: callback needs local render state or the current event target.
             onValueChange={({ value }) => onSwitchTab(value)}
+            unmountOnExit
             value={String(selectedDirection)}
             w={['auto', DESKTOP_MAP_LEFT]}
             zIndex="sticky"
@@ -384,77 +429,16 @@ const BusRouteView = ({
                   p="0"
                   value={String(busDirection)}
                 >
-                  {routeStopEntity[busDirection].Stops.map((stop) => {
-                    const status = getBusEstimationStatus(
-                      busEstimations.get(stop.StopUID),
-                    );
-
-                    const isComing = status === '進站中';
-                    return (
-                      <Flex
-                        align="center"
-                        cursor="pointer"
-                        key={`${busDirection}-${stop.StopUID}-${stop.StopSequence}`}
-                        // biome-ignore lint/performance/noJsxPropsBind: callback needs local render state or the current event target.
-                        onClick={async () => {
-                          if (!(mapContextRef.current.map && isLoaded)) {
-                            return;
-                          }
-
-                          const { getPosition } = await import(
-                            '@/services/mapbox'
-                          );
-
-                          setSelectedStopId(stop.StopUID);
-                          stopDisclosure.onOpen();
-                          extendDisclosure.onClose();
-                          mapContextRef.current.map.flyTo(
-                            getPosition(
-                              stop.StopPosition.PositionLat,
-                              stop.StopPosition.PositionLon,
-                              ZoomLevel.Stop,
-                            ),
-                          );
-                        }}
-                        px="4"
-                      >
-                        <Text>{stop.StopName.Zh_tw}</Text>
-                        <Tag.Root colorPalette="secondary" ml="2">
-                          <Tag.Label>{status}</Tag.Label>
-                        </Tag.Root>
-                        <Box flexGrow={1} />
-                        <VStack gap={0}>
-                          <Box
-                            borderColor="primary.200"
-                            borderLeft="2px"
-                            h="20px"
-                          />
-                          <Circle
-                            bg={isComing ? 'primary.200' : 'transparent'}
-                            borderColor="primary.200"
-                            borderWidth="2px"
-                            boxShadow={
-                              isComing
-                                ? '0 0 5px var(--chakra-colors-secondary-200),0 0 10px var(--chakra-colors-secondary-300),0 0 15px var(--chakra-colors-secondary-400)'
-                                : 'none'
-                            }
-                            color={isComing ? 'secondary.700' : 'white'}
-                            fontSize="9px"
-                            fontWeight="bold"
-                            rounded="full"
-                            size="20px"
-                          >
-                            {getTwoDigitString(stop.StopSequence)}
-                          </Circle>
-                          <Box
-                            borderColor="primary.200"
-                            borderLeft="2px"
-                            h="20px"
-                          />
-                        </VStack>
-                      </Flex>
-                    );
-                  })}
+                  {routeStopEntity[busDirection].Stops.map((stop) => (
+                    <StopRow
+                      key={`${busDirection}-${stop.StopUID}-${stop.StopSequence}`}
+                      onSelect={onSelectStop}
+                      status={getBusEstimationStatus(
+                        busEstimations.get(stop.StopUID),
+                      )}
+                      stop={stop}
+                    />
+                  ))}
                 </Tabs.Content>
               ))}
             </Box>

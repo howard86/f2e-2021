@@ -39,11 +39,15 @@ export const getSingleParam = (searchParams: URLSearchParams, name: string) => {
 export const handleGet = async <T>(
   handler: (searchParams: URLSearchParams) => Promise<T>,
   request: Request,
+  cacheControl?: string,
 ): Promise<Response> => {
   try {
     const data = await handler(new URL(request.url).searchParams);
 
-    return Response.json({ data, success: true } satisfies ApiResponse<T>);
+    return Response.json(
+      { data, success: true } satisfies ApiResponse<T>,
+      cacheControl ? { headers: { 'Cache-Control': cacheControl } } : undefined,
+    );
   } catch (error) {
     if (error instanceof HttpException) {
       return Response.json(

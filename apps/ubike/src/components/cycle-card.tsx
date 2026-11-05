@@ -14,6 +14,7 @@ import { useMap } from './map-context-provider';
 interface CycleCardProps {
   city: City;
   geoJson: GeoJSONMultiLineString;
+  index: number;
   length?: number;
   name: string;
   onToggle: VoidFunction;
@@ -22,9 +23,19 @@ interface CycleCardProps {
 const MotionBox = m.create(Box);
 const DIFFICULTY_STARS = ['easy', 'medium', 'hard', 'expert'] as const;
 
+// Stagger only the first cards so none of up to 200 waits more than ~1s.
+const MAX_STAGGERED_CARDS = 8;
+const STAGGER_SECONDS = 0.125;
+
 const variants: Variants = {
   hidden: { opacity: 0, translateY: 20 },
-  show: { opacity: 1, translateY: 0 },
+  show: (index: number) => ({
+    opacity: 1,
+    transition: {
+      delay: Math.min(index, MAX_STAGGERED_CARDS) * STAGGER_SECONDS,
+    },
+    translateY: 0,
+  }),
 };
 
 const CycleCard = ({
@@ -33,6 +44,7 @@ const CycleCard = ({
   length,
   onToggle,
   geoJson,
+  index,
 }: CycleCardProps) => {
   const toast = useAppToast();
   const { mapRef, layerIdRef, markersRef, stationIdSetRef } = useMap();
@@ -107,6 +119,7 @@ const CycleCard = ({
       bg="white"
       color="blackAlpha.800"
       cursor="pointer"
+      custom={index}
       onClick={onClick}
       p={[4, 6]}
       rounded="xl"
