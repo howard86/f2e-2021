@@ -29,8 +29,15 @@ export const generateMetadata = async ({
 }: PageProps): Promise<Metadata> => {
   const { city, routeName } = await params;
 
+  const name = decode(routeName);
+  const cityName = CityMap[decode(city) as City] ?? decode(city);
+
   return {
-    title: `Iro Bus | ${decode(routeName)}-${CityMap[decode(city) as City] ?? decode(city)}`,
+    alternates: {
+      canonical: `/city/${encodeURIComponent(decode(city))}/${encodeURIComponent(name)}`,
+    },
+    description: `「${name}」${cityName}公車即時動態、站牌與路線圖。`,
+    title: `${name}-${cityName}`,
   };
 };
 

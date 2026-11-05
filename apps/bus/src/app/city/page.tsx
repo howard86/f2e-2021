@@ -4,7 +4,7 @@ import type { Metadata } from 'next';
 import CityView from './view';
 
 export const metadata: Metadata = {
-  title: `Iro Bus | ${CityMap.Taipei}`,
+  title: CityMap.Taipei,
 };
 
 const CityPage = () => <CityView />;
