@@ -1,72 +1,20 @@
-import { type City, CitySet } from '@f2e/tdx-core';
-import type { Metadata } from 'next';
-import { notFound } from 'next/navigation';
-import { cache } from 'react';
+import DetailPage, {
+  type DetailParams,
+  generateDetailMetadata,
+} from '@/components/detail/detail-route';
 
-import Layout from '@/components/layout/layout';
-import { tourismService } from '@/services/tdx';
-import ActivityView from './view';
-
-export const revalidate = 86_400;
+export const revalidate = 3600;
 
 export const generateStaticParams = () => [];
 
-interface ActivityPageParams {
-  city: string;
-  id: string;
-}
-
-const getActivity = cache(async (city: string, id: string) => {
-  if (!CitySet.has(city as City)) {
-    return;
-  }
-
-  return await tourismService.getActivityById(id);
-});
-
-export const generateMetadata = async ({
+export const generateMetadata = ({
   params,
 }: {
-  params: Promise<ActivityPageParams>;
-}): Promise<Metadata> => {
-  const { city, id } = await params;
-  const activity = await getActivity(city, id);
+  params: Promise<DetailParams>;
+}) => generateDetailMetadata('activity', params);
 
-  if (!activity) {
-    notFound();
-  }
+const Page = ({ params }: { params: Promise<DetailParams> }) => (
+  <DetailPage params={params} type="activity" />
+);
 
-  return {
-    description: activity.Description,
-    openGraph: {
-      description: activity.Picture?.PictureDescription1,
-      images: activity.Picture?.PictureUrl1
-        ? [activity.Picture.PictureUrl1]
-        : undefined,
-      title: activity.ActivityName,
-      type: 'article',
-    },
-    title: `台灣旅遊導覽網 | ${activity.ActivityName}`,
-  };
-};
-
-const ActivityPage = async ({
-  params,
-}: {
-  params: Promise<ActivityPageParams>;
-}) => {
-  const { city, id } = await params;
-  const activity = await getActivity(city, id);
-
-  if (!activity) {
-    notFound();
-  }
-
-  return (
-    <Layout colorPalette="activities">
-      <ActivityView activity={activity} />
-    </Layout>
-  );
-};
-
-export default ActivityPage;
+export default Page;

@@ -1,68 +1,20 @@
-import { type City, CitySet } from '@f2e/tdx-core';
-import type { Metadata } from 'next';
-import { notFound } from 'next/navigation';
-import { cache } from 'react';
-
-import Layout from '@/components/layout/layout';
-import { tourismService } from '@/services/tdx';
-import HotelView from './view';
+import DetailPage, {
+  type DetailParams,
+  generateDetailMetadata,
+} from '@/components/detail/detail-route';
 
 export const revalidate = 86_400;
 
 export const generateStaticParams = () => [];
 
-interface HotelPageParams {
-  city: string;
-  id: string;
-}
-
-const getHotel = cache(async (city: string, id: string) => {
-  if (!CitySet.has(city as City)) {
-    return;
-  }
-
-  return await tourismService.getHotelById(id);
-});
-
-export const generateMetadata = async ({
+export const generateMetadata = ({
   params,
 }: {
-  params: Promise<HotelPageParams>;
-}): Promise<Metadata> => {
-  const { city, id } = await params;
-  const hotel = await getHotel(city, id);
+  params: Promise<DetailParams>;
+}) => generateDetailMetadata('hotel', params);
 
-  if (!hotel) {
-    notFound();
-  }
+const Page = ({ params }: { params: Promise<DetailParams> }) => (
+  <DetailPage params={params} type="hotel" />
+);
 
-  return {
-    description: hotel.Description,
-    openGraph: {
-      description: hotel.Picture?.PictureDescription1,
-      images: hotel.Picture?.PictureUrl1
-        ? [hotel.Picture.PictureUrl1]
-        : undefined,
-      title: hotel.HotelName,
-      type: 'article',
-    },
-    title: `台灣旅遊導覽網 | ${hotel.HotelName}`,
-  };
-};
-
-const HotelPage = async ({ params }: { params: Promise<HotelPageParams> }) => {
-  const { city, id } = await params;
-  const hotel = await getHotel(city, id);
-
-  if (!hotel) {
-    notFound();
-  }
-
-  return (
-    <Layout colorPalette="hotels">
-      <HotelView hotel={hotel} />
-    </Layout>
-  );
-};
-
-export default HotelPage;
+export default Page;
