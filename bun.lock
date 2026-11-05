@@ -27,6 +27,7 @@
         "@chakra-ui/react": "3.38.0",
         "@emotion/cache": "^11",
         "@emotion/react": "^11.14.0",
+        "@f2e/browser-cache": "workspace:*",
         "@f2e/tdx-bus": "workspace:*",
         "@f2e/tdx-core": "workspace:*",
         "@f2e/ui": "workspace:*",
@@ -52,6 +53,7 @@
         "@chakra-ui/react": "3.38.0",
         "@emotion/cache": "^11",
         "@emotion/react": "^11.14.0",
+        "@f2e/browser-cache": "workspace:*",
         "@f2e/tdx-core": "workspace:*",
         "@f2e/tdx-tourism": "workspace:*",
         "@f2e/ui": "workspace:*",
@@ -69,6 +71,7 @@
         "@chakra-ui/react": "3.38.0",
         "@emotion/cache": "^11",
         "@emotion/react": "^11.14.0",
+        "@f2e/browser-cache": "workspace:*",
         "@f2e/tdx-bike": "workspace:*",
         "@f2e/tdx-core": "workspace:*",
         "@f2e/ui": "workspace:*",
@@ -85,6 +88,19 @@
       "devDependencies": {
         "@types/wellknown": "^0.5.8",
       },
+    },
+    "libs/browser-cache": {
+      "name": "@f2e/browser-cache",
+      "version": "0.1.0",
+      "devDependencies": {
+        "@reduxjs/toolkit": "^2.14.0",
+      },
+      "peerDependencies": {
+        "@reduxjs/toolkit": "*",
+      },
+      "optionalPeers": [
+        "@reduxjs/toolkit",
+      ],
     },
     "libs/tdx-bike": {
       "name": "@f2e/tdx-bike",
@@ -335,6 +351,8 @@
     "@esbuild/win32-ia32": ["@esbuild/win32-ia32@0.28.2", "", { "os": "win32", "cpu": "ia32" }, "sha512-YmJbfTlvU7Sdn9BB+4PRES4oB6pxgS37MAONj+hBr/cpXS1aBPKXxNnDbu+QCWPj0o9dgyxeq79g6c5P8KeuYA=="],
 
     "@esbuild/win32-x64": ["@esbuild/win32-x64@0.28.2", "", { "os": "win32", "cpu": "x64" }, "sha512-5ebpxr3nWMzrL/rnUI755Jkuee0bHL/Gq0WTF9lvcpv73wAp5eu8MfBUgWK9bhWvZjj7yX8etf/8tI8Ney695g=="],
+
+    "@f2e/browser-cache": ["@f2e/browser-cache@workspace:libs/browser-cache"],
 
     "@f2e/bus": ["@f2e/bus@workspace:apps/bus"],
 
