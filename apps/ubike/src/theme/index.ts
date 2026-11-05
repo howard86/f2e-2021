@@ -1,19 +1,19 @@
-import { createSystem, defaultConfig, defineConfig } from '@chakra-ui/react';
+import { defineConfig } from '@chakra-ui/react';
+import { createAppSystem } from '@f2e/ui/system';
 
 import colors from './colors';
-import styles from './styles';
 
 const config = defineConfig({
-  globalCss: styles,
+  globalCss: {
+    body: {
+      bg: 'blackAlpha.800',
+    },
+  },
   theme: {
     tokens: {
       colors,
-      fonts: {
-        body: { value: 'var(--font-roboto), sans-serif' },
-        heading: { value: 'var(--font-roboto), sans-serif' },
-      },
     },
   },
 });
 
-export default createSystem(defaultConfig, config);
+export default createAppSystem(config);

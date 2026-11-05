@@ -74,6 +74,7 @@
         "@emotion/react": "^11.14.0",
         "@f2e/tdx-bike": "workspace:*",
         "@f2e/tdx-core": "workspace:*",
+        "@f2e/ui": "workspace:*",
         "@reduxjs/toolkit": "^2.14.0",
         "framer-motion": "^14.9.1",
         "mapbox-gl": "^3.34.2",

@@ -1,8 +1,8 @@
 import { Box, Flex, Heading, HStack, Portal, Tooltip } from '@chakra-ui/react';
 import { type City, CityMap } from '@f2e/tdx-core';
+import { useAppToast } from '@f2e/ui/toast';
 import { m, type Variants } from 'framer-motion';
 import type { GeoJSONMultiLineString } from 'wellknown';
-import useAppToast from '@/hooks/use-app-toast';
 import type { Coordinate } from '@/services/mapbox';
 import { getDifficulty } from '@/services/utils';
 import system from '@/theme';
