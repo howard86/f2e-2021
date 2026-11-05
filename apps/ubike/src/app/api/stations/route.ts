@@ -1,7 +1,7 @@
 import mock from '@/mock.json';
 import { BadRequestException, handle } from '@/services/api-response';
 import { bikeService } from '@/services/tdx';
-import { roundTo } from '@/services/utils';
+import { mergeStationAvailability, roundTo } from '@/services/utils';
 import type { NormalisedBikeStation } from '@/types/api';
 
 export const dynamic = 'force-dynamic';
@@ -52,20 +52,10 @@ export function GET(request: Request) {
       }),
     ]);
 
-    const normalised: NormalisedBikeStation = { entities: {}, uids: [] };
-
-    for (let i = 0; i < stations.length; i += 1) {
-      const station = stations[i];
-      const bike = bikes[i];
-
-      if (bike.ServiceStatus === 1) {
-        normalised.uids.push(bike.StationUID);
-        normalised.entities[bike.StationUID] = {
-          ...station,
-          ...bike,
-        };
-      }
-    }
+    const normalised: NormalisedBikeStation = mergeStationAvailability(
+      stations,
+      bikes,
+    );
 
     return normalised;
   }, CACHE_CONTROL);
