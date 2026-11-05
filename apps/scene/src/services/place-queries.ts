@@ -125,6 +125,41 @@ export const tagFilter = (type: PlaceType, tag: string | undefined) => {
   return clauses.length > 1 ? `(${clauses.join(' or ')})` : clauses[0];
 };
 
+/**
+ * Local twin of tagFilter for records already in memory: true when the
+ * record carries the tag's class code (or an event sub-type of it) or the
+ * hotel star rating. Unknown tags match everything, like tagFilter ignores
+ * them.
+ */
+export const matchesTag = (
+  type: PlaceType,
+  record: object,
+  tag: string | undefined,
+) => {
+  if (!(tag && TAG_OPTIONS[type].some((option) => option.value === tag))) {
+    return true;
+  }
+
+  const row = record as Record<string, unknown>;
+  const stars = STAR_TAG.exec(tag);
+
+  if (stars) {
+    return row.HotelStars === Number(stars.groups.stars);
+  }
+
+  if (!CODE_TAG.test(tag)) {
+    return true;
+  }
+
+  const codes = [Number(tag), ...(SUB_CODES[type]?.[tag] ?? [])];
+  const classes = row[CLASS_FIELD[type]];
+
+  return (
+    Array.isArray(classes) &&
+    classes.some((code) => codes.includes(code as number))
+  );
+};
+
 const TAIPEI_DATE = new Intl.DateTimeFormat('en-CA', {
   day: '2-digit',
   month: '2-digit',
@@ -135,7 +170,7 @@ const TAIPEI_DATE = new Intl.DateTimeFormat('en-CA', {
 const DAY_MS = 86_400_000;
 
 /** `YYYY-MM-DD` of the Taipei calendar day. */
-export const taipeiDate = (date: Date) => TAIPEI_DATE.format(date);
+const taipeiDate = (date: Date) => TAIPEI_DATE.format(date);
 
 /**
  * TDX answers 500 to a full date-time literal in a filter but accepts a
@@ -155,6 +190,10 @@ const activityFilter = (query: PlaceQuery, now: Date) => {
       return `EndDateTime ge ${today}`;
   }
 };
+
+/** `YYYY-MM-DD` filter bound: events that have not ended before this Taipei day. */
+export const snapshotFilter = (type: PlaceType, now: Date) =>
+  type === 'activity' ? `EndDateTime ge ${taipeiDate(now)}` : undefined;
 
 export const orderByFor = (query: Pick<PlaceQuery, 'type' | 'when'>) => {
   if (query.type !== 'activity') {

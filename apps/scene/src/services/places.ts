@@ -9,9 +9,7 @@ import { unstable_cache } from 'next/cache';
 import { cache } from 'react';
 
 import {
-  distanceKm,
   type PlaceRecord,
-  positionOf,
   toDetail,
   toSummary,
 } from '@/services/place-mappers';
@@ -24,8 +22,18 @@ import {
   isValidId,
   normalizeKeyword,
   orderByFor,
-  taipeiDate,
+  snapshotFilter,
 } from '@/services/place-queries';
+import {
+  collectSnapshot,
+  filterRecords,
+  nearbyFrom,
+  pageRecords,
+  SNAPSHOT_WARN_BYTES,
+  searchRecords,
+  snapshotBytes,
+  sortRecords,
+} from '@/services/place-snapshot';
 import { tourismService } from '@/services/tdx';
 import {
   PLACE_TYPES,
@@ -39,7 +47,6 @@ import {
 
 const SIX_HOURS = 6 * 60 * 60;
 const ONE_HOUR = 60 * 60;
-const NEARBY_FETCH = 20;
 const DEFAULT_NEARBY = 6;
 const DEFAULT_SEARCH_LIMIT = 6;
 
@@ -129,6 +136,52 @@ const fetchRecords = cache(
     ),
 );
 
+// One cached dataset per (type, city): every list, tag filter, page, nearby
+// lookup and city search for that city reads it instead of calling TDX.
+// Fetch failures throw (nothing is cached), so callers never see a partial
+// city.
+const runSnapshot = async (
+  type: PlaceType,
+  city: string,
+): Promise<PlaceRecord[]> => {
+  const records = await collectSnapshot(type, async (top, skip) => {
+    const result = await listFor(type)(
+      {
+        filter: snapshotFilter(type, new Date()),
+        orderBy: orderByFor({ type }),
+        skip: skip || undefined,
+        top,
+      },
+      city as City,
+    );
+
+    return result as Fetched;
+  });
+  const bytes = snapshotBytes(records);
+
+  if (bytes > SNAPSHOT_WARN_BYTES) {
+    console.warn(
+      `[places] ${type}/${city} snapshot is ${bytes} bytes, near the 2 MB data cache limit`,
+    );
+  }
+
+  return records;
+};
+
+const cachedSnapshot = unstable_cache(runSnapshot, ['places:snapshot'], {
+  revalidate: SIX_HOURS,
+});
+const cachedEventSnapshot = unstable_cache(
+  runSnapshot,
+  ['places:snapshot-events'],
+  { revalidate: ONE_HOUR },
+);
+
+const getCitySnapshot = cache(
+  (type: PlaceType, city: City): Promise<PlaceRecord[]> =>
+    (type === 'activity' ? cachedEventSnapshot : cachedSnapshot)(type, city),
+);
+
 const fetchById = cache((type: PlaceType, id: string) =>
   (type === 'activity' ? cachedEventById : cachedById)(type, id),
 );
@@ -139,6 +192,25 @@ export const listPlaces = async (query: PlaceQuery): Promise<PlacePage> => {
 
   if (!request) {
     return { hasMore: false, items: [], page: Math.max(1, query.page ?? 1) };
+  }
+
+  if (request.city && !query.keyword) {
+    const records = await getCitySnapshot(query.type, request.city);
+    const { hasMore, rows } = pageRecords(
+      sortRecords(
+        query.type,
+        filterRecords(query, records, new Date()),
+        query.when,
+      ),
+      request.page,
+      request.pageSize,
+    );
+
+    return {
+      hasMore,
+      items: rows.map((record) => toSummary(query.type, record)),
+      page: request.page,
+    };
   }
 
   const { params } = request;
@@ -183,70 +255,19 @@ export const getNearbyPlaces = async (
     return [];
   }
 
-  const town = detail.town
-    ? `PostalAddress/Town eq '${detail.town.replaceAll("'", "''")}'`
-    : '';
-  const today = taipeiDate(new Date());
-  const results = await Promise.all(
+  const snapshots = await Promise.all(
     PLACE_TYPES.map(async (type) => {
-      const filter =
-        type === 'activity'
-          ? [town, `EndDateTime ge ${today}`].filter(Boolean).join(' and ')
-          : town;
       try {
-        const { items } = await fetchRecords(
-          type,
-          filter,
-          orderByFor({ type }),
-          NEARBY_FETCH,
-          0,
-          detail.citySlug,
-        );
-
-        return items.map((record) => ({ record, type }));
+        return { records: await getCitySnapshot(type, detail.citySlug), type };
       } catch (error) {
         // Nearby places are extra; a rate-limited type is just left out.
         console.warn(`[places] nearby ${type} unavailable`, error);
-        return [];
+        return { records: [], type };
       }
     }),
   );
-  const origin = detail.position;
-  const candidates = results
-    .flat()
-    .map(({ record, type }) => {
-      const point = positionOf(record);
 
-      return {
-        distance: origin && point ? distanceKm(origin, point) : undefined,
-        summary: toSummary(type, record),
-      };
-    })
-    // Several agencies publish the same place under different IDs, so match
-    // on name as well as ID, and keep one record per type and name.
-    .filter(
-      ({ summary }) =>
-        !(
-          summary.type === detail.type &&
-          (summary.id === detail.id || summary.name === detail.name)
-        ),
-    )
-    .filter(
-      ({ summary }, index, all) =>
-        all.findIndex(
-          (other) =>
-            other.summary.type === summary.type &&
-            other.summary.name === summary.name,
-        ) === index,
-    );
-
-  candidates.sort(
-    (a, b) =>
-      (a.distance ?? Number.POSITIVE_INFINITY) -
-      (b.distance ?? Number.POSITIVE_INFINITY),
-  );
-
-  return candidates.slice(0, limit).map(({ summary }) => summary);
+  return nearbyFrom(detail, snapshots, limit);
 };
 
 /** Filter options for a type's tag filter (class names from the TDX code tables). */
@@ -266,15 +287,34 @@ export const searchPlaces = async (
   }
 
   const results = await Promise.allSettled(
-    PLACE_TYPES.map((type) =>
-      listPlaces({
+    PLACE_TYPES.map(async (type) => {
+      if (city) {
+        if (!isCity(city)) {
+          return { hasMore: false, items: [], page: 1 };
+        }
+
+        // Snapshots carry no descriptions, so a city search matches name,
+        // town and tags only.
+        return {
+          hasMore: false,
+          items: searchRecords(
+            type,
+            await getCitySnapshot(type, city),
+            value,
+            limitPerType,
+          ),
+          page: 1,
+        };
+      }
+
+      return listPlaces({
         city,
         keyword: value,
         page: 1,
         pageSize: limitPerType,
         type,
-      }),
-    ),
+      });
+    }),
   );
   const pages = results.flatMap((result) =>
     result.status === 'fulfilled' ? [result.value] : [],
