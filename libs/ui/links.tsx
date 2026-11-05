@@ -7,6 +7,8 @@ interface RouteLinkProps extends LinkProps {
   as?: ElementType;
   children: ReactNode;
   href: string;
+  /** Forwarded to next/link; false skips prefetching the target route. */
+  prefetch?: boolean | null;
   ref?: RefObject<HTMLAnchorElement | null>;
 }
 
@@ -15,11 +17,12 @@ export const RouteLink = ({
   as: Component = Link,
   children,
   href,
+  prefetch,
   ref,
   ...props
 }: RouteLinkProps) => (
   <Component asChild {...props}>
-    <NextLink href={href} ref={ref}>
+    <NextLink href={href} prefetch={prefetch} ref={ref}>
       {children}
     </NextLink>
   </Component>
