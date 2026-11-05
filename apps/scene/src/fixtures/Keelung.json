@@ -1,0 +1,2802 @@
+{
+  "scene": [
+    {
+      "AttractionID": "Attraction_A15011000H_000151",
+      "AttractionName": "情人湖公園",
+      "AttractionClasses": [11],
+      "IsAccessibleForFree": 0,
+      "ServiceTimeInfo": "無時間限制",
+      "FeeInfo": "",
+      "Tags": [],
+      "PostalAddress": { "City": "基隆市", "Town": "安樂區" },
+      "PositionLat": 25.14939,
+      "PositionLon": 121.7083,
+      "Images": [
+        {
+          "Description": "",
+          "Name": "情人湖公園",
+          "URL": "https://www.northguan-nsa.gov.tw/att/pic/11003178.png"
+        }
+      ],
+      "UpdateTime": "2026-11-05T12:00:03+08:00"
+    },
+    {
+      "AttractionID": "Attraction_A15011000H_000152",
+      "AttractionName": "大武崙砲台",
+      "AttractionClasses": [3],
+      "IsAccessibleForFree": 0,
+      "ServiceTimeInfo": "隨時開放",
+      "FeeInfo": "",
+      "Tags": [],
+      "PostalAddress": { "City": "基隆市", "Town": "安樂區" },
+      "PositionLat": 25.15676,
+      "PositionLon": 121.7056,
+      "Images": [
+        {
+          "Description": "",
+          "Name": "大武崙砲台1",
+          "URL": "https://www.northguan-nsa.gov.tw/att/pic/11003180.png"
+        }
+      ],
+      "UpdateTime": "2026-11-05T12:00:03+08:00"
+    },
+    {
+      "AttractionID": "Attraction_A15011000H_000153",
+      "AttractionName": "外木山湖海灣",
+      "AttractionClasses": [8],
+      "IsAccessibleForFree": 0,
+      "ServiceTimeInfo": "無時間限制",
+      "FeeInfo": "",
+      "Tags": [],
+      "PostalAddress": { "City": "基隆市", "Town": "中山區" },
+      "PositionLat": 25.17246,
+      "PositionLon": 121.7089,
+      "Images": [
+        {
+          "Description": "",
+          "Name": "湖海灣",
+          "URL": "https://www.northguan-nsa.gov.tw/att/pic/11003439.jpg"
+        }
+      ],
+      "UpdateTime": "2026-11-05T12:00:03+08:00"
+    },
+    {
+      "AttractionID": "Attraction_A15011000H_000155",
+      "AttractionName": "和平島地質公園",
+      "AttractionClasses": [8, 12],
+      "IsAccessibleForFree": 0,
+      "ServiceTimeInfo": "5-10月08:00-19:00，11-4月08:00-18:00",
+      "FeeInfo": "",
+      "Tags": [],
+      "PostalAddress": { "City": "基隆市", "Town": "中正區" },
+      "PositionLat": 25.16079,
+      "PositionLon": 121.7638,
+      "Images": [
+        {
+          "Description": "",
+          "Name": "和平島遊客中心全景照",
+          "URL": "https://www.northguan-nsa.gov.tw/att/pic/11003182.png"
+        }
+      ],
+      "UpdateTime": "2026-11-05T12:00:03+08:00"
+    },
+    {
+      "AttractionID": "Attraction_A15011000H_000156",
+      "AttractionName": "碧砂漁港",
+      "AttractionClasses": [8],
+      "IsAccessibleForFree": 0,
+      "ServiceTimeInfo": "無時間限制",
+      "FeeInfo": "",
+      "Tags": [],
+      "PostalAddress": { "City": "基隆市", "Town": "中正區" },
+      "PositionLat": 25.14372,
+      "PositionLon": 121.7877,
+      "Images": [
+        {
+          "Description": "",
+          "Name": "碧砂漁港1",
+          "URL": "https://www.northguan-nsa.gov.tw/att/pic/11003183.png"
+        }
+      ],
+      "UpdateTime": "2026-11-05T12:00:03+08:00"
+    },
+    {
+      "AttractionID": "Attraction_A15011000H_000157",
+      "AttractionName": "國立海洋科技博物館",
+      "AttractionClasses": [1],
+      "IsAccessibleForFree": 0,
+      "ServiceTimeInfo": "09:00~17:00",
+      "FeeInfo": "",
+      "Tags": [],
+      "PostalAddress": { "City": "基隆市", "Town": "中正區" },
+      "PositionLat": 25.13959,
+      "PositionLon": 121.7932,
+      "Images": [
+        {
+          "Description": "",
+          "Name": "國立海洋科技博物館",
+          "URL": "https://www.northguan-nsa.gov.tw/att/pic/11003184.jpg"
+        }
+      ],
+      "UpdateTime": "2026-11-05T12:00:03+08:00"
+    },
+    {
+      "AttractionID": "Attraction_A15011000H_000158",
+      "AttractionName": "潮境公園",
+      "AttractionClasses": [8, 11],
+      "IsAccessibleForFree": 0,
+      "ServiceTimeInfo": "",
+      "FeeInfo": "",
+      "Tags": [],
+      "PostalAddress": { "City": "基隆市", "Town": "中正區" },
+      "PositionLat": 25.14254,
+      "PositionLon": 121.8025,
+      "Images": [
+        {
+          "Description": "",
+          "Name": "潮境公園1",
+          "URL": "https://www.northguan-nsa.gov.tw/att/pic/11003185.png"
+        }
+      ],
+      "UpdateTime": "2026-11-05T12:00:03+08:00"
+    },
+    {
+      "AttractionID": "Attraction_A15011000H_000255",
+      "AttractionName": "外木山自行車道",
+      "AttractionClasses": [12],
+      "IsAccessibleForFree": 0,
+      "ServiceTimeInfo": "全年開放",
+      "FeeInfo": "",
+      "Tags": [],
+      "PostalAddress": { "City": "基隆市", "Town": "中山區" },
+      "PositionLat": 25.16304,
+      "PositionLon": 121.7271,
+      "Images": [
+        {
+          "Description": "",
+          "Name": "外木山自行車道",
+          "URL": "https://www.northguan-nsa.gov.tw/att/pic/11003926.jpg"
+        }
+      ],
+      "UpdateTime": "2026-11-05T12:00:03+08:00"
+    },
+    {
+      "AttractionID": "Attraction_A25000000E_000017",
+      "AttractionName": "星濱山共創工作室-永晝海濱美術館",
+      "AttractionClasses": [1],
+      "ServiceTimeInfo": "1.基隆市中正區中正路393巷30號2樓(工作室)：12:30-18:00/工作室",
+      "FeeInfo": "星濱山共創工作室：按各活動收費，場租平日600元/時，假日800元/時；永晝海濱美",
+      "Tags": [],
+      "PostalAddress": { "City": "基隆市", "Town": "中正區" },
+      "PositionLat": 25.15115,
+      "PositionLon": 121.76673,
+      "Images": [
+        {
+          "Name": "漁網燈1",
+          "URL": "https://map.culture.tw/com/upload/baseImage/2025-01-15/dbc77ec0-7c2a-4ff2-9f9c-68f45240ffd7/漁網燈1.jpg"
+        }
+      ],
+      "UpdateTime": "2026-10-12T14:05:40+08:00"
+    },
+    {
+      "AttractionID": "Attraction_A13020000G_000115",
+      "AttractionName": "基隆：一太e衛浴觀光工廠",
+      "AttractionClasses": [14],
+      "IsAccessibleForFree": 1,
+      "ServiceTimeInfo": "週一~週日 9:00~17:00",
+      "FeeInfo": "免費入場",
+      "Tags": [],
+      "PostalAddress": { "City": "基隆市", "Town": "安樂區" },
+      "PositionLat": 25.147263,
+      "PositionLon": 121.699609,
+      "Images": [
+        {
+          "Description": "基隆：一太e衛浴觀光工廠",
+          "Name": "基隆：一太e衛浴觀光工廠",
+          "URL": "https://www.taiwanplace21.org.tw/factoryupload/Factory/Factory250219031113_I0.jpg"
+        }
+      ],
+      "UpdateTime": "2026-09-29T13:34:00+08:00"
+    },
+    {
+      "AttractionID": "Attraction_376570000A_000052",
+      "AttractionName": "正濱漁港色彩屋",
+      "AttractionClasses": [12],
+      "IsAccessibleForFree": 1,
+      "ServiceTimeInfo": "每日營運",
+      "FeeInfo": "免費用",
+      "Tags": [],
+      "PostalAddress": { "City": "基隆市", "Town": "中正區" },
+      "PositionLat": 25.1524181,
+      "PositionLon": 121.7691051,
+      "Images": [
+        {
+          "Name": "場地夕陽空景照",
+          "URL": "https://klctb-ws.klcg.gov.tw/001/Upload/tour/445/12546/423/pic/0b800ea8-0e06-4c68-80f2-12e9ad8c4d04.jpg"
+        }
+      ],
+      "UpdateTime": "2026-08-10T00:00:00+08:00"
+    },
+    {
+      "AttractionID": "Attraction_376570000A_000055",
+      "AttractionName": "阿根納造船廠",
+      "AttractionClasses": [3],
+      "IsAccessibleForFree": 1,
+      "ServiceTimeInfo": "營業時間:24 小時,開放式空間",
+      "FeeInfo": "免費用",
+      "Tags": [],
+      "PostalAddress": { "City": "基隆市", "Town": "中正區" },
+      "PositionLat": 25.1538926,
+      "PositionLon": 121.7695873,
+      "Images": [
+        {
+          "Name": "場地內特寫-1",
+          "URL": "https://klctb-ws.klcg.gov.tw/001/Upload/tour/445/12546/346/pic/c37a8039-8dc8-4144-8bb6-82021eda19e5.jpg"
+        }
+      ],
+      "UpdateTime": "2026-08-10T00:00:00+08:00"
+    },
+    {
+      "AttractionID": "Attraction_376570000A_000056",
+      "AttractionName": "基隆塔",
+      "AttractionClasses": [1, 12],
+      "IsAccessibleForFree": 1,
+      "ServiceTimeInfo": "-基隆塔電梯週一公休,週二至週五及週日 10:00~22:00,週六 07:30~",
+      "FeeInfo": "免費用",
+      "Tags": [],
+      "PostalAddress": { "City": "基隆市", "Town": "中正區" },
+      "PositionLat": 25.1328033,
+      "PositionLon": 121.7470181,
+      "Images": [
+        {
+          "Name": "場地近景",
+          "URL": "https://klctb-ws.klcg.gov.tw/001/Upload/tour/445/12546/1125/pic/ee0d4073-66e4-4095-a5e1-8202f53a66f3.jpg"
+        }
+      ],
+      "UpdateTime": "2026-08-10T00:00:00+08:00"
+    },
+    {
+      "AttractionID": "Attraction_376570000A_000059",
+      "AttractionName": "和平島地質公園",
+      "AttractionClasses": [2, 11, 20, 24, 26],
+      "IsAccessibleForFree": 0,
+      "ServiceTimeInfo": "5 月~10 月:08:00-19:00;11 月 ~4 月:08:00-18:0",
+      "FeeInfo": "全票 NT$120基隆市民 NT$60(114年度優惠)敬老票 NT$60學生票 ",
+      "Tags": [],
+      "PostalAddress": { "City": "基隆市", "Town": "中正區" },
+      "PositionLat": 25.1617376,
+      "PositionLon": 121.7644664,
+      "Images": [
+        {
+          "Name": "場地空景-3",
+          "URL": "https://klctb-ws.klcg.gov.tw/001/Upload/tour/445/12546/351/pic/b149ed00-f2de-4ca7-a164-7777236f4f55.jpg"
+        }
+      ],
+      "UpdateTime": "2026-08-10T00:00:00+08:00"
+    },
+    {
+      "AttractionID": "Attraction_376570000A_000383",
+      "AttractionName": "信二防空洞",
+      "AttractionClasses": [1, 3],
+      "IsAccessibleForFree": 1,
+      "ServiceTimeInfo": "週二至週日 10:00~18:00,每週一公休",
+      "FeeInfo": "免費用",
+      "Tags": [],
+      "PostalAddress": { "City": "基隆市", "Town": "中正區" },
+      "PositionLat": 25.1312366,
+      "PositionLon": 121.7461065,
+      "Images": [
+        {
+          "Name": "場地入口照-1",
+          "URL": "https://klctb-ws.klcg.gov.tw/001/Upload/tour/445/12546/362/pic/8e0c7afe-e12e-45fa-9ec3-5cfa88652967.jpg"
+        }
+      ],
+      "UpdateTime": "2026-08-10T00:00:00+08:00"
+    },
+    {
+      "AttractionID": "Attraction_376570000A_000384",
+      "AttractionName": "中正公園",
+      "AttractionClasses": [12, 15],
+      "IsAccessibleForFree": 1,
+      "ServiceTimeInfo": "24 小時,開放式空間",
+      "FeeInfo": "免費用",
+      "Tags": [],
+      "PostalAddress": { "City": "基隆市", "Town": "中正區" },
+      "PositionLat": 25.1332847,
+      "PositionLon": 121.7506408,
+      "Images": [
+        {
+          "Name": "場地全景-1",
+          "URL": "https://klctb-ws.klcg.gov.tw/001/Upload/tour/445/12546/367/pic/52931f49-9b77-470e-9902-09f271c28f45.jpg"
+        }
+      ],
+      "UpdateTime": "2026-08-10T00:00:00+08:00"
+    },
+    {
+      "AttractionID": "Attraction_376570000A_000385",
+      "AttractionName": "希望之丘",
+      "AttractionClasses": [15],
+      "IsAccessibleForFree": 1,
+      "ServiceTimeInfo": "24 小時,開放式空間",
+      "FeeInfo": "免費用",
+      "Tags": [],
+      "PostalAddress": { "City": "基隆市", "Town": "信義區" },
+      "PositionLat": 25.1316292,
+      "PositionLon": 121.7481149,
+      "Images": [
+        {
+          "Name": "場地白天近景-1",
+          "URL": "https://klctb-ws.klcg.gov.tw/001/Upload/tour/445/12546/372/pic/d193da4b-b02e-4bfd-bc9c-21bdd6bc8be8.jpg"
+        }
+      ],
+      "UpdateTime": "2026-08-10T00:00:00+08:00"
+    },
+    {
+      "AttractionID": "Attraction_376570000A_000387",
+      "AttractionName": "二沙灣砲台",
+      "AttractionClasses": [3],
+      "IsAccessibleForFree": 1,
+      "ServiceTimeInfo": "營業時間:24 小時,開放式空間",
+      "FeeInfo": "免費用",
+      "Tags": [],
+      "PostalAddress": { "City": "基隆市", "Town": "中正區" },
+      "PositionLat": 25.1376224,
+      "PositionLon": 121.7575618,
+      "Images": [
+        {
+          "Name": "場地近景-1",
+          "URL": "https://klctb-ws.klcg.gov.tw/001/Upload/tour/445/12546/378/pic/fd63998a-354f-4447-9ccd-5898650ce1f1.jpg"
+        }
+      ],
+      "UpdateTime": "2026-08-10T00:00:00+08:00"
+    },
+    {
+      "AttractionID": "Attraction_376570000A_000389",
+      "AttractionName": "沙灣歷史文化園區",
+      "AttractionClasses": [3],
+      "IsAccessibleForFree": 1,
+      "ServiceTimeInfo": "1.大沙灣石圍遺構:24 小時,開放式空間2.要塞司令官邸、要塞司令部校官眷舍:請",
+      "FeeInfo": "免費用",
+      "Tags": [],
+      "PostalAddress": { "City": "基隆市", "Town": "中正區" },
+      "PositionLat": 25.1410691,
+      "PositionLon": 121.7585688,
+      "Images": [
+        {
+          "Name": "場地區域特寫-2",
+          "URL": "https://klctb-ws.klcg.gov.tw/001/Upload/tour/445/12546/388/pic/ae94427d-c3d1-4f1a-856b-ea80bc5a704c.jpg"
+        }
+      ],
+      "UpdateTime": "2026-08-10T00:00:00+08:00"
+    },
+    {
+      "AttractionID": "Attraction_376570000A_000390",
+      "AttractionName": "1949太平輪紀念公園",
+      "AttractionClasses": [3],
+      "IsAccessibleForFree": 1,
+      "ServiceTimeInfo": "營業時間:24 小時,開放式空間",
+      "FeeInfo": "免費用",
+      "Tags": [],
+      "PostalAddress": { "City": "基隆市", "Town": "中正區" },
+      "PositionLat": 25.1411338,
+      "PositionLon": 121.7572382,
+      "Images": [
+        {
+          "Name": "場地空景",
+          "URL": "https://klctb-ws.klcg.gov.tw/001/Upload/tour/445/12546/393/pic/30a87ac9-75c4-4cbf-8652-780b09fa0d1d.jpg"
+        }
+      ],
+      "UpdateTime": "2026-08-10T00:00:00+08:00"
+    },
+    {
+      "AttractionID": "Attraction_376570000A_000391",
+      "AttractionName": "必應創造展演空間",
+      "AttractionClasses": [1, 12, 25],
+      "IsAccessibleForFree": 1,
+      "ServiceTimeInfo": "週二至週日 11:00~17:00(每週一休館)",
+      "FeeInfo": "免費用",
+      "Tags": [],
+      "PostalAddress": { "City": "基隆市", "Town": "中正區" },
+      "PositionLat": 25.1408132,
+      "PositionLon": 121.7583613,
+      "Images": [
+        {
+          "Name": "建築外觀特寫",
+          "URL": "https://klctb-ws.klcg.gov.tw/001/Upload/tour/445/12546/398/pic/7787e682-5a15-4de4-8582-99364ab7eb7e.jpg"
+        }
+      ],
+      "UpdateTime": "2026-08-10T00:00:00+08:00"
+    },
+    {
+      "AttractionID": "Attraction_376570000A_000392",
+      "AttractionName": "潮境公園",
+      "AttractionClasses": [11, 12],
+      "IsAccessibleForFree": 1,
+      "ServiceTimeInfo": "24 小時,無時間限制",
+      "FeeInfo": "免費用",
+      "Tags": [],
+      "PostalAddress": { "City": "基隆市", "Town": "中正區" },
+      "PositionLat": 25.1434517,
+      "PositionLon": 121.8034149,
+      "Images": [
+        {
+          "Name": "場地空景-1",
+          "URL": "https://klctb-ws.klcg.gov.tw/001/Upload/tour/445/12546/718/pic/48ce739e-f61f-41b6-bc50-8775aab0cf9e.jpg"
+        }
+      ],
+      "UpdateTime": "2026-08-10T00:00:00+08:00"
+    },
+    {
+      "AttractionID": "Attraction_376570000A_000393",
+      "AttractionName": "潮境智能海洋館",
+      "AttractionClasses": [26],
+      "IsAccessibleForFree": 0,
+      "ServiceTimeInfo": "營業時間:9:00~17:00 (週一固定公休)",
+      "FeeInfo": "全票300元、優惠(滿6足歲) / 學生票 / 基隆瑞芳居民250元、未滿6歲 /",
+      "Tags": [],
+      "PostalAddress": { "City": "基隆市", "Town": "中正區" },
+      "PositionLat": 25.1445086,
+      "PositionLon": 121.8028952,
+      "Images": [
+        {
+          "Name": "場地近景",
+          "URL": "https://klctb-ws.klcg.gov.tw/001/Upload/tour/445/12546/1127/pic/4b52996e-9caa-4e51-8adb-6a63df41cbf5.jpg"
+        }
+      ],
+      "UpdateTime": "2026-08-10T00:00:00+08:00"
+    },
+    {
+      "AttractionID": "Attraction_376570000A_000394",
+      "AttractionName": "基隆嶼",
+      "AttractionClasses": [11],
+      "IsAccessibleForFree": 1,
+      "ServiceTimeInfo": "每年約 4~10 月開放登島船班時間 08:00、09:00、10:00、13:3",
+      "FeeInfo": "免費用",
+      "Tags": [],
+      "PostalAddress": { "City": "基隆市", "Town": "中正區" },
+      "PositionLat": 25.192753,
+      "PositionLon": 121.7872123,
+      "Images": [
+        {
+          "Name": "場地空拍近景",
+          "URL": "https://klctb-ws.klcg.gov.tw/001/Upload/tour/445/12546/408/pic/c159fe4a-51f3-4780-bb46-c20e7f0e63fe.jpg"
+        }
+      ],
+      "UpdateTime": "2026-08-10T00:00:00+08:00"
+    },
+    {
+      "AttractionID": "Attraction_376570000A_000395",
+      "AttractionName": "國立海洋科技博物館",
+      "AttractionClasses": [26],
+      "IsAccessibleForFree": 0,
+      "ServiceTimeInfo": "營業時間:週二~週日 09:00~17:00(每週一及農曆除夕休館)",
+      "FeeInfo": "門票:300 元(常設展),不定期有特別展,請參考官方網站票價",
+      "Tags": [],
+      "PostalAddress": { "City": "基隆市", "Town": "中正區" },
+      "PositionLat": 25.1400236,
+      "PositionLon": 121.7985672,
+      "Images": [
+        {
+          "Name": "場地內區域近景-3",
+          "URL": "https://klctb-ws.klcg.gov.tw/001/Upload/tour/445/12546/414/pic/71aef433-5b7d-4ab3-a6f8-d0432907b546.jpg"
+        }
+      ],
+      "UpdateTime": "2026-08-10T00:00:00+08:00"
+    },
+    {
+      "AttractionID": "Attraction_376570000A_000396",
+      "AttractionName": "基隆市原住民文化會館",
+      "AttractionClasses": [1, 21],
+      "IsAccessibleForFree": 1,
+      "ServiceTimeInfo": "營業時間:週二~週日 09:00~17:00(週一及國定假日休館)",
+      "FeeInfo": "免費用",
+      "Tags": [],
+      "PostalAddress": { "City": "基隆市", "Town": "中正區" },
+      "PositionLat": 25.1537096,
+      "PositionLon": 121.7716322,
+      "Images": [
+        {
+          "Name": "場地內區域特寫",
+          "URL": "https://klctb-ws.klcg.gov.tw/001/Upload/tour/445/12546/418/pic/0f67e107-270d-495a-bbfa-218ce5ce2a2b.jpg"
+        }
+      ],
+      "UpdateTime": "2026-08-10T00:00:00+08:00"
+    },
+    {
+      "AttractionID": "Attraction_376570000A_000402",
+      "AttractionName": "漁會正濱大樓",
+      "AttractionClasses": [1, 3],
+      "IsAccessibleForFree": 1,
+      "ServiceTimeInfo": "暫不開放,夜間點燈時間:每日 18:00-22:00",
+      "FeeInfo": "免費用",
+      "Tags": [],
+      "PostalAddress": { "City": "基隆市", "Town": "中正區" },
+      "PositionLat": 25.150702,
+      "PositionLon": 121.7653605,
+      "Images": [
+        {
+          "Name": "夜間建築外觀",
+          "URL": "https://klctb-ws.klcg.gov.tw/001/Upload/tour/445/12546/1138/pic/49dbe326-52e8-4a38-bba7-7142b0568ea0.jpg"
+        }
+      ],
+      "UpdateTime": "2026-08-10T00:00:00+08:00"
+    },
+    {
+      "AttractionID": "Attraction_376570000A_000403",
+      "AttractionName": "市長官邸",
+      "AttractionClasses": [1, 3],
+      "IsAccessibleForFree": 1,
+      "ServiceTimeInfo": "以官方公告為主",
+      "FeeInfo": "免費用",
+      "Tags": [],
+      "PostalAddress": { "City": "基隆市", "Town": "中正區" },
+      "PositionLat": 25.1447328,
+      "PositionLon": 121.7615031,
+      "Images": [
+        {
+          "Name": "場地建築特寫",
+          "URL": "https://klctb-ws.klcg.gov.tw/001/Upload/tour/445/12546/444/pic/a1ea8c6a-e6e9-4210-b948-9e8b2cdf9ea2.jpg"
+        }
+      ],
+      "UpdateTime": "2026-08-10T00:00:00+08:00"
+    },
+    {
+      "AttractionID": "Attraction_376570000A_000405",
+      "AttractionName": "要塞司令部",
+      "AttractionClasses": [1, 3],
+      "IsAccessibleForFree": 1,
+      "ServiceTimeInfo": "1.主建物:10:00~18:002.光復樓餐廳:10:00~20:003.夜間點",
+      "FeeInfo": "免費用",
+      "Tags": [],
+      "PostalAddress": { "City": "基隆市", "Town": "中正區" },
+      "PositionLat": 25.1410455,
+      "PositionLon": 121.7629404,
+      "Images": [
+        {
+          "Name": "白天外部場景",
+          "URL": "https://klctb-ws.klcg.gov.tw/001/Upload/tour/445/12546/448/pic/6b2ad7fd-f4ce-4b24-8446-ef2e9528ba53.jpg"
+        }
+      ],
+      "UpdateTime": "2026-08-10T00:00:00+08:00"
+    },
+    {
+      "AttractionID": "Attraction_376570000A_000406",
+      "AttractionName": "校官眷舍",
+      "AttractionClasses": [1, 3],
+      "IsAccessibleForFree": 1,
+      "ServiceTimeInfo": "目前場館暫時停止開放，場館重新開放規劃將於日後公告夜間點燈時間：每日 18:00～",
+      "FeeInfo": "免費用",
+      "Tags": [],
+      "PostalAddress": { "City": "基隆市", "Town": "中正區" },
+      "PositionLat": 25.1410901,
+      "PositionLon": 121.7588015,
+      "Images": [
+        {
+          "Name": "場地近景-2",
+          "URL": "https://klctb-ws.klcg.gov.tw/001/Upload/tour/445/12546/453/pic/2fd006d2-3988-4c2f-83d9-11edf9c4353b.jpg"
+        }
+      ],
+      "UpdateTime": "2026-08-10T00:00:00+08:00"
+    },
+    {
+      "AttractionID": "Attraction_376570000A_000410",
+      "AttractionName": "清法戰爭紀念園區",
+      "AttractionClasses": [1, 3],
+      "IsAccessibleForFree": 1,
+      "ServiceTimeInfo": "24 小時,開放式空間",
+      "FeeInfo": "免費用",
+      "Tags": [],
+      "PostalAddress": { "City": "基隆市", "Town": "中正區" },
+      "PositionLat": 25.1407829,
+      "PositionLon": 121.7576874,
+      "Images": [
+        {
+          "Name": "場地入口處全景",
+          "URL": "https://klctb-ws.klcg.gov.tw/001/Upload/tour/445/12546/458/pic/54d2e44b-5242-4bdc-9627-75601102b400.jpg"
+        }
+      ],
+      "UpdateTime": "2026-08-10T00:00:00+08:00"
+    },
+    {
+      "AttractionID": "Attraction_376570000A_000412",
+      "AttractionName": "社寮東砲台",
+      "AttractionClasses": [1, 3],
+      "IsAccessibleForFree": 1,
+      "ServiceTimeInfo": "24 小時,開放式空間",
+      "FeeInfo": "免費用",
+      "Tags": [],
+      "PostalAddress": { "City": "基隆市", "Town": "中正區" },
+      "PositionLat": 25.1582618,
+      "PositionLon": 121.7718409,
+      "Images": [
+        {
+          "Name": "場地近景-1",
+          "URL": "https://klctb-ws.klcg.gov.tw/001/Upload/tour/445/12546/468/pic/090f4460-0007-490a-bcf8-c2f4c558ef1e.jpg"
+        }
+      ],
+      "UpdateTime": "2026-08-10T00:00:00+08:00"
+    },
+    {
+      "AttractionID": "Attraction_376570000A_000413",
+      "AttractionName": "基隆美術館",
+      "AttractionClasses": [1, 12, 25],
+      "IsAccessibleForFree": 1,
+      "ServiceTimeInfo": "週二~週日 09:00~17:00",
+      "FeeInfo": "免費用",
+      "Tags": [],
+      "PostalAddress": { "City": "基隆市", "Town": "中正區" },
+      "PositionLat": 25.1312801,
+      "PositionLon": 121.7441073,
+      "Images": [
+        {
+          "Name": "場地全景",
+          "URL": "https://klctb-ws.klcg.gov.tw/001/Upload/tour/445/12546/473/pic/3bfb7e09-8c6d-4eb1-a8b9-6c40672ff97a.jpg"
+        }
+      ],
+      "UpdateTime": "2026-08-10T00:00:00+08:00"
+    },
+    {
+      "AttractionID": "Attraction_376570000A_000415",
+      "AttractionName": "鷄籠中元文化館",
+      "AttractionClasses": [1, 25],
+      "IsAccessibleForFree": 1,
+      "ServiceTimeInfo": "週二至週日 9:00~17:00(整修中暫停開放)",
+      "FeeInfo": "免費用",
+      "Tags": [],
+      "PostalAddress": { "City": "基隆市", "Town": "中正區" },
+      "PositionLat": 25.1321562,
+      "PositionLon": 121.7473732,
+      "Images": [
+        {
+          "Name": "場地近景-1",
+          "URL": "https://klctb-ws.klcg.gov.tw/001/Upload/tour/445/12546/478/pic/0522c14a-b9f0-4f52-8854-56d5c11916ae.jpg"
+        }
+      ],
+      "UpdateTime": "2026-08-10T00:00:00+08:00"
+    },
+    {
+      "AttractionID": "Attraction_376570000A_000417",
+      "AttractionName": "舊正濱派出所",
+      "AttractionClasses": [1, 3, 25],
+      "IsAccessibleForFree": 1,
+      "ServiceTimeInfo": "外部空間為 24 小時,開放式空間",
+      "FeeInfo": "免費用",
+      "Tags": [],
+      "PostalAddress": { "City": "基隆市", "Town": "中正區" },
+      "PositionLat": 25.1527412,
+      "PositionLon": 121.7681332,
+      "Images": [
+        {
+          "Name": "場地建築外觀全景",
+          "URL": "https://klctb-ws.klcg.gov.tw/001/Upload/tour/445/12546/483/pic/64423d08-2cb8-4451-8f73-4e7c63e54362.jpg"
+        }
+      ],
+      "UpdateTime": "2026-08-10T00:00:00+08:00"
+    },
+    {
+      "AttractionID": "Attraction_376570000A_000418",
+      "AttractionName": "忠烈祠",
+      "AttractionClasses": [1, 4],
+      "IsAccessibleForFree": 1,
+      "ServiceTimeInfo": "24 小時,開放式空間",
+      "FeeInfo": "免費用",
+      "Tags": [],
+      "PostalAddress": { "City": "基隆市", "Town": "中正區" },
+      "PositionLat": 25.1316126,
+      "PositionLon": 121.7469396,
+      "Images": [
+        {
+          "Name": "場地近景-1",
+          "URL": "https://klctb-ws.klcg.gov.tw/001/Upload/tour/445/12546/488/pic/77b273e4-3f5f-44fc-8a76-dcdb47ad71d7.jpg"
+        }
+      ],
+      "UpdateTime": "2026-08-10T00:00:00+08:00"
+    },
+    {
+      "AttractionID": "Attraction_376570000A_000421",
+      "AttractionName": "大佛禪寺",
+      "AttractionClasses": [4],
+      "IsAccessibleForFree": 1,
+      "ServiceTimeInfo": "05:00~18:00",
+      "FeeInfo": "免費用",
+      "Tags": [],
+      "PostalAddress": { "City": "基隆市", "Town": "信義區" },
+      "PositionLat": 25.1329269,
+      "PositionLon": 121.7505756,
+      "Images": [
+        {
+          "Name": "場地全景",
+          "URL": "https://klctb-ws.klcg.gov.tw/001/Upload/tour/445/12546/494/pic/ae345d85-dbb8-46b5-a536-1f6a6e1a5e66.jpg"
+        }
+      ],
+      "UpdateTime": "2026-08-10T00:00:00+08:00"
+    },
+    {
+      "AttractionID": "Attraction_376570000A_000424",
+      "AttractionName": "社寮天后宮",
+      "AttractionClasses": [4],
+      "IsAccessibleForFree": 1,
+      "ServiceTimeInfo": "05:00~18:00",
+      "FeeInfo": "免費用",
+      "Tags": [],
+      "PostalAddress": { "City": "基隆市", "Town": "中正區" },
+      "PositionLat": 25.1556711,
+      "PositionLon": 121.76679,
+      "Images": [
+        {
+          "Name": "場地全景",
+          "URL": "https://klctb-ws.klcg.gov.tw/001/Upload/tour/445/12546/504/pic/c5a5a0f9-142e-4241-987b-dd5098ec3ed6.jpg"
+        }
+      ],
+      "UpdateTime": "2026-08-10T00:00:00+08:00"
+    },
+    {
+      "AttractionID": "Attraction_376570000A_000425",
+      "AttractionName": "和平島天顯宮",
+      "AttractionClasses": [4],
+      "IsAccessibleForFree": 1,
+      "ServiceTimeInfo": "06:00~21:00",
+      "FeeInfo": "免費用",
+      "Tags": [],
+      "PostalAddress": { "City": "基隆市", "Town": "中正區" },
+      "PositionLat": 25.1581361,
+      "PositionLon": 121.7669479,
+      "Images": [
+        {
+          "Name": "場地入口空景-2",
+          "URL": "https://klctb-ws.klcg.gov.tw/001/Upload/tour/445/12546/509/pic/f5502bef-7d33-4edd-b1b9-0bbe9a253c82.jpg"
+        }
+      ],
+      "UpdateTime": "2026-08-10T00:00:00+08:00"
+    },
+    {
+      "AttractionID": "Attraction_376570000A_000427",
+      "AttractionName": "望海巷跨海景觀橋",
+      "AttractionClasses": [11],
+      "IsAccessibleForFree": 1,
+      "ServiceTimeInfo": "24 小時,開放式空間",
+      "FeeInfo": "免費用",
+      "Tags": [],
+      "PostalAddress": { "City": "基隆市", "Town": "中正區" },
+      "PositionLat": 25.1381141,
+      "PositionLon": 121.8028663,
+      "Images": [
+        {
+          "Name": "場地特寫角度-1",
+          "URL": "https://klctb-ws.klcg.gov.tw/001/Upload/tour/445/12546/519/pic/9be33dc1-c12b-4f46-ab8e-54c238656b36.jpg"
+        }
+      ],
+      "UpdateTime": "2026-08-10T00:00:00+08:00"
+    },
+    {
+      "AttractionID": "Attraction_376570000A_000428",
+      "AttractionName": "八尺門",
+      "AttractionClasses": [11, 23],
+      "IsAccessibleForFree": 1,
+      "ServiceTimeInfo": "24 小時,開放式空間",
+      "FeeInfo": "免費用",
+      "Tags": [],
+      "PostalAddress": { "City": "基隆市", "Town": "中正區" },
+      "PositionLat": 25.1553069,
+      "PositionLon": 121.7725472,
+      "Images": [
+        {
+          "Name": "場地全景空拍-2",
+          "URL": "https://klctb-ws.klcg.gov.tw/001/Upload/tour/445/12546/525/pic/06604486-039b-4e1e-965d-6c98d580ba6f.jpg"
+        }
+      ],
+      "UpdateTime": "2026-08-10T00:00:00+08:00"
+    },
+    {
+      "AttractionID": "Attraction_376570000A_000429",
+      "AttractionName": "覺修宮",
+      "AttractionClasses": [3],
+      "IsAccessibleForFree": 1,
+      "ServiceTimeInfo": "6:30~19:30",
+      "FeeInfo": "免費用",
+      "Tags": [],
+      "PostalAddress": { "City": "基隆市", "Town": "中正區" },
+      "PositionLat": 25.1354168,
+      "PositionLon": 121.7484984,
+      "Images": [
+        {
+          "Name": "場地全景",
+          "URL": "https://klctb-ws.klcg.gov.tw/001/Upload/tour/445/12546/529/pic/de36bca4-cd14-49bb-a77d-f611d205f84b.jpg"
+        }
+      ],
+      "UpdateTime": "2026-08-10T00:00:00+08:00"
+    },
+    {
+      "AttractionID": "Attraction_376570000A_000430",
+      "AttractionName": "八斗子車站",
+      "AttractionClasses": [11, 23],
+      "IsAccessibleForFree": 1,
+      "ServiceTimeInfo": "24 小時,開放式空間",
+      "FeeInfo": "免費用",
+      "Tags": [],
+      "PostalAddress": { "City": "基隆市", "Town": "中正區" },
+      "PositionLat": 25.1345429,
+      "PositionLon": 121.804474,
+      "Images": [
+        {
+          "Name": "場地月台特寫-1",
+          "URL": "https://klctb-ws.klcg.gov.tw/001/Upload/tour/445/12546/534/pic/0fb3161c-3084-4ef4-bcfd-19cf97139d71.jpg"
+        }
+      ],
+      "UpdateTime": "2026-08-10T00:00:00+08:00"
+    },
+    {
+      "AttractionID": "Attraction_376570000A_000431",
+      "AttractionName": "陽明海洋文化藝術館",
+      "AttractionClasses": [1, 25],
+      "IsAccessibleForFree": 0,
+      "ServiceTimeInfo": "週二至週日 9:00~17:00",
+      "FeeInfo": "全票150元 ：一般市民優惠票100元：學生、基隆市民 、團體票（20人以上）免費",
+      "Tags": [],
+      "PostalAddress": { "City": "基隆市", "Town": "仁愛區" },
+      "PositionLat": 25.1326261,
+      "PositionLon": 121.7399987,
+      "Images": [
+        {
+          "Name": "場地全景",
+          "URL": "https://klctb-ws.klcg.gov.tw/001/Upload/tour/445/12546/539/pic/c5ca5a68-ee6b-4358-a009-053e480fa91f.jpg"
+        }
+      ],
+      "UpdateTime": "2026-08-10T00:00:00+08:00"
+    },
+    {
+      "AttractionID": "Attraction_376570000A_000435",
+      "AttractionName": "海洋廣場",
+      "AttractionClasses": [12],
+      "IsAccessibleForFree": 1,
+      "ServiceTimeInfo": "24 小時,開放式空間",
+      "FeeInfo": "免費用",
+      "Tags": [],
+      "PostalAddress": { "City": "基隆市", "Town": "仁愛區" },
+      "PositionLat": 25.1309627,
+      "PositionLon": 121.7413639,
+      "Images": [
+        {
+          "Name": "場地近景-1",
+          "URL": "https://klctb-ws.klcg.gov.tw/001/Upload/tour/445/12546/554/pic/f5b4a62c-406a-40a8-838e-107fd3cdd8b8.jpg"
+        }
+      ],
+      "UpdateTime": "2026-08-10T00:00:00+08:00"
+    },
+    {
+      "AttractionID": "Attraction_376570000A_000441",
+      "AttractionName": "奠濟宮",
+      "AttractionClasses": [3, 4],
+      "IsAccessibleForFree": 1,
+      "ServiceTimeInfo": "07:00~22:00",
+      "FeeInfo": "免費用",
+      "Tags": [],
+      "PostalAddress": { "City": "基隆市", "Town": "仁愛區" },
+      "PositionLat": 25.1281559,
+      "PositionLon": 121.7429968,
+      "Images": [
+        {
+          "Name": "場地全景",
+          "URL": "https://klctb-ws.klcg.gov.tw/001/Upload/tour/445/12546/575/pic/7d327b7a-adb7-4358-aa0a-3e12ed409011.jpg"
+        }
+      ],
+      "UpdateTime": "2026-08-10T00:00:00+08:00"
+    },
+    {
+      "AttractionID": "Attraction_376570000A_000444",
+      "AttractionName": "許梓桑古厝",
+      "AttractionClasses": [3],
+      "IsAccessibleForFree": 1,
+      "ServiceTimeInfo": "24 小時,開放式空間",
+      "FeeInfo": "免費用",
+      "Tags": [],
+      "PostalAddress": { "City": "基隆市", "Town": "仁愛區" },
+      "PositionLat": 25.1273893,
+      "PositionLon": 121.7442136,
+      "Images": [
+        {
+          "Name": "場地近景-1",
+          "URL": "https://klctb-ws.klcg.gov.tw/001/Upload/tour/445/12546/590/pic/c32c0bb2-1526-4f51-92ca-b1eb393e1288.jpg"
+        }
+      ],
+      "UpdateTime": "2026-08-10T00:00:00+08:00"
+    },
+    {
+      "AttractionID": "Attraction_376570000A_000445",
+      "AttractionName": "城隍廟",
+      "AttractionClasses": [1, 3],
+      "IsAccessibleForFree": 1,
+      "ServiceTimeInfo": "每日 7:00~19:00",
+      "FeeInfo": "免費用",
+      "Tags": [],
+      "PostalAddress": { "City": "基隆市", "Town": "仁愛區" },
+      "PositionLat": 25.1308487,
+      "PositionLon": 121.7406556,
+      "Images": [
+        {
+          "Name": "場地全景",
+          "URL": "https://klctb-ws.klcg.gov.tw/001/Upload/tour/445/12546/596/pic/0fe88220-f847-46a7-973b-d869abc054ae.jpg"
+        }
+      ],
+      "UpdateTime": "2026-08-10T00:00:00+08:00"
+    },
+    {
+      "AttractionID": "Attraction_376570000A_000448",
+      "AttractionName": "慶安宮",
+      "AttractionClasses": [3, 4],
+      "IsAccessibleForFree": 1,
+      "ServiceTimeInfo": "周一至周日06:00-22:00",
+      "FeeInfo": "免費用",
+      "Tags": [],
+      "PostalAddress": { "City": "基隆市", "Town": "仁愛區" },
+      "PositionLat": 25.1293841,
+      "PositionLon": 121.7405876,
+      "Images": [
+        {
+          "Name": "場地特寫全景",
+          "URL": "https://klctb-ws.klcg.gov.tw/001/Upload/tour/445/12546/606/pic/e217d404-8221-4dfd-a01c-b378fcd4918d.jpg"
+        }
+      ],
+      "UpdateTime": "2026-08-10T00:00:00+08:00"
+    },
+    {
+      "AttractionID": "Attraction_376570000A_000449",
+      "AttractionName": "基隆福德宮",
+      "AttractionClasses": [3, 4],
+      "IsAccessibleForFree": 1,
+      "ServiceTimeInfo": "周一至周日06:00-17:00",
+      "FeeInfo": "免費用",
+      "Tags": [],
+      "PostalAddress": { "City": "基隆市", "Town": "仁愛區" },
+      "PositionLat": 25.1281437,
+      "PositionLon": 121.7419859,
+      "Images": [
+        {
+          "Name": "場地近景-1",
+          "URL": "https://klctb-ws.klcg.gov.tw/001/Upload/tour/445/12546/611/pic/7556b0fb-8f93-4c92-a07d-b92945a6b2d4.jpg"
+        }
+      ],
+      "UpdateTime": "2026-08-10T00:00:00+08:00"
+    },
+    {
+      "AttractionID": "Attraction_376570000A_000498",
+      "AttractionName": "翠谷橋壺穴",
+      "AttractionClasses": [11, 12],
+      "IsAccessibleForFree": 1,
+      "ServiceTimeInfo": "",
+      "FeeInfo": "免費用",
+      "Tags": [],
+      "PostalAddress": { "City": "基隆市", "Town": "七堵區" },
+      "PositionLat": 25.1107742,
+      "PositionLon": 121.6866253,
+      "Images": [
+        {
+          "Name": "場地空景-1",
+          "URL": "https://klctb-ws.klcg.gov.tw/001/Upload/tour/445/12546/647/pic/8f49693b-31df-4bc3-a200-98e2d6a670ce.jpg"
+        }
+      ],
+      "UpdateTime": "2026-08-10T00:00:00+08:00"
+    },
+    {
+      "AttractionID": "Attraction_376570000A_000500",
+      "AttractionName": "槓子寮砲台",
+      "AttractionClasses": [3],
+      "IsAccessibleForFree": 1,
+      "ServiceTimeInfo": "24小時，開放式空間",
+      "FeeInfo": "免費用",
+      "Tags": [],
+      "PostalAddress": { "City": "基隆市", "Town": "仁愛區" },
+      "PositionLat": 25.1437076,
+      "PositionLon": 121.7819019,
+      "Images": [
+        {
+          "Name": "場地全景-1",
+          "URL": "https://klctb-ws.klcg.gov.tw/001/Upload/tour/445/12546/642/pic/cf24da54-5f03-42f1-a56c-ab6630b47c5f.jpg"
+        }
+      ],
+      "UpdateTime": "2026-08-10T00:00:00+08:00"
+    },
+    {
+      "AttractionID": "Attraction_376570000A_000503",
+      "AttractionName": "劉銘傳隧道(獅球嶺隧道)",
+      "AttractionClasses": [3],
+      "IsAccessibleForFree": 1,
+      "ServiceTimeInfo": "開放時間：每週二至週日(週一公休)09:00 – 17:00定時導覽：每週五至週日",
+      "FeeInfo": "免費用",
+      "Tags": [],
+      "PostalAddress": { "City": "基隆市", "Town": "安樂區" },
+      "PositionLat": 25.1258209,
+      "PositionLon": 121.7318466,
+      "Images": [
+        {
+          "Name": "場地入口處全景",
+          "URL": "https://klctb-ws.klcg.gov.tw/001/Upload/tour/445/12546/692/pic/777abd3c-f5c2-4e6f-8dab-c1fcc6e7d2d7.jpg"
+        }
+      ],
+      "UpdateTime": "2026-08-10T00:00:00+08:00"
+    },
+    {
+      "AttractionID": "Attraction_376570000A_000504",
+      "AttractionName": "大武崙沙灘",
+      "AttractionClasses": [11, 12],
+      "IsAccessibleForFree": 1,
+      "ServiceTimeInfo": "24小時，開放式空間",
+      "FeeInfo": "免費用",
+      "Tags": [],
+      "PostalAddress": { "City": "基隆市", "Town": "中山區" },
+      "PositionLat": 25.1656071,
+      "PositionLon": 121.7067944,
+      "Images": [
+        {
+          "Name": "場地全景-3",
+          "URL": "https://klctb-ws.klcg.gov.tw/001/Upload/tour/445/12546/653/pic/0fe84865-6ab5-4ce6-9cc6-5702187209b5.jpg"
+        }
+      ],
+      "UpdateTime": "2026-08-10T00:00:00+08:00"
+    },
+    {
+      "AttractionID": "Attraction_376570000A_000506",
+      "AttractionName": "富民親水公園",
+      "AttractionClasses": [11, 12, 24],
+      "IsAccessibleForFree": 1,
+      "ServiceTimeInfo": "",
+      "FeeInfo": "免費用",
+      "Tags": [],
+      "PostalAddress": { "City": "基隆市", "Town": "七堵區" },
+      "PositionLat": 25.1332513,
+      "PositionLon": 121.6738254,
+      "Images": [
+        {
+          "Name": "場地空景-1",
+          "URL": "https://klctb-ws.klcg.gov.tw/001/Upload/tour/445/12546/711/pic/5d9f37ca-5bb2-4b35-a5b7-28bd10a759f1.jpg"
+        }
+      ],
+      "UpdateTime": "2026-08-10T00:00:00+08:00"
+    },
+    {
+      "AttractionID": "Attraction_376570000A_000509",
+      "AttractionName": "情人湖濱海大道",
+      "AttractionClasses": [12],
+      "IsAccessibleForFree": 1,
+      "ServiceTimeInfo": "24小時，開放式空間",
+      "FeeInfo": "免費用",
+      "Tags": [],
+      "PostalAddress": { "City": "基隆市", "Town": "中山區" },
+      "PositionLat": 25.1638487,
+      "PositionLon": 121.720363,
+      "Images": [
+        {
+          "Name": "場地遠景",
+          "URL": "https://klctb-ws.klcg.gov.tw/001/Upload/tour/445/12546/660/pic/b889bc69-0b97-4476-95e8-42a946e9e8c6.jpg"
+        }
+      ],
+      "UpdateTime": "2026-08-10T00:00:00+08:00"
+    },
+    {
+      "AttractionID": "Attraction_376570000A_000512",
+      "AttractionName": "金明昌休閒農場",
+      "AttractionClasses": [2, 9],
+      "IsAccessibleForFree": 1,
+      "ServiceTimeInfo": "景點資訊地址：基隆市七堵區大華二路162-1號電話：02-2456-3667（電話",
+      "FeeInfo": "免費用",
+      "Tags": [],
+      "PostalAddress": { "City": "基隆市", "Town": "七堵區" },
+      "PositionLat": 25.1120337,
+      "PositionLon": 121.6888028,
+      "Images": [
+        {
+          "Name": "場地內區域照-1",
+          "URL": "https://klctb-ws.klcg.gov.tw/001/Upload/tour/445/12546/722/pic/e730b3ef-98f0-4512-8813-5e029a3734c5.jpg"
+        }
+      ],
+      "UpdateTime": "2026-08-10T00:00:00+08:00"
+    },
+    {
+      "AttractionID": "Attraction_376570000A_000514",
+      "AttractionName": "大武崙砲台",
+      "AttractionClasses": [3],
+      "IsAccessibleForFree": 1,
+      "ServiceTimeInfo": "24小時，開放式空間",
+      "FeeInfo": "免費用",
+      "Tags": [],
+      "PostalAddress": { "City": "基隆市", "Town": "安樂區" },
+      "PositionLat": 25.1587828,
+      "PositionLon": 121.7083931,
+      "Images": [
+        {
+          "Name": "場地全景-1",
+          "URL": "https://klctb-ws.klcg.gov.tw/001/Upload/tour/445/12546/665/pic/66a6f1a3-24c6-4436-ab8d-b76bc6199df0.jpg"
+        }
+      ],
+      "UpdateTime": "2026-08-10T00:00:00+08:00"
+    },
+    {
+      "AttractionID": "Attraction_376570000A_000519",
+      "AttractionName": "大牛稠山河居",
+      "AttractionClasses": [2, 9],
+      "IsAccessibleForFree": 1,
+      "ServiceTimeInfo": "電話預約前往",
+      "FeeInfo": "免費用",
+      "Tags": [],
+      "PostalAddress": { "City": "基隆市", "Town": "七堵區" },
+      "PositionLat": 25.131295,
+      "PositionLon": 121.7442058,
+      "Images": [
+        {
+          "Name": "場地區域近景",
+          "URL": "https://klctb-ws.klcg.gov.tw/001/Upload/tour/445/12546/737/pic/1d8d0c26-e7c5-4877-8c40-c49ffd353403.jpg"
+        }
+      ],
+      "UpdateTime": "2026-08-10T00:00:00+08:00"
+    },
+    {
+      "AttractionID": "Attraction_376570000A_000522",
+      "AttractionName": "文良休閒農場",
+      "AttractionClasses": [2, 9],
+      "IsAccessibleForFree": 1,
+      "ServiceTimeInfo": "07:00～18:00（需事先預約）",
+      "FeeInfo": "免費用",
+      "Tags": [],
+      "PostalAddress": { "City": "基隆市", "Town": "七堵區" },
+      "PositionLat": 25.139911,
+      "PositionLon": 121.681148,
+      "Images": [
+        {
+          "Name": "場地內空景",
+          "URL": "https://klctb-ws.klcg.gov.tw/001/Upload/tour/445/12546/743/pic/039676db-3e4c-424c-b754-c3a83c204d7a.jpg"
+        }
+      ],
+      "UpdateTime": "2026-08-10T00:00:00+08:00"
+    }
+  ],
+  "restaurant": [
+    {
+      "RestaurantID": "Restaurant_A15011000H_000198",
+      "RestaurantName": "廣海食堂",
+      "CuisineClasses": [2],
+      "RestaurantFeatures": [],
+      "ServiceTimeInfo": "11:00-23:00",
+      "PostalAddress": { "City": "基隆市", "Town": "中正區" },
+      "PositionLat": 25.1324,
+      "PositionLon": 121.746,
+      "UpdateTime": "2026-11-05T12:00:07+08:00"
+    },
+    {
+      "RestaurantID": "Restaurant_A15011000H_000200",
+      "RestaurantName": "陞豪火鍋",
+      "CuisineClasses": [2],
+      "RestaurantFeatures": [],
+      "ServiceTimeInfo": "11:00-22:00",
+      "PostalAddress": { "City": "基隆市", "Town": "中正區" },
+      "PositionLat": 25.1334,
+      "PositionLon": 121.745,
+      "UpdateTime": "2026-11-05T12:00:07+08:00"
+    },
+    {
+      "RestaurantID": "Restaurant_A15011000H_000201",
+      "RestaurantName": "北都大飯店",
+      "CuisineClasses": [2],
+      "RestaurantFeatures": [],
+      "ServiceTimeInfo": "",
+      "PostalAddress": { "City": "基隆市", "Town": "中正區" },
+      "PositionLat": 25.13125,
+      "PositionLon": 121.7452,
+      "UpdateTime": "2026-11-05T12:00:07+08:00"
+    },
+    {
+      "RestaurantID": "Restaurant_A15011000H_000202",
+      "RestaurantName": "狸小路燒肉專賣店",
+      "CuisineClasses": [105],
+      "RestaurantFeatures": [],
+      "ServiceTimeInfo": "周一公休，每週二~日11:30~23:30",
+      "PostalAddress": { "City": "基隆市", "Town": "仁愛區" },
+      "PositionLat": 25.12915,
+      "PositionLon": 121.742,
+      "UpdateTime": "2026-11-05T12:00:07+08:00"
+    },
+    {
+      "RestaurantID": "Restaurant_A15011000H_000218",
+      "RestaurantName": "禾口丘",
+      "CuisineClasses": [254],
+      "RestaurantFeatures": [],
+      "ServiceTimeInfo": "",
+      "PostalAddress": { "City": "基隆市", "Town": "中正區" },
+      "PositionLat": 25.16255,
+      "PositionLon": 121.7652,
+      "UpdateTime": "2026-11-05T12:00:07+08:00"
+    },
+    {
+      "RestaurantID": "Restaurant_A15011000H_000221",
+      "RestaurantName": "享蒔物語",
+      "CuisineClasses": [2],
+      "RestaurantFeatures": [],
+      "ServiceTimeInfo": "週一~週日10:00-18:00",
+      "PostalAddress": { "City": "基隆市", "Town": "中正區" },
+      "PositionLat": 25.1618,
+      "PositionLon": 121.7638,
+      "UpdateTime": "2026-11-05T12:00:07+08:00"
+    },
+    {
+      "RestaurantID": "Restaurant_A15011000H_000222",
+      "RestaurantName": "樂品喜塘咖啡廳",
+      "CuisineClasses": [101],
+      "RestaurantFeatures": [],
+      "ServiceTimeInfo": "5-10月11:00-19:00、11-4月10:00-18:00",
+      "PostalAddress": { "City": "基隆市", "Town": "中正區" },
+      "PositionLat": 25.16063,
+      "PositionLon": 121.7638,
+      "UpdateTime": "2026-11-05T12:00:07+08:00"
+    },
+    {
+      "RestaurantID": "Restaurant_A15011000H_000230",
+      "RestaurantName": "小白屋燒烤海鮮餐廳",
+      "CuisineClasses": [105],
+      "RestaurantFeatures": [],
+      "ServiceTimeInfo": "13:30-22:00",
+      "PostalAddress": { "City": "基隆市", "Town": "安樂區" },
+      "PositionLat": 25.16606,
+      "PositionLon": 121.7063,
+      "UpdateTime": "2026-11-05T12:00:07+08:00"
+    },
+    {
+      "RestaurantID": "Restaurant_A15011000H_000231",
+      "RestaurantName": "八斗邀友善餐廳",
+      "CuisineClasses": [99],
+      "RestaurantFeatures": [],
+      "ServiceTimeInfo": "預約制",
+      "PostalAddress": { "City": "基隆市", "Town": "中正區" },
+      "PositionLat": 25.14128,
+      "PositionLon": 121.7967,
+      "UpdateTime": "2026-11-05T12:00:07+08:00"
+    },
+    {
+      "RestaurantID": "Restaurant_A15011000H_000232",
+      "RestaurantName": "小峨嵋川菜館",
+      "CuisineClasses": [2],
+      "RestaurantFeatures": [],
+      "ServiceTimeInfo": "11:00-14:00，17:00-21:00",
+      "PostalAddress": { "City": "基隆市", "Town": "中正區" },
+      "PositionLat": 25.13306,
+      "PositionLon": 121.7458,
+      "UpdateTime": "2026-11-05T12:00:07+08:00"
+    },
+    {
+      "RestaurantID": "Restaurant_A15011000H_000234",
+      "RestaurantName": "漁品軒",
+      "CuisineClasses": [116],
+      "RestaurantFeatures": [],
+      "ServiceTimeInfo": "週一~週日11:00~16:00，17:00~21:30",
+      "PostalAddress": { "City": "基隆市", "Town": "中正區" },
+      "PositionLat": 25.14103,
+      "PositionLon": 121.7954,
+      "UpdateTime": "2026-11-05T12:00:07+08:00"
+    },
+    {
+      "RestaurantID": "Restaurant_A15011000H_000235",
+      "RestaurantName": "福氣委託行",
+      "CuisineClasses": [116],
+      "RestaurantFeatures": [],
+      "ServiceTimeInfo": "週二至週日 13:00~20:00，週一公休",
+      "PostalAddress": { "City": "基隆市", "Town": "仁愛區" },
+      "PositionLat": 25.12846,
+      "PositionLon": 121.7396,
+      "UpdateTime": "2026-11-05T12:00:07+08:00"
+    },
+    {
+      "RestaurantID": "Restaurant_A15011000H_000236",
+      "RestaurantName": "蔡技企業有限公司-蔡技食品",
+      "CuisineClasses": [116],
+      "RestaurantFeatures": [],
+      "ServiceTimeInfo": "11:00-21:00",
+      "PostalAddress": { "City": "基隆市", "Town": "七堵區" },
+      "PositionLat": 25.08414,
+      "PositionLon": 121.6946,
+      "UpdateTime": "2026-11-05T12:00:07+08:00"
+    },
+    {
+      "RestaurantID": "Restaurant_A15011000H_000237",
+      "RestaurantName": "河豚很多",
+      "CuisineClasses": [99],
+      "RestaurantFeatures": [],
+      "ServiceTimeInfo": "11:30-14:00，17:00-22:00",
+      "PostalAddress": { "City": "基隆市", "Town": "中正區" },
+      "PositionLat": 25.15321,
+      "PositionLon": 121.7696,
+      "UpdateTime": "2026-11-05T12:00:07+08:00"
+    },
+    {
+      "RestaurantID": "Restaurant_A15011000H_000238",
+      "RestaurantName": "連珍糕餅店",
+      "CuisineClasses": [116],
+      "RestaurantFeatures": [],
+      "ServiceTimeInfo": "08:00-21:00",
+      "PostalAddress": { "City": "基隆市", "Town": "仁愛區" },
+      "PositionLat": 25.12872,
+      "PositionLon": 121.742,
+      "UpdateTime": "2026-11-05T12:00:07+08:00"
+    },
+    {
+      "RestaurantID": "Restaurant_A15011000H_000240",
+      "RestaurantName": "聖托里尼海景餐廳",
+      "CuisineClasses": [99],
+      "RestaurantFeatures": [],
+      "ServiceTimeInfo": "11:00-22:00",
+      "PostalAddress": { "City": "基隆市", "Town": "中山區" },
+      "PositionLat": 25.16398,
+      "PositionLon": 121.7254,
+      "UpdateTime": "2026-11-05T12:00:07+08:00"
+    },
+    {
+      "RestaurantID": "Restaurant_A15011000H_000241",
+      "RestaurantName": "猫町珈琲",
+      "CuisineClasses": [254],
+      "RestaurantFeatures": [],
+      "ServiceTimeInfo": "10:00~18:00，每週二公休",
+      "PostalAddress": { "City": "基隆市", "Town": "中正區" },
+      "PositionLat": 25.12904,
+      "PositionLon": 121.7428,
+      "UpdateTime": "2026-11-05T12:00:07+08:00"
+    },
+    {
+      "RestaurantID": "Restaurant_A15011000H_000242",
+      "RestaurantName": "巴基斯坦廚房（真愛咖哩）",
+      "CuisineClasses": [99],
+      "RestaurantFeatures": [],
+      "ServiceTimeInfo": "11:30-20:00(固定休星期五)",
+      "PostalAddress": { "City": "基隆市", "Town": "中正區" },
+      "PositionLat": 25.13281,
+      "PositionLon": 121.7452,
+      "UpdateTime": "2026-11-05T12:00:07+08:00"
+    },
+    {
+      "RestaurantID": "Restaurant_A15011000H_000249",
+      "RestaurantName": "外木山汫水澳服務餐車-芋圓王",
+      "CuisineClasses": [101],
+      "RestaurantFeatures": [],
+      "ServiceTimeInfo": "每日 14:00-19:30",
+      "PostalAddress": { "City": "基隆市", "Town": "中山區" },
+      "PositionLat": 25.16432,
+      "PositionLon": 121.7253,
+      "UpdateTime": "2026-11-05T12:00:07+08:00"
+    },
+    {
+      "RestaurantID": "Restaurant_A15011000H_000250",
+      "RestaurantName": "湖海灣喵喵咖啡遊客服務站",
+      "CuisineClasses": [101],
+      "RestaurantFeatures": [],
+      "ServiceTimeInfo": "每日營業 14:00-22:00 (以FB及Google公告時間為準)",
+      "PostalAddress": { "City": "基隆市", "Town": "安樂區" },
+      "PositionLat": 25.16644,
+      "PositionLon": 121.7066,
+      "UpdateTime": "2026-11-05T12:00:07+08:00"
+    },
+    {
+      "RestaurantID": "Restaurant_A15011000H_000252",
+      "RestaurantName": "廟口小吃",
+      "CuisineClasses": [100],
+      "RestaurantFeatures": [],
+      "ServiceTimeInfo": "",
+      "PostalAddress": { "City": "基隆市", "Town": "仁愛區" },
+      "PositionLat": 25.1282,
+      "PositionLon": 121.7435,
+      "UpdateTime": "2026-11-05T12:00:07+08:00"
+    },
+    {
+      "RestaurantID": "Restaurant_376570000A_000537",
+      "RestaurantName": "微風東岸",
+      "CuisineClasses": [99, 110],
+      "RestaurantFeatures": [],
+      "ServiceTimeInfo": "周一至周日 11:00-22:00",
+      "PostalAddress": { "City": "基隆市", "Town": "仁愛區" },
+      "PositionLat": 25.130169,
+      "PositionLon": 121.7431842,
+      "Images": [
+        {
+          "Name": "微風東岸",
+          "URL": "https://klctb-ws.klcg.gov.tw/001/Upload/tour/445/12550/774/pic/cbdcaa62-45a3-4285-91ad-bbe113e2a73a.jpg"
+        }
+      ],
+      "UpdateTime": "2026-08-10T00:00:00+08:00"
+    },
+    {
+      "RestaurantID": "Restaurant_376570000A_000552",
+      "RestaurantName": "仁愛市場",
+      "CuisineClasses": [1],
+      "RestaurantFeatures": [],
+      "ServiceTimeInfo": "開放時間：週一～週日 08:00～19:00（特定公休日另行公告）營業時間：依各店",
+      "PostalAddress": { "City": "基隆市", "Town": "仁愛區" },
+      "PositionLat": 25.128054,
+      "PositionLon": 121.741071,
+      "Images": [
+        {
+          "Name": "仁愛市場",
+          "URL": "https://klctb-ws.klcg.gov.tw/001/Upload/tour/445/12550/813/pic/9221a3bc-79eb-4044-ab79-5b9e65e96ba8.jpg"
+        }
+      ],
+      "UpdateTime": "2026-08-10T00:00:00+08:00"
+    },
+    {
+      "RestaurantID": "Restaurant_376570000A_000555",
+      "RestaurantName": "委託行商圈",
+      "CuisineClasses": [1],
+      "RestaurantFeatures": [],
+      "ServiceTimeInfo": "24 小時開放；商圈店家以各店營業時間為主",
+      "PostalAddress": { "City": "基隆市", "Town": "仁愛區" },
+      "PositionLat": 25.1282678,
+      "PositionLon": 121.7395832,
+      "Images": [
+        {
+          "Name": "委託行商圈",
+          "URL": "https://klctb-ws.klcg.gov.tw/001/Upload/tour/445/12550/836/pic/dc907996-c217-43c7-97e0-934dda9cae65.jpg"
+        }
+      ],
+      "UpdateTime": "2026-08-10T00:00:00+08:00"
+    },
+    {
+      "RestaurantID": "Restaurant_376570000A_000558",
+      "RestaurantName": "基隆廟口",
+      "CuisineClasses": [100],
+      "RestaurantFeatures": [],
+      "ServiceTimeInfo": "開放式空間，無時間限制",
+      "PostalAddress": { "City": "基隆市", "Town": "仁愛區" },
+      "PositionLat": 25.128445,
+      "PositionLon": 121.7431519,
+      "Images": [
+        {
+          "Name": "攤位總表",
+          "URL": "https://klctb-ws.klcg.gov.tw/001/Upload/tour/445/12550/1049/pic/642e4e69-a6cb-4636-8d04-c933a02133a3.png"
+        }
+      ],
+      "UpdateTime": "2026-08-10T00:00:00+08:00"
+    },
+    {
+      "RestaurantID": "Restaurant_376570000A_000572",
+      "RestaurantName": "和平島觀光漁市",
+      "CuisineClasses": [107],
+      "RestaurantFeatures": [],
+      "ServiceTimeInfo": "依各店家公布營業時間為主",
+      "PostalAddress": { "City": "基隆市", "Town": "仁愛區" },
+      "PositionLat": 25.1547184,
+      "PositionLon": 121.7688916,
+      "Images": [
+        {
+          "Name": "觀光漁市街景-1",
+          "URL": "https://klctb-ws.klcg.gov.tw/001/Upload/tour/445/12550/927/pic/c4c43acd-8456-46f8-b68c-501cae5a8bf2.jpg"
+        }
+      ],
+      "UpdateTime": "2026-08-10T00:00:00+08:00"
+    },
+    {
+      "RestaurantID": "Restaurant_376570000A_000636",
+      "RestaurantName": "連珍糕餅店",
+      "CuisineClasses": [101, 102],
+      "RestaurantFeatures": [],
+      "ServiceTimeInfo": "每日 08:00~21:00",
+      "PostalAddress": { "City": "基隆市", "Town": "仁愛區" },
+      "PositionLat": 25.1286806,
+      "PositionLon": 121.7419616,
+      "Images": [
+        {
+          "Name": "超人氣芋泥球",
+          "URL": "https://klctb-ws.klcg.gov.tw/001/Upload/tour/445/12550/988/pic/d8e6c67d-c5af-4ceb-a3f6-71b6764927f1.jpg"
+        }
+      ],
+      "UpdateTime": "2026-08-10T00:00:00+08:00"
+    },
+    {
+      "RestaurantID": "Restaurant_376570000A_000637",
+      "RestaurantName": "泉利米香",
+      "CuisineClasses": [115, 116],
+      "RestaurantFeatures": [],
+      "ServiceTimeInfo": "每日 09:00~21:00",
+      "PostalAddress": { "City": "基隆市", "Town": "信義區" },
+      "PositionLat": 25.1297302,
+      "PositionLon": 121.7490874,
+      "Images": [
+        {
+          "Name": "古早味米香、特色米香",
+          "URL": "https://klctb-ws.klcg.gov.tw/001/Upload/tour/445/12550/989/pic/6938ca6b-2666-4b15-ad45-5aea2d802e86.jpg"
+        }
+      ],
+      "UpdateTime": "2026-08-10T00:00:00+08:00"
+    },
+    {
+      "RestaurantID": "Restaurant_376570000A_000638",
+      "RestaurantName": "基隆廟口金興蔴粩",
+      "CuisineClasses": [115, 116],
+      "RestaurantFeatures": [],
+      "ServiceTimeInfo": "週二公休每日 09:00~21:00",
+      "PostalAddress": { "City": "基隆市", "Town": "仁愛區" },
+      "PositionLat": 25.1282429,
+      "PositionLon": 121.7433225,
+      "Images": [
+        {
+          "Name": "傳統手工零食",
+          "URL": "https://klctb-ws.klcg.gov.tw/001/Upload/tour/445/12550/990/pic/201bb397-9237-4495-bd2c-1f46b84ede59.jpg"
+        }
+      ],
+      "UpdateTime": "2026-08-10T00:00:00+08:00"
+    },
+    {
+      "RestaurantID": "Restaurant_376570000A_000639",
+      "RestaurantName": "Bonjour朋廚烘焙坊",
+      "CuisineClasses": [102, 115, 116],
+      "RestaurantFeatures": [],
+      "ServiceTimeInfo": "每日 9:00-21:00",
+      "PostalAddress": { "City": "基隆市", "Town": "仁愛區" },
+      "PositionLat": 25.1289179,
+      "PositionLon": 121.7446632,
+      "Images": [
+        {
+          "Name": "黑鳶飛翔海鮮杏仁脆片禮盒",
+          "URL": "https://klctb-ws.klcg.gov.tw/001/Upload/tour/445/12550/991/pic/8f9a4e62-7dda-43ea-97bd-a2707d8f2d4a.jpg"
+        }
+      ],
+      "UpdateTime": "2026-08-10T00:00:00+08:00"
+    },
+    {
+      "RestaurantID": "Restaurant_376570000A_000641",
+      "RestaurantName": "溫莎堡烘培坊",
+      "CuisineClasses": [102, 115, 116],
+      "RestaurantFeatures": [],
+      "ServiceTimeInfo": "每日 08:30~21:30",
+      "PostalAddress": { "City": "基隆市", "Town": "仁愛區" },
+      "PositionLat": 25.1312675,
+      "PositionLon": 121.7399521,
+      "Images": [
+        {
+          "Name": "吟心月餅",
+          "URL": "https://klctb-ws.klcg.gov.tw/001/Upload/tour/445/12550/994/pic/a92518cf-cb95-41e5-9f73-cfa1ff37ed8c.jpg"
+        }
+      ],
+      "UpdateTime": "2026-08-10T00:00:00+08:00"
+    },
+    {
+      "RestaurantID": "Restaurant_376570000A_000642",
+      "RestaurantName": "大方合展有限公司",
+      "CuisineClasses": [104, 107, 115, 116],
+      "RestaurantFeatures": [],
+      "ServiceTimeInfo": "週三～週日 09:00~18:00（八斗邀友善餐廳；採預約制）週六、週日 15:0",
+      "PostalAddress": { "City": "基隆市", "Town": "中正區" },
+      "PositionLat": 25.1413284,
+      "PositionLon": 121.7965443,
+      "Images": [
+        {
+          "Name": "阿里棒棒、啵啵肉乾",
+          "URL": "https://klctb-ws.klcg.gov.tw/001/Upload/tour/445/12550/995/pic/9782ca38-a54e-4c21-9a4f-3f99d99794a7.jpg"
+        }
+      ],
+      "UpdateTime": "2026-08-10T00:00:00+08:00"
+    },
+    {
+      "RestaurantID": "Restaurant_376570000A_000643",
+      "RestaurantName": "心干寶貝",
+      "CuisineClasses": [107, 115, 116],
+      "RestaurantFeatures": [],
+      "ServiceTimeInfo": "每日 10:00~18:00",
+      "PostalAddress": { "City": "基隆市", "Town": "中正區" },
+      "PositionLat": 25.1397904,
+      "PositionLon": 121.7950892,
+      "Images": [
+        {
+          "Name": "心干寶貝手作海味醬",
+          "URL": "https://klctb-ws.klcg.gov.tw/001/Upload/tour/445/12550/996/pic/87a64b1a-aafa-4fc2-8019-bde1a656c9d8.jpg"
+        }
+      ],
+      "UpdateTime": "2026-08-10T00:00:00+08:00"
+    },
+    {
+      "RestaurantID": "Restaurant_376570000A_000644",
+      "RestaurantName": "漁品軒海鮮市集",
+      "CuisineClasses": [107, 115, 116],
+      "RestaurantFeatures": [],
+      "ServiceTimeInfo": "每日 09:00~18:00",
+      "PostalAddress": { "City": "基隆市", "Town": "中正區" },
+      "PositionLat": 25.1409469,
+      "PositionLon": 121.7953548,
+      "Images": [
+        {
+          "Name": "海味醬蕎麥拌麵",
+          "URL": "https://klctb-ws.klcg.gov.tw/001/Upload/tour/445/12550/997/pic/56836e78-cbae-4213-9e1d-f3ce1955b83e.jpg"
+        }
+      ],
+      "UpdateTime": "2026-08-10T00:00:00+08:00"
+    },
+    {
+      "RestaurantID": "Restaurant_376570000A_000646",
+      "RestaurantName": "蔡技食品",
+      "CuisineClasses": [107, 115, 116],
+      "RestaurantFeatures": [],
+      "ServiceTimeInfo": "週三 13:00~20:00每日 11:00~20:00",
+      "PostalAddress": { "City": "基隆市", "Town": "七堵區" },
+      "PositionLat": 25.0839722,
+      "PositionLon": 121.6946643,
+      "Images": [
+        {
+          "Name": "基隆鎖管醬",
+          "URL": "https://klctb-ws.klcg.gov.tw/001/Upload/tour/445/12550/998/pic/184f6b53-9c10-45b2-9a64-87f46cf5fc05.jpg"
+        }
+      ],
+      "UpdateTime": "2026-08-10T00:00:00+08:00"
+    },
+    {
+      "RestaurantID": "Restaurant_376570000A_000647",
+      "RestaurantName": "食之飴",
+      "CuisineClasses": [107, 115, 116],
+      "RestaurantFeatures": [],
+      "ServiceTimeInfo": "週一、週日公休週二~週六 09:30~18:30",
+      "PostalAddress": { "City": "基隆市", "Town": "中正區" },
+      "PositionLat": 25.1413917,
+      "PositionLon": 121.7966732,
+      "Images": [
+        {
+          "Name": "霸王捲化石燒",
+          "URL": "https://klctb-ws.klcg.gov.tw/001/Upload/tour/445/12550/999/pic/c86f43d7-a023-439c-8ee5-942348052135.jpg"
+        }
+      ],
+      "UpdateTime": "2026-08-10T00:00:00+08:00"
+    },
+    {
+      "RestaurantID": "Restaurant_376570000A_000648",
+      "RestaurantName": "岑品事業股份有限公司",
+      "CuisineClasses": [115, 116],
+      "RestaurantFeatures": [],
+      "ServiceTimeInfo": "5~10月 08:00~19:0011~4月 08:00~18:00",
+      "PostalAddress": { "City": "基隆市", "Town": "仁愛區" },
+      "PositionLat": 25.1617918,
+      "PositionLon": 121.7638231,
+      "Images": [
+        {
+          "Name": "AGAR-AGAR鳳尾脆梅石花凍",
+          "URL": "https://klctb-ws.klcg.gov.tw/001/Upload/tour/445/12550/1000/pic/9b59f1e6-6457-4ddf-9ce4-92e7c5869f49.jpg"
+        }
+      ],
+      "UpdateTime": "2026-08-10T00:00:00+08:00"
+    },
+    {
+      "RestaurantID": "Restaurant_376570000A_000649",
+      "RestaurantName": "珍味香餅店",
+      "CuisineClasses": [102, 115, 116],
+      "RestaurantFeatures": [],
+      "ServiceTimeInfo": "每日 08:00-21:30",
+      "PostalAddress": { "City": "基隆市", "Town": "暖暖區" },
+      "PositionLat": 25.1282041,
+      "PositionLon": 121.7485261,
+      "Images": [
+        {
+          "Name": "帝王酥",
+          "URL": "https://klctb-ws.klcg.gov.tw/001/Upload/tour/445/12550/1001/pic/cafad443-a6cd-4def-a00a-4a11b4540a9c.jpg"
+        }
+      ],
+      "UpdateTime": "2026-08-10T00:00:00+08:00"
+    },
+    {
+      "RestaurantID": "Restaurant_376570000A_000650",
+      "RestaurantName": "耀集食品",
+      "CuisineClasses": [1, 115],
+      "RestaurantFeatures": [],
+      "ServiceTimeInfo": "週一~週五 08:00~16:30",
+      "PostalAddress": { "City": "基隆市", "Town": "安樂區" },
+      "PositionLat": 25.1429306,
+      "PositionLon": 121.6981477,
+      "Images": [
+        {
+          "Name": "日式火鍋料",
+          "URL": "https://klctb-ws.klcg.gov.tw/001/Upload/tour/445/12550/993/pic/eb3f02cb-8a5d-41a3-acf2-7da69dfef408.jpg"
+        }
+      ],
+      "UpdateTime": "2026-08-10T00:00:00+08:00"
+    },
+    {
+      "RestaurantID": "Restaurant_376570000A_000651",
+      "RestaurantName": "江福記餅店",
+      "CuisineClasses": [102, 115, 116],
+      "RestaurantFeatures": [],
+      "ServiceTimeInfo": "每日 09:00~21:30",
+      "PostalAddress": { "City": "基隆市", "Town": "中山區" },
+      "PositionLat": 25.131751,
+      "PositionLon": 121.73624,
+      "Images": [
+        {
+          "Name": "蛋黃酥、豆沙餅、壽桃",
+          "URL": "https://klctb-ws.klcg.gov.tw/001/Upload/tour/445/12550/992/pic/28ad0c57-a3cf-4fc3-8497-e02a950c6652.jpg"
+        }
+      ],
+      "UpdateTime": "2026-08-10T00:00:00+08:00"
+    },
+    {
+      "RestaurantID": "Restaurant_376570000A_000672",
+      "RestaurantName": "美滋客窯烤披薩",
+      "CuisineClasses": [254],
+      "RestaurantFeatures": [],
+      "ServiceTimeInfo": "週三~週日 11:30~21:00",
+      "PostalAddress": { "City": "基隆市", "Town": "中正區" },
+      "PositionLat": 25.1510016,
+      "PositionLon": 121.7664426,
+      "UpdateTime": "2026-08-10T00:00:00+08:00"
+    },
+    {
+      "RestaurantID": "Restaurant_376570000A_000673",
+      "RestaurantName": "河豚很多",
+      "CuisineClasses": [107],
+      "RestaurantFeatures": [],
+      "ServiceTimeInfo": "週一三四五 11:30~14:30；17:00~21:00週六、日 11:30~1",
+      "PostalAddress": { "City": "基隆市", "Town": "中正區" },
+      "PositionLat": 25.1532081,
+      "PositionLon": 121.7695625,
+      "UpdateTime": "2026-08-10T00:00:00+08:00"
+    },
+    {
+      "RestaurantID": "Restaurant_376570000A_000674",
+      "RestaurantName": "陞豪鍋物",
+      "CuisineClasses": [106],
+      "RestaurantFeatures": [],
+      "ServiceTimeInfo": "每日 11:00~22:00",
+      "PostalAddress": { "City": "基隆市", "Town": "中正區" },
+      "PositionLat": 25.133391,
+      "PositionLon": 121.7450258,
+      "UpdateTime": "2026-08-10T00:00:00+08:00"
+    },
+    {
+      "RestaurantID": "Restaurant_376570000A_000675",
+      "RestaurantName": "胡弄咖啡簡餐",
+      "CuisineClasses": [1, 106, 254],
+      "RestaurantFeatures": [],
+      "ServiceTimeInfo": "周二公休每日 11:30~21:00",
+      "PostalAddress": { "City": "基隆市", "Town": "仁愛區" },
+      "PositionLat": 25.1291851,
+      "PositionLon": 121.7420148,
+      "UpdateTime": "2026-08-10T00:00:00+08:00"
+    },
+    {
+      "RestaurantID": "Restaurant_376570000A_000676",
+      "RestaurantName": "擇食居酒屋",
+      "CuisineClasses": [107],
+      "RestaurantFeatures": [],
+      "ServiceTimeInfo": "週一 ~ 週五 00:30–01:00；17:30–00:00週六 ~ 週日 00",
+      "PostalAddress": { "City": "基隆市", "Town": "仁愛區" },
+      "PositionLat": 25.1285641,
+      "PositionLon": 121.7401525,
+      "UpdateTime": "2026-08-10T00:00:00+08:00"
+    },
+    {
+      "RestaurantID": "Restaurant_376570000A_000677",
+      "RestaurantName": "圖們咖啡 tuman café",
+      "CuisineClasses": [102],
+      "RestaurantFeatures": [],
+      "ServiceTimeInfo": "週四公休每日11:00~19:00",
+      "PostalAddress": { "City": "基隆市", "Town": "中正區" },
+      "PositionLat": 25.1524157,
+      "PositionLon": 121.7690036,
+      "UpdateTime": "2026-08-10T00:00:00+08:00"
+    },
+    {
+      "RestaurantID": "Restaurant_376570000A_000678",
+      "RestaurantName": "春興水餃店",
+      "CuisineClasses": [1],
+      "RestaurantFeatures": [],
+      "ServiceTimeInfo": "週二~週日 11:00~20:00",
+      "PostalAddress": { "City": "基隆市", "Town": "中正區" },
+      "PositionLat": 25.1415272,
+      "PositionLon": 121.7922363,
+      "UpdateTime": "2026-08-10T00:00:00+08:00"
+    },
+    {
+      "RestaurantID": "Restaurant_376570000A_000679",
+      "RestaurantName": "基隆古早味安一大腸圈米粉湯",
+      "CuisineClasses": [1],
+      "RestaurantFeatures": [],
+      "ServiceTimeInfo": "週三休息每日 08:30~00:00",
+      "PostalAddress": { "City": "基隆市", "Town": "安樂區" },
+      "PositionLat": 25.1319689,
+      "PositionLon": 121.7345262,
+      "UpdateTime": "2026-08-10T00:00:00+08:00"
+    },
+    {
+      "RestaurantID": "Restaurant_376570000A_000680",
+      "RestaurantName": "紅豆坊",
+      "CuisineClasses": [1],
+      "RestaurantFeatures": [],
+      "ServiceTimeInfo": "週三公休每日11:30~21:30",
+      "PostalAddress": { "City": "基隆市", "Town": "中山區" },
+      "PositionLat": 25.1319275,
+      "PositionLon": 121.7355017,
+      "UpdateTime": "2026-08-10T00:00:00+08:00"
+    },
+    {
+      "RestaurantID": "Restaurant_376570000A_000681",
+      "RestaurantName": "北芳烤鴨",
+      "CuisineClasses": [1],
+      "RestaurantFeatures": [],
+      "ServiceTimeInfo": "週二~週日11:00 ~14:00；16:00 ~ 20:00",
+      "PostalAddress": { "City": "基隆市", "Town": "中正區" },
+      "PositionLat": 25.1325704,
+      "PositionLon": 121.7465877,
+      "UpdateTime": "2026-08-10T00:00:00+08:00"
+    },
+    {
+      "RestaurantID": "Restaurant_376570000A_000682",
+      "RestaurantName": "呈品鵝肉店",
+      "CuisineClasses": [1],
+      "RestaurantFeatures": [],
+      "ServiceTimeInfo": "每日 10:30~20:30",
+      "PostalAddress": { "City": "基隆市", "Town": "中山區" },
+      "PositionLat": 25.1430616,
+      "PositionLon": 121.726207,
+      "UpdateTime": "2026-08-10T00:00:00+08:00"
+    },
+    {
+      "RestaurantID": "Restaurant_376570000A_000683",
+      "RestaurantName": "邦彼諾 Bambino",
+      "CuisineClasses": [254],
+      "RestaurantFeatures": [],
+      "ServiceTimeInfo": "每日11:00 ~ 21:00",
+      "PostalAddress": { "City": "基隆市", "Town": "仁愛區" },
+      "PositionLat": 25.1326966,
+      "PositionLon": 121.7401618,
+      "UpdateTime": "2026-08-10T00:00:00+08:00"
+    },
+    {
+      "RestaurantID": "Restaurant_376570000A_000684",
+      "RestaurantName": "劉家50年老店臭豆腐",
+      "CuisineClasses": [1],
+      "RestaurantFeatures": [],
+      "ServiceTimeInfo": "週二公休每日 10:30~21:00",
+      "PostalAddress": { "City": "基隆市", "Town": "仁愛區" },
+      "PositionLat": 25.1333505,
+      "PositionLon": 121.7401604,
+      "UpdateTime": "2026-08-10T00:00:00+08:00"
+    },
+    {
+      "RestaurantID": "Restaurant_376570000A_000685",
+      "RestaurantName": "後山海景咖啡",
+      "CuisineClasses": [101],
+      "RestaurantFeatures": [],
+      "ServiceTimeInfo": "週二~周日 11:30~23:00",
+      "PostalAddress": { "City": "基隆市", "Town": "中山區" },
+      "PositionLat": 25.1387658,
+      "PositionLon": 121.7389318,
+      "UpdateTime": "2026-08-10T00:00:00+08:00"
+    },
+    {
+      "RestaurantID": "Restaurant_376570000A_000686",
+      "RestaurantName": "虎仔山休閒咖啡館",
+      "CuisineClasses": [102],
+      "RestaurantFeatures": [],
+      "ServiceTimeInfo": "",
+      "PostalAddress": { "City": "基隆市", "Town": "中山區" },
+      "PositionLat": 25.1389346,
+      "PositionLon": 121.7387952,
+      "UpdateTime": "2026-08-10T00:00:00+08:00"
+    },
+    {
+      "RestaurantID": "Restaurant_376570000A_000687",
+      "RestaurantName": "春川韓式小館",
+      "CuisineClasses": [5],
+      "RestaurantFeatures": [],
+      "ServiceTimeInfo": "週二~週六 11:30~14:30；16:30~20:00",
+      "PostalAddress": { "City": "基隆市", "Town": "中正區" },
+      "PositionLat": 25.1339483,
+      "PositionLon": 121.7473949,
+      "UpdateTime": "2026-08-10T00:00:00+08:00"
+    },
+    {
+      "RestaurantID": "Restaurant_376570000A_000688",
+      "RestaurantName": "宋家味兒",
+      "CuisineClasses": [1, 113],
+      "RestaurantFeatures": [],
+      "ServiceTimeInfo": "週二~週日 11:30~20:00",
+      "PostalAddress": { "City": "基隆市", "Town": "信義區" },
+      "PositionLat": 25.1289139,
+      "PositionLon": 121.7565453,
+      "UpdateTime": "2026-08-10T00:00:00+08:00"
+    },
+    {
+      "RestaurantID": "Restaurant_376570000A_000689",
+      "RestaurantName": "李ㄚ哥藥燉排骨/臭豆腐",
+      "CuisineClasses": [1],
+      "RestaurantFeatures": [],
+      "ServiceTimeInfo": "週六公休每日 11:00~23:00",
+      "PostalAddress": { "City": "基隆市", "Town": "信義區" },
+      "PositionLat": 25.1292006,
+      "PositionLon": 121.7547621,
+      "UpdateTime": "2026-08-10T00:00:00+08:00"
+    },
+    {
+      "RestaurantID": "Restaurant_376570000A_000690",
+      "RestaurantName": "不老田蔬食咖啡坊",
+      "CuisineClasses": [101, 200, 204],
+      "RestaurantFeatures": [],
+      "ServiceTimeInfo": "週二~週日 10:30~23:00",
+      "PostalAddress": { "City": "基隆市", "Town": "信義區" },
+      "PositionLat": 25.1290976,
+      "PositionLon": 121.7504352,
+      "UpdateTime": "2026-08-10T00:00:00+08:00"
+    },
+    {
+      "RestaurantID": "Restaurant_376570000A_000691",
+      "RestaurantName": "幸福10號店",
+      "CuisineClasses": [201],
+      "RestaurantFeatures": [],
+      "ServiceTimeInfo": "週二~週六 11:30~17:00",
+      "PostalAddress": { "City": "基隆市", "Town": "信義區" },
+      "PositionLat": 25.1296401,
+      "PositionLon": 121.7475644,
+      "UpdateTime": "2026-08-10T00:00:00+08:00"
+    },
+    {
+      "RestaurantID": "Restaurant_376570000A_000692",
+      "RestaurantName": "無名鍋",
+      "CuisineClasses": [1, 106],
+      "RestaurantFeatures": [],
+      "ServiceTimeInfo": "每日 11:30~22:30",
+      "PostalAddress": { "City": "基隆市", "Town": "信義區" },
+      "PositionLat": 25.1296347,
+      "PositionLon": 121.7472258,
+      "UpdateTime": "2026-08-10T00:00:00+08:00"
+    },
+    {
+      "RestaurantID": "Restaurant_376570000A_000693",
+      "RestaurantName": "小樽食堂",
+      "CuisineClasses": [105, 107],
+      "RestaurantFeatures": [],
+      "ServiceTimeInfo": "週二公休每日 18:00~01:00",
+      "PostalAddress": { "City": "基隆市", "Town": "中正區" },
+      "PositionLat": 25.130184,
+      "PositionLon": 121.746466,
+      "UpdateTime": "2026-08-10T00:00:00+08:00"
+    },
+    {
+      "RestaurantID": "Restaurant_376570000A_000694",
+      "RestaurantName": "義美石頭火鍋",
+      "CuisineClasses": [106],
+      "RestaurantFeatures": [],
+      "ServiceTimeInfo": "每日 16:30~23:30",
+      "PostalAddress": { "City": "基隆市", "Town": "中正區" },
+      "PositionLat": 25.1311378,
+      "PositionLon": 121.7459039,
+      "UpdateTime": "2026-08-10T00:00:00+08:00"
+    },
+    {
+      "RestaurantID": "Restaurant_376570000A_000695",
+      "RestaurantName": "HND好日子美式海鮮餐廳",
+      "CuisineClasses": [107],
+      "RestaurantFeatures": [],
+      "ServiceTimeInfo": "週五12:00~21:00週六~週日 11:30~21:00",
+      "PostalAddress": { "City": "基隆市", "Town": "中正區" },
+      "PositionLat": 25.1323048,
+      "PositionLon": 121.7459956,
+      "UpdateTime": "2026-08-10T00:00:00+08:00"
+    },
+    {
+      "RestaurantID": "Restaurant_376570000A_000696",
+      "RestaurantName": "暖暖的",
+      "CuisineClasses": [254],
+      "RestaurantFeatures": [],
+      "ServiceTimeInfo": "週二~週六 11:30~14:30；17:00~20:30",
+      "PostalAddress": { "City": "基隆市", "Town": "暖暖區" },
+      "PositionLat": 25.0933655,
+      "PositionLon": 121.7380484,
+      "UpdateTime": "2026-08-10T00:00:00+08:00"
+    },
+    {
+      "RestaurantID": "Restaurant_376570000A_000697",
+      "RestaurantName": "橋頭排骨麵碇內店",
+      "CuisineClasses": [1],
+      "RestaurantFeatures": [],
+      "ServiceTimeInfo": "週一 ~ 週五 09:00~14:00；17:00~19:30週六 09:00~1",
+      "PostalAddress": { "City": "基隆市", "Town": "暖暖區" },
+      "PositionLat": 25.0993336,
+      "PositionLon": 121.7560477,
+      "UpdateTime": "2026-08-10T00:00:00+08:00"
+    },
+    {
+      "RestaurantID": "Restaurant_376570000A_000698",
+      "RestaurantName": "七堵咖哩麵",
+      "CuisineClasses": [1],
+      "RestaurantFeatures": [],
+      "ServiceTimeInfo": "週二公休每日 11:00~21:00",
+      "PostalAddress": { "City": "基隆市", "Town": "七堵區" },
+      "PositionLat": 25.0817579,
+      "PositionLon": 121.6946566,
+      "UpdateTime": "2026-08-10T00:00:00+08:00"
+    },
+    {
+      "RestaurantID": "Restaurant_376570000A_000699",
+      "RestaurantName": "宣騰莊",
+      "CuisineClasses": [1],
+      "RestaurantFeatures": [],
+      "ServiceTimeInfo": "週二~週五 11:00~13:50；17:00~20:30週六~週日 11:00~",
+      "PostalAddress": { "City": "基隆市", "Town": "七堵區" },
+      "PositionLat": 25.0959165,
+      "PositionLon": 121.7126708,
+      "UpdateTime": "2026-08-10T00:00:00+08:00"
+    },
+    {
+      "RestaurantID": "Restaurant_376570000A_000700",
+      "RestaurantName": "三奇壹號咖啡館",
+      "CuisineClasses": [101],
+      "RestaurantFeatures": [],
+      "ServiceTimeInfo": "每日12:00~19:30",
+      "PostalAddress": { "City": "基隆市", "Town": "仁愛區" },
+      "PositionLat": 25.1290489,
+      "PositionLon": 121.7425207,
+      "UpdateTime": "2026-08-10T00:00:00+08:00"
+    },
+    {
+      "RestaurantID": "Restaurant_376570000A_000701",
+      "RestaurantName": "熊豆咖啡",
+      "CuisineClasses": [101],
+      "RestaurantFeatures": [],
+      "ServiceTimeInfo": "",
+      "PostalAddress": { "City": "基隆市", "Town": "中正區" },
+      "PositionLat": 25.1521135,
+      "PositionLon": 121.7698712,
+      "UpdateTime": "2026-08-10T00:00:00+08:00"
+    },
+    {
+      "RestaurantID": "Restaurant_376570000A_000702",
+      "RestaurantName": "美有計劃 Café",
+      "CuisineClasses": [101],
+      "RestaurantFeatures": [],
+      "ServiceTimeInfo": "週三公休每日 11:00~20:30",
+      "PostalAddress": { "City": "基隆市", "Town": "中正區" },
+      "PositionLat": 25.1519477,
+      "PositionLon": 121.76977,
+      "UpdateTime": "2026-08-10T00:00:00+08:00"
+    },
+    {
+      "RestaurantID": "Restaurant_376570000A_000710",
+      "RestaurantName": "基隆港好食城",
+      "CuisineClasses": [99],
+      "RestaurantFeatures": [],
+      "ServiceTimeInfo": "平日11:00-22:00，假日10:30-22:00",
+      "PostalAddress": { "City": "基隆市", "Town": "中正區" },
+      "PositionLat": 25.1333846,
+      "PositionLon": 121.7444151,
+      "Images": [
+        {
+          "Name": "外觀",
+          "URL": "https://klctb-ws.klcg.gov.tw/001/Upload/tour/445/12550/1098/pic/ff953d28-9af5-4877-84c9-3e2d8e9fb48d.jpg"
+        }
+      ],
+      "UpdateTime": "2026-08-10T00:00:00+08:00"
+    },
+    {
+      "RestaurantID": "Restaurant_376570000A_000711",
+      "RestaurantName": "流浪頭牛肉一條街",
+      "CuisineClasses": [1],
+      "RestaurantFeatures": [],
+      "ServiceTimeInfo": "",
+      "PostalAddress": { "City": "基隆市", "Town": "中山區" },
+      "PositionLat": 25.1480541,
+      "PositionLon": 121.7415922,
+      "Images": [
+        {
+          "Name": "街景2",
+          "URL": "https://klctb-ws.klcg.gov.tw/001/Upload/tour/445/12550/1101/pic/e63d51df-03f1-4097-9e0c-bc8eb835ec78.jpg"
+        }
+      ],
+      "UpdateTime": "2026-08-10T00:00:00+08:00"
+    },
+    {
+      "RestaurantID": "Restaurant_376570000A_000717",
+      "RestaurantName": "崁仔頂漁市",
+      "CuisineClasses": [107],
+      "RestaurantFeatures": [],
+      "ServiceTimeInfo": "每日01:00~07:00詳情請查詢『崁仔頂魚市年度公休日期表』（https://",
+      "PostalAddress": { "City": "基隆市", "Town": "仁愛區" },
+      "PositionLat": 25.1294655,
+      "PositionLon": 121.7409478,
+      "Images": [
+        {
+          "Name": "場地夜間景-1",
+          "URL": "https://klctb-ws.klcg.gov.tw/001/Upload/tour/445/12550/1128/pic/56a2ebf7-aeaa-4a7a-a252-f63ecc49455d.jpg"
+        }
+      ],
+      "UpdateTime": "2026-08-10T00:00:00+08:00"
+    },
+    {
+      "RestaurantID": "Restaurant_376570000A_000718",
+      "RestaurantName": "孝三路",
+      "CuisineClasses": [1],
+      "RestaurantFeatures": [],
+      "ServiceTimeInfo": "",
+      "PostalAddress": { "City": "基隆市", "Town": "仁愛區" },
+      "PositionLat": 25.1309791,
+      "PositionLon": 121.7394282,
+      "Images": [
+        {
+          "Name": "在地商家畫面",
+          "URL": "https://klctb-ws.klcg.gov.tw/001/Upload/tour/445/12550/1132/pic/5e579ff0-0719-48c2-b33c-e98b177f86e7.jpg"
+        }
+      ],
+      "UpdateTime": "2026-08-10T00:00:00+08:00"
+    },
+    {
+      "RestaurantID": "Restaurant_376570000A_000720",
+      "RestaurantName": "八斗子觀光漁港",
+      "CuisineClasses": [107],
+      "RestaurantFeatures": [],
+      "ServiceTimeInfo": "24 小時，開放式空間。各店家營業時間，請各別查詢。",
+      "PostalAddress": { "City": "基隆市", "Town": "仁愛區" },
+      "PositionLat": 25.1454172,
+      "PositionLon": 121.7863414,
+      "Images": [
+        {
+          "Name": "場地區域特寫",
+          "URL": "https://klctb-ws.klcg.gov.tw/001/Upload/tour/445/12550/1144/pic/a5916a2d-30af-430c-a0bd-58fe4d9b0ab5.jpg"
+        }
+      ],
+      "UpdateTime": "2026-08-10T00:00:00+08:00"
+    }
+  ],
+  "hotel": [
+    {
+      "HotelID": "Hotel_A15010000H_002695",
+      "HotelName": "香草藝術旅店",
+      "HotelClasses": [3],
+      "HotelStars": 0,
+      "LowestPrice": 5200,
+      "CeilingPrice": 7600,
+      "PostalAddress": { "City": "基隆市", "Town": "信義區" },
+      "PositionLat": 25.130032,
+      "PositionLon": 121.746762,
+      "Images": [
+        {
+          "Description": "",
+          "Name": "無障礙客房",
+          "URL": "https://taiwan.taiwanstay.net.tw/twpic/304478.jpg?v=20261104"
+        }
+      ],
+      "UpdateTime": "2026-10-16T08:48:27+08:00",
+      "ServiceTimeInfo": ""
+    },
+    {
+      "HotelID": "Hotel_A15010000H_010020",
+      "HotelName": "北都大飯店",
+      "HotelClasses": [3],
+      "HotelStars": 0,
+      "LowestPrice": 6150,
+      "CeilingPrice": 6420,
+      "PostalAddress": { "City": "基隆市", "Town": "中正區" },
+      "PositionLat": 25.131312,
+      "PositionLon": 121.745239,
+      "Images": [
+        {
+          "Description": "",
+          "Name": "商務兩人房",
+          "URL": "https://taiwan.taiwanstay.net.tw/twpic/59503.jpg?v=20261104"
+        }
+      ],
+      "UpdateTime": "2026-09-14T10:38:15+08:00",
+      "ServiceTimeInfo": ""
+    },
+    {
+      "HotelID": "Hotel_A15010000H_037561",
+      "HotelName": "中華郵輪文旅",
+      "HotelClasses": [4],
+      "HotelStars": 0,
+      "LowestPrice": 1200,
+      "CeilingPrice": 6500,
+      "PostalAddress": { "City": "基隆市", "Town": "仁愛區" },
+      "PositionLat": 25.130489,
+      "PositionLon": 121.741386,
+      "UpdateTime": "2026-08-31T09:24:55+08:00",
+      "ServiceTimeInfo": ""
+    },
+    {
+      "HotelID": "Hotel_A15010000H_005281",
+      "HotelName": "享住旅店(大華館)",
+      "HotelClasses": [3],
+      "HotelStars": 0,
+      "LowestPrice": 8000,
+      "CeilingPrice": 30000,
+      "PostalAddress": { "City": "基隆市", "Town": "仁愛區" },
+      "PositionLat": 25.126444,
+      "PositionLon": 121.741444,
+      "Images": [
+        {
+          "Description": "",
+          "Name": "標準雙人房",
+          "URL": "https://taiwan.taiwanstay.net.tw/twpic/287709.jpg?v=20261104"
+        }
+      ],
+      "UpdateTime": "2026-08-28T11:21:42+08:00",
+      "ServiceTimeInfo": ""
+    },
+    {
+      "HotelID": "Hotel_A15010000H_008899",
+      "HotelName": "萊茵商旅",
+      "HotelClasses": [3],
+      "HotelStars": 0,
+      "LowestPrice": 5300,
+      "CeilingPrice": 8800,
+      "PostalAddress": { "City": "基隆市", "Town": "中正區" },
+      "PositionLat": 25.1307591,
+      "PositionLon": 121.7446901,
+      "UpdateTime": "2026-08-28T08:33:17+08:00",
+      "ServiceTimeInfo": ""
+    },
+    {
+      "HotelID": "Hotel_A15010000H_020621",
+      "HotelName": "同安旅社",
+      "HotelClasses": [3],
+      "HotelStars": 0,
+      "LowestPrice": 800,
+      "CeilingPrice": 800,
+      "PostalAddress": { "City": "基隆市", "Town": "仁愛區" },
+      "PositionLat": 25.130849,
+      "PositionLon": 121.739515,
+      "UpdateTime": "2026-08-28T08:30:46+08:00",
+      "ServiceTimeInfo": ""
+    },
+    {
+      "HotelID": "Hotel_A15010000H_018150",
+      "HotelName": "水之季主題旅館",
+      "HotelClasses": [3],
+      "HotelStars": 0,
+      "LowestPrice": 3580,
+      "CeilingPrice": 4880,
+      "PostalAddress": { "City": "基隆市", "Town": "中山區" },
+      "PositionLat": 25.1325213,
+      "PositionLon": 121.7382145,
+      "Images": [
+        {
+          "Description": "房間內有一張標準雙人床及可加床、一個化妝台、桌邊櫃、一張小型雙人沙發、一台小冰箱、電熱水壺、一台電視、一台除濕機，房間標配應有盡有，房間的窗戶都是二層可以隔絕馬路吵雜的聲音，及我們使用防焰的窗簾。",
+          "Name": "地中海房",
+          "URL": "https://taiwan.taiwanstay.net.tw/twpic/346314.jpg?v=20261104"
+        }
+      ],
+      "UpdateTime": "2026-08-10T01:18:37+08:00",
+      "ServiceTimeInfo": ""
+    },
+    {
+      "HotelID": "Hotel_A15010000H_038416",
+      "HotelName": "基隆民宿",
+      "HotelClasses": [4],
+      "HotelStars": 0,
+      "LowestPrice": 4000,
+      "CeilingPrice": 5600,
+      "PostalAddress": { "City": "基隆市", "Town": "中山區" },
+      "PositionLat": 25.139749,
+      "PositionLon": 121.73813,
+      "Images": [
+        {
+          "Description": "",
+          "Name": "U-4人房",
+          "URL": "https://taiwan.taiwanstay.net.tw/twpic/322808.jpg?v=20261104"
+        }
+      ],
+      "UpdateTime": "2026-08-07T11:39:56+08:00",
+      "ServiceTimeInfo": ""
+    },
+    {
+      "HotelID": "Hotel_A15010000H_007258",
+      "HotelName": "長榮桂冠酒店(基隆)",
+      "HotelClasses": [2],
+      "HotelStars": 0,
+      "LowestPrice": 9800,
+      "CeilingPrice": 70000,
+      "PostalAddress": { "City": "基隆市", "Town": "中正區" },
+      "PositionLat": 25.134736,
+      "PositionLon": 121.745973,
+      "Images": [
+        {
+          "Description": "每間客房皆含2張雙人床，入住4位貴賓，面積約佔13.72坪，客房內備有高級盥洗備品、高級液晶電視、免費WI-FI等設備，並可享有迎賓米果及免費礦泉水、咖啡及茶包 等服務，客房景觀可遠眺基隆市區與遼闊山巒，最適合家庭親子同遊，是舒適的放鬆空間。",
+          "Name": "豪華四人房(標準樓層)",
+          "URL": "https://taiwan.taiwanstay.net.tw/twpic/288778.jpg?v=20261104"
+        }
+      ],
+      "UpdateTime": "2026-07-20T11:46:33+08:00",
+      "ServiceTimeInfo": ""
+    },
+    {
+      "HotelID": "Hotel_A15010000H_010984",
+      "HotelName": "華星旅社",
+      "HotelClasses": [3],
+      "HotelStars": 0,
+      "LowestPrice": 2300,
+      "CeilingPrice": 3350,
+      "PostalAddress": { "City": "基隆市", "Town": "仁愛區" },
+      "PositionLat": 25.128606,
+      "PositionLon": 121.742204,
+      "Images": [
+        {
+          "Description": "",
+          "Name": "單人房",
+          "URL": "https://taiwan.taiwanstay.net.tw/twpic/219200.jpg?v=20261104"
+        }
+      ],
+      "UpdateTime": "2026-07-17T09:17:49+08:00",
+      "ServiceTimeInfo": ""
+    },
+    {
+      "HotelID": "Hotel_A15010000H_015054",
+      "HotelName": "馥嘉商務旅館",
+      "HotelClasses": [3],
+      "HotelStars": 0,
+      "LowestPrice": 3800,
+      "CeilingPrice": 6000,
+      "PostalAddress": { "City": "基隆市", "Town": "仁愛區" },
+      "PositionLat": 25.127738,
+      "PositionLon": 121.739513,
+      "UpdateTime": "2026-07-08T08:19:14+08:00",
+      "ServiceTimeInfo": ""
+    },
+    {
+      "HotelID": "Hotel_A15010000H_020968",
+      "HotelName": "輕旅背包客棧",
+      "HotelClasses": [3],
+      "HotelStars": 0,
+      "LowestPrice": 3000,
+      "CeilingPrice": 12000,
+      "PostalAddress": { "City": "基隆市", "Town": "仁愛區" },
+      "PositionLat": 25.129363,
+      "PositionLon": 121.7430812,
+      "UpdateTime": "2026-07-07T11:32:58+08:00",
+      "ServiceTimeInfo": ""
+    },
+    {
+      "HotelID": "Hotel_A15010000H_029788",
+      "HotelName": "雨島旅店",
+      "HotelClasses": [3],
+      "HotelStars": 0,
+      "LowestPrice": 2000,
+      "CeilingPrice": 16000,
+      "PostalAddress": { "City": "基隆市", "Town": "仁愛區" },
+      "PositionLat": 25.128128,
+      "PositionLon": 121.7448919,
+      "Images": [
+        {
+          "Description": "",
+          "Name": "微光雙人房",
+          "URL": "https://taiwan.taiwanstay.net.tw/twpic/218964.jpg?v=20261104"
+        }
+      ],
+      "UpdateTime": "2026-06-23T11:12:20+08:00",
+      "ServiceTimeInfo": ""
+    },
+    {
+      "HotelID": "Hotel_A15010000H_005485",
+      "HotelName": "金華大旅社",
+      "HotelClasses": [3],
+      "HotelStars": 0,
+      "LowestPrice": 5800,
+      "CeilingPrice": 8000,
+      "PostalAddress": { "City": "基隆市", "Town": "仁愛區" },
+      "PositionLat": 25.127119,
+      "PositionLon": 121.740084,
+      "Images": [
+        {
+          "Description": "床　　型：兩小床加床服務：無加人服務：無地　　板：地毯、木質地板浴　　室：浴缸式、淋浴.乾濕分離窗　　戶：有 房間內備有舒適的床位、齊全的衛浴設備、衛浴日用品，並提供電視、衣櫃、梳妝台、電話、等設施，清潔、高雅的住宿環境使您感覺賓至如歸，不論旅行或出差都是您最好的選擇。",
+          "Name": "金華兩小床",
+          "URL": "https://taiwan.taiwanstay.net.tw/twpic/57818.jpg?v=20261104"
+        }
+      ],
+      "UpdateTime": "2026-06-23T10:58:11+08:00",
+      "ServiceTimeInfo": ""
+    },
+    {
+      "HotelID": "Hotel_A15010000H_009137",
+      "HotelName": "享住旅店",
+      "HotelClasses": [3],
+      "HotelStars": 0,
+      "LowestPrice": 12000,
+      "CeilingPrice": 15000,
+      "PostalAddress": { "City": "基隆市", "Town": "中正區" },
+      "PositionLat": 25.129928,
+      "PositionLon": 121.7461,
+      "Images": [
+        {
+          "Description": "",
+          "Name": "標準雙人房",
+          "URL": "https://taiwan.taiwanstay.net.tw/twpic/219395.jpg?v=20261104"
+        }
+      ],
+      "UpdateTime": "2026-06-22T11:33:31+08:00",
+      "ServiceTimeInfo": ""
+    },
+    {
+      "HotelID": "Hotel_A15010000H_001530",
+      "HotelName": "東岸之星旅店",
+      "HotelClasses": [3],
+      "HotelStars": 0,
+      "LowestPrice": 4000,
+      "CeilingPrice": 5000,
+      "PostalAddress": { "City": "基隆市", "Town": "中正區" },
+      "PositionLat": 25.132894,
+      "PositionLon": 121.745293,
+      "Images": [
+        {
+          "Description": "總間數：30間住房基本人數：2人床　　型：一大床（150*200cm）or 二小床(90*200cm) 如未於訂房時備註，皆以一大床房型提供房間坪數：約17m2加床服務：無加人服務：無地　　板：木紋貼皮地板浴　　室：乾溼分離窗　　戶：有早　　參：有房間內備有舒適的床位、齊全的衛浴設備、衛浴日用品，並提供上網設備、吹風機、快煮壺、冷氣、電話、梳妝台、衣櫃、電視等設施，清潔、高雅的住宿環境使您感覺賓至如歸，不論旅行或出差都是您最好的選擇。",
+          "Name": "標準客房",
+          "URL": "https://taiwan.taiwanstay.net.tw/twpic/219243.jpg?v=20261104"
+        }
+      ],
+      "UpdateTime": "2026-05-14T15:29:17+08:00",
+      "ServiceTimeInfo": ""
+    },
+    {
+      "HotelID": "Hotel_A15010000H_012484",
+      "HotelName": "華國商務飯店",
+      "HotelClasses": [3],
+      "HotelStars": 0,
+      "LowestPrice": 3300,
+      "CeilingPrice": 5600,
+      "PostalAddress": { "City": "基隆市", "Town": "仁愛區" },
+      "PositionLat": 25.128251,
+      "PositionLon": 121.742299,
+      "Images": [
+        {
+          "Description": "此客房設有平面有線電視和茶／咖啡沖泡設備。私人衛浴附獨立淋浴設施和浴缸。",
+          "Name": "標準單床雙人房",
+          "URL": "https://taiwan.taiwanstay.net.tw/twpic/219546.JPG?v=20261104"
+        }
+      ],
+      "UpdateTime": "2026-05-13T12:05:51+08:00",
+      "ServiceTimeInfo": ""
+    },
+    {
+      "HotelID": "Hotel_A15010000H_010522",
+      "HotelName": "華帥海景飯店",
+      "HotelClasses": [3],
+      "HotelStars": 0,
+      "LowestPrice": 4500,
+      "CeilingPrice": 8800,
+      "PostalAddress": { "City": "基隆市", "Town": "仁愛區" },
+      "PositionLat": 25.130675,
+      "PositionLon": 121.740867,
+      "Images": [
+        {
+          "Description": "",
+          "Name": "華帥套房(四人)Deluxe Suite",
+          "URL": "https://taiwan.taiwanstay.net.tw/twpic/59684.jpg?v=20261104"
+        }
+      ],
+      "UpdateTime": "2026-04-28T15:29:21+08:00",
+      "ServiceTimeInfo": ""
+    },
+    {
+      "HotelID": "Hotel_A15010000H_003758",
+      "HotelName": "柯達大飯店",
+      "HotelClasses": [3],
+      "HotelStars": 0,
+      "LowestPrice": 3500,
+      "CeilingPrice": 7000,
+      "PostalAddress": { "City": "基隆市", "Town": "中正區" },
+      "PositionLat": 25.1324189,
+      "PositionLon": 121.7451704,
+      "Images": [
+        {
+          "Description": "",
+          "Name": "柯達親子房兩大床",
+          "URL": "https://taiwan.taiwanstay.net.tw/twpic/57120.jpg?v=20261104"
+        }
+      ],
+      "UpdateTime": "2026-04-20T08:47:42+08:00",
+      "ServiceTimeInfo": ""
+    },
+    {
+      "HotelID": "Hotel_A15010000H_016226",
+      "HotelName": "集好旅店",
+      "HotelClasses": [3],
+      "HotelStars": 0,
+      "LowestPrice": 8000,
+      "CeilingPrice": 12000,
+      "PostalAddress": { "City": "基隆市", "Town": "仁愛區" },
+      "PositionLat": 25.128925,
+      "PositionLon": 121.74424,
+      "Images": [
+        {
+          "Description": "客房面積：約17平方米(5坪)床型尺寸：一張雙人床150cm*180cm客房設備：．德國優客獨立筒床墊．50吋平面電視．中央冷氣空調．木質地板．TOTO免治馬桶．聲寶冷藏冰箱．Aisen 咖啡膠囊機．聲寶不鏽鋼快煮壺．國際牌負離子吹風機．Ora²薄荷牙膏．艾格尼地中海橄欖系列洗潤雙效洗髮精、保濕沐浴露．無加床服務",
+          "Name": "集優雙人房",
+          "URL": "https://taiwan.taiwanstay.net.tw/twpic/219164.jpg?v=20261104"
+        }
+      ],
+      "UpdateTime": "2026-04-16T13:44:43+08:00",
+      "ServiceTimeInfo": ""
+    },
+    {
+      "HotelID": "Hotel_A15010000H_017781",
+      "HotelName": "華都飯店",
+      "HotelClasses": [3],
+      "HotelStars": 0,
+      "LowestPrice": 4500,
+      "CeilingPrice": 6000,
+      "PostalAddress": { "City": "基隆市", "Town": "仁愛區" },
+      "PositionLat": 25.129718,
+      "PositionLon": 121.745135,
+      "Images": [
+        {
+          "Description": "",
+          "Name": "和室房",
+          "URL": "https://taiwan.taiwanstay.net.tw/twpic/145078.JPG?v=20261104"
+        }
+      ],
+      "UpdateTime": "2026-04-15T15:50:32+08:00",
+      "ServiceTimeInfo": ""
+    },
+    {
+      "HotelID": "Hotel_A15010000H_010195",
+      "HotelName": "永豐旅社",
+      "HotelClasses": [3],
+      "HotelStars": 0,
+      "LowestPrice": 2800,
+      "CeilingPrice": 4220,
+      "PostalAddress": { "City": "基隆市", "Town": "仁愛區" },
+      "PositionLat": 25.128424,
+      "PositionLon": 121.742337,
+      "UpdateTime": "2026-01-14T13:37:11+08:00",
+      "ServiceTimeInfo": ""
+    },
+    {
+      "HotelID": "Hotel_A15010000H_001937",
+      "HotelName": "綠文旅社",
+      "HotelClasses": [3],
+      "HotelStars": 0,
+      "LowestPrice": 4480,
+      "CeilingPrice": 6700,
+      "PostalAddress": { "City": "基隆市", "Town": "仁愛區" },
+      "PositionLat": 25.128223,
+      "PositionLon": 121.744085,
+      "Images": [
+        {
+          "Description": "",
+          "Name": "四人房",
+          "URL": "https://taiwan.taiwanstay.net.tw/twpic/288002.jpg?v=20261104"
+        }
+      ],
+      "UpdateTime": "2025-11-11T15:13:52+08:00",
+      "ServiceTimeInfo": ""
+    },
+    {
+      "HotelID": "Hotel_A15010000H_011298",
+      "HotelName": "金金商務旅館",
+      "HotelClasses": [3],
+      "HotelStars": 0,
+      "LowestPrice": 3200,
+      "CeilingPrice": 5000,
+      "PostalAddress": { "City": "基隆市", "Town": "仁愛區" },
+      "PositionLat": 25.130776,
+      "PositionLon": 121.739033,
+      "Images": [
+        {
+          "Description": "",
+          "Name": "無障礙客房",
+          "URL": "https://taiwan.taiwanstay.net.tw/twpic/153420.jpeg?v=20261104"
+        }
+      ],
+      "UpdateTime": "2025-11-10T11:21:47+08:00",
+      "ServiceTimeInfo": ""
+    },
+    {
+      "HotelID": "Hotel_A15010000H_021563",
+      "HotelName": "協和旅社",
+      "HotelClasses": [3],
+      "HotelStars": 0,
+      "LowestPrice": 800,
+      "CeilingPrice": 800,
+      "PostalAddress": { "City": "基隆市", "Town": "仁愛區" },
+      "PositionLat": 25.131363,
+      "PositionLon": 121.738992,
+      "UpdateTime": "2025-09-15T08:37:18+08:00",
+      "ServiceTimeInfo": ""
+    },
+    {
+      "HotelID": "Hotel_A15010000H_022657",
+      "HotelName": "粼島民宿",
+      "HotelClasses": [4],
+      "HotelStars": 0,
+      "LowestPrice": 6000,
+      "CeilingPrice": 9000,
+      "PostalAddress": { "City": "基隆市", "Town": "中正區" },
+      "PositionLat": 25.152566,
+      "PositionLon": 121.770439,
+      "UpdateTime": "2025-06-30T16:04:41+08:00",
+      "ServiceTimeInfo": ""
+    },
+    {
+      "HotelID": "Hotel_A15010000H_007699",
+      "HotelName": "阿樂哈大飯店",
+      "HotelClasses": [3],
+      "HotelStars": 0,
+      "LowestPrice": 2100,
+      "CeilingPrice": 3600,
+      "PostalAddress": { "City": "基隆市", "Town": "中正區" },
+      "PositionLat": 25.1315869,
+      "PositionLon": 121.745418,
+      "Images": [
+        {
+          "Description": "",
+          "Name": "單人房 (住1-2人,單床)",
+          "URL": "https://taiwan.taiwanstay.net.tw/twpic/219367.jpg?v=20261104"
+        }
+      ],
+      "UpdateTime": "2025-03-21T16:30:46+08:00",
+      "ServiceTimeInfo": ""
+    },
+    {
+      "HotelID": "Hotel_A15010000H_008488",
+      "HotelName": "國都旅館",
+      "HotelClasses": [3],
+      "HotelStars": 0,
+      "LowestPrice": 1500,
+      "CeilingPrice": 2000,
+      "PostalAddress": { "City": "基隆市", "Town": "仁愛區" },
+      "PositionLat": 25.129369,
+      "PositionLon": 121.745135,
+      "UpdateTime": "2025-03-06T14:13:44+08:00",
+      "ServiceTimeInfo": ""
+    },
+    {
+      "HotelID": "Hotel_A15010000H_008330",
+      "HotelName": "蔚藍海岸休閒SPA汽車旅館",
+      "HotelClasses": [3],
+      "HotelStars": 3,
+      "LowestPrice": 20000,
+      "CeilingPrice": 20000,
+      "PostalAddress": { "City": "基隆市", "Town": "安樂區" },
+      "PositionLat": 25.155829,
+      "PositionLon": 121.694868,
+      "Images": [
+        {
+          "Description": "",
+          "Name": "總統套房",
+          "URL": "https://taiwan.taiwanstay.net.tw/twpic/95667.jpg?v=20261104"
+        }
+      ],
+      "UpdateTime": "2025-03-06T14:12:43+08:00",
+      "ServiceTimeInfo": ""
+    },
+    {
+      "HotelID": "Hotel_A15010000H_015247",
+      "HotelName": "金中泰賓館",
+      "HotelClasses": [3],
+      "HotelStars": 0,
+      "LowestPrice": 1600,
+      "CeilingPrice": 1600,
+      "PostalAddress": { "City": "基隆市", "Town": "仁愛區" },
+      "PositionLat": 25.127068,
+      "PositionLon": 121.741312,
+      "Images": [
+        {
+          "Description": "",
+          "Name": "雅致客房",
+          "URL": "https://taiwan.taiwanstay.net.tw/twpic/219102.jpg?v=20261104"
+        }
+      ],
+      "UpdateTime": "2025-03-03T14:46:55+08:00",
+      "ServiceTimeInfo": ""
+    },
+    {
+      "HotelID": "Hotel_A15010000H_004016",
+      "HotelName": "盛德民宿",
+      "HotelClasses": [4],
+      "HotelStars": 0,
+      "LowestPrice": 1800,
+      "CeilingPrice": 3000,
+      "PostalAddress": { "City": "基隆市", "Town": "七堵區" },
+      "PositionLat": 25.133268,
+      "PositionLon": 121.688266,
+      "UpdateTime": "2025-02-26T11:00:41+08:00",
+      "ServiceTimeInfo": ""
+    },
+    {
+      "HotelID": "Hotel_A15010000H_033487",
+      "HotelName": "安樓文旅",
+      "HotelClasses": [4],
+      "HotelStars": 0,
+      "LowestPrice": 5250,
+      "CeilingPrice": 5250,
+      "PostalAddress": { "City": "基隆市", "Town": "仁愛區" },
+      "PositionLat": 25.127896,
+      "PositionLon": 121.7442949,
+      "UpdateTime": "2025-02-26T10:59:06+08:00",
+      "ServiceTimeInfo": ""
+    },
+    {
+      "HotelID": "Hotel_A15010000H_016186",
+      "HotelName": "蔚藍海景旅店",
+      "HotelClasses": [3],
+      "HotelStars": 0,
+      "LowestPrice": 4800,
+      "CeilingPrice": 4800,
+      "PostalAddress": { "City": "基隆市", "Town": "中正區" },
+      "PositionLat": 25.14628,
+      "PositionLon": 121.783303,
+      "Images": [
+        {
+          "Description": "",
+          "Name": "碧海套房",
+          "URL": "https://taiwan.taiwanstay.net.tw/twpic/61504.jpg?v=20261104"
+        }
+      ],
+      "UpdateTime": "2025-02-26T09:37:42+08:00",
+      "ServiceTimeInfo": ""
+    },
+    {
+      "HotelID": "Hotel_A15010000H_007583",
+      "HotelName": "北極星汽車旅館",
+      "HotelClasses": [3],
+      "HotelStars": 0,
+      "LowestPrice": 8080,
+      "CeilingPrice": 8080,
+      "PostalAddress": { "City": "基隆市", "Town": "安樂區" },
+      "PositionLat": 25.128546,
+      "PositionLon": 121.717232,
+      "Images": [
+        {
+          "Description": "",
+          "Name": "夢幻情境",
+          "URL": "https://taiwan.taiwanstay.net.tw/twpic/219158.jpg?v=20261104"
+        }
+      ],
+      "UpdateTime": "2025-02-25T16:09:50+08:00",
+      "ServiceTimeInfo": ""
+    },
+    {
+      "HotelID": "Hotel_A15010000H_004542",
+      "HotelName": "富國旅社",
+      "HotelClasses": [3],
+      "HotelStars": 0,
+      "LowestPrice": 800,
+      "CeilingPrice": 800,
+      "PostalAddress": { "City": "基隆市", "Town": "仁愛區" },
+      "PositionLat": 25.131178,
+      "PositionLon": 121.73908,
+      "Images": [
+        {
+          "Description": "一張床/雙人房",
+          "Name": "一般雙人房",
+          "URL": "https://taiwan.taiwanstay.net.tw/twpic/146277.jpg?v=20261104"
+        }
+      ],
+      "UpdateTime": "2025-02-25T08:28:19+08:00",
+      "ServiceTimeInfo": ""
+    },
+    {
+      "HotelID": "Hotel_A15010000H_009411",
+      "HotelName": "恆昌商旅",
+      "HotelClasses": [3],
+      "HotelStars": 0,
+      "LowestPrice": 3500,
+      "CeilingPrice": 5000,
+      "PostalAddress": { "City": "基隆市", "Town": "仁愛區" },
+      "PositionLat": 25.128127,
+      "PositionLon": 121.74419,
+      "Images": [
+        {
+          "Description": "",
+          "Name": "標準雙人房",
+          "URL": "https://taiwan.taiwanstay.net.tw/twpic/146781.jpg?v=20261104"
+        }
+      ],
+      "UpdateTime": "2025-02-24T09:29:06+08:00",
+      "ServiceTimeInfo": ""
+    }
+  ],
+  "activity": [
+    {
+      "EventID": "Event_A15010000H_081899",
+      "EventName": "2026台灣科學節",
+      "EventClasses": [1],
+      "StartDateTime": "2026-11-07T00:00:00+08:00",
+      "EndDateTime": "2026-11-15T00:00:00+08:00",
+      "IsAccessibleForFree": 0,
+      "Tags": [],
+      "PostalAddress": { "City": "基隆市", "Town": "中正區" },
+      "PositionLat": 25.14063,
+      "PositionLon": 121.7966,
+      "Images": [
+        {
+          "Description": "",
+          "Name": "透過音樂結合各種海洋元素聲音，體驗與自然生物跨領域結合(地點_國立海洋生物博物館)",
+          "URL": "https://www.taiwan.net.tw/att/event/dd88ff80-56fb-4508-a6c8-3d2f777f3a4d.jpg"
+        }
+      ],
+      "UpdateTime": "2026-11-05T02:00:03+08:00",
+      "FeeInfo": ""
+    }
+  ]
+}

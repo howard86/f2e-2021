@@ -1,0 +1,3254 @@
+{
+  "scene": [
+    {
+      "AttractionID": "Attraction_A25000000E_000063",
+      "AttractionName": "郭怡美書店",
+      "AttractionClasses": [25],
+      "ServiceTimeInfo": "",
+      "FeeInfo": "",
+      "Tags": [],
+      "PostalAddress": { "City": "臺北市", "Town": "大同區" },
+      "PositionLat": 25.05764,
+      "PositionLon": 121.50984,
+      "Images": [
+        {
+          "Name": "line_438079746811737",
+          "URL": "https://map.culture.tw/com/upload/baseImage/2025-01-11/cc41c5f3-955f-4fe1-b835-72e3ca78f8b6/line_438079746811737.jpg"
+        }
+      ],
+      "UpdateTime": "2026-10-28T14:57:50+08:00"
+    },
+    {
+      "AttractionID": "Attraction_379000000A_000217",
+      "AttractionName": "台北101",
+      "AttractionClasses": [1, 6, 12, 27, 254],
+      "ServiceTimeInfo": "",
+      "FeeInfo": "",
+      "Tags": [],
+      "PostalAddress": { "City": "臺北市", "Town": "信義區" },
+      "PositionLat": 25.03361,
+      "PositionLon": 121.56476,
+      "Images": [
+        {
+          "Name": "夜晚台北燈火通明",
+          "URL": "https://www.travel.taipei/content/images/attractions/573623/640x480_attractions-image-lyeij6n1v02fakfltov6oq.jpg"
+        }
+      ],
+      "UpdateTime": "2026-10-21T11:50:32+08:00"
+    },
+    {
+      "AttractionID": "Attraction_379000000A_001535",
+      "AttractionName": "華西街觀光夜市",
+      "AttractionClasses": [1, 6, 12, 27],
+      "ServiceTimeInfo": "",
+      "FeeInfo": "",
+      "Tags": [],
+      "PostalAddress": { "City": "臺北市", "Town": "萬華區" },
+      "PositionLat": 25.038599,
+      "PositionLon": 121.498442,
+      "Images": [
+        {
+          "Name": "有別於一般夜市，帶有一種復古感(圖片來源：臺北市政府觀光傳播局)",
+          "URL": "https://www.travel.taipei/content/images/attractions/292920/640x480_attractions-image-0ojlmd4fakyr1mmgeldkgq.jpg"
+        }
+      ],
+      "UpdateTime": "2026-10-20T18:09:42+08:00"
+    },
+    {
+      "AttractionID": "Attraction_379000000A_001538",
+      "AttractionName": "饒河街觀光夜市",
+      "AttractionClasses": [1, 6, 12, 27],
+      "ServiceTimeInfo": "",
+      "FeeInfo": "",
+      "Tags": [],
+      "PostalAddress": { "City": "臺北市", "Town": "松山區" },
+      "PositionLat": 25.05091,
+      "PositionLon": 121.57754,
+      "Images": [
+        {
+          "Name": "絡繹不絕的人潮與夜晚閃閃發亮的牌坊(圖片來源：臺北市政府觀光傳播局)",
+          "URL": "https://www.travel.taipei/content/images/attractions/282182/640x480_attractions-image-dyxppo6qrukchnuibc42jg.jpg"
+        }
+      ],
+      "UpdateTime": "2026-10-20T18:08:34+08:00"
+    },
+    {
+      "AttractionID": "Attraction_379000000A_000068",
+      "AttractionName": "艋舺龍山寺",
+      "AttractionClasses": [1, 4, 12],
+      "ServiceTimeInfo": "",
+      "FeeInfo": "",
+      "Tags": [],
+      "PostalAddress": { "City": "臺北市", "Town": "萬華區" },
+      "PositionLat": 25.037316,
+      "PositionLon": 121.499863,
+      "Images": [
+        {
+          "Name": "艋舺龍山寺入口",
+          "URL": "https://www.travel.taipei/content/images/attractions/468011/640x480_attractions-image-mbc88n_ivuonoltmzycclq.jpg"
+        }
+      ],
+      "UpdateTime": "2026-10-20T18:08:14+08:00"
+    },
+    {
+      "AttractionID": "Attraction_379000000A_001572",
+      "AttractionName": "西門町",
+      "AttractionClasses": [1, 5, 6, 12, 20, 27],
+      "ServiceTimeInfo": "",
+      "FeeInfo": "",
+      "Tags": [],
+      "PostalAddress": { "City": "臺北市", "Town": "萬華區" },
+      "PositionLat": 25.04458,
+      "PositionLon": 121.50753,
+      "Images": [
+        {
+          "Name": "萬年商業大樓是西門町的青春指標",
+          "URL": "https://www.travel.taipei/content/images/attractions/222893/640x480_attractions-image-mafhlprm70awhlqgu3g8cg.jpg"
+        }
+      ],
+      "UpdateTime": "2026-09-30T14:56:22+08:00"
+    },
+    {
+      "AttractionID": "Attraction_379000000A_002576",
+      "AttractionName": "國立臺灣博物館_鐵道部園區",
+      "AttractionClasses": [1, 3, 12, 23, 25],
+      "ServiceTimeInfo": "",
+      "FeeInfo": "",
+      "Tags": [],
+      "PostalAddress": { "City": "臺北市", "Town": "大同區" },
+      "PositionLat": 25.048834,
+      "PositionLon": 121.511383,
+      "Images": [
+        {
+          "Name": "臺灣博物館鐵道博物館_劉佳雯攝",
+          "URL": "https://www.travel.taipei/content/images/attractions/207889/640x480_attractions-image-520lz-dmge-wctfdrrzusa.jpg"
+        }
+      ],
+      "UpdateTime": "2026-09-23T16:57:00+08:00"
+    },
+    {
+      "AttractionID": "Attraction_379000000A_000218",
+      "AttractionName": "臺北製糖所文化園區",
+      "AttractionClasses": [1, 3, 12, 14, 19, 25],
+      "ServiceTimeInfo": "",
+      "FeeInfo": "",
+      "Tags": [],
+      "PostalAddress": { "City": "臺北市", "Town": "萬華區" },
+      "PositionLat": 25.0332,
+      "PositionLon": 121.49506,
+      "Images": [
+        {
+          "Name": "糖廍文化園區_室內展示物遠景_攝影/高讚賢",
+          "URL": "https://www.travel.taipei/content/images/attractions/64617/640x480_attractions-image-efcgwtj1lkq4q7dl3hckya.jpg"
+        }
+      ],
+      "UpdateTime": "2026-09-22T10:58:14+08:00"
+    },
+    {
+      "AttractionID": "Attraction_379000000A_000260",
+      "AttractionName": "臺北植物園",
+      "AttractionClasses": [2, 12, 15, 19, 24],
+      "ServiceTimeInfo": "",
+      "FeeInfo": "",
+      "Tags": [],
+      "PostalAddress": { "City": "臺北市", "Town": "中正區" },
+      "PositionLat": 25.031,
+      "PositionLon": 121.50866,
+      "Images": [
+        {
+          "Name": "長滿氣生根的大樹",
+          "URL": "https://www.travel.taipei/content/images/attractions/221909/640x480_attractions-image-ug9rgdq-ukiei7rqjt4oxw.jpg"
+        }
+      ],
+      "UpdateTime": "2026-09-07T13:36:29+08:00"
+    },
+    {
+      "AttractionID": "Attraction_379000000A_000203",
+      "AttractionName": "國家兩廳院",
+      "AttractionClasses": [1, 5, 12, 25, 27],
+      "ServiceTimeInfo": "",
+      "FeeInfo": "",
+      "Tags": [],
+      "PostalAddress": { "City": "臺北市", "Town": "中正區" },
+      "PositionLat": 25.03704,
+      "PositionLon": 121.51925,
+      "Images": [
+        {
+          "Name": "兩廳院藍天_高讚賢攝",
+          "URL": "https://www.travel.taipei/content/images/attractions/180680/640x480_attractions-image-g0ujveena0qej645jqisxa.jpg"
+        }
+      ],
+      "UpdateTime": "2026-09-01T16:17:26+08:00"
+    },
+    {
+      "AttractionID": "Attraction_379000000A_000057",
+      "AttractionName": "袖珍博物館",
+      "AttractionClasses": [1, 5, 12, 25],
+      "ServiceTimeInfo": "",
+      "FeeInfo": "",
+      "Tags": [],
+      "PostalAddress": { "City": "臺北市", "Town": "中山區" },
+      "PositionLat": 25.05035,
+      "PositionLon": 121.53614,
+      "Images": [
+        {
+          "Name": "袖珍博物館_袖珍士兵模型_高讚賢攝",
+          "URL": "https://www.travel.taipei/content/images/attractions/192688/640x480_attractions-image-2ph01obu_0mvb2gvwkihnq.jpg"
+        }
+      ],
+      "UpdateTime": "2026-09-01T16:03:34+08:00"
+    },
+    {
+      "AttractionID": "Attraction_379000000A_000080",
+      "AttractionName": "天主教台北聖家堂",
+      "AttractionClasses": [4],
+      "ServiceTimeInfo": "",
+      "FeeInfo": "",
+      "Tags": [],
+      "PostalAddress": { "City": "臺北市", "Town": "大安區" },
+      "PositionLat": 25.02888,
+      "PositionLon": 121.53395,
+      "Images": [
+        {
+          "Name": "聖家堂建築全景_攝影/許宜容",
+          "URL": "https://www.travel.taipei/content/images/attractions/64024/640x480_attractions-image-qy8dohtfuu6mdauacd9hvw.jpg"
+        }
+      ],
+      "UpdateTime": "2026-08-21T10:09:05+08:00"
+    },
+    {
+      "AttractionID": "Attraction_379000000A_000392",
+      "AttractionName": "內湖復育園區",
+      "AttractionClasses": [2, 11, 12, 15, 19],
+      "ServiceTimeInfo": "",
+      "FeeInfo": "",
+      "Tags": [],
+      "PostalAddress": { "City": "臺北市", "Town": "內湖區" },
+      "PositionLat": 25.061,
+      "PositionLon": 121.60327,
+      "Images": [
+        {
+          "Name": "內湖復育園區-園區一景-攝影/高讚賢",
+          "URL": "https://www.travel.taipei/content/images/attractions/89301/640x480_attractions-image-y_3h0kfrmue0qt-oiarfiq.jpg"
+        }
+      ],
+      "UpdateTime": "2026-07-31T17:38:54+08:00"
+    },
+    {
+      "AttractionID": "Attraction_379000000A_000357",
+      "AttractionName": "艋舺地藏庵",
+      "AttractionClasses": [1, 3, 4, 12],
+      "ServiceTimeInfo": "",
+      "FeeInfo": "",
+      "Tags": [],
+      "PostalAddress": { "City": "臺北市", "Town": "萬華區" },
+      "PositionLat": 25.03694,
+      "PositionLon": 121.50068,
+      "Images": [
+        {
+          "Name": "艋舺地藏庵-燭台一景-攝影/高讚賢",
+          "URL": "https://www.travel.taipei/content/images/attractions/91859/640x480_attractions-image-bjwp-fcseeujtsjinpdxpw.jpg"
+        }
+      ],
+      "UpdateTime": "2026-07-09T11:20:24+08:00"
+    },
+    {
+      "AttractionID": "Attraction_379000000A_000347",
+      "AttractionName": "大稻埕戲苑",
+      "AttractionClasses": [1, 3, 5, 6, 12, 25],
+      "ServiceTimeInfo": "",
+      "FeeInfo": "",
+      "Tags": [],
+      "PostalAddress": { "City": "臺北市", "Town": "大同區" },
+      "PositionLat": 25.05482,
+      "PositionLon": 121.51047,
+      "Images": [
+        {
+          "Name": "大稻埕戲苑外觀_劉佳雯攝",
+          "URL": "https://www.travel.taipei/content/images/attractions/182496/640x480_attractions-image-div6ckjyz0aylztuflruja.jpg"
+        }
+      ],
+      "UpdateTime": "2026-07-02T10:51:25+08:00"
+    },
+    {
+      "AttractionID": "Attraction_379000000A_003812",
+      "AttractionName": "臺北大巨蛋",
+      "AttractionClasses": [6, 12, 13, 25, 27],
+      "ServiceTimeInfo": "",
+      "FeeInfo": "",
+      "Tags": [],
+      "PostalAddress": { "City": "臺北市", "Town": "信義區" },
+      "PositionLat": 25.042439,
+      "PositionLon": 121.559504,
+      "Images": [
+        {
+          "Name": "全台唯一可容納四萬人的室內棒球場，符合世界棒壘球總會（WBSC）標準。",
+          "URL": "https://www.travel.taipei/content/images/attractions/559189/640x480_attractions-image-uee3qnlfcu6vsevegox_jw.jpg"
+        }
+      ],
+      "UpdateTime": "2026-06-29T15:27:00+08:00"
+    },
+    {
+      "AttractionID": "Attraction_379000000A_003677",
+      "AttractionName": "渭水驛站",
+      "AttractionClasses": [1, 3, 12, 25],
+      "ServiceTimeInfo": "",
+      "FeeInfo": "",
+      "Tags": [],
+      "PostalAddress": { "City": "臺北市", "Town": "大同區" },
+      "PositionLat": 25.05472,
+      "PositionLon": 121.511781,
+      "Images": [
+        {
+          "Name": "渭水驛站展場空間(圖片來源：臺北市政府觀光傳播局)",
+          "URL": "https://www.travel.taipei/content/images/attractions/374133/640x480_attractions-image-ecglmeqmqkuf34nme_-yrq.jpg"
+        }
+      ],
+      "UpdateTime": "2026-06-29T13:59:52+08:00"
+    },
+    {
+      "AttractionID": "Attraction_379000000A_003675",
+      "AttractionName": "N24 台北方舟",
+      "AttractionClasses": [1, 3, 12, 25],
+      "ServiceTimeInfo": "",
+      "FeeInfo": "",
+      "Tags": [],
+      "PostalAddress": { "City": "臺北市", "Town": "南港區" },
+      "PositionLat": 25.04926,
+      "PositionLon": 121.583778,
+      "Images": [
+        {
+          "Name": "N24台北方舟創新育成基地(圖片來源：臺北市政府觀光傳播局)",
+          "URL": "https://www.travel.taipei/content/images/attractions/374135/640x480_attractions-image-euwa1fwcfumtjhpusbha2a.jpg"
+        }
+      ],
+      "UpdateTime": "2026-06-29T13:52:35+08:00"
+    },
+    {
+      "AttractionID": "Attraction_379000000A_002668",
+      "AttractionName": "福安河濱公園",
+      "AttractionClasses": [2, 12, 13, 15, 19, 24],
+      "ServiceTimeInfo": "",
+      "FeeInfo": "",
+      "Tags": [],
+      "PostalAddress": { "City": "臺北市", "Town": "士林區" },
+      "PositionLat": 25.096151,
+      "PositionLon": 121.493592,
+      "Images": [
+        {
+          "Name": "可以騎乘腳踏車欣賞河邊美景(圖片來源：臺北市政府觀光傳播局)",
+          "URL": "https://www.travel.taipei/content/images/attractions/373597/640x480_attractions-image-y_eke6onruwg8z7am49tog.jpg"
+        }
+      ],
+      "UpdateTime": "2026-06-26T17:33:14+08:00"
+    },
+    {
+      "AttractionID": "Attraction_379000000A_002667",
+      "AttractionName": "中正河濱公園",
+      "AttractionClasses": [2, 12, 13, 15, 19, 24],
+      "ServiceTimeInfo": "",
+      "FeeInfo": "",
+      "Tags": [],
+      "PostalAddress": { "City": "臺北市", "Town": "萬華區" },
+      "PositionLat": 25.0234,
+      "PositionLon": 121.513129,
+      "Images": [
+        {
+          "Name": "遼闊的公園草地(圖片來源：臺北市政府觀光傳播局)",
+          "URL": "https://www.travel.taipei/content/images/attractions/373604/640x480_attractions-image-gd8g3nbs90shmy5cbsjuxa.jpg"
+        }
+      ],
+      "UpdateTime": "2026-06-26T17:27:54+08:00"
+    },
+    {
+      "AttractionID": "Attraction_379000000A_002665",
+      "AttractionName": "艋舺老街(台北第一街)",
+      "AttractionClasses": [1, 3, 4, 6, 12],
+      "ServiceTimeInfo": "",
+      "FeeInfo": "",
+      "Tags": [],
+      "PostalAddress": { "City": "臺北市", "Town": "萬華區" },
+      "PositionLat": 25.040146,
+      "PositionLon": 121.5006,
+      "Images": [
+        {
+          "Name": "艋舺老街又稱台北第一街(圖片來源：臺北市政府觀光傳播局)",
+          "URL": "https://www.travel.taipei/content/images/attractions/373626/640x480_attractions-image-ku6cm8yzxuo_z27stidmvq.jpg"
+        }
+      ],
+      "UpdateTime": "2026-06-26T17:23:52+08:00"
+    },
+    {
+      "AttractionID": "Attraction_379000000A_002664",
+      "AttractionName": "艋舺水仙宮舊址",
+      "AttractionClasses": [1, 3, 4, 12],
+      "ServiceTimeInfo": "",
+      "FeeInfo": "",
+      "Tags": [],
+      "PostalAddress": { "City": "臺北市", "Town": "萬華區" },
+      "PositionLat": 25.038492,
+      "PositionLon": 121.500582,
+      "Images": [
+        {
+          "Name": "艋舺水仙宮舊址碑(圖片來源：臺北市政府觀光傳播局)",
+          "URL": "https://www.travel.taipei/content/images/attractions/373629/640x480_attractions-image-izv2cumoi0uu6kq3p1ggkw.jpg"
+        }
+      ],
+      "UpdateTime": "2026-06-26T17:19:30+08:00"
+    },
+    {
+      "AttractionID": "Attraction_379000000A_002663",
+      "AttractionName": "天狗庵史蹟公園",
+      "AttractionClasses": [1, 3, 10, 12, 19],
+      "ServiceTimeInfo": "",
+      "FeeInfo": "",
+      "Tags": [],
+      "PostalAddress": { "City": "臺北市", "Town": "北投區" },
+      "PositionLat": 25.135833,
+      "PositionLon": 121.506563,
+      "Images": [
+        {
+          "Name": "天狗庵史蹟公園入口(圖片來源：臺北市政府觀光傳播局)",
+          "URL": "https://www.travel.taipei/content/images/attractions/373632/640x480_attractions-image-dxjiv6-gdk2i2jnwxkuafw.jpg"
+        }
+      ],
+      "UpdateTime": "2026-06-26T16:47:18+08:00"
+    },
+    {
+      "AttractionID": "Attraction_379000000A_002662",
+      "AttractionName": "大成殿步道",
+      "AttractionClasses": [1, 2, 11, 12, 13],
+      "ServiceTimeInfo": "",
+      "FeeInfo": "",
+      "Tags": [],
+      "PostalAddress": { "City": "臺北市", "Town": "文山區" },
+      "PositionLat": 24.976729,
+      "PositionLon": 121.592249,
+      "Images": [
+        {
+          "Name": "大成殿步道是台北茶鄉大縱走中的其中一段路(圖片來源：臺北市政府觀光傳播局)",
+          "URL": "https://www.travel.taipei/content/images/attractions/373638/640x480_attractions-image-ksbbocae8ukn6utqnxhjsw.jpg"
+        }
+      ],
+      "UpdateTime": "2026-06-26T16:40:46+08:00"
+    },
+    {
+      "AttractionID": "Attraction_379000000A_002661",
+      "AttractionName": "戀人平台",
+      "AttractionClasses": [1, 5, 11, 12, 23],
+      "ServiceTimeInfo": "",
+      "FeeInfo": "",
+      "Tags": [],
+      "PostalAddress": { "City": "臺北市", "Town": "文山區" },
+      "PositionLat": 24.978832,
+      "PositionLon": 121.589666,
+      "Images": [
+        {
+          "Name": "戀人平台(圖片來源：臺北市政府觀光傳播局)",
+          "URL": "https://www.travel.taipei/content/images/attractions/373641/640x480_attractions-image-zct_h9q6uuibtqwhwt5_mw.jpg"
+        }
+      ],
+      "UpdateTime": "2026-06-26T16:39:41+08:00"
+    },
+    {
+      "AttractionID": "Attraction_379000000A_002660",
+      "AttractionName": "12生肖步道",
+      "AttractionClasses": [1, 2, 5, 12, 13],
+      "ServiceTimeInfo": "",
+      "FeeInfo": "",
+      "Tags": [],
+      "PostalAddress": { "City": "臺北市", "Town": "文山區" },
+      "PositionLat": 24.978947,
+      "PositionLon": 121.589958,
+      "Images": [
+        {
+          "Name": "十二生肖造型的石雕(圖片來源：臺北市政府觀光傳播局)",
+          "URL": "https://www.travel.taipei/content/images/attractions/373648/640x480_attractions-image-6u8r421nguixiohqgcnb0q.jpg"
+        }
+      ],
+      "UpdateTime": "2026-06-26T16:38:15+08:00"
+    },
+    {
+      "AttractionID": "Attraction_379000000A_002659",
+      "AttractionName": "綠光平台",
+      "AttractionClasses": [2, 5, 11, 12, 23],
+      "ServiceTimeInfo": "",
+      "FeeInfo": "",
+      "Tags": [],
+      "PostalAddress": { "City": "臺北市", "Town": "文山區" },
+      "PositionLat": 24.978735,
+      "PositionLon": 121.589904,
+      "Images": [
+        {
+          "Name": "指南宮站一出來便可看到綠光平台(圖片來源：臺北市政府觀光傳播局)",
+          "URL": "https://www.travel.taipei/content/images/attractions/373649/640x480_attractions-image-baz-drvy4kgrva4crozh0w.jpg"
+        }
+      ],
+      "UpdateTime": "2026-06-26T16:35:35+08:00"
+    },
+    {
+      "AttractionID": "Attraction_379000000A_002658",
+      "AttractionName": "中華科技大學",
+      "AttractionClasses": [1, 12, 19, 254],
+      "ServiceTimeInfo": "",
+      "FeeInfo": "",
+      "Tags": [],
+      "PostalAddress": { "City": "臺北市", "Town": "南港區" },
+      "PositionLat": 25.033622,
+      "PositionLon": 121.609898,
+      "Images": [
+        {
+          "Name": "中華科技大學(圖片來源：臺北市政府觀光傳播局)",
+          "URL": "https://www.travel.taipei/content/images/attractions/373654/640x480_attractions-image-jmvbwt700eq099rcoqkvna.jpg"
+        }
+      ],
+      "UpdateTime": "2026-06-26T16:33:52+08:00"
+    },
+    {
+      "AttractionID": "Attraction_379000000A_002657",
+      "AttractionName": "水車寮步道",
+      "AttractionClasses": [1, 2, 9, 11, 12, 13],
+      "ServiceTimeInfo": "",
+      "FeeInfo": "",
+      "Tags": [],
+      "PostalAddress": { "City": "臺北市", "Town": "北投區" },
+      "PositionLat": 25.171262,
+      "PositionLon": 121.539259,
+      "Images": [
+        {
+          "Name": "水車寮步道入口(圖片來源：臺北市政府觀光傳播局)",
+          "URL": "https://www.travel.taipei/content/images/attractions/373657/640x480_attractions-image-6c9f4deqseetwuxjqlxr7w.jpg"
+        }
+      ],
+      "UpdateTime": "2026-06-26T16:29:10+08:00"
+    },
+    {
+      "AttractionID": "Attraction_379000000A_002656",
+      "AttractionName": "大屯瀑布",
+      "AttractionClasses": [2, 7, 11, 12, 13, 24],
+      "ServiceTimeInfo": "",
+      "FeeInfo": "",
+      "Tags": [],
+      "PostalAddress": { "City": "臺北市", "Town": "北投區" },
+      "PositionLat": 25.161833,
+      "PositionLon": 121.536861,
+      "Images": [
+        {
+          "Name": "水管橋後的瀑布(圖片來源：臺北市政府觀光傳播局)",
+          "URL": "https://www.travel.taipei/content/images/attractions/373660/640x480_attractions-image--7r7tm-rfu6etsox1nebkg.jpg"
+        }
+      ],
+      "UpdateTime": "2026-06-26T16:01:40+08:00"
+    },
+    {
+      "AttractionID": "Attraction_379000000A_002655",
+      "AttractionName": "東湖哈拉影城",
+      "AttractionClasses": [1, 5, 6, 12, 27],
+      "ServiceTimeInfo": "",
+      "FeeInfo": "",
+      "Tags": [],
+      "PostalAddress": { "City": "臺北市", "Town": "內湖區" },
+      "PositionLat": 25.069968,
+      "PositionLon": 121.611309,
+      "Images": [
+        {
+          "Name": "東湖哈拉影城(圖片來源：臺北市政府觀光傳播局)",
+          "URL": "https://www.travel.taipei/content/images/attractions/373664/640x480_attractions-image-hhm-tp-cg0m6dc0jrza0kq.jpg"
+        }
+      ],
+      "UpdateTime": "2026-06-26T15:59:36+08:00"
+    },
+    {
+      "AttractionID": "Attraction_379000000A_002654",
+      "AttractionName": "CITYLINK南港店",
+      "AttractionClasses": [6, 12, 23, 27],
+      "ServiceTimeInfo": "",
+      "FeeInfo": "",
+      "Tags": [],
+      "PostalAddress": { "City": "臺北市", "Town": "南港區" },
+      "PositionLat": 25.052645,
+      "PositionLon": 121.605982,
+      "Images": [
+        {
+          "Name": "CITYLINK南港店-裝置藝術(圖片來源：臺北市政府觀光傳播局)",
+          "URL": "https://www.travel.taipei/content/images/attractions/374750/640x480_attractions-image-dloha1phjkewgvocrwvuew.jpg"
+        }
+      ],
+      "UpdateTime": "2026-06-25T18:04:40+08:00"
+    },
+    {
+      "AttractionID": "Attraction_379000000A_002653",
+      "AttractionName": "文化大學",
+      "AttractionClasses": [1, 11, 12, 19],
+      "ServiceTimeInfo": "",
+      "FeeInfo": "",
+      "Tags": [],
+      "PostalAddress": { "City": "臺北市", "Town": "士林區" },
+      "PositionLat": 25.136543,
+      "PositionLon": 121.539259,
+      "Images": [
+        {
+          "Name": "中國文化大學校門口(圖片來源：臺北市政府觀光傳播局)",
+          "URL": "https://www.travel.taipei/content/images/attractions/373672/640x480_attractions-image-jw8cxlnrbemqhayy5vxusw.jpg"
+        }
+      ],
+      "UpdateTime": "2026-06-25T18:02:59+08:00"
+    },
+    {
+      "AttractionID": "Attraction_379000000A_002652",
+      "AttractionName": "吳興街商圈",
+      "AttractionClasses": [1, 6, 12],
+      "ServiceTimeInfo": "",
+      "FeeInfo": "",
+      "Tags": [],
+      "PostalAddress": { "City": "臺北市", "Town": "信義區" },
+      "PositionLat": 25.027763,
+      "PositionLon": 121.563105,
+      "Images": [
+        {
+          "Name": "吳興商圈招牌(圖片來源：臺北市政府觀光傳播局)",
+          "URL": "https://www.travel.taipei/content/images/attractions/373675/640x480_attractions-image-mvf1f2g8e0su6xmjdpus3q.jpg"
+        }
+      ],
+      "UpdateTime": "2026-06-25T17:23:37+08:00"
+    },
+    {
+      "AttractionID": "Attraction_379000000A_002651",
+      "AttractionName": "師大龍泉商圈",
+      "AttractionClasses": [1, 5, 6, 12, 27],
+      "ServiceTimeInfo": "",
+      "FeeInfo": "",
+      "Tags": [],
+      "PostalAddress": { "City": "臺北市", "Town": "大安區" },
+      "PositionLat": 25.024507,
+      "PositionLon": 121.529338,
+      "Images": [
+        {
+          "Name": "逛街的民眾(圖片來源：臺北市政府觀光傳播局)",
+          "URL": "https://www.travel.taipei/content/images/attractions/373682/640x480_attractions-image-wzwwynyii0mn-imhy8fn2q.jpg"
+        }
+      ],
+      "UpdateTime": "2026-06-25T16:08:35+08:00"
+    },
+    {
+      "AttractionID": "Attraction_379000000A_002650",
+      "AttractionName": "城中市場",
+      "AttractionClasses": [1, 6, 12, 254],
+      "ServiceTimeInfo": "",
+      "FeeInfo": "",
+      "Tags": [],
+      "PostalAddress": { "City": "臺北市", "Town": "中正區" },
+      "PositionLat": 25.043557,
+      "PositionLon": 121.512222,
+      "Images": [
+        {
+          "Name": "城中市場招牌(圖片來源：臺北市政府觀光傳播局)",
+          "URL": "https://www.travel.taipei/content/images/attractions/373683/640x480_attractions-image-cwu5bphchucfolan4lxcew.jpg"
+        }
+      ],
+      "UpdateTime": "2026-06-25T16:06:56+08:00"
+    },
+    {
+      "AttractionID": "Attraction_379000000A_002649",
+      "AttractionName": "捷運綠廊",
+      "AttractionClasses": [1, 5, 12, 15, 19, 23],
+      "ServiceTimeInfo": "",
+      "FeeInfo": "",
+      "Tags": [],
+      "PostalAddress": { "City": "臺北市", "Town": "中山區" },
+      "PositionLat": 25.069271,
+      "PositionLon": 121.519759,
+      "Images": [
+        {
+          "Name": "可以在捷運綠廊下散步、騎車(圖片來源：臺北市政府觀光傳播局)",
+          "URL": "https://www.travel.taipei/content/images/attractions/373688/640x480_attractions-image-omyqvvabteocmppkvpcxhg.jpg"
+        }
+      ],
+      "UpdateTime": "2026-06-25T16:05:48+08:00"
+    },
+    {
+      "AttractionID": "Attraction_379000000A_002642",
+      "AttractionName": "｢花現台北杜鵑花季｣ 溫羅汀咖啡街區巷弄",
+      "AttractionClasses": [1, 2, 5, 6, 12, 25],
+      "ServiceTimeInfo": "",
+      "FeeInfo": "",
+      "Tags": [],
+      "PostalAddress": { "City": "臺北市", "Town": "大安區" },
+      "PositionLat": 25.022605,
+      "PositionLon": 121.533233,
+      "Images": [
+        {
+          "Name": "溫羅汀咖啡街區巷弄-文青書坊(圖片來源：觀光傳播局)",
+          "URL": "https://www.travel.taipei/content/images/attractions/218146/640x480_attractions-image-gvffvedgoe2cgbsgy-hloa.jpg"
+        }
+      ],
+      "UpdateTime": "2026-06-25T16:01:16+08:00"
+    },
+    {
+      "AttractionID": "Attraction_379000000A_002640",
+      "AttractionName": "內湖葫蘆洲吊橋橋墩",
+      "AttractionClasses": [1, 3, 12, 24, 254],
+      "ServiceTimeInfo": "",
+      "FeeInfo": "",
+      "Tags": [],
+      "PostalAddress": { "City": "臺北市", "Town": "內湖區" },
+      "PositionLat": 25.060111,
+      "PositionLon": 121.606647,
+      "Images": [
+        {
+          "Name": "內湖葫蘆洲吊橋橋墩近景_高讚賢攝",
+          "URL": "https://www.travel.taipei/content/images/attractions/215398/640x480_attractions-image-i0giswcxpk-s9mkpmytpya.jpg"
+        }
+      ],
+      "UpdateTime": "2026-06-25T15:59:15+08:00"
+    },
+    {
+      "AttractionID": "Attraction_379000000A_002639",
+      "AttractionName": "五分吊橋遺址",
+      "AttractionClasses": [1, 3, 12, 24, 254],
+      "ServiceTimeInfo": "",
+      "FeeInfo": "",
+      "Tags": [],
+      "PostalAddress": { "City": "臺北市", "Town": "內湖區" },
+      "PositionLat": 25.06518,
+      "PositionLon": 121.61389,
+      "Images": [
+        {
+          "Name": "五分吊橋_高讚賢攝",
+          "URL": "https://www.travel.taipei/content/images/attractions/215394/640x480_attractions-image-vwonbb71_esrh7lkogd_za.jpg"
+        }
+      ],
+      "UpdateTime": "2026-06-25T15:58:24+08:00"
+    },
+    {
+      "AttractionID": "Attraction_379000000A_002638",
+      "AttractionName": "大稻埕公園",
+      "AttractionClasses": [1, 12, 15, 19],
+      "ServiceTimeInfo": "",
+      "FeeInfo": "",
+      "Tags": [],
+      "PostalAddress": { "City": "臺北市", "Town": "大同區" },
+      "PositionLat": 25.05861,
+      "PositionLon": 121.510346,
+      "Images": [
+        {
+          "Name": "大稻埕公園-石碑_劉佳雯攝",
+          "URL": "https://www.travel.taipei/content/images/attractions/213874/640x480_attractions-image-ao8jd1ox-kkqv1ztwalrfq.jpg"
+        }
+      ],
+      "UpdateTime": "2026-06-25T15:29:58+08:00"
+    },
+    {
+      "AttractionID": "Attraction_379000000A_002637",
+      "AttractionName": "麗山農民廣場_麗山公園",
+      "AttractionClasses": [1, 2, 9, 12, 15, 19],
+      "ServiceTimeInfo": "",
+      "FeeInfo": "",
+      "Tags": [],
+      "PostalAddress": { "City": "臺北市", "Town": "南港區" },
+      "PositionLat": 25.02242,
+      "PositionLon": 121.59585,
+      "Images": [
+        {
+          "Name": "麗山農民廣場-涼亭_高讚賢攝",
+          "URL": "https://www.travel.taipei/content/images/attractions/211655/640x480_attractions-image-tvon6wqme0cnyqsjmi3lnq.jpg"
+        }
+      ],
+      "UpdateTime": "2026-06-25T15:27:39+08:00"
+    },
+    {
+      "AttractionID": "Attraction_379000000A_002636",
+      "AttractionName": "静心苑_松山療養所所長宿舍",
+      "AttractionClasses": [1, 3, 12, 25],
+      "ServiceTimeInfo": "",
+      "FeeInfo": "",
+      "Tags": [],
+      "PostalAddress": { "City": "臺北市", "Town": "南港區" },
+      "PositionLat": 25.048446,
+      "PositionLon": 121.593523,
+      "Images": [
+        {
+          "Name": "靜心苑-建築外觀_劉佳雯攝",
+          "URL": "https://www.travel.taipei/content/images/attractions/210627/640x480_attractions-image-m93y26ise0suzqbyoucoyw.jpg"
+        }
+      ],
+      "UpdateTime": "2026-06-25T15:24:18+08:00"
+    },
+    {
+      "AttractionID": "Attraction_379000000A_002375",
+      "AttractionName": "松錦公園",
+      "AttractionClasses": [2, 12, 13, 15, 19],
+      "ServiceTimeInfo": "",
+      "FeeInfo": "",
+      "Tags": [],
+      "PostalAddress": { "City": "臺北市", "Town": "中山區" },
+      "PositionLat": 25.05962,
+      "PositionLon": 121.53211,
+      "Images": [
+        {
+          "Name": "松錦1號公園-涼亭與植栽_高讚賢攝",
+          "URL": "https://www.travel.taipei/content/images/attractions/192862/640x480_attractions-image-qjpqj6kyzk2dxozoo7mvmw.jpg"
+        }
+      ],
+      "UpdateTime": "2026-06-25T15:22:03+08:00"
+    },
+    {
+      "AttractionID": "Attraction_379000000A_002374",
+      "AttractionName": "湖山六號公園",
+      "AttractionClasses": [2, 12, 13, 15, 19],
+      "ServiceTimeInfo": "",
+      "FeeInfo": "",
+      "Tags": [],
+      "PostalAddress": { "City": "臺北市", "Town": "內湖區" },
+      "PositionLat": 25.0831,
+      "PositionLon": 121.601989,
+      "Images": [
+        {
+          "Name": "湖山6號公園-飛機造型裝置_高讚賢攝",
+          "URL": "https://www.travel.taipei/content/images/attractions/192206/640x480_attractions-image-lfxd3y-mde-b5t01dgxv6w.jpg"
+        }
+      ],
+      "UpdateTime": "2026-06-25T15:21:19+08:00"
+    },
+    {
+      "AttractionID": "Attraction_379000000A_002373",
+      "AttractionName": "天母運動場區_棒球場",
+      "AttractionClasses": [12, 13, 27],
+      "ServiceTimeInfo": "",
+      "FeeInfo": "",
+      "Tags": [],
+      "PostalAddress": { "City": "臺北市", "Town": "士林區" },
+      "PositionLat": 25.113235,
+      "PositionLon": 121.532983,
+      "Images": [
+        {
+          "Name": "天母棒球場運動中的球員_許宜容攝",
+          "URL": "https://www.travel.taipei/content/images/attractions/192021/640x480_attractions-image-xv1eyvg-5eir-psydalytq.jpg"
+        }
+      ],
+      "UpdateTime": "2026-06-25T15:19:18+08:00"
+    },
+    {
+      "AttractionID": "Attraction_379000000A_002365",
+      "AttractionName": "彩虹起跑線",
+      "AttractionClasses": [1, 5, 12, 254],
+      "ServiceTimeInfo": "",
+      "FeeInfo": "",
+      "Tags": [],
+      "PostalAddress": { "City": "臺北市", "Town": "信義區" },
+      "PositionLat": 25.037697,
+      "PositionLon": 121.563394,
+      "Images": [
+        {
+          "Name": "臺北市第二道炫目的彩虹地景「彩虹起跑線」攝影/高讚賢",
+          "URL": "https://www.travel.taipei/content/images/attractions/191906/640x480_attractions-image-y-1yhe8xz0e52lrkjvjqkw.jpg"
+        }
+      ],
+      "UpdateTime": "2026-06-25T15:17:59+08:00"
+    },
+    {
+      "AttractionID": "Attraction_379000000A_002346",
+      "AttractionName": "臺灣股票博物館",
+      "AttractionClasses": [1, 12, 25, 254],
+      "ServiceTimeInfo": "",
+      "FeeInfo": "",
+      "Tags": [],
+      "PostalAddress": { "City": "臺北市", "Town": "松山區" },
+      "PositionLat": 25.061075,
+      "PositionLon": 121.544522,
+      "Images": [
+        {
+          "Name": "股票博物館入口_劉佳雯攝",
+          "URL": "https://www.travel.taipei/content/images/attractions/185493/640x480_attractions-image--g-sa8lideskrqeaavwctg.jpg"
+        }
+      ],
+      "UpdateTime": "2026-06-25T15:16:27+08:00"
+    },
+    {
+      "AttractionID": "Attraction_379000000A_002344",
+      "AttractionName": "華岡博物館",
+      "AttractionClasses": [1, 5, 12, 25, 254],
+      "ServiceTimeInfo": "",
+      "FeeInfo": "",
+      "Tags": [],
+      "PostalAddress": { "City": "臺北市", "Town": "士林區" },
+      "PositionLat": 25.137483,
+      "PositionLon": 121.540624,
+      "Images": [
+        {
+          "Name": "華岡博物館-入口_高讚賢攝",
+          "URL": "https://www.travel.taipei/content/images/attractions/192007/640x480_attractions-image-eg5bpzniguogo8qlnkimra.jpg"
+        }
+      ],
+      "UpdateTime": "2026-06-25T15:15:13+08:00"
+    },
+    {
+      "AttractionID": "Attraction_379000000A_002342",
+      "AttractionName": "楊英風美術館",
+      "AttractionClasses": [1, 5, 12, 25],
+      "ServiceTimeInfo": "",
+      "FeeInfo": "",
+      "Tags": [],
+      "PostalAddress": { "City": "臺北市", "Town": "中正區" },
+      "PositionLat": 25.032131,
+      "PositionLon": 121.514497,
+      "Images": [
+        {
+          "Name": "楊英風美術館-石雕_高讚賢攝",
+          "URL": "https://www.travel.taipei/content/images/attractions/191325/640x480_attractions-image-qxv6pbzquk6cjywjphbqlq.jpg"
+        }
+      ],
+      "UpdateTime": "2026-06-25T15:11:47+08:00"
+    },
+    {
+      "AttractionID": "Attraction_379000000A_002336",
+      "AttractionName": "臺灣電力株式會社社長宿舍",
+      "AttractionClasses": [1, 3, 12, 25],
+      "ServiceTimeInfo": "",
+      "FeeInfo": "",
+      "Tags": [],
+      "PostalAddress": { "City": "臺北市", "Town": "中正區" },
+      "PositionLat": 25.040074,
+      "PositionLon": 121.509232,
+      "Images": [
+        {
+          "Name": "臺灣電力株式會社社長宿舍近景(圖片來源：臺北市政府觀光傳播局 媒體行政科)",
+          "URL": "https://www.travel.taipei/content/images/attractions/183814/640x480_attractions-image-xrojlc_qh0qmpetqswwqfq.jpg"
+        }
+      ],
+      "UpdateTime": "2026-06-25T15:01:33+08:00"
+    },
+    {
+      "AttractionID": "Attraction_379000000A_002274",
+      "AttractionName": "台灣設計館",
+      "AttractionClasses": [1, 3, 5, 6, 12, 25],
+      "ServiceTimeInfo": "",
+      "FeeInfo": "",
+      "Tags": [],
+      "PostalAddress": { "City": "臺北市", "Town": "信義區" },
+      "PositionLat": 25.043705,
+      "PositionLon": 121.559743,
+      "Images": [
+        {
+          "Name": "台灣設計館_劉佳雯攝",
+          "URL": "https://www.travel.taipei/content/images/attractions/182250/640x480_attractions-image-tm_j-bj9jkas3xjnsdzp_a.jpg"
+        }
+      ],
+      "UpdateTime": "2026-06-25T14:51:37+08:00"
+    },
+    {
+      "AttractionID": "Attraction_379000000A_002273",
+      "AttractionName": "臺北市政府",
+      "AttractionClasses": [1, 12, 254],
+      "ServiceTimeInfo": "",
+      "FeeInfo": "",
+      "Tags": [],
+      "PostalAddress": { "City": "臺北市", "Town": "信義區" },
+      "PositionLat": 25.037451,
+      "PositionLon": 121.563821,
+      "Images": [
+        {
+          "Name": "臺北市政府大樓_高讚賢攝",
+          "URL": "https://www.travel.taipei/content/images/attractions/182320/640x480_attractions-image-jlx2oelxxuunfrsnabn86g.jpg"
+        }
+      ],
+      "UpdateTime": "2026-06-25T14:38:35+08:00"
+    },
+    {
+      "AttractionID": "Attraction_379000000A_002272",
+      "AttractionName": "圓覺瀑布",
+      "AttractionClasses": [2, 11, 12, 13, 19, 24],
+      "ServiceTimeInfo": "",
+      "FeeInfo": "",
+      "Tags": [],
+      "PostalAddress": { "City": "臺北市", "Town": "內湖區" },
+      "PositionLat": 25.09755,
+      "PositionLon": 121.59459,
+      "Images": [
+        {
+          "Name": "圓覺瀑布_瀑布_高讚賢攝",
+          "URL": "https://www.travel.taipei/content/images/attractions/192701/640x480_attractions-image-old0wwnrremljvy1p7fsdg.jpg"
+        }
+      ],
+      "UpdateTime": "2026-06-25T14:29:00+08:00"
+    },
+    {
+      "AttractionID": "Attraction_379000000A_002270",
+      "AttractionName": "內湖737商圈",
+      "AttractionClasses": [1, 6, 12, 27],
+      "ServiceTimeInfo": "",
+      "FeeInfo": "",
+      "Tags": [],
+      "PostalAddress": { "City": "臺北市", "Town": "內湖區" },
+      "PositionLat": 25.07974,
+      "PositionLon": 121.578661,
+      "Images": [
+        {
+          "Name": "內湖737綠地-近景_劉佳雯攝",
+          "URL": "https://www.travel.taipei/content/images/attractions/181702/640x480_attractions-image-krlmuls75k6zllx9vez3ma.jpg"
+        }
+      ],
+      "UpdateTime": "2026-06-25T14:05:08+08:00"
+    },
+    {
+      "AttractionID": "Attraction_379000000A_002269",
+      "AttractionName": "大溝溪生態治水園區",
+      "AttractionClasses": [2, 11, 12, 13, 15, 19, 24],
+      "ServiceTimeInfo": "",
+      "FeeInfo": "",
+      "Tags": [],
+      "PostalAddress": { "City": "臺北市", "Town": "內湖區" },
+      "PositionLat": 25.089099,
+      "PositionLon": 121.598479,
+      "Images": [
+        {
+          "Name": "大溝溪生態治水園區的親水步道與遊客",
+          "URL": "https://www.travel.taipei/content/images/attractions/573479/640x480_attractions-image-edfokhs5keq4xtnmofilzw.jpg"
+        }
+      ],
+      "UpdateTime": "2026-06-25T14:03:42+08:00"
+    },
+    {
+      "AttractionID": "Attraction_379000000A_002267",
+      "AttractionName": "龍船岩步道",
+      "AttractionClasses": [2, 11, 12, 13, 19],
+      "ServiceTimeInfo": "",
+      "FeeInfo": "",
+      "Tags": [],
+      "PostalAddress": { "City": "臺北市", "Town": "內湖區" },
+      "PositionLat": 25.103506,
+      "PositionLon": 121.596387,
+      "Images": [
+        {
+          "Name": "龍船岩步道_高讚賢攝",
+          "URL": "https://www.travel.taipei/content/images/attractions/182414/640x480_attractions-image-wmycyoqvauenltwev58ekg.jpg"
+        }
+      ],
+      "UpdateTime": "2026-06-25T14:02:20+08:00"
+    },
+    {
+      "AttractionID": "Attraction_379000000A_002266",
+      "AttractionName": "白石湖同心池",
+      "AttractionClasses": [1, 2, 9, 11, 12, 19, 24],
+      "ServiceTimeInfo": "",
+      "FeeInfo": "",
+      "Tags": [],
+      "PostalAddress": { "City": "臺北市", "Town": "內湖區" },
+      "PositionLat": 25.100535,
+      "PositionLon": 121.589037,
+      "Images": [
+        {
+          "Name": "白石湖同心池冬季_劉佳雯攝",
+          "URL": "https://www.travel.taipei/content/images/attractions/182399/640x480_attractions-image-cle750zn80muaw0oxekkqa.jpg"
+        }
+      ],
+      "UpdateTime": "2026-06-25T13:51:26+08:00"
+    },
+    {
+      "AttractionID": "Attraction_379000000A_002265",
+      "AttractionName": "白石湖休閒農業區",
+      "AttractionClasses": [1, 2, 6, 9, 11, 12, 19],
+      "ServiceTimeInfo": "",
+      "FeeInfo": "",
+      "Tags": [],
+      "PostalAddress": { "City": "臺北市", "Town": "內湖區" },
+      "PositionLat": 25.105136,
+      "PositionLon": 121.594043,
+      "Images": [
+        {
+          "Name": "白石湖內湖草莓季_劉佳雯攝",
+          "URL": "https://www.travel.taipei/content/images/attractions/182387/640x480_attractions-image-xy0trg-9zucaewpn-8huvw.jpg"
+        }
+      ],
+      "UpdateTime": "2026-06-25T13:44:35+08:00"
+    },
+    {
+      "AttractionID": "Attraction_379000000A_002264",
+      "AttractionName": "東和禪寺",
+      "AttractionClasses": [1, 3, 4, 12],
+      "ServiceTimeInfo": "",
+      "FeeInfo": "",
+      "Tags": [],
+      "PostalAddress": { "City": "臺北市", "Town": "中正區" },
+      "PositionLat": 25.03919,
+      "PositionLon": 121.522806,
+      "Images": [
+        {
+          "Name": "東和禪寺_入口處_高讚賢攝",
+          "URL": "https://www.travel.taipei/content/images/attractions/192120/640x480_attractions-image-jaw0amnqwemkw1h-no4fkg.jpg"
+        }
+      ],
+      "UpdateTime": "2026-06-25T13:43:00+08:00"
+    },
+    {
+      "AttractionID": "Attraction_379000000A_002263",
+      "AttractionName": "赤峰街",
+      "AttractionClasses": [1, 5, 6, 12],
+      "ServiceTimeInfo": "",
+      "FeeInfo": "",
+      "Tags": [],
+      "PostalAddress": { "City": "臺北市", "Town": "大同區" },
+      "PositionLat": 25.055346,
+      "PositionLon": 121.519607,
+      "Images": [
+        {
+          "Name": "少見的復古底片機專賣店(圖片來源：臺北市政府觀光傳播局)",
+          "URL": "https://www.travel.taipei/content/images/attractions/292380/640x480_attractions-image-00-2rk6z0062wtnw2xdqjw.jpg"
+        }
+      ],
+      "UpdateTime": "2026-06-25T13:41:54+08:00"
+    },
+    {
+      "AttractionID": "Attraction_379000000A_002262",
+      "AttractionName": "永春陂生態濕地公園",
+      "AttractionClasses": [2, 11, 12, 15, 19, 24],
+      "ServiceTimeInfo": "",
+      "FeeInfo": "",
+      "Tags": [],
+      "PostalAddress": { "City": "臺北市", "Town": "信義區" },
+      "PositionLat": 25.032531,
+      "PositionLon": 121.580071,
+      "Images": [
+        {
+          "Name": "永春陂生態公園蕨類園_劉佳雯攝",
+          "URL": "https://www.travel.taipei/content/images/attractions/182257/640x480_attractions-image-wy1z_ndq-uwrxi3w3u84iw.jpg"
+        }
+      ],
+      "UpdateTime": "2026-06-25T13:39:33+08:00"
+    },
+    {
+      "AttractionID": "Attraction_379000000A_002261",
+      "AttractionName": "新芳春茶行",
+      "AttractionClasses": [1, 3, 6, 12, 14, 25],
+      "ServiceTimeInfo": "",
+      "FeeInfo": "",
+      "Tags": [],
+      "PostalAddress": { "City": "臺北市", "Town": "大同區" },
+      "PositionLat": 25.057078,
+      "PositionLon": 121.512548,
+      "Images": [
+        {
+          "Name": "新芳春茶行-外觀_劉佳雯攝",
+          "URL": "https://www.travel.taipei/content/images/attractions/181535/640x480_attractions-image-5cg67q_bgeajhifzn_vuca.jpg"
+        }
+      ],
+      "UpdateTime": "2026-06-25T11:56:27+08:00"
+    },
+    {
+      "AttractionID": "Attraction_379000000A_002260",
+      "AttractionName": "台北花卉村",
+      "AttractionClasses": [6, 9, 12, 19, 254],
+      "ServiceTimeInfo": "",
+      "FeeInfo": "",
+      "Tags": [],
+      "PostalAddress": { "City": "臺北市", "Town": "士林區" },
+      "PositionLat": 25.094679,
+      "PositionLon": 121.497749,
+      "Images": [
+        {
+          "Name": "台北花卉村-入口_劉佳雯攝",
+          "URL": "https://www.travel.taipei/content/images/attractions/181502/640x480_attractions-image-yvkxdlx_oee3ri_ccgynsq.jpg"
+        }
+      ],
+      "UpdateTime": "2026-06-25T11:52:35+08:00"
+    },
+    {
+      "AttractionID": "Attraction_379000000A_002259",
+      "AttractionName": "成美右岸河濱公園",
+      "AttractionClasses": [2, 12, 13, 15, 19, 24],
+      "ServiceTimeInfo": "",
+      "FeeInfo": "",
+      "Tags": [],
+      "PostalAddress": { "City": "臺北市", "Town": "內湖區" },
+      "PositionLat": 25.055591,
+      "PositionLon": 121.586011,
+      "Images": [
+        {
+          "Name": "成美橋河濱花圃_高讚賢攝",
+          "URL": "https://www.travel.taipei/content/images/attractions/181498/640x480_attractions-image-jfkoebavseq4vtkwicy7ka.jpg"
+        }
+      ],
+      "UpdateTime": "2026-06-25T11:49:30+08:00"
+    },
+    {
+      "AttractionID": "Attraction_379000000A_002257",
+      "AttractionName": "花博公園_花之隧道",
+      "AttractionClasses": [2, 5, 12, 15, 19],
+      "ServiceTimeInfo": "",
+      "FeeInfo": "",
+      "Tags": [],
+      "PostalAddress": { "City": "臺北市", "Town": "中山區" },
+      "PositionLat": 25.07259,
+      "PositionLon": 121.52485,
+      "Images": [
+        {
+          "Name": "花博公園-花之隧道-入口_高讚賢攝",
+          "URL": "https://www.travel.taipei/content/images/attractions/181495/640x480_attractions-image-i7pxdrgljkkqvjg8d_cqtw.jpg"
+        }
+      ],
+      "UpdateTime": "2026-06-25T11:47:21+08:00"
+    },
+    {
+      "AttractionID": "Attraction_379000000A_002256",
+      "AttractionName": "歪腰郵筒",
+      "AttractionClasses": [1, 5, 12, 254],
+      "ServiceTimeInfo": "",
+      "FeeInfo": "",
+      "Tags": [],
+      "PostalAddress": { "City": "臺北市", "Town": "中山區" },
+      "PositionLat": 25.052748,
+      "PositionLon": 121.540377,
+      "Images": [
+        {
+          "Name": "歪腰郵筒_劉佳雯攝",
+          "URL": "https://www.travel.taipei/content/images/attractions/181562/640x480_attractions-image-lanfcsjyzuot6uvex3rekg.jpg"
+        }
+      ],
+      "UpdateTime": "2026-06-25T11:46:30+08:00"
+    },
+    {
+      "AttractionID": "Attraction_379000000A_002250",
+      "AttractionName": "舞蝶共融遊戲場",
+      "AttractionClasses": [12, 13, 15, 19, 27],
+      "ServiceTimeInfo": "",
+      "FeeInfo": "",
+      "Tags": [],
+      "PostalAddress": { "City": "臺北市", "Town": "中山區" },
+      "PositionLat": 25.06871,
+      "PositionLon": 121.524023,
+      "Images": [
+        {
+          "Name": "舞蝶共融遊戲場_劉佳雯攝",
+          "URL": "https://www.travel.taipei/content/images/attractions/182290/640x480_attractions-image-ufladzpebeakvmjroq60xw.jpg"
+        }
+      ],
+      "UpdateTime": "2026-06-25T11:45:12+08:00"
+    },
+    {
+      "AttractionID": "Attraction_379000000A_002236",
+      "AttractionName": "香堤大道廣場",
+      "AttractionClasses": [1, 5, 6, 12, 27],
+      "ServiceTimeInfo": "",
+      "FeeInfo": "",
+      "Tags": [],
+      "PostalAddress": { "City": "臺北市", "Town": "信義區" },
+      "PositionLat": 25.037248,
+      "PositionLon": 121.566985,
+      "Images": [
+        {
+          "Name": "香堤大道廣場上有許多民眾悠閒地漫步逛街",
+          "URL": "https://www.travel.taipei/content/images/attractions/457974/640x480_attractions-image-f3eo7abbwkypv1z4u12sfw.jpg"
+        }
+      ],
+      "UpdateTime": "2026-06-25T11:42:45+08:00"
+    },
+    {
+      "AttractionID": "Attraction_379000000A_002217",
+      "AttractionName": "中央藝文公園_華山大草原遊戲場",
+      "AttractionClasses": [1, 5, 12, 15, 19, 25],
+      "ServiceTimeInfo": "",
+      "FeeInfo": "",
+      "Tags": [],
+      "PostalAddress": { "City": "臺北市", "Town": "中正區" },
+      "PositionLat": 25.04612,
+      "PositionLon": 121.52683,
+      "Images": [
+        {
+          "Name": "華山大草原遊戲場俯瞰_許宜容攝",
+          "URL": "https://www.travel.taipei/content/images/attractions/182869/640x480_attractions-image-74pca4adzuoitd9hi9-ymw.jpg"
+        }
+      ],
+      "UpdateTime": "2026-06-25T11:40:32+08:00"
+    },
+    {
+      "AttractionID": "Attraction_379000000A_002216",
+      "AttractionName": "臺灣文學基地",
+      "AttractionClasses": [1, 3, 5, 12, 25],
+      "ServiceTimeInfo": "",
+      "FeeInfo": "",
+      "Tags": [],
+      "PostalAddress": { "City": "臺北市", "Town": "中正區" },
+      "PositionLat": 25.041151,
+      "PositionLon": 121.528486,
+      "Images": [
+        {
+          "Name": "台灣文學基地-齊東詩舍-詩舍門口_高讚賢攝",
+          "URL": "https://www.travel.taipei/content/images/attractions/193197/640x480_attractions-image-vweoivjazkwwjfrdqjfgdw.jpg"
+        }
+      ],
+      "UpdateTime": "2026-06-25T11:34:58+08:00"
+    },
+    {
+      "AttractionID": "Attraction_379000000A_002215",
+      "AttractionName": "i-Ride TAIPEI飛行劇院",
+      "AttractionClasses": [1, 5, 6, 12, 25, 27],
+      "ServiceTimeInfo": "",
+      "FeeInfo": "",
+      "Tags": [],
+      "PostalAddress": { "City": "臺北市", "Town": "信義區" },
+      "PositionLat": 25.034354,
+      "PositionLon": 121.566206,
+      "Images": [
+        {
+          "Name": "南山微風飛行館_劉佳雯攝",
+          "URL": "https://www.travel.taipei/content/images/attractions/180983/640x480_attractions-image-toagccodfeuk3rjvctpb0q.jpg"
+        }
+      ],
+      "UpdateTime": "2026-06-25T11:30:11+08:00"
+    },
+    {
+      "AttractionID": "Attraction_379000000A_002214",
+      "AttractionName": "天母夢想樂園",
+      "AttractionClasses": [12, 13, 15, 19, 27],
+      "ServiceTimeInfo": "",
+      "FeeInfo": "",
+      "Tags": [],
+      "PostalAddress": { "City": "臺北市", "Town": "士林區" },
+      "PositionLat": 25.114688,
+      "PositionLon": 121.533709,
+      "Images": [
+        {
+          "Name": "天母運動公園-旋轉溜滑梯遠景_劉佳雯攝",
+          "URL": "https://www.travel.taipei/content/images/attractions/191148/640x480_attractions-image-zpo5fpurkkey4cgrnav2kg.jpg"
+        }
+      ],
+      "UpdateTime": "2026-06-25T11:28:37+08:00"
+    },
+    {
+      "AttractionID": "Attraction_379000000A_002213",
+      "AttractionName": "葫蘆國小跨堤人行陸橋",
+      "AttractionClasses": [12, 13, 23, 254],
+      "ServiceTimeInfo": "",
+      "FeeInfo": "",
+      "Tags": [],
+      "PostalAddress": { "City": "臺北市", "Town": "士林區" },
+      "PositionLat": 25.083481,
+      "PositionLon": 121.506933,
+      "Images": [
+        {
+          "Name": "台北葫蘆國小跨堤人行陸橋-橋上一景_高讚賢攝",
+          "URL": "https://www.travel.taipei/content/images/attractions/193316/640x480_attractions-image-xxnlw5rbhe2cj8sxufgvzw.jpg"
+        }
+      ],
+      "UpdateTime": "2026-06-25T11:26:59+08:00"
+    },
+    {
+      "AttractionID": "Attraction_379000000A_002206",
+      "AttractionName": "臺北表演藝術中心",
+      "AttractionClasses": [1, 5, 12, 25, 27],
+      "ServiceTimeInfo": "",
+      "FeeInfo": "",
+      "Tags": [],
+      "PostalAddress": { "City": "臺北市", "Town": "士林區" },
+      "PositionLat": 25.085124,
+      "PositionLon": 121.524369,
+      "Images": [
+        {
+          "Name": "臺北表演藝術中心遠景",
+          "URL": "https://www.travel.taipei/content/images/attractions/468041/640x480_attractions-image-qxt-ktrt4eafdclg-hfq-q.jpg"
+        }
+      ],
+      "UpdateTime": "2026-06-25T11:06:37+08:00"
+    },
+    {
+      "AttractionID": "Attraction_379000000A_002201",
+      "AttractionName": "臺北流行音樂中心",
+      "AttractionClasses": [1, 5, 12, 25, 27],
+      "ServiceTimeInfo": "",
+      "FeeInfo": "",
+      "Tags": [],
+      "PostalAddress": { "City": "臺北市", "Town": "南港區" },
+      "PositionLat": 25.052115,
+      "PositionLon": 121.598592,
+      "Images": [
+        {
+          "Name": "臺北流行音樂中心-表演廳_高讚賢攝",
+          "URL": "https://www.travel.taipei/content/images/attractions/193182/640x480_attractions-image-ph0ig0thkuklxzjtdw16ya.jpg"
+        }
+      ],
+      "UpdateTime": "2026-06-25T10:51:00+08:00"
+    },
+    {
+      "AttractionID": "Attraction_379000000A_002197",
+      "AttractionName": "北投社三層崎公園",
+      "AttractionClasses": [1, 2, 11, 12, 15, 19],
+      "ServiceTimeInfo": "",
+      "FeeInfo": "",
+      "Tags": [],
+      "PostalAddress": { "City": "臺北市", "Town": "北投區" },
+      "PositionLat": 25.14462,
+      "PositionLon": 121.49199,
+      "Images": [
+        {
+          "Name": "北投社三層崎公園-漸層花海_劉佳雯攝",
+          "URL": "https://www.travel.taipei/content/images/attractions/207827/640x480_attractions-image-pkrrlzl040kji9uiohe7oa.jpg"
+        }
+      ],
+      "UpdateTime": "2026-06-25T10:49:00+08:00"
+    },
+    {
+      "AttractionID": "Attraction_379000000A_002194",
+      "AttractionName": "圓山自然景觀公園",
+      "AttractionClasses": [2, 11, 12, 13, 15, 19],
+      "ServiceTimeInfo": "",
+      "FeeInfo": "",
+      "Tags": [],
+      "PostalAddress": { "City": "臺北市", "Town": "中山區" },
+      "PositionLat": 25.074993,
+      "PositionLon": 121.522297,
+      "Images": [
+        {
+          "Name": "圓山自然景觀公園_許宜容攝",
+          "URL": "https://www.travel.taipei/content/images/attractions/182777/640x480_attractions-image-kmbguq5otuqovgb3ia_dnq.jpg"
+        }
+      ],
+      "UpdateTime": "2026-06-25T10:46:27+08:00"
+    },
+    {
+      "AttractionID": "Attraction_379000000A_002181",
+      "AttractionName": "公館商圈",
+      "AttractionClasses": [1, 6, 12, 27],
+      "ServiceTimeInfo": "",
+      "FeeInfo": "",
+      "Tags": [],
+      "PostalAddress": { "City": "臺北市", "Town": "中正區" },
+      "PositionLat": 25.013793,
+      "PositionLon": 121.534792,
+      "Images": [
+        {
+          "Name": "公館商圈LOGO_劉佳雯攝",
+          "URL": "https://www.travel.taipei/content/images/attractions/180796/640x480_attractions-image-m4ftzya7ku6pgv2xzcn8yg.jpg"
+        }
+      ],
+      "UpdateTime": "2026-06-25T10:43:47+08:00"
+    },
+    {
+      "AttractionID": "Attraction_379000000A_002180",
+      "AttractionName": "台北奧萬大",
+      "AttractionClasses": [2, 6, 9, 11, 12],
+      "ServiceTimeInfo": "",
+      "FeeInfo": "",
+      "Tags": [],
+      "PostalAddress": { "City": "臺北市", "Town": "士林區" },
+      "PositionLat": 25.142461,
+      "PositionLon": 121.569308,
+      "Images": [
+        {
+          "Name": "台北奧萬大公園-鐘_高讚賢攝",
+          "URL": "https://www.travel.taipei/content/images/attractions/180637/640x480_attractions-image-m-mrtjvzq0uoqsfsm2ngig.jpg"
+        }
+      ],
+      "UpdateTime": "2026-06-25T10:42:01+08:00"
+    },
+    {
+      "AttractionID": "Attraction_379000000A_002179",
+      "AttractionName": "公館水岸廣場",
+      "AttractionClasses": [12, 13, 15, 19, 24],
+      "ServiceTimeInfo": "",
+      "FeeInfo": "",
+      "Tags": [],
+      "PostalAddress": { "City": "臺北市", "Town": "中正區" },
+      "PositionLat": 25.01125,
+      "PositionLon": 121.5284,
+      "Images": [
+        {
+          "Name": "公館水岸廣場周末夜晚活動_劉佳雯攝",
+          "URL": "https://www.travel.taipei/content/images/attractions/180846/640x480_attractions-image-yn3mt3znk0ue7cuqha85ta.jpg"
+        }
+      ],
+      "UpdateTime": "2026-06-25T10:39:26+08:00"
+    },
+    {
+      "AttractionID": "Attraction_379000000A_002178",
+      "AttractionName": "前山公園",
+      "AttractionClasses": [2, 7, 10, 11, 12, 19],
+      "ServiceTimeInfo": "",
+      "FeeInfo": "",
+      "Tags": [],
+      "PostalAddress": { "City": "臺北市", "Town": "北投區" },
+      "PositionLat": 25.150684,
+      "PositionLon": 121.54818,
+      "Images": [
+        {
+          "Name": "陽明山前山公園_劉佳雯攝",
+          "URL": "https://www.travel.taipei/content/images/attractions/181102/640x480_attractions-image-tirgdzapb06fo-38lszxjg.jpg"
+        }
+      ],
+      "UpdateTime": "2026-06-25T10:37:32+08:00"
+    },
+    {
+      "AttractionID": "Attraction_379000000A_002177",
+      "AttractionName": "郭子儀紀念堂_內湖紅樓",
+      "AttractionClasses": [1, 3, 4, 12, 25],
+      "ServiceTimeInfo": "",
+      "FeeInfo": "",
+      "Tags": [],
+      "PostalAddress": { "City": "臺北市", "Town": "內湖區" },
+      "PositionLat": 25.07963,
+      "PositionLon": 121.586577,
+      "Images": [
+        {
+          "Name": "郭子儀紀念館_王能佑攝_文德路267巷19號1",
+          "URL": "https://www.travel.taipei/content/images/attractions/180605/640x480_attractions-image-8xkchehj1ukfnp9usi__oa.jpg"
+        }
+      ],
+      "UpdateTime": "2026-06-24T16:59:51+08:00"
+    },
+    {
+      "AttractionID": "Attraction_379000000A_002176",
+      "AttractionName": "林森_康樂公園",
+      "AttractionClasses": [1, 2, 12, 15, 19],
+      "ServiceTimeInfo": "",
+      "FeeInfo": "",
+      "Tags": [],
+      "PostalAddress": { "City": "臺北市", "Town": "中山區" },
+      "PositionLat": 25.053087,
+      "PositionLon": 121.524931,
+      "Images": [
+        {
+          "Name": "林森公園-遊客_王能佑攝_南京東路林森北路",
+          "URL": "https://www.travel.taipei/content/images/attractions/180593/640x480_attractions-image-csnpd8pgqecw3qrihxdwtg.jpg"
+        }
+      ],
+      "UpdateTime": "2026-06-24T16:44:50+08:00"
+    },
+    {
+      "AttractionID": "Attraction_379000000A_002175",
+      "AttractionName": "美堤河濱公園",
+      "AttractionClasses": [2, 12, 13, 15, 19, 24],
+      "ServiceTimeInfo": "",
+      "FeeInfo": "",
+      "Tags": [],
+      "PostalAddress": { "City": "臺北市", "Town": "中山區" },
+      "PositionLat": 25.07538,
+      "PositionLon": 121.56087,
+      "Images": [
+        {
+          "Name": "美堤河濱公園向日葵花海-雞_高讚賢攝",
+          "URL": "https://www.travel.taipei/content/images/attractions/180567/640x480_attractions-image-g6f6ybabzukaqeu5nrobcw.jpg"
+        }
+      ],
+      "UpdateTime": "2026-06-24T16:43:01+08:00"
+    },
+    {
+      "AttractionID": "Attraction_379000000A_002173",
+      "AttractionName": "東三水街市場_新富市場",
+      "AttractionClasses": [1, 3, 6, 12, 25],
+      "ServiceTimeInfo": "",
+      "FeeInfo": "",
+      "Tags": [],
+      "PostalAddress": { "City": "臺北市", "Town": "萬華區" },
+      "PositionLat": 25.03602,
+      "PositionLon": 121.5019,
+      "Images": [
+        {
+          "Name": "市場的購物人潮",
+          "URL": "https://www.travel.taipei/content/images/attractions/492013/640x480_attractions-image-mcrvhuqsoeinumebq5mofg.png"
+        }
+      ],
+      "UpdateTime": "2026-06-24T16:36:14+08:00"
+    },
+    {
+      "AttractionID": "Attraction_379000000A_002172",
+      "AttractionName": "臺灣戲曲中心",
+      "AttractionClasses": [1, 5, 12, 25, 27],
+      "ServiceTimeInfo": "",
+      "FeeInfo": "",
+      "Tags": [],
+      "PostalAddress": { "City": "臺北市", "Town": "士林區" },
+      "PositionLat": 25.10232,
+      "PositionLon": 121.51963,
+      "Images": [
+        {
+          "Name": "臺灣戲曲中心臺灣音樂館-石牌_劉佳雯攝",
+          "URL": "https://www.travel.taipei/content/images/attractions/180550/640x480_attractions-image-g94xwulgyuyykj3luboj_a.jpg"
+        }
+      ],
+      "UpdateTime": "2026-06-22T17:46:49+08:00"
+    },
+    {
+      "AttractionID": "Attraction_379000000A_002170",
+      "AttractionName": "新新公園",
+      "AttractionClasses": [2, 12, 13, 15, 19],
+      "ServiceTimeInfo": "",
+      "FeeInfo": "",
+      "Tags": [],
+      "PostalAddress": { "City": "臺北市", "Town": "南港區" },
+      "PositionLat": 25.05136,
+      "PositionLon": 121.5903,
+      "Images": [
+        {
+          "Name": "南港新新公園-滑梯_劉佳雯攝",
+          "URL": "https://www.travel.taipei/content/images/attractions/180478/640x480_attractions-image-it7vptjgfk2t16du0gw9tg.jpg"
+        }
+      ],
+      "UpdateTime": "2026-06-22T17:15:54+08:00"
+    },
+    {
+      "AttractionID": "Attraction_379000000A_002169",
+      "AttractionName": "臺北市議會",
+      "AttractionClasses": [1, 254],
+      "ServiceTimeInfo": "",
+      "FeeInfo": "",
+      "Tags": [],
+      "PostalAddress": { "City": "臺北市", "Town": "信義區" },
+      "PositionLat": 25.03815,
+      "PositionLon": 121.56198,
+      "Images": [
+        {
+          "Name": "臺北市議會第11屆成立大會_高讚賢攝_市議會2樓議事廳",
+          "URL": "https://www.travel.taipei/content/images/attractions/180465/640x480_attractions-image-knjzbz1eveccbvikh7j2xg.jpg"
+        }
+      ],
+      "UpdateTime": "2026-06-22T17:13:09+08:00"
+    },
+    {
+      "AttractionID": "Attraction_379000000A_002168",
+      "AttractionName": "貓空樟樹步道",
+      "AttractionClasses": [1, 2, 9, 11, 12, 13, 19],
+      "ServiceTimeInfo": "",
+      "FeeInfo": "",
+      "Tags": [],
+      "PostalAddress": { "City": "臺北市", "Town": "文山區" },
+      "PositionLat": 24.967289,
+      "PositionLon": 121.587401,
+      "Images": [
+        {
+          "Name": "美麗如畫的風景",
+          "URL": "https://www.travel.taipei/content/images/attractions/492027/640x480_attractions-image-lnyspdl0teqarvfhubxe6g.jpg"
+        }
+      ],
+      "UpdateTime": "2026-06-22T17:11:25+08:00"
+    },
+    {
+      "AttractionID": "Attraction_379000000A_002167",
+      "AttractionName": "硫磺谷_大磺嘴",
+      "AttractionClasses": [1, 2, 7, 10, 11, 12, 24],
+      "ServiceTimeInfo": "",
+      "FeeInfo": "",
+      "Tags": [],
+      "PostalAddress": { "City": "臺北市", "Town": "北投區" },
+      "PositionLat": 25.14358,
+      "PositionLon": 121.52119,
+      "Images": [
+        {
+          "Name": "硫磺谷泉池遠景_劉佳雯攝",
+          "URL": "https://www.travel.taipei/content/images/attractions/215808/640x480_attractions-image-vy3dcxj_musaxyka6y-h6w.jpg"
+        }
+      ],
+      "UpdateTime": "2026-06-22T17:07:19+08:00"
+    },
+    {
+      "AttractionID": "Attraction_379000000A_002166",
+      "AttractionName": "6號彩虹 / Rainbow Six",
+      "AttractionClasses": [1, 5, 6, 12, 23],
+      "ServiceTimeInfo": "",
+      "FeeInfo": "",
+      "Tags": [],
+      "PostalAddress": { "City": "臺北市", "Town": "萬華區" },
+      "PositionLat": 25.042703,
+      "PositionLon": 121.507603,
+      "Images": [
+        {
+          "Name": "6號彩虹(圖片來源：臺北市政府觀光傳播局)",
+          "URL": "https://www.travel.taipei/content/images/attractions/569717/640x480_attractions-image-gvjfngvsqewi9xqckps3zw.jpg"
+        }
+      ],
+      "UpdateTime": "2026-06-22T17:03:03+08:00"
+    },
+    {
+      "AttractionID": "Attraction_379000000A_002165",
+      "AttractionName": "樂活公園",
+      "AttractionClasses": [2, 12, 13, 15, 19, 24],
+      "ServiceTimeInfo": "",
+      "FeeInfo": "",
+      "Tags": [],
+      "PostalAddress": { "City": "臺北市", "Town": "內湖區" },
+      "PositionLat": 25.068287,
+      "PositionLon": 121.618883,
+      "Images": [
+        {
+          "Name": "東湖樂活公園櫻花_高讚賢攝",
+          "URL": "https://www.travel.taipei/content/images/attractions/180445/640x480_attractions-image-t3ks0mkxfkcvvgkxuuqybq.jpg"
+        }
+      ],
+      "UpdateTime": "2026-06-22T16:33:21+08:00"
+    },
+    {
+      "AttractionID": "Attraction_379000000A_001984",
+      "AttractionName": "原住民文化主題公園",
+      "AttractionClasses": [1, 5, 12, 15, 19, 25],
+      "ServiceTimeInfo": "",
+      "FeeInfo": "",
+      "Tags": [],
+      "PostalAddress": { "City": "臺北市", "Town": "士林區" },
+      "PositionLat": 25.1016,
+      "PositionLon": 121.55077,
+      "Images": [
+        {
+          "Name": "涼亭給民眾休憩",
+          "URL": "https://www.travel.taipei/content/images/attractions/573384/640x480_attractions-image-4u0zpjtonesiphkgi9d6yg.jpg"
+        }
+      ],
+      "UpdateTime": "2026-06-22T16:25:01+08:00"
+    },
+    {
+      "AttractionID": "Attraction_379000000A_001983",
+      "AttractionName": "大院子",
+      "AttractionClasses": [1, 3, 5, 6, 12, 25],
+      "ServiceTimeInfo": "",
+      "FeeInfo": "",
+      "Tags": [],
+      "PostalAddress": { "City": "臺北市", "Town": "大安區" },
+      "PositionLat": 25.024134,
+      "PositionLon": 121.532339,
+      "Images": [
+        {
+          "Name": "大院子-招牌_劉佳雯攝",
+          "URL": "https://www.travel.taipei/content/images/attractions/210102/640x480_attractions-image-rkq5m6hcg0yteaafbuyr2w.jpg"
+        }
+      ],
+      "UpdateTime": "2026-06-22T16:18:32+08:00"
+    },
+    {
+      "AttractionID": "Attraction_379000000A_001981",
+      "AttractionName": "東區商圈",
+      "AttractionClasses": [1, 5, 6, 12, 27],
+      "ServiceTimeInfo": "",
+      "FeeInfo": "",
+      "Tags": [],
+      "PostalAddress": { "City": "臺北市", "Town": "大安區" },
+      "PositionLat": 25.041795,
+      "PositionLon": 121.546568,
+      "Images": [
+        {
+          "Name": "百貨大樓高體現繁榮氣息",
+          "URL": "https://www.travel.taipei/content/images/attractions/492050/640x480_attractions-image-tnnf-zrwvkaiwqaawoozrq.jpg"
+        }
+      ],
+      "UpdateTime": "2026-06-22T16:14:14+08:00"
+    },
+    {
+      "AttractionID": "Attraction_379000000A_001979",
+      "AttractionName": "臺灣新文化運動紀念館",
+      "AttractionClasses": [1, 3, 12, 25],
+      "ServiceTimeInfo": "",
+      "FeeInfo": "",
+      "Tags": [],
+      "PostalAddress": { "City": "臺北市", "Town": "大同區" },
+      "PositionLat": 25.059341,
+      "PositionLon": 121.515039,
+      "Images": [
+        {
+          "Name": "臺灣新文化運動紀念館_劉佳雯攝",
+          "URL": "https://www.travel.taipei/content/images/attractions/180668/640x480_attractions-image-hthmijxaxkev7xoupichlg.jpg"
+        }
+      ],
+      "UpdateTime": "2026-06-22T15:29:37+08:00"
+    },
+    {
+      "AttractionID": "Attraction_379000000A_001875",
+      "AttractionName": "非畫廊Beyond Gallery",
+      "AttractionClasses": [1, 5, 6, 12, 25],
+      "ServiceTimeInfo": "",
+      "FeeInfo": "",
+      "Tags": [],
+      "PostalAddress": { "City": "臺北市", "Town": "中山區" },
+      "PositionLat": 25.049806,
+      "PositionLon": 121.522432,
+      "Images": [
+        {
+          "Name": "非畫廊LOGO-攝影/許宜容",
+          "URL": "https://www.travel.taipei/content/images/attractions/174540/640x480_attractions-image--vfmmmy0buetrxztptmlga.jpg"
+        }
+      ],
+      "UpdateTime": "2026-06-22T15:24:32+08:00"
+    },
+    {
+      "AttractionID": "Attraction_379000000A_001589",
+      "AttractionName": "中山北路條通商圈",
+      "AttractionClasses": [1, 6, 12, 27],
+      "ServiceTimeInfo": "",
+      "FeeInfo": "",
+      "Tags": [],
+      "PostalAddress": { "City": "臺北市", "Town": "中山區" },
+      "PositionLat": 25.05165,
+      "PositionLon": 121.52264,
+      "Images": [
+        {
+          "Name": "中山北路條通商圈-8條通街景-攝影/高讚賢",
+          "URL": "https://www.travel.taipei/content/images/attractions/88133/640x480_attractions-image-9oe8brpc2eesnnjusqjpva.jpg"
+        }
+      ],
+      "UpdateTime": "2026-06-18T13:51:00+08:00"
+    },
+    {
+      "AttractionID": "Attraction_379000000A_001864",
+      "AttractionName": "誠品畫廊",
+      "AttractionClasses": [1, 5, 6, 12, 25],
+      "ServiceTimeInfo": "",
+      "FeeInfo": "",
+      "Tags": [],
+      "PostalAddress": { "City": "臺北市", "Town": "信義區" },
+      "PositionLat": 25.04455,
+      "PositionLon": 121.56146,
+      "Images": [
+        {
+          "Name": "誠品畫廊_劉佳雯攝",
+          "URL": "https://www.travel.taipei/content/images/attractions/181582/640x480_attractions-image-itxyv8qd0kizwkg9uagp5w.jpg"
+        }
+      ],
+      "UpdateTime": "2026-06-18T11:20:54+08:00"
+    }
+  ],
+  "restaurant": [],
+  "hotel": [
+    {
+      "HotelID": "Hotel_A15010000H_006209",
+      "HotelName": "台北福華大飯店·傲途格精選",
+      "HotelClasses": [1],
+      "HotelStars": 0,
+      "LowestPrice": 9500,
+      "CeilingPrice": 55000,
+      "PostalAddress": { "City": "臺北市", "Town": "大安區" },
+      "PositionLat": 25.0377104,
+      "PositionLon": 121.5431762,
+      "Images": [
+        {
+          "Description": "",
+          "Name": "豪華單床房",
+          "URL": "https://taiwan.taiwanstay.net.tw/twpic/58095.JPG?v=20261104"
+        }
+      ],
+      "UpdateTime": "2026-11-03T08:58:25+08:00",
+      "ServiceTimeInfo": ""
+    },
+    {
+      "HotelID": "Hotel_A15010000H_006553",
+      "HotelName": "銀好宜崌台北會館",
+      "HotelClasses": [2],
+      "HotelStars": 0,
+      "LowestPrice": 8800,
+      "CeilingPrice": 36080,
+      "PostalAddress": { "City": "臺北市", "Town": "大安區" },
+      "PositionLat": 25.0228567,
+      "PositionLon": 121.5372832,
+      "Images": [
+        {
+          "Description": "定　　價：NT$ 32,800+10%房間坪數：約24坪床　　型：一張雙人床(尺寸200cm×200cmx1)設　　備：電子感應式卡片門鎖、Free WIFI與寬頻上網、冰箱、吹風機、紅外線保暖燈、免治馬桶、電熱水壺、專用保險箱、直撥電話、液晶電視、變壓器(110V)；採用美國KOHLER、義大利SCARABEO衛浴設備，及德國HANSGROHE配件。",
+          "Name": "福容套房",
+          "URL": "https://taiwan.taiwanstay.net.tw/twpic/58239.JPG?v=20261104"
+        }
+      ],
+      "UpdateTime": "2026-10-30T16:45:37+08:00",
+      "ServiceTimeInfo": ""
+    },
+    {
+      "HotelID": "Hotel_A15010000H_000634",
+      "HotelName": "新榮大旅社",
+      "HotelClasses": [3],
+      "HotelStars": 0,
+      "LowestPrice": 2000,
+      "CeilingPrice": 4000,
+      "PostalAddress": { "City": "臺北市", "Town": "士林區" },
+      "PositionLat": 25.0882139,
+      "PositionLon": 121.52642,
+      "UpdateTime": "2026-10-30T11:30:11+08:00",
+      "ServiceTimeInfo": ""
+    },
+    {
+      "HotelID": "Hotel_A15010000H_027207",
+      "HotelName": "和苑三井花園飯店  台北忠孝",
+      "HotelClasses": [3],
+      "HotelStars": 0,
+      "LowestPrice": 16500,
+      "CeilingPrice": 40000,
+      "PostalAddress": { "City": "臺北市", "Town": "大安區" },
+      "PositionLat": 25.0418375,
+      "PositionLon": 121.5343789,
+      "Images": [
+        {
+          "Description": "客房空間與浴廁皆採用寬敞的設計，無論是輪椅使用者還是高齡者，所有的貴賓皆能安心入住。",
+          "Name": "無障礙客房 - Queen",
+          "URL": "https://taiwan.taiwanstay.net.tw/twpic/126611.JPG?v=20261104"
+        }
+      ],
+      "UpdateTime": "2026-10-29T13:57:56+08:00",
+      "ServiceTimeInfo": ""
+    },
+    {
+      "HotelID": "Hotel_A15010000H_034960",
+      "HotelName": "藝築文旅昆明館",
+      "HotelClasses": [3],
+      "HotelStars": 0,
+      "LowestPrice": 45800,
+      "CeilingPrice": 49800,
+      "PostalAddress": { "City": "臺北市", "Town": "萬華區" },
+      "PositionLat": 25.042855,
+      "PositionLon": 121.504849,
+      "UpdateTime": "2026-10-27T16:12:16+08:00",
+      "ServiceTimeInfo": ""
+    },
+    {
+      "HotelID": "Hotel_A15010000H_030115",
+      "HotelName": "藝築文旅台北站前館",
+      "HotelClasses": [3],
+      "HotelStars": 0,
+      "LowestPrice": 28800,
+      "CeilingPrice": 39800,
+      "PostalAddress": { "City": "臺北市", "Town": "中正區" },
+      "PositionLat": 25.0433578,
+      "PositionLon": 121.5135797,
+      "Images": [
+        {
+          "Description": "無障礙客房",
+          "Name": "無障礙客房",
+          "URL": "https://taiwan.taiwanstay.net.tw/twpic/209758.jpg?v=20261104"
+        }
+      ],
+      "UpdateTime": "2026-10-27T15:23:22+08:00",
+      "ServiceTimeInfo": ""
+    },
+    {
+      "HotelID": "Hotel_A15010000H_018013",
+      "HotelName": "洛碁大飯店舞衣南京館",
+      "HotelClasses": [3],
+      "HotelStars": 0,
+      "LowestPrice": 3000,
+      "CeilingPrice": 18000,
+      "PostalAddress": { "City": "臺北市", "Town": "中山區" },
+      "PositionLat": 25.052306,
+      "PositionLon": 121.535985,
+      "Images": [
+        {
+          "Description": "",
+          "Name": "精緻一大床客房",
+          "URL": "https://taiwan.taiwanstay.net.tw/twpic/62160.jpg?v=20261104"
+        }
+      ],
+      "UpdateTime": "2026-10-27T10:30:21+08:00",
+      "ServiceTimeInfo": ""
+    },
+    {
+      "HotelID": "Hotel_A15010000H_018125",
+      "HotelName": "香樹花園酒店",
+      "HotelClasses": [3],
+      "HotelStars": 0,
+      "LowestPrice": 18000,
+      "CeilingPrice": 67500,
+      "PostalAddress": { "City": "臺北市", "Town": "中山區" },
+      "PositionLat": 25.0839574,
+      "PositionLon": 121.5603251,
+      "Images": [
+        {
+          "Description": "無障礙客房",
+          "Name": "無障礙客房",
+          "URL": "https://taiwan.taiwanstay.net.tw/twpic/208625.jpg?v=20261104"
+        }
+      ],
+      "UpdateTime": "2026-10-27T10:29:05+08:00",
+      "ServiceTimeInfo": ""
+    },
+    {
+      "HotelID": "Hotel_A15010000H_004943",
+      "HotelName": "台北艾麗酒店",
+      "HotelClasses": [2],
+      "HotelStars": 0,
+      "LowestPrice": 15000,
+      "CeilingPrice": 160000,
+      "PostalAddress": { "City": "臺北市", "Town": "信義區" },
+      "PositionLat": 25.0389721,
+      "PositionLon": 121.5674857,
+      "Images": [
+        {
+          "Description": "富質感的木質裝潢，結合舒適的照明設計，創造精緻又溫暖的氛圍。舒適的起居空間及完備的設施服務，讓商務和休閒目的旅客，感受實用與品味並存的住宿體驗。",
+          "Name": "景隅豪華客房 一大床",
+          "URL": "https://taiwan.taiwanstay.net.tw/twpic/356966.jpg?v=20261104"
+        }
+      ],
+      "UpdateTime": "2026-10-22T16:22:54+08:00",
+      "ServiceTimeInfo": ""
+    },
+    {
+      "HotelID": "Hotel_A15010000H_011982",
+      "HotelName": "新驛旅店復興北路店",
+      "HotelClasses": [3],
+      "HotelStars": 0,
+      "LowestPrice": 9600,
+      "CeilingPrice": 15500,
+      "PostalAddress": { "City": "臺北市", "Town": "中山區" },
+      "PositionLat": 25.0595347,
+      "PositionLon": 121.5439625,
+      "Images": [
+        {
+          "Description": "旅店設置有標準設置的無障礙客房，方便年長及行動不便者或親子入住，輔助式安全衛浴空間讓住宿更安全無慮。",
+          "Name": "無障礙雅緻客房",
+          "URL": "https://taiwan.taiwanstay.net.tw/twpic/80889.jpg?v=20261104"
+        }
+      ],
+      "UpdateTime": "2026-10-21T14:03:05+08:00",
+      "ServiceTimeInfo": ""
+    },
+    {
+      "HotelID": "Hotel_A15010000H_010032",
+      "HotelName": "台北漢來大飯店",
+      "HotelClasses": [2],
+      "HotelStars": 0,
+      "LowestPrice": 15000,
+      "CeilingPrice": 323400,
+      "PostalAddress": { "City": "臺北市", "Town": "南港區" },
+      "PositionLat": 25.0584249,
+      "PositionLon": 121.6193534,
+      "Images": [
+        {
+          "Description": "室內空間約13坪大，客房採光良好，沿著大面玻璃自然灑入的陽光呈現和諧氛圍，現代簡約的設計語彙，搭配舒適大床或兩床設計，盡情享受豐富多樣的起居生活美感。",
+          "Name": "豪華客房",
+          "URL": "https://taiwan.taiwanstay.net.tw/twpic/229051.jpg?v=20261104"
+        }
+      ],
+      "UpdateTime": "2026-10-21T10:22:53+08:00",
+      "ServiceTimeInfo": ""
+    },
+    {
+      "HotelID": "Hotel_A15010000H_021843",
+      "HotelName": "國聯大飯店",
+      "HotelClasses": [1],
+      "HotelStars": 0,
+      "LowestPrice": 20000,
+      "CeilingPrice": 120000,
+      "PostalAddress": { "City": "臺北市", "Town": "大安區" },
+      "PositionLat": 25.0422007,
+      "PositionLon": 121.5575138,
+      "Images": [
+        {
+          "Description": "簡樸素雅、精巧舒適的客房設計，完備的客房設施，讓您卸下旅途的疲憊，創造一夜好眠的恬靜空間。提供三間無障礙客房",
+          "Name": "精緻客房-無障礙房",
+          "URL": "https://taiwan.taiwanstay.net.tw/twpic/353944.jpg?v=20261104"
+        }
+      ],
+      "UpdateTime": "2026-10-19T17:18:08+08:00",
+      "ServiceTimeInfo": ""
+    },
+    {
+      "HotelID": "Hotel_A15010000H_006400",
+      "HotelName": "京都商務旅館",
+      "HotelClasses": [3],
+      "HotelStars": 0,
+      "LowestPrice": 3000,
+      "CeilingPrice": 11000,
+      "PostalAddress": { "City": "臺北市", "Town": "中山區" },
+      "PositionLat": 25.054645,
+      "PositionLon": 121.5249904,
+      "Images": [
+        {
+          "Description": "",
+          "Name": "京都套房",
+          "URL": "https://taiwan.taiwanstay.net.tw/twpic/314934.jpg?v=20261104"
+        }
+      ],
+      "UpdateTime": "2026-10-14T17:42:57+08:00",
+      "ServiceTimeInfo": ""
+    },
+    {
+      "HotelID": "Hotel_A15010000H_007942",
+      "HotelName": "旅樂序精品旅館五館",
+      "HotelClasses": [3],
+      "HotelStars": 0,
+      "LowestPrice": 5200,
+      "CeilingPrice": 6400,
+      "PostalAddress": { "City": "臺北市", "Town": "中正區" },
+      "PositionLat": 25.049577,
+      "PositionLon": 121.513627,
+      "UpdateTime": "2026-10-14T17:08:27+08:00",
+      "ServiceTimeInfo": ""
+    },
+    {
+      "HotelID": "Hotel_A15010000H_016279",
+      "HotelName": "凱達大飯店",
+      "HotelClasses": [3],
+      "HotelStars": 0,
+      "LowestPrice": 9800,
+      "CeilingPrice": 68800,
+      "PostalAddress": { "City": "臺北市", "Town": "萬華區" },
+      "PositionLat": 25.033235,
+      "PositionLon": 121.49973,
+      "UpdateTime": "2026-10-14T10:43:04+08:00",
+      "ServiceTimeInfo": ""
+    },
+    {
+      "HotelID": "Hotel_A15010000H_006597",
+      "HotelName": "北投老爺酒店",
+      "HotelClasses": [2],
+      "HotelStars": 0,
+      "LowestPrice": 17600,
+      "CeilingPrice": 33000,
+      "PostalAddress": { "City": "臺北市", "Town": "北投區" },
+      "PositionLat": 25.137498,
+      "PositionLon": 121.5015353,
+      "Images": [
+        {
+          "Description": "客房空間配置各項無障礙裝置及機動性設計，設計簡潔雅緻，於舒適寬敞的長型沙發放鬆休憩，享受寧靜時刻。",
+          "Name": "愛心客房",
+          "URL": "https://taiwan.taiwanstay.net.tw/twpic/203299.jpg?v=20261104"
+        }
+      ],
+      "UpdateTime": "2026-10-13T15:12:27+08:00",
+      "ServiceTimeInfo": ""
+    },
+    {
+      "HotelID": "Hotel_A15010000H_005967",
+      "HotelName": "富驛時尚酒店",
+      "HotelClasses": [3],
+      "HotelStars": 0,
+      "LowestPrice": 7590,
+      "CeilingPrice": 21620,
+      "PostalAddress": { "City": "臺北市", "Town": "中山區" },
+      "PositionLat": 25.0521378,
+      "PositionLon": 121.5406655,
+      "Images": [
+        {
+          "Description": "",
+          "Name": "舒適房(無窗)(無障礙客房)",
+          "URL": "https://taiwan.taiwanstay.net.tw/twpic/100113.jpg?v=20261104"
+        }
+      ],
+      "UpdateTime": "2026-10-13T10:16:34+08:00",
+      "ServiceTimeInfo": ""
+    },
+    {
+      "HotelID": "Hotel_A15010000H_012199",
+      "HotelName": "台北萬豪酒店",
+      "HotelClasses": [1],
+      "HotelStars": 5,
+      "LowestPrice": 17000,
+      "CeilingPrice": 200000,
+      "PostalAddress": { "City": "臺北市", "Town": "中山區" },
+      "PositionLat": 25.0805104,
+      "PositionLon": 121.5571268,
+      "Images": [
+        {
+          "Description": "客房裝潢以溫暖的大地色系為基調，簡約時尚的設計風格，搭配大片落地玻璃窗，讓自然陽光灑入，住客能在舒適的房間內，遠眺樹海美景及飽覽台北大都會景觀。簡潔俐落的線條經過細節化處理，呈現客房空間設計的時尚氛圍及本真之美。有機會飽覽台北知名地標《美麗華摩天輪》之景觀。",
+          "Name": "經典客房",
+          "URL": "https://taiwan.taiwanstay.net.tw/twpic/188730.jpg?v=20261104"
+        }
+      ],
+      "UpdateTime": "2026-10-08T15:52:26+08:00",
+      "ServiceTimeInfo": ""
+    },
+    {
+      "HotelID": "Hotel_A15010000H_010121",
+      "HotelName": "台北中山雅樂軒酒店",
+      "HotelClasses": [2],
+      "HotelStars": 0,
+      "LowestPrice": 14000,
+      "CeilingPrice": 17000,
+      "PostalAddress": { "City": "臺北市", "Town": "中山區" },
+      "PositionLat": 25.063136,
+      "PositionLon": 121.524445,
+      "Images": [
+        {
+          "Description": "房內坪數11坪，提供浴缸的沐浴空間讓您舒緩身心。全館免費上網、獨立空調與大片窗景；同時提供充足的辦公空間、king size 尺寸的斯林佰蘭床墊與舒適枕頭為您的旅行提供絕佳休憩。",
+          "Name": "呼風樂窩",
+          "URL": "https://taiwan.taiwanstay.net.tw/twpic/331649.jpg?v=20261104"
+        }
+      ],
+      "UpdateTime": "2026-10-07T10:51:15+08:00",
+      "ServiceTimeInfo": ""
+    },
+    {
+      "HotelID": "Hotel_A15010000H_003045",
+      "HotelName": "太平洋商旅",
+      "HotelClasses": [3],
+      "HotelStars": 0,
+      "LowestPrice": 18000,
+      "CeilingPrice": 30000,
+      "PostalAddress": { "City": "臺北市", "Town": "信義區" },
+      "PositionLat": 25.032465,
+      "PositionLon": 121.557637,
+      "UpdateTime": "2026-10-06T15:49:47+08:00",
+      "ServiceTimeInfo": ""
+    },
+    {
+      "HotelID": "Hotel_A15010000H_011560",
+      "HotelName": "密都大飯店",
+      "HotelClasses": [3],
+      "HotelStars": 0,
+      "LowestPrice": 10800,
+      "CeilingPrice": 16800,
+      "PostalAddress": { "City": "臺北市", "Town": "中山區" },
+      "PositionLat": 25.054569,
+      "PositionLon": 121.538343,
+      "UpdateTime": "2026-10-06T13:41:41+08:00",
+      "ServiceTimeInfo": ""
+    },
+    {
+      "HotelID": "Hotel_A15010000H_038495",
+      "HotelName": "嵨開安旅Hotel Uketamo",
+      "HotelClasses": [3],
+      "HotelStars": 0,
+      "LowestPrice": 6600,
+      "CeilingPrice": 43890,
+      "PostalAddress": { "City": "臺北市", "Town": "大安區" },
+      "PositionLat": 25.040346,
+      "PositionLon": 121.543994,
+      "UpdateTime": "2026-10-02T19:59:08+08:00",
+      "ServiceTimeInfo": ""
+    },
+    {
+      "HotelID": "Hotel_A15010000H_026221",
+      "HotelName": "瀚寓酒店",
+      "HotelClasses": [3],
+      "HotelStars": 0,
+      "LowestPrice": 25000,
+      "CeilingPrice": 88000,
+      "PostalAddress": { "City": "臺北市", "Town": "信義區" },
+      "PositionLat": 25.0397795,
+      "PositionLon": 121.563133,
+      "UpdateTime": "2026-10-02T17:22:14+08:00",
+      "ServiceTimeInfo": ""
+    },
+    {
+      "HotelID": "Hotel_A15010000H_011384",
+      "HotelName": "嶼光那那私旅",
+      "HotelClasses": [3],
+      "HotelStars": 0,
+      "LowestPrice": 18880,
+      "CeilingPrice": 20880,
+      "PostalAddress": { "City": "臺北市", "Town": "大同區" },
+      "PositionLat": 25.059099,
+      "PositionLon": 121.511621,
+      "UpdateTime": "2026-10-02T16:07:18+08:00",
+      "ServiceTimeInfo": ""
+    },
+    {
+      "HotelID": "Hotel_A15010000H_015006",
+      "HotelName": "皓林行旅 長安122",
+      "HotelClasses": [3],
+      "HotelStars": 0,
+      "LowestPrice": 1000,
+      "CeilingPrice": 5000,
+      "PostalAddress": { "City": "臺北市", "Town": "大同區" },
+      "PositionLat": 25.05061,
+      "PositionLon": 121.518124,
+      "UpdateTime": "2026-10-02T15:45:42+08:00",
+      "ServiceTimeInfo": ""
+    },
+    {
+      "HotelID": "Hotel_A15010000H_014676",
+      "HotelName": "家賓大旅社",
+      "HotelClasses": [3],
+      "HotelStars": 0,
+      "LowestPrice": 4000,
+      "CeilingPrice": 6000,
+      "PostalAddress": { "City": "臺北市", "Town": "文山區" },
+      "PositionLat": 24.991715,
+      "PositionLon": 121.541206,
+      "UpdateTime": "2026-10-02T10:45:34+08:00",
+      "ServiceTimeInfo": ""
+    },
+    {
+      "HotelID": "Hotel_A15010000H_012042",
+      "HotelName": "探索汽車旅館南港館",
+      "HotelClasses": [3],
+      "HotelStars": 0,
+      "LowestPrice": 3980,
+      "CeilingPrice": 19980,
+      "PostalAddress": { "City": "臺北市", "Town": "南港區" },
+      "PositionLat": 25.055584,
+      "PositionLon": 121.59715,
+      "Images": [
+        {
+          "Description": "",
+          "Name": "無障礙商務房",
+          "URL": "https://taiwan.taiwanstay.net.tw/twpic/209048.jpg?v=20261104"
+        }
+      ],
+      "UpdateTime": "2026-09-30T17:20:52+08:00",
+      "ServiceTimeInfo": ""
+    },
+    {
+      "HotelID": "Hotel_A15010000H_038954",
+      "HotelName": "初食旅館(1館)",
+      "HotelClasses": [3],
+      "HotelStars": 0,
+      "LowestPrice": 60000,
+      "CeilingPrice": 104500,
+      "PostalAddress": { "City": "臺北市", "Town": "士林區" },
+      "PositionLat": 25.1051,
+      "PositionLon": 121.5259,
+      "UpdateTime": "2026-09-30T15:36:11+08:00",
+      "ServiceTimeInfo": ""
+    },
+    {
+      "HotelID": "Hotel_A15010000H_039705",
+      "HotelName": "立詳商旅",
+      "HotelClasses": [3],
+      "HotelStars": 0,
+      "LowestPrice": 1000,
+      "CeilingPrice": 30000,
+      "PostalAddress": { "City": "臺北市", "Town": "中正區" },
+      "PositionLat": 25.044665,
+      "PositionLon": 121.5149,
+      "UpdateTime": "2026-09-30T15:00:39+08:00",
+      "ServiceTimeInfo": ""
+    },
+    {
+      "HotelID": "Hotel_A15010000H_003369",
+      "HotelName": "天使青旅",
+      "HotelClasses": [3],
+      "HotelStars": 0,
+      "LowestPrice": 63000,
+      "CeilingPrice": 63000,
+      "PostalAddress": { "City": "臺北市", "Town": "中正區" },
+      "PositionLat": 25.042786,
+      "PositionLon": 121.51219,
+      "UpdateTime": "2026-09-24T10:04:36+08:00",
+      "ServiceTimeInfo": ""
+    },
+    {
+      "HotelID": "Hotel_A15010000H_029974",
+      "HotelName": "路徒PLUS行旅-站前館",
+      "HotelClasses": [3],
+      "HotelStars": 0,
+      "LowestPrice": 33888,
+      "CeilingPrice": 48888,
+      "PostalAddress": { "City": "臺北市", "Town": "中正區" },
+      "PositionLat": 25.0469491,
+      "PositionLon": 121.5137679,
+      "Images": [
+        {
+          "Description": "路徒Plus行旅站前館-標準雙人房(無窗)客房面積：15平方米床型尺寸：1張雙人床客房設施：免治馬桶，無窗，保險箱，書桌，液晶/平面電視，串流影音平台，電話，WIFI，電熱水壺，冰箱，吹風機，清潔用品，私人衛浴，衛生紙，毛巾，空調",
+          "Name": "標準雙人房(無窗)",
+          "URL": "https://taiwan.taiwanstay.net.tw/twpic/139835.jpg?v=20261104"
+        }
+      ],
+      "UpdateTime": "2026-09-21T16:50:31+08:00",
+      "ServiceTimeInfo": ""
+    },
+    {
+      "HotelID": "Hotel_A15010000H_028172",
+      "HotelName": "路徒PLUS行旅-主題館",
+      "HotelClasses": [3],
+      "HotelStars": 0,
+      "LowestPrice": 18880,
+      "CeilingPrice": 43880,
+      "PostalAddress": { "City": "臺北市", "Town": "中正區" },
+      "PositionLat": 25.0471429014611,
+      "PositionLon": 121.514562231561,
+      "Images": [
+        {
+          "Description": "標準雙人房客房面積：20平方米床型尺寸：1張雙人床客房設施：無窗，免治馬桶，保險箱，書桌，液晶/平面電視，串流影音平台，電話，WIFI，電熱水壺，冰箱，吹風機，清潔用品，私人衛浴，衛生紙，毛巾，空調",
+          "Name": "標準雙人房(無窗)",
+          "URL": "https://taiwan.taiwanstay.net.tw/twpic/336214.jpg?v=20261104"
+        }
+      ],
+      "UpdateTime": "2026-09-21T16:28:13+08:00",
+      "ServiceTimeInfo": ""
+    },
+    {
+      "HotelID": "Hotel_A15010000H_037705",
+      "HotelName": "茶色部屋行旅 站前館",
+      "HotelClasses": [3],
+      "HotelStars": 0,
+      "LowestPrice": 2800,
+      "CeilingPrice": 50000,
+      "PostalAddress": { "City": "臺北市", "Town": "中正區" },
+      "PositionLat": 25.0631951,
+      "PositionLon": 121.5151076,
+      "UpdateTime": "2026-09-11T13:48:46+08:00",
+      "ServiceTimeInfo": ""
+    },
+    {
+      "HotelID": "Hotel_A15010000H_039631",
+      "HotelName": "臺北洲際酒店",
+      "HotelClasses": [3],
+      "HotelStars": 0,
+      "LowestPrice": 60000,
+      "CeilingPrice": 588000,
+      "PostalAddress": { "City": "臺北市", "Town": "信義區" },
+      "PositionLat": 25.03899,
+      "PositionLon": 121.56135,
+      "UpdateTime": "2026-09-10T16:07:11+08:00",
+      "ServiceTimeInfo": ""
+    },
+    {
+      "HotelID": "Hotel_A15010000H_001187",
+      "HotelName": "台北君品大酒店",
+      "HotelClasses": [2],
+      "HotelStars": 5,
+      "LowestPrice": 15939,
+      "CeilingPrice": 289674,
+      "PostalAddress": { "City": "臺北市", "Town": "大同區" },
+      "PositionLat": 25.0494562,
+      "PositionLon": 121.5168704,
+      "Images": [
+        {
+          "Description": "行政客房佔地11坪，位於酒店的10－12樓，可鳥瞰台北西區的迷人夜景。成熟的色調與氛圍，充滿了法式新古典的風情，獨立的淋浴間與圓形浴缸，充分體驗五星級酒店的尊榮。房內設置先進的視聽及商務設備。尊榮禮遇：可至17樓翰林軒VIP Lounge，免費享用飲料輕食服務，特殊專案除外。(僅提供12歲以上成年貴賓使用)",
+          "Name": "行政客房(一中床或一大床)",
+          "URL": "https://taiwan.taiwanstay.net.tw/twpic/149905.jpg?v=20261104"
+        }
+      ],
+      "UpdateTime": "2026-09-10T14:51:48+08:00",
+      "ServiceTimeInfo": ""
+    },
+    {
+      "HotelID": "Hotel_A15010000H_011647",
+      "HotelName": "新驛旅店",
+      "HotelClasses": [3],
+      "HotelStars": 0,
+      "LowestPrice": 6000,
+      "CeilingPrice": 11000,
+      "PostalAddress": { "City": "臺北市", "Town": "中正區" },
+      "PositionLat": 25.046231,
+      "PositionLon": 121.514309,
+      "Images": [
+        {
+          "Description": "",
+          "Name": "無障礙客房",
+          "URL": "https://taiwan.taiwanstay.net.tw/twpic/99700.jpg?v=20261104"
+        }
+      ],
+      "UpdateTime": "2026-09-10T11:42:58+08:00",
+      "ServiceTimeInfo": ""
+    },
+    {
+      "HotelID": "Hotel_A15010000H_016903",
+      "HotelName": "福泰桔子商務旅館西門店",
+      "HotelClasses": [3],
+      "HotelStars": 0,
+      "LowestPrice": 6800,
+      "CeilingPrice": 7800,
+      "PostalAddress": { "City": "臺北市", "Town": "萬華區" },
+      "PositionLat": 25.041805,
+      "PositionLon": 121.507783,
+      "Images": [
+        {
+          "Description": "單一大床型設計，搭配行李收納功能，以美式摩登現代風格打造，簡約明亮的視覺空間，配合環保節能概念，呈現「 Small is beautiful 」的美學思維。桔子西門邀請您一同來細細品嚐其中美好。",
+          "Name": "桔子客房",
+          "URL": "https://taiwan.taiwanstay.net.tw/twpic/126317.jpg?v=20261104"
+        }
+      ],
+      "UpdateTime": "2026-09-09T11:26:38+08:00",
+      "ServiceTimeInfo": ""
+    },
+    {
+      "HotelID": "Hotel_A15010000H_002267",
+      "HotelName": "亞都麗緻大飯店",
+      "HotelClasses": [1],
+      "HotelStars": 5,
+      "LowestPrice": 14784,
+      "CeilingPrice": 113190,
+      "PostalAddress": { "City": "臺北市", "Town": "中山區" },
+      "PositionLat": 25.062774,
+      "PositionLon": 121.529818,
+      "Images": [
+        {
+          "Description": "",
+          "Name": "卓越客房",
+          "URL": "https://taiwan.taiwanstay.net.tw/twpic/88365.jpg?v=20261104"
+        }
+      ],
+      "UpdateTime": "2026-09-08T15:26:17+08:00",
+      "ServiceTimeInfo": ""
+    },
+    {
+      "HotelID": "Hotel_A15010000H_008149",
+      "HotelName": "國際大旅館",
+      "HotelClasses": [3],
+      "HotelStars": 0,
+      "LowestPrice": 2310,
+      "CeilingPrice": 3190,
+      "PostalAddress": { "City": "臺北市", "Town": "北投區" },
+      "PositionLat": 25.152305,
+      "PositionLon": 121.547971,
+      "UpdateTime": "2026-09-05T16:19:10+08:00",
+      "ServiceTimeInfo": ""
+    },
+    {
+      "HotelID": "Hotel_A15010000H_015244",
+      "HotelName": "喵喵有約青年旅社",
+      "HotelClasses": [3],
+      "HotelStars": 0,
+      "LowestPrice": 400,
+      "CeilingPrice": 45000,
+      "PostalAddress": { "City": "臺北市", "Town": "萬華區" },
+      "PositionLat": 25.044354,
+      "PositionLon": 121.507316,
+      "UpdateTime": "2026-09-01T16:53:23+08:00",
+      "ServiceTimeInfo": ""
+    },
+    {
+      "HotelID": "Hotel_A15010000H_008963",
+      "HotelName": "金都精緻溫泉飯店",
+      "HotelClasses": [3],
+      "HotelStars": 0,
+      "LowestPrice": 10500,
+      "CeilingPrice": 12800,
+      "PostalAddress": { "City": "臺北市", "Town": "北投區" },
+      "PositionLat": 25.136193,
+      "PositionLon": 121.507685,
+      "UpdateTime": "2026-09-01T16:32:19+08:00",
+      "ServiceTimeInfo": ""
+    },
+    {
+      "HotelID": "Hotel_A15010000H_000431",
+      "HotelName": "芝山璞旅",
+      "HotelClasses": [3],
+      "HotelStars": 0,
+      "LowestPrice": 5800,
+      "CeilingPrice": 15000,
+      "PostalAddress": { "City": "臺北市", "Town": "士林區" },
+      "PositionLat": 25.102408,
+      "PositionLon": 121.521487,
+      "UpdateTime": "2026-09-01T13:42:23+08:00",
+      "ServiceTimeInfo": ""
+    },
+    {
+      "HotelID": "Hotel_A15010000H_028176",
+      "HotelName": "台北時代寓所",
+      "HotelClasses": [3],
+      "HotelStars": 0,
+      "LowestPrice": 22000,
+      "CeilingPrice": 35000,
+      "PostalAddress": { "City": "臺北市", "Town": "中正區" },
+      "PositionLat": 25.043961,
+      "PositionLon": 121.523318,
+      "Images": [
+        {
+          "Description": "低層、輪椅無障礙設施、無障礙淋浴間、免費迷你吧、濃縮咖啡機、Wi-Fi 無線上網這間 30 平方米/322 平方呎客房為輪椅無障礙設施，設有一張特大床（180*200 厘米），配備 250 針織優質寢具及柔軟枕頭。這間現代客房提供咖啡機和泡茶用具、電子鬧鐘及客房內保險箱。在 55 吋高清電視上欣賞您最喜愛的節目，並享用免費迷你吧提供的飲品。在配備無障礙淋浴間、降低位置洗手盆及支撐扶手的寛敞浴室中徹底放鬆。除此之外，更包括 WiFi 無線上網、電風筒及浴袍等額外特色設備。",
+          "Name": "無障礙低層客房（特大床）",
+          "URL": "https://taiwan.taiwanstay.net.tw/twpic/275504.jpg?v=20261104"
+        }
+      ],
+      "UpdateTime": "2026-08-31T15:38:57+08:00",
+      "ServiceTimeInfo": ""
+    },
+    {
+      "HotelID": "Hotel_A15010000H_007103",
+      "HotelName": "鳳凰閣旅社",
+      "HotelClasses": [3],
+      "HotelStars": 0,
+      "LowestPrice": 6000,
+      "CeilingPrice": 12000,
+      "PostalAddress": { "City": "臺北市", "Town": "北投區" },
+      "PositionLat": 25.1361329,
+      "PositionLon": 121.5105003,
+      "UpdateTime": "2026-08-31T14:46:24+08:00",
+      "ServiceTimeInfo": ""
+    },
+    {
+      "HotelID": "Hotel_A15010000H_028320",
+      "HotelName": "大湖璞旅",
+      "HotelClasses": [3],
+      "HotelStars": 0,
+      "LowestPrice": 5000,
+      "CeilingPrice": 30000,
+      "PostalAddress": { "City": "臺北市", "Town": "內湖區" },
+      "PositionLat": 25.0733914,
+      "PositionLon": 121.6064016,
+      "UpdateTime": "2026-08-31T07:41:46+08:00",
+      "ServiceTimeInfo": ""
+    },
+    {
+      "HotelID": "Hotel_A15010000H_002700",
+      "HotelName": "長榮桂冠酒店 (台北)",
+      "HotelClasses": [3],
+      "HotelStars": 0,
+      "LowestPrice": 11500,
+      "CeilingPrice": 68000,
+      "PostalAddress": { "City": "臺北市", "Town": "中山區" },
+      "PositionLat": 25.0490267,
+      "PositionLon": 121.5332062,
+      "Images": [
+        {
+          "Description": "",
+          "Name": "高級客房Superior Room",
+          "URL": "https://taiwan.taiwanstay.net.tw/twpic/56767.jpg?v=20261104"
+        }
+      ],
+      "UpdateTime": "2026-08-30T12:27:26+08:00",
+      "ServiceTimeInfo": ""
+    },
+    {
+      "HotelID": "Hotel_A15010000H_017335",
+      "HotelName": "豪爵旅館",
+      "HotelClasses": [3],
+      "HotelStars": 0,
+      "LowestPrice": 1780,
+      "CeilingPrice": 6200,
+      "PostalAddress": { "City": "臺北市", "Town": "中山區" },
+      "PositionLat": 25.0651925,
+      "PositionLon": 121.5315419,
+      "Images": [
+        {
+          "Description": "",
+          "Name": "無障礙客房",
+          "URL": "https://taiwan.taiwanstay.net.tw/twpic/127004.jpg?v=20261104"
+        }
+      ],
+      "UpdateTime": "2026-08-28T16:39:04+08:00",
+      "ServiceTimeInfo": ""
+    },
+    {
+      "HotelID": "Hotel_A15010000H_036258",
+      "HotelName": "北投晶泉丰旅",
+      "HotelClasses": [3],
+      "HotelStars": 0,
+      "LowestPrice": 22000,
+      "CeilingPrice": 66000,
+      "PostalAddress": { "City": "臺北市", "Town": "北投區" },
+      "PositionLat": 25.1382859,
+      "PositionLon": 121.504675,
+      "UpdateTime": "2026-08-28T16:39:04+08:00",
+      "ServiceTimeInfo": ""
+    },
+    {
+      "HotelID": "Hotel_A15010000H_018746",
+      "HotelName": "台北花園大酒店",
+      "HotelClasses": [2],
+      "HotelStars": 5,
+      "LowestPrice": 16000,
+      "CeilingPrice": 32800,
+      "PostalAddress": { "City": "臺北市", "Town": "中正區" },
+      "PositionLat": 25.036599,
+      "PositionLon": 121.506914,
+      "Images": [
+        {
+          "Description": "",
+          "Name": "無障礙客房",
+          "URL": "https://taiwan.taiwanstay.net.tw/twpic/150218.jpg?v=20261104"
+        }
+      ],
+      "UpdateTime": "2026-08-28T10:15:49+08:00",
+      "ServiceTimeInfo": ""
+    },
+    {
+      "HotelID": "Hotel_A15010000H_013871",
+      "HotelName": "三德大飯店",
+      "HotelClasses": [1],
+      "HotelStars": 0,
+      "LowestPrice": 6000,
+      "CeilingPrice": 12000,
+      "PostalAddress": { "City": "臺北市", "Town": "大同區" },
+      "PositionLat": 25.0648361,
+      "PositionLon": 121.5185308,
+      "Images": [
+        {
+          "Description": "內設免費WIFI、空調、私人浴室、免治馬桶、盥洗用品、吹風機、保險箱、冰箱、液晶電視 附贈早餐兩客全館房型皆有對外窗戶，採光明亮此房型可提供加床服務，每晚TWD1200含服務費",
+          "Name": "標準雙人房",
+          "URL": "https://taiwan.taiwanstay.net.tw/twpic/60692.jpg?v=20261104"
+        }
+      ],
+      "UpdateTime": "2026-08-28T09:45:07+08:00",
+      "ServiceTimeInfo": ""
+    },
+    {
+      "HotelID": "Hotel_A15010000H_027661",
+      "HotelName": "JR東日本大飯店台北",
+      "HotelClasses": [1],
+      "HotelStars": 0,
+      "LowestPrice": 17325,
+      "CeilingPrice": 103950,
+      "PostalAddress": { "City": "臺北市", "Town": "中山區" },
+      "PositionLat": 25.0523025,
+      "PositionLon": 121.5413286,
+      "Images": [
+        {
+          "Description": "簡約舒適的機能空間溫潤的木質色調提升空間的柔和氣息，設計簡約，同時兼具滿足旅客體驗的各項機能設施。",
+          "Name": "都會客房",
+          "URL": "https://taiwan.taiwanstay.net.tw/twpic/139942.jpg?v=20261104"
+        }
+      ],
+      "UpdateTime": "2026-08-28T09:44:27+08:00",
+      "ServiceTimeInfo": ""
+    },
+    {
+      "HotelID": "Hotel_A15010000H_010480",
+      "HotelName": "享住旅店 Just Live Inn",
+      "HotelClasses": [3],
+      "HotelStars": 0,
+      "LowestPrice": 3450,
+      "CeilingPrice": 4650,
+      "PostalAddress": { "City": "臺北市", "Town": "中正區" },
+      "PositionLat": 25.0450915,
+      "PositionLon": 121.5146553,
+      "UpdateTime": "2026-08-27T12:43:05+08:00",
+      "ServiceTimeInfo": ""
+    },
+    {
+      "HotelID": "Hotel_A15010000H_002368",
+      "HotelName": "洛碁大飯店林森館",
+      "HotelClasses": [3],
+      "HotelStars": 0,
+      "LowestPrice": 3000,
+      "CeilingPrice": 17000,
+      "PostalAddress": { "City": "臺北市", "Town": "中山區" },
+      "PositionLat": 25.066754,
+      "PositionLon": 121.525825,
+      "Images": [
+        {
+          "Description": "本客房坪數(含陽台)約12坪，內有兩張加大雙人床.梳妝台.40寸液晶電視.日立冷氣等。",
+          "Name": "標準無窗雙人房",
+          "URL": "https://taiwan.taiwanstay.net.tw/twpic/56688.JPG?v=20261104"
+        }
+      ],
+      "UpdateTime": "2026-08-26T16:34:37+08:00",
+      "ServiceTimeInfo": ""
+    },
+    {
+      "HotelID": "Hotel_A15010000H_014011",
+      "HotelName": "洛碁大飯店花華分館",
+      "HotelClasses": [3],
+      "HotelStars": 0,
+      "LowestPrice": 3000,
+      "CeilingPrice": 18000,
+      "PostalAddress": { "City": "臺北市", "Town": "中正區" },
+      "PositionLat": 25.045219,
+      "PositionLon": 121.514068,
+      "Images": [
+        {
+          "Description": "",
+          "Name": "無障礙客房",
+          "URL": "https://taiwan.taiwanstay.net.tw/twpic/209122.JPG?v=20261104"
+        }
+      ],
+      "UpdateTime": "2026-08-26T16:09:45+08:00",
+      "ServiceTimeInfo": ""
+    },
+    {
+      "HotelID": "Hotel_A15010000H_003148",
+      "HotelName": "互舍商旅台北館",
+      "HotelClasses": [3],
+      "HotelStars": 0,
+      "LowestPrice": 3600,
+      "CeilingPrice": 36000,
+      "PostalAddress": { "City": "臺北市", "Town": "大同區" },
+      "PositionLat": 25.059433,
+      "PositionLon": 121.513387,
+      "UpdateTime": "2026-08-25T17:24:27+08:00",
+      "ServiceTimeInfo": ""
+    },
+    {
+      "HotelID": "Hotel_A15010000H_002666",
+      "HotelName": "雲富大飯店",
+      "HotelClasses": [3],
+      "HotelStars": 0,
+      "LowestPrice": 10000,
+      "CeilingPrice": 36000,
+      "PostalAddress": { "City": "臺北市", "Town": "中山區" },
+      "PositionLat": 25.05578,
+      "PositionLon": 121.52399,
+      "Images": [
+        {
+          "Description": "",
+          "Name": "標準雙人房-無窗",
+          "URL": "https://taiwan.taiwanstay.net.tw/twpic/306903.jpg?v=20261104"
+        }
+      ],
+      "UpdateTime": "2026-08-25T14:23:49+08:00",
+      "ServiceTimeInfo": ""
+    },
+    {
+      "HotelID": "Hotel_A15010000H_007890",
+      "HotelName": "台北松山意舍酒店",
+      "HotelClasses": [3],
+      "HotelStars": 0,
+      "LowestPrice": 3465,
+      "CeilingPrice": 135135,
+      "PostalAddress": { "City": "臺北市", "Town": "南港區" },
+      "PositionLat": 25.0492807,
+      "PositionLon": 121.5805022,
+      "Images": [
+        {
+          "Description": "●平均8.2坪/ 27平方公尺/ 291平方英尺●台北101壯麗美景及迷人的晚霞●1張雙人大床●至多2成人入住",
+          "Name": "101雙人房",
+          "URL": "https://taiwan.taiwanstay.net.tw/twpic/120999.jpg?v=20261104"
+        }
+      ],
+      "UpdateTime": "2026-08-25T09:24:35+08:00",
+      "ServiceTimeInfo": ""
+    },
+    {
+      "HotelID": "Hotel_A15010000H_002465",
+      "HotelName": "台北西門町意舍酒店",
+      "HotelClasses": [3],
+      "HotelStars": 0,
+      "LowestPrice": 3927,
+      "CeilingPrice": 18249,
+      "PostalAddress": { "City": "臺北市", "Town": "萬華區" },
+      "PositionLat": 25.0451617,
+      "PositionLon": 121.5055717,
+      "Images": [
+        {
+          "Description": "平均6.8坪 / 22平方公尺 / 242平方英尺1張150 x 200cm床2成人入住中庭景觀或西門町街景",
+          "Name": "酷樂房",
+          "URL": "https://taiwan.taiwanstay.net.tw/twpic/121615.jpg?v=20261104"
+        }
+      ],
+      "UpdateTime": "2026-08-25T09:21:51+08:00",
+      "ServiceTimeInfo": ""
+    },
+    {
+      "HotelID": "Hotel_A15010000H_007471",
+      "HotelName": "旅居文旅-松山驛站",
+      "HotelClasses": [3],
+      "HotelStars": 0,
+      "LowestPrice": 3000,
+      "CeilingPrice": 18000,
+      "PostalAddress": { "City": "臺北市", "Town": "松山區" },
+      "PositionLat": 25.0499142,
+      "PositionLon": 121.5741232,
+      "Images": [
+        {
+          "Description": "房間面積為2.5-3坪的精緻小巧空間，內有50吋高畫質聯網電視，免費無線WIFI、免費高畫質藍光電影，搭配有YouTube 、愛奇藝、手機投影等功能，更可以看Netflex，搭配乾溼分離式衛浴及免治馬桶，生活就是那麼簡單愜意。 翻譯英文 日文 簡體中文",
+          "Name": "標準雙人房",
+          "URL": "https://taiwan.taiwanstay.net.tw/twpic/350649.jpg?v=20261104"
+        }
+      ],
+      "UpdateTime": "2026-08-24T16:10:12+08:00",
+      "ServiceTimeInfo": ""
+    },
+    {
+      "HotelID": "Hotel_A15010000H_026181",
+      "HotelName": "MVSA 慕舍酒店",
+      "HotelClasses": [3],
+      "HotelStars": 0,
+      "LowestPrice": 18800,
+      "CeilingPrice": 36800,
+      "PostalAddress": { "City": "臺北市", "Town": "中山區" },
+      "PositionLat": 25.050739,
+      "PositionLon": 121.5371413,
+      "UpdateTime": "2026-08-24T14:57:09+08:00",
+      "ServiceTimeInfo": ""
+    },
+    {
+      "HotelID": "Hotel_A15010000H_032244",
+      "HotelName": "米窩飯店-站前",
+      "HotelClasses": [3],
+      "HotelStars": 0,
+      "LowestPrice": 8000,
+      "CeilingPrice": 13200,
+      "PostalAddress": { "City": "臺北市", "Town": "中正區" },
+      "PositionLat": 25.0460292,
+      "PositionLon": 121.5189853,
+      "Images": [
+        {
+          "Description": "",
+          "Name": "無障礙客房",
+          "URL": "https://taiwan.taiwanstay.net.tw/twpic/193543.jpg?v=20261104"
+        }
+      ],
+      "UpdateTime": "2026-08-21T15:16:27+08:00",
+      "ServiceTimeInfo": ""
+    },
+    {
+      "HotelID": "Hotel_A15010000H_007750",
+      "HotelName": "台北星辰旅館",
+      "HotelClasses": [3],
+      "HotelStars": 0,
+      "LowestPrice": 2580,
+      "CeilingPrice": 15000,
+      "PostalAddress": { "City": "臺北市", "Town": "中正區" },
+      "PositionLat": 25.0364555,
+      "PositionLon": 121.5275665,
+      "UpdateTime": "2026-08-21T15:15:46+08:00",
+      "ServiceTimeInfo": ""
+    },
+    {
+      "HotelID": "Hotel_A15010000H_014110",
+      "HotelName": "豪景大酒店",
+      "HotelClasses": [1],
+      "HotelStars": 0,
+      "LowestPrice": 4000,
+      "CeilingPrice": 10000,
+      "PostalAddress": { "City": "臺北市", "Town": "萬華區" },
+      "PositionLat": 25.044624,
+      "PositionLon": 121.501439,
+      "Images": [
+        {
+          "Description": "舒適的空間，典雅的設計，洗滌旅人們一身疲憊，可讓人恣意的放鬆心情。",
+          "Name": "高級三人房",
+          "URL": "https://taiwan.taiwanstay.net.tw/twpic/60783.jpg?v=20261104"
+        }
+      ],
+      "UpdateTime": "2026-08-21T11:15:36+08:00",
+      "ServiceTimeInfo": ""
+    },
+    {
+      "HotelID": "Hotel_A15010000H_006018",
+      "HotelName": "家美瑞品 台北",
+      "HotelClasses": [3],
+      "HotelStars": 0,
+      "LowestPrice": 7500,
+      "CeilingPrice": 24000,
+      "PostalAddress": { "City": "臺北市", "Town": "中正區" },
+      "PositionLat": 25.045977,
+      "PositionLon": 121.524295,
+      "Images": [
+        {
+          "Description": "房型約6坪、32吋衛星頻道平面電視、吹風機、迷你冰箱、快煮壺、免費茶包、咖啡包及礦泉水兩瓶、辦公桌、個人專屬電子保險箱、國際直撥電話系統、免費寬頻ADSL/無線WIFI網路系統(需自備電腦)、個人沙發椅、天鵝羽毛寢具、此房型不可加床。",
+          "Name": "標準客房",
+          "URL": "https://taiwan.taiwanstay.net.tw/twpic/127736.jpg?v=20261104"
+        }
+      ],
+      "UpdateTime": "2026-08-21T10:49:12+08:00",
+      "ServiceTimeInfo": ""
+    },
+    {
+      "HotelID": "Hotel_A15010000H_014359",
+      "HotelName": "台灣柒天精品旅店",
+      "HotelClasses": [3],
+      "HotelStars": 0,
+      "LowestPrice": 2000,
+      "CeilingPrice": 3000,
+      "PostalAddress": { "City": "臺北市", "Town": "萬華區" },
+      "PositionLat": 25.032096,
+      "PositionLon": 121.491184,
+      "Images": [
+        {
+          "Description": "",
+          "Name": "經濟雙人房",
+          "URL": "https://taiwan.taiwanstay.net.tw/twpic/348095.png?v=20261104"
+        }
+      ],
+      "UpdateTime": "2026-08-20T00:01:58+08:00",
+      "ServiceTimeInfo": ""
+    },
+    {
+      "HotelID": "Hotel_A15010000H_018835",
+      "HotelName": "歐華酒店",
+      "HotelClasses": [2],
+      "HotelStars": 0,
+      "LowestPrice": 10000,
+      "CeilingPrice": 30000,
+      "PostalAddress": { "City": "臺北市", "Town": "中山區" },
+      "PositionLat": 25.0680855,
+      "PositionLon": 121.5256372,
+      "Images": [
+        {
+          "Description": "",
+          "Name": "豪華房",
+          "URL": "https://taiwan.taiwanstay.net.tw/twpic/184989.jpg?v=20261104"
+        }
+      ],
+      "UpdateTime": "2026-08-18T14:01:54+08:00",
+      "ServiceTimeInfo": ""
+    },
+    {
+      "HotelID": "Hotel_A15010000H_021310",
+      "HotelName": "二十輪旅店",
+      "HotelClasses": [3],
+      "HotelStars": 0,
+      "LowestPrice": 12000,
+      "CeilingPrice": 20000,
+      "PostalAddress": { "City": "臺北市", "Town": "萬華區" },
+      "PositionLat": 25.0447195,
+      "PositionLon": 121.5062571,
+      "UpdateTime": "2026-08-12T14:37:25+08:00",
+      "ServiceTimeInfo": ""
+    },
+    {
+      "HotelID": "Hotel_A15010000H_018409",
+      "HotelName": "詩漫精品旅館",
+      "HotelClasses": [3],
+      "HotelStars": 0,
+      "LowestPrice": 9770,
+      "CeilingPrice": 11530,
+      "PostalAddress": { "City": "臺北市", "Town": "中正區" },
+      "PositionLat": 25.045804,
+      "PositionLon": 121.514708,
+      "UpdateTime": "2026-08-11T16:26:42+08:00",
+      "ServiceTimeInfo": ""
+    },
+    {
+      "HotelID": "Hotel_A15010000H_007253",
+      "HotelName": "台北W飯店",
+      "HotelClasses": [1],
+      "HotelStars": 0,
+      "LowestPrice": 20000,
+      "CeilingPrice": 365000,
+      "PostalAddress": { "City": "臺北市", "Town": "信義區" },
+      "PositionLat": 25.041379,
+      "PositionLon": 121.565563,
+      "Images": [
+        {
+          "Description": "",
+          "Name": "非凡套房",
+          "URL": "https://taiwan.taiwanstay.net.tw/twpic/233977.jpg?v=20261104"
+        }
+      ],
+      "UpdateTime": "2026-08-07T19:15:18+08:00",
+      "ServiceTimeInfo": ""
+    },
+    {
+      "HotelID": "Hotel_A15010000H_004372",
+      "HotelName": "鼎正國際商務旅館",
+      "HotelClasses": [3],
+      "HotelStars": 0,
+      "LowestPrice": 1000,
+      "CeilingPrice": 13500,
+      "PostalAddress": { "City": "臺北市", "Town": "大安區" },
+      "PositionLat": 25.0416641,
+      "PositionLon": 121.5514003,
+      "UpdateTime": "2026-08-07T09:13:33+08:00",
+      "ServiceTimeInfo": ""
+    },
+    {
+      "HotelID": "Hotel_A15010000H_039495",
+      "HotelName": "梧邸酒店 台北敦北",
+      "HotelClasses": [3],
+      "HotelStars": 0,
+      "LowestPrice": 21800,
+      "CeilingPrice": 80000,
+      "PostalAddress": { "City": "臺北市", "Town": "松山區" },
+      "PositionLat": 25.0547808830267,
+      "PositionLon": 121.548484981744,
+      "UpdateTime": "2026-08-06T16:42:38+08:00",
+      "ServiceTimeInfo": ""
+    },
+    {
+      "HotelID": "Hotel_A15010000H_038630",
+      "HotelName": "亞士都酒店",
+      "HotelClasses": [3],
+      "HotelStars": 0,
+      "LowestPrice": 15000,
+      "CeilingPrice": 20000,
+      "PostalAddress": { "City": "臺北市", "Town": "中山區" },
+      "PositionLat": 25.0505240685946,
+      "PositionLon": 121.5247112124,
+      "UpdateTime": "2026-08-05T15:51:56+08:00",
+      "ServiceTimeInfo": ""
+    },
+    {
+      "HotelID": "Hotel_A15010000H_019310",
+      "HotelName": "院院樂居",
+      "HotelClasses": [3],
+      "HotelStars": 0,
+      "LowestPrice": 8000,
+      "CeilingPrice": 15000,
+      "PostalAddress": { "City": "臺北市", "Town": "大同區" },
+      "PositionLat": 25.0634499,
+      "PositionLon": 121.5108546,
+      "UpdateTime": "2026-08-03T14:24:31+08:00",
+      "ServiceTimeInfo": ""
+    },
+    {
+      "HotelID": "Hotel_A15010000H_020950",
+      "HotelName": "雀客旅館",
+      "HotelClasses": [3],
+      "HotelStars": 0,
+      "LowestPrice": 9800,
+      "CeilingPrice": 12000,
+      "PostalAddress": { "City": "臺北市", "Town": "中山區" },
+      "PositionLat": 25.059604,
+      "PositionLon": 121.533422,
+      "Images": [
+        {
+          "Description": "",
+          "Name": "無障礙客房",
+          "URL": "https://taiwan.taiwanstay.net.tw/twpic/126282.jpg?v=20261104"
+        }
+      ],
+      "UpdateTime": "2026-08-03T10:12:05+08:00",
+      "ServiceTimeInfo": ""
+    },
+    {
+      "HotelID": "Hotel_A15010000H_008270",
+      "HotelName": "鴨川旅館",
+      "HotelClasses": [3],
+      "HotelStars": 0,
+      "LowestPrice": 1500,
+      "CeilingPrice": 4000,
+      "PostalAddress": { "City": "臺北市", "Town": "中山區" },
+      "PositionLat": 25.056591,
+      "PositionLon": 121.524859,
+      "UpdateTime": "2026-07-30T09:39:56+08:00",
+      "ServiceTimeInfo": ""
+    },
+    {
+      "HotelID": "Hotel_A15010000H_011706",
+      "HotelName": "富逸旅趣-大巨蛋館",
+      "HotelClasses": [3],
+      "HotelStars": 0,
+      "LowestPrice": 10000,
+      "CeilingPrice": 25000,
+      "PostalAddress": { "City": "臺北市", "Town": "大安區" },
+      "PositionLat": 25.041762,
+      "PositionLon": 121.553756,
+      "Images": [
+        {
+          "Description": "華麗經典的客房設計，提供名品精選的客房備品，舒適品味的完善設備，體驗賓至如歸與貼心服務的休憩空間",
+          "Name": "豪華客房",
+          "URL": "https://taiwan.taiwanstay.net.tw/twpic/60049.jpg?v=20261104"
+        }
+      ],
+      "UpdateTime": "2026-07-28T16:09:30+08:00",
+      "ServiceTimeInfo": ""
+    },
+    {
+      "HotelID": "Hotel_A15010000H_011637",
+      "HotelName": "儷客旅店-站前店",
+      "HotelClasses": [3],
+      "HotelStars": 0,
+      "LowestPrice": 3000,
+      "CeilingPrice": 21000,
+      "PostalAddress": { "City": "臺北市", "Town": "中正區" },
+      "PositionLat": 25.046821,
+      "PositionLon": 121.514056,
+      "UpdateTime": "2026-07-28T14:54:01+08:00",
+      "ServiceTimeInfo": ""
+    },
+    {
+      "HotelID": "Hotel_A15010000H_013399",
+      "HotelName": "拉開門輕旅",
+      "HotelClasses": [3],
+      "HotelStars": 0,
+      "LowestPrice": 20000,
+      "CeilingPrice": 30000,
+      "PostalAddress": { "City": "臺北市", "Town": "中正區" },
+      "PositionLat": 25.045306025,
+      "PositionLon": 121.525235,
+      "UpdateTime": "2026-07-24T17:40:07+08:00",
+      "ServiceTimeInfo": ""
+    },
+    {
+      "HotelID": "Hotel_A15010000H_008128",
+      "HotelName": "富逸旅趣-林森館",
+      "HotelClasses": [3],
+      "HotelStars": 0,
+      "LowestPrice": 10000,
+      "CeilingPrice": 15000,
+      "PostalAddress": { "City": "臺北市", "Town": "中山區" },
+      "PositionLat": 25.049771,
+      "PositionLon": 121.525798,
+      "UpdateTime": "2026-07-24T13:47:20+08:00",
+      "ServiceTimeInfo": ""
+    },
+    {
+      "HotelID": "Hotel_A15010000H_004524",
+      "HotelName": "臺北車站智選假日酒店",
+      "HotelClasses": [3],
+      "HotelStars": 3,
+      "LowestPrice": 8800,
+      "CeilingPrice": 12000,
+      "PostalAddress": { "City": "臺北市", "Town": "大同區" },
+      "PositionLat": 25.0523044,
+      "PositionLon": 121.5142547,
+      "Images": [
+        {
+          "Description": "",
+          "Name": "高級房 1大床",
+          "URL": "https://taiwan.taiwanstay.net.tw/twpic/301297.jpg?v=20261104"
+        }
+      ],
+      "UpdateTime": "2026-07-24T13:18:24+08:00",
+      "ServiceTimeInfo": ""
+    }
+  ],
+  "activity": [
+    {
+      "EventID": "Event_A15010000H_081733",
+      "EventName": "2026臺灣自行車旅遊節",
+      "EventClasses": [1],
+      "StartDateTime": "2026-09-01T00:00:00+08:00",
+      "EndDateTime": "2026-12-31T00:00:00+08:00",
+      "IsAccessibleForFree": 0,
+      "Tags": [],
+      "PostalAddress": { "City": "臺北市", "Town": "松山區" },
+      "PositionLat": 25.03534,
+      "PositionLon": 121.4765,
+      "Images": [
+        {
+          "Description": "",
+          "Name": "2025臺灣KOM太平洋經典賽-海岸騎乘挑戰",
+          "URL": "https://www.taiwan.net.tw/att/event/b10127c3-1ab9-496b-b569-5fc41fe6c36a.jpg"
+        }
+      ],
+      "UpdateTime": "2026-11-05T02:00:03+08:00",
+      "FeeInfo": ""
+    },
+    {
+      "EventID": "Event_A15010000H_081955",
+      "EventName": "2026 ITF台灣國際旅展 國家形象館",
+      "EventClasses": [1],
+      "StartDateTime": "2026-11-06T00:00:00+08:00",
+      "EndDateTime": "2026-11-09T00:00:00+08:00",
+      "IsAccessibleForFree": 0,
+      "Tags": [],
+      "PostalAddress": { "City": "臺北市", "Town": "南港區" },
+      "PositionLat": 25.05684,
+      "PositionLon": 121.6181,
+      "Images": [
+        {
+          "Description": "",
+          "Name": "臉書封面_大圖",
+          "URL": "https://www.taiwan.net.tw/att/event/6bb91012-c4fa-4d92-8c1d-c1b0e875ebde.jpg"
+        }
+      ],
+      "UpdateTime": "2026-11-05T02:00:03+08:00",
+      "FeeInfo": ""
+    },
+    {
+      "EventID": "Event_A15010800H_003593",
+      "EventName": "2026ITF台灣國際旅展",
+      "EventClasses": [2],
+      "StartDateTime": "2026-11-06T12:00:00+08:00",
+      "EndDateTime": "2026-11-09T18:00:00+08:00",
+      "IsAccessibleForFree": 0,
+      "Tags": [],
+      "PostalAddress": { "City": "臺北市", "Town": "南港區" },
+      "PositionLat": 25.05645,
+      "PositionLon": 121.61795,
+      "Images": [
+        {
+          "Name": "2026ITF台灣國際旅展",
+          "URL": "https://www.ali-nsa.net/image/33933/640x480"
+        }
+      ],
+      "UpdateTime": "2026-10-22T10:35:21+08:00",
+      "FeeInfo": ""
+    },
+    {
+      "EventID": "Event_A15010000H_081706",
+      "EventName": "2026臺北馬拉松",
+      "EventClasses": [1],
+      "StartDateTime": "2026-12-20T00:00:00+08:00",
+      "EndDateTime": "2026-12-20T00:00:00+08:00",
+      "IsAccessibleForFree": 0,
+      "Tags": [],
+      "PostalAddress": { "City": "臺北市", "Town": "信義區" },
+      "PositionLat": 25.03792,
+      "PositionLon": 121.5631,
+      "Images": [
+        {
+          "Description": "",
+          "Name": "臺北馬拉松正式開跑！選手們從起點線蜂湧而出！",
+          "URL": "https://www.taiwan.net.tw/att/event/d33e38e7-f5a1-409a-af49-2b0e42814c08.jpg"
+        }
+      ],
+      "UpdateTime": "2026-11-05T02:00:03+08:00",
+      "FeeInfo": ""
+    },
+    {
+      "EventID": "Event_A15010000H_081802",
+      "EventName": "2027臺北最HIGH新年城-跨年晚會",
+      "EventClasses": [1],
+      "StartDateTime": "2026-12-31T00:00:00+08:00",
+      "EndDateTime": "2027-01-01T00:00:00+08:00",
+      "IsAccessibleForFree": 0,
+      "Tags": [],
+      "PostalAddress": { "City": "臺北市", "Town": "信義區" },
+      "PositionLat": 25.03792,
+      "PositionLon": 121.5631,
+      "Images": [
+        {
+          "Description": "",
+          "Name": "跨年晚會每年皆吸引許多民眾參與並拍攝台北101煙火",
+          "URL": "https://www.taiwan.net.tw/att/event/90ec97bc-2be3-4da8-8770-c2adedea5860.jpg"
+        }
+      ],
+      "UpdateTime": "2026-11-05T02:00:03+08:00",
+      "FeeInfo": ""
+    }
+  ]
+}
