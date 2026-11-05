@@ -14,7 +14,8 @@
         "TDX_CLIENT_SECRET",
         "TDX_PREVIEW_CLIENT_ID",
         "TDX_PREVIEW_CLIENT_SECRET",
-        "VERCEL_ENV"
+        "VERCEL_ENV",
+        "VERCEL_PROJECT_PRODUCTION_URL"
       ],
       "inputs": ["$TURBO_DEFAULT$", ".env.*local", "$TURBO_ROOT$/.env*.local"],
       "outputs": [".next/**", "!.next/cache/**"]

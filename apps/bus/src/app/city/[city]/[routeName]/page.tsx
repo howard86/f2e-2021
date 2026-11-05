@@ -4,9 +4,11 @@ import type { Metadata } from 'next';
 import { notFound, redirect } from 'next/navigation';
 import { type GeoJSONLineString, parse } from 'wellknown';
 
+import { OPEN_GRAPH_BASE } from '@/constants/seo';
 import { busService } from '@/services/tdx';
 import { loadFixture, serveFixtures } from '@/utils/fixtures';
-import BusRouteView, { type RouteStopEntity } from './view';
+import type { RouteStopEntity } from '@/utils/route-stops';
+import BusRouteView from './view';
 
 export const revalidate = 86_400; // ONE_DAY; Next requires a literal
 
@@ -29,8 +31,19 @@ export const generateMetadata = async ({
 }: PageProps): Promise<Metadata> => {
   const { city, routeName } = await params;
 
+  const name = decode(routeName);
+  const cityName = CityMap[decode(city) as City] ?? decode(city);
+
+  const description = `「${name}」${cityName}公車即時動態、站牌與路線圖。`;
+  const title = `${name}-${cityName}`;
+
   return {
-    title: `Iro Bus | ${decode(routeName)}-${CityMap[decode(city) as City] ?? decode(city)}`,
+    alternates: {
+      canonical: `/city/${encodeURIComponent(decode(city))}/${encodeURIComponent(name)}`,
+    },
+    description,
+    openGraph: { ...OPEN_GRAPH_BASE, description, title },
+    title,
   };
 };
 
@@ -44,14 +57,6 @@ const BusRoutePage = async ({ params }: PageProps) => {
   }
 
   const fixtures = serveFixtures();
-
-  const [busRoute] = fixtures
-    ? await loadFixture.route()
-    : await busService.getBusRoutesByCityAndRouteName(city, routeName);
-
-  if (!busRoute) {
-    redirect('/city');
-  }
 
   const [busShapes, busStops] = await Promise.all([
     fixtures
@@ -83,12 +88,12 @@ const BusRoutePage = async ({ params }: PageProps) => {
 
   return (
     <BusRouteView
-      busRoute={busRoute}
       busStopEntity={routeStopEntity}
       city={city}
       directions={directions}
       geoJson={parse(busShape.Geometry) as GeoJSONLineString}
       routeName={routeName}
+      routeUid={busStops[0].RouteUID}
     />
   );
 };

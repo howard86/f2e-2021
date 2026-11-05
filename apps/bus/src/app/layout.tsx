@@ -1,9 +1,10 @@
 import 'mapbox-gl/dist/mapbox-gl.css';
 
-import type { Metadata } from 'next';
+import type { Metadata, Viewport } from 'next';
 import { Noto_Sans_TC } from 'next/font/google';
 import type { ReactNode } from 'react';
 
+import { OPEN_GRAPH_BASE, SITE_NAME } from '@/constants/seo';
 import Providers from './providers';
 
 const notoSansTC = Noto_Sans_TC({
@@ -12,8 +13,8 @@ const notoSansTC = Noto_Sans_TC({
   weight: ['400', '500', '700'],
 });
 
-const DESCRIPTION =
-  '設計理念的取名來自於公車與捷運都會以顏色做為路線的區分，能有助於乘客辨別搭乘路線，節省時間，因而取名為Iro Bus，Iro為日文顏色的意思。Iro Bus整體色系偏暗色，營造科技感，帶給乘客能自由的創新自己的公車路線，穿梭全台各地，輕鬆掌握全台的公車訊息。';
+const DESCRIPTION = '查詢全台公車路線、即時到站與附近站牌，輕鬆掌握公車動態。';
+const productionHost = process.env.VERCEL_PROJECT_PRODUCTION_URL;
 
 export const metadata: Metadata = {
   description: DESCRIPTION,
@@ -26,17 +27,19 @@ export const metadata: Metadata = {
   },
   manifest: '/site.webmanifest',
   metadataBase: new URL(
-    process.env.NEXT_PUBLIC_VERCEL_URL
-      ? `https://${process.env.NEXT_PUBLIC_VERCEL_URL}`
-      : 'http://localhost:3000',
+    productionHost ? `https://${productionHost}` : 'http://localhost:3000',
   ),
   openGraph: {
-    description:
-      '設計理念的取名來自於公車與捷運都會以顏色做為路線的區分，能有助於乘客辨別搭乘路線，節省時間',
-    images: ['/preview.jpg'],
-    title: 'Iro Bus',
+    ...OPEN_GRAPH_BASE,
+    description: DESCRIPTION,
+    title: SITE_NAME,
   },
-  title: 'Iro Bus',
+  title: { default: SITE_NAME, template: `%s | ${SITE_NAME}` },
+  twitter: { card: 'summary_large_image' },
+};
+
+export const viewport: Viewport = {
+  themeColor: '#60517B',
 };
 
 const RootLayout = ({ children }: { children: ReactNode }) => (

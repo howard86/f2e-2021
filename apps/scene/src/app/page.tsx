@@ -12,6 +12,7 @@ import SectionHeading from '@/components/ui/section-heading';
 import WeatherStrip from '@/components/weather/weather-strip';
 import { HOME_SECTION_SIZE } from '@/constants/pagination';
 import { listPath } from '@/lib/list-paths';
+import { backgroundImage, OPEN_GRAPH_BASE, SITE_NAME } from '@/lib/seo';
 import { listPlaces } from '@/services/places';
 import getWeathers from '@/services/weather';
 import mainBackground from '@/static/background/main.png';
@@ -23,12 +24,15 @@ const DESCRIPTION =
   '用景點、美食、住宿與活動規劃台灣旅程，資料來自交通部 TDX 觀光資訊。';
 
 export const metadata: Metadata = {
+  alternates: { canonical: '/' },
   description: DESCRIPTION,
   openGraph: {
+    ...OPEN_GRAPH_BASE,
     description: DESCRIPTION,
-    images: ['/static/background/main.png'],
+    images: [backgroundImage('main', SITE_NAME)],
+    title: SITE_NAME,
   },
-  title: '台灣旅遊導覽網',
+  title: { absolute: SITE_NAME },
 };
 
 const SECTION_TYPES: PlaceType[] = ['scene', 'restaurant', 'hotel'];

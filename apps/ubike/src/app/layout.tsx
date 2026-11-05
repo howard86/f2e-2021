@@ -17,7 +17,7 @@ const TITLE = 'uBike Travel';
 const DESCRIPTION =
   '深色版本的uBike Travel，使用者能租借腳踏車及根據地區尋找喜歡的騎乘路線';
 
-const vercelUrl = process.env.NEXT_PUBLIC_VERCEL_URL;
+const productionHost = process.env.VERCEL_PROJECT_PRODUCTION_URL;
 
 export const metadata: Metadata = {
   description: DESCRIPTION,
@@ -29,17 +29,24 @@ export const metadata: Metadata = {
     ],
   },
   manifest: '/site.webmanifest',
-  metadataBase: vercelUrl ? new URL(`https://${vercelUrl}`) : undefined,
+  metadataBase: new URL(
+    productionHost ? `https://${productionHost}` : 'http://localhost:3000',
+  ),
   openGraph: {
     description: DESCRIPTION,
-    images: ['/logo.png'],
+    images: [{ alt: TITLE, height: 141, url: '/logo.png', width: 279 }],
+    locale: 'zh_TW',
+    siteName: TITLE,
     title: TITLE,
+    type: 'website',
   },
-  title: TITLE,
+  title: { default: TITLE, template: `%s | ${TITLE}` },
+  twitter: { card: 'summary' },
 };
 
 export const viewport: Viewport = {
   initialScale: 1,
+  themeColor: '#FF4B1F',
   width: 'device-width',
 };
 

@@ -8,12 +8,7 @@ import {
   Tag,
   Text,
 } from '@chakra-ui/react';
-import {
-  BusDirection,
-  type BusEstimation,
-  type BusRoute,
-  type BusStopOfRoute,
-} from '@f2e/tdx-bus';
+import type { BusEstimation, BusStopOfRoute } from '@f2e/tdx-bus';
 import { NextImage as Image } from '@f2e/ui/next-image';
 import type { Dispatch, SetStateAction } from 'react';
 import { BiChevronLeft, BiChevronRight } from 'react-icons/bi';
@@ -27,7 +22,7 @@ import { getBusEstimationStatus } from '@/utils/bus';
 interface BusStopDrawerProps
   extends Omit<Drawer.RootProps, 'children' | 'onOpenChange' | 'open'> {
   busEstimation: BusEstimation;
-  busRoute: BusRoute;
+  destinationName: string;
   isOpen: boolean;
   onClose: VoidFunction;
   selectedBusStop: BusStopOfRoute;
@@ -45,7 +40,7 @@ export const ZoomLevel = {
 const BusStopDrawer = ({
   isOpen,
   onClose,
-  busRoute: route,
+  destinationName,
   selectedStopId,
   setSelectedStopId,
   busEstimation,
@@ -137,10 +132,7 @@ const BusStopDrawer = ({
             </Drawer.CloseTrigger>
             <Drawer.Body display="flex" flexDir="column" pt="0" zIndex="docked">
               <Text color="primary.200" lineClamp={1}>
-                往
-                {busEstimation.Direction === BusDirection.去程
-                  ? route.DestinationStopNameZh
-                  : route.DepartureStopNameZh}
+                往{destinationName}
               </Text>
               <HStack mx="auto" my="2">
                 <Button

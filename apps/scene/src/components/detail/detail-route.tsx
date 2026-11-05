@@ -4,6 +4,7 @@ import { notFound, redirect } from 'next/navigation';
 import { cache } from 'react';
 
 import Layout from '@/components/layout/layout';
+import { DEFAULT_OG_IMAGE, OPEN_GRAPH_BASE, TWITTER_BASE } from '@/lib/seo';
 import { getPlaceDetail } from '@/services/places';
 import { PLACE_CATEGORY, type PlaceType } from '@/types/place';
 
@@ -43,14 +44,17 @@ export const generateDetailMetadata = async (
   const image = detail.images[0]?.url;
 
   return {
+    alternates: { canonical: detail.href },
     description,
     openGraph: {
+      ...OPEN_GRAPH_BASE,
       description,
-      images: image ? [image] : undefined,
+      images: image ? [{ alt: detail.name, url: image }] : [DEFAULT_OG_IMAGE],
       title: detail.name,
       type: 'article',
     },
-    title: `台灣旅遊導覽網 | ${detail.name}`,
+    title: detail.name,
+    twitter: TWITTER_BASE,
   };
 };
 

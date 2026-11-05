@@ -16,6 +16,7 @@ import WeatherStrip from '@/components/weather/weather-strip';
 import { CITY_OVERVIEW_SIZE } from '@/constants/pagination';
 import { listPath } from '@/lib/list-paths';
 import { cityStaticParams } from '@/lib/prerender';
+import { backgroundImage, OPEN_GRAPH_BASE } from '@/lib/seo';
 import { listPlaces } from '@/services/places';
 import getWeathers from '@/services/weather';
 import background from '@/static/background/scenes.png';
@@ -40,11 +41,18 @@ export const generateMetadata = async ({
   }
 
   const name = CityMap[city as City];
+  const description = `${name}的景點、美食、住宿與活動。`;
 
   return {
-    description: `${name}的景點、美食、住宿與活動。`,
-    openGraph: { images: ['/static/background/scenes.png'] },
-    title: `台灣旅遊導覽網 | ${name}`,
+    alternates: { canonical: `/${city}` },
+    description,
+    openGraph: {
+      ...OPEN_GRAPH_BASE,
+      description,
+      images: [backgroundImage('scenes', name)],
+      title: name,
+    },
+    title: name,
   };
 };
 
