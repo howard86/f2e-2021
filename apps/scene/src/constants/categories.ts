@@ -7,14 +7,12 @@ export type Category =
 
 interface CategoryMeta {
   label: string;
-  /** Page whose keyword search the header search button opens. */
-  searchHref: string;
 }
 
 export const CATEGORIES: Record<Category, CategoryMeta> = {
-  activities: { label: '活動', searchHref: '/scenes' },
-  hotels: { label: '住宿', searchHref: '/hotels' },
-  restaurants: { label: '美食', searchHref: '/restaurants' },
-  scenes: { label: '景點', searchHref: '/scenes' },
-  transports: { label: '交通', searchHref: '/scenes' },
+  activities: { label: '活動' },
+  hotels: { label: '住宿' },
+  restaurants: { label: '美食' },
+  scenes: { label: '景點' },
+  transports: { label: '交通' },
 };

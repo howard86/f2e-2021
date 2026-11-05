@@ -1,24 +1,15 @@
 'use client';
 
 import { UiProvider } from '@f2e/ui/provider';
-import { type ReactNode, useRef } from 'react';
-import { Provider as ReduxProvider } from 'react-redux';
+import { ThemeProvider } from 'next-themes';
+import type { ReactNode } from 'react';
 
-import { type AppStore, makeStore } from '@/redux/store';
 import system from '@/theme';
 
-const Providers = ({ children }: { children: ReactNode }) => {
-  const storeRef = useRef<AppStore | null>(null);
-
-  if (storeRef.current === null) {
-    storeRef.current = makeStore();
-  }
-
-  return (
-    <UiProvider system={system}>
-      <ReduxProvider store={storeRef.current}>{children}</ReduxProvider>
-    </UiProvider>
-  );
-};
+const Providers = ({ children }: { children: ReactNode }) => (
+  <ThemeProvider attribute="class" disableTransitionOnChange>
+    <UiProvider system={system}>{children}</UiProvider>
+  </ThemeProvider>
+);
 
 export default Providers;

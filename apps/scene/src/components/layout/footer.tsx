@@ -1,77 +1,66 @@
-'use client';
+import { Box, Container, Flex, Link, Stack, Text } from '@chakra-ui/react';
+import { RouteLink } from '@f2e/ui/links';
+import { FiArrowUp } from 'react-icons/fi';
+import ROUTES from '@/constants/routes';
 
-import {
-  Box,
-  type BoxProps,
-  Center,
-  Flex,
-  IconButton,
-  Text,
-} from '@chakra-ui/react';
-import { BsChevronUp } from 'react-icons/bs';
+import LogoMark from '../icons/logo-mark';
 
-import Logo from '../icons/logo';
-
-const Footer = (props: BoxProps) => {
-  const onClick = () => {
-    window.scrollTo(0, 0);
-  };
-
-  return (
-    <Box as="footer" {...props}>
-      <Box
-        bgGradient="to-t"
-        gradientFrom="colorPalette.muted"
-        gradientTo="white"
-        pb={[20, 36]}
-        pt={[12, 20]}
-        px="8"
-      >
-        <Center display={['flex', 'flex', 'none']} textAlign="center">
-          <IconButton
-            _hover={{
-              bgColor: 'colorPalette.muted',
-            }}
-            aria-label="scroll to top"
-            bgColor="colorPalette.solid"
-            color="white"
-            fontSize="2xl"
-            onClick={onClick}
-            p="3"
-            rounded="full"
-            size="lg"
-          >
-            <BsChevronUp />
-          </IconButton>
-        </Center>
-      </Box>
+const Footer = () => (
+  <Box as="footer" bg="bg.subtle" borderTopWidth="1px" mt="16" py="10">
+    <Container maxW="6xl" px={{ base: 4, md: 6 }}>
       <Flex
-        align="center"
-        bg="colorPalette.solid"
-        color="white"
-        flexDir={['column', 'column', 'row']}
-        fontWeight="medium"
-        px={[12, 12, 4]}
-        py="4"
+        direction={{ base: 'column', md: 'row' }}
+        gap="8"
+        justify="space-between"
       >
-        <Logo boxSize={['192px', '252px', '128px']} ml="8" mr="4" />
-        <Box>
-          <Flex flexDir={['column', 'column', 'row']} my="2">
-            <Text>24小時免付費旅遊諮詢熱線：</Text>
-            <Text>0800-011765</Text>
+        <Stack gap="3" maxW="md">
+          <Flex align="center" gap="2">
+            <LogoMark h="8" />
+            <Text fontWeight="bold">台灣旅遊導覽網</Text>
           </Flex>
-          <Flex flexDir={['column', 'column', 'row']} my="2">
-            <Text>免付費國旅券專線：</Text>
-            <Text>0800-211734</Text>
+          <Text color="fg.muted" textStyle="body-sm">
+            景點、美食、住宿與活動資料來源：TDX
+            運輸資料流通服務、交通部觀光署；天氣資料來源：中央氣象署。
+          </Text>
+        </Stack>
+        <Stack aria-label="頁尾導覽" as="nav" gap="2">
+          <Text color="fg.muted" fontWeight="bold" textStyle="body-sm">
+            探索
+          </Text>
+          <Flex gap={{ base: 3, md: 4 }} wrap="wrap">
+            {ROUTES.map((route) => (
+              <RouteLink
+                _hover={{ color: 'colorPalette.fg' }}
+                href={route.href}
+                key={route.href}
+                textStyle="body-sm"
+              >
+                {route.label}
+              </RouteLink>
+            ))}
           </Flex>
-          <Flex flexDir={['column', 'column', 'row']} my="2">
-            <Text>服務時間：</Text>
-            <Text>週一至週日8:30~18:30</Text>
-          </Flex>
-        </Box>
+        </Stack>
       </Flex>
-    </Box>
-  );
-};
+      <Flex
+        align={{ base: 'flex-start', md: 'center' }}
+        borderTopWidth="1px"
+        direction={{ base: 'column', md: 'row' }}
+        gap="3"
+        justify="space-between"
+        mt="8"
+        pt="6"
+      >
+        <Text color="fg.muted" textStyle="body-sm">
+          24 小時免付費旅遊諮詢熱線 0800-011765　免付費國旅券專線
+          0800-211734（週一至週日 8:30–18:30）
+        </Text>
+        <Link color="colorPalette.fg" href="#top" textStyle="body-sm">
+          <FiArrowUp />
+          回到頁首
+        </Link>
+      </Flex>
+    </Container>
+  </Box>
+);
 
 export default Footer;

@@ -1,126 +1,70 @@
-'use client';
-
-import {
-  Avatar,
-  Box,
-  Flex,
-  type FlexProps,
-  HStack,
-  IconButton,
-  Separator,
-} from '@chakra-ui/react';
+import { Flex, type FlexProps, HStack, Link, Text } from '@chakra-ui/react';
 import { RouteLink } from '@f2e/ui/links';
-import throttle from 'lodash.throttle';
-import { useRouter } from 'next/navigation';
-import { useEffect, useRef, useState } from 'react';
-import { FiSearch } from 'react-icons/fi';
-import { CATEGORIES, type Category } from '@/constants/categories';
 import ROUTES from '@/constants/routes';
-import getAvatar from '@/services/avatar';
-import Logo from '../icons/logo';
-import MenuPopover from './menu-popover';
 
-const THROTTLED_TIME_MS = 500;
+import LogoMark from '../icons/logo-mark';
+import GlobalSearch from '../search/global-search';
+import ColorModeToggle from './color-mode-toggle';
+import MenuDrawer from './menu-drawer';
+import NavLink from './nav-link';
 
-const initialState = { isScrollingUp: false, onTop: true };
-
-interface HeaderProps extends FlexProps {
-  category: Category;
-}
-
-const Header = ({ category, ...props }: HeaderProps) => {
-  const router = useRouter();
-  const scrollRef = useRef(0);
-  const [state, setState] = useState(initialState);
-
-  const isSolid = !state.onTop && state.isScrollingUp;
-
-  const handleOnSearch = () => {
-    router.push(CATEGORIES[category].searchHref);
-  };
-
-  useEffect(() => {
-    const handleOnScroll = throttle(
-      () => {
-        setState({
-          isScrollingUp: scrollRef.current > window.scrollY,
-          onTop: window.scrollY < 10,
-        });
-
-        scrollRef.current = window.scrollY;
-      },
-      THROTTLED_TIME_MS,
-      { leading: true },
-    );
-
-    window.addEventListener('scroll', handleOnScroll);
-    return () => {
-      window.removeEventListener('scroll', handleOnScroll);
-    };
-  }, []);
-
-  return (
-    <Flex
-      alignItems="center"
-      as="header"
-      bg={isSolid ? 'colorPalette.solid' : 'transparent'}
-      color={isSolid ? 'white' : 'fg.muted'}
-      left="0"
-      pos="fixed"
-      px={[2, 4, 8]}
+const Header = (props: FlexProps) => (
+  <Flex
+    alignItems="center"
+    as="header"
+    backdropFilter="blur(12px) saturate(1.6)"
+    bg="bg/85"
+    borderBottomWidth="1px"
+    gap="2"
+    h="14"
+    position="sticky"
+    px={{ base: 3, md: 6 }}
+    top="0"
+    zIndex="sticky"
+    {...props}
+  >
+    <Link
+      _focusVisible={{ left: '3', top: '3' }}
+      bg="bg"
+      href="#main-content"
+      left="-9999px"
+      position="absolute"
+      px="3"
       py="2"
-      right="0"
-      shadow={isSolid ? 'xl' : 'none'}
-      top={state.onTop || state.isScrollingUp ? 0 : '-200px'}
-      transitionDuration="0.5s"
-      transitionProperty="top, translateY"
-      transitionTimingFunction="ease-out"
-      translateY="50%"
-      zIndex="banner"
-      {...props}
+      rounded="md"
+      zIndex="skipLink"
     >
-      <MenuPopover buttonBgColor={isSolid ? 'whiteAlpha.300' : 'transparent'} />
-      <RouteLink display={['none', 'block']} href="/">
-        <Logo height={12} width={12} />
-      </RouteLink>
-
-      <Box flexGrow={1} />
-      <HStack
-        display={['none', 'flex']}
+      跳到主要內容
+    </Link>
+    <MenuDrawer />
+    <RouteLink aria-label="台灣旅遊導覽網首頁" gap="2" href="/" mr={{ lg: 4 }}>
+      <LogoMark h="8" />
+      <Text
+        color="fg"
+        display={{ base: 'none', sm: 'block' }}
         fontWeight="bold"
-        gap={[2, 2, 4]}
-        h="4"
-        separator={
-          <Separator
-            borderColor={isSolid ? 'white' : 'fg.muted'}
-            orientation="vertical"
-          />
-        }
+        letterSpacing="0.02em"
       >
-        {ROUTES.map((route) => (
-          <RouteLink href={route.href} key={route.label}>
-            {route.label}
-          </RouteLink>
-        ))}
-        <IconButton
-          _hover={{
-            bgColor: isSolid ? 'colorPalette.emphasized' : 'colorPalette.muted',
-          }}
-          aria-label="search scene"
-          fontSize={['xl', '2xl']}
-          onClick={handleOnSearch}
-          rounded="full"
-          variant="ghost"
-        >
-          <FiSearch />
-        </IconButton>
-      </HStack>
-      <Avatar.Root bg="white" ml="4" size="sm">
-        <Avatar.Fallback name="f2e" />
-        <Avatar.Image src={getAvatar('f2e')} />
-      </Avatar.Root>
-    </Flex>
-  );
-};
+        台灣旅遊導覽網
+      </Text>
+    </RouteLink>
+    <HStack
+      aria-label="主要導覽"
+      as="nav"
+      display={{ base: 'none', lg: 'flex' }}
+      flexGrow={1}
+      gap="1"
+    >
+      {ROUTES.map((route) => (
+        <NavLink href={route.href} key={route.href}>
+          {route.label}
+        </NavLink>
+      ))}
+    </HStack>
+    <Flex flexGrow={{ base: 1, lg: 0 }} />
+    <GlobalSearch />
+    <ColorModeToggle />
+  </Flex>
+);
 
 export default Header;
