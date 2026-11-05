@@ -6,22 +6,10 @@
   "license": "UNLICENSED",
   "author": "Howard Tai <howard@howardism.dev>",
   "exports": {
-    ".": "./index.ts",
-    "./rtk": "./rtk.ts"
+    ".": "./index.ts"
   },
   "scripts": {
     "test": "bun test",
     "typecheck": "bun check"
-  },
-  "devDependencies": {
-    "@reduxjs/toolkit": "^2.14.0"
-  },
-  "peerDependencies": {
-    "@reduxjs/toolkit": "*"
-  },
-  "peerDependenciesMeta": {
-    "@reduxjs/toolkit": {
-      "optional": true
-    }
   }
 }
