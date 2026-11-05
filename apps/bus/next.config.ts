@@ -32,7 +32,12 @@ const config: NextConfig = {
       source: '/api/bus/route',
     },
   ],
-  transpilePackages: ['@f2e/tdx-core', '@f2e/tdx-bus', '@f2e/ui'],
+  transpilePackages: [
+    '@f2e/browser-cache',
+    '@f2e/tdx-core',
+    '@f2e/tdx-bus',
+    '@f2e/ui',
+  ],
 };
 
 export default config;
