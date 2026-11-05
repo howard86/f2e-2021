@@ -29,13 +29,17 @@ export class NotFoundException extends HttpException {
  */
 export const handle = async <T>(
   run: () => Promise<T> | T,
+  cacheControl?: string,
 ): Promise<Response> => {
   try {
     const data = await run();
-    return Response.json({
-      data,
-      success: true,
-    } satisfies SuccessApiResponse<T>);
+    return Response.json(
+      {
+        data,
+        success: true,
+      } satisfies SuccessApiResponse<T>,
+      cacheControl ? { headers: { 'Cache-Control': cacheControl } } : undefined,
+    );
   } catch (error) {
     if (error instanceof HttpException) {
       return Response.json(
