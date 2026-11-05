@@ -35,8 +35,8 @@ export const generateMetadata = async ({
   const q = parseKeyword((await searchParams).q);
 
   return {
-    robots: { index: false },
-    title: q ? `台灣旅遊導覽網 | 搜尋「${q}」` : '台灣旅遊導覽網 | 搜尋',
+    robots: { follow: true, index: false },
+    title: q ? `搜尋「${q}」` : '搜尋',
   };
 };
 

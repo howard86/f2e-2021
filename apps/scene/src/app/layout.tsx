@@ -2,6 +2,13 @@ import type { Metadata, Viewport } from 'next';
 import { Noto_Sans_TC } from 'next/font/google';
 import type { ReactNode } from 'react';
 
+import {
+  DEFAULT_OG_IMAGE,
+  OPEN_GRAPH_BASE,
+  SITE_NAME,
+  SITE_URL,
+  TWITTER_BASE,
+} from '@/lib/seo';
 import Providers from './providers';
 
 const notoSansTC = Noto_Sans_TC({
@@ -12,28 +19,28 @@ const notoSansTC = Noto_Sans_TC({
 });
 
 const DESCRIPTION =
-  '以插畫呈現台灣風景，搭配客家花布常出現的牡丹花，牡丹花意味著富貴和幸福，散發台灣各地的美。 現在就跟著台灣旅遊導覽網一起一探究竟吧！';
+  '探索台灣各縣市的景點、美食、住宿與活動，資料來自交通部 TDX 觀光資訊。';
 
 export const metadata: Metadata = {
   description: DESCRIPTION,
   icons: {
+    apple: { sizes: '180x180', url: '/apple-touch-icon.png' },
+    icon: [
+      { sizes: '32x32', type: 'image/png', url: '/favicon-32x32.png' },
+      { sizes: '16x16', type: 'image/png', url: '/favicon-16x16.png' },
+    ],
     shortcut: '/favicon.ico',
   },
   manifest: '/manifest.json',
-  metadataBase: process.env.NEXT_PUBLIC_VERCEL_URL
-    ? new URL(`https://${process.env.NEXT_PUBLIC_VERCEL_URL}`)
-    : undefined,
+  metadataBase: SITE_URL,
   openGraph: {
+    ...OPEN_GRAPH_BASE,
     description: DESCRIPTION,
-    images: ['/static/fallback.jpg'],
-    siteName: '台灣旅遊導覽網',
-    title: '台灣旅遊導覽網',
-    type: 'website',
+    images: [DEFAULT_OG_IMAGE],
+    title: SITE_NAME,
   },
-  title: '台灣旅遊導覽網',
-  twitter: {
-    card: 'summary',
-  },
+  title: { default: SITE_NAME, template: `%s | ${SITE_NAME}` },
+  twitter: TWITTER_BASE,
 };
 
 export const viewport: Viewport = {

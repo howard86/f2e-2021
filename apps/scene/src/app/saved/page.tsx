@@ -8,7 +8,7 @@ import SavedView from './view';
 export const metadata: Metadata = {
   description: '儲存在這個瀏覽器中的景點、美食、住宿與活動。',
   robots: { follow: false, index: false },
-  title: '台灣旅遊導覽網 | 我的收藏',
+  title: '我的收藏',
 };
 
 const SavedPage = () => (

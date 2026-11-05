@@ -12,6 +12,7 @@ import type { Metadata } from 'next';
 import Layout from '@/components/layout/layout';
 import PageHero from '@/components/ui/page-hero';
 import SectionHeading from '@/components/ui/section-heading';
+import { backgroundImage, OPEN_GRAPH_BASE } from '@/lib/seo';
 import background from '@/static/background/transports.png';
 import wordOne from '@/static/background/transports-1.png';
 import wordTwo from '@/static/background/transports-2.png';
@@ -19,12 +20,15 @@ import wordTwo from '@/static/background/transports-2.png';
 const DESCRIPTION = '火車、高鐵、捷運、公車、公路路況與租賃的官方資訊入口。';
 
 export const metadata: Metadata = {
+  alternates: { canonical: '/transports' },
   description: DESCRIPTION,
   openGraph: {
-    description: '交通',
-    images: ['/static/background/transports.png'],
+    ...OPEN_GRAPH_BASE,
+    description: DESCRIPTION,
+    images: [backgroundImage('transports', '交通')],
+    title: '交通',
   },
-  title: '台灣旅遊導覽網 | 交通',
+  title: '交通',
 };
 
 interface LinkItem {
