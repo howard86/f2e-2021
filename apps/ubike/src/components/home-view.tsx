@@ -17,7 +17,7 @@ import { type ChangeEvent, useState } from 'react';
 
 import CycleCard from '@/components/cycle-card';
 import background from '@/map.jpg';
-import { useGetCyclingByCityQuery } from '@/services/local';
+import { useGetCyclingByCity } from '@/services/local';
 
 // Server-rendered stand-in so the background paints before mapbox-gl loads.
 const MapPlaceholder = () => (
@@ -61,9 +61,10 @@ const variants: Variants = {
 const HomeView = () => {
   const [tabIndex, setTabIndex] = useState(0);
   const [selectedCity, setSelectedCity] = useState<City>();
-  const { data, isFetching } = useGetCyclingByCityQuery(selectedCity, {
-    skip: tabIndex !== 1 || !selectedCity,
-  });
+  const { data, isLoading: isFetching } = useGetCyclingByCity(
+    selectedCity,
+    tabIndex !== 1,
+  );
 
   const onSelect = (event: ChangeEvent<HTMLSelectElement>) => {
     setSelectedCity(event.target.value as City);

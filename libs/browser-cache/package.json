@@ -1,0 +1,15 @@
+{
+  "name": "@f2e/browser-cache",
+  "version": "0.1.0",
+  "private": true,
+  "description": "IndexedDB-backed stale-while-revalidate cache for the apps' API routes",
+  "license": "UNLICENSED",
+  "author": "Howard Tai <howard@howardism.dev>",
+  "exports": {
+    ".": "./index.ts"
+  },
+  "scripts": {
+    "test": "bun test",
+    "typecheck": "bun check"
+  }
+}

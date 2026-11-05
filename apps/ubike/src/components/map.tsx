@@ -19,7 +19,7 @@ import { MdClose, MdOutlinePlace } from 'react-icons/md';
 import BikeIcon from '@/components/icons/bike-icon';
 import DockIcon from '@/components/icons/dock-icon';
 import background from '@/map.jpg';
-import { useLazyGetStationsByCoordinateQuery } from '@/services/local';
+import { useGetStationsByCoordinate } from '@/services/local';
 import type { Coordinate } from '@/services/mapbox';
 import { useMap } from './map-context-provider';
 
@@ -46,7 +46,8 @@ const MapView = () => {
   });
   const divRef = useRef<HTMLDivElement>(null);
   const { open: isOpen, onOpen, onClose } = useDisclosure();
-  const [getStations, { isFetching }] = useLazyGetStationsByCoordinateQuery();
+  const { trigger: getStations, isMutating: isFetching } =
+    useGetStationsByCoordinate();
 
   const [loaded, setLoaded] = useState(false);
 
@@ -60,7 +61,7 @@ const MapView = () => {
     const result = await getStations({
       ...currentPositionRef.current,
       r: searchRadius,
-    }).unwrap();
+    });
 
     if (result.data.uids.length === 0) {
       toast({ description: '此地區不提供 YouBike 服務！', status: 'warning' });

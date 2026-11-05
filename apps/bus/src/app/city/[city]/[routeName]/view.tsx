@@ -18,7 +18,7 @@ import {
 import { BusDirection, type BusRoute, type BusStopOfRoute } from '@f2e/tdx-bus';
 import type { City } from '@f2e/tdx-core';
 import { useRouter } from 'next/navigation';
-import { useEffect, useState } from 'react';
+import { useEffect, useMemo, useState } from 'react';
 import { BiChevronLeft } from 'react-icons/bi';
 import { BsInfoCircle } from 'react-icons/bs';
 import { IoHome } from 'react-icons/io5';
@@ -31,10 +31,7 @@ import { useMap } from '@/components/map-context-provider';
 import NavBarItems from '@/components/nav-bar-items';
 import { DESKTOP_DISPLAY, MOBILE_DISPLAY } from '@/constants/style';
 import { THIRTY_SEC_IN_MS } from '@/constants/time';
-import {
-  busEstimationSelector,
-  useGetBusEstimationQuery,
-} from '@/services/local';
+import { useGetBusEstimation } from '@/services/local';
 import theme from '@/theme';
 import { getMiddleElement } from '@/utils/array';
 import { getBusEstimationStatus } from '@/utils/bus';
@@ -83,18 +80,21 @@ const BusRouteView = ({
   const extendDisclosure = useDisclosure();
   const { open: isOpen, onClose, onOpen } = useDisclosure();
   const stopDisclosure = useDisclosure();
-  const { data, selectedBusEstimation } = useGetBusEstimationQuery(
+  const { data } = useGetBusEstimation(
     { city, route: routeName },
-    {
-      pollingInterval: THIRTY_SEC_IN_MS,
-      selectFromResult: (res) => ({
-        ...res,
-        selectedBusEstimation:
-          res.data &&
-          busEstimationSelector.selectById(res.data, selectedStopId),
-      }),
-    },
+    THIRTY_SEC_IN_MS,
   );
+  const busEstimations = useMemo(
+    () =>
+      new Map(
+        data?.data.map((busEstimation) => [
+          busEstimation.StopUID,
+          busEstimation,
+        ]),
+      ),
+    [data],
+  );
+  const selectedBusEstimation = busEstimations.get(selectedStopId);
 
   // as bus direction might only be 迴圈
   const selectedBusRoute =
@@ -358,7 +358,7 @@ const BusRouteView = ({
                 >
                   {routeStopEntity[busDirection].Stops.map((stop) => {
                     const status = getBusEstimationStatus(
-                      data?.entities[stop.StopUID],
+                      busEstimations.get(stop.StopUID),
                     );
 
                     const isComing = status === '進站中';

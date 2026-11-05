@@ -60,7 +60,12 @@ const config: NextConfig = {
   // 60 s default; a timed-out attempt keeps spending quota while Next retries
   // it, so give each page room to finish once.
   staticPageGenerationTimeout: 600,
-  transpilePackages: ['@f2e/tdx-core', '@f2e/tdx-tourism', '@f2e/ui'],
+  transpilePackages: [
+    '@f2e/browser-cache',
+    '@f2e/tdx-core',
+    '@f2e/tdx-tourism',
+    '@f2e/ui',
+  ],
 };
 
 export default config;
