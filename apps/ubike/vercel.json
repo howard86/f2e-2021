@@ -2,5 +2,6 @@
   "$schema": "https://openapi.vercel.sh/vercel.json",
   "bunVersion": "1.4.x",
   "installCommand": "bun install --frozen-lockfile",
-  "buildCommand": "cd ../.. && bun run build:ubike"
+  "buildCommand": "cd ../.. && bun run build:ubike",
+  "ignoreCommand": "npx turbo-ignore"
 }
