@@ -160,9 +160,8 @@ const BusRouteView = ({
     }
 
     const handleAttachStops = async () => {
-      const { createJSXMarker, addLayerAndSource } = await import(
-        '@/services/mapbox'
-      );
+      const { createMarker, createMarkerElement, addLayerAndSource } =
+        await import('@/services/mapbox');
 
       if (mapContextRef.current.markers.length > 0) {
         for (const marker of mapContextRef.current.markers) {
@@ -170,42 +169,60 @@ const BusRouteView = ({
         }
       }
 
-      mapContextRef.current.markers = selectedBusRoute.Stops.map((stop) =>
-        createJSXMarker(
-          <VStack
-            cursor="pointer"
-            gap={0}
-            // biome-ignore lint/performance/noJsxPropsBind: callback needs local render state or the current event target.
-            onClick={async () => {
-              const { getPosition } = await import('@/services/mapbox');
-              mapContextRef.current.map.flyTo(
-                getPosition(
-                  stop.StopPosition.PositionLat,
-                  stop.StopPosition.PositionLon,
-                  ZoomLevel.Stops,
-                ),
-              );
-            }}
-          >
-            <Circle
-              bgColor="var(--chakra-colors-secondary-100)"
-              borderColor="var(--chakra-colors-secondary-200)"
-              borderWidth="1px"
-              color="var(--chakra-colors-secondary-800)"
-              size="28px"
-            >
-              {getTwoDigitString(stop.StopSequence)}
-            </Circle>
-            <Box
-              borderColor="var(--chakra-colors-secondary-200)"
-              borderLeftWidth="2px"
-              h="12px"
-            />
-          </VStack>,
+      mapContextRef.current.markers = selectedBusRoute.Stops.map((stop) => {
+        const element = createMarkerElement({
+          onClick: async () => {
+            const { getPosition } = await import('@/services/mapbox');
+            mapContextRef.current.map.flyTo(
+              getPosition(
+                stop.StopPosition.PositionLat,
+                stop.StopPosition.PositionLon,
+                ZoomLevel.Stops,
+              ),
+            );
+          },
+          style: {
+            alignItems: 'center',
+            cursor: 'pointer',
+            display: 'flex',
+            flexDirection: 'column',
+          },
+        });
+
+        element.append(
+          createMarkerElement({
+            style: {
+              alignItems: 'center',
+              backgroundColor: 'var(--chakra-colors-secondary-100)',
+              borderColor: 'var(--chakra-colors-secondary-200)',
+              borderRadius: '9999px',
+              borderStyle: 'solid',
+              borderWidth: '1px',
+              color: 'var(--chakra-colors-secondary-800)',
+              display: 'flex',
+              flexShrink: '0',
+              height: '28px',
+              justifyContent: 'center',
+              width: '28px',
+            },
+            text: getTwoDigitString(stop.StopSequence),
+          }),
+          createMarkerElement({
+            style: {
+              borderColor: 'var(--chakra-colors-secondary-200)',
+              borderLeftStyle: 'solid',
+              borderLeftWidth: '2px',
+              height: '12px',
+            },
+          }),
+        );
+
+        return createMarker(
+          element,
           [stop.StopPosition.PositionLon, stop.StopPosition.PositionLat],
           { offset: [0, -12] },
-        ),
-      );
+        );
+      });
 
       if (mapContextRef.current.map.getLayer(mapContextRef.current.layerId)) {
         mapContextRef.current.map.removeLayer(mapContextRef.current.layerId);

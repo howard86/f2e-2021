@@ -10,7 +10,6 @@ import DistanceIcon from './icons/distance-icon';
 import PlaceIcon from './icons/place-icon';
 import StarIcon from './icons/star-icon';
 import { useMap } from './map-context-provider';
-import RouteMarker from './route-marker';
 
 interface CycleCardProps {
   city: City;
@@ -48,9 +47,20 @@ const CycleCard = ({
       return;
     }
 
-    const { addLayerAndSource, attachJSXMarker } = await import(
-      '@/services/mapbox'
-    );
+    const { addLayerAndSource, attachMarker, createMarkerElement } =
+      await import('@/services/mapbox');
+
+    // Rendered outside React, so only CSS variables are available.
+    const createRouteMarker = (text: string) =>
+      createMarkerElement({
+        style: {
+          backgroundColor: 'var(--chakra-colors-primary-main)',
+          borderRadius: 'var(--chakra-radii-xl)',
+          color: 'white',
+          padding: 'var(--chakra-spacing-1) var(--chakra-spacing-2)',
+        },
+        text,
+      });
 
     if (mapRef.current.getLayer(layerIdRef.current)) {
       mapRef.current.removeLayer(layerIdRef.current);
@@ -74,15 +84,15 @@ const CycleCard = ({
     );
     const coordinates = geoJson.coordinates[0] as Coordinate[];
 
-    markersRef.current[coordinates[0].toString()] = attachJSXMarker(
+    markersRef.current[coordinates[0].toString()] = attachMarker(
       mapRef.current,
-      <RouteMarker>起點</RouteMarker>,
+      createRouteMarker('起點'),
       coordinates[0],
     );
 
-    markersRef.current[coordinates.at(-1).toString()] = attachJSXMarker(
+    markersRef.current[coordinates.at(-1).toString()] = attachMarker(
       mapRef.current,
-      <RouteMarker>終點</RouteMarker>,
+      createRouteMarker('終點'),
       coordinates.at(-1),
     );
 

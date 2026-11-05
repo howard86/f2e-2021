@@ -5,7 +5,6 @@ import {
   Box,
   Button,
   Center,
-  Circle,
   Flex,
   IconButton,
   type IconButtonProps,
@@ -117,12 +116,18 @@ const NearByView = () => {
               <Accordion.ItemTrigger
                 // biome-ignore lint/performance/noJsxPropsBind: callback needs local render state or the current event target.
                 onFocus={async () => {
-                  const { createJSXMarker } = await import('@/services/mapbox');
-                  const marker = createJSXMarker(
-                    <Circle
-                      bgColor="var(--chakra-colors-secondary-200)"
-                      size="12px"
-                    />,
+                  const { createMarker, createMarkerElement } = await import(
+                    '@/services/mapbox'
+                  );
+                  const marker = createMarker(
+                    createMarkerElement({
+                      style: {
+                        backgroundColor: 'var(--chakra-colors-secondary-200)',
+                        borderRadius: '9999px',
+                        height: '12px',
+                        width: '12px',
+                      },
+                    }),
                     [
                       busStation.StationPosition.PositionLon,
                       busStation.StationPosition.PositionLat,

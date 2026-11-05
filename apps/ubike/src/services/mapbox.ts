@@ -1,6 +1,4 @@
 import mapboxgl from 'mapbox-gl';
-import type { ReactElement } from 'react';
-import { createRoot } from 'react-dom/client';
 import type { GeoJSONMultiLineString } from 'wellknown';
 
 export type Coordinate = [number, number];
@@ -23,25 +21,48 @@ export const initialize = (
   });
 };
 
-export const attachJSXMarker = (
-  map: mapboxgl.Map,
-  Element: ReactElement,
-  coordinates: mapboxgl.LngLatLike,
-) => {
-  const node = document.createElement('div');
-  const root = createRoot(node);
-  root.render(Element);
+export interface MarkerElementOptions {
+  className?: string;
+  id?: string;
+  onClick?: () => void;
+  style?: Partial<CSSStyleDeclaration>;
+  text?: string;
+}
 
-  const marker = new mapboxgl.Marker(node).setLngLat(coordinates).addTo(map);
-  const remove = marker.remove.bind(marker);
-  marker.remove = () => {
-    root.unmount();
-    marker.remove = remove;
-    return remove();
-  };
+/** Builds a marker's DOM node; nest more with append() where needed. */
+export const createMarkerElement = ({
+  className,
+  id,
+  onClick,
+  style,
+  text,
+}: MarkerElementOptions): HTMLElement => {
+  const element = document.createElement('div');
 
-  return marker;
+  if (className) {
+    element.className = className;
+  }
+  if (id) {
+    element.id = id;
+  }
+  if (text) {
+    element.textContent = text;
+  }
+  if (style) {
+    Object.assign(element.style, style);
+  }
+  if (onClick) {
+    element.addEventListener('click', onClick);
+  }
+
+  return element;
 };
+
+export const attachMarker = (
+  map: mapboxgl.Map,
+  element: HTMLElement,
+  coordinates: mapboxgl.LngLatLike,
+) => new mapboxgl.Marker(element).setLngLat(coordinates).addTo(map);
 
 export const addLayerAndSource = (
   map: mapboxgl.Map,
