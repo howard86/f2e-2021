@@ -23,7 +23,7 @@ import { useMap } from '@/components/map-context-provider';
 import NavBarItems from '@/components/nav-bar-items';
 import { DESKTOP_DISPLAY } from '@/constants/style';
 import useGetLocation from '@/hooks/use-get-location';
-import { useGetNearByBusMutation } from '@/services/local';
+import { useGetNearByBus } from '@/services/local';
 
 const NearByView = () => {
   const toast = useAppToast();
@@ -34,7 +34,8 @@ const NearByView = () => {
     md: 'solid',
   });
   const { divRef, mapContextRef, isLoaded, setLoaded } = useMap();
-  const [getBusStations, { isSuccess, data }] = useGetNearByBusMutation();
+  const { trigger: getBusStations, data } = useGetNearByBus();
+  const isSuccess = Boolean(data);
 
   const onHomeClick = () => {
     router.push('/');
@@ -63,9 +64,7 @@ const NearByView = () => {
     }
 
     try {
-      const response = await getBusStations(
-        currentPositionRef.current,
-      ).unwrap();
+      const response = await getBusStations(currentPositionRef.current);
 
       toast({ description: `共查詢到${response.data.length}站` });
     } catch {

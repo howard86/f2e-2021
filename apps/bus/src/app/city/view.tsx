@@ -22,7 +22,7 @@ import BusSearchInput from '@/components/bus-search-input';
 import NavBarItems from '@/components/nav-bar-items';
 import RouteKeyBoard from '@/components/route-key-board';
 import { DESKTOP_DISPLAY, MOBILE_DISPLAY } from '@/constants/style';
-import { useLazyGetBusRoutesQuery } from '@/services/local';
+import { useGetBusRoutes } from '@/services/local';
 import station from '@/station.png';
 import { getBusRouteDestinations } from '@/utils/bus';
 import { addToLocalStorage, getFromLocalStorage } from '@/utils/local-storage';
@@ -39,7 +39,11 @@ const CityView = () => {
     return CitySet.has(cachedCity) ? cachedCity : DEFAULT_CITY;
   });
   const [searchString, setSearchString] = useState(DEFAULT_SEARCH_STRING);
-  const [fetchBusRoute, { data, isSuccess }] = useLazyGetBusRoutesQuery();
+  const [query, setQuery] = useState<{ city: City; route: string } | null>(
+    null,
+  );
+  const { data } = useGetBusRoutes(query);
+  const isSuccess = Boolean(data);
   const router = useRouter();
 
   const onSearch = (event: ChangeEvent<HTMLInputElement>) => {
@@ -62,12 +66,12 @@ const CityView = () => {
   useEffect(() => {
     const debouncedFetch = debounce((route?: string) => {
       if (route) {
-        fetchBusRoute({ city, route });
+        setQuery({ city, route });
       }
     }, DEBOUNCED_MS);
 
     debouncedFetch(searchString);
-  }, [city, fetchBusRoute, searchString]);
+  }, [city, searchString]);
 
   return (
     <Flex color="white" flexDir="column" h="full" pos="relative">

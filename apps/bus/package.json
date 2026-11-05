@@ -40,14 +40,13 @@
     "@f2e/tdx-bus": "workspace:*",
     "@f2e/tdx-core": "workspace:*",
     "@f2e/ui": "workspace:*",
-    "@reduxjs/toolkit": "^2.14.0",
     "lodash.debounce": "^4.0.8",
     "mapbox-gl": "^3.34.2",
     "next": "16.4.5",
     "react": "19.3.1",
     "react-dom": "19.3.1",
     "react-icons": "^5.7.0",
-    "react-redux": "^9.3.1",
+    "swr": "^2.5.1",
     "wellknown": "^0.5.0"
   },
   "devDependencies": {
