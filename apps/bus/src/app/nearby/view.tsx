@@ -43,7 +43,7 @@ const NearByView = () => {
   const onSearch = async () => {
     await onLocate();
 
-    if (currentPositionRef === null) {
+    if (currentPositionRef.current === null) {
       return;
     }
 
