@@ -11,9 +11,9 @@ interface LayoutProps extends BoxProps {
 }
 
 const Layout = ({ children, colorPalette, ...props }: LayoutProps) => (
-  <Box colorPalette={colorPalette}>
-    <Header category={colorPalette} />
-    <Box as="main" minH="100%" {...props}>
+  <Box colorPalette={colorPalette} id="top" minH="100vh">
+    <Header />
+    <Box as="main" id="main-content" minH="60vh" {...props}>
       {children}
     </Box>
     <Footer />

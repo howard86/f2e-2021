@@ -1,4 +1,4 @@
-import type { Metadata } from 'next';
+import type { Metadata, Viewport } from 'next';
 import { Noto_Sans_TC } from 'next/font/google';
 import type { ReactNode } from 'react';
 
@@ -34,6 +34,13 @@ export const metadata: Metadata = {
   twitter: {
     card: 'summary',
   },
+};
+
+export const viewport: Viewport = {
+  themeColor: [
+    { color: '#FFFFFF', media: '(prefers-color-scheme: light)' },
+    { color: '#09090B', media: '(prefers-color-scheme: dark)' },
+  ],
 };
 
 const RootLayout = ({ children }: { children: ReactNode }) => (

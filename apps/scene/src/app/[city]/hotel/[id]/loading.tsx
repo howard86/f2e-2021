@@ -1,9 +1,9 @@
+import DetailSkeleton from '@/components/detail/detail-skeleton';
 import Layout from '@/components/layout/layout';
-import LoadingScreen from '@/components/loading-screen';
 
 const Loading = () => (
   <Layout colorPalette="hotels">
-    <LoadingScreen minH="400px" />
+    <DetailSkeleton />
   </Layout>
 );
 

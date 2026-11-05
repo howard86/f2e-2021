@@ -8,7 +8,7 @@ interface ErrorApiResponse {
   success: false;
 }
 
-export type ApiResponse<T = unknown> = SuccessApiResponse<T> | ErrorApiResponse;
+type ApiResponse<T = unknown> = SuccessApiResponse<T> | ErrorApiResponse;
 
 class HttpException extends Error {
   readonly status: number;
@@ -22,12 +22,6 @@ class HttpException extends Error {
 export class BadRequestException extends HttpException {
   constructor() {
     super(400, 'Bad Request');
-  }
-}
-
-export class NotFoundException extends HttpException {
-  constructor() {
-    super(404, 'Not Found');
   }
 }
 

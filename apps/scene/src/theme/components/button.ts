@@ -5,9 +5,9 @@ const Button = defineRecipe({
     variant: {
       plain: {
         _hover: {
-          bgColor: 'blackAlpha.100',
+          bgColor: 'bg.subtle',
         },
-        bgColor: 'blackAlpha.200',
+        bgColor: 'bg.muted',
         borderRadius: 'full',
       },
       subtle: {
@@ -19,7 +19,7 @@ const Button = defineRecipe({
           bgColor: 'colorPalette.solid',
           color: 'colorPalette.contrast',
         },
-        bgColor: 'gray.100',
+        bgColor: 'bg.muted',
         flexShrink: 0,
       },
     },

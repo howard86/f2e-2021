@@ -1,3 +1,5 @@
+import type { TourismPropertyType } from './tourism';
+
 const SCENE_KEYWORDS = [
   'Description',
   'AttractionName',
@@ -63,3 +65,26 @@ export const constructActivitiesSearch = (value: string): string =>
   ACTIVITY_KEYWORDS.map((keyword) =>
     getODataSearchCriteria(keyword, value),
   ).join(OR_STATEMENT);
+
+const NAME_FIELDS: Record<TourismPropertyType, string> = {
+  Activity: 'EventName',
+  Hotel: 'HotelName',
+  Restaurant: 'RestaurantName',
+  ScenicSpot: 'AttractionName',
+};
+
+/**
+ * Keyword match on a V2 record's name or description, for the native V2
+ * getters. Unlike the construct*Search helpers it avoids date and address
+ * fields, which TDX rejects or makes slow under `indexof`.
+ */
+export const constructKeywordFilter = (
+  type: TourismPropertyType,
+  keyword: string,
+): string => {
+  const value = keyword.replaceAll("'", "''");
+
+  return [NAME_FIELDS[type], 'Description']
+    .map((field) => getODataSearchCriteria(field, value))
+    .join(OR_STATEMENT);
+};

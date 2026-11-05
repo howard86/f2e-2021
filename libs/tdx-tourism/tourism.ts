@@ -8,6 +8,7 @@ import {
 import {
   type Attraction,
   type Event,
+  type PostalAddressType,
   tourism0101,
   tourism0201,
   tourism0301,
@@ -116,6 +117,47 @@ type TourismV2Item = Partial<Attraction> &
   Partial<Event> &
   Partial<V2Hotel> &
   Partial<V2Restaurant>;
+
+type ValidatedV2<T extends object> = T & {
+  PostalAddress: PostalAddressType & { City: string };
+};
+
+/**
+ * Validated Tourism V2 records, unmapped. parseTourismItems has guaranteed
+ * the ID, name, a known (臺-normalised) city and, for events, valid dates.
+ */
+export type AttractionV2 = ValidatedV2<Attraction> & {
+  AttractionID: string;
+  AttractionName: string;
+};
+export type RestaurantV2 = ValidatedV2<V2Restaurant> & {
+  RestaurantID: string;
+  RestaurantName: string;
+};
+export type HotelV2 = ValidatedV2<V2Hotel> & {
+  HotelID: string;
+  HotelName: string;
+};
+export type EventV2 = ValidatedV2<Event> & {
+  EndDateTime: string;
+  EventID: string;
+  EventName: string;
+  StartDateTime: string;
+};
+
+/** Native-V2 query: `filter` and `orderBy` are raw OData on V2 field names. */
+export interface V2Params {
+  filter?: string;
+  orderBy?: string;
+  skip?: number;
+  top?: number;
+}
+
+export interface V2Result<T> {
+  /** Raw rows TDX returned, before invalid ones were skipped (for paging). */
+  fetched: number;
+  items: T[];
+}
 
 const V2_TYPE_MAP: Record<TourismPropertyType, TourismV2PropertyType> = {
   Activity: 'Event',
@@ -346,6 +388,26 @@ export class TourismService {
 
   getActivitiesByCity = this.generateGetItemsByCity<Activity>('Activity');
 
+  /**
+   * Native V2 getters: validated records with every field TDX sends (all
+   * images, tags, prices, class codes…), unlike the V1-shaped getters above.
+   */
+  getAttractionsV2 = this.generateGetV2Items<AttractionV2>('ScenicSpot');
+
+  getAttractionByIdV2 = this.generateGetV2ById<AttractionV2>('ScenicSpot');
+
+  getRestaurantsV2 = this.generateGetV2Items<RestaurantV2>('Restaurant');
+
+  getRestaurantByIdV2 = this.generateGetV2ById<RestaurantV2>('Restaurant');
+
+  getHotelsV2 = this.generateGetV2Items<HotelV2>('Hotel');
+
+  getHotelByIdV2 = this.generateGetV2ById<HotelV2>('Hotel');
+
+  getEventsV2 = this.generateGetV2Items<EventV2>('Activity');
+
+  getEventByIdV2 = this.generateGetV2ById<EventV2>('Activity');
+
   private generateGetById<T>(type: TourismPropertyType) {
     return async (id: string) => {
       const v2Type = V2_TYPE_MAP[type];
@@ -373,18 +435,57 @@ export class TourismService {
     params: ApiParam,
     city?: City,
   ): Promise<T[]> {
-    const filter = [
-      translateFilter(params.filter),
-      city ? `PostalAddress/City eq '${CityMap[city]}'` : '',
-    ]
-      .filter(Boolean)
-      .join(' and ');
+    const { items } = await this.queryItems(
+      type,
+      {
+        filter: translateFilter(params.filter),
+        orderBy: translateOrderBy(params.orderBy),
+        skip: params.skip ? Number(params.skip) : undefined,
+        top: params.top ? Number(params.top) : undefined,
+      },
+      city,
+    );
+
+    // The schemas guarantee every field the mappers read.
+    return items.map(
+      (item) => mapTourismItem(type, item as TourismV2Item) as T,
+    );
+  }
+
+  private generateGetV2Items<T>(type: TourismPropertyType) {
+    return (params: V2Params = {}, city?: City) =>
+      this.queryItems(type, params, city) as Promise<V2Result<T>>;
+  }
+
+  private generateGetV2ById<T>(type: TourismPropertyType) {
+    return async (id: string): Promise<T | null> => {
+      const { items } = await this.queryItems(type, {
+        filter: `${V2_TYPE_MAP[type]}ID eq '${id.replaceAll("'", "''")}'`,
+        top: 1,
+      });
+
+      return (items[0] as T | undefined) ?? null;
+    };
+  }
+
+  /** Runs one V2 query and validates the rows; `filter` is sent as given. */
+  private async queryItems(
+    type: TourismPropertyType,
+    params: V2Params,
+    city?: City,
+  ): Promise<V2Result<Record<string, unknown>>> {
+    // Parenthesised so an `or` in the caller's filter binds before the city.
+    const filter =
+      params.filter && city
+        ? `(${params.filter}) and PostalAddress/City eq '${CityMap[city]}'`
+        : params.filter ||
+          (city ? `PostalAddress/City eq '${CityMap[city]}'` : '');
     const { data } = await V2_OPERATIONS[type]({
       client: this.client,
       query: {
         ...toODataQuery({
           filter,
-          orderBy: translateOrderBy(params.orderBy),
+          orderBy: params.orderBy,
           top: params.top,
         }),
         // The tourism spec types $skip as a number.
@@ -392,10 +493,8 @@ export class TourismService {
       },
       throwOnError: true,
     });
-    const { skipped, valid } = parseTourismItems(
-      type,
-      (data as { value?: unknown[] }).value ?? [],
-    );
+    const rows = (data as { value?: unknown[] }).value ?? [];
+    const { skipped, valid } = parseTourismItems(type, rows);
 
     if (skipped.length > 0) {
       console.warn(
@@ -405,9 +504,6 @@ export class TourismService {
       );
     }
 
-    // The schemas guarantee every field the mappers read.
-    return valid.map(
-      (item) => mapTourismItem(type, item as TourismV2Item) as T,
-    );
+    return { fetched: rows.length, items: valid };
   }
 }

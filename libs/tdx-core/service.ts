@@ -59,23 +59,41 @@ const getRetryDelay = (response: Response, attempt: number) => {
   return Math.min(base + Math.random() * 1000, MAX_RATE_LIMIT_DELAY_MS);
 };
 
-const fetchWithRateLimitRetry = async (...args: Parameters<typeof fetch>) => {
-  let response = await fetch(...args);
+/**
+ * Retries 429s by waiting out TDX's window. `maxWaitMs` caps the total time
+ * spent waiting: a build can afford to wait minutes, a page request cannot
+ * outlast its serverless timeout, so it gives up and surfaces the 429.
+ */
+const createRateLimitedFetch =
+  (maxWaitMs = Number.POSITIVE_INFINITY) =>
+  async (...args: Parameters<typeof fetch>) => {
+    let response = await fetch(...args);
+    let waited = 0;
 
-  for (
-    let attempt = 1;
-    response.status === 429 && attempt <= MAX_RATE_LIMIT_RETRIES;
-    attempt += 1
-  ) {
-    const delay = getRetryDelay(response, attempt);
+    for (
+      let attempt = 1;
+      response.status === 429 && attempt <= MAX_RATE_LIMIT_RETRIES;
+      attempt += 1
+    ) {
+      const delay = getRetryDelay(response, attempt);
 
-    // biome-ignore lint/performance/noAwaitInLoops: rate-limit retries must remain sequential.
-    await new Promise((resolve) => setTimeout(resolve, delay));
-    response = await fetch(...args);
-  }
+      if (waited + delay > maxWaitMs) {
+        break;
+      }
+      waited += delay;
 
-  return response;
-};
+      // biome-ignore lint/performance/noAwaitInLoops: rate-limit retries must remain sequential.
+      await new Promise((resolve) => setTimeout(resolve, delay));
+      response = await fetch(...args);
+    }
+
+    return response;
+  };
+
+export interface TdxServiceOptions {
+  /** Total time to spend waiting out 429s per request; unlimited by default. */
+  maxRateLimitWaitMs?: number;
+}
 
 export interface TdxClientOptions {
   auth: () => Promise<string>;
@@ -110,9 +128,15 @@ export class TdxService {
 
   private refreshPromise: Promise<void> | undefined;
 
+  private readonly rateLimitedFetch: ReturnType<typeof createRateLimitedFetch>;
+
   DEFAULT_API_PARAMS: ApiParam = { top: 20 };
 
-  constructor(params: Partial<TdxServiceParams>) {
+  constructor(
+    params: Partial<TdxServiceParams>,
+    options: TdxServiceOptions = {},
+  ) {
+    this.rateLimitedFetch = createRateLimitedFetch(options.maxRateLimitWaitMs);
     this.clientId = getRequiredParam(params, 'clientId');
     this.clientSecret = getRequiredParam(params, 'clientSecret');
     this.baseUrl = getRequiredParam(params, 'baseUrl');
@@ -151,7 +175,7 @@ export class TdxService {
       baseUrl: `${this.baseUrl}/api/${server}`,
       // Bun's `typeof fetch` adds `preconnect`, which a wrapper never has;
       // the call signature is what the generated clients use.
-      fetch: fetchWithRateLimitRetry as typeof fetch,
+      fetch: this.rateLimitedFetch as typeof fetch,
     };
   }
 

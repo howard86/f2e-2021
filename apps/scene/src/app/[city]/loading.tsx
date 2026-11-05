@@ -1,9 +1,13 @@
+import { Container } from '@chakra-ui/react';
+
 import Layout from '@/components/layout/layout';
-import LoadingScreen from '@/components/loading-screen';
+import PlaceGridSkeleton from '@/components/ui/place-grid-skeleton';
 
 const Loading = () => (
   <Layout colorPalette="scenes">
-    <LoadingScreen minH="400px" />
+    <Container maxW="6xl" py={{ base: 6, md: 10 }}>
+      <PlaceGridSkeleton />
+    </Container>
   </Layout>
 );
 

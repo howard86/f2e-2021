@@ -35,14 +35,18 @@ const text = optional(z.string());
 const httpUrl = z.url({ protocol: /^https?$/u });
 const dateTime = z.iso.datetime({ local: true, offset: true });
 
+const classes = validEntries(z.number().int());
+
 const common = {
   Description: text,
+  Facilities: classes,
   Images: validEntries(
     z.looseObject({ Description: text, Name: text, URL: httpUrl }),
   ),
   LocatedCities: validEntries(z.looseObject({ City: requiredText })),
   MapURLs: validEntries(httpUrl),
   ParkingInfo: text,
+  PaymentMethods: validEntries(requiredText),
   PositionLat: optional(z.number()),
   PositionLon: optional(z.number()),
   PostalAddress: optional(
@@ -53,15 +57,19 @@ const common = {
       ZipCode: text,
     }),
   ),
+  ReservationURLs: validEntries(httpUrl),
+  SocialMediaURLs: validEntries(z.looseObject({ Name: text, URL: httpUrl })),
   Telephones: validEntries(z.looseObject({ Ext: text, Tel: requiredText })),
   UpdateTime: text,
   WebsiteUrl: optional(httpUrl),
 };
 
-const classes = validEntries(z.number().int());
-
 const organizations = validEntries(
-  z.looseObject({ Faxes: validEntries(requiredText), Name: text }),
+  z.looseObject({
+    Class: text,
+    Faxes: validEntries(requiredText),
+    Name: text,
+  }),
 );
 
 interface CityFields {
@@ -105,7 +113,9 @@ const attraction = z
     AttractionID: requiredText,
     AttractionName: requiredText,
     FeeInfo: text,
+    IsAccessibleForFree: optional(z.number().int()),
     Remarks: text,
+    ServiceStatus: optional(z.number().int()),
     ServiceTimeInfo: text,
     Tags: validEntries(requiredText),
     TrafficInfo: text,
@@ -116,37 +126,56 @@ const restaurant = z
   .looseObject({
     ...common,
     CuisineClasses: classes,
+    Remarks: text,
+    RestaurantFeatures: classes,
     RestaurantID: requiredText,
     RestaurantName: requiredText,
+    ServiceStatus: optional(z.number().int()),
     ServiceTimeInfo: text,
+    TrafficInfo: text,
   })
   .transform(withKnownCity);
 
 const hotel = z
   .looseObject({
     ...common,
+    CeilingPrice: optional(z.number().nonnegative()),
+    CheckTimes: validEntries(
+      z.looseObject({ CheckInTime: text, CheckOutTime: text }),
+    ),
     HotelClasses: classes,
     HotelID: requiredText,
     HotelName: requiredText,
-    HotelStars: optional(z.number().int().min(0).max(5)),
+    // 0 = none ... 5 = 5 stars, 6 = 卓越5星級 (HotelStarsEnum).
+    HotelStars: optional(z.number().int().min(0).max(6)),
+    LowestPrice: optional(z.number().nonnegative()),
     Organizations: organizations,
+    Remarks: text,
     RoomInfo: text,
     ServiceInfo: text,
+    ServiceStatus: optional(z.number().int()),
+    ServiceTimeInfo: text,
+    TotalRooms: optional(z.number().int().nonnegative()),
+    TrafficInfo: text,
   })
   .transform(withKnownCity);
 
 const event = z
   .looseObject({
     ...common,
+    CalendarURLs: validEntries(httpUrl),
     EndDateTime: dateTime,
     EventClasses: classes,
     EventID: requiredText,
     EventName: requiredText,
+    EventStatus: text,
     FeeInfo: text,
+    IsAccessibleForFree: optional(z.number().int()),
     Organizations: organizations,
     Participant: text,
     Remarks: text,
     StartDateTime: dateTime,
+    Tags: validEntries(requiredText),
     TrafficInfo: text,
   })
   .refine(

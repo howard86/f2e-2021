@@ -3,31 +3,50 @@ import { defineTextStyles } from '@chakra-ui/react';
 const Text = defineTextStyles({
   body: {
     value: {
-      fontSize: 14,
+      fontSize: '16px',
+      lineHeight: 1.75,
     },
   },
-  'headline-1': {
+  'body-sm': {
     value: {
-      fontSize: 48,
-      fontWeight: 'bold',
+      fontSize: '14px',
+      lineHeight: 1.6,
     },
   },
-  'headline-2': {
+  display: {
     value: {
-      fontSize: 32,
+      fontSize: '40px',
       fontWeight: 'bold',
+      letterSpacing: '-0.01em',
+      lineHeight: '48px',
     },
   },
-  'headline-3': {
+  // Long-form reading text; Prose caps the measure at ~68ch.
+  prose: {
     value: {
-      fontSize: 28,
-      fontWeight: 'bold',
+      fontSize: '17px',
+      lineHeight: 1.8,
     },
   },
-  subtitle: {
+  'title-lg': {
     value: {
-      fontSize: 16,
+      fontSize: '32px',
       fontWeight: 'bold',
+      lineHeight: 1.3,
+    },
+  },
+  'title-md': {
+    value: {
+      fontSize: '24px',
+      fontWeight: 'bold',
+      lineHeight: 1.35,
+    },
+  },
+  'title-sm': {
+    value: {
+      fontSize: '20px',
+      fontWeight: 'bold',
+      lineHeight: 1.4,
     },
   },
 });

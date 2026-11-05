@@ -1,10 +1,27 @@
 declare namespace OpenData {
   // TODO: replace with real api from https://opendata.cwb.gov.tw/dist/opendata-swagger.html#/預報/get_v1_rest_datastore_F_C0032_001
+  interface WeatherPeriod {
+    /** ISO date-time of the period end. */
+    end: string;
+    /** 今日白天 / 今晚明晨 / 明日白天 … */
+    label: string;
+    maxT: string;
+    minT: string;
+    /** Probability of precipitation, percent. */
+    pop?: string;
+    /** ISO date-time of the period start. */
+    start: string;
+    weather: Weather;
+  }
+
   interface CityWeather {
+    /** Chinese city name as published by CWB, e.g. 臺北市. */
     city: string;
     id: string;
     maxT: string;
     minT: string;
+    /** Current and following periods, earliest first. */
+    periods: WeatherPeriod[];
     weather: Weather;
   }
 
