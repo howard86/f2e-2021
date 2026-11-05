@@ -272,16 +272,33 @@ const BusRouteView = ({
 
     const { map } = mapContextRef.current;
 
+    let syncedMarkers: typeof mapContextRef.current.markers | null = null;
+    let isVisible = false;
+
     const handleZoom = () => {
-      for (const marker of mapContextRef.current.markers) {
-        marker.remove();
+      const { markers } = mapContextRef.current;
+
+      // freshly attached markers are not on the map yet
+      if (markers !== syncedMarkers) {
+        syncedMarkers = markers;
+        isVisible = false;
       }
 
-      if (map.getZoom() >= ZoomLevel.Marker) {
-        for (const marker of mapContextRef.current.markers) {
+      const shouldShow = map.getZoom() >= ZoomLevel.Marker;
+
+      if (shouldShow === isVisible) {
+        return;
+      }
+
+      for (const marker of markers) {
+        if (shouldShow) {
           marker.addTo(map);
+        } else {
+          marker.remove();
         }
       }
+
+      isVisible = shouldShow;
     };
 
     map.on('zoomend', handleZoom);
