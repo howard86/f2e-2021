@@ -12,6 +12,7 @@ import {
   Portal,
   Text,
 } from '@chakra-ui/react';
+import { cached, DAY, HOUR } from '@f2e/browser-cache';
 import { Cities, type City, CityMap } from '@f2e/tdx-core';
 import { useRouter } from 'next/navigation';
 import {
@@ -35,6 +36,7 @@ const DEBOUNCE_MS = 300;
 const MIN_QUERY_LENGTH = 2;
 const MAX_SUGGESTIONS = 8;
 const MAX_CITY_SHORTCUTS = 3;
+const SEARCH_CACHE_POLICY = { freshFor: 6 * HOUR, maxAge: 7 * DAY };
 
 interface Suggestion {
   href: string;
@@ -67,6 +69,20 @@ const toSuggestion = (place: PlaceSummary): Suggestion => ({
   title: place.name,
 });
 
+const loadPlaces = async (url: string, signal?: AbortSignal) => {
+  const response = await fetch(url, { signal });
+  const body = response.ok
+    ? ((await response.json()) as { data?: PlaceSummary[]; success: boolean })
+    : undefined;
+
+  // Throwing keeps failed searches out of the browser cache.
+  if (!(body?.success && body.data)) {
+    throw new Error(`Search failed with ${response.status}`);
+  }
+
+  return body.data;
+};
+
 const fetchSuggestions = async (
   query: string,
   city: City | undefined,
@@ -76,20 +92,23 @@ const fetchSuggestions = async (
   if (city) {
     params.set('city', city);
   }
-  const response = await fetch(`/api/search?${params.toString()}`, { signal });
+  const url = `/api/search?${params.toString()}`;
 
-  if (!response.ok) {
+  try {
+    const places = await cached(
+      url,
+      (loadSignal) => loadPlaces(url, loadSignal),
+      SEARCH_CACHE_POLICY,
+      { signal },
+    );
+
+    return places.slice(0, MAX_SUGGESTIONS).map(toSuggestion);
+  } catch (error) {
+    if (signal.aborted) {
+      throw error;
+    }
     return [];
   }
-
-  const body = (await response.json()) as {
-    data?: PlaceSummary[];
-    success: boolean;
-  };
-
-  return body.success && body.data
-    ? body.data.slice(0, MAX_SUGGESTIONS).map(toSuggestion)
-    : [];
 };
 
 interface SuggestionOptionProps {
