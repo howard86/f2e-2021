@@ -59,15 +59,40 @@ const getRetryDelay = (response: Response, attempt: number) => {
   return Math.min(base + Math.random() * 1000, MAX_RATE_LIMIT_DELAY_MS);
 };
 
+/** Spaces calls at least `intervalMs` apart, in call order. */
+const createThrottle = (intervalMs: number) => {
+  let nextAt = 0;
+
+  return async () => {
+    const now = Date.now();
+    const at = Math.max(now, nextAt);
+    nextAt = at + intervalMs;
+
+    if (at > now) {
+      await new Promise((resolve) => setTimeout(resolve, at - now));
+    }
+  };
+};
+
 /**
  * Retries 429s by waiting out TDX's window. `maxWaitMs` caps the total time
  * spent waiting: a build can afford to wait minutes, a page request cannot
  * outlast its serverless timeout, so it gives up and surfaces the 429.
+ * `minIntervalMs` spaces every request (retries included) so a caller that
+ * sends many can stay under the limit instead of racing for each window.
  */
-const createRateLimitedFetch =
-  (maxWaitMs = Number.POSITIVE_INFINITY) =>
-  async (...args: Parameters<typeof fetch>) => {
-    let response = await fetch(...args);
+const createRateLimitedFetch = (
+  maxWaitMs = Number.POSITIVE_INFINITY,
+  minIntervalMs = 0,
+) => {
+  const throttle = createThrottle(minIntervalMs);
+  const send = async (...args: Parameters<typeof fetch>) => {
+    await throttle();
+    return fetch(...args);
+  };
+
+  return async (...args: Parameters<typeof fetch>) => {
+    let response = await send(...args);
     let waited = 0;
 
     for (
@@ -84,15 +109,18 @@ const createRateLimitedFetch =
 
       // biome-ignore lint/performance/noAwaitInLoops: rate-limit retries must remain sequential.
       await new Promise((resolve) => setTimeout(resolve, delay));
-      response = await fetch(...args);
+      response = await send(...args);
     }
 
     return response;
   };
+};
 
 export interface TdxServiceOptions {
   /** Total time to spend waiting out 429s per request; unlimited by default. */
   maxRateLimitWaitMs?: number;
+  /** Minimum gap between TDX requests from this service; none by default. */
+  minRequestIntervalMs?: number;
 }
 
 export interface TdxClientOptions {
@@ -136,7 +164,10 @@ export class TdxService {
     params: Partial<TdxServiceParams>,
     options: TdxServiceOptions = {},
   ) {
-    this.rateLimitedFetch = createRateLimitedFetch(options.maxRateLimitWaitMs);
+    this.rateLimitedFetch = createRateLimitedFetch(
+      options.maxRateLimitWaitMs,
+      options.minRequestIntervalMs,
+    );
     this.clientId = getRequiredParam(params, 'clientId');
     this.clientSecret = getRequiredParam(params, 'clientSecret');
     this.baseUrl = getRequiredParam(params, 'baseUrl');
