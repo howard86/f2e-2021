@@ -10,11 +10,13 @@
   },
   "scripts": {
     "generate": "bun scripts/generate.ts",
+    "test": "bun test",
     "typecheck": "bun check",
     "update-fixtures": "bun scripts/update-fixtures.ts",
     "update-specs": "bun scripts/update-specs.ts"
   },
   "dependencies": {
-    "@f2e/tdx-core": "workspace:*"
+    "@f2e/tdx-core": "workspace:*",
+    "zod": "^4.6.7"
   }
 }
