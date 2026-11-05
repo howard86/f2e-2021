@@ -325,6 +325,7 @@ const BusRouteView = ({
                 bg: 'primary.600',
                 p: 4,
                 pos: 'relative',
+                w: 'full',
               }}
             >
               <IconButton
@@ -341,14 +342,27 @@ const BusRouteView = ({
                 alignSelf="center"
                 as="h1"
                 display={MOBILE_DISPLAY}
+                flexShrink={0}
                 lineClamp={1}
               >
                 {routeName}
               </Heading>
               <Box display={MOBILE_DISPLAY} flexGrow={1} />
               {directions.map((direction) => (
-                <Tabs.Trigger key={direction} value={String(direction)}>
-                  {getDirectionTabName(routeStopEntity, directions, direction)}
+                <Tabs.Trigger
+                  flex="1"
+                  key={direction}
+                  minW="0"
+                  value={String(direction)}
+                >
+                  {/* Stop names can be long; truncate rather than overflow on phones. */}
+                  <Text truncate>
+                    {getDirectionTabName(
+                      routeStopEntity,
+                      directions,
+                      direction,
+                    )}
+                  </Text>
                 </Tabs.Trigger>
               ))}
             </Tabs.List>
