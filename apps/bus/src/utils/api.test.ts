@@ -2,7 +2,14 @@
 
 import { describe, expect, test } from 'bun:test';
 
-import { badRequest, handleApi } from './api';
+import { badRequest, handleApi, roundCoordinate } from './api';
+
+describe('roundCoordinate', () => {
+  test('rounds to 3 decimals', () => {
+    expect(roundCoordinate(25.033_48)).toBe(25.033);
+    expect(roundCoordinate(121.5654)).toBe(121.565);
+  });
+});
 
 describe('handleApi', () => {
   test('sets Cache-Control on success only', async () => {
