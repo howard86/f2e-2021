@@ -5,31 +5,12 @@ import { useCallback } from 'react';
 import { BsBookmark, BsBookmarkFill } from 'react-icons/bs';
 
 import useSaved from '@/hooks/use-saved';
-import type { PlaceDetail, PlaceSummary } from '@/types/place';
+import type { PlaceSummary } from '@/types/place';
 
-const toSummary = (detail: PlaceDetail): PlaceSummary => ({
-  city: detail.city,
-  citySlug: detail.citySlug,
-  endDate: detail.endDate,
-  href: detail.href,
-  id: detail.id,
-  image: detail.image ?? detail.images[0],
-  isFree: detail.isFree,
-  keyFact: detail.keyFact,
-  name: detail.name,
-  startDate: detail.startDate,
-  tags: detail.tags,
-  town: detail.town,
-  type: detail.type,
-});
-
-const SaveButton = ({ detail }: { detail: PlaceDetail }) => {
+const SaveButton = ({ place }: { place: PlaceSummary }) => {
   const { isSaved, ready, toggle } = useSaved();
-  const saved = ready && isSaved(detail.href);
-  const onClick = useCallback(
-    () => toggle(toSummary(detail)),
-    [detail, toggle],
-  );
+  const saved = ready && isSaved(place.href);
+  const onClick = useCallback(() => toggle(place), [place, toggle]);
 
   return (
     <Button

@@ -5,12 +5,20 @@ import { FiCalendar } from 'react-icons/fi';
 import type { PlaceDetail } from '@/types/place';
 import { buildIcs } from './helpers';
 
-const CalendarButton = ({ detail }: { detail: PlaceDetail }) => {
+type CalendarButtonProps = Pick<
+  PlaceDetail,
+  'calendar' | 'description' | 'id' | 'name'
+> & { location?: string };
+
+const CalendarButton = ({
+  calendar,
+  description,
+  id,
+  location,
+  name,
+}: CalendarButtonProps) => {
   const download = () => {
-    const ics = buildIcs({
-      ...detail,
-      location: detail.facts.find((fact) => fact.kind === 'map')?.value,
-    });
+    const ics = buildIcs({ calendar, description, id, location, name });
 
     if (!ics) {
       return;
@@ -21,7 +29,7 @@ const CalendarButton = ({ detail }: { detail: PlaceDetail }) => {
     const anchor = document.createElement('a');
 
     anchor.href = url;
-    anchor.download = `${detail.name}.ics`;
+    anchor.download = `${name}.ics`;
     anchor.click();
     URL.revokeObjectURL(url);
   };

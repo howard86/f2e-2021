@@ -110,7 +110,15 @@ const FactCard = ({ detail }: { detail: PlaceDetail }) => {
         </Stack>
       )}
       <Stack gap="2">
-        {detail.calendar ? <CalendarButton detail={detail} /> : null}
+        {detail.calendar ? (
+          <CalendarButton
+            calendar={detail.calendar}
+            description={detail.description}
+            id={detail.id}
+            location={detail.facts.find((fact) => fact.kind === 'map')?.value}
+            name={detail.name}
+          />
+        ) : null}
         {detail.reservationUrl ? (
           <Button asChild colorPalette="gray" variant="solid">
             <ExternalLink href={detail.reservationUrl}>

@@ -26,6 +26,7 @@ import {
   PLACE_LABEL,
   type PlaceDetail,
   type PlaceStatusTone,
+  type PlaceSummary,
 } from '@/types/place';
 
 import Collapsible from './collapsible';
@@ -46,6 +47,22 @@ const TONE_PALETTE: Record<PlaceStatusTone, string> = {
   neutral: 'gray',
   positive: 'green',
 };
+
+const toPlaceSummary = (detail: PlaceDetail): PlaceSummary => ({
+  city: detail.city,
+  citySlug: detail.citySlug,
+  endDate: detail.endDate,
+  href: detail.href,
+  id: detail.id,
+  image: detail.image ?? detail.images[0],
+  isFree: detail.isFree,
+  keyFact: detail.keyFact,
+  name: detail.name,
+  startDate: detail.startDate,
+  tags: detail.tags,
+  town: detail.town,
+  type: detail.type,
+});
 
 const Body = ({ text }: { text: string }) => (
   <Collapsible collapsible={shouldCollapse(text)}>
@@ -137,7 +154,7 @@ const DetailView = ({ detail }: { detail: PlaceDetail }) => {
           <TagChips hrefFor={tagHref} tags={detail.tags} />
         )}
         <Flex flexWrap="wrap" gap="2">
-          <SaveButton detail={detail} />
+          <SaveButton place={toPlaceSummary(detail)} />
           <ShareButton title={detail.name} />
           {directions ? (
             <Button asChild colorPalette="gray" size="sm" variant="outline">
