@@ -8,8 +8,8 @@ import EmptyState from '@/components/search/empty-state';
 import SearchForm from '@/components/search/search-form';
 import {
   buildHref,
+  parseCity,
   parseKeyword,
-  parseListParams,
   type RawSearchParams,
 } from '@/components/search/search-params';
 import UnavailableState from '@/components/search/unavailable-state';
@@ -18,14 +18,10 @@ import PlaceGrid from '@/components/ui/place-grid';
 import PlaceGridSkeleton from '@/components/ui/place-grid-skeleton';
 import SectionHeading from '@/components/ui/section-heading';
 import { ALL_CITIES } from '@/constants/preferences';
+import { listPath } from '@/lib/list-paths';
 import { searchPlaces } from '@/services/places';
 import background from '@/static/background/main.png';
-import {
-  PLACE_CATEGORY,
-  PLACE_LABEL,
-  PLACE_LIST_HREF,
-  PLACE_TYPES,
-} from '@/types/place';
+import { PLACE_CATEGORY, PLACE_LABEL, PLACE_TYPES } from '@/types/place';
 
 const LIMIT_PER_TYPE = 8;
 
@@ -61,7 +57,10 @@ const SearchResults = async ({ city, q }: { city?: City; q: string }) => {
         action={
           city
             ? { href: allHref, label: '改搜尋全台' }
-            : { href: '/scenes', label: '瀏覽所有景點' }
+            : {
+                href: listPath({ city: 'all', type: 'scene' }),
+                label: '瀏覽所有景點',
+              }
         }
         description="試試其他關鍵字，或縮短搜尋字詞。"
         title={`${city ? `在${CityMap[city]}` : ''}找不到與「${q}」相關的結果`}
@@ -90,8 +89,8 @@ const SearchResults = async ({ city, q }: { city?: City; q: string }) => {
           <Box colorPalette={PLACE_CATEGORY[type]} key={type}>
             <SectionHeading
               action={{
-                href: buildHref(PLACE_LIST_HREF[type], { city, q }),
-                label: '查看全部',
+                href: listPath({ city: city ?? 'all', type }),
+                label: `瀏覽全部${PLACE_LABEL[type]}`,
               }}
               title={`${PLACE_LABEL[type]}（${group.length}）`}
             />
@@ -108,7 +107,7 @@ const SearchResults = async ({ city, q }: { city?: City; q: string }) => {
 const SearchPage = async ({ searchParams }: SearchPageProps) => {
   const raw = await searchParams;
   const q = parseKeyword(raw.q);
-  const { city } = parseListParams(raw);
+  const city = parseCity(raw.city);
 
   return (
     <Layout colorPalette="scenes">

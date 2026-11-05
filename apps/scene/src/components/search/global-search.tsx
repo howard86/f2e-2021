@@ -252,7 +252,13 @@ const GlobalSearch = () => {
     if (selected) {
       go(selected.href);
     } else if (trimmed) {
-      go(`/search?q=${encodeURIComponent(trimmed)}`);
+      // Carry the preferred city: a client-side hop within /search doesn't
+      // change the pathname, so CityScope won't add it afterwards.
+      const params = new URLSearchParams({ q: trimmed });
+      if (preferredCity) {
+        params.set('city', preferredCity);
+      }
+      go(`/search?${params.toString()}`);
     }
   };
 

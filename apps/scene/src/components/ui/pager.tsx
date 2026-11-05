@@ -4,37 +4,14 @@ import { FiChevronLeft, FiChevronRight } from 'react-icons/fi';
 
 // Server-renderable: previous/next (and page number) links, no client state.
 interface PagerProps {
-  /** Path of the list page, e.g. /scenes. */
-  basePath: string;
   hasMore: boolean;
+  /** Path of a 1-based page of the same list. */
+  hrefForPage: (page: number) => string;
   /** 1-based current page. */
   page: number;
-  /** Current query params to keep on every link; `page` is replaced. */
-  searchParams: Record<string, string | undefined>;
 }
 
-const buildHref = (
-  basePath: string,
-  searchParams: PagerProps['searchParams'],
-  page: number,
-) => {
-  const query = new URLSearchParams();
-
-  for (const [key, value] of Object.entries(searchParams)) {
-    if (key !== 'page' && value) {
-      query.set(key, value);
-    }
-  }
-
-  if (page > 1) {
-    query.set('page', String(page));
-  }
-
-  const search = query.toString();
-  return search ? `${basePath}?${search}` : basePath;
-};
-
-const Pager = ({ basePath, hasMore, page, searchParams }: PagerProps) => (
+const Pager = ({ hasMore, hrefForPage, page }: PagerProps) => (
   <Flex
     align="center"
     aria-label="分頁"
@@ -45,7 +22,7 @@ const Pager = ({ basePath, hasMore, page, searchParams }: PagerProps) => (
   >
     {page > 1 ? (
       <Button asChild size="sm" variant="outline">
-        <NextLink href={buildHref(basePath, searchParams, page - 1)} rel="prev">
+        <NextLink href={hrefForPage(page - 1)} rel="prev">
           <FiChevronLeft />
           上一頁
         </NextLink>
@@ -61,7 +38,7 @@ const Pager = ({ basePath, hasMore, page, searchParams }: PagerProps) => (
     </Text>
     {hasMore ? (
       <Button asChild size="sm" variant="outline">
-        <NextLink href={buildHref(basePath, searchParams, page + 1)} rel="next">
+        <NextLink href={hrefForPage(page + 1)} rel="next">
           下一頁
           <FiChevronRight />
         </NextLink>

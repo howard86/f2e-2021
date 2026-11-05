@@ -2,14 +2,14 @@ import { Tag, Wrap } from '@chakra-ui/react';
 import NextLink from 'next/link';
 
 interface TagChipsProps {
-  /** When set, each chip links to `${hrefBase}${encodeURIComponent(tag)}`. */
-  hrefBase?: string;
+  /** Where a chip links; a chip is plain text when this returns undefined. */
+  hrefFor?: (tag: string) => string | undefined;
   /** Show at most this many; the rest are dropped. */
   max?: number;
   tags: string[];
 }
 
-const TagChips = ({ tags, max, hrefBase }: TagChipsProps) => {
+const TagChips = ({ tags, max, hrefFor }: TagChipsProps) => {
   const visible = max === undefined ? tags : tags.slice(0, max);
 
   if (visible.length === 0) {
@@ -18,8 +18,10 @@ const TagChips = ({ tags, max, hrefBase }: TagChipsProps) => {
 
   return (
     <Wrap gap="1.5">
-      {visible.map((tag) =>
-        hrefBase ? (
+      {visible.map((tag) => {
+        const href = hrefFor?.(tag);
+
+        return href ? (
           <Tag.Root
             _hover={{ bg: 'bg.muted' }}
             asChild
@@ -29,7 +31,7 @@ const TagChips = ({ tags, max, hrefBase }: TagChipsProps) => {
             size="sm"
             variant="subtle"
           >
-            <NextLink href={`${hrefBase}${encodeURIComponent(tag)}`}>
+            <NextLink href={href}>
               <Tag.Label>{tag}</Tag.Label>
             </NextLink>
           </Tag.Root>
@@ -43,8 +45,8 @@ const TagChips = ({ tags, max, hrefBase }: TagChipsProps) => {
           >
             <Tag.Label>{tag}</Tag.Label>
           </Tag.Root>
-        ),
-      )}
+        );
+      })}
     </Wrap>
   );
 };

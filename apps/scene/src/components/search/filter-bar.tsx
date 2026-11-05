@@ -3,7 +3,7 @@
 import { Button, chakra, Input, NativeSelect } from '@chakra-ui/react';
 import { type City, CityMap, counties, majorCities } from '@f2e/tdx-core';
 import { RouteLink } from '@f2e/ui/links';
-import { usePathname, useRouter } from 'next/navigation';
+import { useRouter } from 'next/navigation';
 import {
   type ChangeEvent,
   type FormEvent,
@@ -12,19 +12,23 @@ import {
 } from 'react';
 
 import { ALL_CITIES } from '@/constants/preferences';
-import type { TagOption } from '@/types/place';
-
-import { buildHref } from './search-params';
+import {
+  type EventsWhen,
+  eventsPath,
+  listPath,
+  type PathCity,
+} from '@/lib/list-paths';
+import type { PlaceType, TagOption } from '@/types/place';
 
 interface FilterBarProps {
-  /** Current URL values; the URL is the only state. */
-  city?: City;
-  /** Other params to carry over unchanged, e.g. `when`. */
-  preserve?: Record<string, string | undefined>;
-  q?: string;
+  /** Current path values; the path is the only state. */
+  city?: PathCity;
   showKeyword?: boolean;
   tag?: string;
   tagOptions?: TagOption[];
+  type: PlaceType;
+  /** Events only: the active tab, kept when the city changes. */
+  when?: EventsWhen;
 }
 
 const CityOptions = ({ cities }: { cities: City[] }) =>
@@ -36,43 +40,52 @@ const CityOptions = ({ cities }: { cities: City[] }) =>
 
 const FilterBar = ({
   city,
-  preserve = {},
-  q,
   showKeyword = true,
   tag,
   tagOptions = [],
+  type,
+  when,
 }: FilterBarProps) => {
   const router = useRouter();
-  const pathname = usePathname();
   const [pending, startTransition] = useTransition();
-  const [keyword, setKeyword] = useState(q ?? '');
+  const [keyword, setKeyword] = useState('');
 
-  const hasFilters = Boolean(city || q || tag);
+  const realCity = city && city !== ALL_CITIES ? city : undefined;
+  const hasFilters = Boolean(realCity || tag);
+  const pathFor = (next: { city?: PathCity; tag?: string }) =>
+    type === 'activity'
+      ? eventsPath({ city: next.city, when })
+      : listPath({ ...next, type });
 
-  const navigate = (next: Record<string, string | undefined>) => {
+  const navigate = (href: string) => {
     startTransition(() => {
-      router.replace(buildHref(pathname, { ...preserve, ...next }), {
-        scroll: false,
-      });
+      router.push(href, { scroll: false });
     });
   };
 
-  const current = { city, q, tag };
-
+  // Keywords are unbounded, so they go to the dynamic search page.
   const handleSubmit = (event: FormEvent<HTMLFormElement>) => {
     event.preventDefault();
-    navigate({ ...current, q: keyword.trim() || undefined });
+    const q = keyword.trim();
+
+    if (!q) {
+      return;
+    }
+
+    const params = new URLSearchParams({ q });
+    if (realCity) {
+      params.set('city', realCity);
+    }
+    navigate(`/search?${params.toString()}`);
   };
 
   const handleCity = (event: ChangeEvent<HTMLSelectElement>) => {
-    navigate({ ...current, city: event.target.value });
+    navigate(pathFor({ city: event.target.value as PathCity, tag }));
   };
 
   const handleTag = (event: ChangeEvent<HTMLSelectElement>) => {
-    navigate({ ...current, tag: event.target.value || undefined });
+    navigate(pathFor({ city, tag: event.target.value || undefined }));
   };
-
-  const handleClear = () => setKeyword('');
 
   const handleKeyword = (event: ChangeEvent<HTMLInputElement>) => {
     setKeyword(event.target.value);
@@ -146,11 +159,7 @@ const FilterBar = ({
         </Button>
       ) : null}
       {hasFilters ? (
-        <RouteLink
-          href={buildHref(pathname, preserve)}
-          onClick={handleClear}
-          textStyle="body-sm"
-        >
+        <RouteLink href={pathFor({})} textStyle="body-sm">
           清除篩選
         </RouteLink>
       ) : null}

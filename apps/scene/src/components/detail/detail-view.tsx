@@ -20,10 +20,10 @@ import PlaceGridSkeleton from '@/components/ui/place-grid-skeleton';
 import Prose from '@/components/ui/prose';
 import SectionHeading from '@/components/ui/section-heading';
 import TagChips from '@/components/ui/tag-chips';
-import { getNearbyPlaces } from '@/services/places';
+import { listPath } from '@/lib/list-paths';
+import { getNearbyPlaces, getTagOptions } from '@/services/places';
 import {
   PLACE_LABEL,
-  PLACE_LIST_HREF,
   type PlaceDetail,
   type PlaceStatusTone,
 } from '@/types/place';
@@ -60,7 +60,17 @@ const Nearby = async ({ detail }: { detail: PlaceDetail }) => {
 };
 
 const DetailView = ({ detail }: { detail: PlaceDetail }) => {
-  const listHref = PLACE_LIST_HREF[detail.type];
+  const tagValues = new Map(
+    getTagOptions(detail.type).map((option) => [option.label, option.value]),
+  );
+  const tagHref = (label: string) => {
+    const value = tagValues.get(label);
+
+    // Event lists have no tag filter, so activity labels go to search.
+    return value && detail.type !== 'activity'
+      ? listPath({ city: 'all', tag: value, type: detail.type })
+      : `/search?q=${encodeURIComponent(label)}`;
+  };
   const directions = directionsUrl(detail.position);
   const updated = formatDate(detail.updatedAt);
 
@@ -90,7 +100,7 @@ const DetailView = ({ detail }: { detail: PlaceDetail }) => {
           <Breadcrumb.Item>
             <RouteLink
               as={Breadcrumb.Link}
-              href={`${listHref}?city=${detail.citySlug}`}
+              href={listPath({ city: detail.citySlug, type: detail.type })}
             >
               {PLACE_LABEL[detail.type]}
             </RouteLink>
@@ -124,7 +134,7 @@ const DetailView = ({ detail }: { detail: PlaceDetail }) => {
           ) : null}
         </HStack>
         {detail.tags.length > 0 && (
-          <TagChips hrefBase={`${listHref}?tag=`} tags={detail.tags} />
+          <TagChips hrefFor={tagHref} tags={detail.tags} />
         )}
         <Flex flexWrap="wrap" gap="2">
           <SaveButton detail={detail} />

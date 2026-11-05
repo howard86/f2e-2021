@@ -1,19 +1,16 @@
 import { Container, Stack } from '@chakra-ui/react';
 import type { Metadata } from 'next';
+import { notFound } from 'next/navigation';
 import { Suspense } from 'react';
 
 import Layout from '@/components/layout/layout';
 import FilterBar from '@/components/search/filter-bar';
 import PlaceResults from '@/components/search/place-results';
-import {
-  buildHref,
-  parseListParams,
-  type RawSearchParams,
-} from '@/components/search/search-params';
 import TabLinks from '@/components/search/tab-links';
 import PageHero from '@/components/ui/page-hero';
 import PlaceGridSkeleton from '@/components/ui/place-grid-skeleton';
 import { ALL_CITIES } from '@/constants/preferences';
+import { decodeSegments, eventsPath, parseEventsPath } from '@/lib/list-paths';
 import background from '@/static/background/events.png';
 import wordOne from '@/static/background/events-1.png';
 import wordTwo from '@/static/background/events-2.png';
@@ -29,38 +26,41 @@ export const metadata: Metadata = {
   title: '台灣旅遊導覽網 | 活動',
 };
 
+// Generated on first request, then served from the CDN for an hour.
+export const revalidate = 3600;
+export const generateStaticParams = () => [];
+
 const EventsPage = async ({
-  searchParams,
+  params,
 }: {
-  searchParams: Promise<RawSearchParams>;
+  params: Promise<{ filters?: string[] }>;
 }) => {
-  const params = parseListParams(await searchParams);
-  const { allCities, city } = params;
-  const cityParam = city ?? (allCities ? ALL_CITIES : undefined);
-  const isFree = params.free === true;
-  const when = isFree ? undefined : (params.when ?? 'ongoing');
-  const activeKey = isFree ? 'free' : when;
+  const parsed = parseEventsPath(decodeSegments((await params).filters));
+
+  if (!parsed) {
+    notFound();
+  }
+
+  const { city, when } = parsed;
+  const realCity = city && city !== ALL_CITIES ? city : undefined;
+  const isFree = when === 'free';
+  const hrefForPage = (page: number) => eventsPath({ city, page, when });
 
   const tabs = [
     {
-      href: buildHref('/events', { city: cityParam, when: 'ongoing' }),
-      key: 'ongoing',
+      href: eventsPath({ city, when: 'ongoing' }),
       label: '進行中',
     },
     {
-      href: buildHref('/events', { city: cityParam, when: 'upcoming' }),
-      key: 'upcoming',
+      href: eventsPath({ city, when: 'upcoming' }),
       label: '即將開始',
     },
     {
-      href: buildHref('/events', { city: cityParam, free: '1' }),
-      key: 'free',
+      href: eventsPath({ city, when: 'free' }),
       label: '免費',
     },
   ];
-  const activeHref = tabs.find((tab) => tab.key === activeKey)?.href ?? '';
-  const preserve = isFree ? { free: '1' } : { when };
-  const suspenseKey = `${activeKey}-${cityParam}-${params.page}`;
+  const activeHref = eventsPath({ city, when });
 
   return (
     <Layout colorPalette="activities">
@@ -74,17 +74,24 @@ const EventsPage = async ({
       <Container maxW="6xl" py={{ base: 6, md: 10 }}>
         <Stack gap="6">
           <TabLinks activeHref={activeHref} label="活動類型" tabs={tabs} />
-          <FilterBar city={city} preserve={preserve} showKeyword={false} />
-          <Suspense fallback={<PlaceGridSkeleton />} key={suspenseKey}>
+          <FilterBar
+            city={city}
+            showKeyword={false}
+            type="activity"
+            when={when}
+          />
+          <Suspense
+            fallback={<PlaceGridSkeleton />}
+            key={hrefForPage(parsed.page)}
+          >
             <PlaceResults
-              allCities={allCities}
-              basePath="/events"
-              city={city}
-              clearHref={buildHref('/events', preserve)}
+              city={realCity}
+              clearHref={eventsPath({ when })}
               free={isFree || undefined}
-              page={params.page}
+              hrefForPage={hrefForPage}
+              page={parsed.page}
               type="activity"
-              when={when}
+              when={isFree ? undefined : when}
             />
           </Suspense>
         </Stack>

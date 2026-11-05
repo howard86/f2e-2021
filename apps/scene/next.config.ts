@@ -22,6 +22,40 @@ const config: NextConfig = {
   },
   outputFileTracingRoot: join(import.meta.dirname, '../..'),
   reactStrictMode: true,
+  // Old query-string list URLs. Next passes the request query through, so the
+  // old params stay on the new URL (ignored; the new paths never match the
+  // sources again, so there is no loop).
+  redirects: async () => [
+    ...['scenes', 'restaurants', 'hotels'].map((list) => ({
+      destination: `/${list}/:city`,
+      has: [
+        { key: 'city', type: 'query' as const, value: '(?<city>[A-Za-z]+)' },
+      ],
+      permanent: false,
+      source: `/${list}`,
+    })),
+    {
+      destination: '/events/:when/:city',
+      has: [
+        {
+          key: 'when',
+          type: 'query' as const,
+          value: '(?<when>ongoing|upcoming)',
+        },
+        { key: 'city', type: 'query' as const, value: '(?<city>[A-Za-z]+)' },
+      ],
+      permanent: false,
+      source: '/events',
+    },
+    {
+      destination: '/events/ongoing/:city',
+      has: [
+        { key: 'city', type: 'query' as const, value: '(?<city>[A-Za-z]+)' },
+      ],
+      permanent: false,
+      source: '/events',
+    },
+  ],
   transpilePackages: ['@f2e/tdx-core', '@f2e/tdx-tourism', '@f2e/ui'],
 };
 

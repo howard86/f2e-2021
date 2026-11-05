@@ -1,10 +1,13 @@
 import type { Metadata } from 'next';
 
 import PlaceListPage from '@/components/search/place-list-page';
-import type { RawSearchParams } from '@/components/search/search-params';
 import background from '@/static/background/restaurants.png';
 import wordOne from '@/static/background/restaurants-1.png';
 import wordTwo from '@/static/background/restaurants-2.png';
+
+// Generated on first request, then served from the CDN for six hours.
+export const revalidate = 21_600;
+export const generateStaticParams = () => [];
 
 export const metadata: Metadata = {
   description: '依縣市與分類找到在地美食。',
@@ -16,14 +19,13 @@ export const metadata: Metadata = {
 };
 
 const RestaurantsPage = ({
-  searchParams,
+  params,
 }: {
-  searchParams: Promise<RawSearchParams>;
+  params: Promise<{ filters?: string[] }>;
 }) => (
   <PlaceListPage
-    basePath="/restaurants"
     image={background}
-    searchParams={searchParams}
+    params={params}
     subtitle="依縣市與分類找到在地美食。"
     type="restaurant"
     wordImages={[wordOne, wordTwo]}

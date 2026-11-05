@@ -11,15 +11,11 @@ import PlaceGrid from '@/components/ui/place-grid';
 import SectionHeading from '@/components/ui/section-heading';
 import WeatherStrip from '@/components/weather/weather-strip';
 import { HOME_SECTION_SIZE } from '@/constants/pagination';
+import { listPath } from '@/lib/list-paths';
 import { listPlaces } from '@/services/places';
 import getWeathers from '@/services/weather';
 import mainBackground from '@/static/background/main.png';
-import {
-  PLACE_CATEGORY,
-  PLACE_LABEL,
-  PLACE_LIST_HREF,
-  type PlaceType,
-} from '@/types/place';
+import { PLACE_CATEGORY, PLACE_LABEL, type PlaceType } from '@/types/place';
 
 export const revalidate = 21_600;
 
@@ -64,7 +60,10 @@ const HomePage = async () => {
           {events.items.length > 0 ? (
             <Box colorPalette="activities">
               <SectionHeading
-                action={{ href: '/events', label: '查看更多' }}
+                action={{
+                  href: listPath({ type: 'activity' }),
+                  label: '查看更多',
+                }}
                 title="本週活動"
               />
               <Box mt="4">
@@ -82,7 +81,7 @@ const HomePage = async () => {
             sections[index].items.length > 0 ? (
               <Box colorPalette={PLACE_CATEGORY[type]} key={type}>
                 <SectionHeading
-                  action={{ href: PLACE_LIST_HREF[type], label: '查看更多' }}
+                  action={{ href: listPath({ type }), label: '查看更多' }}
                   title={PLACE_LABEL[type]}
                 />
                 <Box mt="4">

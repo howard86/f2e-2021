@@ -1,34 +1,34 @@
 'use client';
 
-import { usePathname, useRouter, useSearchParams } from 'next/navigation';
+import { usePathname, useRouter } from 'next/navigation';
 import { useEffect } from 'react';
 
-import { CITY_SCOPED_PATHS } from '@/constants/preferences';
 import usePreferredCity from '@/hooks/use-preferred-city';
+import { scopedHref } from '@/lib/scoped-href';
 
 /**
- * Adds the preferred city to a list page that opened without one, so lists
- * stay grouped by city. Runs in the browser only; `?city=all` opts out.
+ * Sends a list page that opened without a city to the preferred city's path,
+ * so lists stay grouped by city. Runs in the browser only (the list pages are
+ * CDN-cached and cannot read the preference); a path naming a city or `all`
+ * is never rewritten. The query is read from `window.location` because
+ * useSearchParams would force every static page to a Suspense boundary.
  */
 const CityScope = () => {
   const { city } = usePreferredCity();
   const pathname = usePathname();
-  const searchParams = useSearchParams();
   const router = useRouter();
 
   useEffect(() => {
-    if (
-      !city ||
-      searchParams.has('city') ||
-      !CITY_SCOPED_PATHS.includes(pathname)
-    ) {
+    if (!city) {
       return;
     }
 
-    const next = new URLSearchParams(searchParams);
-    next.set('city', city);
-    router.replace(`${pathname}?${next.toString()}`, { scroll: false });
-  }, [city, pathname, router, searchParams]);
+    const target = scopedHref(pathname, window.location.search, city);
+
+    if (target) {
+      router.replace(target, { scroll: false });
+    }
+  }, [city, pathname, router]);
 
   return null;
 };

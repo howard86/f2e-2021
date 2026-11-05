@@ -16,8 +16,9 @@ import { useTheme } from 'next-themes';
 import type { ChangeEvent } from 'react';
 import { FiMapPin, FiMonitor, FiMoon, FiSettings, FiSun } from 'react-icons/fi';
 
-import { CITY_SCOPED_PATHS, toPreferredCity } from '@/constants/preferences';
+import { toPreferredCity } from '@/constants/preferences';
 import usePreferredCity from '@/hooks/use-preferred-city';
+import { rescopedHref } from '@/lib/scoped-href';
 
 const THEMES = [
   { icon: FiSun, label: '淺色', value: 'light' },
@@ -37,18 +38,10 @@ const PreferencesMenu = () => {
     setCity(next);
 
     // Re-scope the list on screen right away; other pages pick it up on visit.
-    if (CITY_SCOPED_PATHS.includes(pathname)) {
-      const params = new URLSearchParams(window.location.search);
-      params.delete('page');
-      if (next) {
-        params.set('city', next);
-      } else {
-        params.delete('city');
-      }
-      const query = params.toString();
-      router.replace(query ? `${pathname}?${query}` : pathname, {
-        scroll: false,
-      });
+    const target = rescopedHref(pathname, window.location.search, next);
+
+    if (target) {
+      router.replace(target, { scroll: false });
     }
   };
 
