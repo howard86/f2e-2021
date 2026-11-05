@@ -13,7 +13,9 @@ import {
 import TabLinks from '@/components/search/tab-links';
 import PageHero from '@/components/ui/page-hero';
 import PlaceGridSkeleton from '@/components/ui/place-grid-skeleton';
-import background from '@/static/background/main.png';
+import background from '@/static/background/events.png';
+import wordOne from '@/static/background/events-1.png';
+import wordTwo from '@/static/background/events-2.png';
 
 const DESCRIPTION = '進行中與即將開始的全台活動、節慶與展覽。';
 
@@ -21,7 +23,7 @@ export const metadata: Metadata = {
   description: DESCRIPTION,
   openGraph: {
     description: DESCRIPTION,
-    images: ['/static/background/main.png'],
+    images: ['/static/background/events.png'],
   },
   title: '台灣旅遊導覽網 | 活動',
 };
@@ -62,9 +64,10 @@ const EventsPage = async ({
     <Layout colorPalette="activities">
       <PageHero
         image={background}
-        size="md"
+        size="lg"
         subtitle={DESCRIPTION}
         title="活動"
+        wordImages={[wordOne, wordTwo]}
       />
       <Container maxW="6xl" py={{ base: 6, md: 10 }}>
         <Stack gap="6">

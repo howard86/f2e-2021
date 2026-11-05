@@ -1,18 +1,18 @@
-import { Box, Icon, SimpleGrid, Text } from '@chakra-ui/react';
+import { SimpleGrid, Text } from '@chakra-ui/react';
 import { RouteLink } from '@f2e/ui/links';
 import Image, { type StaticImageData } from 'next/image';
-import { FiCalendar } from 'react-icons/fi';
 
 import type { Category } from '@/constants/categories';
 import bed from '@/static/card/bed.png';
 import bus from '@/static/card/bus.png';
+import event from '@/static/card/event.png';
 import food from '@/static/card/food.png';
 import spot from '@/static/card/spot.png';
 
 interface QuickLink {
   category: Category;
   href: string;
-  icon?: StaticImageData;
+  icon: StaticImageData;
   label: string;
 }
 
@@ -20,7 +20,7 @@ const LINKS: QuickLink[] = [
   { category: 'scenes', href: '/scenes', icon: spot, label: '景點' },
   { category: 'restaurants', href: '/restaurants', icon: food, label: '美食' },
   { category: 'hotels', href: '/hotels', icon: bed, label: '住宿' },
-  { category: 'activities', href: '/events', label: '活動' },
+  { category: 'activities', href: '/events', icon: event, label: '活動' },
   { category: 'transports', href: '/transports', icon: bus, label: '交通' },
 ];
 
@@ -51,21 +51,13 @@ const QuickLinks = () => (
         rounded="lg"
         textDecoration="none"
       >
-        {link.icon ? (
-          <Image
-            alt=""
-            height={40}
-            src={link.icon}
-            style={{ height: 40, objectFit: 'contain', width: 40 }}
-            width={40}
-          />
-        ) : (
-          <Box color="colorPalette.fg">
-            <Icon boxSize="8">
-              <FiCalendar />
-            </Icon>
-          </Box>
-        )}
+        <Image
+          alt=""
+          height={40}
+          src={link.icon}
+          style={{ height: 40, objectFit: 'contain', width: 40 }}
+          width={40}
+        />
         <Text fontWeight="semibold" textStyle="body">
           {link.label}
         </Text>
