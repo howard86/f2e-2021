@@ -12,8 +12,8 @@ export const config = defineConfig({
   theme: {
     keyframes: {
       backgroundSlide: {
-        from: { objectPosition: '0 50%' },
-        to: { objectPosition: '100% 50%' },
+        from: { transform: 'translateX(0)' },
+        to: { transform: 'translateX(-16.667%)' },
       },
       busBounce: {
         '0%': { top: '8px' },
