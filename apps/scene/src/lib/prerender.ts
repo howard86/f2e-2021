@@ -1,32 +1,14 @@
-import { type City, majorCities } from '@f2e/tdx-core';
+// Production builds prerender only the unfiltered /scenes, /restaurants,
+// /hotels and /events lists (plus the param-less home page), which read
+// nationwide data. City pages render on first request and are then cached:
+// prerendering the major cities fetched 24 (type, city) snapshots at TDX's
+// 5 requests a minute, and production builds kept failing on 429s. Preview and
+// local builds prerender nothing.
+const isProductionBuild = process.env.VERCEL_ENV === 'production';
 
-// Production builds prerender the six major cities' overview, list and events
-// pages, so the first visitors after a deploy get CDN pages instead of a burst
-// of rate-limited TDX calls. The build fetches each city's snapshots once and
-// every page of that city reuses them. Preview and local builds skip it: at
-// TDX's 5 requests a minute it adds minutes to a build, and concurrent preview
-// builds sharing the key failed on 429s.
-const PRERENDER_CITIES: readonly City[] =
-  process.env.VERCEL_ENV === 'production' ? majorCities : [];
+/** `/[city]`: every city renders on first request. */
+export const cityStaticParams = () => [];
 
-/** `/[city]` params for the prerendered cities. */
-export const cityStaticParams = () =>
-  PRERENDER_CITIES.map((city) => ({ city }));
-
-/** `/scenes`, `/restaurants`, `/hotels`: the unfiltered list and each city. */
+/** `/scenes`, `/restaurants`, `/hotels`, `/events`: the unfiltered list. */
 export const listStaticParams = () =>
-  PRERENDER_CITIES.length === 0
-    ? []
-    : [
-        { filters: [] as string[] },
-        ...PRERENDER_CITIES.map((city) => ({ filters: [city] })),
-      ];
-
-/** `/events`: the unfiltered list and each city's ongoing events. */
-export const eventsStaticParams = () =>
-  PRERENDER_CITIES.length === 0
-    ? []
-    : [
-        { filters: [] as string[] },
-        ...PRERENDER_CITIES.map((city) => ({ filters: ['ongoing', city] })),
-      ];
+  isProductionBuild ? [{ filters: [] as string[] }] : [];
