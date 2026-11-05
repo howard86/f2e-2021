@@ -14,6 +14,7 @@ import {
   type BusRoute,
   type BusStopOfRoute,
 } from '@f2e/tdx-bus';
+import { NextImage as Image } from '@f2e/ui/next-image';
 import type { Dispatch, SetStateAction } from 'react';
 import { BiChevronLeft, BiChevronRight } from 'react-icons/bi';
 import { MdClose } from 'react-icons/md';
@@ -22,7 +23,6 @@ import bus from '@/bus.png';
 import { useMap } from '@/components/map-context-provider';
 import { getLastElement } from '@/utils/array';
 import { getBusEstimationStatus } from '@/utils/bus';
-import Image from './image';
 
 interface BusStopDrawerProps
   extends Omit<Drawer.RootProps, 'children' | 'onOpenChange' | 'open'> {

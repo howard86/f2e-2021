@@ -11,15 +11,14 @@ import {
   Text,
 } from '@chakra-ui/react';
 import { type City, CityMap, CitySet } from '@f2e/tdx-core';
+import { NextImage as Image } from '@f2e/ui/next-image';
 import debounce from 'lodash.debounce';
 import NextLink from 'next/link';
 import { useRouter } from 'next/navigation';
 import { type ChangeEvent, useEffect, useState } from 'react';
 import { BiChevronLeft } from 'react-icons/bi';
-
 import bus from '@/bus.png';
 import BusSearchInput from '@/components/bus-search-input';
-import Image from '@/components/image';
 import NavBarItems from '@/components/nav-bar-items';
 import RouteKeyBoard from '@/components/route-key-board';
 import { DESKTOP_DISPLAY, MOBILE_DISPLAY } from '@/constants/style';

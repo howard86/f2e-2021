@@ -1,10 +1,14 @@
-import { createSystem, defaultConfig, defineConfig } from '@chakra-ui/react';
+import { defineConfig } from '@chakra-ui/react';
+import { createAppSystem } from '@f2e/ui/system';
 import colors from './colors';
 import Button from './components/button';
-import styles from './styles';
 
 const config = defineConfig({
-  globalCss: styles,
+  globalCss: {
+    html: {
+      colorPalette: 'primary',
+    },
+  },
   theme: {
     keyframes: {
       backgroundSlide: {
@@ -40,10 +44,6 @@ const config = defineConfig({
     },
     tokens: {
       colors,
-      fonts: {
-        body: { value: 'var(--font-noto-sans-tc), sans-serif' },
-        heading: { value: 'var(--font-noto-sans-tc), sans-serif' },
-      },
       gradients: {
         background: {
           value:
@@ -60,6 +60,6 @@ const config = defineConfig({
   },
 });
 
-const theme = createSystem(defaultConfig, config);
+const theme = createAppSystem(config);
 
 export default theme;
