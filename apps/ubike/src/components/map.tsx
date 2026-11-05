@@ -56,7 +56,9 @@ const MapView = () => {
       return;
     }
 
-    const { attachJSXMarker } = await import('@/services/mapbox');
+    const { attachMarker, createMarkerElement } = await import(
+      '@/services/mapbox'
+    );
 
     const result = await getStations({
       ...currentPositionRef.current,
@@ -88,16 +90,11 @@ const MapView = () => {
         station.StationPosition.PositionLat,
       ] as Coordinate;
 
-      markersRef.current[station.StationUID] = attachJSXMarker(
+      markersRef.current[station.StationUID] = attachMarker(
         mapRef.current,
-        <Box
-          bgImage="url(/icons/marker.png)"
-          cursor="pointer"
-          h="82px"
-          id={station.StationUID}
-          mb="41px"
-          // biome-ignore lint/performance/noJsxPropsBind: callback needs local render state or the current event target.
-          onClick={() => {
+        createMarkerElement({
+          id: station.StationUID,
+          onClick: () => {
             setModalProps({
               address: station.StationAddress.Zh_tw,
               name: station.StationName.Zh_tw,
@@ -109,10 +106,16 @@ const MapView = () => {
               center: coordinate,
               zoom: DEFAULT_ZOOM,
             });
-          }}
-          w="80px"
-          zIndex="modal"
-        />,
+          },
+          style: {
+            backgroundImage: 'url(/icons/marker.png)',
+            cursor: 'pointer',
+            height: '82px',
+            marginBottom: '41px',
+            width: '80px',
+            zIndex: 'var(--chakra-z-index-modal)',
+          },
+        }),
         coordinate,
       );
     }
@@ -164,7 +167,9 @@ const MapView = () => {
         lng: geoLocation.coords.longitude,
       };
 
-      const { initialize, attachJSXMarker } = await import('@/services/mapbox');
+      const { initialize, attachMarker, createMarkerElement } = await import(
+        '@/services/mapbox'
+      );
 
       if (mapRef.current && positionMarkerRef.current) {
         flyToCurrent();
@@ -173,16 +178,18 @@ const MapView = () => {
         mapRef.current = initialize(divRef.current, newPosition);
       }
 
-      positionMarkerRef.current = attachJSXMarker(
+      positionMarkerRef.current = attachMarker(
         mapRef.current,
-        <Box
-          bgImage="url(/icons/current.png)"
-          h="40px"
-          id="current"
-          onClick={flyToCurrent}
-          w="40px"
-          zIndex="modal"
-        />,
+        createMarkerElement({
+          id: 'current',
+          onClick: flyToCurrent,
+          style: {
+            backgroundImage: 'url(/icons/current.png)',
+            height: '40px',
+            width: '40px',
+            zIndex: 'var(--chakra-z-index-modal)',
+          },
+        }),
         newPosition.center,
       );
 
