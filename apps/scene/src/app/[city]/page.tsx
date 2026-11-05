@@ -15,14 +15,16 @@ import SectionHeading from '@/components/ui/section-heading';
 import WeatherStrip from '@/components/weather/weather-strip';
 import { CITY_OVERVIEW_SIZE } from '@/constants/pagination';
 import { listPath } from '@/lib/list-paths';
+import { cityStaticParams } from '@/lib/prerender';
 import { listPlaces } from '@/services/places';
 import getWeathers from '@/services/weather';
 import background from '@/static/background/scenes.png';
 import { PLACE_CATEGORY, PLACE_LABEL, PLACE_TYPES } from '@/types/place';
 
-// Generated on first request, then served from the CDN for six hours.
+// Major cities are prerendered on Vercel builds, the rest on first request;
+// then served from the CDN for six hours.
 export const revalidate = 21_600;
-export const generateStaticParams = () => [];
+export const generateStaticParams = cityStaticParams;
 
 interface CityPageProps {
   params: Promise<{ city: string }>;

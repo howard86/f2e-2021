@@ -11,6 +11,7 @@ import PageHero from '@/components/ui/page-hero';
 import PlaceGridSkeleton from '@/components/ui/place-grid-skeleton';
 import { ALL_CITIES } from '@/constants/preferences';
 import { decodeSegments, eventsPath, parseEventsPath } from '@/lib/list-paths';
+import { eventsStaticParams } from '@/lib/prerender';
 import background from '@/static/background/events.png';
 import wordOne from '@/static/background/events-1.png';
 import wordTwo from '@/static/background/events-2.png';
@@ -26,9 +27,10 @@ export const metadata: Metadata = {
   title: '台灣旅遊導覽網 | 活動',
 };
 
-// Generated on first request, then served from the CDN for an hour.
+// Major cities are prerendered on Vercel builds, the rest on first request;
+// then served from the CDN for an hour.
 export const revalidate = 3600;
-export const generateStaticParams = () => [];
+export const generateStaticParams = eventsStaticParams;
 
 const EventsPage = async ({
   params,
