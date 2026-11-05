@@ -30,6 +30,6 @@ const baseConfig = defineConfig({
   },
 });
 
-/** Chakra's defaults, then the shared base, then the app's own config. */
-export const createAppSystem = (config: SystemConfig) =>
-  createSystem(defaultConfig, baseConfig, config);
+/** Chakra's defaults, then the shared base, then the app's own config(s). */
+export const createAppSystem = (...configs: SystemConfig[]) =>
+  createSystem(defaultConfig, baseConfig, ...configs);

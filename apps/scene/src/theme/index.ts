@@ -5,7 +5,7 @@ import Button from './components/button';
 import Text from './components/text';
 import imageCard from './recipes/image-card';
 
-const config = defineConfig({
+export const config = defineConfig({
   globalCss: {
     body: {
       color: 'fg.muted',

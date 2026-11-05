@@ -3,7 +3,7 @@ import { createAppSystem } from '@f2e/ui/system';
 
 import colors from './colors';
 
-const config = defineConfig({
+export const config = defineConfig({
   globalCss: {
     body: {
       bg: 'blackAlpha.800',

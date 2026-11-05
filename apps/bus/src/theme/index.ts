@@ -3,7 +3,7 @@ import { createAppSystem } from '@f2e/ui/system';
 import colors from './colors';
 import Button from './components/button';
 
-const config = defineConfig({
+export const config = defineConfig({
   globalCss: {
     html: {
       colorPalette: 'primary',

@@ -14,7 +14,12 @@
     "./toast": "./toast.tsx"
   },
   "scripts": {
-    "typecheck": "bun check"
+    "postinstall": "bun run typegen",
+    "typecheck": "bun check",
+    "typegen": "chakra typegen typegen.ts --strict"
+  },
+  "devDependencies": {
+    "@chakra-ui/cli": "3.38.0"
   },
   "peerDependencies": {
     "@chakra-ui/react": "3.38.0",
