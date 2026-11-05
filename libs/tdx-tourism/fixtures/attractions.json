@@ -1,0 +1,1966 @@
+{
+  "value": [
+    {
+      "AttractionID": "Attraction_345040000G_000001",
+      "AttractionName": "太平山國家森林遊樂區",
+      "AlternateNames": [],
+      "Description": "蹦蹦車、溫泉、高山湖泊、巨木森林與國寶山毛櫸，鋪成了太平山國家森林遊樂區超過百年歷史的綿長軌跡。  太平山舊稱「眠腦」，是泰雅族語「鬱鬱蒼蒼」之意。1914年，日本人先做了資源調查，1915年決議開發。《台灣日日新報》在1936年7月28日報導：「太平山之名乃由現在事務所轉移前，當時主任技師中里氏，將蕃語直譯者。且佐久間總督五年討伐告終，天下歸於太平之意」。所以，「天下太平」才是太平山地名真正的由來，命名者正是踏查先鋒中里正。  海拔2000公尺的太平山，是僅次於阿里山的林業傳奇，1915年日本人開始這裡的伐木事業，後來由國民政府接手，成為台灣最大的林場，最後在1983年轉型為遊樂區，留下見晴鐵道、蹦蹦車等珍貴的遺跡。  人們可以漫步在鎮安宮後的原始林間，讓思緒翱翔在過往巨木滿山的年代。沿著時常遇見台灣獼猴、帝雉等動物的翠峰景觀道路行駛，終點是台灣面積最大高山湖泊，海拔1840公尺的翠峰湖，對岸是國寶台灣山毛櫸的家，秋天可以沿著4公里的步道欣賞滿山金黃耀眼。  收費站不遠處的鳩之澤溫泉，是聞名遐邇的碳酸泉，也是這裏的一大特色。太平山國家森林遊樂區，絕對是喜歡大自然的您，拜訪宜蘭的第一選擇。",
+      "PositionLat": 24.5574676798311,
+      "PositionLon": 121.499499620269,
+      "Geometry": null,
+      "AttractionClasses": [16],
+      "ServiceTimeInfo": "",
+      "TrafficInfo": "［開車前往］從台北出發（經宜蘭交流道）：台北→國道5號→宜蘭(交流道)→省道台7線→省道台7甲線(3.7K)→宜專1線→土場→鳩之澤→太平山。［開車前往］從台北出發（經羅東交流道）：台北→國道5號→羅東(交流道)→省道台7丙線→省道台7線→省道台7甲線(3.7K)→宜專1線→土場→鳩之澤→太平山。［開車前往］從台北出發（經省道台9線(北宜公路)）：台北→省道台9線(北宜公路)→頭城鎮→宜蘭市→省道台7線→省道台7甲線(3.7K)→宜專1線→土場→鳩之澤→太平山［開車前往］從基隆出發：基隆→省道台2線(濱海公路) →壯圍→省道台7線→省道台7甲線(3.7K)→宜專1線→土場→鳩之澤→太平山。［開車前往］從桃園出發：桃園→大溪→省道台7線(北橫公路)→省道台7甲線(3.7K)→宜專1線→土場→鳩之澤→太平山。［開車前往］從花蓮出發：花蓮→省道台9線(蘇花公路)→省道台7丙線→省道台7線→省道台7甲線(3.7K)→宜專1線→土場→鳩之澤→太平山。［大眾運輸］搭乘國光客運：每日行駛(平日:1750 假日:1750A)。旅程時間：約2時30分鐘。電話：宜蘭站03-9384171、羅東站03-9567505。網址：http://www.kingbus.com.tw。購票方式：國光客運臨櫃購票、網路購票及三大超商(7-11、全家及萊爾富)購票。預定當日起15天內車票(含回程訂位) ◎去程(發車時間)：宜蘭07:40、羅東08:00(宜蘭+20分鐘為羅東發車時間) ；抵達太平山10:30。 ◎回程(發車時間)：太平山14:30；鳩之澤16:10，抵達羅東17:30、宜蘭17:50。［大眾運輸］搭乘觀光局台灣觀光巴士：搭乘觀光局台灣觀巴-宜蘭太平山自然之旅一日遊，四人即可成行（提供英、日外語導覽） https://www.taiwantourbus.com.tw/C/tour/tw/yilan-taipingshan-nature-tour［大眾運輸］參加太平山策略聯盟夥伴套裝行程：太平山國家森林遊樂區生態旅遊策略聯盟夥伴，有4家旅行社夥伴，可提供接駁及套裝行程。說明網址：http://goo.gl/BP1YdE",
+      "ParkingInfo": "大型車：100元。小型車：100元。機車：20元。",
+      "Facilities": [],
+      "ServiceStatus": 1,
+      "IsPublicAccess": 1,
+      "IsAccessibleForFree": null,
+      "FeeInfo": "",
+      "PaymentMethods": [],
+      "WebsiteUrl": "https://recreation.forest.gov.tw/Forest/RA?typ_id=0100001",
+      "ReservationURLs": [
+        "https://forestpass.welcometw.com/tour/listAll?category=p8b"
+      ],
+      "MapURLs": [],
+      "SameAsURLs": [],
+      "VisitDuration": null,
+      "AssetsClass": null,
+      "Tags": [
+        "賞楓",
+        "雲海",
+        "檜木原始林",
+        "溫泉",
+        "台灣山毛櫸",
+        "太平山俱樂部",
+        "翠峰湖",
+        "太平山",
+        "蹦蹦車"
+      ],
+      "Remarks": "",
+      "UpdateTime": "2026-11-05T00:20:24+08:00",
+      "PostalAddress": {
+        "City": "宜蘭縣",
+        "CityCode": "10002",
+        "Town": "大同鄉",
+        "TownCode": "10002110",
+        "ZipCode": "267",
+        "StreetAddress": "太平巷58之1號"
+      },
+      "Telephones": [
+        {
+          "Tel": "(03)9770766",
+          "Ext": null
+        },
+        {
+          "Tel": "(03)9809619",
+          "Ext": null
+        },
+        {
+          "Tel": "(03)9809806",
+          "Ext": null
+        },
+        {
+          "Tel": "(03)9809812",
+          "Ext": null
+        },
+        {
+          "Tel": "(03)9809875",
+          "Ext": null
+        },
+        {
+          "Tel": "0910935132",
+          "Ext": null
+        },
+        {
+          "Tel": "0963357199",
+          "Ext": null
+        }
+      ],
+      "Images": [
+        {
+          "Name": "翠峰湖日出",
+          "Description": "照片提供｜宜蘭分署",
+          "URL": "https://recreation.forest.gov.tw/Files/Forest/RA/photo/album/0100001/01_%E5%A4%AA%E5%B9%B3%E5%B1%B1%E5%9C%8B%E5%AE%B6%E6%A3%AE%E6%9E%97%E9%81%8A%E6%A8%82%E5%8D%80.jpg",
+          "Width": null,
+          "Height": null,
+          "Keywords": []
+        },
+        {
+          "Name": "雲海",
+          "Description": "照片提供｜宜蘭分署",
+          "URL": "https://recreation.forest.gov.tw/Files/Forest/RA/photo/album/0100001/02_BASE_01.jpg",
+          "Width": null,
+          "Height": null,
+          "Keywords": []
+        },
+        {
+          "Name": "瀑布",
+          "Description": "照片提供｜宜蘭分署",
+          "URL": "https://recreation.forest.gov.tw/Files/Forest/RA/photo/album/0100001/03_P176-177.jpg",
+          "Width": null,
+          "Height": null,
+          "Keywords": []
+        },
+        {
+          "Name": "鳩之澤",
+          "Description": "照片提供｜宜蘭分署",
+          "URL": "https://recreation.forest.gov.tw/Files/Forest/RA/photo/album/0100001/04_%E9%B3%A9%E4%B9%8B%E6%BE%A4%20(1).JPG",
+          "Width": null,
+          "Height": null,
+          "Keywords": []
+        },
+        {
+          "Name": "太平山原始森林公園一隅",
+          "Description": "照片提供｜宜蘭分署",
+          "URL": "https://recreation.forest.gov.tw/Files/Forest/RA/photo/album/0100001/05_%E5%A4%AA%E5%B9%B3%E5%B1%B1%E5%8E%9F%E5%A7%8B%E6%A3%AE%E6%9E%97%E5%85%AC%E5%9C%92.JPG",
+          "Width": null,
+          "Height": null,
+          "Keywords": []
+        },
+        {
+          "Name": "白嶺巨木雪景空拍照",
+          "Description": "照片提供｜林維祥",
+          "URL": "https://recreation.forest.gov.tw/Files/Forest/RA/photo/album/0100001/06_%E7%99%BD%E5%B6%BA%E5%B7%A8%E6%9C%A8%E9%9B%AA%E6%99%AF%E7%A9%BA%E6%8B%8D%E7%85%A7-%E6%9E%97%E7%B6%AD%E7%A5%A5%E6%94%9D(5).JPG",
+          "Width": null,
+          "Height": null,
+          "Keywords": []
+        },
+        {
+          "Name": "土場-羅東森林鐵路火車",
+          "Description": "照片提供｜石世民",
+          "URL": "https://recreation.forest.gov.tw/Files/Forest/RA/photo/album/0100001/07_%E5%9C%9F%E5%A0%B4-%E7%BE%85%E6%9D%B1%E6%A3%AE%E6%9E%97%E9%90%B5%E8%B7%AF%E7%81%AB%E8%BB%8A-%E7%9F%B3%E4%B8%96%E6%B0%91%E6%94%9D.jpg",
+          "Width": null,
+          "Height": null,
+          "Keywords": []
+        },
+        {
+          "Name": "望洋山日出",
+          "Description": "照片提供｜張順能",
+          "URL": "https://recreation.forest.gov.tw/Files/Forest/RA/photo/album/0100001/08_%E6%9C%9B%E6%B4%8B%E5%B1%B1%E6%97%A5%E5%87%BA-%E5%BC%B5%E9%A0%86%E8%83%BD%E6%94%9D%20(11).JPG",
+          "Width": null,
+          "Height": null,
+          "Keywords": []
+        },
+        {
+          "Name": "山莊雪景",
+          "Description": "照片提供｜宜蘭分署",
+          "URL": "https://recreation.forest.gov.tw/Files/Forest/RA/photo/album/0100001/%E5%B1%B1%E8%8E%8A%E9%9B%AA%E6%99%AF4.jpg",
+          "Width": null,
+          "Height": null,
+          "Keywords": []
+        },
+        {
+          "Name": "山莊雪景",
+          "Description": "照片提供｜宜蘭分署",
+          "URL": "https://recreation.forest.gov.tw/Files/Forest/RA/photo/album/0100001/%E5%B1%B1%E8%8E%8A%E9%9B%AA%E6%99%AF9.jpg",
+          "Width": null,
+          "Height": null,
+          "Keywords": []
+        },
+        {
+          "Name": "見晴步道遠望",
+          "Description": "照片提供｜鄭吉延",
+          "URL": "https://recreation.forest.gov.tw/Files/Forest/RA/photo/album/0100001/%E5%A4%AA%E5%B9%B3%E5%B1%B1%E5%9C%8B%E5%AE%B6%E6%A3%AE%E6%9E%97%E9%81%8A%E6%A8%82%E5%8D%80%E8%A6%8B%E6%99%B4%E6%AD%A5%E9%81%93%E9%81%A0%E6%9C%9B.jpg",
+          "Width": null,
+          "Height": null,
+          "Keywords": []
+        },
+        {
+          "Name": "毛地黃 搖曳春風中",
+          "Description": "照片提供｜張順能",
+          "URL": "https://recreation.forest.gov.tw/Files/Forest/RA/photo/album/0100001/%E6%AF%9B%E5%9C%B0%E9%BB%83%E6%90%96%E6%9B%B3%E6%98%A5%E9%A2%A8%E4%B8%AD-%E5%BC%B5%E9%A0%86%E8%83%BD%E6%94%9D.jpg",
+          "Width": null,
+          "Height": null,
+          "Keywords": []
+        },
+        {
+          "Name": "雪景-翠峰湖全景",
+          "Description": "照片提供｜宜蘭分署",
+          "URL": "https://recreation.forest.gov.tw/Files/Forest/RA/photo/album/0100001/%E9%9B%AA%E6%99%AF-%E7%BF%A0%E5%B3%B0%E6%B9%96%E5%85%A8%E6%99%AF.jpg",
+          "Width": null,
+          "Height": null,
+          "Keywords": []
+        },
+        {
+          "Name": "紫葉槭及中央階梯",
+          "Description": "照片提供｜宜蘭分署",
+          "URL": "https://recreation.forest.gov.tw/Files/Forest/RA/photo/album/0100001/%E7%B4%AB%E8%91%89%E6%A7%AD%E5%8F%8A%E4%B8%AD%E5%A4%AE%E9%9A%8E%E6%A2%AF.jpg",
+          "Width": null,
+          "Height": null,
+          "Keywords": []
+        },
+        {
+          "Name": "鳩之澤楓紅",
+          "Description": "照片提供｜石世民",
+          "URL": "https://recreation.forest.gov.tw/Files/Forest/RA/photo/album/0100001/%E9%B3%A9%E4%B9%8B%E6%BE%A4%E6%A5%93%E7%B4%85-%E7%9F%B3%E4%B8%96%E6%B0%91%E6%94%9D.jpg",
+          "Width": null,
+          "Height": null,
+          "Keywords": []
+        },
+        {
+          "Name": "翠峰湖全景",
+          "Description": "照片提供｜宜蘭分署",
+          "URL": "https://recreation.forest.gov.tw/Files/Forest/RA/photo/album/0100001/%E7%BF%A0%E5%B3%B0%E6%B9%96%E5%85%A8%E6%99%AF.jpg",
+          "Width": null,
+          "Height": null,
+          "Keywords": []
+        }
+      ],
+      "Organizations": [],
+      "LocatedCities": [],
+      "SocialMediaURLs": [
+        {
+          "Name": "太平山國家森林遊樂區",
+          "Description": null,
+          "Class": null,
+          "URL": "https://www.facebook.com/tps100.forest",
+          "Keywords": [],
+          "Tags": []
+        },
+        {
+          "Name": "太平山國家森林遊樂區",
+          "Description": null,
+          "Class": null,
+          "URL": "https://www.instagram.com/taipingshan100/",
+          "Keywords": [],
+          "Tags": []
+        },
+        {
+          "Name": "雲煙森林畫太平－太平山國家森林遊樂區",
+          "Description": null,
+          "Class": null,
+          "URL": "https://youtu.be/MzUk6FJKQYE",
+          "Keywords": [],
+          "Tags": []
+        }
+      ]
+    },
+    {
+      "AttractionID": "Attraction_345040000G_000012",
+      "AttractionName": "阿里山國家森林遊樂區",
+      "AlternateNames": [],
+      "Description": "阿里山國家森林遊樂區擁有森林小火車、神木、雲海、日出與晚霞「五奇」景致，是台灣最具知名、也最受歡迎的森林遊樂區，是阿里山山脈上的一枚翡翠，閃著耀眼的光芒。  阿里山林業鐵路為著名的高山觀光森林鐵道，您可以至嘉義火車站搭乘森林小火車，一路輕晃享盡森林風情前往終點站阿里山(林業鐵路由阿里山林業鐵路及文化資產管理處轄管，林業鐵路本線及支線已全線通車)。又或者駕車沿台18線蜿蜒而上，不到兩個小時就能抵達88.2k處，海拔2,216公尺的阿里山國家森林遊樂區。  阿里山山脈為台灣五大山脈之一，惟阿里山並不是一座山，而是泛指這個山區；自古擁有豐沛的檜木資源，1912-1960年間為台灣最具規模的林場。歷經長期的採伐後，原始檜木林幾乎伐盡，現今存有第一期與第二期巨木群棧道近四十株的紅檜巨木，讓人緬懷過去神木林的壯闊神聖。著名的阿里山神木於1956年遭受雷擊後1997年又有半邊因雨倒伏，林業及自然保育署為了順應自然生態、尊重生命及維護遊客安全，於1998年6月將阿里山神木原地放倒供遊客欣賞。於2006年經票選由「阿里山香林神木」當選第二代神木，高45公尺，樹圍12.3公尺，是到訪阿里山的必遊之處。  在阿里山國家森林遊樂區內有豐富的生態，其中最特殊的植物，莫過於稀有的蓧蕨、相馬氏石杉、阿里山十大功勞與臺灣一葉蘭了；動物則有台灣獼猴、帝雉、藪鳥、阿里山鴝、阿里山山椒魚等小明星助陣，熱鬧非凡。  除了神木，阿里山還有非常多具可看性的景點：森林小火車、空靈飄渺的姊妹潭、壯闊動人的雲海、美麗的祝山日出、受鎮宮、百年慈雲寺、林業史蹟、春天盛開的各類櫻花與杜鵑…阿里山國家森林遊樂區是一個足以代表臺灣霧林帶的國際級觀光景點，歡迎著來自全世界的旅人們，前來認識台灣山林豐富而美麗的面貌。",
+      "PositionLat": 23.5088198961012,
+      "PositionLon": 120.801995927021,
+      "Geometry": null,
+      "AttractionClasses": [16],
+      "ServiceTimeInfo": "",
+      "TrafficInfo": "［開車前往］路線一：由國道3號(南二高)中埔交流道下後接臺18線省道（阿里山公路）至阿里山國家森林遊樂區(88.2K處)。［開車前往］路線二：由國道1號(中山高)嘉義交流道下後接臺18線省道（阿里山公路）至阿里山國家森林遊樂區(88.2K處)。［開車前往］肢體障礙遊客車輛自駕入園申請：為方便肢體障礙需倚靠輪椅之行動不便遊客遊園，「肢體障礙需倚靠輪椅始可行動，且領有身心障礙手冊或證明之本人及陪伴者1人」可以預約申請自駕通行區內第一、二管制哨，車種需非屬甲、乙類大客車之復康巴士、無障礙計程車或福祉車(自有廂型車加裝電動升降機或斜坡道者)。開放預約之時段、限額、申請方式請詳連結 http://chiayi.forest.gov.tw/0000352。［開車前往］公路路況資訊：公路路況1. 幸福公路 https://apps.apple.com/tw/app/%E5%B9%B8%E7%A6%8F%E5%85%AC%E8%B7%AF/id6046983602.智慧化省道即時資訊https://168.thb.gov.tw/thb1683. 雲嘉南區養護工程分局 https://thbu5.thb.gov.tw/News.aspx?n=5264&sms=13367 ［開車前往］入園車輛限制：1.車輛可到達園區內大型車停車場(僅供臨停):乙類中巴、甲類大巴。2.車輛可到達園區內旅舍區及遊客服務中心前停車場:小客車。［大眾運輸］搭乘嘉義縣公車：嘉義縣公車﹝嘉義-阿里山﹞、台灣好行【7329嘉義高鐵-阿里山】【7322嘉義台鐵-阿里山】於阿里山入口轉運站下車。車班及行駛狀況請洽：嘉義縣公車處：(05)278-8177網址資訊如下：嘉義縣公車 | 阿里山線：https://bus.cyhg.gov.tw/News_Content.aspx?n=4441&s=55223。台灣好行 | 阿里山線：https://www.taiwantrip.com.tw/Frontend/Route/Select_p?RouteID=R0008。台灣好行 | 6739日月潭-阿里山：https://www.taiwantrip.com.tw/Frontend/Route/Select_p?RouteID=R0099。［大眾運輸］搭乘員林客運：員林客運﹝阿里山-日月潭﹞於阿里山入口轉運站搭乘，請提前預約劃位，行駛狀況請洽員林客運水里站：049-2770041。網址資訊如下：https://www.taiwanbus.tw/eBUSPage/Query/QueryResult.aspx?rno=67390&rn=1609311024328&fbclid=IwAR0Lmx0zwQxF0dnEhHWc-GHdHaVLg9geIwBDq5FPKeRwPZ-8ZOjxfzuZTMI&lan=C［大眾運輸］搭乘國光客運：國光客運﹝1835臺北-阿里山﹞，車班及行駛狀況，請洽：國光客運0800-010-138或臺北轉運站，電話：(02)7733-5888。國光客運 | 1835臺北-阿里山https://www.taiwanbus.tw/eBUSPage/Query/QueryResult.aspx?rno=18350&lan=C［大眾運輸］區內電動遊園車：遊樂區內共有10輛經ARTC安檢合格並合法掛牌之電動中巴，營業時間為每日8-17時，於區內4處遊園車站：【候車總站】、【沼平站】、【旅客服務中心站】、【香林服務區站】、【水山療癒步道站】來回接駁。每日【旅客服務中心站/沼平站-祝山站】發車時間：9時、11時、13時、15時；返程【祝山站-旅客服務中心站/沼平站】發車時間：9：30、11：30、13：30、15：30、16：30。另有【祝山觀星線】每日19時發車（需預約並視天候狀況調整）及【祝山日出線】。客服專線：0800-263-520 或 「阿里山遊園車」FB 留言洽詢https://www.facebook.com/alishanebus/。［大眾運輸］搭乘阿里山小火車：阿里山火車本線：嘉義車站到阿里山車站的鐵路。阿里山小火車支線：阿里山森林園區內的祝山線、沼平線、神木線。訂票方式及時刻表，請至阿里山林業鐵路網路訂票系統 https://afrts.forest.gov.tw/TP01_1.aspx 查詢或電洽北門站「05-2768094」、 阿里山站「05-2679200」詢問。［大眾運輸］「搭乘高鐵」轉乘：可轉乘台灣好行或阿里山郵輪式巴士上山，購票網址：https://reurl.cc/aMY244",
+      "ParkingInfo": "小型車：100元，包含大型重型機車。機車：20元。",
+      "Facilities": [],
+      "ServiceStatus": 1,
+      "IsPublicAccess": 1,
+      "IsAccessibleForFree": null,
+      "FeeInfo": "",
+      "PaymentMethods": [],
+      "WebsiteUrl": "https://recreation.forest.gov.tw/Forest/RA?typ_id=0500001",
+      "ReservationURLs": [
+        "https://forestpass.welcometw.com/tour/listAll?category=jQW"
+      ],
+      "MapURLs": [
+        "https://recreation.forest.gov.tw/Files/Forest/RA/photo/0500001/01/115.7.22%E9%98%BF%E9%87%8C%E5%B1%B1%E5%9C%B0%E5%9C%96A3-%E9%81%8A%E4%B8%AD202608130.png"
+      ],
+      "SameAsURLs": [],
+      "VisitDuration": null,
+      "AssetsClass": null,
+      "Tags": [
+        "國家森林遊樂區",
+        "日出",
+        "晚霞",
+        "雲海",
+        "巨木",
+        "姐妹潭 ",
+        "塔山",
+        "祝山",
+        "觀星",
+        "眠月"
+      ],
+      "Remarks": "",
+      "UpdateTime": "2026-11-05T00:20:24+08:00",
+      "PostalAddress": {
+        "City": "嘉義縣",
+        "CityCode": "10010",
+        "Town": "阿里山鄉",
+        "TownCode": "10010180",
+        "ZipCode": "605",
+        "StreetAddress": "中正村59號"
+      },
+      "Telephones": [
+        {
+          "Tel": "(05)2679715",
+          "Ext": null
+        },
+        {
+          "Tel": "(05)2679917",
+          "Ext": null
+        }
+      ],
+      "Images": [
+        {
+          "Name": "祝山車站",
+          "Description": "照片提供｜嘉義分署",
+          "URL": "https://recreation.forest.gov.tw/Files/Forest/RA/photo/album/0500001/0500001202510230.jpg",
+          "Width": null,
+          "Height": null,
+          "Keywords": []
+        },
+        {
+          "Name": "阿里山國家森林遊樂區",
+          "Description": "照片提供｜嘉義分署",
+          "URL": "https://recreation.forest.gov.tw/Files/Forest/RA/photo/album/0500001/03_%E9%98%BF%E9%87%8C%E5%B1%B1%E5%9C%8B%E5%AE%B6%E6%A3%AE%E6%9E%97%E9%81%8A%E6%A8%82%E5%8D%80.jpg",
+          "Width": null,
+          "Height": null,
+          "Keywords": []
+        },
+        {
+          "Name": "阿里山國家森林遊樂區星空",
+          "Description": "照片提供｜嘉義分署",
+          "URL": "https://recreation.forest.gov.tw/Files/Forest/RA/photo/album/0500001/06_BASE_02.jpg",
+          "Width": null,
+          "Height": null,
+          "Keywords": []
+        },
+        {
+          "Name": "阿里山國家森林遊樂區楓紅雲海",
+          "Description": "照片提供｜嘉義分署",
+          "URL": "https://recreation.forest.gov.tw/Files/Forest/RA/photo/album/0500001/07_BASE_03.jpg",
+          "Width": null,
+          "Height": null,
+          "Keywords": []
+        },
+        {
+          "Name": "阿里山 雲海",
+          "Description": "照片提供｜嘉義分署",
+          "URL": "https://recreation.forest.gov.tw/Files/Forest/RA/photo/album/0500001/01_1011215%2011%20%E9%98%BF%E9%87%8C%E5%B1%B1%20%E9%9B%B2%E6%B5%B7%205D%E2%85%A1.JPG",
+          "Width": null,
+          "Height": null,
+          "Keywords": []
+        },
+        {
+          "Name": "阿里山 祝山林道",
+          "Description": "照片提供｜嘉義分署",
+          "URL": "https://recreation.forest.gov.tw/Files/Forest/RA/photo/album/0500001/02_1030130%20006%20%E9%98%BF%E9%87%8C%E5%B1%B1%20%E7%A5%9D%E5%B1%B1%E6%9E%97%E9%81%93%205D%E2%85%A1.JPG",
+          "Width": null,
+          "Height": null,
+          "Keywords": []
+        },
+        {
+          "Name": "姐妹潭_林業及自然保育署提供",
+          "Description": "照片提供｜嘉義分署",
+          "URL": "https://recreation.forest.gov.tw/Files/Forest/RA/photo/album/0500001/0500001202510231.jpg",
+          "Width": null,
+          "Height": null,
+          "Keywords": []
+        },
+        {
+          "Name": "高鐵國旅聯票",
+          "Description": "照片提供｜嘉義分署",
+          "URL": "https://recreation.forest.gov.tw/Files/Forest/RA/photo/album/0500001/0500001202601260.jpg",
+          "Width": null,
+          "Height": null,
+          "Keywords": []
+        },
+        {
+          "Name": "白耳畫眉",
+          "Description": "照片提供｜謝坤宏",
+          "URL": "https://recreation.forest.gov.tw/Files/Forest/RA/photo/album/0500001/%E7%99%BD%E8%80%B3%E7%95%AB%E7%9C%89_%E8%AC%9D%E5%9D%A4%E5%AE%8F%E6%94%9D.jpg",
+          "Width": null,
+          "Height": null,
+          "Keywords": []
+        },
+        {
+          "Name": "姊妹潭",
+          "Description": "照片提供｜志彰",
+          "URL": "https://recreation.forest.gov.tw/Files/Forest/RA/photo/album/0500001/%E5%A7%8A%E5%A6%B9%E6%BD%AD-%E5%BF%97%E5%BD%B0.jpg",
+          "Width": null,
+          "Height": null,
+          "Keywords": []
+        },
+        {
+          "Name": "阿里山日出",
+          "Description": "照片提供｜嘉義分署",
+          "URL": "https://recreation.forest.gov.tw/Files/Forest/RA/photo/album/0500001/%E9%98%BF%E9%87%8C%E5%B1%B1%E6%97%A5%E5%87%BA.JPG",
+          "Width": null,
+          "Height": null,
+          "Keywords": []
+        },
+        {
+          "Name": "阿里山博物館",
+          "Description": "照片提供｜謝坤宏",
+          "URL": "https://recreation.forest.gov.tw/Files/Forest/RA/photo/album/0500001/%E9%98%BF%E9%87%8C%E5%B1%B1%E5%8D%9A%E7%89%A9%E9%A4%A8_%E8%AC%9D%E5%9D%A4%E5%AE%8F%E6%94%9D.jpg",
+          "Width": null,
+          "Height": null,
+          "Keywords": []
+        },
+        {
+          "Name": "阿里山森林火車",
+          "Description": "照片提供｜嘉義分署",
+          "URL": "https://recreation.forest.gov.tw/Files/Forest/RA/photo/album/0500001/%E9%98%BF%E9%87%8C%E5%B1%B1%E6%A3%AE%E6%9E%97%E7%81%AB%E8%BB%8A.jpg",
+          "Width": null,
+          "Height": null,
+          "Keywords": []
+        },
+        {
+          "Name": "香林拱橋",
+          "Description": "照片提供｜謝坤宏",
+          "URL": "https://recreation.forest.gov.tw/Files/Forest/RA/photo/album/0500001/%E9%A6%99%E6%9E%97%E6%8B%B1%E6%A9%8B_%E8%AC%9D%E5%9D%A4%E5%AE%8F%E6%94%9D.jpg",
+          "Width": null,
+          "Height": null,
+          "Keywords": []
+        },
+        {
+          "Name": "香林神木",
+          "Description": "照片提供｜謝坤宏",
+          "URL": "https://recreation.forest.gov.tw/Files/Forest/RA/photo/album/0500001/%E9%A6%99%E6%9E%97%E7%A5%9E%E6%9C%A8_%E8%AC%9D%E5%9D%A4%E5%AE%8F%E6%94%9D.jpg",
+          "Width": null,
+          "Height": null,
+          "Keywords": []
+        },
+        {
+          "Name": "栗背林鴝",
+          "Description": "照片提供｜謝坤宏",
+          "URL": "https://recreation.forest.gov.tw/Files/Forest/RA/photo/album/0500001/%E6%A0%97%E8%83%8C%E6%9E%97%E9%B4%9D_%E8%AC%9D%E5%9D%A4%E5%AE%8F%E6%94%9D.jpg",
+          "Width": null,
+          "Height": null,
+          "Keywords": []
+        },
+        {
+          "Name": "神木遺跡01",
+          "Description": "照片提供｜謝坤宏",
+          "URL": "https://recreation.forest.gov.tw/Files/Forest/RA/photo/album/0500001/%E7%A5%9E%E6%9C%A8%E9%81%BA%E8%B7%A101_%E8%AC%9D%E5%9D%A4%E5%AE%8F%E6%94%9D.jpg",
+          "Width": null,
+          "Height": null,
+          "Keywords": []
+        },
+        {
+          "Name": "神木遺跡02",
+          "Description": "照片提供｜謝坤宏",
+          "URL": "https://recreation.forest.gov.tw/Files/Forest/RA/photo/album/0500001/%E7%A5%9E%E6%9C%A8%E9%81%BA%E8%B7%A102_%E8%AC%9D%E5%9D%A4%E5%AE%8F%E6%94%9D.jpg",
+          "Width": null,
+          "Height": null,
+          "Keywords": []
+        },
+        {
+          "Name": "神怡流瀑 01-謝坤宏",
+          "Description": "照片提供｜嘉義分署",
+          "URL": "https://recreation.forest.gov.tw/Files/Forest/RA/photo/album/0500001/%E7%A5%9E%E6%80%A1%E6%B5%81%E7%80%9101-%E8%AC%9D%E5%9D%A4%E5%AE%8F.jpg",
+          "Width": null,
+          "Height": null,
+          "Keywords": []
+        },
+        {
+          "Name": "象鼻木",
+          "Description": "照片提供｜謝坤宏",
+          "URL": "https://recreation.forest.gov.tw/Files/Forest/RA/photo/album/0500001/%E8%B1%A1%E9%BC%BB%E6%9C%A8_%E8%AC%9D%E5%9D%A4%E5%AE%8F%E6%94%9D.jpg",
+          "Width": null,
+          "Height": null,
+          "Keywords": []
+        },
+        {
+          "Name": "雲海",
+          "Description": "照片提供｜謝坤宏",
+          "URL": "https://recreation.forest.gov.tw/Files/Forest/RA/photo/album/0500001/%E9%9B%B2%E6%B5%B7_%E8%AC%9D%E5%9D%A4%E5%AE%8F%E6%94%9D.jpg",
+          "Width": null,
+          "Height": null,
+          "Keywords": []
+        },
+        {
+          "Name": "雲海晚霞",
+          "Description": "照片提供｜謝坤宏",
+          "URL": "https://recreation.forest.gov.tw/Files/Forest/RA/photo/album/0500001/%E9%9B%B2%E6%B5%B7%E6%99%9A%E9%9C%9E_%E8%AC%9D%E5%9D%A4%E5%AE%8F%E6%94%9D.jpg",
+          "Width": null,
+          "Height": null,
+          "Keywords": []
+        },
+        {
+          "Name": "黑長尾雉",
+          "Description": "照片提供｜謝坤宏",
+          "URL": "https://recreation.forest.gov.tw/Files/Forest/RA/photo/album/0500001/%E9%BB%91%E9%95%B7%E5%B0%BE%E9%9B%89_%E8%AC%9D%E5%9D%A4%E5%AE%8F%E6%94%9D.jpg",
+          "Width": null,
+          "Height": null,
+          "Keywords": []
+        },
+        {
+          "Name": "塔山奇岩01",
+          "Description": "照片提供｜謝坤宏",
+          "URL": "https://recreation.forest.gov.tw/Files/Forest/RA/photo/album/0500001/%E5%A1%94%E5%B1%B1%E5%A5%87%E5%B2%A901_%E8%AC%9D%E5%9D%A4%E5%AE%8F%E6%94%9D.jpg",
+          "Width": null,
+          "Height": null,
+          "Keywords": []
+        },
+        {
+          "Name": "塔山奇岩02",
+          "Description": "照片提供｜謝坤宏",
+          "URL": "https://recreation.forest.gov.tw/Files/Forest/RA/photo/album/0500001/%E5%A1%94%E5%B1%B1%E5%A5%87%E5%B2%A902_%E8%AC%9D%E5%9D%A4%E5%AE%8F%E6%94%9D.jpg",
+          "Width": null,
+          "Height": null,
+          "Keywords": []
+        },
+        {
+          "Name": "慈雲觀景01",
+          "Description": "照片提供｜謝坤宏",
+          "URL": "https://recreation.forest.gov.tw/Files/Forest/RA/photo/album/0500001/%E6%85%88%E9%9B%B2%E8%A7%80%E6%99%AF01_%E8%AC%9D%E5%9D%A4%E5%AE%8F%E6%94%9D.jpg",
+          "Width": null,
+          "Height": null,
+          "Keywords": []
+        },
+        {
+          "Name": "慈雲觀景02",
+          "Description": "照片提供｜陳坤志",
+          "URL": "https://recreation.forest.gov.tw/Files/Forest/RA/photo/album/0500001/%E6%85%88%E9%9B%B2%E8%A7%80%E6%99%AF02_%E9%99%B3%E5%9D%A4%E5%BF%97%E6%94%9D.jpg",
+          "Width": null,
+          "Height": null,
+          "Keywords": []
+        },
+        {
+          "Name": "阿里山國家森林遊樂區內開滿雛菊",
+          "Description": "照片提供｜嘉義分署",
+          "URL": "https://recreation.forest.gov.tw/Files/Forest/RA/photo/album/0500001/%E9%9B%9B%E8%8F%8A.JPG",
+          "Width": null,
+          "Height": null,
+          "Keywords": []
+        },
+        {
+          "Name": "櫻花火車",
+          "Description": "照片提供｜陳坤志",
+          "URL": "https://recreation.forest.gov.tw/Files/Forest/RA/photo/album/0500001/%E6%AB%BB%E8%8A%B1%E7%81%AB%E8%BB%8A_%E9%99%B3%E5%9D%A4%E5%BF%97%E6%94%9D.jpg",
+          "Width": null,
+          "Height": null,
+          "Keywords": []
+        },
+        {
+          "Name": "28號巨木-謝坤宏",
+          "Description": "照片提供｜謝坤宏",
+          "URL": "https://recreation.forest.gov.tw/Files/Forest/RA/photo/album/0500001/28%E8%99%9F%E5%B7%A8%E6%9C%A8-%E8%AC%9D%E5%9D%A4%E5%AE%8F.jpg",
+          "Width": null,
+          "Height": null,
+          "Keywords": []
+        }
+      ],
+      "Organizations": [],
+      "LocatedCities": [],
+      "SocialMediaURLs": [
+        {
+          "Name": "阿里山國家森林遊樂區",
+          "Description": null,
+          "Class": null,
+          "URL": "https://www.facebook.com/AlishanForest",
+          "Keywords": [],
+          "Tags": []
+        },
+        {
+          "Name": "阿里山國家森林遊樂區",
+          "Description": null,
+          "Class": null,
+          "URL": "https://www.instagram.com/alishanforest/",
+          "Keywords": [],
+          "Tags": []
+        },
+        {
+          "Name": "尋找阿里山之阿里山漫步走",
+          "Description": null,
+          "Class": null,
+          "URL": "https://youtu.be/pfzCouIRqIw",
+          "Keywords": [],
+          "Tags": []
+        }
+      ]
+    },
+    {
+      "AttractionID": "Attraction_345040000G_110035",
+      "AttractionName": "太平山蹦蹦車",
+      "AlternateNames": [],
+      "Description": "太平山蹦蹦車的前身為太平山森林鐵路茂興線，起站太平山莊，終站為茂興站，全長約3公里，行車時間約20分鐘，巨木參天的林蔭下，陽光透了些許的光，軌道逕自在林間穿梭，旅客乘坐在開放式的蹦蹦車廂中，更可直接親近沿途秀麗的山巒疊翠。終點的茂興站設置自導式森林步道、蕨類原生園及茂興國家森林步道。",
+      "PositionLat": 24.4931759734523,
+      "PositionLon": 121.535830426591,
+      "Geometry": null,
+      "AttractionClasses": [2, 23],
+      "ServiceTimeInfo": "",
+      "TrafficInfo": "［開車前往］從台北出發（經宜蘭交流道）：台北→國道5號→宜蘭(交流道)→省道台7線→省道台7甲線(3.7K)→宜專1線→土場→鳩之澤→太平山。［開車前往］從台北出發（經羅東交流道）：台北→國道5號→羅東(交流道)→省道台7丙線→省道台7線→省道台7甲線(3.7K)→宜專1線→土場→鳩之澤→太平山。［開車前往］從台北出發（經省道台9線(北宜公路)）：台北→省道台9線(北宜公路)→頭城鎮→宜蘭市→省道台7線→省道台7甲線(3.7K)→宜專1線→土場→鳩之澤→太平山［開車前往］從基隆出發：基隆→省道台2線(濱海公路) →壯圍→省道台7線→省道台7甲線(3.7K)→宜專1線→土場→鳩之澤→太平山。［開車前往］從桃園出發：桃園→大溪→省道台7線(北橫公路)→省道台7甲線(3.7K)→宜專1線→土場→鳩之澤→太平山。［大眾運輸］搭乘國光客運：每日行駛。旅程時間：約2時30分鐘。電話：宜蘭站03-9384171、羅東站03-9567505網址：www.kingbus.com.tw ◎去程(發車時間)：宜蘭07:40、羅東08:00(宜蘭+20分鐘為羅東發車時間) ；抵達太平山10:30。◎回程(發車時間)：太平山14:30；鳩之澤16:10，抵達羅東17:30、宜蘭17:50。",
+      "ParkingInfo": "",
+      "Facilities": [],
+      "ServiceStatus": 1,
+      "IsPublicAccess": 1,
+      "IsAccessibleForFree": null,
+      "FeeInfo": "",
+      "PaymentMethods": [],
+      "WebsiteUrl": "https://recreation.forest.gov.tw/Forestry/FR?typ_id=0100041",
+      "ReservationURLs": [],
+      "MapURLs": [],
+      "SameAsURLs": [],
+      "VisitDuration": null,
+      "AssetsClass": null,
+      "Tags": ["林業軌道", "蹦蹦車", "雲海", "檜霧森林", "幽靜"],
+      "Remarks": "",
+      "UpdateTime": "2026-11-05T00:20:24+08:00",
+      "PostalAddress": {
+        "City": "宜蘭縣",
+        "CityCode": "10002",
+        "Town": "大同鄉",
+        "TownCode": "10002110",
+        "ZipCode": "267",
+        "StreetAddress": "大同鄉太平巷58之1號"
+      },
+      "Telephones": [
+        {
+          "Tel": "(03)9809812",
+          "Ext": null
+        }
+      ],
+      "Images": [
+        {
+          "Name": "蹦蹦車行駛於軌道",
+          "Description": "照片提供｜宜蘭分署",
+          "URL": "https://recreation.forest.gov.tw/Files/Forestry/FR/photo/album/0100041/01_BASE_01.jpg",
+          "Width": null,
+          "Height": null,
+          "Keywords": []
+        },
+        {
+          "Name": "蹦蹦車機車頭轉向",
+          "Description": "照片提供｜宜蘭分署",
+          "URL": "https://recreation.forest.gov.tw/Files/Forestry/FR/photo/album/0100041/02_BASE_02.jpg",
+          "Width": null,
+          "Height": null,
+          "Keywords": []
+        },
+        {
+          "Name": "蹦蹦車貓頭鷹車掌",
+          "Description": "照片提供｜宜蘭分署",
+          "URL": "https://recreation.forest.gov.tw/Files/Forestry/FR/photo/album/0100041/03_BASE_03.jpg",
+          "Width": null,
+          "Height": null,
+          "Keywords": []
+        },
+        {
+          "Name": "蹦蹦車車廂",
+          "Description": "照片提供｜宜蘭分署",
+          "URL": "https://recreation.forest.gov.tw/Files/Forestry/FR/photo/album/0100041/04_BASE_04.jpg",
+          "Width": null,
+          "Height": null,
+          "Keywords": []
+        },
+        {
+          "Name": "蹦蹦車",
+          "Description": "照片提供｜宜蘭分署",
+          "URL": "https://recreation.forest.gov.tw/Files/Forestry/FR/photo/album/0100041/001.jpg",
+          "Width": null,
+          "Height": null,
+          "Keywords": []
+        },
+        {
+          "Name": "穿梭山林中的蹦蹦車",
+          "Description": "照片提供｜宜蘭分署",
+          "URL": "https://recreation.forest.gov.tw/Files/Forestry/FR/photo/album/0100041/002.jpg",
+          "Width": null,
+          "Height": null,
+          "Keywords": []
+        },
+        {
+          "Name": "蹦蹦車冬季景觀",
+          "Description": "照片提供｜宜蘭分署",
+          "URL": "https://recreation.forest.gov.tw/Files/Forestry/FR/photo/album/0100041/003.jpg",
+          "Width": null,
+          "Height": null,
+          "Keywords": []
+        },
+        {
+          "Name": "茂興車站",
+          "Description": "照片提供｜宜蘭分署",
+          "URL": "https://recreation.forest.gov.tw/Files/Forestry/FR/photo/album/0100041/004.jpg",
+          "Width": null,
+          "Height": null,
+          "Keywords": []
+        }
+      ],
+      "Organizations": [],
+      "LocatedCities": [],
+      "SocialMediaURLs": []
+    },
+    {
+      "AttractionID": "Attraction_345040000G_000004",
+      "AttractionName": "東眼山國家森林遊樂區",
+      "AlternateNames": [],
+      "Description": "距離大溪約1小時車程的東眼山國家森林遊樂區，過去曾是林業保育署(舊稱林務局)的伐木林班，留下了許多林業遺跡，如集材機、索道、台車等，隱身在知性步道旁。現今漫步在雲霧繚繞、整齊美麗的柳杉林間，拾級而上登頂海拔1,212公尺的東眼山一覽桃園到大台北的景緻。 東眼山林道旁座落著一塊造林紀念石，見證著台灣林業的過去。  東眼山豐富的生態，擁有約43種山鳥，以及為數眾多的哺乳動物，連中高海拔才有的白面鼯鼠都可以在這裡看見。春季賞櫻、夏季白天蟬和夜間各種青蛙比大聲，秋季東眼山林道染上濃濃的秋愁，最特別的是，有不少台灣野兔住在這裡，漫步林間時，別忘了注意您的腳邊唷！  而位於東眼山林道旁的化石區，擁有千萬年歷史的化石與地景，伴隨生痕化石、沉積地質等沿途漫步至東滿步道入口，十分愜意。有機會到大溪一遊，不妨也安排到東眼山國家森林遊樂區，來趟洗滌心神的森林之旅吧！",
+      "PositionLat": 24.8314092281161,
+      "PositionLon": 121.407942977277,
+      "Geometry": null,
+      "AttractionClasses": [16],
+      "ServiceTimeInfo": "",
+      "TrafficInfo": "［開車前往］路線一：桃園→大溪→省道台7線→復興→縣道119線→東眼山森林遊樂區。［開車前往］路線二：三峽→大埔→省道台7乙線→三民→省道台7線復興→縣道119線→東眼山森林遊樂區。［大眾運輸］台灣好行【506】東眼山線：台灣好行【506】東眼山線:『大溪發車時間』(平日)08:00、11:00、15:00/(假日)08:00、09:00、11:00、14:30、15:00。『東眼山國家森林遊樂區發車時間』(平日)09:30、13:00、17:00/(假日)09:30、12:00、13:00、16:15、17:00(下車處在東眼山售票口外，上車處在東眼山內大型停車場處)其他乘車資訊可洽*桃園客運 (0800-053808)*台灣好行 (0800-011765) *台灣好行網頁連結: https://www.taiwantrip.com.tw/Frontend/Route/Select_p?RouteID=R0064*東眼山遊樂區 (03-3821506)［大眾運輸］幸福巴士[F906蝙蝠洞-東眼山路線]：三民→水流東(越香飲食店)→水流東路口→大窩路口→土地公→張厝→三叉路口→三民長老教會→蝙蝠洞口→紅瓦厝→吳厝→西湖→王厝→大窩→下基國派→基國派→三民停車場→枕頭山口→圓山腳→圓山→圓山橋→枕頭山→檀林寺→三民橋→新村→水源地→介壽國中→角板山公園→復興→角板山公園→介壽國中→水源地→成福路口→綠光森林→東眼山國家森林遊樂區",
+      "ParkingInfo": "大型車：100元，1.大型停車格為22格車位。2.搭乘公車及客運離園乘車處。小型車：100元，小型停車場一區為104格車位，另一區為116格車位，共220格車位。機車：20元，機車停車場(現有30格，位於小型停車場左側)。",
+      "Facilities": [],
+      "ServiceStatus": 1,
+      "IsPublicAccess": 1,
+      "IsAccessibleForFree": null,
+      "FeeInfo": "",
+      "PaymentMethods": [],
+      "WebsiteUrl": "https://recreation.forest.gov.tw/Forest/RA?typ_id=0200003",
+      "ReservationURLs": [
+        "https://forestpass.welcometw.com/tour/listAll?category=Gad"
+      ],
+      "MapURLs": [
+        "https://recreation.forest.gov.tw/Files/Forest/RA/photo/0200003/01/1791427321538.jpg"
+      ],
+      "SameAsURLs": [],
+      "VisitDuration": null,
+      "AssetsClass": null,
+      "Tags": [
+        "國家森林遊樂區",
+        "賞鳥",
+        "生痕化石",
+        "森林浴",
+        "螢火蟲",
+        "雲海",
+        "賞蛙",
+        "紅葉",
+        "賞花"
+      ],
+      "Remarks": "",
+      "UpdateTime": "2026-11-05T00:20:24+08:00",
+      "PostalAddress": {
+        "City": "桃園市",
+        "CityCode": "68000",
+        "Town": "復興區",
+        "TownCode": "68000130",
+        "ZipCode": "336",
+        "StreetAddress": "霞雲里成福路600號"
+      },
+      "Telephones": [
+        {
+          "Tel": "(03)3821506",
+          "Ext": null
+        },
+        {
+          "Tel": "(03)3882038",
+          "Ext": null
+        }
+      ],
+      "Images": [
+        {
+          "Name": "東眼山國家森林遊樂區雲霧",
+          "Description": "照片提供｜新竹分署",
+          "URL": "https://recreation.forest.gov.tw/Files/Forest/RA/photo/album/0200003/IMG_1007.jpg",
+          "Width": null,
+          "Height": null,
+          "Keywords": []
+        },
+        {
+          "Name": "東眼山國家森林遊樂區柳杉林",
+          "Description": "照片提供｜新竹分署",
+          "URL": "https://recreation.forest.gov.tw/Files/Forest/RA/photo/album/0200003/DSC07936.jpg",
+          "Width": null,
+          "Height": null,
+          "Keywords": []
+        },
+        {
+          "Name": "東眼山國家森林遊樂區白雲美景",
+          "Description": "照片提供｜新竹分署",
+          "URL": "https://recreation.forest.gov.tw/Files/Forest/RA/photo/album/0200003/IMG_1008.jpg",
+          "Width": null,
+          "Height": null,
+          "Keywords": []
+        },
+        {
+          "Name": "東眼山_東眼山柳杉林(自導式步道)",
+          "Description": "照片提供｜新竹分署",
+          "URL": "https://recreation.forest.gov.tw/Files/Forest/RA/photo/album/0200003/01_%E6%9D%B1%E7%9C%BC%E5%B1%B1_%E6%9D%B1%E7%9C%BC%E5%B1%B1%E6%9F%B3%E6%9D%89%E6%9E%97(%E8%87%AA%E5%B0%8E%E5%BC%8F%E6%AD%A5%E9%81%932).jpg",
+          "Width": null,
+          "Height": null,
+          "Keywords": []
+        },
+        {
+          "Name": "東眼山國家森林遊樂區夕陽",
+          "Description": "照片提供｜新竹分署",
+          "URL": "https://recreation.forest.gov.tw/Files/Forest/RA/photo/album/0200003/02_BASE_02.jpg",
+          "Width": null,
+          "Height": null,
+          "Keywords": []
+        },
+        {
+          "Name": "東眼山渺渺群山",
+          "Description": "照片提供｜張善穎",
+          "URL": "https://recreation.forest.gov.tw/Files/Forest/RA/photo/album/0200003/03_%E6%9D%B1%E7%9C%BC%E5%B1%B1%E6%B8%BA%E6%B8%BA%E7%BE%A4%E5%B1%B1(%E5%BC%B5%E5%96%84%E7%A9%8E%E6%94%9D).JPG",
+          "Width": null,
+          "Height": null,
+          "Keywords": []
+        },
+        {
+          "Name": "黑翅螢-草地邊坡-開闊處",
+          "Description": "照片提供｜新竹分署",
+          "URL": "https://recreation.forest.gov.tw/Files/Forest/RA/photo/album/0200003/04_%E9%BB%91%E7%BF%85%E8%9E%A2-%E8%8D%89%E5%9C%B0%E9%82%8A%E5%9D%A1-%E9%96%8B%E9%97%8A%E8%99%953.jpg",
+          "Width": null,
+          "Height": null,
+          "Keywords": []
+        },
+        {
+          "Name": "東眼山國家森林遊樂區柳杉林",
+          "Description": "照片提供｜新竹分署",
+          "URL": "https://recreation.forest.gov.tw/Files/Forest/RA/photo/album/0200003/05_IMG_E0415.JPG",
+          "Width": null,
+          "Height": null,
+          "Keywords": []
+        },
+        {
+          "Name": "東眼山國家森林遊樂區緋寒櫻",
+          "Description": "照片提供｜新竹分署",
+          "URL": "https://recreation.forest.gov.tw/Files/Forest/RA/photo/album/0200003/06_IMG_9856.JPG",
+          "Width": null,
+          "Height": null,
+          "Keywords": []
+        },
+        {
+          "Name": "東眼山國家森林遊樂區山櫻",
+          "Description": "照片提供｜新竹分署",
+          "URL": "https://recreation.forest.gov.tw/Files/Forest/RA/photo/album/0200003/07_IMG_1009.JPG",
+          "Width": null,
+          "Height": null,
+          "Keywords": []
+        },
+        {
+          "Name": "東眼山國家森林遊樂區柳杉林",
+          "Description": "照片提供｜新竹分署",
+          "URL": "https://recreation.forest.gov.tw/Files/Forest/RA/photo/album/0200003/08_IMG_9865.JPG",
+          "Width": null,
+          "Height": null,
+          "Keywords": []
+        },
+        {
+          "Name": "八角涼亭",
+          "Description": "照片提供｜新竹分署",
+          "URL": "https://recreation.forest.gov.tw/Files/Forest/RA/photo/album/0200003/IMG_1010.jpg",
+          "Width": null,
+          "Height": null,
+          "Keywords": []
+        },
+        {
+          "Name": "有氧森林浴",
+          "Description": "照片提供｜洪武雄",
+          "URL": "https://recreation.forest.gov.tw/Files/Forest/RA/photo/album/0200003/IMG_1011.jpg",
+          "Width": null,
+          "Height": null,
+          "Keywords": []
+        },
+        {
+          "Name": "東眼山與雲瀑",
+          "Description": "照片提供｜新竹分署",
+          "URL": "https://recreation.forest.gov.tw/Files/Forest/RA/photo/album/0200003/IMG_1012.jpg",
+          "Width": null,
+          "Height": null,
+          "Keywords": []
+        },
+        {
+          "Name": "東眼山柳杉林",
+          "Description": "照片提供｜王明燦",
+          "URL": "https://recreation.forest.gov.tw/Files/Forest/RA/photo/album/0200003/IMG_1013.jpg",
+          "Width": null,
+          "Height": null,
+          "Keywords": []
+        },
+        {
+          "Name": "東眼山渺渺群山",
+          "Description": "照片提供｜張善穎",
+          "URL": "https://recreation.forest.gov.tw/Files/Forest/RA/photo/album/0200003/IMG_1014.jpg",
+          "Width": null,
+          "Height": null,
+          "Keywords": []
+        },
+        {
+          "Name": "鳥瞰東眼山",
+          "Description": "照片提供｜李政憲",
+          "URL": "https://recreation.forest.gov.tw/Files/Forest/RA/photo/album/0200003/IMG_1015.jpg",
+          "Width": null,
+          "Height": null,
+          "Keywords": []
+        }
+      ],
+      "Organizations": [],
+      "LocatedCities": [],
+      "SocialMediaURLs": [
+        {
+          "Name": "東眼山自然教育中心－環境教育/戶外學習",
+          "Description": null,
+          "Class": null,
+          "URL": "https://www.facebook.com/DYSNEC",
+          "Keywords": [],
+          "Tags": []
+        },
+        {
+          "Name": "東眼山自然教育中心",
+          "Description": null,
+          "Class": null,
+          "URL": "https://www.instagram.com/dys.forest.learning.center/",
+          "Keywords": [],
+          "Tags": []
+        },
+        {
+          "Name": "東眼山國家森林遊樂區",
+          "Description": null,
+          "Class": null,
+          "URL": "https://youtu.be/De2DpAqiNdk",
+          "Keywords": [],
+          "Tags": []
+        }
+      ]
+    },
+    {
+      "AttractionID": "Attraction_345040000G_000002",
+      "AttractionName": "滿月圓國家森林遊樂區",
+      "AlternateNames": [],
+      "Description": "在三峽大豹溪的上游，一條叫做蚋子溪的支流上，座落著一個擁有瀑布、生態與楓紅的美麗小天地：滿月圓國家森林遊樂區。  距離三峽市區約40分鐘的滿月圓國家森林遊樂區，海拔在300至1700公尺之間，終年潮濕涼爽，孕育了豐富的蕨類生態，連對環境要求高的「團扇蕨」都可以找到。過去這裡曾有小規模的伐木，今日整齊的人造林見證了那段歲月。  這裡有豐富的鳥類、兩棲類及蝴蝶生態，像是少見的白喉笑鶇、赤腹山雀等，都是滿月圓重要的鳥明星喔！而每年12月左右，這裏的楓紅也美得動人，有「台灣最美低海拔楓紅」的美譽。  位於健行步道盡頭的滿月圓瀑布與處女瀑布，也是遊樂區的兩大美景，從滿月小橋上望去，只見一垂高十餘公尺之大石壁遮掩滿月圓瀑布上端，瀑布直沖而下，聲勢極為壯麗，處女瀑布則較為溫柔婉約，在陽光普照之日，光影在水瀑間折射變化，時常可見瀑布有著虹彩般的絢麗。",
+      "PositionLat": 24.8307811041726,
+      "PositionLon": 121.444585295549,
+      "Geometry": null,
+      "AttractionClasses": [16],
+      "ServiceTimeInfo": "",
+      "TrafficInfo": "［開車前往］路線一：國道3號→三鶯交流道→縣道110線→三峽→省道台3線→大埔→左岔路往省道台7乙線→湊合→插角→有木里方向→樂樂谷→滿月圓國家森林遊樂區(共4個停車場，第1號為小型停車場38格、第2號為大小型車停車場(具807公車候車亭)，大型停車格10格，小型停車格29格，第3號為小型車兩層停車場，上層為28個格、下層為20格，第4號為小型車及機車停車場，16格小型停車格)。［大眾運輸］搭乘客運：自三峽搭乘臺北客運【807】三峽--滿月圓: 平日『三峽一站發車時間』05:20、07:00、09:30、12:00、15:00、17:30。        『滿月圓發車時間』06:05、07:45、10:15、12:45、15:45、18:10。例假日『三峽一站發車時間』06:00、08:30、11:00、14:30、17:30。            『滿月圓發車時間』06:45、09:10、11:45、15:15、18:10。臺北客運三峽一站電話02-26711914，往滿月圓第2停車場，下車沿蚋仔溪生態步道步行約30分鐘即可到達售票站。",
+      "ParkingInfo": "大型車：100元，按次收費，每次新台幣100元。115年9月1日開始正式收費。小型車：100元，按次收費，每次新台幣100元。115年9月1日開始正式收費。",
+      "Facilities": [],
+      "ServiceStatus": 1,
+      "IsPublicAccess": 1,
+      "IsAccessibleForFree": null,
+      "FeeInfo": "",
+      "PaymentMethods": [],
+      "WebsiteUrl": "https://recreation.forest.gov.tw/Forest/RA?typ_id=0200001",
+      "ReservationURLs": [
+        "https://forestpass.welcometw.com/tour/listAll?category=r6G"
+      ],
+      "MapURLs": [],
+      "SameAsURLs": [],
+      "VisitDuration": null,
+      "AssetsClass": null,
+      "Tags": [
+        "國家森林遊樂區",
+        "瀑布",
+        "登山",
+        "賞蝶",
+        "賞蛙",
+        "賞鳥",
+        "賞楓",
+        "陰離子",
+        "溪流",
+        "森林浴"
+      ],
+      "Remarks": "",
+      "UpdateTime": "2026-11-05T00:20:24+08:00",
+      "PostalAddress": {
+        "City": "新北市",
+        "CityCode": "65000",
+        "Town": "三峽區",
+        "TownCode": "65000090",
+        "ZipCode": "237",
+        "StreetAddress": "有木里有木174-1號"
+      },
+      "Telephones": [
+        {
+          "Tel": "(02)26720004",
+          "Ext": null
+        },
+        {
+          "Tel": "(02)26720542",
+          "Ext": null
+        }
+      ],
+      "Images": [
+        {
+          "Name": "滿月圓國家森林遊樂區蝴蝶",
+          "Description": "照片提供｜新竹分署",
+          "URL": "https://recreation.forest.gov.tw/Files/Forest/RA/photo/album/0200001/DSCN1261.jpg",
+          "Width": null,
+          "Height": null,
+          "Keywords": []
+        },
+        {
+          "Name": "滿月圓國家森林遊樂區自導步道",
+          "Description": "照片提供｜新竹分署",
+          "URL": "https://recreation.forest.gov.tw/Files/Forest/RA/photo/album/0200001/DSCN1288.jpg",
+          "Width": null,
+          "Height": null,
+          "Keywords": []
+        },
+        {
+          "Name": "滿月圓國家森林遊樂區步道",
+          "Description": "照片提供｜新竹分署",
+          "URL": "https://recreation.forest.gov.tw/Files/Forest/RA/photo/album/0200001/DSCN1497.jpg",
+          "Width": null,
+          "Height": null,
+          "Keywords": []
+        },
+        {
+          "Name": "滿月圓國家森林遊樂區蕈類",
+          "Description": "照片提供｜新竹分署",
+          "URL": "https://recreation.forest.gov.tw/Files/Forest/RA/photo/album/0200001/DSCN2268.jpg",
+          "Width": null,
+          "Height": null,
+          "Keywords": []
+        },
+        {
+          "Name": "滿月圓國家森林遊樂區步道",
+          "Description": "照片提供｜新竹分署",
+          "URL": "https://recreation.forest.gov.tw/Files/Forest/RA/photo/album/0200001/DSCN5325.jpg",
+          "Width": null,
+          "Height": null,
+          "Keywords": []
+        },
+        {
+          "Name": "滿月圓國家森林遊樂區蕈菇",
+          "Description": "照片提供｜新竹分署",
+          "URL": "https://recreation.forest.gov.tw/Files/Forest/RA/photo/album/0200001/DSCN7937.jpg",
+          "Width": null,
+          "Height": null,
+          "Keywords": []
+        },
+        {
+          "Name": "滿月圓國家森林遊樂區步道",
+          "Description": "照片提供｜新竹分署",
+          "URL": "https://recreation.forest.gov.tw/Files/Forest/RA/photo/album/0200001/0200001.JPG",
+          "Width": null,
+          "Height": null,
+          "Keywords": []
+        },
+        {
+          "Name": "滿月圓國家森林遊樂區花開",
+          "Description": "照片提供｜新竹分署",
+          "URL": "https://recreation.forest.gov.tw/Files/Forest/RA/photo/album/0200001/03_facebook.jpg",
+          "Width": null,
+          "Height": null,
+          "Keywords": []
+        },
+        {
+          "Name": "滿月圓國家森林遊樂區蝴蝶",
+          "Description": "照片提供｜新竹分署",
+          "URL": "https://recreation.forest.gov.tw/Files/Forest/RA/photo/album/0200001/04_facebook.jpg",
+          "Width": null,
+          "Height": null,
+          "Keywords": []
+        },
+        {
+          "Name": "滿月圓國家森林遊樂區樹幹著生花開",
+          "Description": "照片提供｜新竹分署",
+          "URL": "https://recreation.forest.gov.tw/Files/Forest/RA/photo/album/0200001/05_facebook.jpg",
+          "Width": null,
+          "Height": null,
+          "Keywords": []
+        },
+        {
+          "Name": "園區瀑布",
+          "Description": "照片提供｜新竹分署",
+          "URL": "https://recreation.forest.gov.tw/Files/Forest/RA/photo/album/0200001/06_facebook.jpg",
+          "Width": null,
+          "Height": null,
+          "Keywords": []
+        },
+        {
+          "Name": "滿月圓國家森林遊樂區瀑布",
+          "Description": "照片提供｜新竹分署",
+          "URL": "https://recreation.forest.gov.tw/Files/Forest/RA/photo/album/0200001/07_facebook.jpg",
+          "Width": null,
+          "Height": null,
+          "Keywords": []
+        },
+        {
+          "Name": "滿月圓國家森林遊樂區觀瀑亭",
+          "Description": "照片提供｜新竹分署",
+          "URL": "https://recreation.forest.gov.tw/Files/Forest/RA/photo/album/0200001/08_facebook.jpg",
+          "Width": null,
+          "Height": null,
+          "Keywords": []
+        },
+        {
+          "Name": "滿月圓處女瀑布",
+          "Description": "照片提供｜新竹分署",
+          "URL": "https://recreation.forest.gov.tw/Files/Forest/RA/photo/album/0200001/DSCN8378.jpg",
+          "Width": null,
+          "Height": null,
+          "Keywords": []
+        },
+        {
+          "Name": "滿月圓瀑布",
+          "Description": "照片提供｜新竹分署",
+          "URL": "https://recreation.forest.gov.tw/Files/Forest/RA/photo/album/0200001/DSCN8380.jpg",
+          "Width": null,
+          "Height": null,
+          "Keywords": []
+        },
+        {
+          "Name": "滿足小橋上眺望蚋仔溪",
+          "Description": "照片提供｜新竹分署",
+          "URL": "https://recreation.forest.gov.tw/Files/Forest/RA/photo/album/0200001/0200001202501140.jpg",
+          "Width": null,
+          "Height": null,
+          "Keywords": []
+        }
+      ],
+      "Organizations": [],
+      "LocatedCities": [],
+      "SocialMediaURLs": [
+        {
+          "Name": "滿月圓國家森林遊樂區",
+          "Description": null,
+          "Class": null,
+          "URL": "https://www.facebook.com/ManyueyuanNationalForest/",
+          "Keywords": [],
+          "Tags": []
+        },
+        {
+          "Name": "滿月圓國家森林遊樂區",
+          "Description": null,
+          "Class": null,
+          "URL": "https://www.instagram.com/manyueyuanforest?igsh=dTBsOTdhc3kydTVo&utm_source=qr",
+          "Keywords": [],
+          "Tags": []
+        },
+        {
+          "Name": "滿月圓國家森林遊樂區",
+          "Description": null,
+          "Class": null,
+          "URL": "https://youtu.be/g-xpb0Y1kYY",
+          "Keywords": [],
+          "Tags": []
+        }
+      ]
+    },
+    {
+      "AttractionID": "Attraction_345040000G_000003",
+      "AttractionName": "內洞國家森林遊樂區",
+      "AlternateNames": [],
+      "Description": "瀑聲隆隆，依山傍水的蕨類樂園，小巧精緻的內洞國家森林遊樂區，是南勢溪上游一個享受寧靜與綠意的好所在。  距新店約50分鐘，內洞可說是大台北地區交通最方便的國家森林遊樂區，海拔在230~1500公尺之間，被內洞溪流貫，潮濕而溫暖，是名副其實的蕨類樂園：光觀瀑步道的短短數百公尺，就能發現將近65種蕨類，包括稀有的垂枝馬尾杉與藤蕨等，都是大樹身上附生的嬌客。而這裡舊稱「娃娃谷」，相傳是因為蛙類眾多，在夜裡暢鳴的聲響迴盪山谷而得，步道旁的水溝就有機會見到青蛙的身影喔！  內洞瀑布是遊樂區的主角，在觀瀑步道終點，有著二層不同的風貌帶給遊人們多元享受，與暢快的負離子芬芳。炎炎夏日，不妨從悶熱的都市出走，到內洞國家森林遊樂區享受一個清涼的午後森林浴吧！",
+      "PositionLat": 24.8344256073007,
+      "PositionLon": 121.526139930759,
+      "Geometry": null,
+      "AttractionClasses": [16],
+      "ServiceTimeInfo": "",
+      "TrafficInfo": "國道3號→新店交流道→省道台9線→新店→烏來→信賢區→內洞。［大眾運輸］搭乘計程車(烏來台車-內洞國家森林遊樂區)(車程約16分鐘)：建議可於「烏來轉運站」或「烏來台車站入口處」前方之「計程車處」搭乘計程車至內洞國家森林遊樂區1.從「烏來轉運站」搭乘計程車至內洞國家森林遊樂區搭乘費用425元2.從「烏來台車站入口處(纜車站)」至內洞國家森林遊樂區搭乘費用285元◎大臺北地區計程車新運價依新北市政府公告為主 (連結網址https://www.ntpc.gov.tw/ch/home.jsp?id=e8ca970cde5c00e1&dataserno=6de3731612ab144a8911537a2a34e600#)［大眾運輸］搭客運再步行或搭乘計程車至內洞國家森林遊樂區：搭乘新店客運849公車可於「烏來轉運站」下車，步行約6.8公里約1小時30分抵達內洞園區。",
+      "ParkingInfo": "小型車：免收費，停車場收費時間:平日自上午7時至下午6時，假日自上午6時至下午6時。第1小時收費新台幣30元，第2小時起收費新台幣20元，當日最高新台幣100元。",
+      "Facilities": [],
+      "ServiceStatus": 1,
+      "IsPublicAccess": 1,
+      "IsAccessibleForFree": null,
+      "FeeInfo": "",
+      "PaymentMethods": [],
+      "WebsiteUrl": "https://recreation.forest.gov.tw/Forest/RA?typ_id=0200002",
+      "ReservationURLs": [
+        "https://forestpass.welcometw.com/tour/listAll?category=dgw"
+      ],
+      "MapURLs": [],
+      "SameAsURLs": [],
+      "VisitDuration": null,
+      "AssetsClass": null,
+      "Tags": [
+        "國家森林遊樂區",
+        "溪流",
+        "賞蛙",
+        "蕨類",
+        "瀑布",
+        "陰離子",
+        "杜鵑",
+        "螢火蟲",
+        "野薑花",
+        "山櫻"
+      ],
+      "Remarks": "",
+      "UpdateTime": "2026-11-05T00:20:24+08:00",
+      "PostalAddress": {
+        "City": "新北市",
+        "CityCode": "65000",
+        "Town": "烏來區",
+        "TownCode": "65000290",
+        "ZipCode": "233",
+        "StreetAddress": "信賢里娃娃谷46號"
+      },
+      "Telephones": [
+        {
+          "Tel": "(02)26617358",
+          "Ext": null
+        }
+      ],
+      "Images": [
+        {
+          "Name": "羅好壩",
+          "Description": "照片提供｜高榕翎",
+          "URL": "https://recreation.forest.gov.tw/Files/Forest/RA/photo/album/0200002/DSCN9298.jpg",
+          "Width": null,
+          "Height": null,
+          "Keywords": []
+        },
+        {
+          "Name": "內洞國家森林遊樂區步道",
+          "Description": "照片提供｜高榕翎",
+          "URL": "https://recreation.forest.gov.tw/Files/Forest/RA/photo/album/0200002/DSCN9300.jpg",
+          "Width": null,
+          "Height": null,
+          "Keywords": []
+        },
+        {
+          "Name": "羅好霸水庫",
+          "Description": "照片提供｜新竹分署",
+          "URL": "https://recreation.forest.gov.tw/Files/Forest/RA/photo/album/0200002/01_%E7%BE%85%E5%A5%BD%E9%9C%B8%E6%B0%B4%E5%BA%AB.JPG",
+          "Width": null,
+          "Height": null,
+          "Keywords": []
+        },
+        {
+          "Name": "內洞南勢溪流域",
+          "Description": "照片提供｜新竹分署",
+          "URL": "https://recreation.forest.gov.tw/Files/Forest/RA/photo/album/0200002/02_%E5%85%A7%E6%B4%9E%E5%8D%97%E5%8B%A2%E6%BA%AA%E6%B5%81%E5%9F%9F.JPG",
+          "Width": null,
+          "Height": null,
+          "Keywords": []
+        },
+        {
+          "Name": "內洞國家森林遊樂區瀑布",
+          "Description": "照片提供｜新竹分署",
+          "URL": "https://recreation.forest.gov.tw/Files/Forest/RA/photo/album/0200002/03_IMG_5660.JPG",
+          "Width": null,
+          "Height": null,
+          "Keywords": []
+        },
+        {
+          "Name": "內洞賞景步道遠眺信賢部落",
+          "Description": "照片提供｜新竹分署",
+          "URL": "https://recreation.forest.gov.tw/Files/Forest/RA/photo/album/0200002/04_%E5%85%A7%E6%B4%9E%E8%B3%9E%E6%99%AF%E6%AD%A5%E9%81%93%E9%81%A0%E7%9C%BA%E4%BF%A1%E8%B3%A2%E9%83%A8%E8%90%BD.JPG",
+          "Width": null,
+          "Height": null,
+          "Keywords": []
+        },
+        {
+          "Name": "內洞瀑布風情",
+          "Description": "照片提供｜葉瑞聰",
+          "URL": "https://recreation.forest.gov.tw/Files/Forest/RA/photo/album/0200002/05_E158_%E8%91%89%E7%91%9E%E8%81%B0_%E5%85%A7%E6%B4%9E%E7%80%91%E5%B8%83%E9%A2%A8%E6%83%85.jpg",
+          "Width": null,
+          "Height": null,
+          "Keywords": []
+        },
+        {
+          "Name": "友善無障礙環境",
+          "Description": "照片提供｜新竹分署",
+          "URL": "https://recreation.forest.gov.tw/Files/Forest/RA/photo/album/0200002/%E5%85%A7%E6%B4%9E-%E5%8F%8B%E5%96%84%E7%84%A1%E9%9A%9C%E7%A4%99%E7%92%B0%E5%A2%83.JPG",
+          "Width": null,
+          "Height": null,
+          "Keywords": []
+        },
+        {
+          "Name": "信賢上層瀑布",
+          "Description": "照片提供｜新竹分署",
+          "URL": "https://recreation.forest.gov.tw/Files/Forest/RA/photo/album/0200002/%E5%85%A7%E6%B4%9E-%E4%BF%A1%E8%B3%A2%E4%B8%8A%E5%B1%A4%E7%80%91%E5%B8%83.JPG",
+          "Width": null,
+          "Height": null,
+          "Keywords": []
+        },
+        {
+          "Name": "信賢中層瀑布",
+          "Description": "照片提供｜新竹分署",
+          "URL": "https://recreation.forest.gov.tw/Files/Forest/RA/photo/album/0200002/%E5%85%A7%E6%B4%9E-%E4%BF%A1%E8%B3%A2%E4%B8%AD%E5%B1%A4%E7%80%91%E5%B8%83.JPG",
+          "Width": null,
+          "Height": null,
+          "Keywords": []
+        },
+        {
+          "Name": "信賢中層瀑布",
+          "Description": "照片提供｜新竹分署",
+          "URL": "https://recreation.forest.gov.tw/Files/Forest/RA/photo/album/0200002/%E5%85%A7%E6%B4%9E-%E4%BF%A1%E8%B3%A2%E4%B8%AD%E5%B1%A4%E7%80%91%E5%B8%83-%E9%AB%98%E6%A6%95%E7%BF%8E.JPG",
+          "Width": null,
+          "Height": null,
+          "Keywords": []
+        },
+        {
+          "Name": "遠眺烏紗溪瀑布",
+          "Description": "照片提供｜新竹分署",
+          "URL": "https://recreation.forest.gov.tw/Files/Forest/RA/photo/album/0200002/%E5%85%A7%E6%B4%9E-%E9%81%A0%E7%9C%BA%E7%83%8F%E7%B4%97%E6%BA%AA%E7%80%91%E5%B8%83-%E9%AB%98%E6%A6%95%E7%BF%8E.jpg",
+          "Width": null,
+          "Height": null,
+          "Keywords": []
+        }
+      ],
+      "Organizations": [],
+      "LocatedCities": [],
+      "SocialMediaURLs": [
+        {
+          "Name": "內洞國家森林遊樂區",
+          "Description": null,
+          "Class": null,
+          "URL": "https://youtu.be/aMOf9K5CHDk",
+          "Keywords": [],
+          "Tags": []
+        }
+      ]
+    },
+    {
+      "AttractionID": "Attraction_345040000G_000005",
+      "AttractionName": "觀霧國家森林遊樂區",
+      "AlternateNames": [],
+      "Description": "在滿山的迷霧之中擁抱神木、春天欣賞全台最大霧社山櫻花的一樹雪白、登高一覽雪山山脈「聖稜線」的英姿、還可能巧遇國寶，這裡是觀霧國家森林遊樂區，在竹苗交界帶給人們最豐盛的霧林帶饗宴。  距離竹東2小時的觀霧，泰雅族語是「茂義利」，意思是「更高的山嶺」。這裡在1940年成為伐木林場，1980年才結束營業，留下了滿山整齊的人造林；而檜山巨木群步道上五株壯碩的紅檜巨木，則對著遊人們訴說昔日台灣森林的壯美。  觀霧的野生動物很有看頭，除了漫步林道的帝雉與山羌外，最特別的是全世界獨一無二的棣慕華鳳仙花，以及兩種台灣特有種國寶：寬尾鳳蝶與以「觀霧」為名的觀霧山椒魚。  園區聯外道路大鹿林道在此分叉，東線是往大霸尖山的路，而西線則可通往園區最高的榛山，帶領人們享受雪山山脈聖稜線所勾勒出的動人景緻。",
+      "PositionLat": 24.5060651717171,
+      "PositionLon": 121.113745997286,
+      "Geometry": null,
+      "AttractionClasses": [16],
+      "ServiceTimeInfo": "",
+      "TrafficInfo": "［開車前往］路線一：國道3號竹林交流道→縣道120線→竹東→縣道122線(南清公路)→清泉→大鹿林道→觀霧 (自竹東至觀霧車程約需2小時)。［開車前往］路線二：新竹→快速道路68號→竹東-縣道122線(南清公路)→清泉→大鹿林道→觀霧 (自竹東至觀霧車程約需2小時)。［大眾運輸］台灣好行-觀霧縣：「台灣好行-觀霧線」共停靠高鐵新竹站、台鐵竹東站、軟橋彩繪村、五峰清泉、雲山民宿、雪霸休閒農場、觀霧國家森林遊樂區及觀霧山莊等8站，單程票價新臺幣300元，建議電話預約搭乘，電話專線：037-597688，0911-363360。服務時間：週一至週五上午08:00-12:00、下午13:30-17:30。",
+      "ParkingInfo": "",
+      "Facilities": [],
+      "ServiceStatus": 1,
+      "IsPublicAccess": 1,
+      "IsAccessibleForFree": null,
+      "FeeInfo": "",
+      "PaymentMethods": [],
+      "WebsiteUrl": "https://recreation.forest.gov.tw/Forest/RA?typ_id=0200004",
+      "ReservationURLs": [],
+      "MapURLs": [
+        "https://recreation.forest.gov.tw/Files/Forest/RA/photo/0200004/01/%E8%A7%80%E9%9C%A7_%E7%B0%A1%E6%98%93%E5%B0%8E%E8%A6%BD%E5%9C%B0%E5%9C%96_1120808%20%E5%AE%9A%E7%A8%BF_%E5%9C%B0%E5%9C%96%20-%20%E8%A4%87%E8%A3%BD202606160.jpg"
+      ],
+      "SameAsURLs": [],
+      "VisitDuration": null,
+      "AssetsClass": null,
+      "Tags": [
+        "國家森林遊樂區",
+        "賞花",
+        "賞鳥",
+        "雲海",
+        "聖稜線",
+        "巨木",
+        "瀑布",
+        "觀星",
+        "霧社櫻",
+        "避暑"
+      ],
+      "Remarks": "",
+      "UpdateTime": "2026-11-05T00:20:24+08:00",
+      "PostalAddress": {
+        "City": "苗栗縣",
+        "CityCode": "10005",
+        "Town": "泰安鄉",
+        "TownCode": "10005180",
+        "ZipCode": "365",
+        "StreetAddress": "梅園村8鄰觀霧1-3號"
+      },
+      "Telephones": [
+        {
+          "Tel": "(03)5224163",
+          "Ext": null
+        },
+        {
+          "Tel": "(037)272917",
+          "Ext": null
+        }
+      ],
+      "Images": [
+        {
+          "Name": "黃花鳳仙花",
+          "Description": "照片提供｜新竹分署",
+          "URL": "https://recreation.forest.gov.tw/Files/Forest/RA/photo/album/0200004/%E9%BB%83%E8%8A%B1%E9%B3%B3%E4%BB%99%E8%8A%B1.JPG",
+          "Width": null,
+          "Height": null,
+          "Keywords": []
+        },
+        {
+          "Name": "檜山巨木群步道",
+          "Description": "照片提供｜新竹分署",
+          "URL": "https://recreation.forest.gov.tw/Files/Forest/RA/photo/album/0200004/DSCN9962_%E6%AA%9C%E5%B1%B1%E5%B7%A8%E6%9C%A8%E6%AD%A5%E9%81%93.JPG",
+          "Width": null,
+          "Height": null,
+          "Keywords": []
+        },
+        {
+          "Name": "臺灣檫樹開花",
+          "Description": "照片提供｜森之形自然教育團隊",
+          "URL": "https://recreation.forest.gov.tw/Files/Forest/RA/photo/album/0200004/0200004202403254.jpg",
+          "Width": null,
+          "Height": null,
+          "Keywords": []
+        },
+        {
+          "Name": "檜山巨木步道",
+          "Description": "照片提供｜新竹分署",
+          "URL": "https://recreation.forest.gov.tw/Files/Forest/RA/photo/album/0200004/DSCN9942_%E6%AA%9C%E5%B1%B1%E5%B7%A8%E6%9C%A8%E6%AD%A5%E9%81%93.JPG",
+          "Width": null,
+          "Height": null,
+          "Keywords": []
+        },
+        {
+          "Name": "榛山步道",
+          "Description": "照片提供｜新竹分署",
+          "URL": "https://recreation.forest.gov.tw/Files/Forest/RA/photo/album/0200004/05_DSCN1670_%E6%A6%9B%E5%B1%B1%E6%AD%A5%E9%81%93.JPG",
+          "Width": null,
+          "Height": null,
+          "Keywords": []
+        },
+        {
+          "Name": "蜜月小徑",
+          "Description": "照片提供｜新竹分署",
+          "URL": "https://recreation.forest.gov.tw/Files/Forest/RA/photo/album/0200004/%E8%9C%9C%E6%9C%88%E5%B0%8F%E5%BE%91.JPG",
+          "Width": null,
+          "Height": null,
+          "Keywords": []
+        },
+        {
+          "Name": "霧社櫻",
+          "Description": "照片提供｜新竹分署",
+          "URL": "https://recreation.forest.gov.tw/Files/Forest/RA/photo/album/0200004/DSCN1251_%E9%9C%A7%E7%A4%BE%E6%AB%BB.JPG",
+          "Width": null,
+          "Height": null,
+          "Keywords": []
+        },
+        {
+          "Name": "觀霧國家森林遊樂區雲海",
+          "Description": "照片提供｜新竹分署",
+          "URL": "https://recreation.forest.gov.tw/Files/Forest/RA/photo/album/0200004/02_%E8%A7%80%E9%9C%A7%E9%9B%B2%E6%B5%B7.JPG",
+          "Width": null,
+          "Height": null,
+          "Keywords": []
+        },
+        {
+          "Name": "觀霧山椒魚",
+          "Description": "照片提供｜李聲銘",
+          "URL": "https://recreation.forest.gov.tw/Files/Forest/RA/photo/album/0200004/102%E5%B9%B44%E6%9C%88%E7%AB%B9%E6%9D%B1%E4%BA%8B%E6%A5%AD%E5%8D%80%E7%AC%AC22%E6%9E%97%E7%8F%AD%E8%A7%80%E9%9C%A7%E5%B1%B1%E6%A4%92%E9%AD%9A.jpg",
+          "Width": null,
+          "Height": null,
+          "Keywords": []
+        },
+        {
+          "Name": "霧社櫻王",
+          "Description": "照片提供｜森之形自然教育團隊",
+          "URL": "https://recreation.forest.gov.tw/Files/Forest/RA/photo/album/0200004/0200004202403252.jpg",
+          "Width": null,
+          "Height": null,
+          "Keywords": []
+        },
+        {
+          "Name": "觀霧瀑布步道-1.0K香杉巨木",
+          "Description": "照片提供｜新竹分署",
+          "URL": "https://recreation.forest.gov.tw/Files/Forest/RA/photo/album/0200004/%E8%A7%80%E9%9C%A7%E5%9C%8B%E5%AE%B6%E6%A3%AE%E6%9E%97%E9%81%8A%E6%A8%82%E5%8D%80%E7%80%91%E5%B8%83%E6%AD%A5%E9%81%93.JPG",
+          "Width": null,
+          "Height": null,
+          "Keywords": []
+        },
+        {
+          "Name": "迷霧森林裡的夕陽餘暉",
+          "Description": "照片提供｜森之形自然教育團隊",
+          "URL": "https://recreation.forest.gov.tw/Files/Forest/RA/photo/album/0200004/0200004202403256.jpg",
+          "Width": null,
+          "Height": null,
+          "Keywords": []
+        },
+        {
+          "Name": "檜山巨木群步道二號巨木",
+          "Description": "照片提供｜新竹分署",
+          "URL": "https://recreation.forest.gov.tw/Files/Forest/RA/photo/album/0200004/%E4%BA%8C%E8%99%9F%E5%B7%A8%E6%9C%A8.jpg",
+          "Width": null,
+          "Height": null,
+          "Keywords": []
+        },
+        {
+          "Name": "柳杉樹海",
+          "Description": "照片提供｜新竹分署",
+          "URL": "https://recreation.forest.gov.tw/Files/Forest/RA/photo/album/0200004/IMG_4975-%E6%9F%B3%E6%9D%89%E6%A8%B9%E6%B5%B7.JPG",
+          "Width": null,
+          "Height": null,
+          "Keywords": []
+        },
+        {
+          "Name": "觀霧山雲夕照",
+          "Description": "照片提供｜森之形自然教育團隊",
+          "URL": "https://recreation.forest.gov.tw/Files/Forest/RA/photo/album/0200004/0200004202403251.jpg",
+          "Width": null,
+          "Height": null,
+          "Keywords": []
+        },
+        {
+          "Name": "檜山巨木群步道",
+          "Description": "照片提供｜森之形自然教育團隊",
+          "URL": "https://recreation.forest.gov.tw/Files/Forest/RA/photo/album/0200004/0200004202403259.jpg",
+          "Width": null,
+          "Height": null,
+          "Keywords": []
+        },
+        {
+          "Name": "霧社櫻盛開時眺望觀霧山莊",
+          "Description": "照片提供｜森之形自然教育團隊",
+          "URL": "https://recreation.forest.gov.tw/Files/Forest/RA/photo/album/0200004/0200004202403253.jpg",
+          "Width": null,
+          "Height": null,
+          "Keywords": []
+        },
+        {
+          "Name": "觀霧瀑布",
+          "Description": "照片提供｜森之形自然教育團隊",
+          "URL": "https://recreation.forest.gov.tw/Files/Forest/RA/photo/album/0200004/0200004202403257.jpg",
+          "Width": null,
+          "Height": null,
+          "Keywords": []
+        },
+        {
+          "Name": "觀霧遊客中心後方平台",
+          "Description": "照片提供｜新竹分署",
+          "URL": "https://recreation.forest.gov.tw/Files/Forest/RA/photo/album/0200004/DSC04511.JPG",
+          "Width": null,
+          "Height": null,
+          "Keywords": []
+        },
+        {
+          "Name": "柳杉樹海",
+          "Description": "照片提供｜新竹分署",
+          "URL": "https://recreation.forest.gov.tw/Files/Forest/RA/photo/album/0200004/03_IMG_4975-%E6%9F%B3%E6%9D%89%E6%A8%B9%E6%B5%B7.JPG",
+          "Width": null,
+          "Height": null,
+          "Keywords": []
+        },
+        {
+          "Name": "觀霧國家森林遊樂區雲海",
+          "Description": "照片提供｜新竹分署",
+          "URL": "https://recreation.forest.gov.tw/Files/Forest/RA/photo/album/0200004/06_BASE_02.jpg",
+          "Width": null,
+          "Height": null,
+          "Keywords": []
+        },
+        {
+          "Name": "榛山步道",
+          "Description": "照片提供｜新竹分署",
+          "URL": "https://recreation.forest.gov.tw/Files/Forest/RA/photo/album/0200004/DSCN9742_%E6%A6%9B%E5%B1%B1%E6%AD%A5%E9%81%93.JPG",
+          "Width": null,
+          "Height": null,
+          "Keywords": []
+        },
+        {
+          "Name": "觀霧地區有時霧氣朦朧、有時白雲騰空、有時雲海滿溢",
+          "Description": "照片提供｜森之形自然教育團隊",
+          "URL": "https://recreation.forest.gov.tw/Files/Forest/RA/photo/album/0200004/02000042024032515.jpg",
+          "Width": null,
+          "Height": null,
+          "Keywords": []
+        },
+        {
+          "Name": "觀霧國家森林遊樂區雲海",
+          "Description": "照片提供｜新竹分署",
+          "URL": "https://recreation.forest.gov.tw/Files/Forest/RA/photo/album/0200004/07_BASE_03.jpg",
+          "Width": null,
+          "Height": null,
+          "Keywords": []
+        },
+        {
+          "Name": "迷霧中的大鹿林道西線",
+          "Description": "照片提供｜森之形自然教育團隊",
+          "URL": "https://recreation.forest.gov.tw/Files/Forest/RA/photo/album/0200004/02000042024032512.jpg",
+          "Width": null,
+          "Height": null,
+          "Keywords": []
+        },
+        {
+          "Name": "賞鳥步道",
+          "Description": "照片提供｜新竹分署",
+          "URL": "https://recreation.forest.gov.tw/Files/Forest/RA/photo/album/0200004/%E8%B3%9E%E9%B3%A5%E6%AD%A5%E9%81%93.JPG",
+          "Width": null,
+          "Height": null,
+          "Keywords": []
+        },
+        {
+          "Name": "觀霧瀑布",
+          "Description": "照片提供｜森之形自然教育團隊",
+          "URL": "https://recreation.forest.gov.tw/Files/Forest/RA/photo/album/0200004/0200004202403255.jpg",
+          "Width": null,
+          "Height": null,
+          "Keywords": []
+        },
+        {
+          "Name": "棣慕華鳳仙花與東方蜂",
+          "Description": "照片提供｜森之形自然教育團隊",
+          "URL": "https://recreation.forest.gov.tw/Files/Forest/RA/photo/album/0200004/0200004202403258.jpg",
+          "Width": null,
+          "Height": null,
+          "Keywords": []
+        },
+        {
+          "Name": "遠眺聖稜線，白雪覆蓋的雪山主峰與北稜角",
+          "Description": "照片提供｜森之形自然教育團隊",
+          "URL": "https://recreation.forest.gov.tw/Files/Forest/RA/photo/album/0200004/0200004202403250.jpg",
+          "Width": null,
+          "Height": null,
+          "Keywords": []
+        },
+        {
+          "Name": "觀霧霧社櫻",
+          "Description": "照片提供｜新竹分署",
+          "URL": "https://recreation.forest.gov.tw/Files/Forest/RA/photo/album/0200004/0200004.jpg",
+          "Width": null,
+          "Height": null,
+          "Keywords": []
+        },
+        {
+          "Name": "檜山巨木群步道的天然林",
+          "Description": "照片提供｜森之形自然教育團隊",
+          "URL": "https://recreation.forest.gov.tw/Files/Forest/RA/photo/album/0200004/02000042024032510.jpg",
+          "Width": null,
+          "Height": null,
+          "Keywords": []
+        },
+        {
+          "Name": "觀霧，雲霧的故鄉",
+          "Description": "照片提供｜森之形自然教育團隊",
+          "URL": "https://recreation.forest.gov.tw/Files/Forest/RA/photo/album/0200004/02000042024032511.jpg",
+          "Width": null,
+          "Height": null,
+          "Keywords": []
+        },
+        {
+          "Name": "西施花在四月至五月盛開",
+          "Description": "照片提供｜森之形自然教育團隊",
+          "URL": "https://recreation.forest.gov.tw/Files/Forest/RA/photo/album/0200004/02000042024032513.jpg",
+          "Width": null,
+          "Height": null,
+          "Keywords": []
+        },
+        {
+          "Name": "遠眺聖稜線",
+          "Description": "照片提供｜森之形自然教育團隊",
+          "URL": "https://recreation.forest.gov.tw/Files/Forest/RA/photo/album/0200004/02000042024032514.jpg",
+          "Width": null,
+          "Height": null,
+          "Keywords": []
+        },
+        {
+          "Name": "檜山巨木群步道的人工針葉林",
+          "Description": "照片提供｜森之形自然教育團隊",
+          "URL": "https://recreation.forest.gov.tw/Files/Forest/RA/photo/album/0200004/02000042024032516.jpg",
+          "Width": null,
+          "Height": null,
+          "Keywords": []
+        },
+        {
+          "Name": "檜山巨木群步道的一號巨木",
+          "Description": "照片提供｜森之形自然教育團隊",
+          "URL": "https://recreation.forest.gov.tw/Files/Forest/RA/photo/album/0200004/02000042024032517.jpg",
+          "Width": null,
+          "Height": null,
+          "Keywords": []
+        },
+        {
+          "Name": "莫氏樹蛙",
+          "Description": "照片提供｜森之形自然教育團隊",
+          "URL": "https://recreation.forest.gov.tw/Files/Forest/RA/photo/album/0200004/02000042024032518.jpg",
+          "Width": null,
+          "Height": null,
+          "Keywords": []
+        },
+        {
+          "Name": "觀霧國家森林遊樂區遊客中心提供優質解說服務",
+          "Description": "照片提供｜森之形自然教育團隊",
+          "URL": "https://recreation.forest.gov.tw/Files/Forest/RA/photo/album/0200004/02000042024032519.jpg",
+          "Width": null,
+          "Height": null,
+          "Keywords": []
+        },
+        {
+          "Name": "大樹是觀霧森林的骨幹",
+          "Description": "照片提供｜森之形自然教育團隊",
+          "URL": "https://recreation.forest.gov.tw/Files/Forest/RA/photo/album/0200004/02000042024032520.jpg",
+          "Width": null,
+          "Height": null,
+          "Keywords": []
+        },
+        {
+          "Name": "夜晚森林裡傳出單一或連續的尖銳哨音，是白面鼯鼠的鳴叫聲",
+          "Description": "照片提供｜森之形自然教育團隊",
+          "URL": "https://recreation.forest.gov.tw/Files/Forest/RA/photo/album/0200004/02000042024032521.jpg",
+          "Width": null,
+          "Height": null,
+          "Keywords": []
+        },
+        {
+          "Name": "觀霧秋紅",
+          "Description": "照片提供｜森之形自然教育團隊",
+          "URL": "https://recreation.forest.gov.tw/Files/Forest/RA/photo/album/0200004/02000042024032522.jpg",
+          "Width": null,
+          "Height": null,
+          "Keywords": []
+        },
+        {
+          "Name": "果實不僅肩負更新森林的使命，更餵養許多森林動物",
+          "Description": "照片提供｜森之形自然教育團隊",
+          "URL": "https://recreation.forest.gov.tw/Files/Forest/RA/photo/album/0200004/02000042024032523.jpg",
+          "Width": null,
+          "Height": null,
+          "Keywords": []
+        },
+        {
+          "Name": "泰雅爾祖靈紀念碑",
+          "Description": "照片提供｜森之形自然教育團隊",
+          "URL": "https://recreation.forest.gov.tw/Files/Forest/RA/photo/album/0200004/02000042024032524.jpg",
+          "Width": null,
+          "Height": null,
+          "Keywords": []
+        },
+        {
+          "Name": "葉色轉變的台灣藤漆",
+          "Description": "照片提供｜森之形自然教育團隊",
+          "URL": "https://recreation.forest.gov.tw/Files/Forest/RA/photo/album/0200004/02000042024032525.jpg",
+          "Width": null,
+          "Height": null,
+          "Keywords": []
+        },
+        {
+          "Name": "秋紅大小霸",
+          "Description": "照片提供｜森之形自然教育團隊",
+          "URL": "https://recreation.forest.gov.tw/Files/Forest/RA/photo/album/0200004/02000042024032526.jpg",
+          "Width": null,
+          "Height": null,
+          "Keywords": []
+        },
+        {
+          "Name": "觀霧森林是許多蛾類的棲息地",
+          "Description": "照片提供｜森之形自然教育團隊",
+          "URL": "https://recreation.forest.gov.tw/Files/Forest/RA/photo/album/0200004/02000042024032527.jpg",
+          "Width": null,
+          "Height": null,
+          "Keywords": []
+        },
+        {
+          "Name": "微觀世界-矮菊",
+          "Description": "照片提供｜森之形自然教育團隊",
+          "URL": "https://recreation.forest.gov.tw/Files/Forest/RA/photo/album/0200004/02000042024032528.jpg",
+          "Width": null,
+          "Height": null,
+          "Keywords": []
+        },
+        {
+          "Name": "微觀世界-蔓黃菀",
+          "Description": "照片提供｜森之形自然教育團隊",
+          "URL": "https://recreation.forest.gov.tw/Files/Forest/RA/photo/album/0200004/02000042024032529.jpg",
+          "Width": null,
+          "Height": null,
+          "Keywords": []
+        },
+        {
+          "Name": "觀霧雲海",
+          "Description": "照片提供｜森之形自然教育團隊",
+          "URL": "https://recreation.forest.gov.tw/Files/Forest/RA/photo/album/0200004/02000042024032530.jpg",
+          "Width": null,
+          "Height": null,
+          "Keywords": []
+        },
+        {
+          "Name": "金翼白眉的假沙梨自助餐",
+          "Description": "照片提供｜森之形自然教育團隊",
+          "URL": "https://recreation.forest.gov.tw/Files/Forest/RA/photo/album/0200004/02000042024032531.jpg",
+          "Width": null,
+          "Height": null,
+          "Keywords": []
+        },
+        {
+          "Name": "大鹿林道主線，冬日裡臺灣赤楊千葉落盡",
+          "Description": "照片提供｜森之形自然教育團隊",
+          "URL": "https://recreation.forest.gov.tw/Files/Forest/RA/photo/album/0200004/02000042024032532.jpg",
+          "Width": null,
+          "Height": null,
+          "Keywords": []
+        },
+        {
+          "Name": "紅頭長尾山雀與山櫻花",
+          "Description": "照片提供｜森之形自然教育團隊",
+          "URL": "https://recreation.forest.gov.tw/Files/Forest/RA/photo/album/0200004/02000042024032533.jpg",
+          "Width": null,
+          "Height": null,
+          "Keywords": []
+        },
+        {
+          "Name": "聖稜冬雪之品田山與穆特勒布山",
+          "Description": "照片提供｜森之形自然教育團隊",
+          "URL": "https://recreation.forest.gov.tw/Files/Forest/RA/photo/album/0200004/02000042024032534.jpg",
+          "Width": null,
+          "Height": null,
+          "Keywords": []
+        },
+        {
+          "Name": "蘚苔的樂章",
+          "Description": "照片提供｜森之形自然教育團隊",
+          "URL": "https://recreation.forest.gov.tw/Files/Forest/RA/photo/album/0200004/02000042024032535.jpg",
+          "Width": null,
+          "Height": null,
+          "Keywords": []
+        },
+        {
+          "Name": "遠眺聖稜線，大霸尖山覆雪",
+          "Description": "照片提供｜森之形自然教育團隊",
+          "URL": "https://recreation.forest.gov.tw/Files/Forest/RA/photo/album/0200004/02000042024032536.jpg",
+          "Width": null,
+          "Height": null,
+          "Keywords": []
+        }
+      ],
+      "Organizations": [],
+      "LocatedCities": [
+        {
+          "Name": "園區涵蓋範圍",
+          "Class": 8,
+          "City": "新竹縣",
+          "CityCode": "10004",
+          "Town": "五峰鄉",
+          "TownCode": "10004130"
+        }
+      ],
+      "SocialMediaURLs": [
+        {
+          "Name": "觀霧國家森林遊樂區",
+          "Description": null,
+          "Class": null,
+          "URL": "https://www.facebook.com/GuanwuNationalForest/",
+          "Keywords": [],
+          "Tags": []
+        },
+        {
+          "Name": "迷霧森林－觀霧森林遊樂區",
+          "Description": null,
+          "Class": null,
+          "URL": "https://youtu.be/fYZAcmimx3s",
+          "Keywords": [],
+          "Tags": []
+        }
+      ]
+    },
+    {
+      "AttractionID": "Attraction_345040000G_000006",
+      "AttractionName": "拉拉山國家森林遊樂區",
+      "AlternateNames": [],
+      "Description": "拉拉山國家森林遊樂區(以下簡稱本區)位於桃園市復興區北橫上巴陵一帶，此地的泰雅族上巴陵部落，其名「Balung」正是「檜木」或「巨大的倒木」之意；而「拉拉」為泰雅族語「R’ra」音譯，有「美麗的」、「讚嘆的」、「眺望、守望」等意，一說係指本區為族人眺望獵物、防禦外敵之處所，亦有族人來到此地感到讚嘆、美好之意，皆足以顯現本區具有豐富的檜木與生態資源。  全世界檜木分布只有在北美、日本及臺灣的雲霧帶才會有，因此，拉拉山的檜木森林是很珍貴的。本區位於霧林帶，植群分類屬原始針、闊葉混合林，完整保育千百年自然環境造就的珍貴檜木巨木群；亦為臺灣藍鵲、黃腹琉璃、臺灣野山羊等野生動植物重要棲息環境，係北部中海拔山區極具代表性之森林生態系，具有豐富之自然及人文特色。",
+      "PositionLat": 24.7102582905409,
+      "PositionLon": 121.432780279212,
+      "Geometry": null,
+      "AttractionClasses": [16],
+      "ServiceTimeInfo": "",
+      "TrafficInfo": "［開車前往］路線一：桃園→大溪→省道台7線→復興→縣道116線→拉拉山森林遊樂區。［開車前往］路線二：羅東→省道台7線→明池→縣道116線→拉拉山森林遊樂區。［大眾運輸］搭乘客運：本區目前有桃園客運5090、5091路線及中壢客運5301路線提供載客服務，3條路線營運起點分別為桃園、中壢站，其迄點均為桃園市復興區桃116線終點林班口［大眾運輸］付費接駁車：若需搭乘付費接駁車，可洽詢與本分署簽署合作備忘錄之拉拉山車隊，窗口電話0989-021005、0981-130771。",
+      "ParkingInfo": "小型車：100元，小型車每輛新臺幣100元請將車輛停放在停車格拉拉山園區內路幅較窄，所以不開放甲、乙類客車、保母車 ，進入的車輛車長限6公尺、車寬限2公尺。機車：20元，機車每輛新臺幣20元請將機車停放在機車停車格。",
+      "Facilities": [],
+      "ServiceStatus": 1,
+      "IsPublicAccess": 1,
+      "IsAccessibleForFree": null,
+      "FeeInfo": "",
+      "PaymentMethods": [],
+      "WebsiteUrl": "https://recreation.forest.gov.tw/Forest/RA?typ_id=0200005",
+      "ReservationURLs": ["https://forestpass.welcometw.com/tour/dBOz"],
+      "MapURLs": [
+        "https://recreation.forest.gov.tw/Files/Forest/RA/photo/0200005/01/%E6%8B%89%E6%8B%89%E5%B1%B1%E8%B7%AF%E7%B7%9A%E5%9C%B0%E5%9C%96B4_20260331%20.jpg"
+      ],
+      "SameAsURLs": [],
+      "VisitDuration": null,
+      "AssetsClass": null,
+      "Tags": ["巨木", "賞鳥", "森林浴", "雲霧", "紅葉"],
+      "Remarks": "",
+      "UpdateTime": "2026-11-05T00:20:24+08:00",
+      "PostalAddress": {
+        "City": "桃園市",
+        "CityCode": "68000",
+        "Town": "復興區",
+        "TownCode": "68000130",
+        "ZipCode": "336",
+        "StreetAddress": "華陵里13鄰巴崚205號"
+      },
+      "Telephones": [
+        {
+          "Tel": "(03)3882038",
+          "Ext": null
+        },
+        {
+          "Tel": "(03)3912063",
+          "Ext": null
+        },
+        {
+          "Tel": "(03)3912142",
+          "Ext": null
+        }
+      ],
+      "Images": [
+        {
+          "Name": "拉拉山雪景",
+          "Description": "照片提供｜新竹分署",
+          "URL": "https://recreation.forest.gov.tw/Files/Forest/RA/photo/album/0200005/0200005202302150.JPG",
+          "Width": null,
+          "Height": null,
+          "Keywords": []
+        },
+        {
+          "Name": "拉拉山的巨木",
+          "Description": "照片提供｜新竹分署",
+          "URL": "https://recreation.forest.gov.tw/Files/Forest/RA/photo/album/0200005/0200005.jpg",
+          "Width": null,
+          "Height": null,
+          "Keywords": []
+        },
+        {
+          "Name": "拉拉山巨木",
+          "Description": "照片提供｜新竹分署",
+          "URL": "https://recreation.forest.gov.tw/Files/Forest/RA/photo/album/0200005/0200005202303200.jpg",
+          "Width": null,
+          "Height": null,
+          "Keywords": []
+        },
+        {
+          "Name": "雲瀑",
+          "Description": "照片提供｜新竹分署",
+          "URL": "https://recreation.forest.gov.tw/Files/Forest/RA/photo/album/0200005/0200005202303201.jpg",
+          "Width": null,
+          "Height": null,
+          "Keywords": []
+        },
+        {
+          "Name": "2樓餐飲菜單",
+          "Description": "照片提供｜新竹分署",
+          "URL": "https://recreation.forest.gov.tw/Files/Forest/RA/photo/album/0200005/0200005.jpeg",
+          "Width": null,
+          "Height": null,
+          "Keywords": []
+        },
+        {
+          "Name": "巨木步道與流水",
+          "Description": "照片提供｜新竹分署",
+          "URL": "https://recreation.forest.gov.tw/Files/Forest/RA/photo/album/0200005/0200005202303202.jpg",
+          "Width": null,
+          "Height": null,
+          "Keywords": []
+        },
+        {
+          "Name": "遊客中心",
+          "Description": "照片提供｜新竹分署",
+          "URL": "https://recreation.forest.gov.tw/Files/Forest/RA/photo/album/0200005/0200005202303203.jpg",
+          "Width": null,
+          "Height": null,
+          "Keywords": []
+        },
+        {
+          "Name": "導覽行程A",
+          "Description": "照片提供｜新竹分署",
+          "URL": "https://recreation.forest.gov.tw/Files/Forest/RA/photo/album/0200005/0200005202305110.jpg",
+          "Width": null,
+          "Height": null,
+          "Keywords": []
+        },
+        {
+          "Name": "導覽遊程B",
+          "Description": "照片提供｜新竹分署",
+          "URL": "https://recreation.forest.gov.tw/Files/Forest/RA/photo/album/0200005/0200005202305111.jpg",
+          "Width": null,
+          "Height": null,
+          "Keywords": []
+        },
+        {
+          "Name": "4樓菜單",
+          "Description": "照片提供｜新竹分署",
+          "URL": "https://recreation.forest.gov.tw/Files/Forest/RA/photo/album/0200005/0200005202305110.jpeg",
+          "Width": null,
+          "Height": null,
+          "Keywords": []
+        }
+      ],
+      "Organizations": [],
+      "LocatedCities": [],
+      "SocialMediaURLs": [
+        {
+          "Name": "拉拉山國家森林遊樂區 ",
+          "Description": null,
+          "Class": null,
+          "URL": "https://www.facebook.com/LalashanNationalForest",
+          "Keywords": [],
+          "Tags": []
+        }
+      ]
+    }
+  ]
+}

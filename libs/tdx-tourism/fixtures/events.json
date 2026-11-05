@@ -1,0 +1,476 @@
+{
+  "value": [
+    {
+      "EventID": "Event_376540000A_006294",
+      "EventName": "2027台東跨年晚會－東漂去旅行",
+      "AlternateNames": [],
+      "Description": "2027台東跨年晚會",
+      "PositionLat": 22.75285,
+      "PositionLon": 121.16425,
+      "Geometry": null,
+      "EventClasses": [2],
+      "TrafficInfo": "",
+      "ParkingInfo": "",
+      "Facilities": [],
+      "IsAccessibleForFree": 0,
+      "FeeInfo": "",
+      "PaymentMethods": [],
+      "WebsiteUrl": "",
+      "ReservationURLs": [],
+      "MapURLs": [],
+      "SameAsURLs": [],
+      "Participant": "",
+      "StartDateTime": "2026-12-31T19:00:00+08:00",
+      "EndDateTime": "2027-01-01T01:00:00+08:00",
+      "EventStatus": "EventScheduled",
+      "PreviousStartDates": [],
+      "CalendarURLs": [],
+      "Tags": [],
+      "Remarks": "",
+      "UpdateTime": "2026-10-28T15:26:34+08:00",
+      "PostalAddress": {
+        "City": "臺東縣",
+        "CityCode": "10014",
+        "Town": "臺東市",
+        "TownCode": "10014010",
+        "ZipCode": "950",
+        "StreetAddress": "國際地標"
+      },
+      "Telephones": [
+        {
+          "Tel": "(089)320378",
+          "Ext": null
+        }
+      ],
+      "Images": [
+        {
+          "Name": "2027台東跨年晚會－東漂去旅行",
+          "Description": null,
+          "URL": "https://tour.taitung.gov.tw/image/57158/640x480",
+          "Width": null,
+          "Height": null,
+          "Keywords": []
+        }
+      ],
+      "Organizations": [],
+      "LocatedCities": [],
+      "SocialMediaURLs": []
+    },
+    {
+      "EventID": "Event_387000000A_010455",
+      "EventName": "測出你的旅遊魂！台中好行人格大解鎖",
+      "AlternateNames": [],
+      "Description": "旅行的時候，你是哪一派旅人呢？喜歡追著海風與陽光，享受自由自在的感覺️熱愛穿梭城市，尋找特色美食與文青景點想走進山林，讓身心來一場自然療癒喜歡探索在地文化，發現旅途中的驚喜✈️還是講求效率，讓每一趟旅程都順暢又精彩快來玩「台中好行旅人」心理測驗，找出你的旅行 DNA，看看哪一條台灣好行路線最適合你！ 來測測看：https://reurl.cc/DYr4rj 完成測驗還可以抽大獎只要完成以下步驟，就有機會把好禮帶回家活動參加方式①點擊測驗連結，完成線上心理測驗②取得你的台灣好行路線推薦及好行人格結果③在指定貼文下方上傳測驗結果圖，並留言「我想搭台灣好行【OO線】旅行！」，並標記1位好友。範例：我想搭台灣好行臺中活力海洋線旅行！@王小明#臺中時尚城中城線 #臺中活力海洋線 #臺中機場快捷線 #豐后線 #大雪山線✅完成以上步驟，即可獲得抽獎資格！✅活動時間：即日起～11/10 23:59止，11/20前公布得獎名單精美獎品特獎：OKU Hotel雙人房住宿券，共抽1名頭獎：黑沃咖啡綜合濾掛咖啡禮盒40入，共抽5名二獎：台灣好行11路童趣手作遊套票2入，共抽5名三獎：Snoopy公車造型悠遊卡，共抽10名快來一起參加心理測驗拿好禮吧！抽獎名額、獎項、活動期間及得獎公告方式，請依本篇活動辦法公告為準。更多最新旅遊及活動資訊，請下載「大玩台中」APP，探索台中豐富旅遊景點及特色遊程",
+      "PositionLat": 24.214944,
+      "PositionLon": 120.662784,
+      "Geometry": null,
+      "EventClasses": [2],
+      "TrafficInfo": "",
+      "ParkingInfo": "",
+      "Facilities": [],
+      "IsAccessibleForFree": 0,
+      "FeeInfo": "",
+      "PaymentMethods": [],
+      "WebsiteUrl": "",
+      "ReservationURLs": [],
+      "MapURLs": [],
+      "SameAsURLs": [],
+      "Participant": "",
+      "StartDateTime": "2026-11-03T00:00:00+08:00",
+      "EndDateTime": "2026-11-10T23:59:59+08:00",
+      "EventStatus": "EventScheduled",
+      "PreviousStartDates": [],
+      "CalendarURLs": [],
+      "Tags": [],
+      "Remarks": "",
+      "UpdateTime": "2026-11-04T11:26:39+08:00",
+      "PostalAddress": {
+        "City": "臺中市",
+        "CityCode": "66000",
+        "Town": "中區",
+        "TownCode": "66000010",
+        "ZipCode": "400",
+        "StreetAddress": ""
+      },
+      "Telephones": [
+        {
+          "Tel": "(04)22289111",
+          "Ext": null
+        }
+      ],
+      "Images": [
+        {
+          "Name": "測出你的旅遊魂！台中好行人格大解鎖",
+          "Description": null,
+          "URL": "https://travel.taichung.gov.tw/content/images/articles/79370/640x480_articles-image-ycybq7ttbkmw20cydhip7a.jpg",
+          "Width": null,
+          "Height": null,
+          "Keywords": []
+        }
+      ],
+      "Organizations": [],
+      "LocatedCities": [],
+      "SocialMediaURLs": []
+    },
+    {
+      "EventID": "Event_376540000A_006252",
+      "EventName": "跑吧！孩子｜2026知本溫泉公益馬拉松",
+      "AlternateNames": [],
+      "Description": "知本溫泉公益馬拉松自創辦以來秉持「跑步也能做公益」的理念，長年攜手「孩子的書屋」，將跑者的每一步轉化為支持臺東弱勢兒少的力量。2026年適逢知本馬拉松十週年里程碑，賽事將以「十週年里程碑 × 公益同行× 永續升級 × 地方共榮」為核心，結合路跑賽事、永續行動、市集活動與溫泉觀光，打造東台灣最具代表性的節慶型公益路跑，持續帶動地方觀光與社區共好。",
+      "PositionLat": 22.69267,
+      "PositionLon": 121.01635,
+      "Geometry": null,
+      "EventClasses": [2],
+      "TrafficInfo": "",
+      "ParkingInfo": "",
+      "Facilities": [],
+      "IsAccessibleForFree": 0,
+      "FeeInfo": "",
+      "PaymentMethods": [],
+      "WebsiteUrl": "",
+      "ReservationURLs": [],
+      "MapURLs": [],
+      "SameAsURLs": [],
+      "Participant": "",
+      "StartDateTime": "2026-11-01T00:00:00+08:00",
+      "EndDateTime": "2026-11-01T23:59:59+08:00",
+      "EventStatus": "EventScheduled",
+      "PreviousStartDates": [],
+      "CalendarURLs": [],
+      "Tags": [],
+      "Remarks": "",
+      "UpdateTime": "2026-06-01T12:16:28+08:00",
+      "PostalAddress": {
+        "City": "臺東縣",
+        "CityCode": "10014",
+        "Town": "卑南鄉",
+        "TownCode": "10014040",
+        "ZipCode": "954",
+        "StreetAddress": "忠義堂旁停車場"
+      },
+      "Telephones": [
+        {
+          "Tel": "(089)381368",
+          "Ext": null
+        }
+      ],
+      "Images": [
+        {
+          "Name": "跑吧！孩子｜2026知本溫泉公益馬拉松",
+          "Description": null,
+          "URL": "https://tour.taitung.gov.tw/image/55231/640x480",
+          "Width": null,
+          "Height": null,
+          "Keywords": []
+        }
+      ],
+      "Organizations": [],
+      "LocatedCities": [],
+      "SocialMediaURLs": []
+    },
+    {
+      "EventID": "Event_A15010000H_081706",
+      "EventName": "2026臺北馬拉松",
+      "AlternateNames": [],
+      "Description": "臺北馬拉松自西元1986年首次舉辦，為臺北市年度重要國際運動賽事，融合城市觀光，納入臺北各大特色地標。活動並取得國際馬拉松總會賽道認證及世界田徑總會菁英標籤認證，為臺灣第一個取得標籤認證的「市區馬拉松」賽事，每年吸引國內外許多菁英好手齊聚。",
+      "PositionLat": 25.03792,
+      "PositionLon": 121.5631,
+      "Geometry": null,
+      "EventClasses": [1],
+      "TrafficInfo": "",
+      "ParkingInfo": "",
+      "Facilities": [],
+      "IsAccessibleForFree": 0,
+      "FeeInfo": "",
+      "PaymentMethods": [],
+      "WebsiteUrl": "https://www.taipeicitymarathon.com/",
+      "ReservationURLs": [],
+      "MapURLs": [],
+      "SameAsURLs": [],
+      "Participant": "",
+      "StartDateTime": "2026-12-20T00:00:00+08:00",
+      "EndDateTime": "2026-12-20T00:00:00+08:00",
+      "EventStatus": "EventScheduled",
+      "PreviousStartDates": [],
+      "CalendarURLs": [],
+      "Tags": [],
+      "Remarks": "",
+      "UpdateTime": "2026-11-04T02:00:05+08:00",
+      "PostalAddress": {
+        "City": "臺北市",
+        "CityCode": "63000",
+        "Town": "信義區",
+        "TownCode": "63000020",
+        "ZipCode": "110",
+        "StreetAddress": "臺北市市民廣場"
+      },
+      "Telephones": [
+        {
+          "Tel": "(02)25702330",
+          "Ext": null
+        }
+      ],
+      "Images": [
+        {
+          "Name": "臺北馬拉松正式開跑！選手們從起點線蜂湧而出！",
+          "Description": "",
+          "URL": "https://www.taiwan.net.tw/att/event/d33e38e7-f5a1-409a-af49-2b0e42814c08.jpg",
+          "Width": null,
+          "Height": null,
+          "Keywords": []
+        }
+      ],
+      "Organizations": [
+        {
+          "Name": "交通部觀光署",
+          "Class": "Provider",
+          "TaxCode": null,
+          "AgencyCode": "A15010000H",
+          "URL": null,
+          "MobilePhones": [],
+          "Faxes": [],
+          "Email": null,
+          "Telephones": []
+        }
+      ],
+      "LocatedCities": [],
+      "SocialMediaURLs": []
+    },
+    {
+      "EventID": "Event_376430000A_006685",
+      "EventName": "2027桃園跨年晚會",
+      "AlternateNames": [],
+      "Description": "無",
+      "PositionLat": 24.99309,
+      "PositionLon": 121.29994,
+      "Geometry": null,
+      "EventClasses": [2],
+      "TrafficInfo": "",
+      "ParkingInfo": "",
+      "Facilities": [],
+      "IsAccessibleForFree": 0,
+      "FeeInfo": "",
+      "PaymentMethods": [],
+      "WebsiteUrl": "",
+      "ReservationURLs": [],
+      "MapURLs": [],
+      "SameAsURLs": [],
+      "Participant": "",
+      "StartDateTime": "2026-12-31T00:00:00+08:00",
+      "EndDateTime": "2026-12-31T23:59:59+08:00",
+      "EventStatus": "EventScheduled",
+      "PreviousStartDates": [],
+      "CalendarURLs": [],
+      "Tags": [],
+      "Remarks": "",
+      "UpdateTime": "2026-01-15T09:40:33+08:00",
+      "PostalAddress": {
+        "City": "桃園市",
+        "CityCode": "68000",
+        "Town": "中壢區",
+        "TownCode": "68000020",
+        "ZipCode": "320",
+        "StreetAddress": ""
+      },
+      "Telephones": [
+        {
+          "Tel": "(03)3322101",
+          "Ext": null
+        }
+      ],
+      "Images": [
+        {
+          "Name": "2027桃園跨年晚會",
+          "Description": null,
+          "URL": "https://travel.tycg.gov.tw/content/images/not-found/4to3.jpg",
+          "Width": null,
+          "Height": null,
+          "Keywords": []
+        }
+      ],
+      "Organizations": [],
+      "LocatedCities": [],
+      "SocialMediaURLs": []
+    },
+    {
+      "EventID": "Event_A15010000H_081870",
+      "EventName": "2026-2027屏東落山風藝術季",
+      "AlternateNames": [],
+      "Description": "屏東落山風藝術季以車城海口港「落山風之吹風看海地」及旁邊沙灘為主要場地，以大型藝術裝置及表演活動形式，展現風與地方之特色。",
+      "PositionLat": 22.08995,
+      "PositionLon": 120.7153,
+      "Geometry": null,
+      "EventClasses": [1],
+      "TrafficInfo": "",
+      "ParkingInfo": "",
+      "Facilities": [],
+      "IsAccessibleForFree": 0,
+      "FeeInfo": "",
+      "PaymentMethods": [],
+      "WebsiteUrl": "https://www.facebook.com/lsf.arts?locale=zh_TW",
+      "ReservationURLs": [],
+      "MapURLs": [],
+      "SameAsURLs": [],
+      "Participant": "",
+      "StartDateTime": "2026-12-20T00:00:00+08:00",
+      "EndDateTime": "2027-03-01T00:00:00+08:00",
+      "EventStatus": "EventScheduled",
+      "PreviousStartDates": [],
+      "CalendarURLs": [],
+      "Tags": [],
+      "Remarks": "",
+      "UpdateTime": "2026-11-04T02:00:05+08:00",
+      "PostalAddress": {
+        "City": "屏東縣",
+        "CityCode": "10013",
+        "Town": "車城鄉",
+        "TownCode": "10013230",
+        "ZipCode": "944",
+        "StreetAddress": "海口港看海美術館"
+      },
+      "Telephones": [
+        {
+          "Tel": "(08)7320415",
+          "Ext": null
+        }
+      ],
+      "Images": [
+        {
+          "Name": "吉井宏《穿越海灘の風》-充滿趣味的藝術裝置",
+          "Description": "",
+          "URL": "https://www.taiwan.net.tw/att/event/6ef2531f-6b14-4caf-a2b7-6b27e8b9657b.jpg",
+          "Width": null,
+          "Height": null,
+          "Keywords": []
+        }
+      ],
+      "Organizations": [
+        {
+          "Name": "交通部觀光署",
+          "Class": "Provider",
+          "TaxCode": null,
+          "AgencyCode": "A15010000H",
+          "URL": null,
+          "MobilePhones": [],
+          "Faxes": [],
+          "Email": null,
+          "Telephones": []
+        }
+      ],
+      "LocatedCities": [],
+      "SocialMediaURLs": []
+    },
+    {
+      "EventID": "Event_397000000A_007952",
+      "EventName": "《Mundo Pixar Experience》皮克斯世界巡迴展 台灣站",
+      "AlternateNames": [],
+      "Description": "「皮克斯世界巡迴展（Mundo Pixar Experience）」是全球規模最大的皮克斯沉浸式體驗展。展覽以 1:1 等比例的精緻實景打造，將《玩具總動員》、《天外奇蹟》、《怪獸電力公司》等多部經典動畫場景搬進現實。展區內更精心結合了環繞的經典配樂與專屬調製的香氣，打造全方位的五感饗宴。觀眾將打破螢幕的界限，彷彿化身為電影角色般，親身走進皮克斯的奇幻宇宙，體驗一場融合極致視覺、空間設計與多重感官的前所未有沉浸式旅程。✶《玩具總動員》踏入安弟的房間，看看當玩具動起來時會發生什麼趣事！加入胡迪、巴斯和朋友們的行列，展開一場想像力永無止境的俏皮冒險。✶《怪獸電力公司》進入怪獸城市，開啟那扇通往歡笑的大門！穿過驚嚇部隊的樓層，探索大眼仔和毛怪是如何將尖叫聲轉化為笑聲。✶《腦筋急轉彎》穿梭在萊莉的大腦，遇見樂樂、憂憂、阿焦、怒怒和厭厭。探索這個充滿活力、塑造自我的情緒世界。✶《海底總動員》潛入波光粼粼的海浪之下，與尼莫、馬林和多莉一起探索大堡礁。每一個角落都充滿了色彩、友誼與海洋的奇蹟。✶《可可夜總會》從熱鬧的聖塞西莉亞街道，前往令人嘆為觀止的亡靈之國。感受音樂、家人與記憶交織的律動，米高與海特將提醒我們：愛與懷念能讓故事代代相傳。✶《汽車總動員》發動引擎，沿著 66 號公路駛向油車水鎮！在充滿色彩、速度與友誼的維修站與閃電麥坤相遇。.....更多展間等你來探索！展覽及售票資訊地點｜「高雄輕軌－高雄展覽館站(C8)」海邊路及成功二路交匯處交通｜輕軌 C8 高雄展覽館站展期｜2026/12/18至2027/4/18 早鳥商品套票｜2026/9/4 限量開賣（含台灣限定金屬烤漆造型鑰匙圈盲包），售完為止預售票｜2026/10/1至2026/12/17 全票｜2026/12/18起售票連結",
+      "PositionLat": 22.61119,
+      "PositionLon": 120.29903,
+      "Geometry": null,
+      "EventClasses": [2],
+      "TrafficInfo": "",
+      "ParkingInfo": "",
+      "Facilities": [],
+      "IsAccessibleForFree": 0,
+      "FeeInfo": "",
+      "PaymentMethods": [],
+      "WebsiteUrl": "",
+      "ReservationURLs": [],
+      "MapURLs": [],
+      "SameAsURLs": [],
+      "Participant": "",
+      "StartDateTime": "2026-12-18T00:00:00+08:00",
+      "EndDateTime": "2027-04-18T23:59:59+08:00",
+      "EventStatus": "EventScheduled",
+      "PreviousStartDates": [],
+      "CalendarURLs": [],
+      "Tags": [],
+      "Remarks": "",
+      "UpdateTime": "2026-08-28T20:25:21+08:00",
+      "PostalAddress": {
+        "City": "高雄市",
+        "CityCode": "64000",
+        "Town": "苓雅區",
+        "TownCode": "64000080",
+        "ZipCode": "802",
+        "StreetAddress": "「高雄輕軌－高雄展覽館站C8」海邊路與成功二路交匯處"
+      },
+      "Telephones": [
+        {
+          "Tel": "(07)7995678",
+          "Ext": null
+        }
+      ],
+      "Images": [
+        {
+          "Name": "《Mundo Pixar Experience》皮克斯世界巡迴展 台灣站",
+          "Description": null,
+          "URL": "https://khh.travel/image/66528/640x480",
+          "Width": null,
+          "Height": null,
+          "Keywords": []
+        }
+      ],
+      "Organizations": [],
+      "LocatedCities": [],
+      "SocialMediaURLs": []
+    },
+    {
+      "EventID": "Event_371020000A_004243",
+      "EventName": "金沙聖誕",
+      "AlternateNames": [],
+      "Description": "以金沙鎮在地特色及聖誕節為主軸，規劃沙美商圈燈飾佈景，營造過節的歡樂氛圍，透過此節慶，融合本土市區樣貌，打造藝術美學的沙美市區，活躍沙美街道。",
+      "PositionLat": 24.49079,
+      "PositionLon": 118.41442,
+      "Geometry": null,
+      "EventClasses": [2],
+      "TrafficInfo": "",
+      "ParkingInfo": "",
+      "Facilities": [],
+      "IsAccessibleForFree": 0,
+      "FeeInfo": "",
+      "PaymentMethods": [],
+      "WebsiteUrl": "",
+      "ReservationURLs": [],
+      "MapURLs": [],
+      "SameAsURLs": [],
+      "Participant": "",
+      "StartDateTime": "2026-12-11T16:00:00+08:00",
+      "EndDateTime": "2026-12-13T15:59:59+08:00",
+      "EventStatus": "EventScheduled",
+      "PreviousStartDates": [],
+      "CalendarURLs": [],
+      "Tags": [],
+      "Remarks": "",
+      "UpdateTime": "2025-12-17T07:51:04+08:00",
+      "PostalAddress": {
+        "City": "金門縣",
+        "CityCode": "09020",
+        "Town": "金沙鎮",
+        "TownCode": "09020020",
+        "ZipCode": "890",
+        "StreetAddress": "沙美市區"
+      },
+      "Telephones": [
+        {
+          "Tel": "(08)2318823",
+          "Ext": null
+        }
+      ],
+      "Images": [
+        {
+          "Name": "金沙聖誕",
+          "Description": null,
+          "URL": "https://kinmen.travel/image/45552/640x480",
+          "Width": null,
+          "Height": null,
+          "Keywords": []
+        }
+      ],
+      "Organizations": [],
+      "LocatedCities": [],
+      "SocialMediaURLs": []
+    }
+  ]
+}
