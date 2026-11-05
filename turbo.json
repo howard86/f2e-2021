@@ -11,7 +11,10 @@
         "OPEN_DATA_CWB_BASE_URL",
         "TDX_BASE_URL",
         "TDX_CLIENT_ID",
-        "TDX_CLIENT_SECRET"
+        "TDX_CLIENT_SECRET",
+        "TDX_PREVIEW_CLIENT_ID",
+        "TDX_PREVIEW_CLIENT_SECRET",
+        "VERCEL_ENV"
       ],
       "inputs": ["$TURBO_DEFAULT$", ".env.*local", "$TURBO_ROOT$/.env*.local"],
       "outputs": [".next/**", "!.next/cache/**"]

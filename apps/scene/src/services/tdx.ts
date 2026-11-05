@@ -1,4 +1,4 @@
-import { TdxService } from '@f2e/tdx-core';
+import { resolveTdxCredentials, TdxService } from '@f2e/tdx-core';
 import { TourismService } from '@f2e/tdx-tourism';
 
 // TDX allows 5 requests a minute per key. A build can wait out the window,
@@ -11,11 +11,7 @@ const BUILD_REQUEST_INTERVAL_MS = 12_500;
 const isBuild = process.env.NEXT_PHASE === 'phase-production-build';
 
 const service = new TdxService(
-  {
-    baseUrl: process.env.TDX_BASE_URL,
-    clientId: process.env.TDX_CLIENT_ID,
-    clientSecret: process.env.TDX_CLIENT_SECRET,
-  },
+  resolveTdxCredentials(process.env),
   isBuild
     ? { minRequestIntervalMs: BUILD_REQUEST_INTERVAL_MS }
     : { maxRateLimitWaitMs: REQUEST_RATE_LIMIT_WAIT_MS },

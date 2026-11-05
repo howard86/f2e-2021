@@ -10,6 +10,7 @@
     "./codegen": "./codegen.ts"
   },
   "scripts": {
+    "test": "bun test",
     "typecheck": "bun check"
   },
   "devDependencies": {
