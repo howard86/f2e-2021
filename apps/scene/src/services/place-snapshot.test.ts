@@ -13,12 +13,15 @@ import { matchesTag } from './place-queries';
 import {
   collectSnapshot,
   filterRecords,
+  fitSnapshot,
   matchesKeyword,
   nearbyFrom,
   pageRecords,
+  SNAPSHOT_MAX_BYTES,
   SNAPSHOT_MAX_PAGES,
   SNAPSHOT_PAGE_SIZE,
   searchRecords,
+  snapshotBytes,
   sortRecords,
   trimRecord,
 } from './place-snapshot';
@@ -257,5 +260,40 @@ describe('local search and nearby', () => {
     );
 
     expect(result.map((p) => p.id)).toEqual(['near', 'far']);
+  });
+});
+
+describe('fitSnapshot', () => {
+  const bulky = (count: number) =>
+    Array.from(
+      { length: count },
+      (_, index) =>
+        ({
+          ...trimRecord('scene', scenes[0]),
+          AttractionID: `A${index}`,
+          FeeInfo: 'x'.repeat(41),
+          Images: [{ URL: `https://example.com/${'p'.repeat(400)}.jpg` }],
+        }) as unknown as PlaceRecord,
+    );
+
+  test('returns a snapshot under the limit untouched, without warning', () => {
+    const rows = bulky(3);
+    const warnings: string[] = [];
+
+    expect(fitSnapshot('scene/Taipei', rows, (m) => warnings.push(m))).toBe(
+      rows,
+    );
+    expect(warnings).toEqual([]);
+  });
+
+  test('drops images, then records, until the entry fits, and warns', () => {
+    const rows = bulky(6000);
+    const warnings: string[] = [];
+    const fitted = fitSnapshot('scene/Taipei', rows, (m) => warnings.push(m));
+
+    expect(snapshotBytes(rows)).toBeGreaterThan(SNAPSHOT_MAX_BYTES);
+    expect(snapshotBytes(fitted)).toBeLessThanOrEqual(SNAPSHOT_MAX_BYTES);
+    expect(JSON.stringify(fitted[0])).not.toContain('Images');
+    expect(warnings).toHaveLength(1);
   });
 });

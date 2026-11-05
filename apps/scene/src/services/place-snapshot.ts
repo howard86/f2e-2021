@@ -23,8 +23,8 @@ import type {
 /** TDX V2 rejects $top above 500 (verified live). */
 export const SNAPSHOT_PAGE_SIZE = 500;
 export const SNAPSHOT_MAX_PAGES = 8;
-/** Vercel's data cache stores items up to 2 MB; warn before reaching it. */
-export const SNAPSHOT_WARN_BYTES = 1_800_000;
+/** Vercel's data cache rejects items over 2 MB; stay under with headroom. */
+export const SNAPSHOT_MAX_BYTES = 1_900_000;
 
 const COMMON_FIELDS = [
   'PostalAddress',
@@ -160,6 +160,47 @@ export const collectSnapshot = async (
 export const snapshotBytes = (records: PlaceRecord[]) =>
   new TextEncoder().encode(JSON.stringify(records)).length;
 
+/**
+ * Keeps a snapshot under SNAPSHOT_MAX_BYTES so the data cache accepts it:
+ * first drops the cover images (cards fall back to a placeholder), then the
+ * free-text fact lines, then whole records from the end of the list.
+ */
+export const fitSnapshot = (
+  label: string,
+  records: PlaceRecord[],
+  warn: (message: string) => void = console.warn,
+): PlaceRecord[] => {
+  if (snapshotBytes(records) <= SNAPSHOT_MAX_BYTES) {
+    return records;
+  }
+
+  const without = (rows: PlaceRecord[], keys: string[]) =>
+    rows.map((row) => {
+      const copy = { ...(row as unknown as Record<string, unknown>) };
+
+      for (const key of keys) {
+        delete copy[key];
+      }
+
+      return copy as unknown as PlaceRecord;
+    });
+  let fitted = without(records, ['Images']);
+
+  if (snapshotBytes(fitted) > SNAPSHOT_MAX_BYTES) {
+    fitted = without(fitted, ['FeeInfo', 'ServiceTimeInfo']);
+  }
+
+  while (snapshotBytes(fitted) > SNAPSHOT_MAX_BYTES) {
+    fitted = fitted.slice(0, Math.floor(fitted.length * 0.9));
+  }
+
+  warn(
+    `[places] ${label} snapshot exceeded the 2 MB data cache limit; slimmed to ${fitted.length} of ${records.length} records`,
+  );
+
+  return fitted;
+};
+
 const ID_FIELD: Record<PlaceType, string> = {
   activity: 'EventID',
   hotel: 'HotelID',
@@ -169,7 +210,7 @@ const ID_FIELD: Record<PlaceType, string> = {
 
 const startOf = (record: PlaceRecord) => (record as EventV2).StartDateTime;
 const endOf = (record: PlaceRecord) => (record as EventV2).EndDateTime;
-const idOf = (type: PlaceType, record: PlaceRecord) =>
+export const idOf = (type: PlaceType, record: PlaceRecord) =>
   (record as unknown as Record<string, string>)[ID_FIELD[type]];
 
 /** Exact-time version of the `when` filter TDX could only do by day. */

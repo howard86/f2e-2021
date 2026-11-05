@@ -27,11 +27,10 @@ import {
 import {
   collectSnapshot,
   filterRecords,
+  fitSnapshot,
   nearbyFrom,
   pageRecords,
-  SNAPSHOT_WARN_BYTES,
   searchRecords,
-  snapshotBytes,
   sortRecords,
 } from '@/services/place-snapshot';
 import { tourismService } from '@/services/tdx';
@@ -157,15 +156,10 @@ const runSnapshot = async (
 
     return result as Fetched;
   });
-  const bytes = snapshotBytes(records);
 
-  if (bytes > SNAPSHOT_WARN_BYTES) {
-    console.warn(
-      `[places] ${type}/${city} snapshot is ${bytes} bytes, near the 2 MB data cache limit`,
-    );
-  }
-
-  return records;
+  // Vercel's data cache drops entries over 2 MB, which would refetch the
+  // whole city on every revalidation, so shrink an oversized one first.
+  return fitSnapshot(`${type}/${city}`, records);
 };
 
 const cachedSnapshot = unstable_cache(runSnapshot, ['places:snapshot'], {
