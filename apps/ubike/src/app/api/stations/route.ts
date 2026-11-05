@@ -1,9 +1,12 @@
 import mock from '@/mock.json';
 import { BadRequestException, handle } from '@/services/api-response';
 import { bikeService } from '@/services/tdx';
+import { roundTo } from '@/services/utils';
 import type { NormalisedBikeStation } from '@/types/api';
 
 export const dynamic = 'force-dynamic';
+
+const CACHE_CONTROL = 'public, s-maxage=30, stale-while-revalidate=30';
 
 export function GET(request: Request) {
   return handle(async () => {
@@ -32,13 +35,19 @@ export function GET(request: Request) {
       return mock as unknown as NormalisedBikeStation;
     }
 
+    // About 100m: nearby requests share a cache entry.
+    const spatialFilter = `nearby(${roundTo(latitude, 3)}, ${roundTo(longitude, 3)}, ${radius})`;
+
     const [stations, bikes] = await Promise.all([
       bikeService.getNearByBikeStations({
-        spatialFilter: `nearby(${latitude}, ${longitude}, ${radius})`,
+        select: 'StationUID,StationName,StationAddress,StationPosition',
+        spatialFilter,
         top: 30,
       }),
       bikeService.getNearByBikesAvailability({
-        spatialFilter: `nearby(${latitude}, ${longitude}, ${radius})`,
+        select:
+          'StationUID,ServiceStatus,AvailableRentBikes,AvailableReturnBikes',
+        spatialFilter,
         top: 30,
       }),
     ]);
@@ -59,5 +68,5 @@ export function GET(request: Request) {
     }
 
     return normalised;
-  });
+  }, CACHE_CONTROL);
 }
