@@ -1,0 +1,27 @@
+{
+  "name": "@f2e/ui",
+  "version": "0.1.0",
+  "private": true,
+  "description": "Shared Chakra UI providers, theme base and components for the f2e apps",
+  "license": "UNLICENSED",
+  "author": "Howard Tai <howard@howardism.dev>",
+  "exports": {
+    "./links": "./links.tsx",
+    "./next-image": "./next-image.tsx",
+    "./provider": "./provider.tsx",
+    "./result-state": "./result-state.tsx",
+    "./system": "./system.ts",
+    "./toast": "./toast.tsx"
+  },
+  "scripts": {
+    "typecheck": "bun check"
+  },
+  "peerDependencies": {
+    "@chakra-ui/react": "3.38.0",
+    "@emotion/cache": "^11",
+    "@emotion/react": "^11.14.0",
+    "next": "16.4.5",
+    "react": "19.3.1",
+    "react-icons": "^5.7.0"
+  }
+}
