@@ -57,7 +57,6 @@
     "@types/bun": "^1.4.4",
     "@types/node": "^26.6.6",
     "@types/react": "19.3.0",
-    "@types/react-dom": "19.3.0",
     "husky": "^9.1.7",
     "knip": "6.44.1",
     "lint-staged": "^17.6.0",
