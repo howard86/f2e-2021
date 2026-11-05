@@ -1,4 +1,4 @@
-import type { BusDirection } from '@f2e/tdx-bus';
+import { type BusDirection, escapeODataString } from '@f2e/tdx-bus';
 import { type City, CityMap, CitySet } from '@f2e/tdx-core';
 import type { Metadata } from 'next';
 import { notFound, redirect } from 'next/navigation';
@@ -69,7 +69,7 @@ const BusRoutePage = async ({ params }: PageProps) => {
     fixtures
       ? loadFixture.stops()
       : busService.getBusStopOfRoutesByCityAndRouteName(city, routeName, {
-          filter: `RouteName/Zh_tw eq '${routeName}'`,
+          filter: `RouteName/Zh_tw eq '${escapeODataString(routeName)}'`,
         }),
   ]);
 
