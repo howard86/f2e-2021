@@ -7,7 +7,11 @@ import { type GeoJSONLineString, parse } from 'wellknown';
 import { OPEN_GRAPH_BASE } from '@/constants/seo';
 import { busService } from '@/services/tdx';
 import { loadFixture, serveFixtures } from '@/utils/fixtures';
-import type { RouteStopEntity } from '@/utils/route-stops';
+import {
+  roundGeoJson,
+  type SlimRouteStopEntity,
+  slimRouteStops,
+} from '@/utils/slim-route';
 import BusRouteView from './view';
 
 export const revalidate = 86_400; // ONE_DAY; Next requires a literal
@@ -76,13 +80,13 @@ const BusRoutePage = async ({ params }: PageProps) => {
   }
 
   const directions: BusDirection[] = [];
-  const routeStopEntity = {} as RouteStopEntity;
+  const routeStopEntity = {} as SlimRouteStopEntity;
 
   for (const routeStop of busStops) {
     // TODO: might have routes that have multiple directions
     if (!directions.includes(routeStop.Direction)) {
       directions.push(routeStop.Direction);
-      routeStopEntity[routeStop.Direction] = routeStop;
+      routeStopEntity[routeStop.Direction] = slimRouteStops(routeStop);
     }
   }
 
@@ -91,7 +95,7 @@ const BusRoutePage = async ({ params }: PageProps) => {
       busStopEntity={routeStopEntity}
       city={city}
       directions={directions}
-      geoJson={parse(busShape.Geometry) as GeoJSONLineString}
+      geoJson={roundGeoJson(parse(busShape.Geometry) as GeoJSONLineString)}
       routeName={routeName}
       routeUid={busStops[0].RouteUID}
     />

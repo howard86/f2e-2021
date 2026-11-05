@@ -41,10 +41,11 @@ import {
   getDirectionTabName,
   type RouteStopEntity,
 } from '@/utils/route-stops';
+import type { SlimRouteStopEntity } from '@/utils/slim-route';
 import { getTwoDigitString } from '@/utils/string';
 
 interface BusRouteViewProps {
-  busStopEntity: RouteStopEntity;
+  busStopEntity: SlimRouteStopEntity;
   city: City;
   directions: BusDirection[];
   geoJson: GeoJSONLineString;
@@ -61,8 +62,10 @@ const BusRouteView = ({
   routeUid: routeId,
   geoJson,
   directions,
-  busStopEntity: routeStopEntity,
+  busStopEntity,
 }: BusRouteViewProps) => {
+  // the helpers and drawer only read Stops, which the slim entity carries
+  const routeStopEntity = busStopEntity as RouteStopEntity;
   const router = useRouter();
   const tabsProps = useBreakpointValue<
     Omit<Tabs.RootProps, 'children' | 'onValueChange' | 'value'>
