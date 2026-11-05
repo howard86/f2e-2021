@@ -1,3 +1,5 @@
+import { DAY } from '@f2e/browser-cache';
+import { withBrowserCache } from '@f2e/browser-cache/rtk';
 import type { City } from '@f2e/tdx-core';
 import { createApi, fetchBaseQuery } from '@reduxjs/toolkit/query/react';
 
@@ -11,8 +13,9 @@ import type {
 const ONE_HOUR = 60 * 60;
 
 export const localApi = createApi({
-  baseQuery: fetchBaseQuery({
-    baseUrl: '/api',
+  // Cycling routes barely change; station availability is live, so uncached.
+  baseQuery: withBrowserCache(fetchBaseQuery({ baseUrl: '/api' }), {
+    getCyclingByCity: { freshFor: 7 * DAY, maxAge: 30 * DAY },
   }),
   endpoints: (builder) => ({
     getCyclingByCity: builder.query<
