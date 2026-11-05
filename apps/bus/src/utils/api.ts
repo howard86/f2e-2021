@@ -15,17 +15,22 @@ export const notFound = () => new HttpError(404, 'Not Found');
 /**
  * Runs a handler and wraps its result in the `{ success, data }` envelope
  * (errors in `{ success: false, message }`) that `localApi` consumes.
+ * `cacheControl` is sent on success responses only, never on errors.
  */
 export const handleApi = async <T>(
   handler: () => Promise<T> | T,
+  cacheControl?: string,
 ): Promise<Response> => {
   try {
     const data = await handler();
 
-    return Response.json({
-      data,
-      success: true,
-    } satisfies SuccessApiResponse<T>);
+    return Response.json(
+      {
+        data,
+        success: true,
+      } satisfies SuccessApiResponse<T>,
+      cacheControl ? { headers: { 'Cache-Control': cacheControl } } : undefined,
+    );
   } catch (error) {
     if (error instanceof HttpError) {
       return Response.json(
