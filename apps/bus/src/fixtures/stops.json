@@ -1,0 +1,1430 @@
+[
+  {
+    "RouteUID": "TPE16111",
+    "RouteName": {
+      "Zh_tw": "307",
+      "En": "307"
+    },
+    "Direction": 0,
+    "Stops": [
+      {
+        "StopUID": "TPE194687",
+        "StopName": {
+          "Zh_tw": "臺北客運板橋前站(藝文)"
+        },
+        "StopSequence": 1,
+        "StopPosition": {
+          "PositionLon": 121.452109,
+          "PositionLat": 25.022559
+        }
+      },
+      {
+        "StopUID": "TPE194688",
+        "StopName": {
+          "Zh_tw": "新月橋"
+        },
+        "StopSequence": 2,
+        "StopPosition": {
+          "PositionLon": 121.452324,
+          "PositionLat": 25.026206
+        }
+      },
+      {
+        "StopUID": "TPE221716",
+        "StopName": {
+          "Zh_tw": "新月一街"
+        },
+        "StopSequence": 3,
+        "StopPosition": {
+          "PositionLon": 121.453808034732,
+          "PositionLat": 25.0258419392865
+        }
+      },
+      {
+        "StopUID": "TPE15198",
+        "StopName": {
+          "Zh_tw": "板橋國中(435藝文特區)"
+        },
+        "StopSequence": 4,
+        "StopPosition": {
+          "PositionLon": 121.454215,
+          "PositionLat": 25.023423
+        }
+      },
+      {
+        "StopUID": "TPE15199",
+        "StopName": {
+          "Zh_tw": "港尾"
+        },
+        "StopSequence": 5,
+        "StopPosition": {
+          "PositionLon": 121.454666,
+          "PositionLat": 25.020666
+        }
+      },
+      {
+        "StopUID": "TPE15200",
+        "StopName": {
+          "Zh_tw": "港尾福德宮"
+        },
+        "StopSequence": 6,
+        "StopPosition": {
+          "PositionLon": 121.45531395,
+          "PositionLat": 25.01938238
+        }
+      },
+      {
+        "StopUID": "TPE15201",
+        "StopName": {
+          "Zh_tw": "大庭新村"
+        },
+        "StopSequence": 7,
+        "StopPosition": {
+          "PositionLon": 121.456421,
+          "PositionLat": 25.016976
+        }
+      },
+      {
+        "StopUID": "TPE15202",
+        "StopName": {
+          "Zh_tw": "社后"
+        },
+        "StopSequence": 8,
+        "StopPosition": {
+          "PositionLon": 121.45642,
+          "PositionLat": 25.014996
+        }
+      },
+      {
+        "StopUID": "TPE15203",
+        "StopName": {
+          "Zh_tw": "板橋戶政事務所"
+        },
+        "StopSequence": 9,
+        "StopPosition": {
+          "PositionLon": 121.4561617,
+          "PositionLat": 25.01274499
+        }
+      },
+      {
+        "StopUID": "TPE15204",
+        "StopName": {
+          "Zh_tw": "北門街(黃石市場)"
+        },
+        "StopSequence": 10,
+        "StopPosition": {
+          "PositionLon": 121.456883,
+          "PositionLat": 25.010986
+        }
+      },
+      {
+        "StopUID": "TPE15205",
+        "StopName": {
+          "Zh_tw": "捷運府中站(府中路)"
+        },
+        "StopSequence": 11,
+        "StopPosition": {
+          "PositionLon": 121.458454,
+          "PositionLat": 25.009036
+        }
+      },
+      {
+        "StopUID": "TPE15206",
+        "StopName": {
+          "Zh_tw": "萬坪公園"
+        },
+        "StopSequence": 12,
+        "StopPosition": {
+          "PositionLon": 121.460871,
+          "PositionLat": 25.013298
+        }
+      },
+      {
+        "StopUID": "TPE15207",
+        "StopName": {
+          "Zh_tw": "新北板橋公車站"
+        },
+        "StopSequence": 13,
+        "StopPosition": {
+          "PositionLon": 121.462542,
+          "PositionLat": 25.01277
+        }
+      },
+      {
+        "StopUID": "TPE153799",
+        "StopName": {
+          "Zh_tw": "新北市政府(新府路)"
+        },
+        "StopSequence": 14,
+        "StopPosition": {
+          "PositionLon": 121.4643742,
+          "PositionLat": 25.0118568
+        }
+      },
+      {
+        "StopUID": "TPE153800",
+        "StopName": {
+          "Zh_tw": "深丘里(板橋放送所)"
+        },
+        "StopSequence": 15,
+        "StopPosition": {
+          "PositionLon": 121.465209,
+          "PositionLat": 25.009624
+        }
+      },
+      {
+        "StopUID": "TPE15208",
+        "StopName": {
+          "Zh_tw": "民族區運路口"
+        },
+        "StopSequence": 16,
+        "StopPosition": {
+          "PositionLon": 121.46584,
+          "PositionLat": 25.00839
+        }
+      },
+      {
+        "StopUID": "TPE15209",
+        "StopName": {
+          "Zh_tw": "電信訓練所"
+        },
+        "StopSequence": 17,
+        "StopPosition": {
+          "PositionLon": 121.46822,
+          "PositionLat": 25.007531
+        }
+      },
+      {
+        "StopUID": "TPE15210",
+        "StopName": {
+          "Zh_tw": "國泰街口"
+        },
+        "StopSequence": 18,
+        "StopPosition": {
+          "PositionLon": 121.470497,
+          "PositionLat": 25.006683
+        }
+      },
+      {
+        "StopUID": "TPE15211",
+        "StopName": {
+          "Zh_tw": "環球購物中心"
+        },
+        "StopSequence": 19,
+        "StopPosition": {
+          "PositionLon": 121.4730341,
+          "PositionLat": 25.00622954
+        }
+      },
+      {
+        "StopUID": "TPE15212",
+        "StopName": {
+          "Zh_tw": "板橋監理站"
+        },
+        "StopSequence": 20,
+        "StopPosition": {
+          "PositionLon": 121.47597,
+          "PositionLat": 25.005765
+        }
+      },
+      {
+        "StopUID": "TPE15213",
+        "StopName": {
+          "Zh_tw": "積穗"
+        },
+        "StopSequence": 21,
+        "StopPosition": {
+          "PositionLon": 121.478674,
+          "PositionLat": 25.005751
+        }
+      },
+      {
+        "StopUID": "TPE199119",
+        "StopName": {
+          "Zh_tw": "積穗派出所"
+        },
+        "StopSequence": 22,
+        "StopPosition": {
+          "PositionLon": 121.480278,
+          "PositionLat": 25.004871
+        }
+      },
+      {
+        "StopUID": "TPE15214",
+        "StopName": {
+          "Zh_tw": "員山公園"
+        },
+        "StopSequence": 23,
+        "StopPosition": {
+          "PositionLon": 121.480636,
+          "PositionLat": 25.00395
+        }
+      },
+      {
+        "StopUID": "TPE15215",
+        "StopName": {
+          "Zh_tw": "積穗國中"
+        },
+        "StopSequence": 24,
+        "StopPosition": {
+          "PositionLon": 121.481193,
+          "PositionLat": 25.000604
+        }
+      },
+      {
+        "StopUID": "TPE15216",
+        "StopName": {
+          "Zh_tw": "員山派出所"
+        },
+        "StopSequence": 25,
+        "StopPosition": {
+          "PositionLon": 121.481182,
+          "PositionLat": 24.998038
+        }
+      },
+      {
+        "StopUID": "TPE15217",
+        "StopName": {
+          "Zh_tw": "中和高中(員山路)"
+        },
+        "StopSequence": 26,
+        "StopPosition": {
+          "PositionLon": 121.4809504,
+          "PositionLat": 24.99579873
+        }
+      },
+      {
+        "StopUID": "TPE15218",
+        "StopName": {
+          "Zh_tw": "連城路"
+        },
+        "StopSequence": 27,
+        "StopPosition": {
+          "PositionLon": 121.482957,
+          "PositionLat": 24.995553
+        }
+      },
+      {
+        "StopUID": "TPE15219",
+        "StopName": {
+          "Zh_tw": "連城中正路口"
+        },
+        "StopSequence": 28,
+        "StopPosition": {
+          "PositionLon": 121.484429,
+          "PositionLat": 24.996128
+        }
+      },
+      {
+        "StopUID": "TPE15220",
+        "StopName": {
+          "Zh_tw": "連城錦和路口(暫時裁撤)"
+        },
+        "StopSequence": 29,
+        "StopPosition": {
+          "PositionLon": 121.4903845,
+          "PositionLat": 24.99626066
+        }
+      },
+      {
+        "StopUID": "TPE15222",
+        "StopName": {
+          "Zh_tw": "台貿一村"
+        },
+        "StopSequence": 30,
+        "StopPosition": {
+          "PositionLon": 121.492320399314,
+          "PositionLat": 24.9965568353221
+        }
+      },
+      {
+        "StopUID": "TPE15224",
+        "StopName": {
+          "Zh_tw": "中和國稅局"
+        },
+        "StopSequence": 31,
+        "StopPosition": {
+          "PositionLon": 121.4951329,
+          "PositionLat": 24.99819818
+        }
+      },
+      {
+        "StopUID": "TPE15226",
+        "StopName": {
+          "Zh_tw": "連城景平路(暫時裁撤)"
+        },
+        "StopSequence": 32,
+        "StopPosition": {
+          "PositionLon": 121.496428401096,
+          "PositionLat": 24.9996352583255
+        }
+      },
+      {
+        "StopUID": "TPE201702",
+        "StopName": {
+          "Zh_tw": "捷運中和站"
+        },
+        "StopSequence": 33,
+        "StopPosition": {
+          "PositionLon": 121.496889,
+          "PositionLat": 25.001888
+        }
+      },
+      {
+        "StopUID": "TPE15228",
+        "StopName": {
+          "Zh_tw": "華中橋"
+        },
+        "StopSequence": 34,
+        "StopPosition": {
+          "PositionLon": 121.496762,
+          "PositionLat": 25.003062
+        }
+      },
+      {
+        "StopUID": "TPE15230",
+        "StopName": {
+          "Zh_tw": "果菜市場"
+        },
+        "StopSequence": 35,
+        "StopPosition": {
+          "PositionLon": 121.497706,
+          "PositionLat": 25.01987
+        }
+      },
+      {
+        "StopUID": "TPE15232",
+        "StopName": {
+          "Zh_tw": "萬大國小"
+        },
+        "StopSequence": 36,
+        "StopPosition": {
+          "PositionLon": 121.499894100772,
+          "PositionLat": 25.0232906952259
+        }
+      },
+      {
+        "StopUID": "TPE15234",
+        "StopName": {
+          "Zh_tw": "德昌街口"
+        },
+        "StopSequence": 37,
+        "StopPosition": {
+          "PositionLon": 121.500485,
+          "PositionLat": 25.025045
+        }
+      },
+      {
+        "StopUID": "TPE15236",
+        "StopName": {
+          "Zh_tw": "西藏路口"
+        },
+        "StopSequence": 38,
+        "StopPosition": {
+          "PositionLon": 121.500599,
+          "PositionLat": 25.028737
+        }
+      },
+      {
+        "StopUID": "TPE15238",
+        "StopName": {
+          "Zh_tw": "萬大路"
+        },
+        "StopSequence": 39,
+        "StopPosition": {
+          "PositionLon": 121.500635,
+          "PositionLat": 25.0308055
+        }
+      },
+      {
+        "StopUID": "TPE15240",
+        "StopName": {
+          "Zh_tw": "莒光派出所"
+        },
+        "StopSequence": 40,
+        "StopPosition": {
+          "PositionLon": 121.50255,
+          "PositionLat": 25.03113
+        }
+      },
+      {
+        "StopUID": "TPE15242",
+        "StopName": {
+          "Zh_tw": "大埔街"
+        },
+        "StopSequence": 41,
+        "StopPosition": {
+          "PositionLon": 121.50499126498305,
+          "PositionLat": 25.03268103989999
+        }
+      },
+      {
+        "StopUID": "TPE15244",
+        "StopName": {
+          "Zh_tw": "聯合醫院和平院區"
+        },
+        "StopSequence": 42,
+        "StopPosition": {
+          "PositionLon": 121.506607,
+          "PositionLat": 25.0357
+        }
+      },
+      {
+        "StopUID": "TPE15246",
+        "StopName": {
+          "Zh_tw": "捷運西門站"
+        },
+        "StopSequence": 43,
+        "StopPosition": {
+          "PositionLon": 121.508285900629,
+          "PositionLat": 25.041730058378
+        }
+      },
+      {
+        "StopUID": "TPE15248",
+        "StopName": {
+          "Zh_tw": "中華路北站"
+        },
+        "StopSequence": 44,
+        "StopPosition": {
+          "PositionLon": 121.509380726049,
+          "PositionLat": 25.0456964941835
+        }
+      },
+      {
+        "StopUID": "TPE15250",
+        "StopName": {
+          "Zh_tw": "臺北車站(忠孝)"
+        },
+        "StopSequence": 45,
+        "StopPosition": {
+          "PositionLon": 121.515689438859,
+          "PositionLat": 25.0465635496954
+        }
+      },
+      {
+        "StopUID": "TPE15252",
+        "StopName": {
+          "Zh_tw": "行政院"
+        },
+        "StopSequence": 46,
+        "StopPosition": {
+          "PositionLon": 121.5215079,
+          "PositionLat": 25.04483077
+        }
+      },
+      {
+        "StopUID": "TPE15254",
+        "StopName": {
+          "Zh_tw": "青島林森路口"
+        },
+        "StopSequence": 47,
+        "StopPosition": {
+          "PositionLon": 121.522278540137,
+          "PositionLat": 25.0437303889139
+        }
+      },
+      {
+        "StopUID": "TPE15256",
+        "StopName": {
+          "Zh_tw": "北平林森路口"
+        },
+        "StopSequence": 48,
+        "StopPosition": {
+          "PositionLon": 121.523978,
+          "PositionLat": 25.046759
+        }
+      },
+      {
+        "StopUID": "TPE15258",
+        "StopName": {
+          "Zh_tw": "華山公園(中山教會)"
+        },
+        "StopSequence": 49,
+        "StopPosition": {
+          "PositionLon": 121.524405,
+          "PositionLat": 25.04809523
+        }
+      },
+      {
+        "StopUID": "TPE15260",
+        "StopName": {
+          "Zh_tw": "林森北路一"
+        },
+        "StopSequence": 50,
+        "StopPosition": {
+          "PositionLon": 121.52495,
+          "PositionLat": 25.05059
+        }
+      },
+      {
+        "StopUID": "TPE15262",
+        "StopName": {
+          "Zh_tw": "南京吉林路口"
+        },
+        "StopSequence": 51,
+        "StopPosition": {
+          "PositionLon": 121.529855025946,
+          "PositionLat": 25.0520078098529
+        }
+      },
+      {
+        "StopUID": "TPE15264",
+        "StopName": {
+          "Zh_tw": "捷運松江南京站"
+        },
+        "StopSequence": 52,
+        "StopPosition": {
+          "PositionLon": 121.532641149751,
+          "PositionLat": 25.0519912439505
+        }
+      },
+      {
+        "StopUID": "TPE15266",
+        "StopName": {
+          "Zh_tw": "南京建國路口"
+        },
+        "StopSequence": 53,
+        "StopPosition": {
+          "PositionLon": 121.53627250499,
+          "PositionLat": 25.0519389515979
+        }
+      },
+      {
+        "StopUID": "TPE15268",
+        "StopName": {
+          "Zh_tw": "南京龍江路口"
+        },
+        "StopSequence": 54,
+        "StopPosition": {
+          "PositionLon": 121.54002052720857,
+          "PositionLat": 25.05189813653983
+        }
+      },
+      {
+        "StopUID": "TPE15270",
+        "StopName": {
+          "Zh_tw": "捷運南京復興站"
+        },
+        "StopSequence": 55,
+        "StopPosition": {
+          "PositionLon": 121.543561439976,
+          "PositionLat": 25.0518040049938
+        }
+      },
+      {
+        "StopUID": "TPE15272",
+        "StopName": {
+          "Zh_tw": "南京敦化路口(小巨蛋)"
+        },
+        "StopSequence": 56,
+        "StopPosition": {
+          "PositionLon": 121.548353475095,
+          "PositionLat": 25.0517035084006
+        }
+      },
+      {
+        "StopUID": "TPE15274",
+        "StopName": {
+          "Zh_tw": "南京寧安街口"
+        },
+        "StopSequence": 57,
+        "StopPosition": {
+          "PositionLon": 121.55469770362868,
+          "PositionLat": 25.051594154729063
+        }
+      },
+      {
+        "StopUID": "TPE15276",
+        "StopName": {
+          "Zh_tw": "南京三民路口"
+        },
+        "StopSequence": 58,
+        "StopPosition": {
+          "PositionLon": 121.5602663380149,
+          "PositionLat": 25.05148353485096
+        }
+      },
+      {
+        "StopUID": "TPE15278",
+        "StopName": {
+          "Zh_tw": "南京公寓(捷運南京三民)"
+        },
+        "StopSequence": 59,
+        "StopPosition": {
+          "PositionLon": 121.566535683299,
+          "PositionLat": 25.0512559293088
+        }
+      },
+      {
+        "StopUID": "TPE15280",
+        "StopName": {
+          "Zh_tw": "南松山(南京)"
+        },
+        "StopSequence": 60,
+        "StopPosition": {
+          "PositionLon": 121.5688141,
+          "PositionLat": 25.05111499
+        }
+      },
+      {
+        "StopUID": "TPE15282",
+        "StopName": {
+          "Zh_tw": "南松山(塔悠)"
+        },
+        "StopSequence": 61,
+        "StopPosition": {
+          "PositionLon": 121.5704299,
+          "PositionLat": 25.05220024
+        }
+      },
+      {
+        "StopUID": "TPE15284",
+        "StopName": {
+          "Zh_tw": "發電所(西松高中)"
+        },
+        "StopSequence": 62,
+        "StopPosition": {
+          "PositionLon": 121.569875,
+          "PositionLat": 25.055027
+        }
+      },
+      {
+        "StopUID": "TPE15286",
+        "StopName": {
+          "Zh_tw": "新東里"
+        },
+        "StopSequence": 63,
+        "StopPosition": {
+          "PositionLon": 121.569393769344,
+          "PositionLat": 25.0577179708185
+        }
+      },
+      {
+        "StopUID": "TPE15290",
+        "StopName": {
+          "Zh_tw": "民生國中"
+        },
+        "StopSequence": 64,
+        "StopPosition": {
+          "PositionLon": 121.5676949,
+          "PositionLat": 25.06018904
+        }
+      },
+      {
+        "StopUID": "TPE15292",
+        "StopName": {
+          "Zh_tw": "新益里"
+        },
+        "StopSequence": 65,
+        "StopPosition": {
+          "PositionLon": 121.566269,
+          "PositionLat": 25.062445
+        }
+      },
+      {
+        "StopUID": "TPE15288",
+        "StopName": {
+          "Zh_tw": "莊敬里"
+        },
+        "StopSequence": 66,
+        "StopPosition": {
+          "PositionLon": 121.5657277,
+          "PositionLat": 25.06530387
+        }
+      }
+    ]
+  },
+  {
+    "RouteUID": "TPE16111",
+    "RouteName": {
+      "Zh_tw": "307",
+      "En": "307"
+    },
+    "Direction": 1,
+    "Stops": [
+      {
+        "StopUID": "TPE15294",
+        "StopName": {
+          "Zh_tw": "莊敬里"
+        },
+        "StopSequence": 1,
+        "StopPosition": {
+          "PositionLon": 121.565572,
+          "PositionLat": 25.065033
+        }
+      },
+      {
+        "StopUID": "TPE15296",
+        "StopName": {
+          "Zh_tw": "新益里"
+        },
+        "StopSequence": 2,
+        "StopPosition": {
+          "PositionLon": 121.566155,
+          "PositionLat": 25.062286
+        }
+      },
+      {
+        "StopUID": "TPE15298",
+        "StopName": {
+          "Zh_tw": "民生國中"
+        },
+        "StopSequence": 3,
+        "StopPosition": {
+          "PositionLon": 121.5679233,
+          "PositionLat": 25.05966141
+        }
+      },
+      {
+        "StopUID": "TPE15299",
+        "StopName": {
+          "Zh_tw": "新東里"
+        },
+        "StopSequence": 4,
+        "StopPosition": {
+          "PositionLon": 121.56903,
+          "PositionLat": 25.05789
+        }
+      },
+      {
+        "StopUID": "TPE15300",
+        "StopName": {
+          "Zh_tw": "發電所(西松高中)"
+        },
+        "StopSequence": 5,
+        "StopPosition": {
+          "PositionLon": 121.569528,
+          "PositionLat": 25.055269
+        }
+      },
+      {
+        "StopUID": "TPE15301",
+        "StopName": {
+          "Zh_tw": "南松山(塔悠)"
+        },
+        "StopSequence": 6,
+        "StopPosition": {
+          "PositionLon": 121.570154,
+          "PositionLat": 25.051932
+        }
+      },
+      {
+        "StopUID": "TPE15302",
+        "StopName": {
+          "Zh_tw": "南松山(南京)"
+        },
+        "StopSequence": 7,
+        "StopPosition": {
+          "PositionLon": 121.569058,
+          "PositionLat": 25.051515
+        }
+      },
+      {
+        "StopUID": "TPE15303",
+        "StopName": {
+          "Zh_tw": "南京公寓(捷運南京三民)"
+        },
+        "StopSequence": 8,
+        "StopPosition": {
+          "PositionLon": 121.56665364964157,
+          "PositionLat": 25.051513187536237
+        }
+      },
+      {
+        "StopUID": "TPE15304",
+        "StopName": {
+          "Zh_tw": "南京三民路口"
+        },
+        "StopSequence": 9,
+        "StopPosition": {
+          "PositionLon": 121.56111056329053,
+          "PositionLat": 25.05158012283465
+        }
+      },
+      {
+        "StopUID": "TPE15305",
+        "StopName": {
+          "Zh_tw": "南京寧安街口"
+        },
+        "StopSequence": 10,
+        "StopPosition": {
+          "PositionLon": 121.555516323112,
+          "PositionLat": 25.0516596699759
+        }
+      },
+      {
+        "StopUID": "TPE15306",
+        "StopName": {
+          "Zh_tw": "南京敦化路口(小巨蛋)"
+        },
+        "StopSequence": 11,
+        "StopPosition": {
+          "PositionLon": 121.549520919642,
+          "PositionLat": 25.0517934820293
+        }
+      },
+      {
+        "StopUID": "TPE15307",
+        "StopName": {
+          "Zh_tw": "捷運南京復興站"
+        },
+        "StopSequence": 12,
+        "StopPosition": {
+          "PositionLon": 121.5444563164689,
+          "PositionLat": 25.05191518176843
+        }
+      },
+      {
+        "StopUID": "TPE15308",
+        "StopName": {
+          "Zh_tw": "南京龍江路口"
+        },
+        "StopSequence": 13,
+        "StopPosition": {
+          "PositionLon": 121.54085264591662,
+          "PositionLat": 25.051994714534274
+        }
+      },
+      {
+        "StopUID": "TPE15309",
+        "StopName": {
+          "Zh_tw": "南京建國路口"
+        },
+        "StopSequence": 14,
+        "StopPosition": {
+          "PositionLon": 121.537271345417,
+          "PositionLat": 25.0520896887846
+        }
+      },
+      {
+        "StopUID": "TPE15310",
+        "StopName": {
+          "Zh_tw": "捷運松江南京站"
+        },
+        "StopSequence": 15,
+        "StopPosition": {
+          "PositionLon": 121.533302047123,
+          "PositionLat": 25.0521144980622
+        }
+      },
+      {
+        "StopUID": "TPE15311",
+        "StopName": {
+          "Zh_tw": "南京吉林路口"
+        },
+        "StopSequence": 16,
+        "StopPosition": {
+          "PositionLon": 121.530332504829,
+          "PositionLat": 25.0521129968997
+        }
+      },
+      {
+        "StopUID": "TPE15312",
+        "StopName": {
+          "Zh_tw": "南京林森路口"
+        },
+        "StopSequence": 17,
+        "StopPosition": {
+          "PositionLon": 121.525717467074,
+          "PositionLat": 25.0521676118001
+        }
+      },
+      {
+        "StopUID": "TPE15313",
+        "StopName": {
+          "Zh_tw": "中山市場"
+        },
+        "StopSequence": 18,
+        "StopPosition": {
+          "PositionLon": 121.52202112765,
+          "PositionLat": 25.05126405386
+        }
+      },
+      {
+        "StopUID": "TPE15314",
+        "StopName": {
+          "Zh_tw": "行政院"
+        },
+        "StopSequence": 19,
+        "StopPosition": {
+          "PositionLon": 121.519759690546,
+          "PositionLat": 25.046484462941
+        }
+      },
+      {
+        "StopUID": "TPE15315",
+        "StopName": {
+          "Zh_tw": "臺北車站(忠孝)"
+        },
+        "StopSequence": 20,
+        "StopPosition": {
+          "PositionLon": 121.5167218,
+          "PositionLat": 25.0465408
+        }
+      },
+      {
+        "StopUID": "TPE15316",
+        "StopName": {
+          "Zh_tw": "中華路北站"
+        },
+        "StopSequence": 21,
+        "StopPosition": {
+          "PositionLon": 121.509144127644,
+          "PositionLat": 25.0455115050969
+        }
+      },
+      {
+        "StopUID": "TPE15317",
+        "StopName": {
+          "Zh_tw": "捷運西門站"
+        },
+        "StopSequence": 22,
+        "StopPosition": {
+          "PositionLon": 121.508266771006,
+          "PositionLat": 25.0425165606871
+        }
+      },
+      {
+        "StopUID": "TPE15318",
+        "StopName": {
+          "Zh_tw": "小南門"
+        },
+        "StopSequence": 23,
+        "StopPosition": {
+          "PositionLon": 121.506903709074,
+          "PositionLat": 25.0378687908132
+        }
+      },
+      {
+        "StopUID": "TPE15319",
+        "StopName": {
+          "Zh_tw": "聯合醫院和平院區"
+        },
+        "StopSequence": 24,
+        "StopPosition": {
+          "PositionLon": 121.506507520259,
+          "PositionLat": 25.0364933609706
+        }
+      },
+      {
+        "StopUID": "TPE15320",
+        "StopName": {
+          "Zh_tw": "大埔街"
+        },
+        "StopSequence": 25,
+        "StopPosition": {
+          "PositionLon": 121.50448356536738,
+          "PositionLat": 25.03205520434067
+        }
+      },
+      {
+        "StopUID": "TPE15321",
+        "StopName": {
+          "Zh_tw": "莒光派出所"
+        },
+        "StopSequence": 26,
+        "StopPosition": {
+          "PositionLon": 121.50298,
+          "PositionLat": 25.03141
+        }
+      },
+      {
+        "StopUID": "TPE15322",
+        "StopName": {
+          "Zh_tw": "萬大路"
+        },
+        "StopSequence": 27,
+        "StopPosition": {
+          "PositionLon": 121.500473,
+          "PositionLat": 25.030744
+        }
+      },
+      {
+        "StopUID": "TPE15323",
+        "StopName": {
+          "Zh_tw": "西藏路口"
+        },
+        "StopSequence": 28,
+        "StopPosition": {
+          "PositionLon": 121.50037694828528,
+          "PositionLat": 25.0289649585261
+        }
+      },
+      {
+        "StopUID": "TPE15324",
+        "StopName": {
+          "Zh_tw": "德昌街口"
+        },
+        "StopSequence": 29,
+        "StopPosition": {
+          "PositionLon": 121.50026027816166,
+          "PositionLat": 25.025052181005517
+        }
+      },
+      {
+        "StopUID": "TPE15325",
+        "StopName": {
+          "Zh_tw": "萬大國小"
+        },
+        "StopSequence": 30,
+        "StopPosition": {
+          "PositionLon": 121.4994908,
+          "PositionLat": 25.02328187
+        }
+      },
+      {
+        "StopUID": "TPE15326",
+        "StopName": {
+          "Zh_tw": "果菜市場"
+        },
+        "StopSequence": 31,
+        "StopPosition": {
+          "PositionLon": 121.497464378634,
+          "PositionLat": 25.0198502695038
+        }
+      },
+      {
+        "StopUID": "TPE15327",
+        "StopName": {
+          "Zh_tw": "華中橋"
+        },
+        "StopSequence": 32,
+        "StopPosition": {
+          "PositionLon": 121.4965023,
+          "PositionLat": 25.00318965
+        }
+      },
+      {
+        "StopUID": "TPE201703",
+        "StopName": {
+          "Zh_tw": "捷運中和站"
+        },
+        "StopSequence": 33,
+        "StopPosition": {
+          "PositionLon": 121.496599,
+          "PositionLat": 25.00192
+        }
+      },
+      {
+        "StopUID": "TPE15328",
+        "StopName": {
+          "Zh_tw": "連城景平路(暫時裁撤)"
+        },
+        "StopSequence": 34,
+        "StopPosition": {
+          "PositionLon": 121.496156410982,
+          "PositionLat": 24.9995896339066
+        }
+      },
+      {
+        "StopUID": "TPE15329",
+        "StopName": {
+          "Zh_tw": "中和國稅局"
+        },
+        "StopSequence": 35,
+        "StopPosition": {
+          "PositionLon": 121.4948985,
+          "PositionLat": 24.99825646
+        }
+      },
+      {
+        "StopUID": "TPE15330",
+        "StopName": {
+          "Zh_tw": "台貿一村"
+        },
+        "StopSequence": 36,
+        "StopPosition": {
+          "PositionLon": 121.492254369312,
+          "PositionLat": 24.99673
+        }
+      },
+      {
+        "StopUID": "TPE15331",
+        "StopName": {
+          "Zh_tw": "連城錦和路口(暫時裁撤)"
+        },
+        "StopSequence": 37,
+        "StopPosition": {
+          "PositionLon": 121.4902015,
+          "PositionLat": 24.99645348
+        }
+      },
+      {
+        "StopUID": "TPE15332",
+        "StopName": {
+          "Zh_tw": "連城中正路口"
+        },
+        "StopSequence": 38,
+        "StopPosition": {
+          "PositionLon": 121.484217,
+          "PositionLat": 24.996296
+        }
+      },
+      {
+        "StopUID": "TPE15333",
+        "StopName": {
+          "Zh_tw": "連城路"
+        },
+        "StopSequence": 39,
+        "StopPosition": {
+          "PositionLon": 121.482763,
+          "PositionLat": 24.995775
+        }
+      },
+      {
+        "StopUID": "TPE15334",
+        "StopName": {
+          "Zh_tw": "中和高中(員山路)"
+        },
+        "StopSequence": 40,
+        "StopPosition": {
+          "PositionLon": 121.481263,
+          "PositionLat": 24.996623
+        }
+      },
+      {
+        "StopUID": "TPE15335",
+        "StopName": {
+          "Zh_tw": "員山派出所"
+        },
+        "StopSequence": 41,
+        "StopPosition": {
+          "PositionLon": 121.4813853,
+          "PositionLat": 24.99794083
+        }
+      },
+      {
+        "StopUID": "TPE15336",
+        "StopName": {
+          "Zh_tw": "積穗國中"
+        },
+        "StopSequence": 42,
+        "StopPosition": {
+          "PositionLon": 121.4813353,
+          "PositionLat": 25.0006
+        }
+      },
+      {
+        "StopUID": "TPE15337",
+        "StopName": {
+          "Zh_tw": "員山公園"
+        },
+        "StopSequence": 43,
+        "StopPosition": {
+          "PositionLon": 121.4810458,
+          "PositionLat": 25.00346806
+        }
+      },
+      {
+        "StopUID": "TPE15338",
+        "StopName": {
+          "Zh_tw": "積穗"
+        },
+        "StopSequence": 44,
+        "StopPosition": {
+          "PositionLon": 121.479221,
+          "PositionLat": 25.006146
+        }
+      },
+      {
+        "StopUID": "TPE15339",
+        "StopName": {
+          "Zh_tw": "板橋監理站"
+        },
+        "StopSequence": 45,
+        "StopPosition": {
+          "PositionLon": 121.475774,
+          "PositionLat": 25.005992
+        }
+      },
+      {
+        "StopUID": "TPE15340",
+        "StopName": {
+          "Zh_tw": "環球購物中心"
+        },
+        "StopSequence": 46,
+        "StopPosition": {
+          "PositionLon": 121.47349,
+          "PositionLat": 25.00638
+        }
+      },
+      {
+        "StopUID": "TPE15382",
+        "StopName": {
+          "Zh_tw": "國泰街口"
+        },
+        "StopSequence": 47,
+        "StopPosition": {
+          "PositionLon": 121.4707676,
+          "PositionLat": 25.00682585
+        }
+      },
+      {
+        "StopUID": "TPE15383",
+        "StopName": {
+          "Zh_tw": "電信訓練所"
+        },
+        "StopSequence": 48,
+        "StopPosition": {
+          "PositionLon": 121.468177,
+          "PositionLat": 25.007745
+        }
+      },
+      {
+        "StopUID": "TPE15384",
+        "StopName": {
+          "Zh_tw": "民族區運路口"
+        },
+        "StopSequence": 49,
+        "StopPosition": {
+          "PositionLon": 121.4656708,
+          "PositionLat": 25.00864249
+        }
+      },
+      {
+        "StopUID": "TPE153797",
+        "StopName": {
+          "Zh_tw": "深丘里(板橋放送所)"
+        },
+        "StopSequence": 50,
+        "StopPosition": {
+          "PositionLon": 121.465328106817,
+          "PositionLat": 25.0094647431906
+        }
+      },
+      {
+        "StopUID": "TPE153798",
+        "StopName": {
+          "Zh_tw": "新北市政府(新府路)"
+        },
+        "StopSequence": 51,
+        "StopPosition": {
+          "PositionLon": 121.464544,
+          "PositionLat": 25.012043
+        }
+      },
+      {
+        "StopUID": "TPE15385",
+        "StopName": {
+          "Zh_tw": "新北板橋公車站"
+        },
+        "StopSequence": 52,
+        "StopPosition": {
+          "PositionLon": 121.46261,
+          "PositionLat": 25.012769
+        }
+      },
+      {
+        "StopUID": "TPE59444",
+        "StopName": {
+          "Zh_tw": "萬坪公園"
+        },
+        "StopSequence": 53,
+        "StopPosition": {
+          "PositionLon": 121.460677,
+          "PositionLat": 25.01352
+        }
+      },
+      {
+        "StopUID": "TPE15386",
+        "StopName": {
+          "Zh_tw": "北門街(黃石市場)"
+        },
+        "StopSequence": 54,
+        "StopPosition": {
+          "PositionLon": 121.45679,
+          "PositionLat": 25.01123
+        }
+      },
+      {
+        "StopUID": "TPE15387",
+        "StopName": {
+          "Zh_tw": "板橋戶政事務所"
+        },
+        "StopSequence": 55,
+        "StopPosition": {
+          "PositionLon": 121.4563231,
+          "PositionLat": 25.01289423
+        }
+      },
+      {
+        "StopUID": "TPE15388",
+        "StopName": {
+          "Zh_tw": "社后"
+        },
+        "StopSequence": 56,
+        "StopPosition": {
+          "PositionLon": 121.45665,
+          "PositionLat": 25.015212
+        }
+      },
+      {
+        "StopUID": "TPE15389",
+        "StopName": {
+          "Zh_tw": "大庭新村"
+        },
+        "StopSequence": 57,
+        "StopPosition": {
+          "PositionLon": 121.456234,
+          "PositionLat": 25.01769696
+        }
+      },
+      {
+        "StopUID": "TPE15390",
+        "StopName": {
+          "Zh_tw": "港尾福德宮"
+        },
+        "StopSequence": 58,
+        "StopPosition": {
+          "PositionLon": 121.4556607,
+          "PositionLat": 25.01900577
+        }
+      },
+      {
+        "StopUID": "TPE15391",
+        "StopName": {
+          "Zh_tw": "港尾"
+        },
+        "StopSequence": 59,
+        "StopPosition": {
+          "PositionLon": 121.454829,
+          "PositionLat": 25.020767
+        }
+      },
+      {
+        "StopUID": "TPE15392",
+        "StopName": {
+          "Zh_tw": "板橋國中(435藝文特區)"
+        },
+        "StopSequence": 60,
+        "StopPosition": {
+          "PositionLon": 121.454395,
+          "PositionLat": 25.022921
+        }
+      },
+      {
+        "StopUID": "TPE15394",
+        "StopName": {
+          "Zh_tw": "名來新城(中正路)"
+        },
+        "StopSequence": 61,
+        "StopPosition": {
+          "PositionLon": 121.454664,
+          "PositionLat": 25.026087
+        }
+      },
+      {
+        "StopUID": "TPE194689",
+        "StopName": {
+          "Zh_tw": "臺北客運板橋前站(藝文)"
+        },
+        "StopSequence": 62,
+        "StopPosition": {
+          "PositionLon": 121.452109,
+          "PositionLat": 25.022559
+        }
+      }
+    ]
+  }
+]

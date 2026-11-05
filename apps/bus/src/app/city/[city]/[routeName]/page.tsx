@@ -5,6 +5,7 @@ import { notFound, redirect } from 'next/navigation';
 import { type GeoJSONLineString, parse } from 'wellknown';
 
 import { busService } from '@/services/tdx';
+import { loadFixture, serveFixtures } from '@/utils/fixtures';
 import BusRouteView, { type RouteStopEntity } from './view';
 
 export const revalidate = 86_400; // ONE_DAY; Next requires a literal
@@ -42,20 +43,25 @@ const BusRoutePage = async ({ params }: PageProps) => {
     notFound();
   }
 
-  const [busRoute] = await busService.getBusRoutesByCityAndRouteName(
-    city,
-    routeName,
-  );
+  const fixtures = serveFixtures();
+
+  const [busRoute] = fixtures
+    ? await loadFixture.route()
+    : await busService.getBusRoutesByCityAndRouteName(city, routeName);
 
   if (!busRoute) {
     redirect('/city');
   }
 
   const [busShapes, busStops] = await Promise.all([
-    busService.getBusShapesByCityAndRouteName(city, routeName),
-    busService.getBusStopOfRoutesByCityAndRouteName(city, routeName, {
-      filter: `RouteName/Zh_tw eq '${routeName}'`,
-    }),
+    fixtures
+      ? loadFixture.shape()
+      : busService.getBusShapesByCityAndRouteName(city, routeName),
+    fixtures
+      ? loadFixture.stops()
+      : busService.getBusStopOfRoutesByCityAndRouteName(city, routeName, {
+          filter: `RouteName/Zh_tw eq '${routeName}'`,
+        }),
   ]);
 
   const [busShape] = busShapes;
