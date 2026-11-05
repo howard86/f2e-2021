@@ -5,7 +5,7 @@ import { useCallback, useMemo, useSyncExternalStore } from 'react';
 
 import type { PlaceSummary } from '@/types/place';
 
-export interface SavedPlaces {
+interface SavedPlaces {
   isSaved: (href: string) => boolean;
   items: PlaceSummary[];
   /** False until localStorage has been read on the client. */

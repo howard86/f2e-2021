@@ -66,7 +66,7 @@ export interface PlaceSummary {
   type: PlaceType;
 }
 
-export type PlaceFactKind = 'link' | 'map' | 'phone' | 'text';
+type PlaceFactKind = 'link' | 'map' | 'phone' | 'text';
 
 export interface PlaceFact {
   href?: string;

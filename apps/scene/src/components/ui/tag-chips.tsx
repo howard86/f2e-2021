@@ -1,7 +1,7 @@
 import { Tag, Wrap } from '@chakra-ui/react';
 import NextLink from 'next/link';
 
-export interface TagChipsProps {
+interface TagChipsProps {
   /** When set, each chip links to `${hrefBase}${encodeURIComponent(tag)}`. */
   hrefBase?: string;
   /** Show at most this many; the rest are dropped. */

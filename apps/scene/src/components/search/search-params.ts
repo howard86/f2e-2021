@@ -39,7 +39,7 @@ export const parsePage = (value: string | string[] | undefined) => {
   return page >= 1 && page <= MAX_PAGE ? page : 1;
 };
 
-export const parseCity = (value: string | string[] | undefined) => {
+const parseCity = (value: string | string[] | undefined) => {
   const city = first(value);
 
   return city && CitySet.has(city as City) ? (city as City) : undefined;

@@ -96,7 +96,7 @@ const isMidnightOrDayEnd = (iso: string) => {
 const formatDay = (iso: string) => DATE.format(new Date(iso));
 
 /** `2026/12/31 – 2027/1/1`, or a single day when both ends fall on it. */
-export const formatDateRange = (start: string, end: string) => {
+const formatDateRange = (start: string, end: string) => {
   const from = formatDay(start);
   const to = formatDay(end);
 
@@ -109,7 +109,7 @@ const formatDateTime = (iso: string) =>
     : `${formatDay(iso)} ${TIME.format(new Date(iso))}`;
 
 /** Date range with clock times where the source gives them. */
-export const formatEventTime = (start: string, end: string) =>
+const formatEventTime = (start: string, end: string) =>
   isMidnightOrDayEnd(start) && isMidnightOrDayEnd(end)
     ? formatDateRange(start, end)
     : `${formatDateTime(start)} – ${formatDateTime(end)}`;

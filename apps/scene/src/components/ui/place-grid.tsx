@@ -4,7 +4,7 @@ import type { PlaceSummary } from '@/types/place';
 
 import PlaceCard from './place-card';
 
-export interface PlaceGridProps {
+interface PlaceGridProps {
   /** Shown instead of the grid when places is empty. */
   emptyText?: string;
   places: PlaceSummary[];

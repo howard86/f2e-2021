@@ -3,7 +3,7 @@ import NextLink from 'next/link';
 import { FiChevronLeft, FiChevronRight } from 'react-icons/fi';
 
 // Server-renderable: previous/next (and page number) links, no client state.
-export interface PagerProps {
+interface PagerProps {
   /** Path of the list page, e.g. /scenes. */
   basePath: string;
   hasMore: boolean;

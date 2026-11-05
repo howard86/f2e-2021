@@ -1,7 +1,7 @@
 import { Box, Flex, Heading, Text } from '@chakra-ui/react';
 import { RouteLink } from '@f2e/ui/links';
 
-export interface SectionHeadingProps {
+interface SectionHeadingProps {
   action?: { href: string; label: string };
   /** Small coloured label above the title, in colorPalette.fg. */
   eyebrow?: string;

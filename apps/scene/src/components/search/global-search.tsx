@@ -45,7 +45,7 @@ interface Suggestion {
 const normalise = (value: string) =>
   value.trim().toLowerCase().replaceAll('台', '臺');
 
-export const matchCities = (query: string): City[] => {
+const matchCities = (query: string): City[] => {
   const text = normalise(query);
 
   if (!text) {

@@ -2,7 +2,7 @@ import { Box, Flex, Heading, SimpleGrid, Text } from '@chakra-ui/react';
 import Image, { type StaticImageData } from 'next/image';
 import type { ReactNode } from 'react';
 
-export interface PageHeroProps {
+interface PageHeroProps {
   /** Content under the title, e.g. a search form or filters. */
   children?: ReactNode;
   /** Illustrated background (the existing /static/background art). */

@@ -20,11 +20,11 @@ import {
   type TagOption,
 } from '@/types/place';
 
-export const DEFAULT_PAGE_SIZE = 12;
-export const MAX_PAGE_SIZE = 48;
-export const MAX_KEYWORD_LENGTH = 60;
+const DEFAULT_PAGE_SIZE = 12;
+const MAX_PAGE_SIZE = 48;
+const MAX_KEYWORD_LENGTH = 60;
 
-export const TOURISM_TYPE: Record<PlaceType, TourismPropertyType> = {
+const TOURISM_TYPE: Record<PlaceType, TourismPropertyType> = {
   activity: 'Activity',
   hotel: 'Hotel',
   restaurant: 'Restaurant',

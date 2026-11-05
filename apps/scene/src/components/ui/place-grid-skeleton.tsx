@@ -1,6 +1,6 @@
 import { Box, SimpleGrid, Skeleton, SkeletonText } from '@chakra-ui/react';
 
-export interface PlaceGridSkeletonProps {
+interface PlaceGridSkeletonProps {
   count?: number;
 }
 

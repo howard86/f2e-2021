@@ -1,7 +1,7 @@
 import { Flex } from '@chakra-ui/react';
 import { RouteLink } from '@f2e/ui/links';
 
-export interface TabLink {
+interface TabLink {
   href: string;
   label: string;
 }

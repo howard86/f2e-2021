@@ -14,7 +14,7 @@ import { PLACE_CATEGORY, PLACE_LABEL, type PlaceSummary } from '@/types/place';
 import PlaceCardImage from './place-card-image';
 import TagChips from './tag-chips';
 
-export interface PlaceCardProps {
+interface PlaceCardProps {
   place: PlaceSummary;
 }
 
