@@ -1,6 +1,7 @@
 'use client';
 
 import {
+  Box,
   Breadcrumb,
   Center,
   Flex,
@@ -8,16 +9,14 @@ import {
   SimpleGrid,
 } from '@chakra-ui/react';
 import { type City, CityMap } from '@f2e/tdx-core';
+import { RouteLink } from '@f2e/ui/links';
 import { useState } from 'react';
 import { BiChevronRight } from 'react-icons/bi';
-
 import Background from '@/components/background';
-import Banner from '@/components/banner';
 import Pagination from '@/components/pagination';
 import PlaceCard, { type PlaceCardProps } from '@/components/place-card';
-import RouteLink from '@/components/route-link';
 import SceneCard, { type SceneCardProps } from '@/components/scene-card';
-import { SCENES_PAGE_PROPS } from '@/constants/page-props';
+import SectionBanner from '@/components/section-banner';
 import { DEFAULT_CARD_NUMBER } from '@/constants/pagination';
 import background from '@/static/background/scenes.png';
 import wordOne from '@/static/background/scenes-1.png';
@@ -30,8 +29,6 @@ interface CityPageProps {
   restaurants: PlaceCardProps[];
   scenes: SceneCardProps[];
 }
-
-const PAGE_PROPS = SCENES_PAGE_PROPS;
 
 const CityView = ({
   city,
@@ -48,7 +45,7 @@ const CityView = ({
   return (
     <>
       <Background
-        bgColor={PAGE_PROPS.gradientColor}
+        bgColor="colorPalette.muted"
         image={background}
         name="景點"
         wordOne={wordOne}
@@ -86,13 +83,8 @@ const CityView = ({
           {CityMap[city]}
         </Heading>
         {activities.length > 0 && (
-          <>
-            <Banner
-              hideButton
-              href="/scenes"
-              mainColor="activities.main"
-              title="最新活動"
-            />
+          <Box colorPalette="activities">
+            <SectionBanner title="最新活動" />
             <SimpleGrid columns={[1, 2, 3]} gap={6} mx="8">
               {activities
                 .slice(
@@ -105,22 +97,16 @@ const CityView = ({
             </SimpleGrid>
             <Center mt="8">
               <Pagination
-                colorTheme="activities"
                 onPageChange={setActivityPage}
                 page={activityPage}
                 total={Math.ceil(activities.length / DEFAULT_CARD_NUMBER)}
               />
             </Center>
-          </>
+          </Box>
         )}
         {scenes.length > 0 && (
-          <>
-            <Banner
-              hideButton
-              href="/scenes"
-              mainColor="scenes.main"
-              title="熱門景點"
-            />
+          <Box colorPalette="scenes">
+            <SectionBanner title="熱門景點" />
             <SimpleGrid columns={[1, 2, 3]} gap={6} mx="8">
               {scenes
                 .slice(
@@ -133,22 +119,16 @@ const CityView = ({
             </SimpleGrid>
             <Center mt="8">
               <Pagination
-                colorTheme="scenes"
                 onPageChange={setScenePage}
                 page={scenePage}
                 total={Math.ceil(scenes.length / DEFAULT_CARD_NUMBER)}
               />
             </Center>
-          </>
+          </Box>
         )}
         {restaurants.length > 0 && (
-          <>
-            <Banner
-              hideButton
-              href="/scenes"
-              mainColor="restaurants.main"
-              title="熱門美食"
-            />
+          <Box colorPalette="restaurants">
+            <SectionBanner title="熱門美食" />
             <SimpleGrid columns={[1, 2, 3]} gap={6} mx="8">
               {restaurants
                 .slice(
@@ -161,22 +141,16 @@ const CityView = ({
             </SimpleGrid>
             <Center mt="8">
               <Pagination
-                colorTheme="restaurants"
                 onPageChange={setRestaurantPage}
                 page={restaurantPage}
                 total={Math.ceil(restaurants.length / DEFAULT_CARD_NUMBER)}
               />
             </Center>
-          </>
+          </Box>
         )}
         {hotels.length > 0 && (
-          <>
-            <Banner
-              hideButton
-              href="/scenes"
-              mainColor="hotels.main"
-              title="住宿推薦"
-            />
+          <Box colorPalette="hotels">
+            <SectionBanner title="住宿推薦" />
             <SimpleGrid columns={[1, 2, 3]} gap={6} mx="8">
               {hotels
                 .slice(
@@ -189,13 +163,12 @@ const CityView = ({
             </SimpleGrid>
             <Center mt="8">
               <Pagination
-                colorTheme="hotels"
                 onPageChange={setHotelPage}
                 page={hotelPage}
                 total={Math.ceil(hotels.length / DEFAULT_CARD_NUMBER)}
               />
             </Center>
-          </>
+          </Box>
         )}
       </Flex>
     </>

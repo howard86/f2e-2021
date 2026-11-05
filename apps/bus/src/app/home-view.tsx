@@ -9,13 +9,12 @@ import {
   Stack,
   useBreakpointValue,
 } from '@chakra-ui/react';
+import { RouteLink } from '@f2e/ui/links';
+import { NextImage as Image } from '@f2e/ui/next-image';
 import { BiCurrentLocation } from 'react-icons/bi';
 import { FaBusAlt } from 'react-icons/fa';
-
 import bus from '@/bus.png';
 import PinkLogoIcon from '@/components/icons/pink-logo';
-import Image from '@/components/image';
-import RouteLink from '@/components/route-link';
 import human from '@/human.png';
 import station from '@/station.png';
 

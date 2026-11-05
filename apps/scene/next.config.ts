@@ -22,7 +22,7 @@ const config: NextConfig = {
   },
   outputFileTracingRoot: join(import.meta.dirname, '../..'),
   reactStrictMode: true,
-  transpilePackages: ['@f2e/tdx-core', '@f2e/tdx-tourism'],
+  transpilePackages: ['@f2e/tdx-core', '@f2e/tdx-tourism', '@f2e/ui'],
 };
 
 export default config;

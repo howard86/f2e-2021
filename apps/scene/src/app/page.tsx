@@ -2,14 +2,13 @@ import { Box, Container, Flex, SimpleGrid, Text } from '@chakra-ui/react';
 import type { Metadata } from 'next';
 import Image from 'next/image';
 
-import Banner from '@/components/banner';
 import Logo from '@/components/icons/logo';
 import Layout from '@/components/layout/layout';
 import PlaceCard from '@/components/place-card';
 import SceneCard from '@/components/scene-card';
+import SectionBanner, { SectionBannerLink } from '@/components/section-banner';
 import SiteCardGrid from '@/components/site-card-grid';
 import WeatherCarousel from '@/components/weather-carousel';
-import { SCENES_PAGE_PROPS } from '@/constants/page-props';
 import { DEFAULT_FETCHED_REMARK_NUMBER } from '@/constants/pagination';
 import {
   mapActivityToPlaceCard,
@@ -28,8 +27,6 @@ export const metadata: Metadata = {
     images: ['/static/background/main.png'],
   },
 };
-
-const PAGE_PROPS = SCENES_PAGE_PROPS;
 
 const HomePage = async () => {
   const [weathers, scenes, restaurants, hotels, activities] = await Promise.all(
@@ -67,10 +64,10 @@ const HomePage = async () => {
   );
 
   return (
-    <Layout {...PAGE_PROPS}>
+    <Layout colorPalette="scenes">
       <Container centerContent h="100vh" maxH={[400, 700]}>
         <Box
-          bg="scenes.light"
+          bg="colorPalette.muted"
           h="inherit"
           left="0"
           maxH="inherit"
@@ -104,13 +101,13 @@ const HomePage = async () => {
       <Flex
         bgGradient="to-b"
         flexDir="column"
-        gradientFrom={PAGE_PROPS.gradientColor}
+        gradientFrom="colorPalette.muted"
         gradientTo="white"
         justify="center"
         minH="360"
         py="14"
       >
-        <Container maxW="container.md" px="0" textAlign="center">
+        <Container maxW="3xl" px="0" textAlign="center">
           <Text color="blackAlpha.500" mx="8" textStyle="subtitle">
             台灣許多美景媲美國外，值此五倍券、國旅券及觀光業者加碼優惠盡出之際，旅行台灣就是現在！
             到哪裡旅遊還沒有想法的民眾，歡迎到台灣觀光，體驗「台灣之美」!
@@ -119,49 +116,57 @@ const HomePage = async () => {
         </Container>
       </Flex>
       <Flex bgColor="white" flexDir="column">
-        <SiteCardGrid maxW="container.lg" mx="auto" />
+        <SiteCardGrid maxW="5xl" mx="auto" />
 
-        <Banner
-          href="/scenes"
-          mainColor={PAGE_PROPS.mainColor}
-          title="熱門景點"
-        />
-        <SimpleGrid columns={[1, 2, 3]} gap={6} mx="8">
-          {scenes.map(mapScenicSpotToSceneCard).map((item) => (
-            <SceneCard key={item.href} {...item} />
-          ))}
-        </SimpleGrid>
-
-        <Banner
-          hideButton
-          href="/scenes"
-          mainColor="activities.main"
-          title="最新活動"
-        />
-        <SimpleGrid columns={[1, 2, 3]} gap={6} mx="8">
-          {activities.map(mapActivityToPlaceCard).map((activity) => (
-            <PlaceCard key={activity.href} {...activity} />
-          ))}
-        </SimpleGrid>
-
-        <Banner
-          href="/restaurants"
-          mainColor="restaurants.main"
-          title="熱門美食"
-        />
-
-        <SimpleGrid columns={[1, 2, 3]} gap={6} mx="8">
-          {restaurants.map(mapRestaurantToPlaceCard).map((item) => (
-            <PlaceCard key={item.href} {...item} />
-          ))}
-        </SimpleGrid>
-        <Banner href="/hotels" mainColor="hotels.main" title="住宿推薦" />
-
-        <SimpleGrid columns={[1, 2, 3]} gap={6} mx="8">
-          {hotels.map(mapHotelToPlaceCard).map((item) => (
-            <PlaceCard key={item.href} {...item} />
-          ))}
-        </SimpleGrid>
+        <Box colorPalette="scenes">
+          <SectionBanner
+            action={
+              <SectionBannerLink href="/scenes">查看更多</SectionBannerLink>
+            }
+            title="熱門景點"
+          />
+          <SimpleGrid columns={[1, 2, 3]} gap={6} mx="8">
+            {scenes.map(mapScenicSpotToSceneCard).map((item) => (
+              <SceneCard key={item.href} {...item} />
+            ))}
+          </SimpleGrid>
+        </Box>
+        <Box colorPalette="activities">
+          <SectionBanner title="最新活動" />
+          <SimpleGrid columns={[1, 2, 3]} gap={6} mx="8">
+            {activities.map(mapActivityToPlaceCard).map((item) => (
+              <PlaceCard key={item.href} {...item} />
+            ))}
+          </SimpleGrid>
+        </Box>
+        <Box colorPalette="restaurants">
+          <SectionBanner
+            action={
+              <SectionBannerLink href="/restaurants">
+                查看更多
+              </SectionBannerLink>
+            }
+            title="熱門美食"
+          />
+          <SimpleGrid columns={[1, 2, 3]} gap={6} mx="8">
+            {restaurants.map(mapRestaurantToPlaceCard).map((item) => (
+              <PlaceCard key={item.href} {...item} />
+            ))}
+          </SimpleGrid>
+        </Box>
+        <Box colorPalette="hotels">
+          <SectionBanner
+            action={
+              <SectionBannerLink href="/hotels">查看更多</SectionBannerLink>
+            }
+            title="住宿推薦"
+          />
+          <SimpleGrid columns={[1, 2, 3]} gap={6} mx="8">
+            {hotels.map(mapHotelToPlaceCard).map((item) => (
+              <PlaceCard key={item.href} {...item} />
+            ))}
+          </SimpleGrid>
+        </Box>
       </Flex>
     </Layout>
   );

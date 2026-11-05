@@ -2,7 +2,6 @@ import type { Metadata } from 'next';
 import { notFound } from 'next/navigation';
 
 import Layout from '@/components/layout/layout';
-import { SCENES_PAGE_PROPS } from '@/constants/page-props';
 import { DEFAULT_FETCHED_REMARK_NUMBER } from '@/constants/pagination';
 import { mapScenicSpotToSceneCard, tourismService } from '@/services/tdx';
 import ScenesView from './view';
@@ -32,7 +31,7 @@ const ScenesPage = async () => {
   }
 
   return (
-    <Layout {...SCENES_PAGE_PROPS}>
+    <Layout colorPalette="scenes">
       <ScenesView scenes={scenes.map(mapScenicSpotToSceneCard)} />
     </Layout>
   );

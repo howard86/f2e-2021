@@ -1,13 +1,10 @@
 'use client';
 
-import { ChakraProvider } from '@chakra-ui/react';
+import { UiProvider } from '@f2e/ui/provider';
 import { type ReactNode, useRef } from 'react';
 import { Provider as ReduxProvider } from 'react-redux';
 
-import EmotionRegistry from '@/components/emotion-registry';
-
 import MapContextProvider from '@/components/map-context-provider';
-import { AppToaster } from '@/hooks/use-app-toast';
 import { type AppStore, makeStore } from '@/redux/store';
 import system from '@/theme';
 
@@ -22,14 +19,11 @@ const Providers = ({ children }: ProvidersProps) => {
   }
 
   return (
-    <EmotionRegistry>
+    <UiProvider system={system}>
       <ReduxProvider store={storeRef.current}>
-        <ChakraProvider value={system}>
-          <MapContextProvider>{children}</MapContextProvider>
-          <AppToaster />
-        </ChakraProvider>
+        <MapContextProvider>{children}</MapContextProvider>
       </ReduxProvider>
-    </EmotionRegistry>
+    </UiProvider>
   );
 };
 

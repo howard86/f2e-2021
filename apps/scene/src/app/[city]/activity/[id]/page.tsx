@@ -4,7 +4,6 @@ import { notFound } from 'next/navigation';
 import { cache } from 'react';
 
 import Layout from '@/components/layout/layout';
-import { ACTIVITIES_PAGE_PROPS } from '@/constants/page-props';
 import { tourismService } from '@/services/tdx';
 import ActivityView from './view';
 
@@ -64,7 +63,7 @@ const ActivityPage = async ({
   }
 
   return (
-    <Layout {...ACTIVITIES_PAGE_PROPS}>
+    <Layout colorPalette="activities">
       <ActivityView activity={activity} />
     </Layout>
   );

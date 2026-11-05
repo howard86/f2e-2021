@@ -11,4 +11,5 @@ extend-exclude = [
   "**/output/**",
   "**/node_modules/**",
   "libs/tdx*/specs/**",
+  "libs/tdx*/fixtures/**",
 ]

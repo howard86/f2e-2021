@@ -9,9 +9,9 @@ import {
   useDisclosure,
   VStack,
 } from '@chakra-ui/react';
+import { RouteLink } from '@f2e/ui/links';
 import { FiMenu } from 'react-icons/fi';
 import ROUTES from '@/constants/routes';
-import RouteLink from '../route-link';
 
 interface MenuPopoverProps
   extends Omit<Popover.RootProps, 'children' | 'open' | 'onOpenChange'> {
@@ -55,7 +55,7 @@ const MenuPopover = ({ buttonBgColor, ...props }: MenuPopoverProps) => {
               >
                 {ROUTES.map((route) => (
                   <RouteLink
-                    _hover={{ color: 'scenes.main' }}
+                    _hover={{ color: 'colorPalette.solid' }}
                     href={route.href}
                     key={route.label}
                     onClick={onClose}

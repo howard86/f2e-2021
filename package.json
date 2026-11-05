@@ -45,7 +45,9 @@
     "start:bus": "turbo run start --filter=@f2e/bus",
     "start:scene": "turbo run start --filter=@f2e/scene",
     "start:ubike": "turbo run start --filter=@f2e/ubike",
+    "test": "turbo run test",
     "typecheck": "turbo run typecheck",
+    "typegen": "bun run --filter @f2e/ui typegen",
     "update:tdx-specs": "bun run --filter '@f2e/tdx-*' update-specs"
   },
   "devDependencies": {

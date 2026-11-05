@@ -1,0 +1,718 @@
+{
+  "value": [
+    {
+      "HotelID": "Hotel_A15010000H_009937",
+      "HotelLicenseNumber": "交觀宿字第1611號",
+      "HotelName": "雲品溫泉酒店日月潭",
+      "AlternateNames": [],
+      "Description": "雲品溫泉酒店日月潭是日月潭畔五星級溫泉渡假飯店，全館皆以大型落地窗帷幕，直接引進天然美景，提供旅客最大的視覺空間映像，全天候均可愉悅的擁抱大自然，享受豐富多變的景觀與風貌。 全館共有207間客房皆精心擘劃落地窗及觀景陽台，並設有獨立的大理石浴池可以泡湯，讓旅客在無人打擾的私密空間中，享受最純淨自然的放鬆與感動。 多樣化的餐飲服務，包括大廳酒吧、雲月坊、丹彤自助餐廳、KEN CAN by Ken Chan及彩雲軒鐵板燒餐廳，提供中、西式等餐飲服務。國際宴會廳有雲翰廳與雲揚廳，高貴典雅，可容納超過會議500位、或設宴40桌，適合舉辦公司會議、結婚喜慶、尾牙春酒、主題派對、產品發表會等。雲品溫泉酒店擁有超過千坪的休閒設施，包括戶外的名人坡、圓形廣場、花園步道，室內的湖景健身房、親水主題館的水療區、游泳池、煙嵐風呂及雲遊森林兒童遊戲區，以及VALMONT在台灣的首家飯店直營SPA服務的VALMONT SPA等，提供旅客多樣化的遊樂與休閒選擇。雲品溫泉泉質為PH值8.6，無色無味的碳酸氫鹽泉。在冷熱溫泉交替的瀰漫中，放鬆全身的緊繃感，從心靈到身體的完整洗禮，彷彿徜徉於大自然的輕撫呵護中，輕盈自在，適合全家旅行。",
+      "PositionLat": 23.87152,
+      "PositionLon": 120.923311,
+      "Geometry": null,
+      "HotelClasses": [1],
+      "HotelStars": 5,
+      "TaiwanHost": 1,
+      "ServiceTimeInfo": "",
+      "TrafficInfo": "",
+      "ParkingInfo": "車位:小客車126輛、機車0輛、大客車4輛",
+      "Facilities": [],
+      "ServiceStatus": 1,
+      "PaymentMethods": [],
+      "WebsiteUrl": "http://www.fleurdechinehotel.com",
+      "ReservationURLs": [],
+      "MapURLs": [],
+      "SameAsURLs": [],
+      "RoomInfo": "雙人房34419;套房107184;套房107184;雙人房42504;雙人房33264;套房297990;雙人房33264;雙人房32109;套房72534;雙人房37884;雙人房30954;雙人房39039;雙人房42504;雙人房(無障礙客房)30954;雙人房43659;雙人房37884;雙人房35574;",
+      "ServiceInfo": "餐廳,會議場所,咖啡廳,酒吧,宴會廳,健身房,商店,游泳池,有線網路,無線網路,三溫暖,國民旅遊卡,停車場,高齡房,溫泉設施,無障礙客房,上網電腦(免費),,,,兒童遊樂設施,洗衣服務,郵電服務,商務旅遊中心,美容室,各式球場,室內遊樂設施,接送服務,自行車租借,導覽解說,體驗活動,穆斯林餐廳,哺乳室,AED,外幣兌換,寵物友善旅宿,,,自行車友善旅宿",
+      "TotalRooms": 207,
+      "LowestPrice": 30954,
+      "CeilingPrice": 297990,
+      "TotalCapacity": 414,
+      "AccessibleRooms": 3,
+      "Toilets": 2,
+      "LiftingEquipments": 1,
+      "ParkingSpaces": 130,
+      "Remarks": "",
+      "UpdateTime": "2026-10-29T15:42:13+08:00",
+      "HotelCertificationMarks": [],
+      "PostalAddress": {
+        "City": "南投縣",
+        "CityCode": "10008",
+        "Town": "魚池鄉",
+        "TownCode": "10008090",
+        "ZipCode": "555",
+        "StreetAddress": "水社村中正路23號"
+      },
+      "Telephones": [
+        {
+          "Tel": "(049)2856788",
+          "Ext": null
+        }
+      ],
+      "Images": [
+        {
+          "Name": "尊榮山景和式房",
+          "Description": "",
+          "URL": "https://taiwan.taiwanstay.net.tw/twpic/59464.jpg?v=20261104",
+          "Width": null,
+          "Height": null,
+          "Keywords": []
+        },
+        {
+          "Name": "尊榮日式套房",
+          "Description": "",
+          "URL": "https://taiwan.taiwanstay.net.tw/twpic/59465.jpg?v=20261104",
+          "Width": null,
+          "Height": null,
+          "Keywords": []
+        },
+        {
+          "Name": "尊榮洋式套房",
+          "Description": "",
+          "URL": "https://taiwan.taiwanstay.net.tw/twpic/59466.jpg?v=20261104",
+          "Width": null,
+          "Height": null,
+          "Keywords": []
+        },
+        {
+          "Name": "尊榮湖景家庭房",
+          "Description": "",
+          "URL": "https://taiwan.taiwanstay.net.tw/twpic/59467.jpg?v=20261104",
+          "Width": null,
+          "Height": null,
+          "Keywords": []
+        },
+        {
+          "Name": "尊榮山景大床房",
+          "Description": "",
+          "URL": "https://taiwan.taiwanstay.net.tw/twpic/59468.jpg?v=20261104",
+          "Width": null,
+          "Height": null,
+          "Keywords": []
+        },
+        {
+          "Name": "總統套房",
+          "Description": "",
+          "URL": "https://taiwan.taiwanstay.net.tw/twpic/59469.jpg?v=20261104",
+          "Width": null,
+          "Height": null,
+          "Keywords": []
+        },
+        {
+          "Name": "尊榮山景家庭房",
+          "Description": "",
+          "URL": "https://taiwan.taiwanstay.net.tw/twpic/59470.jpg?v=20261104",
+          "Width": null,
+          "Height": null,
+          "Keywords": []
+        },
+        {
+          "Name": "經典山景和式房",
+          "Description": "",
+          "URL": "https://taiwan.taiwanstay.net.tw/twpic/59471.jpg?v=20261104",
+          "Width": null,
+          "Height": null,
+          "Keywords": []
+        },
+        {
+          "Name": "豪華湖景套房",
+          "Description": "",
+          "URL": "https://taiwan.taiwanstay.net.tw/twpic/59472.jpg?v=20261104",
+          "Width": null,
+          "Height": null,
+          "Keywords": []
+        },
+        {
+          "Name": "經典湖景大床房",
+          "Description": "",
+          "URL": "https://taiwan.taiwanstay.net.tw/twpic/59473.jpg?v=20261104",
+          "Width": null,
+          "Height": null,
+          "Keywords": []
+        },
+        {
+          "Name": "經典山景家庭房",
+          "Description": "",
+          "URL": "https://taiwan.taiwanstay.net.tw/twpic/59474.jpg?v=20261104",
+          "Width": null,
+          "Height": null,
+          "Keywords": []
+        },
+        {
+          "Name": "經典湖景和式房",
+          "Description": "",
+          "URL": "https://taiwan.taiwanstay.net.tw/twpic/59475.jpg?v=20261104",
+          "Width": null,
+          "Height": null,
+          "Keywords": []
+        },
+        {
+          "Name": "尊榮湖景大床房",
+          "Description": "",
+          "URL": "https://taiwan.taiwanstay.net.tw/twpic/59476.jpg?v=20261104",
+          "Width": null,
+          "Height": null,
+          "Keywords": []
+        },
+        {
+          "Name": "經典山景大床房",
+          "Description": "",
+          "URL": "https://taiwan.taiwanstay.net.tw/twpic/59477.jpg?v=20261104",
+          "Width": null,
+          "Height": null,
+          "Keywords": []
+        },
+        {
+          "Name": "尊榮湖景和式房",
+          "Description": "",
+          "URL": "https://taiwan.taiwanstay.net.tw/twpic/59478.jpg?v=20261104",
+          "Width": null,
+          "Height": null,
+          "Keywords": []
+        },
+        {
+          "Name": "經典湖景家庭房",
+          "Description": "",
+          "URL": "https://taiwan.taiwanstay.net.tw/twpic/59479.jpg?v=20261104",
+          "Width": null,
+          "Height": null,
+          "Keywords": []
+        },
+        {
+          "Name": "尊榮山湖景和室房",
+          "Description": "",
+          "URL": "https://taiwan.taiwanstay.net.tw/twpic/251047.jpg?v=20261104",
+          "Width": null,
+          "Height": null,
+          "Keywords": []
+        }
+      ],
+      "Organizations": [
+        {
+          "Name": "雲品國際酒店股份有限公司",
+          "Class": "Operator",
+          "TaxCode": "54023418",
+          "AgencyCode": null,
+          "URL": null,
+          "MobilePhones": [],
+          "Faxes": [],
+          "Email": null,
+          "Telephones": []
+        }
+      ],
+      "LocatedCities": [],
+      "SocialMediaURLs": [],
+      "CheckTimes": []
+    },
+    {
+      "HotelID": "Hotel_A15010000H_038977",
+      "HotelLicenseNumber": "南投縣民宿1315號",
+      "HotelName": "春在枝頭",
+      "AlternateNames": [],
+      "Description": "N/A",
+      "PositionLat": 23.915164,
+      "PositionLon": 120.889109,
+      "Geometry": null,
+      "HotelClasses": [4],
+      "HotelStars": 0,
+      "TaiwanHost": 0,
+      "ServiceTimeInfo": "",
+      "TrafficInfo": "",
+      "ParkingInfo": "車位:小客車3輛、機車0輛、大客車0輛",
+      "Facilities": [],
+      "ServiceStatus": 1,
+      "PaymentMethods": [],
+      "WebsiteUrl": "",
+      "ReservationURLs": [],
+      "MapURLs": [],
+      "SameAsURLs": [],
+      "RoomInfo": "",
+      "ServiceInfo": "",
+      "TotalRooms": 5,
+      "LowestPrice": 7200,
+      "CeilingPrice": 7200,
+      "TotalCapacity": 10,
+      "AccessibleRooms": 0,
+      "Toilets": 0,
+      "LiftingEquipments": 0,
+      "ParkingSpaces": 3,
+      "Remarks": "",
+      "UpdateTime": "2026-11-03T20:33:23+08:00",
+      "HotelCertificationMarks": [],
+      "PostalAddress": {
+        "City": "南投縣",
+        "CityCode": "10008",
+        "Town": "魚池鄉",
+        "TownCode": "10008090",
+        "ZipCode": "555",
+        "StreetAddress": "五城村華龍巷58-1號"
+      },
+      "Telephones": [
+        {
+          "Tel": "0911784815",
+          "Ext": null
+        }
+      ],
+      "Images": [],
+      "Organizations": [
+        {
+          "Name": "春在枝頭",
+          "Class": "Operator",
+          "TaxCode": null,
+          "AgencyCode": null,
+          "URL": null,
+          "MobilePhones": [],
+          "Faxes": [],
+          "Email": null,
+          "Telephones": []
+        }
+      ],
+      "LocatedCities": [],
+      "SocialMediaURLs": [],
+      "CheckTimes": []
+    },
+    {
+      "HotelID": "Hotel_A15010000H_026333",
+      "HotelLicenseNumber": "金門縣民宿528號",
+      "HotelName": "歇會兒民宿典藏館",
+      "AlternateNames": [],
+      "Description": "位於金門縣的「歇會兒民宿典藏館」建築體創建於乾隆30-31年（1765-1766年），建築型態為二落大厝加左護龍及牆規樓（牆門），佔地近200坪，2003年依“文化資產保存法”列為『歷史建築』，且為水頭聚落「頂界十八支樑」建築群代表作，非常適合以慢活的腳步來場古厝與古洋樓的巡禮。",
+      "PositionLat": 24.40911,
+      "PositionLon": 118.300421,
+      "Geometry": null,
+      "HotelClasses": [4],
+      "HotelStars": 0,
+      "TaiwanHost": 1,
+      "ServiceTimeInfo": "",
+      "TrafficInfo": "",
+      "ParkingInfo": "車位:小客車0輛、機車0輛、大客車0輛",
+      "Facilities": [],
+      "ServiceStatus": 1,
+      "PaymentMethods": [],
+      "WebsiteUrl": "http://www.xn--octr39alq2a1cd.tw/",
+      "ReservationURLs": [],
+      "MapURLs": [],
+      "SameAsURLs": [],
+      "RoomInfo": "雙人房2500;雙人房2500;雙人房2500;其他3400;其他3600;",
+      "ServiceInfo": "無線網路,國民旅遊卡,自助洗衣(免費),,,,洗衣服務,接送服務,行動支付,導覽解說,寵物友善旅宿,,",
+      "TotalRooms": 3,
+      "LowestPrice": 2500,
+      "CeilingPrice": 3600,
+      "TotalCapacity": 22,
+      "AccessibleRooms": 0,
+      "Toilets": 0,
+      "LiftingEquipments": 0,
+      "ParkingSpaces": 0,
+      "Remarks": "",
+      "UpdateTime": "2026-11-03T17:00:24+08:00",
+      "HotelCertificationMarks": [],
+      "PostalAddress": {
+        "City": "金門縣",
+        "CityCode": "09020",
+        "Town": "金城鎮",
+        "TownCode": "09020010",
+        "ZipCode": "893",
+        "StreetAddress": "前水頭9號"
+      },
+      "Telephones": [
+        {
+          "Tel": "0935934595",
+          "Ext": null
+        }
+      ],
+      "Images": [
+        {
+          "Name": "豪華雙人房",
+          "Description": "",
+          "URL": "https://taiwan.taiwanstay.net.tw/twpic/343033.jpg?v=20261104",
+          "Width": null,
+          "Height": null,
+          "Keywords": []
+        },
+        {
+          "Name": "商務雙人房",
+          "Description": "",
+          "URL": "https://taiwan.taiwanstay.net.tw/twpic/343044.jpg?v=20261104",
+          "Width": null,
+          "Height": null,
+          "Keywords": []
+        },
+        {
+          "Name": "標準雙人房",
+          "Description": "",
+          "URL": "https://taiwan.taiwanstay.net.tw/twpic/343050.jpg?v=20261104",
+          "Width": null,
+          "Height": null,
+          "Keywords": []
+        },
+        {
+          "Name": "家庭閣樓套房",
+          "Description": "",
+          "URL": "https://taiwan.taiwanstay.net.tw/twpic/343056.jpg?v=20261104",
+          "Width": null,
+          "Height": null,
+          "Keywords": []
+        },
+        {
+          "Name": "挑高樓中樓四人套房",
+          "Description": "",
+          "URL": "https://taiwan.taiwanstay.net.tw/twpic/343064.jpg?v=20261104",
+          "Width": null,
+          "Height": null,
+          "Keywords": []
+        }
+      ],
+      "Organizations": [
+        {
+          "Name": "歇會兒民宿典藏館",
+          "Class": "Operator",
+          "TaxCode": "85420192",
+          "AgencyCode": null,
+          "URL": null,
+          "MobilePhones": [],
+          "Faxes": [],
+          "Email": null,
+          "Telephones": []
+        }
+      ],
+      "LocatedCities": [],
+      "SocialMediaURLs": [],
+      "CheckTimes": []
+    },
+    {
+      "HotelID": "Hotel_A15010000H_039828",
+      "HotelLicenseNumber": "宜蘭縣民宿3215號",
+      "HotelName": "拾步民宿",
+      "AlternateNames": [],
+      "Description": "-",
+      "PositionLat": 24.8125352088698,
+      "PositionLon": 121.803939883714,
+      "Geometry": null,
+      "HotelClasses": [4],
+      "HotelStars": 0,
+      "TaiwanHost": 0,
+      "ServiceTimeInfo": "",
+      "TrafficInfo": "",
+      "ParkingInfo": "車位:小客車8輛、機車18輛、大客車2輛",
+      "Facilities": [],
+      "ServiceStatus": 1,
+      "PaymentMethods": [],
+      "WebsiteUrl": "",
+      "ReservationURLs": [],
+      "MapURLs": [],
+      "SameAsURLs": [],
+      "RoomInfo": "",
+      "ServiceInfo": "",
+      "TotalRooms": 2,
+      "LowestPrice": 4000,
+      "CeilingPrice": 9800,
+      "TotalCapacity": 18,
+      "AccessibleRooms": 0,
+      "Toilets": 0,
+      "LiftingEquipments": 0,
+      "ParkingSpaces": 28,
+      "Remarks": "",
+      "UpdateTime": "2026-11-03T17:58:01+08:00",
+      "HotelCertificationMarks": [],
+      "PostalAddress": {
+        "City": "宜蘭縣",
+        "CityCode": "10002",
+        "Town": "五結鄉",
+        "TownCode": "10002090",
+        "ZipCode": "268",
+        "StreetAddress": "錦草東路28巷27號"
+      },
+      "Telephones": [
+        {
+          "Tel": "0928037384",
+          "Ext": null
+        }
+      ],
+      "Images": [],
+      "Organizations": [
+        {
+          "Name": "拾步民宿",
+          "Class": "Operator",
+          "TaxCode": null,
+          "AgencyCode": null,
+          "URL": null,
+          "MobilePhones": [],
+          "Faxes": [],
+          "Email": null,
+          "Telephones": []
+        }
+      ],
+      "LocatedCities": [],
+      "SocialMediaURLs": [],
+      "CheckTimes": []
+    },
+    {
+      "HotelID": "Hotel_A15010000H_039827",
+      "HotelLicenseNumber": "宜蘭縣民宿3209號",
+      "HotelName": "山星29",
+      "AlternateNames": [],
+      "Description": "-",
+      "PositionLat": 24.8125352088698,
+      "PositionLon": 121.803939883714,
+      "Geometry": null,
+      "HotelClasses": [4],
+      "HotelStars": 0,
+      "TaiwanHost": 0,
+      "ServiceTimeInfo": "",
+      "TrafficInfo": "",
+      "ParkingInfo": "車位:小客車4輛、機車4輛、大客車2輛",
+      "Facilities": [],
+      "ServiceStatus": 1,
+      "PaymentMethods": [],
+      "WebsiteUrl": "",
+      "ReservationURLs": [],
+      "MapURLs": [],
+      "SameAsURLs": [],
+      "RoomInfo": "",
+      "ServiceInfo": "",
+      "TotalRooms": 0,
+      "LowestPrice": 10000,
+      "CeilingPrice": 15000,
+      "TotalCapacity": 10,
+      "AccessibleRooms": 0,
+      "Toilets": 0,
+      "LiftingEquipments": 0,
+      "ParkingSpaces": 10,
+      "Remarks": "",
+      "UpdateTime": "2026-11-03T17:36:22+08:00",
+      "HotelCertificationMarks": [],
+      "PostalAddress": {
+        "City": "宜蘭縣",
+        "CityCode": "10002",
+        "Town": "三星鄉",
+        "TownCode": "10002100",
+        "ZipCode": "266",
+        "StreetAddress": "三星路一段29號"
+      },
+      "Telephones": [
+        {
+          "Tel": "0987260148",
+          "Ext": null
+        }
+      ],
+      "Images": [],
+      "Organizations": [
+        {
+          "Name": "山星29",
+          "Class": "Operator",
+          "TaxCode": null,
+          "AgencyCode": null,
+          "URL": null,
+          "MobilePhones": [],
+          "Faxes": [],
+          "Email": null,
+          "Telephones": []
+        }
+      ],
+      "LocatedCities": [],
+      "SocialMediaURLs": [],
+      "CheckTimes": []
+    },
+    {
+      "HotelID": "Hotel_A15010000H_039824",
+      "HotelLicenseNumber": "南投縣民宿1364號",
+      "HotelName": "淺藏水葉",
+      "AlternateNames": [],
+      "Description": "無",
+      "PositionLat": 23.98331,
+      "PositionLon": 120.98912,
+      "Geometry": null,
+      "HotelClasses": [4],
+      "HotelStars": 0,
+      "TaiwanHost": 0,
+      "ServiceTimeInfo": "",
+      "TrafficInfo": "",
+      "ParkingInfo": "車位:小客車10輛、機車20輛、大客車0輛",
+      "Facilities": [],
+      "ServiceStatus": 1,
+      "PaymentMethods": [],
+      "WebsiteUrl": "",
+      "ReservationURLs": [],
+      "MapURLs": [],
+      "SameAsURLs": [],
+      "RoomInfo": "",
+      "ServiceInfo": "",
+      "TotalRooms": 1,
+      "LowestPrice": 3500,
+      "CeilingPrice": 4500,
+      "TotalCapacity": 18,
+      "AccessibleRooms": 0,
+      "Toilets": 0,
+      "LiftingEquipments": 0,
+      "ParkingSpaces": 30,
+      "Remarks": "",
+      "UpdateTime": "2026-11-03T16:48:31+08:00",
+      "HotelCertificationMarks": [],
+      "PostalAddress": {
+        "City": "南投縣",
+        "CityCode": "10008",
+        "Town": "埔里鎮",
+        "TownCode": "10008020",
+        "ZipCode": "545",
+        "StreetAddress": "牛眠里內埔路27號"
+      },
+      "Telephones": [
+        {
+          "Tel": "0976664188",
+          "Ext": null
+        }
+      ],
+      "Images": [],
+      "Organizations": [
+        {
+          "Name": "淺藏水葉",
+          "Class": "Operator",
+          "TaxCode": null,
+          "AgencyCode": null,
+          "URL": null,
+          "MobilePhones": [],
+          "Faxes": [],
+          "Email": null,
+          "Telephones": []
+        }
+      ],
+      "LocatedCities": [],
+      "SocialMediaURLs": [],
+      "CheckTimes": []
+    },
+    {
+      "HotelID": "Hotel_A15010000H_039823",
+      "HotelLicenseNumber": "宜蘭縣民宿3208號",
+      "HotelName": "暮野宅",
+      "AlternateNames": [],
+      "Description": "-",
+      "PositionLat": 24.8125352088698,
+      "PositionLon": 121.803939883714,
+      "Geometry": null,
+      "HotelClasses": [4],
+      "HotelStars": 0,
+      "TaiwanHost": 0,
+      "ServiceTimeInfo": "",
+      "TrafficInfo": "",
+      "ParkingInfo": "車位:小客車5輛、機車8輛、大客車3輛",
+      "Facilities": [],
+      "ServiceStatus": 1,
+      "PaymentMethods": [],
+      "WebsiteUrl": "",
+      "ReservationURLs": [],
+      "MapURLs": [],
+      "SameAsURLs": [],
+      "RoomInfo": "",
+      "ServiceInfo": "",
+      "TotalRooms": 0,
+      "LowestPrice": 12000,
+      "CeilingPrice": 12000,
+      "TotalCapacity": 12,
+      "AccessibleRooms": 0,
+      "Toilets": 0,
+      "LiftingEquipments": 0,
+      "ParkingSpaces": 16,
+      "Remarks": "",
+      "UpdateTime": "2026-11-03T16:28:37+08:00",
+      "HotelCertificationMarks": [],
+      "PostalAddress": {
+        "City": "宜蘭縣",
+        "CityCode": "10002",
+        "Town": "礁溪鄉",
+        "TownCode": "10002050",
+        "ZipCode": "262",
+        "StreetAddress": "塭底路3之30號"
+      },
+      "Telephones": [
+        {
+          "Tel": "0930597225",
+          "Ext": null
+        }
+      ],
+      "Images": [],
+      "Organizations": [
+        {
+          "Name": "暮野宅",
+          "Class": "Operator",
+          "TaxCode": null,
+          "AgencyCode": null,
+          "URL": null,
+          "MobilePhones": [],
+          "Faxes": [],
+          "Email": null,
+          "Telephones": []
+        }
+      ],
+      "LocatedCities": [],
+      "SocialMediaURLs": [],
+      "CheckTimes": []
+    },
+    {
+      "HotelID": "Hotel_A15010000H_003319",
+      "HotelLicenseNumber": "臺中市旅館134號",
+      "HotelName": "浮逸旅館-台中成功館",
+      "AlternateNames": [],
+      "Description": "我們致力於打造一個宜居的旅館，以自在與寧靜為設計理念，追求低視覺衝擊、自然光線充足，並環繞著綠色植物，讓您感受到舒適與自然的融合。",
+      "PositionLat": 24.141726,
+      "PositionLon": 120.681588,
+      "Geometry": null,
+      "HotelClasses": [3],
+      "HotelStars": 0,
+      "TaiwanHost": 0,
+      "ServiceTimeInfo": "",
+      "TrafficInfo": "",
+      "ParkingInfo": "車位:小客車0輛、機車0輛、大客車0輛",
+      "Facilities": [],
+      "ServiceStatus": 1,
+      "PaymentMethods": [],
+      "WebsiteUrl": "https://www.fooyee.com.tw/tcstation/index.html",
+      "ReservationURLs": [],
+      "MapURLs": [],
+      "SameAsURLs": [],
+      "RoomInfo": "",
+      "ServiceInfo": "會議場所,有線網路,無線網路,國民旅遊卡,停車場,郵電服務,商務旅遊中心,貴重物品保管專櫃,接送服務,行動支付",
+      "TotalRooms": 39,
+      "LowestPrice": 5800,
+      "CeilingPrice": 12800,
+      "TotalCapacity": 98,
+      "AccessibleRooms": 0,
+      "Toilets": 0,
+      "LiftingEquipments": 0,
+      "ParkingSpaces": 0,
+      "Remarks": "",
+      "UpdateTime": "2026-11-03T16:27:42+08:00",
+      "HotelCertificationMarks": [],
+      "PostalAddress": {
+        "City": "臺中市",
+        "CityCode": "66000",
+        "Town": "中區",
+        "TownCode": "66000010",
+        "ZipCode": "400",
+        "StreetAddress": "成功路165號"
+      },
+      "Telephones": [
+        {
+          "Tel": "(04)22235000",
+          "Ext": null
+        }
+      ],
+      "Images": [],
+      "Organizations": [
+        {
+          "Name": "紅米國際旅館有限公司",
+          "Class": "Operator",
+          "TaxCode": "53935704",
+          "AgencyCode": null,
+          "URL": null,
+          "MobilePhones": [],
+          "Faxes": [],
+          "Email": null,
+          "Telephones": []
+        }
+      ],
+      "LocatedCities": [],
+      "SocialMediaURLs": [],
+      "CheckTimes": []
+    }
+  ]
+}

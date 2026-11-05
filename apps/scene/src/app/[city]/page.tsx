@@ -3,7 +3,6 @@ import type { Metadata } from 'next';
 import { notFound } from 'next/navigation';
 
 import Layout from '@/components/layout/layout';
-import { SCENES_PAGE_PROPS } from '@/constants/page-props';
 import { DEFAULT_FETCHED_CARD_NUMBER } from '@/constants/pagination';
 import {
   mapActivityToPlaceCard,
@@ -84,7 +83,7 @@ const CityPage = async ({ params }: { params: Promise<CityPageParams> }) => {
   const places = await getCityPlaces(city as City);
 
   return (
-    <Layout {...SCENES_PAGE_PROPS}>
+    <Layout colorPalette="scenes">
       <CityView city={city as City} {...places} />
     </Layout>
   );

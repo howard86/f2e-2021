@@ -1,8 +1,8 @@
 import { Box } from '@chakra-ui/react';
+import { useAppToast } from '@f2e/ui/toast';
 import { useCallback, useRef } from 'react';
 import { ZoomLevel } from '@/components/bus-stop-drawer';
 import { useMap } from '@/components/map-context-provider';
-import useAppToast from './use-app-toast';
 
 const useGetLocation = () => {
   const toast = useAppToast();

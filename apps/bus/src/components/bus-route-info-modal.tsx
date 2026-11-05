@@ -10,10 +10,10 @@ import {
   VStack,
 } from '@chakra-ui/react';
 import type { BusRoute } from '@f2e/tdx-bus';
+import { ExternalLink } from '@f2e/ui/links';
 import { type ChangeEvent, useState } from 'react';
 import { MdClose } from 'react-icons/md';
 import { getBusRouteDestinations, getSubRouteTime } from '@/utils/bus';
-import ExternalLink from './external-link';
 
 interface BusRouteInfoModalProps
   extends Omit<Dialog.RootProps, 'children' | 'onOpenChange' | 'open'> {

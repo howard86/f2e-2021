@@ -2,7 +2,8 @@
   "extends": "../../tsconfig.json",
   "compilerOptions": {
     "esModuleInterop": true,
-    "noEmit": true
+    "noEmit": true,
+    "types": ["bun"]
   },
   "include": ["*.ts", "generated/**/*.ts"]
 }

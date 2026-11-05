@@ -4,7 +4,6 @@ import { notFound } from 'next/navigation';
 import { cache } from 'react';
 
 import Layout from '@/components/layout/layout';
-import { RESTAURANTS_PAGE_PROPS } from '@/constants/page-props';
 import { tourismService } from '@/services/tdx';
 import RestaurantView from './view';
 
@@ -63,7 +62,7 @@ const RestaurantPage = async ({
   }
 
   return (
-    <Layout {...RESTAURANTS_PAGE_PROPS}>
+    <Layout colorPalette="restaurants">
       <RestaurantView restaurant={restaurant} />
     </Layout>
   );

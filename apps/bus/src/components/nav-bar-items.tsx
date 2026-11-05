@@ -1,8 +1,7 @@
 import { HStack, type StackProps } from '@chakra-ui/react';
+import { RouteLink } from '@f2e/ui/links';
 import { usePathname } from 'next/navigation';
-
 import LogoIcon from './icons/logo';
-import RouteLink from './route-link';
 
 interface NavBarItemsProps {
   display?: StackProps['display'];

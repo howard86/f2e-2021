@@ -1,23 +1,34 @@
-import { createSystem, defaultConfig, defineConfig } from '@chakra-ui/react';
+import { defineConfig } from '@chakra-ui/react';
+import { createAppSystem } from '@f2e/ui/system';
 import colors from './colors';
 import Button from './components/button';
 import Text from './components/text';
-import styles from './styles';
+import imageCard from './recipes/image-card';
 
-const config = defineConfig({
-  globalCss: styles,
+export const config = defineConfig({
+  globalCss: {
+    body: {
+      color: 'fg.muted',
+    },
+    'h1, h2, h3, h4, h5': {
+      color: 'fg',
+    },
+    html: {
+      colorPalette: 'scenes',
+    },
+  },
   theme: {
     recipes: {
       button: Button,
     },
-    textStyles: Text,
-    tokens: {
+    semanticTokens: {
       colors,
-      fonts: {
-        body: { value: 'var(--font-noto-sans-tc), sans-serif' },
-      },
     },
+    slotRecipes: {
+      imageCard,
+    },
+    textStyles: Text,
   },
 });
 
-export default createSystem(defaultConfig, config);
+export default createAppSystem(config);

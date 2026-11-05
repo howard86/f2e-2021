@@ -13,6 +13,7 @@ import {
 } from '@chakra-ui/react';
 import { CityMap } from '@f2e/tdx-core';
 import type { ScenicSpot } from '@f2e/tdx-tourism';
+import { RouteLink } from '@f2e/ui/links';
 import {
   BiChevronRight,
   BiLinkExternal,
@@ -28,9 +29,7 @@ import {
   FiStopCircle,
 } from 'react-icons/fi';
 import { MdPhotoAlbum } from 'react-icons/md';
-
 import GoogleMap from '@/components/google-map';
-import RouteLink from '@/components/route-link';
 import SceneDetailBox from '@/components/scene-detail-text';
 
 interface SceneViewProps {
@@ -47,7 +46,7 @@ const SceneView = ({ scene }: SceneViewProps) => {
       <Flex
         bgGradient="to-b"
         flexDir="column"
-        gradientFrom="restaurants.light"
+        gradientFrom="colorPalette.muted"
         gradientTo="white"
         pt="16"
       >

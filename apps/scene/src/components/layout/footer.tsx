@@ -12,12 +12,7 @@ import { BsChevronUp } from 'react-icons/bs';
 
 import Logo from '../icons/logo';
 
-interface FooterProps extends BoxProps {
-  gradientColor: string;
-  mainColor: BoxProps['color'];
-}
-
-const Footer = ({ mainColor, gradientColor, ...props }: FooterProps) => {
+const Footer = (props: BoxProps) => {
   const onClick = () => {
     window.scrollTo(0, 0);
   };
@@ -26,7 +21,7 @@ const Footer = ({ mainColor, gradientColor, ...props }: FooterProps) => {
     <Box as="footer" {...props}>
       <Box
         bgGradient="to-t"
-        gradientFrom={gradientColor}
+        gradientFrom="colorPalette.muted"
         gradientTo="white"
         pb={[20, 36]}
         pt={[12, 20]}
@@ -35,10 +30,10 @@ const Footer = ({ mainColor, gradientColor, ...props }: FooterProps) => {
         <Center display={['flex', 'flex', 'none']} textAlign="center">
           <IconButton
             _hover={{
-              bgColor: gradientColor,
+              bgColor: 'colorPalette.muted',
             }}
             aria-label="scroll to top"
-            bgColor={mainColor}
+            bgColor="colorPalette.solid"
             color="white"
             fontSize="2xl"
             onClick={onClick}
@@ -52,7 +47,7 @@ const Footer = ({ mainColor, gradientColor, ...props }: FooterProps) => {
       </Box>
       <Flex
         align="center"
-        bg={mainColor}
+        bg="colorPalette.solid"
         color="white"
         flexDir={['column', 'column', 'row']}
         fontWeight="medium"

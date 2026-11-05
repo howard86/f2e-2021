@@ -1,7 +1,7 @@
 import { Box } from '@chakra-ui/react';
+import { NextImage as Image } from '@f2e/ui/next-image';
 import type { ReactNode } from 'react';
 import background from '@/background.png';
-import Image from '@/components/image';
 import MapView from './map';
 
 interface LayoutProps {

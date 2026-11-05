@@ -16,6 +16,7 @@ import {
   type Restaurant as V2Restaurant,
 } from './generated/tourism-v2';
 import { createClient, createConfig } from './generated/tourism-v2/client';
+import { parseTourismItems } from './schemas';
 
 export interface ScenicSpot extends TourismCommonProperty {
   Class1: string;
@@ -391,8 +392,22 @@ export class TourismService {
       },
       throwOnError: true,
     });
-    const items = (data as { value?: TourismV2Item[] }).value ?? [];
+    const { skipped, valid } = parseTourismItems(
+      type,
+      (data as { value?: unknown[] }).value ?? [],
+    );
 
-    return items.map((item) => mapTourismItem(type, item) as T);
+    if (skipped.length > 0) {
+      console.warn(
+        `[tdx-tourism] skipped ${skipped.length} invalid ${type} item(s): ${skipped
+          .map((item) => `${item.id ?? '(no id)'} (${item.reason})`)
+          .join('; ')}`,
+      );
+    }
+
+    // The schemas guarantee every field the mappers read.
+    return valid.map(
+      (item) => mapTourismItem(type, item as TourismV2Item) as T,
+    );
   }
 }

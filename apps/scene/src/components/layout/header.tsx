@@ -9,14 +9,15 @@ import {
   IconButton,
   Separator,
 } from '@chakra-ui/react';
+import { RouteLink } from '@f2e/ui/links';
 import throttle from 'lodash.throttle';
 import { useRouter } from 'next/navigation';
 import { useEffect, useRef, useState } from 'react';
 import { FiSearch } from 'react-icons/fi';
+import { CATEGORIES, type Category } from '@/constants/categories';
 import ROUTES from '@/constants/routes';
 import getAvatar from '@/services/avatar';
 import Logo from '../icons/logo';
-import RouteLink from '../route-link';
 import MenuPopover from './menu-popover';
 
 const THROTTLED_TIME_MS = 500;
@@ -24,10 +25,10 @@ const THROTTLED_TIME_MS = 500;
 const initialState = { isScrollingUp: false, onTop: true };
 
 interface HeaderProps extends FlexProps {
-  mainColor: FlexProps['color'];
+  category: Category;
 }
 
-const Header = ({ mainColor, ...props }: HeaderProps) => {
+const Header = ({ category, ...props }: HeaderProps) => {
   const router = useRouter();
   const scrollRef = useRef(0);
   const [state, setState] = useState(initialState);
@@ -35,7 +36,7 @@ const Header = ({ mainColor, ...props }: HeaderProps) => {
   const isSolid = !state.onTop && state.isScrollingUp;
 
   const handleOnSearch = () => {
-    router.push('/scenes');
+    router.push(CATEGORIES[category].searchHref);
   };
 
   useEffect(() => {
@@ -62,9 +63,8 @@ const Header = ({ mainColor, ...props }: HeaderProps) => {
     <Flex
       alignItems="center"
       as="header"
-      bg={isSolid ? mainColor : 'transparent'}
-      borderBottomColor="purple.600"
-      color={isSolid ? 'white' : 'text.body'}
+      bg={isSolid ? 'colorPalette.solid' : 'transparent'}
+      color={isSolid ? 'white' : 'fg.muted'}
       left="0"
       pos="fixed"
       px={[2, 4, 8]}
@@ -92,7 +92,7 @@ const Header = ({ mainColor, ...props }: HeaderProps) => {
         h="4"
         separator={
           <Separator
-            borderColor={isSolid ? 'white' : 'text.body'}
+            borderColor={isSolid ? 'white' : 'fg.muted'}
             orientation="vertical"
           />
         }
@@ -104,7 +104,7 @@ const Header = ({ mainColor, ...props }: HeaderProps) => {
         ))}
         <IconButton
           _hover={{
-            bgColor: isSolid ? mainColor : 'white',
+            bgColor: isSolid ? 'colorPalette.emphasized' : 'colorPalette.muted',
           }}
           aria-label="search scene"
           fontSize={['xl', '2xl']}

@@ -1,3 +1,5 @@
+'use client';
+
 import {
   Box,
   Flex,
@@ -6,6 +8,7 @@ import {
   type LinkBoxProps,
   LinkOverlay,
   Text,
+  useSlotRecipe,
 } from '@chakra-ui/react';
 
 interface BackgroundCardProps extends LinkBoxProps {
@@ -21,41 +24,34 @@ const BackgroundCard = ({
   image,
   href = '#',
   ...props
-}: BackgroundCardProps) => (
-  <LinkBox overflow="hidden" pos="relative" rounded="xl" {...props}>
-    <Image alt={name} fit="cover" h="100%" src={image} w="100%" />
-    <Flex
-      _hover={{
-        bgColor: 'blackAlpha.600',
-      }}
-      bottom="0"
-      color="white"
-      flexDir="column"
-      fontSize="sm"
-      fontWeight="bold"
-      left="0"
-      pos="absolute"
-      right="0"
-      top="0"
-      transition="ease-out"
-      transitionDuration="0.2s"
-      zIndex="docked"
-    >
-      <Box flexGrow={1} />
-      <Flex
-        align="center"
-        bgColor="whiteAlpha.400"
-        justify="space-between"
-        p="2"
-      >
-        <Text as="h3" color="white" fontSize={['sm', '2xl']} fontWeight="bold">
-          <LinkOverlay href={href} rel="noreferrer" target="_blank">
-            {name}
-          </LinkOverlay>
-        </Text>
+}: BackgroundCardProps) => {
+  const styles = useSlotRecipe({ key: 'imageCard' })({ rounded: 'xl' });
+
+  return (
+    <LinkBox css={styles.root} {...props}>
+      <Image alt={name} css={styles.image} src={image} />
+      <Flex css={styles.overlay} fontSize="sm" fontWeight="bold">
+        <Box flexGrow={1} />
+        <Flex
+          align="center"
+          bgColor="whiteAlpha.400"
+          justify="space-between"
+          p="2"
+        >
+          <Text
+            as="h3"
+            color="white"
+            css={styles.title}
+            fontSize={['sm', '2xl']}
+          >
+            <LinkOverlay href={href} rel="noreferrer" target="_blank">
+              {name}
+            </LinkOverlay>
+          </Text>
+        </Flex>
       </Flex>
-    </Flex>
-  </LinkBox>
-);
+    </LinkBox>
+  );
+};
 
 export default BackgroundCard;

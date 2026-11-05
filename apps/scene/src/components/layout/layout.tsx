@@ -1,28 +1,23 @@
 import { Box, type BoxProps } from '@chakra-ui/react';
 import type { ReactNode } from 'react';
+import type { Category } from '@/constants/categories';
 
 import Footer from './footer';
 import Header from './header';
 
 interface LayoutProps extends BoxProps {
   children: ReactNode;
-  gradientColor: string;
-  mainColor: BoxProps['color'];
+  colorPalette: Category;
 }
 
-const Layout = ({
-  children,
-  mainColor,
-  gradientColor,
-  ...props
-}: LayoutProps) => (
-  <>
-    <Header mainColor={mainColor} />
+const Layout = ({ children, colorPalette, ...props }: LayoutProps) => (
+  <Box colorPalette={colorPalette}>
+    <Header category={colorPalette} />
     <Box as="main" minH="100%" {...props}>
       {children}
     </Box>
-    <Footer gradientColor={gradientColor} mainColor={mainColor} />
-  </>
+    <Footer />
+  </Box>
 );
 
 export default Layout;

@@ -1,0 +1,437 @@
+{
+  "value": [
+    {
+      "RestaurantID": "Restaurant_A15010400H_000687",
+      "RestaurantName": "大茉莉農莊",
+      "AlternateNames": [],
+      "Description": "里港的大茉莉農場，取名來自老闆的姓「Lamorie」，農場的主要建築百分之十，來自回收再利用。老闆John希望台灣的每位朋友，都能進來了解我們在這寶貴七分地做什麼。",
+      "PositionLat": 22.77668,
+      "PositionLon": 120.5452,
+      "Geometry": null,
+      "CuisineClasses": [2],
+      "ServiceTimeInfo": "周四~周一 10:00~17:00",
+      "TrafficInfo": "",
+      "ParkingInfo": "",
+      "Facilities": [],
+      "ServiceStatus": 1,
+      "PaymentMethods": [],
+      "WebsiteUrl": "https://damorleefarm.weebly.com/",
+      "ReservationURLs": [],
+      "MapURLs": [],
+      "SameAsURLs": [],
+      "RestaurantFeatures": [],
+      "Remarks": "",
+      "UpdateTime": "2026-11-05T00:15:05+08:00",
+      "PostalAddress": {
+        "City": "屏東縣",
+        "CityCode": "10013",
+        "Town": "里港鄉",
+        "TownCode": "10013090",
+        "ZipCode": "905",
+        "StreetAddress": "載南路19巷12弄20號"
+      },
+      "Telephones": [
+        {
+          "Tel": "(08)8338100",
+          "Ext": null
+        }
+      ],
+      "Images": [
+        {
+          "Name": "大茉莉農莊",
+          "Description": "大茉莉農莊",
+          "URL": "https://www.dbnsa.gov.tw/fapi/ArtPic?type=ArticlePic&id=868&w=500",
+          "Width": null,
+          "Height": null,
+          "Keywords": []
+        }
+      ],
+      "Organizations": [
+        {
+          "Name": "大鵬灣國家風景區管理處",
+          "Class": "Provider",
+          "TaxCode": null,
+          "AgencyCode": "A15010400H",
+          "URL": null,
+          "MobilePhones": [],
+          "Faxes": [],
+          "Email": null,
+          "Telephones": []
+        }
+      ],
+      "LocatedCities": [],
+      "SocialMediaURLs": []
+    },
+    {
+      "RestaurantID": "Restaurant_A15010400H_000615",
+      "RestaurantName": "東港益仔海產店",
+      "AlternateNames": [],
+      "Description": "益仔有20多年的歷史，是東港餐廳中少數沒有菜單的餐廳。海鮮都陳列在攤子上，任客人挑選。為了避免客人懷疑點選的海鮮被調包，餐廳廚房採開放式，客人可以清楚地看到廚師料理過程。  推薦菜:黑鮪魚料理",
+      "PositionLat": 22.46517,
+      "PositionLon": 120.4508,
+      "Geometry": null,
+      "CuisineClasses": [2],
+      "ServiceTimeInfo": "11:00-14:00；17:00-21:00",
+      "TrafficInfo": "",
+      "ParkingInfo": "",
+      "Facilities": [],
+      "ServiceStatus": 1,
+      "PaymentMethods": [],
+      "WebsiteUrl": "",
+      "ReservationURLs": [],
+      "MapURLs": [],
+      "SameAsURLs": [],
+      "RestaurantFeatures": [],
+      "Remarks": "",
+      "UpdateTime": "2026-11-05T00:15:05+08:00",
+      "PostalAddress": {
+        "City": "屏東縣",
+        "CityCode": "10013",
+        "Town": "東港鎮",
+        "TownCode": "10013030",
+        "ZipCode": "928",
+        "StreetAddress": "光復路3段78-3號 "
+      },
+      "Telephones": [
+        {
+          "Tel": "(08)8329139",
+          "Ext": null
+        }
+      ],
+      "Images": [],
+      "Organizations": [
+        {
+          "Name": "大鵬灣國家風景區管理處",
+          "Class": "Provider",
+          "TaxCode": null,
+          "AgencyCode": "A15010400H",
+          "URL": null,
+          "MobilePhones": [],
+          "Faxes": [],
+          "Email": null,
+          "Telephones": []
+        }
+      ],
+      "LocatedCities": [],
+      "SocialMediaURLs": []
+    },
+    {
+      "RestaurantID": "Restaurant_A15010400H_000616",
+      "RestaurantName": "佳珍海產店",
+      "AlternateNames": [],
+      "Description": "以適合魚的特質料理，在平凡中創造美味，唯有如此，才對得起老天的賜予和漁民的辛勞，這是一個船長廚師的堅持與責任。佳珍海產店的招牌為用海鮮高湯加處女蟳煲成的蟳鍋，來到時必定要嚐鮮。",
+      "PositionLat": 22.46788,
+      "PositionLon": 120.4538,
+      "Geometry": null,
+      "CuisineClasses": [2],
+      "ServiceTimeInfo": "平日10:00~14:30、17:00~21:30，假日10:00~21:30",
+      "TrafficInfo": "",
+      "ParkingInfo": "",
+      "Facilities": [],
+      "ServiceStatus": 1,
+      "PaymentMethods": [],
+      "WebsiteUrl": "",
+      "ReservationURLs": [],
+      "MapURLs": [],
+      "SameAsURLs": [],
+      "RestaurantFeatures": [],
+      "Remarks": "",
+      "UpdateTime": "2026-11-05T00:15:05+08:00",
+      "PostalAddress": {
+        "City": "屏東縣",
+        "CityCode": "10013",
+        "Town": "東港鎮",
+        "TownCode": "10013030",
+        "ZipCode": "928",
+        "StreetAddress": "光復路二段47號"
+      },
+      "Telephones": [
+        {
+          "Tel": "(08)8354898",
+          "Ext": null
+        }
+      ],
+      "Images": [],
+      "Organizations": [
+        {
+          "Name": "大鵬灣國家風景區管理處",
+          "Class": "Provider",
+          "TaxCode": null,
+          "AgencyCode": "A15010400H",
+          "URL": null,
+          "MobilePhones": [],
+          "Faxes": [],
+          "Email": null,
+          "Telephones": []
+        }
+      ],
+      "LocatedCities": [],
+      "SocialMediaURLs": []
+    },
+    {
+      "RestaurantID": "Restaurant_A15010400H_000617",
+      "RestaurantName": "東昇餐廳",
+      "AlternateNames": [],
+      "Description": "東昇餐廳所有的食材，不論是魚、蝦、蟹皆使用東港當地最新鮮的海產或水產，要讓來東港的遊客們可以品嚐到最道地的東港海鮮，每道道上桌的菜色，都是經過廚師的精心製作與調理！",
+      "PositionLat": 22.46749,
+      "PositionLon": 120.4531,
+      "Geometry": null,
+      "CuisineClasses": [2],
+      "ServiceTimeInfo": "11:00-14:30；17:00-20:30",
+      "TrafficInfo": "",
+      "ParkingInfo": "",
+      "Facilities": [],
+      "ServiceStatus": 1,
+      "PaymentMethods": [],
+      "WebsiteUrl": "",
+      "ReservationURLs": [],
+      "MapURLs": [],
+      "SameAsURLs": [],
+      "RestaurantFeatures": [],
+      "Remarks": "",
+      "UpdateTime": "2026-11-05T00:15:05+08:00",
+      "PostalAddress": {
+        "City": "屏東縣",
+        "CityCode": "10013",
+        "Town": "東港鎮",
+        "TownCode": "10013030",
+        "ZipCode": "928",
+        "StreetAddress": " 光復路二段66號"
+      },
+      "Telephones": [
+        {
+          "Tel": "(08)8323112",
+          "Ext": null
+        }
+      ],
+      "Images": [],
+      "Organizations": [
+        {
+          "Name": "大鵬灣國家風景區管理處",
+          "Class": "Provider",
+          "TaxCode": null,
+          "AgencyCode": "A15010400H",
+          "URL": null,
+          "MobilePhones": [],
+          "Faxes": [],
+          "Email": null,
+          "Telephones": []
+        }
+      ],
+      "LocatedCities": [],
+      "SocialMediaURLs": []
+    },
+    {
+      "RestaurantID": "Restaurant_A15010400H_000618",
+      "RestaurantName": "張家食堂",
+      "AlternateNames": [],
+      "Description": "展現道地東港美食精髓，是張家食堂的堅持，完全不隨世俗流行，所以在張家食堂看不到陽澄湖的大閘蟹，見不著加拿大的龍蝦及日本帝王蟹等外來食材。因為採用東港當令的海鮮特產及本地食材精心烹調，讓民眾享受在地的海鮮，以美味記憶東港的印象。黑鮪魚季時生意尤其好。",
+      "PositionLat": 22.46745,
+      "PositionLon": 120.4536,
+      "Geometry": null,
+      "CuisineClasses": [2],
+      "ServiceTimeInfo": "11:00-14:30；17:30-21:00",
+      "TrafficInfo": "",
+      "ParkingInfo": "",
+      "Facilities": [],
+      "ServiceStatus": 1,
+      "PaymentMethods": [],
+      "WebsiteUrl": "",
+      "ReservationURLs": [],
+      "MapURLs": [],
+      "SameAsURLs": [],
+      "RestaurantFeatures": [],
+      "Remarks": "",
+      "UpdateTime": "2026-11-05T00:15:05+08:00",
+      "PostalAddress": {
+        "City": "屏東縣",
+        "CityCode": "10013",
+        "Town": "東港鎮",
+        "TownCode": "10013030",
+        "ZipCode": "928",
+        "StreetAddress": "沿海路157號 "
+      },
+      "Telephones": [
+        {
+          "Tel": "(08)8337251",
+          "Ext": null
+        }
+      ],
+      "Images": [],
+      "Organizations": [
+        {
+          "Name": "大鵬灣國家風景區管理處",
+          "Class": "Provider",
+          "TaxCode": null,
+          "AgencyCode": "A15010400H",
+          "URL": null,
+          "MobilePhones": [],
+          "Faxes": [],
+          "Email": null,
+          "Telephones": []
+        }
+      ],
+      "LocatedCities": [],
+      "SocialMediaURLs": []
+    },
+    {
+      "RestaurantID": "Restaurant_A15010400H_000619",
+      "RestaurantName": "好彩頭海鮮餐廳",
+      "AlternateNames": [],
+      "Description": "本餐廳是東港數一數二的老字號，鄰近華僑市場，廚師挑魚貨的經驗可說是一極棒。主廚採用台式、川味及廣東等多樣料理技法及調味手路，為食材創造出更多讓人回味的驚喜。堅強的廚師群，用料實在，打破海鮮單一料理手法的陽春感，多樣的廚藝總吸引饕客前往大啖美食。",
+      "PositionLat": 22.46743,
+      "PositionLon": 120.4456,
+      "Geometry": null,
+      "CuisineClasses": [2],
+      "ServiceTimeInfo": "9:00-21:00",
+      "TrafficInfo": "",
+      "ParkingInfo": "",
+      "Facilities": [],
+      "ServiceStatus": 1,
+      "PaymentMethods": [],
+      "WebsiteUrl": "",
+      "ReservationURLs": [],
+      "MapURLs": [],
+      "SameAsURLs": [],
+      "RestaurantFeatures": [],
+      "Remarks": "",
+      "UpdateTime": "2026-11-05T00:15:05+08:00",
+      "PostalAddress": {
+        "City": "屏東縣",
+        "CityCode": "10013",
+        "Town": "東港鎮",
+        "TownCode": "10013030",
+        "ZipCode": "928",
+        "StreetAddress": "新生三路236號"
+      },
+      "Telephones": [
+        {
+          "Tel": "(08)8331455",
+          "Ext": null
+        }
+      ],
+      "Images": [],
+      "Organizations": [
+        {
+          "Name": "大鵬灣國家風景區管理處",
+          "Class": "Provider",
+          "TaxCode": null,
+          "AgencyCode": "A15010400H",
+          "URL": null,
+          "MobilePhones": [],
+          "Faxes": [],
+          "Email": null,
+          "Telephones": []
+        }
+      ],
+      "LocatedCities": [],
+      "SocialMediaURLs": []
+    },
+    {
+      "RestaurantID": "Restaurant_A15010400H_000620",
+      "RestaurantName": "阿榮坊海鮮餐廳",
+      "AlternateNames": [],
+      "Description": "期待 用最講究的料理之心，帶給訪客在地海鮮的美味體驗。",
+      "PositionLat": 22.46895,
+      "PositionLon": 120.4558,
+      "Geometry": null,
+      "CuisineClasses": [2],
+      "ServiceTimeInfo": "10:00-14:30；17:00-22:00",
+      "TrafficInfo": "",
+      "ParkingInfo": "",
+      "Facilities": [],
+      "ServiceStatus": 1,
+      "PaymentMethods": [],
+      "WebsiteUrl": "",
+      "ReservationURLs": [],
+      "MapURLs": [],
+      "SameAsURLs": [],
+      "RestaurantFeatures": [],
+      "Remarks": "",
+      "UpdateTime": "2026-11-05T00:15:05+08:00",
+      "PostalAddress": {
+        "City": "屏東縣",
+        "CityCode": "10013",
+        "Town": "東港鎮",
+        "TownCode": "10013030",
+        "ZipCode": "928",
+        "StreetAddress": "光復路一段399號"
+      },
+      "Telephones": [
+        {
+          "Tel": "(08)8330931",
+          "Ext": null
+        }
+      ],
+      "Images": [],
+      "Organizations": [
+        {
+          "Name": "大鵬灣國家風景區管理處",
+          "Class": "Provider",
+          "TaxCode": null,
+          "AgencyCode": "A15010400H",
+          "URL": null,
+          "MobilePhones": [],
+          "Faxes": [],
+          "Email": null,
+          "Telephones": []
+        }
+      ],
+      "LocatedCities": [],
+      "SocialMediaURLs": []
+    },
+    {
+      "RestaurantID": "Restaurant_A15010400H_000622",
+      "RestaurantName": "國珍平價海鮮棧",
+      "AlternateNames": [],
+      "Description": "國珍平價海鮮棧，所有的食材皆使用東港當地最新鮮的海產或水產，不論是魚、蝦、蟹皆有；老闆堅持使用東港特有海產食材，就是要讓來東港的遊客們可以品嚐到最道地的東港海鮮，包含東港三寶(黑鮪魚、櫻花蝦、油魚子)，每道道上桌的菜色，都是經過廚師的精心製作與調理，絕對會讓您吃的到海鮮特有的鮮甜口感以及獨特風味。歡迎您的蒞臨以及品嚐!!",
+      "PositionLat": 22.46525,
+      "PositionLon": 120.4513,
+      "Geometry": null,
+      "CuisineClasses": [2],
+      "ServiceTimeInfo": "09:30-21:00",
+      "TrafficInfo": "",
+      "ParkingInfo": "",
+      "Facilities": [],
+      "ServiceStatus": 1,
+      "PaymentMethods": [],
+      "WebsiteUrl": "",
+      "ReservationURLs": [],
+      "MapURLs": [],
+      "SameAsURLs": [],
+      "RestaurantFeatures": [],
+      "Remarks": "",
+      "UpdateTime": "2026-11-05T00:15:05+08:00",
+      "PostalAddress": {
+        "City": "屏東縣",
+        "CityCode": "10013",
+        "Town": "東港鎮",
+        "TownCode": "10013030",
+        "ZipCode": "928",
+        "StreetAddress": "光復路三段96號"
+      },
+      "Telephones": [
+        {
+          "Tel": "(08)8310592",
+          "Ext": null
+        }
+      ],
+      "Images": [],
+      "Organizations": [
+        {
+          "Name": "大鵬灣國家風景區管理處",
+          "Class": "Provider",
+          "TaxCode": null,
+          "AgencyCode": "A15010400H",
+          "URL": null,
+          "MobilePhones": [],
+          "Faxes": [],
+          "Email": null,
+          "Telephones": []
+        }
+      ],
+      "LocatedCities": [],
+      "SocialMediaURLs": []
+    }
+  ]
+}

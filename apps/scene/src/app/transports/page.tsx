@@ -2,11 +2,10 @@ import { Box, Flex, Grid, SimpleGrid } from '@chakra-ui/react';
 import type { Metadata } from 'next';
 
 import Background from '@/components/background';
-import Banner from '@/components/banner';
 import GridCard from '@/components/grid-card';
 import Layout from '@/components/layout/layout';
+import SectionBanner from '@/components/section-banner';
 import ThemeCard from '@/components/theme-card';
-import { TRANSPORTS_PAGE_PROPS } from '@/constants/page-props';
 import background from '@/static/background/transports.png';
 import wordOne from '@/static/background/transports-1.png';
 import wordTwo from '@/static/background/transports-2.png';
@@ -18,12 +17,10 @@ export const metadata: Metadata = {
   },
 };
 
-const PAGE_PROPS = TRANSPORTS_PAGE_PROPS;
-
 const TransportsPage = () => (
-  <Layout {...PAGE_PROPS}>
+  <Layout colorPalette="transports">
     <Background
-      bgColor={PAGE_PROPS.gradientColor}
+      bgColor="colorPalette.muted"
       image={background}
       name="交通"
       wordOne={wordOne}
@@ -74,17 +71,12 @@ const TransportsPage = () => (
     </Background>
     <Box
       bgGradient="to-b"
-      gradientFrom={PAGE_PROPS.gradientColor}
+      gradientFrom="colorPalette.muted"
       gradientTo="white"
       h={['90px', '280px', '360px']}
     />
     <Flex bg="white" flexDir="column">
-      <Banner
-        hideButton
-        href="/scenes"
-        mainColor={PAGE_PROPS.mainColor}
-        title="高速公路"
-      />
+      <SectionBanner title="高速公路" />
       <SimpleGrid columns={[1, 2, 3]} gap={6} mx="8">
         <ThemeCard
           href="https://168.thb.gov.tw/"
@@ -105,12 +97,7 @@ const TransportsPage = () => (
           theme="公路客運乘車資訊"
         />
       </SimpleGrid>
-      <Banner
-        hideButton
-        href="/scenes"
-        mainColor={PAGE_PROPS.mainColor}
-        title="交通租賃"
-      />
+      <SectionBanner title="交通租賃" />
 
       <SimpleGrid columns={[1, 2, 3]} gap={6} mx="8">
         <ThemeCard

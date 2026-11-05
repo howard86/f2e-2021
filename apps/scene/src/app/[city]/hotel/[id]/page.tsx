@@ -4,7 +4,6 @@ import { notFound } from 'next/navigation';
 import { cache } from 'react';
 
 import Layout from '@/components/layout/layout';
-import { HOTELS_PAGE_PROPS } from '@/constants/page-props';
 import { tourismService } from '@/services/tdx';
 import HotelView from './view';
 
@@ -60,7 +59,7 @@ const HotelPage = async ({ params }: { params: Promise<HotelPageParams> }) => {
   }
 
   return (
-    <Layout {...HOTELS_PAGE_PROPS}>
+    <Layout colorPalette="hotels">
       <HotelView hotel={hotel} />
     </Layout>
   );

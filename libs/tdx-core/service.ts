@@ -149,7 +149,9 @@ export class TdxService {
     return {
       auth: () => this.getAccessToken(),
       baseUrl: `${this.baseUrl}/api/${server}`,
-      fetch: fetchWithRateLimitRetry,
+      // Bun's `typeof fetch` adds `preconnect`, which a wrapper never has;
+      // the call signature is what the generated clients use.
+      fetch: fetchWithRateLimitRetry as typeof fetch,
     };
   }
 

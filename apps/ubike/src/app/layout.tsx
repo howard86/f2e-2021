@@ -9,7 +9,7 @@ import Providers from './providers';
 const roboto = Roboto({
   display: 'swap',
   subsets: ['latin'],
-  variable: '--font-roboto',
+  variable: '--font-body',
   weight: ['400', '500', '700'],
 });
 

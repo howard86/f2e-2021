@@ -1,3 +1,5 @@
+'use client';
+
 import {
   createToaster,
   Portal,
@@ -9,14 +11,8 @@ import {
 import { useCallback } from 'react';
 
 interface AppToastOptions extends Omit<ToastOptions, 'type'> {
-  isClosable?: boolean;
   status?: ToastOptions['type'];
 }
-
-const DEFAULT_OPTIONS: AppToastOptions = {
-  isClosable: true,
-  status: 'success',
-};
 
 const toaster = createToaster({ placement: 'bottom' });
 
@@ -24,9 +20,9 @@ export const AppToaster = () => (
   <Portal>
     <Toaster toaster={toaster}>
       {(toast) => (
-        <Toast.Root borderLeftWidth="4px">
+        <Toast.Root borderLeftWidth="4px" maxW="md">
           <Toast.Indicator />
-          <Stack flex="1" gap="1">
+          <Stack flex="1" gap="1" maxW="full">
             {Boolean(toast.title) && <Toast.Title>{toast.title}</Toast.Title>}
             {Boolean(toast.description) && (
               <Toast.Description>{toast.description}</Toast.Description>
@@ -39,21 +35,10 @@ export const AppToaster = () => (
   </Portal>
 );
 
-const useAppToast = (options: AppToastOptions = DEFAULT_OPTIONS) =>
+/** Shows a closable toast; `status` defaults to success. */
+export const useAppToast = () =>
   useCallback(
-    (nextOptions: AppToastOptions = {}) => {
-      const { status, isClosable, ...toastOptions } = {
-        ...options,
-        ...nextOptions,
-      };
-
-      return toaster.create({
-        ...toastOptions,
-        closable: isClosable,
-        type: status,
-      });
-    },
-    [options],
+    ({ status = 'success', closable = true, ...options }: AppToastOptions) =>
+      toaster.create({ ...options, closable, type: status }),
+    [],
   );
-
-export default useAppToast;

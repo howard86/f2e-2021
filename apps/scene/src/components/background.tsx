@@ -35,7 +35,8 @@ const Background = ({
     centerContent
     h="100vh"
     maxH={[589, 700]}
-    maxW="container.lg"
+    maxW="full"
+    px="0"
     {...props}
   >
     <Box
@@ -62,37 +63,39 @@ const Background = ({
         }}
       />
     </Box>
-    <Logo
-      color="whiteAlpha.700"
-      h="auto"
-      maxH="117"
-      maxW="152"
-      my={[8, 12]}
-      w="30%"
-    />
-    <SimpleGrid columns={2} gap={[2, 4, 8]} mx="10%">
-      <Image
-        alt={wordOneAlt}
-        placeholder="blur"
-        priority
-        src={wordOne}
-        style={{
-          height: 'auto',
-          maxWidth: '100%',
-        }}
+    <Container centerContent maxW="5xl">
+      <Logo
+        color="whiteAlpha.700"
+        h="auto"
+        maxH="117"
+        maxW="152"
+        my={[8, 12]}
+        w="30%"
       />
-      <Image
-        alt={wordTwoAlt}
-        placeholder="blur"
-        priority
-        src={wordTwo}
-        style={{
-          height: 'auto',
-          maxWidth: '100%',
-        }}
-      />
-    </SimpleGrid>
-    {children}
+      <SimpleGrid columns={2} gap={[2, 4, 8]} mx="10%">
+        <Image
+          alt={wordOneAlt}
+          placeholder="blur"
+          priority
+          src={wordOne}
+          style={{
+            height: 'auto',
+            maxWidth: '100%',
+          }}
+        />
+        <Image
+          alt={wordTwoAlt}
+          placeholder="blur"
+          priority
+          src={wordTwo}
+          style={{
+            height: 'auto',
+            maxWidth: '100%',
+          }}
+        />
+      </SimpleGrid>
+      {children}
+    </Container>
   </Container>
 );
 

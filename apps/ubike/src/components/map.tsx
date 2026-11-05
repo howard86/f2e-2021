@@ -9,6 +9,7 @@ import {
   useDisclosure,
   VStack,
 } from '@chakra-ui/react';
+import { useAppToast } from '@f2e/ui/toast';
 import type mapboxgl from 'mapbox-gl';
 import Image from 'next/image';
 import { useEffect, useRef, useState } from 'react';
@@ -17,7 +18,6 @@ import { IoLocate } from 'react-icons/io5';
 import { MdClose, MdOutlinePlace } from 'react-icons/md';
 import BikeIcon from '@/components/icons/bike-icon';
 import DockIcon from '@/components/icons/dock-icon';
-import useAppToast from '@/hooks/use-app-toast';
 import background from '@/map.jpg';
 import { useLazyGetStationsByCoordinateQuery } from '@/services/local';
 import type { Coordinate } from '@/services/mapbox';
