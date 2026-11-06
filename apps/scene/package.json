@@ -28,7 +28,8 @@
     "dev": "bun --bun next dev",
     "start": "bun --bun next start",
     "test": "bun test",
-    "typecheck": "bun check"
+    "typecheck": "bun check",
+    "update-transport-snapshot": "bun scripts/update-transport-snapshot.ts"
   },
   "dependencies": {
     "@chakra-ui/react": "3.38.0",

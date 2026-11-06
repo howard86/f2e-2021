@@ -1,39 +1,33 @@
-// TDX-backed transport data for the /transports pages and place details.
-// TDX allows 5 requests a minute, so every dataset is cached across requests
-// with unstable_cache: static lists for a day or a week (national ones are
-// fetched once and shared by all cities), notices for an hour. Only trimmed,
-// mapped values are cached (Vercel drops entries over 2 MB). A fetch failure
-// throws inside the cached function, so it is never cached, and is caught
-// outside: the section degrades instead of the page.
+// Transport data for the /transports pages and place details, in two parts.
+// Snapshot (no TDX call at request time): THSR, TRA and metro stations, lines
+// and fares, plus per-city cycling lengths, read from
+// src/data/transport-snapshot.json. They barely change; refresh the file with
+// `bun run update-transport-snapshot` (paced, ~8 minutes) and commit it.
+// Live (TDX allows 5 requests a minute): bus routes and bike stations are
+// cached for a day per city, bus news per city and the national TRA and THSR
+// alerts for an hour, with unstable_cache. Only trimmed, mapped values are
+// cached (Vercel drops entries over 2 MB). A fetch failure throws inside the
+// cached function, so it is never cached, and is caught outside: the section
+// degrades instead of the page.
 import type { City } from '@f2e/tdx-core';
-import type { MetroAlertSystem, MetroSystem } from '@f2e/tdx-rail';
 import { unstable_cache } from 'next/cache';
 import { cache } from 'react';
 import {
-  METRO_SYSTEM_NAMES,
   metroSystemsOf,
   supportsBikeData,
   supportsBusNews,
-  supportsCyclingData,
 } from '@/constants/transports';
 import { bikeService, busService, railService } from '@/services/tdx';
 import {
   type BikeStationRow,
   bikeSystemsOf,
-  cyclingKmOf,
   mergeNotices,
   nearestStations,
-  type TraStationRow,
   toBikeStationRows,
   toBusSummary,
-  toMetroLines,
-  toMetroStations,
   toNotices,
-  toThsrFares,
-  toThsrStations,
-  toThsrTimetableSummary,
-  toTraStations,
 } from '@/services/transport-mappers';
+import { transportSnapshot } from '@/services/transport-snapshot';
 import type {
   BikeSummary,
   BusSummary,
@@ -47,20 +41,8 @@ import type {
 
 const ONE_HOUR = 60 * 60;
 const ONE_DAY = 24 * ONE_HOUR;
-const ONE_WEEK = 7 * ONE_DAY;
 const MAX_ROWS = 5000;
 const NO_FILTER = { top: MAX_ROWS };
-
-interface MetroData {
-  lines: MetroLineSummary[];
-  stations: StationPoint[];
-}
-
-interface ThsrTimetable {
-  firstDeparture?: string;
-  lastDeparture?: string;
-  trainCount: number;
-}
 
 // --- cached datasets (primitive arguments only: they are the cache key) -----
 
@@ -87,64 +69,6 @@ const cachedBikeStations = unstable_cache(
     ),
   ['transports:bike-stations'],
   { revalidate: ONE_DAY },
-);
-
-const cachedCyclingKm = unstable_cache(
-  async (city: string): Promise<number> =>
-    cyclingKmOf(
-      await bikeService.getCyclingShapeByCity(city as City, {
-        select: 'CyclingLength',
-        ...NO_FILTER,
-      }),
-    ),
-  ['transports:cycling-km'],
-  { revalidate: ONE_DAY },
-);
-
-const cachedThsrStations = unstable_cache(
-  async (): Promise<StationPoint[]> =>
-    toThsrStations(await railService.getThsrStations()),
-  ['transports:thsr-stations'],
-  { revalidate: ONE_WEEK },
-);
-
-const cachedThsrFares = unstable_cache(
-  async () => toThsrFares(await railService.getThsrODFares(NO_FILTER)),
-  ['transports:thsr-fares'],
-  { revalidate: ONE_WEEK },
-);
-
-const cachedThsrTimetable = unstable_cache(
-  async (): Promise<ThsrTimetable> =>
-    toThsrTimetableSummary(
-      await railService.getThsrGeneralTimetable(NO_FILTER),
-    ),
-  ['transports:thsr-timetable'],
-  { revalidate: ONE_WEEK },
-);
-
-const cachedTraStations = unstable_cache(
-  async (): Promise<TraStationRow[]> =>
-    toTraStations(await railService.getTraStations()),
-  ['transports:tra-stations'],
-  { revalidate: ONE_WEEK },
-);
-
-const cachedMetro = unstable_cache(
-  async (system: string): Promise<MetroData> => {
-    const name = METRO_SYSTEM_NAMES[system as MetroSystem];
-    const [lines, stations] = await Promise.all([
-      railService.getMetroLines(system as MetroSystem, NO_FILTER),
-      railService.getMetroStations(system as MetroSystem, NO_FILTER),
-    ]);
-
-    return {
-      lines: toMetroLines(name, lines, stations),
-      stations: toMetroStations(name, system, stations),
-    };
-  },
-  ['transports:metro'],
-  { revalidate: ONE_WEEK },
 );
 
 const cachedBusNews = unstable_cache(
@@ -201,16 +125,6 @@ const cachedThsrAlerts = unstable_cache(
   { revalidate: ONE_HOUR },
 );
 
-const cachedMetroAlerts = unstable_cache(
-  async (system: string): Promise<ServiceNotice[]> =>
-    toNotices(
-      METRO_SYSTEM_NAMES[system as MetroSystem],
-      alertItems(await railService.getMetroAlerts(system as MetroAlertSystem)),
-    ),
-  ['transports:metro-alerts'],
-  { revalidate: ONE_HOUR },
-);
-
 // --- failure handling --------------------------------------------------------
 
 const attempt = async <T>(label: string, run: () => Promise<T>) => {
@@ -229,24 +143,6 @@ const readBikeStations = cache((city: City) =>
     : Promise.resolve(undefined),
 );
 
-const readTraStations = cache(() =>
-  attempt('tra stations', () => cachedTraStations()),
-);
-
-const readThsrStations = cache(() =>
-  attempt('thsr stations', () => cachedThsrStations()),
-);
-
-const readMetro = cache(async (city: City): Promise<MetroData[]> => {
-  const results = await Promise.all(
-    metroSystemsOf(city).map((system) =>
-      attempt(`metro ${system}`, () => cachedMetro(system)),
-    ),
-  );
-
-  return results.filter((data): data is MetroData => data !== undefined);
-});
-
 // --- public API -----------------------------------------------------------------
 
 export const getBusSummary = cache(
@@ -256,21 +152,15 @@ export const getBusSummary = cache(
 
 export const getBikeSummary = cache(
   async (city: City): Promise<BikeSummary | undefined> => {
-    const [stations, cyclingKm] = await Promise.all([
-      readBikeStations(city),
-      supportsCyclingData(city)
-        ? attempt(`cycling ${city}`, () => cachedCyclingKm(city))
-        : undefined,
-    ]);
+    const stations = await readBikeStations(city);
 
     // Stations are the headline number: without them there is no summary.
-    // Missing cycling shapes only zero out the distance.
     if (!stations) {
       return undefined;
     }
 
     return {
-      cyclingKm: cyclingKm ?? 0,
+      cyclingKm: transportSnapshot.cyclingKm[city] ?? 0,
       stationCount: stations.length,
       systems: bikeSystemsOf(stations),
     };
@@ -280,34 +170,24 @@ export const getBikeSummary = cache(
 /** Lines of every metro system that serves the city. */
 export const getMetroLines = cache(
   async (city: City): Promise<MetroLineSummary[]> =>
-    (await readMetro(city)).flatMap((data) => data.lines),
+    metroSystemsOf(city).flatMap(
+      (system) => transportSnapshot.metro[system]?.lines ?? [],
+    ),
 );
 
 export const getThsrOverview = cache(
-  async (): Promise<ThsrOverview | undefined> => {
-    const [stations, fares, timetable] = await Promise.all([
-      readThsrStations(),
-      attempt('thsr fares', () => cachedThsrFares()),
-      attempt('thsr timetable', () => cachedThsrTimetable()),
-    ]);
-
-    if (!(stations && fares && timetable)) {
-      return undefined;
-    }
-
-    return { fares, stations, ...timetable };
-  },
+  async (): Promise<ThsrOverview | undefined> => transportSnapshot.thsr,
 );
 
 /** TRA stations located in the city. */
 export const getTraStations = cache(
   async (city: City): Promise<StationPoint[]> =>
-    ((await readTraStations()) ?? [])
+    transportSnapshot.traStations
       .filter((station) => station.city === city)
       .map(({ city: _city, ...station }) => station),
 );
 
-/** Bus news for the city plus TRA, THSR and the city's metro alerts. */
+/** Bus news for the city plus the national TRA and THSR alerts. */
 export const getServiceNotices = cache(
   async (city: City): Promise<ServiceNotice[]> => {
     const groups = await Promise.all([
@@ -316,11 +196,6 @@ export const getServiceNotices = cache(
         : undefined,
       attempt('tra alerts', () => cachedTraAlerts()),
       attempt('thsr alerts', () => cachedThsrAlerts()),
-      ...metroSystemsOf(city)
-        .filter((system) => system !== 'NTMC')
-        .map((system) =>
-          attempt(`metro alerts ${system}`, () => cachedMetroAlerts(system)),
-        ),
     ]);
 
     return mergeNotices(groups.filter((group) => group !== undefined));
@@ -333,20 +208,17 @@ export const getNearestStations = async (
   city: City,
   maxKm = 3,
 ): Promise<NearestStation[]> => {
-  const [tra, thsr, bike, metro] = await Promise.all([
-    readTraStations(),
-    readThsrStations(),
-    readBikeStations(city),
-    readMetro(city),
-  ]);
+  const bike = await readBikeStations(city);
 
   return nearestStations(
     position,
     [
-      ...(tra ?? []),
-      ...(thsr ?? []),
+      ...transportSnapshot.traStations,
+      ...transportSnapshot.thsr.stations,
       ...(bike ?? []),
-      ...metro.flatMap((data) => data.stations),
+      ...metroSystemsOf(city).flatMap(
+        (system) => transportSnapshot.metro[system]?.stations ?? [],
+      ),
     ],
     maxKm,
   );
