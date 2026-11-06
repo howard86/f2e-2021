@@ -1,4 +1,7 @@
+import { BikeService } from '@f2e/tdx-bike';
+import { BusService } from '@f2e/tdx-bus';
 import { resolveTdxCredentials, TdxService } from '@f2e/tdx-core';
+import { RailService } from '@f2e/tdx-rail';
 import { TourismService } from '@f2e/tdx-tourism';
 
 // TDX allows 5 requests a minute per key. A build can wait out the window,
@@ -18,3 +21,10 @@ const service = new TdxService(
 );
 
 export const tourismService = new TourismService(service);
+
+// One TdxService (one token, one rate-limit pacer) behind every client.
+export const busService = new BusService(service);
+
+export const bikeService = new BikeService(service);
+
+export const railService = new RailService(service);

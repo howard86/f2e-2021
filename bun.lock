@@ -50,7 +50,10 @@
         "@emotion/cache": "^11",
         "@emotion/react": "^11.14.0",
         "@f2e/browser-cache": "workspace:*",
+        "@f2e/tdx-bike": "workspace:*",
+        "@f2e/tdx-bus": "workspace:*",
         "@f2e/tdx-core": "workspace:*",
+        "@f2e/tdx-rail": "workspace:*",
         "@f2e/tdx-tourism": "workspace:*",
         "@f2e/ui": "workspace:*",
         "next": "16.4.5",
@@ -107,6 +110,13 @@
       "version": "0.1.0",
       "devDependencies": {
         "@hey-api/openapi-ts": "0.99.0",
+      },
+    },
+    "libs/tdx-rail": {
+      "name": "@f2e/tdx-rail",
+      "version": "0.1.0",
+      "dependencies": {
+        "@f2e/tdx-core": "workspace:*",
       },
     },
     "libs/tdx-tourism": {
@@ -349,6 +359,8 @@
     "@f2e/tdx-bus": ["@f2e/tdx-bus@workspace:libs/tdx-bus"],
 
     "@f2e/tdx-core": ["@f2e/tdx-core@workspace:libs/tdx-core"],
+
+    "@f2e/tdx-rail": ["@f2e/tdx-rail@workspace:libs/tdx-rail"],
 
     "@f2e/tdx-tourism": ["@f2e/tdx-tourism@workspace:libs/tdx-tourism"],
 
