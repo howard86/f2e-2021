@@ -84,6 +84,14 @@ const CityTransportsPage = async ({ params }: CityTransportsPageProps) => {
           <Breadcrumb.Root>
             <Breadcrumb.List flexWrap="wrap">
               <Breadcrumb.Item>
+                <RouteLink as={Breadcrumb.Link} href="/">
+                  首頁
+                </RouteLink>
+              </Breadcrumb.Item>
+              <Breadcrumb.Separator>
+                <BiChevronRight />
+              </Breadcrumb.Separator>
+              <Breadcrumb.Item>
                 <RouteLink as={Breadcrumb.Link} href="/transports">
                   交通
                 </RouteLink>
@@ -94,16 +102,15 @@ const CityTransportsPage = async ({ params }: CityTransportsPageProps) => {
               <Breadcrumb.Item>
                 <Breadcrumb.CurrentLink>{name}</Breadcrumb.CurrentLink>
               </Breadcrumb.Item>
-              <Breadcrumb.Separator>
-                <BiChevronRight />
-              </Breadcrumb.Separator>
-              <Breadcrumb.Item>
-                <RouteLink as={Breadcrumb.Link} href={`/${city}`}>
-                  {name}景點與美食
-                </RouteLink>
-              </Breadcrumb.Item>
             </Breadcrumb.List>
           </Breadcrumb.Root>
+          <RouteLink
+            color="colorPalette.fg"
+            href={`/${city}`}
+            textStyle="body-sm"
+          >
+            看{name}的景點與美食 →
+          </RouteLink>
           <Suspense fallback={<SectionSkeleton />}>
             <BusSection city={city} />
           </Suspense>
