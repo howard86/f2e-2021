@@ -39,6 +39,7 @@ import {
   serializeJsonLd,
   shouldCollapse,
 } from './helpers';
+import NearestStations from './nearest-stations';
 import SaveButton from './save-button';
 import ShareButton from './share-button';
 
@@ -209,7 +210,12 @@ const DetailView = ({ detail }: { detail: PlaceDetail }) => {
             </Stack>
           ))}
         </Stack>
-        <FactCard detail={detail} />
+        <Stack gap="8" minW="0">
+          <FactCard detail={detail} />
+          <Suspense fallback={null}>
+            <NearestStations detail={detail} />
+          </Suspense>
+        </Stack>
       </Grid>
 
       <Box as="section" mt="16">

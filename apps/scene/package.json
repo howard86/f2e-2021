@@ -28,14 +28,18 @@
     "dev": "bun --bun next dev",
     "start": "bun --bun next start",
     "test": "bun test",
-    "typecheck": "bun check"
+    "typecheck": "bun check",
+    "update-transport-snapshot": "bun scripts/update-transport-snapshot.ts"
   },
   "dependencies": {
     "@chakra-ui/react": "3.38.0",
     "@emotion/cache": "^11",
     "@emotion/react": "^11.14.0",
     "@f2e/browser-cache": "workspace:*",
+    "@f2e/tdx-bike": "workspace:*",
+    "@f2e/tdx-bus": "workspace:*",
     "@f2e/tdx-core": "workspace:*",
+    "@f2e/tdx-rail": "workspace:*",
     "@f2e/tdx-tourism": "workspace:*",
     "@f2e/ui": "workspace:*",
     "next": "16.4.5",

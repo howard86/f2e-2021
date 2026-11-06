@@ -27,6 +27,7 @@ const sitemap = (): MetadataRoute.Sitemap => {
   return [
     entry('/', 1),
     entry('/transports', 0.3, 'monthly'),
+    ...Cities.map((city) => entry(`/transports/${city}`, 0.3, 'weekly')),
     ...Cities.map((city) => entry(`/${city}`, 0.8)),
     ...LIST_TYPES.flatMap((type) => [
       entry(listPath({ type }), 0.7),

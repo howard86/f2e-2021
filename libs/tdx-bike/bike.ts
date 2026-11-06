@@ -18,7 +18,10 @@ import {
   createConfig as createAdvancedConfig,
 } from './generated/bike-advanced-v2/client';
 import type { PtxServiceDtoBikeSpecificationV2BikeShape } from './generated/bike-basic-v2';
-import { cyclingApiShape2182 } from './generated/bike-basic-v2';
+import {
+  bikeApiStation2180,
+  cyclingApiShape2182,
+} from './generated/bike-basic-v2';
 import {
   createClient as createBasicClient,
   createConfig as createBasicConfig,
@@ -73,5 +76,16 @@ export class BikeService {
     });
 
     return data as CyclingShape[];
+  }
+
+  async getBikeStationsByCity(city: City, param: ApiParam = {}) {
+    const { data } = await bikeApiStation2180({
+      client: this.basic,
+      path: { City: city as never },
+      query: toODataQuery(param),
+      throwOnError: true,
+    });
+
+    return data as BikeStation[];
   }
 }

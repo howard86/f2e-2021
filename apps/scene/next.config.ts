@@ -62,7 +62,10 @@ const config: NextConfig = {
   staticPageGenerationTimeout: 600,
   transpilePackages: [
     '@f2e/browser-cache',
+    '@f2e/tdx-bike',
+    '@f2e/tdx-bus',
     '@f2e/tdx-core',
+    '@f2e/tdx-rail',
     '@f2e/tdx-tourism',
     '@f2e/ui',
   ],

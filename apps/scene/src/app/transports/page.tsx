@@ -8,8 +8,12 @@ import {
 } from '@chakra-ui/react';
 import { ExternalLink } from '@f2e/ui/links';
 import type { Metadata } from 'next';
+import { Suspense } from 'react';
 
 import Layout from '@/components/layout/layout';
+import CityPicker from '@/components/transports/city-picker';
+import { SectionSkeleton } from '@/components/transports/section-state';
+import ThsrSection from '@/components/transports/thsr-section';
 import PageHero from '@/components/ui/page-hero';
 import SectionHeading from '@/components/ui/section-heading';
 import { backgroundImage, OPEN_GRAPH_BASE } from '@/lib/seo';
@@ -17,7 +21,12 @@ import background from '@/static/background/transports.png';
 import wordOne from '@/static/background/transports-1.png';
 import wordTwo from '@/static/background/transports-2.png';
 
-const DESCRIPTION = '火車、高鐵、捷運、公車、公路路況與租賃的官方資訊入口。';
+// The THSR datasets are cached for a week, which would otherwise become this
+// page's lifetime too: a THSR section degraded at build would stay for a week.
+export const revalidate = 3600;
+
+const DESCRIPTION =
+  '各縣市公車、自行車、捷運與高鐵資訊，以及公路路況與租賃的官方入口。';
 
 export const metadata: Metadata = {
   alternates: { canonical: '/transports' },
@@ -46,6 +55,21 @@ const GROUPS: LinkGroup[] = [
   {
     items: [
       {
+        description: '公車動態、路線與到站時間（全臺各縣市）',
+        href: 'https://bus.howardism.dev',
+        title: '公車動態',
+      },
+      {
+        description: 'YouBike 站點與車輛、空位即時資訊',
+        href: 'https://ubike.howardism.dev',
+        title: 'YouBike 站點',
+      },
+    ],
+    title: '本站工具',
+  },
+  {
+    items: [
+      {
         description: '台鐵時刻表、訂票與車站資訊',
         href: 'https://www.railway.gov.tw/',
         title: '火車',
@@ -56,14 +80,9 @@ const GROUPS: LinkGroup[] = [
         title: '高鐵',
       },
       {
-        description: '臺北捷運路線圖、票價與營運公告',
-        href: 'https://www.metro.taipei',
-        title: '捷運',
-      },
-      {
-        description: '臺北市公車動態、路線與到站時間',
-        href: 'https://ebus.gov.taipei',
-        title: '公車',
+        description: '公路客運路線與乘車資訊',
+        href: 'https://www.taiwanbus.tw/',
+        title: '公路客運',
       },
     ],
     title: '大眾運輸',
@@ -81,9 +100,9 @@ const GROUPS: LinkGroup[] = [
         title: '高速公路路況',
       },
       {
-        description: '公路客運路線與乘車資訊',
-        href: 'https://www.taiwanbus.tw/',
-        title: '公路客運',
+        description: '交通部公路局的公路政策與服務資訊',
+        href: 'https://www.thb.gov.tw',
+        title: '公路局',
       },
     ],
     title: '公路資訊',
@@ -91,18 +110,23 @@ const GROUPS: LinkGroup[] = [
   {
     items: [
       {
-        description: '共享汽車與租車服務比較',
-        href: 'https://gogoout.com/blog/irent-zipcar-gogoout/',
+        description: '和雲行動服務 iRent 共享汽車官方網站',
+        href: 'https://www.irentcar.com.tw',
         title: '汽車',
       },
       {
-        description: '共享機車服務比較',
-        href: 'https://technews.tw/2019/12/21/three-shared-locomotive-services-comparability/',
+        description: 'WeMo Scooter 共享機車官方網站',
+        href: 'https://www.wemoscooter.com',
         title: '機車',
       },
       {
-        description: '臺北市自行車租賃與騎乘資訊',
-        href: 'https://www.dot.gov.taipei/News.aspx?n=76E4ACA9285DDACA&sms=022299092584F3D9',
+        description: 'GoShare 共享機車官方網站',
+        href: 'https://www.ridegoshare.com',
+        title: '機車（GoShare）',
+      },
+      {
+        description: 'YouBike 微笑單車租賃與騎乘資訊',
+        href: 'https://www.youbike.com.tw',
         title: '自行車',
       },
     ],
@@ -125,6 +149,15 @@ const TransportsPage = () => (
     />
     <Container maxW="6xl" py={{ base: 6, md: 10 }}>
       <Stack gap="12">
+        <Box as="section">
+          <SectionHeading title="選擇縣市" />
+          <CityPicker />
+        </Box>
+        <Box id="thsr" scrollMarginTop="24">
+          <Suspense fallback={<SectionSkeleton />}>
+            <ThsrSection />
+          </Suspense>
+        </Box>
         {GROUPS.map((group) => (
           <Box as="section" key={group.title}>
             <SectionHeading title={group.title} />

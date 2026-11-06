@@ -1,0 +1,6280 @@
+{
+  "generatedAt": "2026-11-06T03:35:45.920Z",
+  "thsr": {
+    "fares": [
+      {
+        "destinationId": "1000",
+        "originId": "0990",
+        "price": 40
+      },
+      {
+        "destinationId": "1010",
+        "originId": "0990",
+        "price": 70
+      },
+      {
+        "destinationId": "1020",
+        "originId": "0990",
+        "price": 200
+      },
+      {
+        "destinationId": "1030",
+        "originId": "0990",
+        "price": 330
+      },
+      {
+        "destinationId": "1035",
+        "originId": "0990",
+        "price": 480
+      },
+      {
+        "destinationId": "1040",
+        "originId": "0990",
+        "price": 750
+      },
+      {
+        "destinationId": "1043",
+        "originId": "0990",
+        "price": 870
+      },
+      {
+        "destinationId": "1047",
+        "originId": "0990",
+        "price": 970
+      },
+      {
+        "destinationId": "1050",
+        "originId": "0990",
+        "price": 1120
+      },
+      {
+        "destinationId": "1060",
+        "originId": "0990",
+        "price": 1390
+      },
+      {
+        "destinationId": "1070",
+        "originId": "0990",
+        "price": 1530
+      },
+      {
+        "destinationId": "0990",
+        "originId": "1000",
+        "price": 40
+      },
+      {
+        "destinationId": "1010",
+        "originId": "1000",
+        "price": 40
+      },
+      {
+        "destinationId": "1020",
+        "originId": "1000",
+        "price": 160
+      },
+      {
+        "destinationId": "1030",
+        "originId": "1000",
+        "price": 290
+      },
+      {
+        "destinationId": "1035",
+        "originId": "1000",
+        "price": 430
+      },
+      {
+        "destinationId": "1040",
+        "originId": "1000",
+        "price": 700
+      },
+      {
+        "destinationId": "1043",
+        "originId": "1000",
+        "price": 820
+      },
+      {
+        "destinationId": "1047",
+        "originId": "1000",
+        "price": 930
+      },
+      {
+        "destinationId": "1050",
+        "originId": "1000",
+        "price": 1080
+      },
+      {
+        "destinationId": "1060",
+        "originId": "1000",
+        "price": 1350
+      },
+      {
+        "destinationId": "1070",
+        "originId": "1000",
+        "price": 1490
+      },
+      {
+        "destinationId": "0990",
+        "originId": "1010",
+        "price": 70
+      },
+      {
+        "destinationId": "1000",
+        "originId": "1010",
+        "price": 40
+      },
+      {
+        "destinationId": "1020",
+        "originId": "1010",
+        "price": 130
+      },
+      {
+        "destinationId": "1030",
+        "originId": "1010",
+        "price": 260
+      },
+      {
+        "destinationId": "1035",
+        "originId": "1010",
+        "price": 400
+      },
+      {
+        "destinationId": "1040",
+        "originId": "1010",
+        "price": 670
+      },
+      {
+        "destinationId": "1043",
+        "originId": "1010",
+        "price": 790
+      },
+      {
+        "destinationId": "1047",
+        "originId": "1010",
+        "price": 900
+      },
+      {
+        "destinationId": "1050",
+        "originId": "1010",
+        "price": 1050
+      },
+      {
+        "destinationId": "1060",
+        "originId": "1010",
+        "price": 1320
+      },
+      {
+        "destinationId": "1070",
+        "originId": "1010",
+        "price": 1460
+      },
+      {
+        "destinationId": "0990",
+        "originId": "1020",
+        "price": 200
+      },
+      {
+        "destinationId": "1000",
+        "originId": "1020",
+        "price": 160
+      },
+      {
+        "destinationId": "1010",
+        "originId": "1020",
+        "price": 130
+      },
+      {
+        "destinationId": "1030",
+        "originId": "1020",
+        "price": 130
+      },
+      {
+        "destinationId": "1035",
+        "originId": "1020",
+        "price": 280
+      },
+      {
+        "destinationId": "1040",
+        "originId": "1020",
+        "price": 540
+      },
+      {
+        "destinationId": "1043",
+        "originId": "1020",
+        "price": 670
+      },
+      {
+        "destinationId": "1047",
+        "originId": "1020",
+        "price": 780
+      },
+      {
+        "destinationId": "1050",
+        "originId": "1020",
+        "price": 920
+      },
+      {
+        "destinationId": "1060",
+        "originId": "1020",
+        "price": 1190
+      },
+      {
+        "destinationId": "1070",
+        "originId": "1020",
+        "price": 1330
+      },
+      {
+        "destinationId": "0990",
+        "originId": "1030",
+        "price": 330
+      },
+      {
+        "destinationId": "1000",
+        "originId": "1030",
+        "price": 290
+      },
+      {
+        "destinationId": "1010",
+        "originId": "1030",
+        "price": 260
+      },
+      {
+        "destinationId": "1020",
+        "originId": "1030",
+        "price": 130
+      },
+      {
+        "destinationId": "1035",
+        "originId": "1030",
+        "price": 140
+      },
+      {
+        "destinationId": "1040",
+        "originId": "1030",
+        "price": 410
+      },
+      {
+        "destinationId": "1043",
+        "originId": "1030",
+        "price": 540
+      },
+      {
+        "destinationId": "1047",
+        "originId": "1030",
+        "price": 640
+      },
+      {
+        "destinationId": "1050",
+        "originId": "1030",
+        "price": 790
+      },
+      {
+        "destinationId": "1060",
+        "originId": "1030",
+        "price": 1060
+      },
+      {
+        "destinationId": "1070",
+        "originId": "1030",
+        "price": 1200
+      },
+      {
+        "destinationId": "0990",
+        "originId": "1035",
+        "price": 480
+      },
+      {
+        "destinationId": "1000",
+        "originId": "1035",
+        "price": 430
+      },
+      {
+        "destinationId": "1010",
+        "originId": "1035",
+        "price": 400
+      },
+      {
+        "destinationId": "1020",
+        "originId": "1035",
+        "price": 280
+      },
+      {
+        "destinationId": "1030",
+        "originId": "1035",
+        "price": 140
+      },
+      {
+        "destinationId": "1040",
+        "originId": "1035",
+        "price": 270
+      },
+      {
+        "destinationId": "1043",
+        "originId": "1035",
+        "price": 390
+      },
+      {
+        "destinationId": "1047",
+        "originId": "1035",
+        "price": 500
+      },
+      {
+        "destinationId": "1050",
+        "originId": "1035",
+        "price": 640
+      },
+      {
+        "destinationId": "1060",
+        "originId": "1035",
+        "price": 920
+      },
+      {
+        "destinationId": "1070",
+        "originId": "1035",
+        "price": 1060
+      },
+      {
+        "destinationId": "0990",
+        "originId": "1040",
+        "price": 750
+      },
+      {
+        "destinationId": "1000",
+        "originId": "1040",
+        "price": 700
+      },
+      {
+        "destinationId": "1010",
+        "originId": "1040",
+        "price": 670
+      },
+      {
+        "destinationId": "1020",
+        "originId": "1040",
+        "price": 540
+      },
+      {
+        "destinationId": "1030",
+        "originId": "1040",
+        "price": 410
+      },
+      {
+        "destinationId": "1035",
+        "originId": "1040",
+        "price": 270
+      },
+      {
+        "destinationId": "1043",
+        "originId": "1040",
+        "price": 130
+      },
+      {
+        "destinationId": "1047",
+        "originId": "1040",
+        "price": 230
+      },
+      {
+        "destinationId": "1050",
+        "originId": "1040",
+        "price": 380
+      },
+      {
+        "destinationId": "1060",
+        "originId": "1040",
+        "price": 650
+      },
+      {
+        "destinationId": "1070",
+        "originId": "1040",
+        "price": 790
+      },
+      {
+        "destinationId": "0990",
+        "originId": "1043",
+        "price": 870
+      },
+      {
+        "destinationId": "1000",
+        "originId": "1043",
+        "price": 820
+      },
+      {
+        "destinationId": "1010",
+        "originId": "1043",
+        "price": 790
+      },
+      {
+        "destinationId": "1020",
+        "originId": "1043",
+        "price": 670
+      },
+      {
+        "destinationId": "1030",
+        "originId": "1043",
+        "price": 540
+      },
+      {
+        "destinationId": "1035",
+        "originId": "1043",
+        "price": 390
+      },
+      {
+        "destinationId": "1040",
+        "originId": "1043",
+        "price": 130
+      },
+      {
+        "destinationId": "1047",
+        "originId": "1043",
+        "price": 110
+      },
+      {
+        "destinationId": "1050",
+        "originId": "1043",
+        "price": 250
+      },
+      {
+        "destinationId": "1060",
+        "originId": "1043",
+        "price": 530
+      },
+      {
+        "destinationId": "1070",
+        "originId": "1043",
+        "price": 670
+      },
+      {
+        "destinationId": "0990",
+        "originId": "1047",
+        "price": 970
+      },
+      {
+        "destinationId": "1000",
+        "originId": "1047",
+        "price": 930
+      },
+      {
+        "destinationId": "1010",
+        "originId": "1047",
+        "price": 900
+      },
+      {
+        "destinationId": "1020",
+        "originId": "1047",
+        "price": 780
+      },
+      {
+        "destinationId": "1030",
+        "originId": "1047",
+        "price": 640
+      },
+      {
+        "destinationId": "1035",
+        "originId": "1047",
+        "price": 500
+      },
+      {
+        "destinationId": "1040",
+        "originId": "1047",
+        "price": 230
+      },
+      {
+        "destinationId": "1043",
+        "originId": "1047",
+        "price": 110
+      },
+      {
+        "destinationId": "1050",
+        "originId": "1047",
+        "price": 150
+      },
+      {
+        "destinationId": "1060",
+        "originId": "1047",
+        "price": 420
+      },
+      {
+        "destinationId": "1070",
+        "originId": "1047",
+        "price": 560
+      },
+      {
+        "destinationId": "0990",
+        "originId": "1050",
+        "price": 1120
+      },
+      {
+        "destinationId": "1000",
+        "originId": "1050",
+        "price": 1080
+      },
+      {
+        "destinationId": "1010",
+        "originId": "1050",
+        "price": 1050
+      },
+      {
+        "destinationId": "1020",
+        "originId": "1050",
+        "price": 920
+      },
+      {
+        "destinationId": "1030",
+        "originId": "1050",
+        "price": 790
+      },
+      {
+        "destinationId": "1035",
+        "originId": "1050",
+        "price": 640
+      },
+      {
+        "destinationId": "1040",
+        "originId": "1050",
+        "price": 380
+      },
+      {
+        "destinationId": "1043",
+        "originId": "1050",
+        "price": 250
+      },
+      {
+        "destinationId": "1047",
+        "originId": "1050",
+        "price": 150
+      },
+      {
+        "destinationId": "1060",
+        "originId": "1050",
+        "price": 280
+      },
+      {
+        "destinationId": "1070",
+        "originId": "1050",
+        "price": 410
+      },
+      {
+        "destinationId": "0990",
+        "originId": "1060",
+        "price": 1390
+      },
+      {
+        "destinationId": "1000",
+        "originId": "1060",
+        "price": 1350
+      },
+      {
+        "destinationId": "1010",
+        "originId": "1060",
+        "price": 1320
+      },
+      {
+        "destinationId": "1020",
+        "originId": "1060",
+        "price": 1190
+      },
+      {
+        "destinationId": "1030",
+        "originId": "1060",
+        "price": 1060
+      },
+      {
+        "destinationId": "1035",
+        "originId": "1060",
+        "price": 920
+      },
+      {
+        "destinationId": "1040",
+        "originId": "1060",
+        "price": 650
+      },
+      {
+        "destinationId": "1043",
+        "originId": "1060",
+        "price": 530
+      },
+      {
+        "destinationId": "1047",
+        "originId": "1060",
+        "price": 420
+      },
+      {
+        "destinationId": "1050",
+        "originId": "1060",
+        "price": 280
+      },
+      {
+        "destinationId": "1070",
+        "originId": "1060",
+        "price": 140
+      },
+      {
+        "destinationId": "0990",
+        "originId": "1070",
+        "price": 1530
+      },
+      {
+        "destinationId": "1000",
+        "originId": "1070",
+        "price": 1490
+      },
+      {
+        "destinationId": "1010",
+        "originId": "1070",
+        "price": 1460
+      },
+      {
+        "destinationId": "1020",
+        "originId": "1070",
+        "price": 1330
+      },
+      {
+        "destinationId": "1030",
+        "originId": "1070",
+        "price": 1200
+      },
+      {
+        "destinationId": "1035",
+        "originId": "1070",
+        "price": 1060
+      },
+      {
+        "destinationId": "1040",
+        "originId": "1070",
+        "price": 790
+      },
+      {
+        "destinationId": "1043",
+        "originId": "1070",
+        "price": 670
+      },
+      {
+        "destinationId": "1047",
+        "originId": "1070",
+        "price": 560
+      },
+      {
+        "destinationId": "1050",
+        "originId": "1070",
+        "price": 410
+      },
+      {
+        "destinationId": "1060",
+        "originId": "1070",
+        "price": 140
+      }
+    ],
+    "stations": [
+      {
+        "id": "thsr-0990",
+        "kind": "THSR",
+        "name": "南港",
+        "operator": "高鐵",
+        "position": {
+          "lat": 25.053704,
+          "lng": 121.60709
+        }
+      },
+      {
+        "id": "thsr-1000",
+        "kind": "THSR",
+        "name": "台北",
+        "operator": "高鐵",
+        "position": {
+          "lat": 25.04767,
+          "lng": 121.516983
+        }
+      },
+      {
+        "id": "thsr-1010",
+        "kind": "THSR",
+        "name": "板橋",
+        "operator": "高鐵",
+        "position": {
+          "lat": 25.014214,
+          "lng": 121.4638
+        }
+      },
+      {
+        "id": "thsr-1020",
+        "kind": "THSR",
+        "name": "桃園",
+        "operator": "高鐵",
+        "position": {
+          "lat": 25.012861,
+          "lng": 121.214729
+        }
+      },
+      {
+        "id": "thsr-1030",
+        "kind": "THSR",
+        "name": "新竹",
+        "operator": "高鐵",
+        "position": {
+          "lat": 24.808441,
+          "lng": 121.04026
+        }
+      },
+      {
+        "id": "thsr-1035",
+        "kind": "THSR",
+        "name": "苗栗",
+        "operator": "高鐵",
+        "position": {
+          "lat": 24.605448,
+          "lng": 120.825272
+        }
+      },
+      {
+        "id": "thsr-1040",
+        "kind": "THSR",
+        "name": "台中",
+        "operator": "高鐵",
+        "position": {
+          "lat": 24.112484,
+          "lng": 120.615967
+        }
+      },
+      {
+        "id": "thsr-1043",
+        "kind": "THSR",
+        "name": "彰化",
+        "operator": "高鐵",
+        "position": {
+          "lat": 23.874327,
+          "lng": 120.574608
+        }
+      },
+      {
+        "id": "thsr-1047",
+        "kind": "THSR",
+        "name": "雲林",
+        "operator": "高鐵",
+        "position": {
+          "lat": 23.736231,
+          "lng": 120.416512
+        }
+      },
+      {
+        "id": "thsr-1050",
+        "kind": "THSR",
+        "name": "嘉義",
+        "operator": "高鐵",
+        "position": {
+          "lat": 23.459507,
+          "lng": 120.323257
+        }
+      },
+      {
+        "id": "thsr-1060",
+        "kind": "THSR",
+        "name": "台南",
+        "operator": "高鐵",
+        "position": {
+          "lat": 22.925077,
+          "lng": 120.286201
+        }
+      },
+      {
+        "id": "thsr-1070",
+        "kind": "THSR",
+        "name": "左營",
+        "operator": "高鐵",
+        "position": {
+          "lat": 22.687391,
+          "lng": 120.307487
+        }
+      }
+    ],
+    "firstDeparture": "05:50",
+    "lastDeparture": "22:55",
+    "trainCount": 156
+  },
+  "traStations": [
+    {
+      "city": "Keelung",
+      "id": "tra-0900",
+      "kind": "TRA",
+      "name": "基隆",
+      "operator": "台鐵",
+      "position": {
+        "lat": 25.13191,
+        "lng": 121.73837
+      }
+    },
+    {
+      "city": "Keelung",
+      "id": "tra-0910",
+      "kind": "TRA",
+      "name": "三坑",
+      "operator": "台鐵",
+      "position": {
+        "lat": 25.12305,
+        "lng": 121.74202
+      }
+    },
+    {
+      "city": "Keelung",
+      "id": "tra-0920",
+      "kind": "TRA",
+      "name": "八堵",
+      "operator": "台鐵",
+      "position": {
+        "lat": 25.10838,
+        "lng": 121.72904
+      }
+    },
+    {
+      "city": "Keelung",
+      "id": "tra-0930",
+      "kind": "TRA",
+      "name": "七堵",
+      "operator": "台鐵",
+      "position": {
+        "lat": 25.09294,
+        "lng": 121.71415
+      }
+    },
+    {
+      "city": "Keelung",
+      "id": "tra-0940",
+      "kind": "TRA",
+      "name": "百福",
+      "operator": "台鐵",
+      "position": {
+        "lat": 25.07795,
+        "lng": 121.69379
+      }
+    },
+    {
+      "city": "NewTaipei",
+      "id": "tra-0950",
+      "kind": "TRA",
+      "name": "五堵",
+      "operator": "台鐵",
+      "position": {
+        "lat": 25.07799,
+        "lng": 121.66758
+      }
+    },
+    {
+      "city": "NewTaipei",
+      "id": "tra-0960",
+      "kind": "TRA",
+      "name": "汐止",
+      "operator": "台鐵",
+      "position": {
+        "lat": 25.0679,
+        "lng": 121.66113
+      }
+    },
+    {
+      "city": "NewTaipei",
+      "id": "tra-0970",
+      "kind": "TRA",
+      "name": "汐科",
+      "operator": "台鐵",
+      "position": {
+        "lat": 25.06406,
+        "lng": 121.65233
+      }
+    },
+    {
+      "city": "Taipei",
+      "id": "tra-0980",
+      "kind": "TRA",
+      "name": "南港",
+      "operator": "台鐵",
+      "position": {
+        "lat": 25.05348,
+        "lng": 121.60706
+      }
+    },
+    {
+      "city": "Taipei",
+      "id": "tra-0990",
+      "kind": "TRA",
+      "name": "松山",
+      "operator": "台鐵",
+      "position": {
+        "lat": 25.04927,
+        "lng": 121.57906
+      }
+    },
+    {
+      "city": "Taipei",
+      "id": "tra-1000",
+      "kind": "TRA",
+      "name": "臺北",
+      "operator": "台鐵",
+      "position": {
+        "lat": 25.04775,
+        "lng": 121.51711
+      }
+    },
+    {
+      "city": "Taipei",
+      "id": "tra-1001",
+      "kind": "TRA",
+      "name": "臺北-環島",
+      "operator": "台鐵",
+      "position": {
+        "lat": 25.04774,
+        "lng": 121.51711
+      }
+    },
+    {
+      "city": "Taipei",
+      "id": "tra-1010",
+      "kind": "TRA",
+      "name": "萬華",
+      "operator": "台鐵",
+      "position": {
+        "lat": 25.03339,
+        "lng": 121.49996
+      }
+    },
+    {
+      "city": "NewTaipei",
+      "id": "tra-1020",
+      "kind": "TRA",
+      "name": "板橋",
+      "operator": "台鐵",
+      "position": {
+        "lat": 25.01434,
+        "lng": 121.46377
+      }
+    },
+    {
+      "city": "NewTaipei",
+      "id": "tra-1030",
+      "kind": "TRA",
+      "name": "浮洲",
+      "operator": "台鐵",
+      "position": {
+        "lat": 25.00419,
+        "lng": 121.44477
+      }
+    },
+    {
+      "city": "NewTaipei",
+      "id": "tra-1040",
+      "kind": "TRA",
+      "name": "樹林",
+      "operator": "台鐵",
+      "position": {
+        "lat": 24.99123,
+        "lng": 121.42442
+      }
+    },
+    {
+      "city": "NewTaipei",
+      "id": "tra-1050",
+      "kind": "TRA",
+      "name": "南樹林",
+      "operator": "台鐵",
+      "position": {
+        "lat": 24.98044,
+        "lng": 121.40884
+      }
+    },
+    {
+      "city": "NewTaipei",
+      "id": "tra-1060",
+      "kind": "TRA",
+      "name": "山佳",
+      "operator": "台鐵",
+      "position": {
+        "lat": 24.97273,
+        "lng": 121.39254
+      }
+    },
+    {
+      "city": "NewTaipei",
+      "id": "tra-1070",
+      "kind": "TRA",
+      "name": "鶯歌",
+      "operator": "台鐵",
+      "position": {
+        "lat": 24.95455,
+        "lng": 121.35517
+      }
+    },
+    {
+      "city": "NewTaipei",
+      "id": "tra-1075",
+      "kind": "TRA",
+      "name": "鳳鳴",
+      "operator": "台鐵",
+      "position": {
+        "lat": 24.97268,
+        "lng": 121.33658
+      }
+    },
+    {
+      "city": "Taoyuan",
+      "id": "tra-1080",
+      "kind": "TRA",
+      "name": "桃園",
+      "operator": "台鐵",
+      "position": {
+        "lat": 24.98888,
+        "lng": 121.31449
+      }
+    },
+    {
+      "city": "Taoyuan",
+      "id": "tra-1090",
+      "kind": "TRA",
+      "name": "內壢",
+      "operator": "台鐵",
+      "position": {
+        "lat": 24.97281,
+        "lng": 121.25826
+      }
+    },
+    {
+      "city": "Taoyuan",
+      "id": "tra-1100",
+      "kind": "TRA",
+      "name": "中壢",
+      "operator": "台鐵",
+      "position": {
+        "lat": 24.95374,
+        "lng": 121.22589
+      }
+    },
+    {
+      "city": "Taoyuan",
+      "id": "tra-1105",
+      "kind": "TRA",
+      "name": "平鎮",
+      "operator": "台鐵",
+      "position": {
+        "lat": 24.94301,
+        "lng": 121.21481
+      }
+    },
+    {
+      "city": "Taoyuan",
+      "id": "tra-1110",
+      "kind": "TRA",
+      "name": "埔心",
+      "operator": "台鐵",
+      "position": {
+        "lat": 24.91939,
+        "lng": 121.18363
+      }
+    },
+    {
+      "city": "Taoyuan",
+      "id": "tra-1120",
+      "kind": "TRA",
+      "name": "楊梅",
+      "operator": "台鐵",
+      "position": {
+        "lat": 24.91427,
+        "lng": 121.14637
+      }
+    },
+    {
+      "city": "Taoyuan",
+      "id": "tra-1130",
+      "kind": "TRA",
+      "name": "富岡",
+      "operator": "台鐵",
+      "position": {
+        "lat": 24.93436,
+        "lng": 121.08309
+      }
+    },
+    {
+      "city": "Taoyuan",
+      "id": "tra-1140",
+      "kind": "TRA",
+      "name": "新富",
+      "operator": "台鐵",
+      "position": {
+        "lat": 24.93109,
+        "lng": 121.06751
+      }
+    },
+    {
+      "city": "HsinchuCounty",
+      "id": "tra-1150",
+      "kind": "TRA",
+      "name": "北湖",
+      "operator": "台鐵",
+      "position": {
+        "lat": 24.92218,
+        "lng": 121.05575
+      }
+    },
+    {
+      "city": "HsinchuCounty",
+      "id": "tra-1160",
+      "kind": "TRA",
+      "name": "湖口",
+      "operator": "台鐵",
+      "position": {
+        "lat": 24.90303,
+        "lng": 121.04412
+      }
+    },
+    {
+      "city": "HsinchuCounty",
+      "id": "tra-1170",
+      "kind": "TRA",
+      "name": "新豐",
+      "operator": "台鐵",
+      "position": {
+        "lat": 24.86939,
+        "lng": 120.99626
+      }
+    },
+    {
+      "city": "HsinchuCounty",
+      "id": "tra-1180",
+      "kind": "TRA",
+      "name": "竹北",
+      "operator": "台鐵",
+      "position": {
+        "lat": 24.83919,
+        "lng": 121.00946
+      }
+    },
+    {
+      "city": "Hsinchu",
+      "id": "tra-1190",
+      "kind": "TRA",
+      "name": "北新竹",
+      "operator": "台鐵",
+      "position": {
+        "lat": 24.80875,
+        "lng": 120.98381
+      }
+    },
+    {
+      "city": "Hsinchu",
+      "id": "tra-1191",
+      "kind": "TRA",
+      "name": "千甲",
+      "operator": "台鐵",
+      "position": {
+        "lat": 24.80657,
+        "lng": 121.0034
+      }
+    },
+    {
+      "city": "Hsinchu",
+      "id": "tra-1192",
+      "kind": "TRA",
+      "name": "新莊",
+      "operator": "台鐵",
+      "position": {
+        "lat": 24.78811,
+        "lng": 121.02196
+      }
+    },
+    {
+      "city": "HsinchuCounty",
+      "id": "tra-1193",
+      "kind": "TRA",
+      "name": "竹中",
+      "operator": "台鐵",
+      "position": {
+        "lat": 24.78145,
+        "lng": 121.03141
+      }
+    },
+    {
+      "city": "HsinchuCounty",
+      "id": "tra-1194",
+      "kind": "TRA",
+      "name": "六家",
+      "operator": "台鐵",
+      "position": {
+        "lat": 24.80766,
+        "lng": 121.03941
+      }
+    },
+    {
+      "city": "HsinchuCounty",
+      "id": "tra-1201",
+      "kind": "TRA",
+      "name": "上員",
+      "operator": "台鐵",
+      "position": {
+        "lat": 24.77776,
+        "lng": 121.05582
+      }
+    },
+    {
+      "city": "HsinchuCounty",
+      "id": "tra-1202",
+      "kind": "TRA",
+      "name": "榮華",
+      "operator": "台鐵",
+      "position": {
+        "lat": 24.74839,
+        "lng": 121.08319
+      }
+    },
+    {
+      "city": "HsinchuCounty",
+      "id": "tra-1203",
+      "kind": "TRA",
+      "name": "竹東",
+      "operator": "台鐵",
+      "position": {
+        "lat": 24.73823,
+        "lng": 121.09472
+      }
+    },
+    {
+      "city": "HsinchuCounty",
+      "id": "tra-1204",
+      "kind": "TRA",
+      "name": "橫山",
+      "operator": "台鐵",
+      "position": {
+        "lat": 24.72041,
+        "lng": 121.11772
+      }
+    },
+    {
+      "city": "HsinchuCounty",
+      "id": "tra-1205",
+      "kind": "TRA",
+      "name": "九讚頭",
+      "operator": "台鐵",
+      "position": {
+        "lat": 24.72062,
+        "lng": 121.13622
+      }
+    },
+    {
+      "city": "HsinchuCounty",
+      "id": "tra-1206",
+      "kind": "TRA",
+      "name": "合興",
+      "operator": "台鐵",
+      "position": {
+        "lat": 24.71667,
+        "lng": 121.15437
+      }
+    },
+    {
+      "city": "HsinchuCounty",
+      "id": "tra-1207",
+      "kind": "TRA",
+      "name": "富貴",
+      "operator": "台鐵",
+      "position": {
+        "lat": 24.71551,
+        "lng": 121.16743
+      }
+    },
+    {
+      "city": "HsinchuCounty",
+      "id": "tra-1208",
+      "kind": "TRA",
+      "name": "內灣",
+      "operator": "台鐵",
+      "position": {
+        "lat": 24.70535,
+        "lng": 121.18255
+      }
+    },
+    {
+      "city": "Hsinchu",
+      "id": "tra-1210",
+      "kind": "TRA",
+      "name": "新竹",
+      "operator": "台鐵",
+      "position": {
+        "lat": 24.80157,
+        "lng": 120.97157
+      }
+    },
+    {
+      "city": "Hsinchu",
+      "id": "tra-1220",
+      "kind": "TRA",
+      "name": "三姓橋",
+      "operator": "台鐵",
+      "position": {
+        "lat": 24.78731,
+        "lng": 120.92844
+      }
+    },
+    {
+      "city": "Hsinchu",
+      "id": "tra-1230",
+      "kind": "TRA",
+      "name": "香山",
+      "operator": "台鐵",
+      "position": {
+        "lat": 24.76311,
+        "lng": 120.91388
+      }
+    },
+    {
+      "city": "MiaoliCounty",
+      "id": "tra-1240",
+      "kind": "TRA",
+      "name": "崎頂",
+      "operator": "台鐵",
+      "position": {
+        "lat": 24.72291,
+        "lng": 120.87183
+      }
+    },
+    {
+      "city": "MiaoliCounty",
+      "id": "tra-1250",
+      "kind": "TRA",
+      "name": "竹南",
+      "operator": "台鐵",
+      "position": {
+        "lat": 24.68654,
+        "lng": 120.88041
+      }
+    },
+    {
+      "city": "MiaoliCounty",
+      "id": "tra-2110",
+      "kind": "TRA",
+      "name": "談文",
+      "operator": "台鐵",
+      "position": {
+        "lat": 24.65641,
+        "lng": 120.85825
+      }
+    },
+    {
+      "city": "MiaoliCounty",
+      "id": "tra-2120",
+      "kind": "TRA",
+      "name": "大山",
+      "operator": "台鐵",
+      "position": {
+        "lat": 24.64565,
+        "lng": 120.80376
+      }
+    },
+    {
+      "city": "MiaoliCounty",
+      "id": "tra-2130",
+      "kind": "TRA",
+      "name": "後龍",
+      "operator": "台鐵",
+      "position": {
+        "lat": 24.61621,
+        "lng": 120.78731
+      }
+    },
+    {
+      "city": "MiaoliCounty",
+      "id": "tra-2140",
+      "kind": "TRA",
+      "name": "龍港",
+      "operator": "台鐵",
+      "position": {
+        "lat": 24.61169,
+        "lng": 120.75812
+      }
+    },
+    {
+      "city": "MiaoliCounty",
+      "id": "tra-2150",
+      "kind": "TRA",
+      "name": "白沙屯",
+      "operator": "台鐵",
+      "position": {
+        "lat": 24.56481,
+        "lng": 120.70824
+      }
+    },
+    {
+      "city": "MiaoliCounty",
+      "id": "tra-2160",
+      "kind": "TRA",
+      "name": "新埔",
+      "operator": "台鐵",
+      "position": {
+        "lat": 24.54018,
+        "lng": 120.69518
+      }
+    },
+    {
+      "city": "MiaoliCounty",
+      "id": "tra-2170",
+      "kind": "TRA",
+      "name": "通霄",
+      "operator": "台鐵",
+      "position": {
+        "lat": 24.49141,
+        "lng": 120.67843
+      }
+    },
+    {
+      "city": "MiaoliCounty",
+      "id": "tra-2180",
+      "kind": "TRA",
+      "name": "苑裡",
+      "operator": "台鐵",
+      "position": {
+        "lat": 24.44344,
+        "lng": 120.65146
+      }
+    },
+    {
+      "city": "Taichung",
+      "id": "tra-2190",
+      "kind": "TRA",
+      "name": "日南",
+      "operator": "台鐵",
+      "position": {
+        "lat": 24.37815,
+        "lng": 120.65412
+      }
+    },
+    {
+      "city": "Taichung",
+      "id": "tra-2200",
+      "kind": "TRA",
+      "name": "大甲",
+      "operator": "台鐵",
+      "position": {
+        "lat": 24.34448,
+        "lng": 120.62702
+      }
+    },
+    {
+      "city": "Taichung",
+      "id": "tra-2210",
+      "kind": "TRA",
+      "name": "臺中港",
+      "operator": "台鐵",
+      "position": {
+        "lat": 24.30441,
+        "lng": 120.60231
+      }
+    },
+    {
+      "city": "Taichung",
+      "id": "tra-2220",
+      "kind": "TRA",
+      "name": "清水",
+      "operator": "台鐵",
+      "position": {
+        "lat": 24.26364,
+        "lng": 120.56918
+      }
+    },
+    {
+      "city": "Taichung",
+      "id": "tra-2230",
+      "kind": "TRA",
+      "name": "沙鹿",
+      "operator": "台鐵",
+      "position": {
+        "lat": 24.23702,
+        "lng": 120.55752
+      }
+    },
+    {
+      "city": "Taichung",
+      "id": "tra-2240",
+      "kind": "TRA",
+      "name": "龍井",
+      "operator": "台鐵",
+      "position": {
+        "lat": 24.19748,
+        "lng": 120.54335
+      }
+    },
+    {
+      "city": "Taichung",
+      "id": "tra-2250",
+      "kind": "TRA",
+      "name": "大肚",
+      "operator": "台鐵",
+      "position": {
+        "lat": 24.15417,
+        "lng": 120.54249
+      }
+    },
+    {
+      "city": "Taichung",
+      "id": "tra-2260",
+      "kind": "TRA",
+      "name": "追分",
+      "operator": "台鐵",
+      "position": {
+        "lat": 24.12051,
+        "lng": 120.57018
+      }
+    },
+    {
+      "city": "MiaoliCounty",
+      "id": "tra-3140",
+      "kind": "TRA",
+      "name": "造橋",
+      "operator": "台鐵",
+      "position": {
+        "lat": 24.64186,
+        "lng": 120.86721
+      }
+    },
+    {
+      "city": "MiaoliCounty",
+      "id": "tra-3150",
+      "kind": "TRA",
+      "name": "豐富",
+      "operator": "台鐵",
+      "position": {
+        "lat": 24.60429,
+        "lng": 120.82637
+      }
+    },
+    {
+      "city": "MiaoliCounty",
+      "id": "tra-3160",
+      "kind": "TRA",
+      "name": "苗栗",
+      "operator": "台鐵",
+      "position": {
+        "lat": 24.57001,
+        "lng": 120.82233
+      }
+    },
+    {
+      "city": "MiaoliCounty",
+      "id": "tra-3170",
+      "kind": "TRA",
+      "name": "南勢",
+      "operator": "台鐵",
+      "position": {
+        "lat": 24.52246,
+        "lng": 120.79154
+      }
+    },
+    {
+      "city": "MiaoliCounty",
+      "id": "tra-3180",
+      "kind": "TRA",
+      "name": "銅鑼",
+      "operator": "台鐵",
+      "position": {
+        "lat": 24.48634,
+        "lng": 120.78617
+      }
+    },
+    {
+      "city": "MiaoliCounty",
+      "id": "tra-3190",
+      "kind": "TRA",
+      "name": "三義",
+      "operator": "台鐵",
+      "position": {
+        "lat": 24.42066,
+        "lng": 120.77393
+      }
+    },
+    {
+      "city": "Taichung",
+      "id": "tra-3210",
+      "kind": "TRA",
+      "name": "泰安",
+      "operator": "台鐵",
+      "position": {
+        "lat": 24.33146,
+        "lng": 120.74181
+      }
+    },
+    {
+      "city": "Taichung",
+      "id": "tra-3220",
+      "kind": "TRA",
+      "name": "后里",
+      "operator": "台鐵",
+      "position": {
+        "lat": 24.30933,
+        "lng": 120.73288
+      }
+    },
+    {
+      "city": "Taichung",
+      "id": "tra-3230",
+      "kind": "TRA",
+      "name": "豐原",
+      "operator": "台鐵",
+      "position": {
+        "lat": 24.25438,
+        "lng": 120.72374
+      }
+    },
+    {
+      "city": "Taichung",
+      "id": "tra-3240",
+      "kind": "TRA",
+      "name": "栗林",
+      "operator": "台鐵",
+      "position": {
+        "lat": 24.23461,
+        "lng": 120.7106
+      }
+    },
+    {
+      "city": "Taichung",
+      "id": "tra-3250",
+      "kind": "TRA",
+      "name": "潭子",
+      "operator": "台鐵",
+      "position": {
+        "lat": 24.21214,
+        "lng": 120.70564
+      }
+    },
+    {
+      "city": "Taichung",
+      "id": "tra-3260",
+      "kind": "TRA",
+      "name": "頭家厝",
+      "operator": "台鐵",
+      "position": {
+        "lat": 24.19572,
+        "lng": 120.70398
+      }
+    },
+    {
+      "city": "Taichung",
+      "id": "tra-3270",
+      "kind": "TRA",
+      "name": "松竹",
+      "operator": "台鐵",
+      "position": {
+        "lat": 24.18035,
+        "lng": 120.70193
+      }
+    },
+    {
+      "city": "Taichung",
+      "id": "tra-3280",
+      "kind": "TRA",
+      "name": "太原",
+      "operator": "台鐵",
+      "position": {
+        "lat": 24.16449,
+        "lng": 120.69988
+      }
+    },
+    {
+      "city": "Taichung",
+      "id": "tra-3290",
+      "kind": "TRA",
+      "name": "精武",
+      "operator": "台鐵",
+      "position": {
+        "lat": 24.14887,
+        "lng": 120.69784
+      }
+    },
+    {
+      "city": "Taichung",
+      "id": "tra-3300",
+      "kind": "TRA",
+      "name": "臺中",
+      "operator": "台鐵",
+      "position": {
+        "lat": 24.13728,
+        "lng": 120.68691
+      }
+    },
+    {
+      "city": "Taichung",
+      "id": "tra-3310",
+      "kind": "TRA",
+      "name": "五權",
+      "operator": "台鐵",
+      "position": {
+        "lat": 24.12877,
+        "lng": 120.66654
+      }
+    },
+    {
+      "city": "Taichung",
+      "id": "tra-3320",
+      "kind": "TRA",
+      "name": "大慶",
+      "operator": "台鐵",
+      "position": {
+        "lat": 24.11911,
+        "lng": 120.64795
+      }
+    },
+    {
+      "city": "Taichung",
+      "id": "tra-3330",
+      "kind": "TRA",
+      "name": "烏日",
+      "operator": "台鐵",
+      "position": {
+        "lat": 24.10867,
+        "lng": 120.62244
+      }
+    },
+    {
+      "city": "Taichung",
+      "id": "tra-3340",
+      "kind": "TRA",
+      "name": "新烏日",
+      "operator": "台鐵",
+      "position": {
+        "lat": 24.10937,
+        "lng": 120.61421
+      }
+    },
+    {
+      "city": "Taichung",
+      "id": "tra-3350",
+      "kind": "TRA",
+      "name": "成功",
+      "operator": "台鐵",
+      "position": {
+        "lat": 24.11424,
+        "lng": 120.59021
+      }
+    },
+    {
+      "city": "ChanghuaCounty",
+      "id": "tra-3360",
+      "kind": "TRA",
+      "name": "彰化",
+      "operator": "台鐵",
+      "position": {
+        "lat": 24.08177,
+        "lng": 120.53854
+      }
+    },
+    {
+      "city": "ChanghuaCounty",
+      "id": "tra-3370",
+      "kind": "TRA",
+      "name": "花壇",
+      "operator": "台鐵",
+      "position": {
+        "lat": 24.02502,
+        "lng": 120.53742
+      }
+    },
+    {
+      "city": "ChanghuaCounty",
+      "id": "tra-3380",
+      "kind": "TRA",
+      "name": "大村",
+      "operator": "台鐵",
+      "position": {
+        "lat": 23.99002,
+        "lng": 120.56062
+      }
+    },
+    {
+      "city": "ChanghuaCounty",
+      "id": "tra-3390",
+      "kind": "TRA",
+      "name": "員林",
+      "operator": "台鐵",
+      "position": {
+        "lat": 23.95947,
+        "lng": 120.56977
+      }
+    },
+    {
+      "city": "ChanghuaCounty",
+      "id": "tra-3400",
+      "kind": "TRA",
+      "name": "永靖",
+      "operator": "台鐵",
+      "position": {
+        "lat": 23.92808,
+        "lng": 120.57173
+      }
+    },
+    {
+      "city": "ChanghuaCounty",
+      "id": "tra-3410",
+      "kind": "TRA",
+      "name": "社頭",
+      "operator": "台鐵",
+      "position": {
+        "lat": 23.89573,
+        "lng": 120.58077
+      }
+    },
+    {
+      "city": "ChanghuaCounty",
+      "id": "tra-3420",
+      "kind": "TRA",
+      "name": "田中",
+      "operator": "台鐵",
+      "position": {
+        "lat": 23.85843,
+        "lng": 120.59146
+      }
+    },
+    {
+      "city": "ChanghuaCounty",
+      "id": "tra-3430",
+      "kind": "TRA",
+      "name": "二水",
+      "operator": "台鐵",
+      "position": {
+        "lat": 23.81321,
+        "lng": 120.61805
+      }
+    },
+    {
+      "city": "ChanghuaCounty",
+      "id": "tra-3431",
+      "kind": "TRA",
+      "name": "源泉",
+      "operator": "台鐵",
+      "position": {
+        "lat": 23.79845,
+        "lng": 120.64211
+      }
+    },
+    {
+      "city": "NantouCounty",
+      "id": "tra-3432",
+      "kind": "TRA",
+      "name": "濁水",
+      "operator": "台鐵",
+      "position": {
+        "lat": 23.83467,
+        "lng": 120.70467
+      }
+    },
+    {
+      "city": "NantouCounty",
+      "id": "tra-3433",
+      "kind": "TRA",
+      "name": "龍泉",
+      "operator": "台鐵",
+      "position": {
+        "lat": 23.83521,
+        "lng": 120.75014
+      }
+    },
+    {
+      "city": "NantouCounty",
+      "id": "tra-3434",
+      "kind": "TRA",
+      "name": "集集",
+      "operator": "台鐵",
+      "position": {
+        "lat": 23.82647,
+        "lng": 120.78495
+      }
+    },
+    {
+      "city": "NantouCounty",
+      "id": "tra-3435",
+      "kind": "TRA",
+      "name": "水里",
+      "operator": "台鐵",
+      "position": {
+        "lat": 23.81845,
+        "lng": 120.85332
+      }
+    },
+    {
+      "city": "NantouCounty",
+      "id": "tra-3436",
+      "kind": "TRA",
+      "name": "車埕",
+      "operator": "台鐵",
+      "position": {
+        "lat": 23.83263,
+        "lng": 120.86572
+      }
+    },
+    {
+      "city": "YunlinCounty",
+      "id": "tra-3450",
+      "kind": "TRA",
+      "name": "林內",
+      "operator": "台鐵",
+      "position": {
+        "lat": 23.75967,
+        "lng": 120.61499
+      }
+    },
+    {
+      "city": "YunlinCounty",
+      "id": "tra-3460",
+      "kind": "TRA",
+      "name": "石榴",
+      "operator": "台鐵",
+      "position": {
+        "lat": 23.73167,
+        "lng": 120.57998
+      }
+    },
+    {
+      "city": "YunlinCounty",
+      "id": "tra-3470",
+      "kind": "TRA",
+      "name": "斗六",
+      "operator": "台鐵",
+      "position": {
+        "lat": 23.71184,
+        "lng": 120.54099
+      }
+    },
+    {
+      "city": "YunlinCounty",
+      "id": "tra-3480",
+      "kind": "TRA",
+      "name": "斗南",
+      "operator": "台鐵",
+      "position": {
+        "lat": 23.67257,
+        "lng": 120.48089
+      }
+    },
+    {
+      "city": "YunlinCounty",
+      "id": "tra-3490",
+      "kind": "TRA",
+      "name": "石龜",
+      "operator": "台鐵",
+      "position": {
+        "lat": 23.63951,
+        "lng": 120.47106
+      }
+    },
+    {
+      "city": "ChiayiCounty",
+      "id": "tra-4050",
+      "kind": "TRA",
+      "name": "大林",
+      "operator": "台鐵",
+      "position": {
+        "lat": 23.60089,
+        "lng": 120.45597
+      }
+    },
+    {
+      "city": "ChiayiCounty",
+      "id": "tra-4060",
+      "kind": "TRA",
+      "name": "民雄",
+      "operator": "台鐵",
+      "position": {
+        "lat": 23.55522,
+        "lng": 120.43165
+      }
+    },
+    {
+      "city": "Chiayi",
+      "id": "tra-4070",
+      "kind": "TRA",
+      "name": "嘉北",
+      "operator": "台鐵",
+      "position": {
+        "lat": 23.49981,
+        "lng": 120.44851
+      }
+    },
+    {
+      "city": "Chiayi",
+      "id": "tra-4080",
+      "kind": "TRA",
+      "name": "嘉義",
+      "operator": "台鐵",
+      "position": {
+        "lat": 23.47915,
+        "lng": 120.44114
+      }
+    },
+    {
+      "city": "ChiayiCounty",
+      "id": "tra-4090",
+      "kind": "TRA",
+      "name": "水上",
+      "operator": "台鐵",
+      "position": {
+        "lat": 23.43398,
+        "lng": 120.39971
+      }
+    },
+    {
+      "city": "ChiayiCounty",
+      "id": "tra-4100",
+      "kind": "TRA",
+      "name": "南靖",
+      "operator": "台鐵",
+      "position": {
+        "lat": 23.41344,
+        "lng": 120.38654
+      }
+    },
+    {
+      "city": "Tainan",
+      "id": "tra-4110",
+      "kind": "TRA",
+      "name": "後壁",
+      "operator": "台鐵",
+      "position": {
+        "lat": 23.36626,
+        "lng": 120.36058
+      }
+    },
+    {
+      "city": "Tainan",
+      "id": "tra-4120",
+      "kind": "TRA",
+      "name": "新營",
+      "operator": "台鐵",
+      "position": {
+        "lat": 23.30673,
+        "lng": 120.32307
+      }
+    },
+    {
+      "city": "Tainan",
+      "id": "tra-4130",
+      "kind": "TRA",
+      "name": "柳營",
+      "operator": "台鐵",
+      "position": {
+        "lat": 23.27762,
+        "lng": 120.32252
+      }
+    },
+    {
+      "city": "Tainan",
+      "id": "tra-4140",
+      "kind": "TRA",
+      "name": "林鳳營",
+      "operator": "台鐵",
+      "position": {
+        "lat": 23.24259,
+        "lng": 120.32107
+      }
+    },
+    {
+      "city": "Tainan",
+      "id": "tra-4150",
+      "kind": "TRA",
+      "name": "隆田",
+      "operator": "台鐵",
+      "position": {
+        "lat": 23.19271,
+        "lng": 120.31917
+      }
+    },
+    {
+      "city": "Tainan",
+      "id": "tra-4160",
+      "kind": "TRA",
+      "name": "拔林",
+      "operator": "台鐵",
+      "position": {
+        "lat": 23.17284,
+        "lng": 120.32125
+      }
+    },
+    {
+      "city": "Tainan",
+      "id": "tra-4170",
+      "kind": "TRA",
+      "name": "善化",
+      "operator": "台鐵",
+      "position": {
+        "lat": 23.13333,
+        "lng": 120.30653
+      }
+    },
+    {
+      "city": "Tainan",
+      "id": "tra-4180",
+      "kind": "TRA",
+      "name": "南科",
+      "operator": "台鐵",
+      "position": {
+        "lat": 23.10726,
+        "lng": 120.30202
+      }
+    },
+    {
+      "city": "Tainan",
+      "id": "tra-4190",
+      "kind": "TRA",
+      "name": "新市",
+      "operator": "台鐵",
+      "position": {
+        "lat": 23.06823,
+        "lng": 120.29004
+      }
+    },
+    {
+      "city": "Tainan",
+      "id": "tra-4200",
+      "kind": "TRA",
+      "name": "永康",
+      "operator": "台鐵",
+      "position": {
+        "lat": 23.03825,
+        "lng": 120.25347
+      }
+    },
+    {
+      "city": "Tainan",
+      "id": "tra-4210",
+      "kind": "TRA",
+      "name": "大橋",
+      "operator": "台鐵",
+      "position": {
+        "lat": 23.01923,
+        "lng": 120.22429
+      }
+    },
+    {
+      "city": "Tainan",
+      "id": "tra-4220",
+      "kind": "TRA",
+      "name": "臺南",
+      "operator": "台鐵",
+      "position": {
+        "lat": 22.99681,
+        "lng": 120.21295
+      }
+    },
+    {
+      "city": "Tainan",
+      "id": "tra-4250",
+      "kind": "TRA",
+      "name": "保安",
+      "operator": "台鐵",
+      "position": {
+        "lat": 22.93296,
+        "lng": 120.23158
+      }
+    },
+    {
+      "city": "Tainan",
+      "id": "tra-4260",
+      "kind": "TRA",
+      "name": "仁德",
+      "operator": "台鐵",
+      "position": {
+        "lat": 22.92354,
+        "lng": 120.24054
+      }
+    },
+    {
+      "city": "Tainan",
+      "id": "tra-4270",
+      "kind": "TRA",
+      "name": "中洲",
+      "operator": "台鐵",
+      "position": {
+        "lat": 22.90446,
+        "lng": 120.25284
+      }
+    },
+    {
+      "city": "Tainan",
+      "id": "tra-4271",
+      "kind": "TRA",
+      "name": "長榮大學",
+      "operator": "台鐵",
+      "position": {
+        "lat": 22.90729,
+        "lng": 120.27263
+      }
+    },
+    {
+      "city": "Tainan",
+      "id": "tra-4272",
+      "kind": "TRA",
+      "name": "沙崙",
+      "operator": "台鐵",
+      "position": {
+        "lat": 22.92407,
+        "lng": 120.28622
+      }
+    },
+    {
+      "city": "Kaohsiung",
+      "id": "tra-4290",
+      "kind": "TRA",
+      "name": "大湖",
+      "operator": "台鐵",
+      "position": {
+        "lat": 22.87821,
+        "lng": 120.25384
+      }
+    },
+    {
+      "city": "Kaohsiung",
+      "id": "tra-4300",
+      "kind": "TRA",
+      "name": "路竹",
+      "operator": "台鐵",
+      "position": {
+        "lat": 22.85404,
+        "lng": 120.26619
+      }
+    },
+    {
+      "city": "Kaohsiung",
+      "id": "tra-4310",
+      "kind": "TRA",
+      "name": "岡山",
+      "operator": "台鐵",
+      "position": {
+        "lat": 22.79223,
+        "lng": 120.30004
+      }
+    },
+    {
+      "city": "Kaohsiung",
+      "id": "tra-4320",
+      "kind": "TRA",
+      "name": "橋頭",
+      "operator": "台鐵",
+      "position": {
+        "lat": 22.76098,
+        "lng": 120.31011
+      }
+    },
+    {
+      "city": "Kaohsiung",
+      "id": "tra-4330",
+      "kind": "TRA",
+      "name": "楠梓",
+      "operator": "台鐵",
+      "position": {
+        "lat": 22.72696,
+        "lng": 120.32425
+      }
+    },
+    {
+      "city": "Kaohsiung",
+      "id": "tra-4340",
+      "kind": "TRA",
+      "name": "新左營",
+      "operator": "台鐵",
+      "position": {
+        "lat": 22.68754,
+        "lng": 120.30678
+      }
+    },
+    {
+      "city": "Kaohsiung",
+      "id": "tra-4350",
+      "kind": "TRA",
+      "name": "左營",
+      "operator": "台鐵",
+      "position": {
+        "lat": 22.67445,
+        "lng": 120.29401
+      }
+    },
+    {
+      "city": "Kaohsiung",
+      "id": "tra-4360",
+      "kind": "TRA",
+      "name": "內惟",
+      "operator": "台鐵",
+      "position": {
+        "lat": 22.66589,
+        "lng": 120.28701
+      }
+    },
+    {
+      "city": "Kaohsiung",
+      "id": "tra-4370",
+      "kind": "TRA",
+      "name": "美術館",
+      "operator": "台鐵",
+      "position": {
+        "lat": 22.65185,
+        "lng": 120.28148
+      }
+    },
+    {
+      "city": "Kaohsiung",
+      "id": "tra-4380",
+      "kind": "TRA",
+      "name": "鼓山",
+      "operator": "台鐵",
+      "position": {
+        "lat": 22.64181,
+        "lng": 120.28071
+      }
+    },
+    {
+      "city": "Kaohsiung",
+      "id": "tra-4390",
+      "kind": "TRA",
+      "name": "三塊厝",
+      "operator": "台鐵",
+      "position": {
+        "lat": 22.63931,
+        "lng": 120.29414
+      }
+    },
+    {
+      "city": "Kaohsiung",
+      "id": "tra-4400",
+      "kind": "TRA",
+      "name": "高雄",
+      "operator": "台鐵",
+      "position": {
+        "lat": 22.63946,
+        "lng": 120.30292
+      }
+    },
+    {
+      "city": "Kaohsiung",
+      "id": "tra-4410",
+      "kind": "TRA",
+      "name": "民族",
+      "operator": "台鐵",
+      "position": {
+        "lat": 22.63879,
+        "lng": 120.31494
+      }
+    },
+    {
+      "city": "Kaohsiung",
+      "id": "tra-4420",
+      "kind": "TRA",
+      "name": "科工館",
+      "operator": "台鐵",
+      "position": {
+        "lat": 22.63709,
+        "lng": 120.32603
+      }
+    },
+    {
+      "city": "Kaohsiung",
+      "id": "tra-4430",
+      "kind": "TRA",
+      "name": "正義",
+      "operator": "台鐵",
+      "position": {
+        "lat": 22.63425,
+        "lng": 120.34245
+      }
+    },
+    {
+      "city": "Kaohsiung",
+      "id": "tra-4440",
+      "kind": "TRA",
+      "name": "鳳山",
+      "operator": "台鐵",
+      "position": {
+        "lat": 22.63145,
+        "lng": 120.35745
+      }
+    },
+    {
+      "city": "Kaohsiung",
+      "id": "tra-4450",
+      "kind": "TRA",
+      "name": "後庄",
+      "operator": "台鐵",
+      "position": {
+        "lat": 22.64016,
+        "lng": 120.39131
+      }
+    },
+    {
+      "city": "Kaohsiung",
+      "id": "tra-4460",
+      "kind": "TRA",
+      "name": "九曲堂",
+      "operator": "台鐵",
+      "position": {
+        "lat": 22.65641,
+        "lng": 120.42089
+      }
+    },
+    {
+      "city": "PingtungCounty",
+      "id": "tra-4470",
+      "kind": "TRA",
+      "name": "六塊厝",
+      "operator": "台鐵",
+      "position": {
+        "lat": 22.66597,
+        "lng": 120.46497
+      }
+    },
+    {
+      "city": "PingtungCounty",
+      "id": "tra-5000",
+      "kind": "TRA",
+      "name": "屏東",
+      "operator": "台鐵",
+      "position": {
+        "lat": 22.66905,
+        "lng": 120.48617
+      }
+    },
+    {
+      "city": "PingtungCounty",
+      "id": "tra-5010",
+      "kind": "TRA",
+      "name": "歸來",
+      "operator": "台鐵",
+      "position": {
+        "lat": 22.65246,
+        "lng": 120.50263
+      }
+    },
+    {
+      "city": "PingtungCounty",
+      "id": "tra-5020",
+      "kind": "TRA",
+      "name": "麟洛",
+      "operator": "台鐵",
+      "position": {
+        "lat": 22.63481,
+        "lng": 120.51432
+      }
+    },
+    {
+      "city": "PingtungCounty",
+      "id": "tra-5030",
+      "kind": "TRA",
+      "name": "西勢",
+      "operator": "台鐵",
+      "position": {
+        "lat": 22.61637,
+        "lng": 120.52649
+      }
+    },
+    {
+      "city": "PingtungCounty",
+      "id": "tra-5040",
+      "kind": "TRA",
+      "name": "竹田",
+      "operator": "台鐵",
+      "position": {
+        "lat": 22.58658,
+        "lng": 120.53978
+      }
+    },
+    {
+      "city": "PingtungCounty",
+      "id": "tra-5050",
+      "kind": "TRA",
+      "name": "潮州",
+      "operator": "台鐵",
+      "position": {
+        "lat": 22.55008,
+        "lng": 120.53604
+      }
+    },
+    {
+      "city": "PingtungCounty",
+      "id": "tra-5060",
+      "kind": "TRA",
+      "name": "崁頂",
+      "operator": "台鐵",
+      "position": {
+        "lat": 22.51311,
+        "lng": 120.51481
+      }
+    },
+    {
+      "city": "PingtungCounty",
+      "id": "tra-5070",
+      "kind": "TRA",
+      "name": "南州",
+      "operator": "台鐵",
+      "position": {
+        "lat": 22.49207,
+        "lng": 120.51174
+      }
+    },
+    {
+      "city": "PingtungCounty",
+      "id": "tra-5080",
+      "kind": "TRA",
+      "name": "鎮安",
+      "operator": "台鐵",
+      "position": {
+        "lat": 22.45794,
+        "lng": 120.51129
+      }
+    },
+    {
+      "city": "PingtungCounty",
+      "id": "tra-5090",
+      "kind": "TRA",
+      "name": "林邊",
+      "operator": "台鐵",
+      "position": {
+        "lat": 22.43135,
+        "lng": 120.51529
+      }
+    },
+    {
+      "city": "PingtungCounty",
+      "id": "tra-5100",
+      "kind": "TRA",
+      "name": "佳冬",
+      "operator": "台鐵",
+      "position": {
+        "lat": 22.41409,
+        "lng": 120.54774
+      }
+    },
+    {
+      "city": "PingtungCounty",
+      "id": "tra-5110",
+      "kind": "TRA",
+      "name": "東海",
+      "operator": "台鐵",
+      "position": {
+        "lat": 22.39897,
+        "lng": 120.57236
+      }
+    },
+    {
+      "city": "PingtungCounty",
+      "id": "tra-5120",
+      "kind": "TRA",
+      "name": "枋寮",
+      "operator": "台鐵",
+      "position": {
+        "lat": 22.36802,
+        "lng": 120.59511
+      }
+    },
+    {
+      "city": "PingtungCounty",
+      "id": "tra-5130",
+      "kind": "TRA",
+      "name": "加祿",
+      "operator": "台鐵",
+      "position": {
+        "lat": 22.33085,
+        "lng": 120.62445
+      }
+    },
+    {
+      "city": "PingtungCounty",
+      "id": "tra-5140",
+      "kind": "TRA",
+      "name": "內獅",
+      "operator": "台鐵",
+      "position": {
+        "lat": 22.30617,
+        "lng": 120.64331
+      }
+    },
+    {
+      "city": "PingtungCounty",
+      "id": "tra-5160",
+      "kind": "TRA",
+      "name": "枋山",
+      "operator": "台鐵",
+      "position": {
+        "lat": 22.26704,
+        "lng": 120.65947
+      }
+    },
+    {
+      "city": "PingtungCounty",
+      "id": "tra-5170",
+      "kind": "TRA",
+      "name": "枋野",
+      "operator": "台鐵",
+      "position": {
+        "lat": 22.28091,
+        "lng": 120.71709
+      }
+    },
+    {
+      "city": "TaitungCounty",
+      "id": "tra-5190",
+      "kind": "TRA",
+      "name": "大武",
+      "operator": "台鐵",
+      "position": {
+        "lat": 22.36526,
+        "lng": 120.90094
+      }
+    },
+    {
+      "city": "TaitungCounty",
+      "id": "tra-5200",
+      "kind": "TRA",
+      "name": "瀧溪",
+      "operator": "台鐵",
+      "position": {
+        "lat": 22.46102,
+        "lng": 120.94176
+      }
+    },
+    {
+      "city": "TaitungCounty",
+      "id": "tra-5210",
+      "kind": "TRA",
+      "name": "金崙",
+      "operator": "台鐵",
+      "position": {
+        "lat": 22.53161,
+        "lng": 120.96721
+      }
+    },
+    {
+      "city": "TaitungCounty",
+      "id": "tra-5220",
+      "kind": "TRA",
+      "name": "太麻里",
+      "operator": "台鐵",
+      "position": {
+        "lat": 22.61883,
+        "lng": 121.00492
+      }
+    },
+    {
+      "city": "TaitungCounty",
+      "id": "tra-5230",
+      "kind": "TRA",
+      "name": "知本",
+      "operator": "台鐵",
+      "position": {
+        "lat": 22.71022,
+        "lng": 121.06068
+      }
+    },
+    {
+      "city": "TaitungCounty",
+      "id": "tra-5240",
+      "kind": "TRA",
+      "name": "康樂",
+      "operator": "台鐵",
+      "position": {
+        "lat": 22.76426,
+        "lng": 121.09356
+      }
+    },
+    {
+      "city": "PingtungCounty",
+      "id": "tra-5998",
+      "kind": "TRA",
+      "name": "南方小站",
+      "operator": "台鐵",
+      "position": {
+        "lat": 22.52755,
+        "lng": 120.53658
+      }
+    },
+    {
+      "city": "PingtungCounty",
+      "id": "tra-5999",
+      "kind": "TRA",
+      "name": "潮州基地",
+      "operator": "台鐵",
+      "position": {
+        "lat": 22.52231,
+        "lng": 120.52642
+      }
+    },
+    {
+      "city": "TaitungCounty",
+      "id": "tra-6000",
+      "kind": "TRA",
+      "name": "臺東",
+      "operator": "台鐵",
+      "position": {
+        "lat": 22.79372,
+        "lng": 121.1231
+      }
+    },
+    {
+      "city": "TaitungCounty",
+      "id": "tra-6010",
+      "kind": "TRA",
+      "name": "山里",
+      "operator": "台鐵",
+      "position": {
+        "lat": 22.86194,
+        "lng": 121.13778
+      }
+    },
+    {
+      "city": "TaitungCounty",
+      "id": "tra-6020",
+      "kind": "TRA",
+      "name": "鹿野",
+      "operator": "台鐵",
+      "position": {
+        "lat": 22.91249,
+        "lng": 121.13701
+      }
+    },
+    {
+      "city": "TaitungCounty",
+      "id": "tra-6030",
+      "kind": "TRA",
+      "name": "瑞源",
+      "operator": "台鐵",
+      "position": {
+        "lat": 22.95604,
+        "lng": 121.15901
+      }
+    },
+    {
+      "city": "TaitungCounty",
+      "id": "tra-6040",
+      "kind": "TRA",
+      "name": "瑞和",
+      "operator": "台鐵",
+      "position": {
+        "lat": 22.97997,
+        "lng": 121.15595
+      }
+    },
+    {
+      "city": "TaitungCounty",
+      "id": "tra-6050",
+      "kind": "TRA",
+      "name": "關山",
+      "operator": "台鐵",
+      "position": {
+        "lat": 23.04566,
+        "lng": 121.16431
+      }
+    },
+    {
+      "city": "TaitungCounty",
+      "id": "tra-6060",
+      "kind": "TRA",
+      "name": "海端",
+      "operator": "台鐵",
+      "position": {
+        "lat": 23.10292,
+        "lng": 121.17676
+      }
+    },
+    {
+      "city": "TaitungCounty",
+      "id": "tra-6070",
+      "kind": "TRA",
+      "name": "池上",
+      "operator": "台鐵",
+      "position": {
+        "lat": 23.12613,
+        "lng": 121.21949
+      }
+    },
+    {
+      "city": "HualienCounty",
+      "id": "tra-6080",
+      "kind": "TRA",
+      "name": "富里",
+      "operator": "台鐵",
+      "position": {
+        "lat": 23.17924,
+        "lng": 121.24864
+      }
+    },
+    {
+      "city": "HualienCounty",
+      "id": "tra-6090",
+      "kind": "TRA",
+      "name": "東竹",
+      "operator": "台鐵",
+      "position": {
+        "lat": 23.22605,
+        "lng": 121.27842
+      }
+    },
+    {
+      "city": "HualienCounty",
+      "id": "tra-6100",
+      "kind": "TRA",
+      "name": "東里",
+      "operator": "台鐵",
+      "position": {
+        "lat": 23.27234,
+        "lng": 121.30418
+      }
+    },
+    {
+      "city": "HualienCounty",
+      "id": "tra-6110",
+      "kind": "TRA",
+      "name": "玉里",
+      "operator": "台鐵",
+      "position": {
+        "lat": 23.33155,
+        "lng": 121.31172
+      }
+    },
+    {
+      "city": "HualienCounty",
+      "id": "tra-6120",
+      "kind": "TRA",
+      "name": "三民",
+      "operator": "台鐵",
+      "position": {
+        "lat": 23.42458,
+        "lng": 121.34539
+      }
+    },
+    {
+      "city": "HualienCounty",
+      "id": "tra-6130",
+      "kind": "TRA",
+      "name": "瑞穗",
+      "operator": "台鐵",
+      "position": {
+        "lat": 23.49738,
+        "lng": 121.37684
+      }
+    },
+    {
+      "city": "HualienCounty",
+      "id": "tra-6140",
+      "kind": "TRA",
+      "name": "富源",
+      "operator": "台鐵",
+      "position": {
+        "lat": 23.58031,
+        "lng": 121.38008
+      }
+    },
+    {
+      "city": "HualienCounty",
+      "id": "tra-6150",
+      "kind": "TRA",
+      "name": "大富",
+      "operator": "台鐵",
+      "position": {
+        "lat": 23.60571,
+        "lng": 121.38963
+      }
+    },
+    {
+      "city": "HualienCounty",
+      "id": "tra-6160",
+      "kind": "TRA",
+      "name": "光復",
+      "operator": "台鐵",
+      "position": {
+        "lat": 23.66631,
+        "lng": 121.42117
+      }
+    },
+    {
+      "city": "HualienCounty",
+      "id": "tra-6170",
+      "kind": "TRA",
+      "name": "萬榮",
+      "operator": "台鐵",
+      "position": {
+        "lat": 23.71199,
+        "lng": 121.41907
+      }
+    },
+    {
+      "city": "HualienCounty",
+      "id": "tra-6180",
+      "kind": "TRA",
+      "name": "鳳林",
+      "operator": "台鐵",
+      "position": {
+        "lat": 23.74634,
+        "lng": 121.44701
+      }
+    },
+    {
+      "city": "HualienCounty",
+      "id": "tra-6190",
+      "kind": "TRA",
+      "name": "南平",
+      "operator": "台鐵",
+      "position": {
+        "lat": 23.78231,
+        "lng": 121.45824
+      }
+    },
+    {
+      "city": "HualienCounty",
+      "id": "tra-6200",
+      "kind": "TRA",
+      "name": "林榮新光",
+      "operator": "台鐵",
+      "position": {
+        "lat": 23.80176,
+        "lng": 121.46169
+      }
+    },
+    {
+      "city": "HualienCounty",
+      "id": "tra-6210",
+      "kind": "TRA",
+      "name": "豐田",
+      "operator": "台鐵",
+      "position": {
+        "lat": 23.84842,
+        "lng": 121.49618
+      }
+    },
+    {
+      "city": "HualienCounty",
+      "id": "tra-6220",
+      "kind": "TRA",
+      "name": "壽豐",
+      "operator": "台鐵",
+      "position": {
+        "lat": 23.86901,
+        "lng": 121.51064
+      }
+    },
+    {
+      "city": "HualienCounty",
+      "id": "tra-6230",
+      "kind": "TRA",
+      "name": "平和",
+      "operator": "台鐵",
+      "position": {
+        "lat": 23.88279,
+        "lng": 121.52045
+      }
+    },
+    {
+      "city": "HualienCounty",
+      "id": "tra-6240",
+      "kind": "TRA",
+      "name": "志學",
+      "operator": "台鐵",
+      "position": {
+        "lat": 23.90769,
+        "lng": 121.5295
+      }
+    },
+    {
+      "city": "HualienCounty",
+      "id": "tra-6250",
+      "kind": "TRA",
+      "name": "吉安",
+      "operator": "台鐵",
+      "position": {
+        "lat": 23.96823,
+        "lng": 121.58266
+      }
+    },
+    {
+      "city": "HualienCounty",
+      "id": "tra-7000",
+      "kind": "TRA",
+      "name": "花蓮",
+      "operator": "台鐵",
+      "position": {
+        "lat": 23.99265,
+        "lng": 121.60131
+      }
+    },
+    {
+      "city": "HualienCounty",
+      "id": "tra-7010",
+      "kind": "TRA",
+      "name": "北埔",
+      "operator": "台鐵",
+      "position": {
+        "lat": 24.03253,
+        "lng": 121.60166
+      }
+    },
+    {
+      "city": "HualienCounty",
+      "id": "tra-7020",
+      "kind": "TRA",
+      "name": "景美",
+      "operator": "台鐵",
+      "position": {
+        "lat": 24.09041,
+        "lng": 121.61095
+      }
+    },
+    {
+      "city": "HualienCounty",
+      "id": "tra-7030",
+      "kind": "TRA",
+      "name": "新城",
+      "operator": "台鐵",
+      "position": {
+        "lat": 24.12756,
+        "lng": 121.64086
+      }
+    },
+    {
+      "city": "HualienCounty",
+      "id": "tra-7040",
+      "kind": "TRA",
+      "name": "崇德",
+      "operator": "台鐵",
+      "position": {
+        "lat": 24.17199,
+        "lng": 121.65536
+      }
+    },
+    {
+      "city": "HualienCounty",
+      "id": "tra-7050",
+      "kind": "TRA",
+      "name": "和仁",
+      "operator": "台鐵",
+      "position": {
+        "lat": 24.24225,
+        "lng": 121.71182
+      }
+    },
+    {
+      "city": "HualienCounty",
+      "id": "tra-7060",
+      "kind": "TRA",
+      "name": "和平",
+      "operator": "台鐵",
+      "position": {
+        "lat": 24.29839,
+        "lng": 121.75344
+      }
+    },
+    {
+      "city": "YilanCounty",
+      "id": "tra-7070",
+      "kind": "TRA",
+      "name": "漢本",
+      "operator": "台鐵",
+      "position": {
+        "lat": 24.33543,
+        "lng": 121.76838
+      }
+    },
+    {
+      "city": "YilanCounty",
+      "id": "tra-7080",
+      "kind": "TRA",
+      "name": "武塔",
+      "operator": "台鐵",
+      "position": {
+        "lat": 24.44879,
+        "lng": 121.77601
+      }
+    },
+    {
+      "city": "YilanCounty",
+      "id": "tra-7090",
+      "kind": "TRA",
+      "name": "南澳",
+      "operator": "台鐵",
+      "position": {
+        "lat": 24.46342,
+        "lng": 121.80103
+      }
+    },
+    {
+      "city": "YilanCounty",
+      "id": "tra-7100",
+      "kind": "TRA",
+      "name": "東澳",
+      "operator": "台鐵",
+      "position": {
+        "lat": 24.51827,
+        "lng": 121.83072
+      }
+    },
+    {
+      "city": "YilanCounty",
+      "id": "tra-7110",
+      "kind": "TRA",
+      "name": "永樂",
+      "operator": "台鐵",
+      "position": {
+        "lat": 24.56843,
+        "lng": 121.84458
+      }
+    },
+    {
+      "city": "YilanCounty",
+      "id": "tra-7120",
+      "kind": "TRA",
+      "name": "蘇澳",
+      "operator": "台鐵",
+      "position": {
+        "lat": 24.59516,
+        "lng": 121.85143
+      }
+    },
+    {
+      "city": "YilanCounty",
+      "id": "tra-7130",
+      "kind": "TRA",
+      "name": "蘇澳新",
+      "operator": "台鐵",
+      "position": {
+        "lat": 24.60852,
+        "lng": 121.82735
+      }
+    },
+    {
+      "city": "YilanCounty",
+      "id": "tra-7140",
+      "kind": "TRA",
+      "name": "新馬",
+      "operator": "台鐵",
+      "position": {
+        "lat": 24.61541,
+        "lng": 121.82291
+      }
+    },
+    {
+      "city": "YilanCounty",
+      "id": "tra-7150",
+      "kind": "TRA",
+      "name": "冬山",
+      "operator": "台鐵",
+      "position": {
+        "lat": 24.63633,
+        "lng": 121.79211
+      }
+    },
+    {
+      "city": "YilanCounty",
+      "id": "tra-7160",
+      "kind": "TRA",
+      "name": "羅東",
+      "operator": "台鐵",
+      "position": {
+        "lat": 24.67791,
+        "lng": 121.77464
+      }
+    },
+    {
+      "city": "YilanCounty",
+      "id": "tra-7170",
+      "kind": "TRA",
+      "name": "中里",
+      "operator": "台鐵",
+      "position": {
+        "lat": 24.69415,
+        "lng": 121.77526
+      }
+    },
+    {
+      "city": "YilanCounty",
+      "id": "tra-7180",
+      "kind": "TRA",
+      "name": "二結",
+      "operator": "台鐵",
+      "position": {
+        "lat": 24.70528,
+        "lng": 121.77409
+      }
+    },
+    {
+      "city": "YilanCounty",
+      "id": "tra-7190",
+      "kind": "TRA",
+      "name": "宜蘭",
+      "operator": "台鐵",
+      "position": {
+        "lat": 24.75457,
+        "lng": 121.75803
+      }
+    },
+    {
+      "city": "YilanCounty",
+      "id": "tra-7200",
+      "kind": "TRA",
+      "name": "四城",
+      "operator": "台鐵",
+      "position": {
+        "lat": 24.78681,
+        "lng": 121.76271
+      }
+    },
+    {
+      "city": "YilanCounty",
+      "id": "tra-7210",
+      "kind": "TRA",
+      "name": "礁溪",
+      "operator": "台鐵",
+      "position": {
+        "lat": 24.82703,
+        "lng": 121.77535
+      }
+    },
+    {
+      "city": "YilanCounty",
+      "id": "tra-7220",
+      "kind": "TRA",
+      "name": "頂埔",
+      "operator": "台鐵",
+      "position": {
+        "lat": 24.84391,
+        "lng": 121.80913
+      }
+    },
+    {
+      "city": "YilanCounty",
+      "id": "tra-7230",
+      "kind": "TRA",
+      "name": "頭城",
+      "operator": "台鐵",
+      "position": {
+        "lat": 24.85898,
+        "lng": 121.82258
+      }
+    },
+    {
+      "city": "YilanCounty",
+      "id": "tra-7240",
+      "kind": "TRA",
+      "name": "外澳",
+      "operator": "台鐵",
+      "position": {
+        "lat": 24.88375,
+        "lng": 121.84572
+      }
+    },
+    {
+      "city": "YilanCounty",
+      "id": "tra-7250",
+      "kind": "TRA",
+      "name": "龜山",
+      "operator": "台鐵",
+      "position": {
+        "lat": 24.90484,
+        "lng": 121.8689
+      }
+    },
+    {
+      "city": "YilanCounty",
+      "id": "tra-7260",
+      "kind": "TRA",
+      "name": "大溪",
+      "operator": "台鐵",
+      "position": {
+        "lat": 24.93836,
+        "lng": 121.88983
+      }
+    },
+    {
+      "city": "YilanCounty",
+      "id": "tra-7270",
+      "kind": "TRA",
+      "name": "大里",
+      "operator": "台鐵",
+      "position": {
+        "lat": 24.96677,
+        "lng": 121.92253
+      }
+    },
+    {
+      "city": "YilanCounty",
+      "id": "tra-7280",
+      "kind": "TRA",
+      "name": "石城",
+      "operator": "台鐵",
+      "position": {
+        "lat": 24.97832,
+        "lng": 121.94507
+      }
+    },
+    {
+      "city": "NewTaipei",
+      "id": "tra-7290",
+      "kind": "TRA",
+      "name": "福隆",
+      "operator": "台鐵",
+      "position": {
+        "lat": 25.01595,
+        "lng": 121.94471
+      }
+    },
+    {
+      "city": "NewTaipei",
+      "id": "tra-7300",
+      "kind": "TRA",
+      "name": "貢寮",
+      "operator": "台鐵",
+      "position": {
+        "lat": 25.02197,
+        "lng": 121.90879
+      }
+    },
+    {
+      "city": "NewTaipei",
+      "id": "tra-7310",
+      "kind": "TRA",
+      "name": "雙溪",
+      "operator": "台鐵",
+      "position": {
+        "lat": 25.03851,
+        "lng": 121.86654
+      }
+    },
+    {
+      "city": "NewTaipei",
+      "id": "tra-7320",
+      "kind": "TRA",
+      "name": "牡丹",
+      "operator": "台鐵",
+      "position": {
+        "lat": 25.05871,
+        "lng": 121.85197
+      }
+    },
+    {
+      "city": "NewTaipei",
+      "id": "tra-7330",
+      "kind": "TRA",
+      "name": "三貂嶺",
+      "operator": "台鐵",
+      "position": {
+        "lat": 25.06555,
+        "lng": 121.82257
+      }
+    },
+    {
+      "city": "NewTaipei",
+      "id": "tra-7331",
+      "kind": "TRA",
+      "name": "大華",
+      "operator": "台鐵",
+      "position": {
+        "lat": 25.04998,
+        "lng": 121.79732
+      }
+    },
+    {
+      "city": "NewTaipei",
+      "id": "tra-7332",
+      "kind": "TRA",
+      "name": "十分",
+      "operator": "台鐵",
+      "position": {
+        "lat": 25.04111,
+        "lng": 121.77514
+      }
+    },
+    {
+      "city": "NewTaipei",
+      "id": "tra-7333",
+      "kind": "TRA",
+      "name": "望古",
+      "operator": "台鐵",
+      "position": {
+        "lat": 25.03445,
+        "lng": 121.76349
+      }
+    },
+    {
+      "city": "NewTaipei",
+      "id": "tra-7334",
+      "kind": "TRA",
+      "name": "嶺腳",
+      "operator": "台鐵",
+      "position": {
+        "lat": 25.03016,
+        "lng": 121.74795
+      }
+    },
+    {
+      "city": "NewTaipei",
+      "id": "tra-7335",
+      "kind": "TRA",
+      "name": "平溪",
+      "operator": "台鐵",
+      "position": {
+        "lat": 25.02571,
+        "lng": 121.74019
+      }
+    },
+    {
+      "city": "NewTaipei",
+      "id": "tra-7336",
+      "kind": "TRA",
+      "name": "菁桐",
+      "operator": "台鐵",
+      "position": {
+        "lat": 25.02391,
+        "lng": 121.72391
+      }
+    },
+    {
+      "city": "NewTaipei",
+      "id": "tra-7350",
+      "kind": "TRA",
+      "name": "猴硐",
+      "operator": "台鐵",
+      "position": {
+        "lat": 25.08702,
+        "lng": 121.82743
+      }
+    },
+    {
+      "city": "NewTaipei",
+      "id": "tra-7360",
+      "kind": "TRA",
+      "name": "瑞芳",
+      "operator": "台鐵",
+      "position": {
+        "lat": 25.10872,
+        "lng": 121.80599
+      }
+    },
+    {
+      "city": "Keelung",
+      "id": "tra-7361",
+      "kind": "TRA",
+      "name": "海科館",
+      "operator": "台鐵",
+      "position": {
+        "lat": 25.13754,
+        "lng": 121.79997
+      }
+    },
+    {
+      "city": "NewTaipei",
+      "id": "tra-7362",
+      "kind": "TRA",
+      "name": "八斗子",
+      "operator": "台鐵",
+      "position": {
+        "lat": 25.13528,
+        "lng": 121.80286
+      }
+    },
+    {
+      "city": "NewTaipei",
+      "id": "tra-7380",
+      "kind": "TRA",
+      "name": "四腳亭",
+      "operator": "台鐵",
+      "position": {
+        "lat": 25.10281,
+        "lng": 121.76195
+      }
+    },
+    {
+      "city": "Keelung",
+      "id": "tra-7390",
+      "kind": "TRA",
+      "name": "暖暖",
+      "operator": "台鐵",
+      "position": {
+        "lat": 25.10231,
+        "lng": 121.74031
+      }
+    }
+  ],
+  "metro": {
+    "KLRT": {
+      "lines": [
+        {
+          "lineId": "C",
+          "name": "環狀輕軌",
+          "stationCount": 38,
+          "systemName": "高雄輕軌"
+        }
+      ],
+      "stations": [
+        {
+          "id": "metro-KLRT-C1",
+          "kind": "Metro",
+          "name": "籬仔內",
+          "operator": "高雄輕軌",
+          "position": {
+            "lat": 22.604625,
+            "lng": 120.324651
+          }
+        },
+        {
+          "id": "metro-KLRT-C2",
+          "kind": "Metro",
+          "name": "凱旋瑞田",
+          "operator": "高雄輕軌",
+          "position": {
+            "lat": 22.599533,
+            "lng": 120.319799
+          }
+        },
+        {
+          "id": "metro-KLRT-C3",
+          "kind": "Metro",
+          "name": "前鎮之星",
+          "operator": "高雄輕軌",
+          "position": {
+            "lat": 22.595503,
+            "lng": 120.315368
+          }
+        },
+        {
+          "id": "metro-KLRT-C4",
+          "kind": "Metro",
+          "name": "凱旋中華",
+          "operator": "高雄輕軌",
+          "position": {
+            "lat": 22.593656,
+            "lng": 120.310517
+          }
+        },
+        {
+          "id": "metro-KLRT-C5",
+          "kind": "Metro",
+          "name": "夢時代",
+          "operator": "高雄輕軌",
+          "position": {
+            "lat": 22.594886,
+            "lng": 120.305004
+          }
+        },
+        {
+          "id": "metro-KLRT-C6",
+          "kind": "Metro",
+          "name": "經貿園區",
+          "operator": "高雄輕軌",
+          "position": {
+            "lat": 22.600961,
+            "lng": 120.30266
+          }
+        },
+        {
+          "id": "metro-KLRT-C7",
+          "kind": "Metro",
+          "name": "軟體園區",
+          "operator": "高雄輕軌",
+          "position": {
+            "lat": 22.605684,
+            "lng": 120.300832
+          }
+        },
+        {
+          "id": "metro-KLRT-C8",
+          "kind": "Metro",
+          "name": "高雄展覽館",
+          "operator": "高雄輕軌",
+          "position": {
+            "lat": 22.610133,
+            "lng": 120.298022
+          }
+        },
+        {
+          "id": "metro-KLRT-C9",
+          "kind": "Metro",
+          "name": "旅運中心",
+          "operator": "高雄輕軌",
+          "position": {
+            "lat": 22.611587,
+            "lng": 120.293424
+          }
+        },
+        {
+          "id": "metro-KLRT-C10",
+          "kind": "Metro",
+          "name": "光榮碼頭",
+          "operator": "高雄輕軌",
+          "position": {
+            "lat": 22.616805,
+            "lng": 120.293234
+          }
+        },
+        {
+          "id": "metro-KLRT-C11",
+          "kind": "Metro",
+          "name": "真愛碼頭",
+          "operator": "高雄輕軌",
+          "position": {
+            "lat": 22.619315,
+            "lng": 120.289466
+          }
+        },
+        {
+          "id": "metro-KLRT-C12",
+          "kind": "Metro",
+          "name": "駁二大義",
+          "operator": "高雄輕軌",
+          "position": {
+            "lat": 22.618562,
+            "lng": 120.284204
+          }
+        },
+        {
+          "id": "metro-KLRT-C13",
+          "kind": "Metro",
+          "name": "駁二蓬萊",
+          "operator": "高雄輕軌",
+          "position": {
+            "lat": 22.6205,
+            "lng": 120.279923
+          }
+        },
+        {
+          "id": "metro-KLRT-C14",
+          "kind": "Metro",
+          "name": "哈瑪星",
+          "operator": "高雄輕軌",
+          "position": {
+            "lat": 22.621617,
+            "lng": 120.275849
+          }
+        },
+        {
+          "id": "metro-KLRT-C15",
+          "kind": "Metro",
+          "name": "壽山公園站",
+          "operator": "高雄輕軌",
+          "position": {
+            "lat": 22.626541,
+            "lng": 120.278601
+          }
+        },
+        {
+          "id": "metro-KLRT-C16",
+          "kind": "Metro",
+          "name": "文武聖殿站",
+          "operator": "高雄輕軌",
+          "position": {
+            "lat": 22.62959,
+            "lng": 120.2807
+          }
+        },
+        {
+          "id": "metro-KLRT-C17",
+          "kind": "Metro",
+          "name": "鼓山區公所站",
+          "operator": "高雄輕軌",
+          "position": {
+            "lat": 22.635988,
+            "lng": 120.282567
+          }
+        },
+        {
+          "id": "metro-KLRT-C18",
+          "kind": "Metro",
+          "name": "鼓山",
+          "operator": "高雄輕軌",
+          "position": {
+            "lat": 22.642037,
+            "lng": 120.281067
+          }
+        },
+        {
+          "id": "metro-KLRT-C19",
+          "kind": "Metro",
+          "name": "馬卡道",
+          "operator": "高雄輕軌",
+          "position": {
+            "lat": 22.647089,
+            "lng": 120.281415
+          }
+        },
+        {
+          "id": "metro-KLRT-C20",
+          "kind": "Metro",
+          "name": "臺鐵美術館",
+          "operator": "高雄輕軌",
+          "position": {
+            "lat": 22.652074,
+            "lng": 120.281669
+          }
+        },
+        {
+          "id": "metro-KLRT-C21A",
+          "kind": "Metro",
+          "name": "內惟藝術中心",
+          "operator": "高雄輕軌",
+          "position": {
+            "lat": 22.65497,
+            "lng": 120.282868
+          }
+        },
+        {
+          "id": "metro-KLRT-C21",
+          "kind": "Metro",
+          "name": "美術館",
+          "operator": "高雄輕軌",
+          "position": {
+            "lat": 22.655026,
+            "lng": 120.287437
+          }
+        },
+        {
+          "id": "metro-KLRT-C22",
+          "kind": "Metro",
+          "name": "聯合醫院",
+          "operator": "高雄輕軌",
+          "position": {
+            "lat": 22.654827,
+            "lng": 120.290918
+          }
+        },
+        {
+          "id": "metro-KLRT-C23",
+          "kind": "Metro",
+          "name": "龍華國小",
+          "operator": "高雄輕軌",
+          "position": {
+            "lat": 22.654493,
+            "lng": 120.295042
+          }
+        },
+        {
+          "id": "metro-KLRT-C24",
+          "kind": "Metro",
+          "name": "愛河之心",
+          "operator": "高雄輕軌",
+          "position": {
+            "lat": 22.65604,
+            "lng": 120.30282
+          }
+        },
+        {
+          "id": "metro-KLRT-C25",
+          "kind": "Metro",
+          "name": "新上國小",
+          "operator": "高雄輕軌",
+          "position": {
+            "lat": 22.6567,
+            "lng": 120.3083
+          }
+        },
+        {
+          "id": "metro-KLRT-C26",
+          "kind": "Metro",
+          "name": "大順民族",
+          "operator": "高雄輕軌",
+          "position": {
+            "lat": 22.6556,
+            "lng": 120.3149
+          }
+        },
+        {
+          "id": "metro-KLRT-C27",
+          "kind": "Metro",
+          "name": "灣仔內(大順鼎山)",
+          "operator": "高雄輕軌",
+          "position": {
+            "lat": 22.6538,
+            "lng": 120.3185
+          }
+        },
+        {
+          "id": "metro-KLRT-C28",
+          "kind": "Metro",
+          "name": "高雄高工",
+          "operator": "高雄輕軌",
+          "position": {
+            "lat": 22.64996,
+            "lng": 120.32385
+          }
+        },
+        {
+          "id": "metro-KLRT-C29",
+          "kind": "Metro",
+          "name": "樹德家商",
+          "operator": "高雄輕軌",
+          "position": {
+            "lat": 22.6442,
+            "lng": 120.3262
+          }
+        },
+        {
+          "id": "metro-KLRT-C30",
+          "kind": "Metro",
+          "name": "科工館",
+          "operator": "高雄輕軌",
+          "position": {
+            "lat": 22.6375,
+            "lng": 120.3274
+          }
+        },
+        {
+          "id": "metro-KLRT-C31",
+          "kind": "Metro",
+          "name": "聖功醫院",
+          "operator": "高雄輕軌",
+          "position": {
+            "lat": 22.633278,
+            "lng": 120.325819
+          }
+        },
+        {
+          "id": "metro-KLRT-C32",
+          "kind": "Metro",
+          "name": "凱旋公園站",
+          "operator": "高雄輕軌",
+          "position": {
+            "lat": 22.629433,
+            "lng": 120.322785
+          }
+        },
+        {
+          "id": "metro-KLRT-C33",
+          "kind": "Metro",
+          "name": "衛生局站",
+          "operator": "高雄輕軌",
+          "position": {
+            "lat": 22.6252,
+            "lng": 120.3237
+          }
+        },
+        {
+          "id": "metro-KLRT-C34",
+          "kind": "Metro",
+          "name": "五權國小站",
+          "operator": "高雄輕軌",
+          "position": {
+            "lat": 22.62121,
+            "lng": 120.3252
+          }
+        },
+        {
+          "id": "metro-KLRT-C35",
+          "kind": "Metro",
+          "name": "凱旋武昌站",
+          "operator": "高雄輕軌",
+          "position": {
+            "lat": 22.61693,
+            "lng": 120.3269
+          }
+        },
+        {
+          "id": "metro-KLRT-C36",
+          "kind": "Metro",
+          "name": "凱旋二聖站",
+          "operator": "高雄輕軌",
+          "position": {
+            "lat": 22.61253,
+            "lng": 120.3272
+          }
+        },
+        {
+          "id": "metro-KLRT-C37",
+          "kind": "Metro",
+          "name": "輕軌機廠站",
+          "operator": "高雄輕軌",
+          "position": {
+            "lat": 22.6085,
+            "lng": 120.3261
+          }
+        }
+      ]
+    },
+    "KRTC": {
+      "lines": [
+        {
+          "lineId": "O",
+          "name": "橘線",
+          "stationCount": 13,
+          "systemName": "高雄捷運"
+        },
+        {
+          "lineId": "R",
+          "name": "紅線",
+          "stationCount": 24,
+          "systemName": "高雄捷運"
+        }
+      ],
+      "stations": [
+        {
+          "id": "metro-KRTC-O1",
+          "kind": "Metro",
+          "name": "哈瑪星",
+          "operator": "高雄捷運",
+          "position": {
+            "lat": 22.621492,
+            "lng": 120.274508
+          }
+        },
+        {
+          "id": "metro-KRTC-O2",
+          "kind": "Metro",
+          "name": "鹽埕埔",
+          "operator": "高雄捷運",
+          "position": {
+            "lat": 22.623501,
+            "lng": 120.283777
+          }
+        },
+        {
+          "id": "metro-KRTC-O4",
+          "kind": "Metro",
+          "name": "前金",
+          "operator": "高雄捷運",
+          "position": {
+            "lat": 22.628933,
+            "lng": 120.294766
+          }
+        },
+        {
+          "id": "metro-KRTC-O5",
+          "kind": "Metro",
+          "name": "美麗島",
+          "operator": "高雄捷運",
+          "position": {
+            "lat": 22.631278,
+            "lng": 120.303254
+          }
+        },
+        {
+          "id": "metro-KRTC-O6",
+          "kind": "Metro",
+          "name": "信義國小",
+          "operator": "高雄捷運",
+          "position": {
+            "lat": 22.630675,
+            "lng": 120.311391
+          }
+        },
+        {
+          "id": "metro-KRTC-O7",
+          "kind": "Metro",
+          "name": "文化中心",
+          "operator": "高雄捷運",
+          "position": {
+            "lat": 22.630224,
+            "lng": 120.317632
+          }
+        },
+        {
+          "id": "metro-KRTC-O8",
+          "kind": "Metro",
+          "name": "五塊厝",
+          "operator": "高雄捷運",
+          "position": {
+            "lat": 22.629413,
+            "lng": 120.327731
+          }
+        },
+        {
+          "id": "metro-KRTC-O9",
+          "kind": "Metro",
+          "name": "苓雅運動園區",
+          "operator": "高雄捷運",
+          "position": {
+            "lat": 22.6272,
+            "lng": 120.334651
+          }
+        },
+        {
+          "id": "metro-KRTC-O10",
+          "kind": "Metro",
+          "name": "衛武營",
+          "operator": "高雄捷運",
+          "position": {
+            "lat": 22.625055,
+            "lng": 120.341045
+          }
+        },
+        {
+          "id": "metro-KRTC-O11",
+          "kind": "Metro",
+          "name": "鳳山西站",
+          "operator": "高雄捷運",
+          "position": {
+            "lat": 22.625273,
+            "lng": 120.348118
+          }
+        },
+        {
+          "id": "metro-KRTC-O12",
+          "kind": "Metro",
+          "name": "鳳山",
+          "operator": "高雄捷運",
+          "position": {
+            "lat": 22.625953,
+            "lng": 120.355166
+          }
+        },
+        {
+          "id": "metro-KRTC-O13",
+          "kind": "Metro",
+          "name": "大東",
+          "operator": "高雄捷運",
+          "position": {
+            "lat": 22.625178,
+            "lng": 120.363497
+          }
+        },
+        {
+          "id": "metro-KRTC-O14",
+          "kind": "Metro",
+          "name": "鳳山國中",
+          "operator": "高雄捷運",
+          "position": {
+            "lat": 22.62466,
+            "lng": 120.371331
+          }
+        },
+        {
+          "id": "metro-KRTC-OT1",
+          "kind": "Metro",
+          "name": "大寮",
+          "operator": "高雄捷運",
+          "position": {
+            "lat": 22.622122,
+            "lng": 120.390528
+          }
+        },
+        {
+          "id": "metro-KRTC-R3",
+          "kind": "Metro",
+          "name": "小港",
+          "operator": "高雄捷運",
+          "position": {
+            "lat": 22.56478,
+            "lng": 120.353808
+          }
+        },
+        {
+          "id": "metro-KRTC-R4",
+          "kind": "Metro",
+          "name": "高雄國際機場",
+          "operator": "高雄捷運",
+          "position": {
+            "lat": 22.570166,
+            "lng": 120.341772
+          }
+        },
+        {
+          "id": "metro-KRTC-R4A",
+          "kind": "Metro",
+          "name": "草衙",
+          "operator": "高雄捷運",
+          "position": {
+            "lat": 22.580354,
+            "lng": 120.328569
+          }
+        },
+        {
+          "id": "metro-KRTC-R5",
+          "kind": "Metro",
+          "name": "前鎮高中",
+          "operator": "高雄捷運",
+          "position": {
+            "lat": 22.588482,
+            "lng": 120.321686
+          }
+        },
+        {
+          "id": "metro-KRTC-R6",
+          "kind": "Metro",
+          "name": "凱旋",
+          "operator": "高雄捷運",
+          "position": {
+            "lat": 22.596764,
+            "lng": 120.315119
+          }
+        },
+        {
+          "id": "metro-KRTC-R7",
+          "kind": "Metro",
+          "name": "獅甲",
+          "operator": "高雄捷運",
+          "position": {
+            "lat": 22.606047,
+            "lng": 120.308079
+          }
+        },
+        {
+          "id": "metro-KRTC-R8",
+          "kind": "Metro",
+          "name": "三多商圈",
+          "operator": "高雄捷運",
+          "position": {
+            "lat": 22.61398,
+            "lng": 120.304588
+          }
+        },
+        {
+          "id": "metro-KRTC-R9",
+          "kind": "Metro",
+          "name": "中央公園",
+          "operator": "高雄捷運",
+          "position": {
+            "lat": 22.624839,
+            "lng": 120.301212
+          }
+        },
+        {
+          "id": "metro-KRTC-R10",
+          "kind": "Metro",
+          "name": "美麗島",
+          "operator": "高雄捷運",
+          "position": {
+            "lat": 22.631393,
+            "lng": 120.301994
+          }
+        },
+        {
+          "id": "metro-KRTC-R11",
+          "kind": "Metro",
+          "name": "高雄車站",
+          "operator": "高雄捷運",
+          "position": {
+            "lat": 22.639694,
+            "lng": 120.302703
+          }
+        },
+        {
+          "id": "metro-KRTC-R12",
+          "kind": "Metro",
+          "name": "後驛",
+          "operator": "高雄捷運",
+          "position": {
+            "lat": 22.648495,
+            "lng": 120.303413
+          }
+        },
+        {
+          "id": "metro-KRTC-R13",
+          "kind": "Metro",
+          "name": "凹子底",
+          "operator": "高雄捷運",
+          "position": {
+            "lat": 22.657268,
+            "lng": 120.303239
+          }
+        },
+        {
+          "id": "metro-KRTC-R14",
+          "kind": "Metro",
+          "name": "巨蛋",
+          "operator": "高雄捷運",
+          "position": {
+            "lat": 22.666158,
+            "lng": 120.30336
+          }
+        },
+        {
+          "id": "metro-KRTC-R15",
+          "kind": "Metro",
+          "name": "生態園區",
+          "operator": "高雄捷運",
+          "position": {
+            "lat": 22.676686,
+            "lng": 120.306619
+          }
+        },
+        {
+          "id": "metro-KRTC-R16",
+          "kind": "Metro",
+          "name": "左營",
+          "operator": "高雄捷運",
+          "position": {
+            "lat": 22.688376,
+            "lng": 120.308887
+          }
+        },
+        {
+          "id": "metro-KRTC-R17",
+          "kind": "Metro",
+          "name": "世運",
+          "operator": "高雄捷運",
+          "position": {
+            "lat": 22.701841,
+            "lng": 120.302531
+          }
+        },
+        {
+          "id": "metro-KRTC-R18",
+          "kind": "Metro",
+          "name": "油廠國小",
+          "operator": "高雄捷運",
+          "position": {
+            "lat": 22.708872,
+            "lng": 120.302323
+          }
+        },
+        {
+          "id": "metro-KRTC-R19",
+          "kind": "Metro",
+          "name": "楠梓科技園區",
+          "operator": "高雄捷運",
+          "position": {
+            "lat": 22.718651,
+            "lng": 120.307242
+          }
+        },
+        {
+          "id": "metro-KRTC-R20",
+          "kind": "Metro",
+          "name": "後勁",
+          "operator": "高雄捷運",
+          "position": {
+            "lat": 22.722324,
+            "lng": 120.31637
+          }
+        },
+        {
+          "id": "metro-KRTC-R21",
+          "kind": "Metro",
+          "name": "都會公園",
+          "operator": "高雄捷運",
+          "position": {
+            "lat": 22.729529,
+            "lng": 120.321014
+          }
+        },
+        {
+          "id": "metro-KRTC-R22",
+          "kind": "Metro",
+          "name": "青埔",
+          "operator": "高雄捷運",
+          "position": {
+            "lat": 22.744345,
+            "lng": 120.317795
+          }
+        },
+        {
+          "id": "metro-KRTC-R22A",
+          "kind": "Metro",
+          "name": "橋頭糖廠",
+          "operator": "高雄捷運",
+          "position": {
+            "lat": 22.75316,
+            "lng": 120.314698
+          }
+        },
+        {
+          "id": "metro-KRTC-R23",
+          "kind": "Metro",
+          "name": "橋頭火車站",
+          "operator": "高雄捷運",
+          "position": {
+            "lat": 22.760249,
+            "lng": 120.310976
+          }
+        },
+        {
+          "id": "metro-KRTC-R24",
+          "kind": "Metro",
+          "name": "岡山高醫",
+          "operator": "高雄捷運",
+          "position": {
+            "lat": 22.780642,
+            "lng": 120.30188
+          }
+        },
+        {
+          "id": "metro-KRTC-RK1",
+          "kind": "Metro",
+          "name": "岡山車站",
+          "operator": "高雄捷運",
+          "position": {
+            "lat": 22.79245,
+            "lng": 120.29923
+          }
+        }
+      ]
+    },
+    "NTMC": {
+      "lines": [
+        {
+          "color": "#47C1E1",
+          "lineId": "LB",
+          "name": "三鶯線",
+          "stationCount": 12,
+          "systemName": "新北捷運"
+        },
+        {
+          "color": "#fedb00",
+          "lineId": "Y",
+          "name": "環狀線",
+          "stationCount": 14,
+          "systemName": "新北捷運"
+        }
+      ],
+      "stations": [
+        {
+          "id": "metro-NTMC-LB01",
+          "kind": "Metro",
+          "name": "頂埔",
+          "operator": "新北捷運",
+          "position": {
+            "lat": 24.959722,
+            "lng": 121.419444
+          }
+        },
+        {
+          "id": "metro-NTMC-LB02",
+          "kind": "Metro",
+          "name": "媽祖田",
+          "operator": "新北捷運",
+          "position": {
+            "lat": 24.953341,
+            "lng": 121.411872
+          }
+        },
+        {
+          "id": "metro-NTMC-LB03",
+          "kind": "Metro",
+          "name": "長壽山",
+          "operator": "新北捷運",
+          "position": {
+            "lat": 24.944376,
+            "lng": 121.402946
+          }
+        },
+        {
+          "id": "metro-NTMC-LB04",
+          "kind": "Metro",
+          "name": "橫溪",
+          "operator": "新北捷運",
+          "position": {
+            "lat": 24.937182,
+            "lng": 121.390407
+          }
+        },
+        {
+          "id": "metro-NTMC-LB05",
+          "kind": "Metro",
+          "name": "龍埔",
+          "operator": "新北捷運",
+          "position": {
+            "lat": 24.939689,
+            "lng": 121.382542
+          }
+        },
+        {
+          "id": "metro-NTMC-LB06",
+          "kind": "Metro",
+          "name": "三峽",
+          "operator": "新北捷運",
+          "position": {
+            "lat": 24.939323,
+            "lng": 121.376066
+          }
+        },
+        {
+          "id": "metro-NTMC-LB07",
+          "kind": "Metro",
+          "name": "台北大學",
+          "operator": "新北捷運",
+          "position": {
+            "lat": 24.93905,
+            "lng": 121.367073
+          }
+        },
+        {
+          "id": "metro-NTMC-LB08",
+          "kind": "Metro",
+          "name": "鶯歌車站",
+          "operator": "新北捷運",
+          "position": {
+            "lat": 24.953253,
+            "lng": 121.356482
+          }
+        },
+        {
+          "id": "metro-NTMC-LB09",
+          "kind": "Metro",
+          "name": "陶瓷老街",
+          "operator": "新北捷運",
+          "position": {
+            "lat": 24.952578,
+            "lng": 121.349486
+          }
+        },
+        {
+          "id": "metro-NTMC-LB10",
+          "kind": "Metro",
+          "name": "國華",
+          "operator": "新北捷運",
+          "position": {
+            "lat": 24.955342,
+            "lng": 121.342194
+          }
+        },
+        {
+          "id": "metro-NTMC-LB11",
+          "kind": "Metro",
+          "name": "永吉公園",
+          "operator": "新北捷運",
+          "position": {
+            "lat": 24.960838,
+            "lng": 121.334432
+          }
+        },
+        {
+          "id": "metro-NTMC-LB12",
+          "kind": "Metro",
+          "name": "鶯桃福德",
+          "operator": "新北捷運",
+          "position": {
+            "lat": 24.966833,
+            "lng": 121.329972
+          }
+        },
+        {
+          "id": "metro-NTMC-Y07",
+          "kind": "Metro",
+          "name": "大坪林",
+          "operator": "新北捷運",
+          "position": {
+            "lat": 24.98272,
+            "lng": 121.54134
+          }
+        },
+        {
+          "id": "metro-NTMC-Y08",
+          "kind": "Metro",
+          "name": "十四張",
+          "operator": "新北捷運",
+          "position": {
+            "lat": 24.984333,
+            "lng": 121.527698
+          }
+        },
+        {
+          "id": "metro-NTMC-Y09",
+          "kind": "Metro",
+          "name": "秀朗橋",
+          "operator": "新北捷運",
+          "position": {
+            "lat": 24.990549,
+            "lng": 121.525051
+          }
+        },
+        {
+          "id": "metro-NTMC-Y10",
+          "kind": "Metro",
+          "name": "景平",
+          "operator": "新北捷運",
+          "position": {
+            "lat": 24.992143,
+            "lng": 121.516386
+          }
+        },
+        {
+          "id": "metro-NTMC-Y11",
+          "kind": "Metro",
+          "name": "景安",
+          "operator": "新北捷運",
+          "position": {
+            "lat": 24.99392,
+            "lng": 121.505114
+          }
+        },
+        {
+          "id": "metro-NTMC-Y12",
+          "kind": "Metro",
+          "name": "中和",
+          "operator": "新北捷運",
+          "position": {
+            "lat": 25.002382,
+            "lng": 121.495978
+          }
+        },
+        {
+          "id": "metro-NTMC-Y13",
+          "kind": "Metro",
+          "name": "橋和",
+          "operator": "新北捷運",
+          "position": {
+            "lat": 25.004413,
+            "lng": 121.490461
+          }
+        },
+        {
+          "id": "metro-NTMC-Y14",
+          "kind": "Metro",
+          "name": "中原",
+          "operator": "新北捷運",
+          "position": {
+            "lat": 25.00841,
+            "lng": 121.484159
+          }
+        },
+        {
+          "id": "metro-NTMC-Y15",
+          "kind": "Metro",
+          "name": "板新",
+          "operator": "新北捷運",
+          "position": {
+            "lat": 25.014436,
+            "lng": 121.472269
+          }
+        },
+        {
+          "id": "metro-NTMC-Y16",
+          "kind": "Metro",
+          "name": "板橋",
+          "operator": "新北捷運",
+          "position": {
+            "lat": 25.015156,
+            "lng": 121.464825
+          }
+        },
+        {
+          "id": "metro-NTMC-Y17",
+          "kind": "Metro",
+          "name": "新埔民生",
+          "operator": "新北捷運",
+          "position": {
+            "lat": 25.026282,
+            "lng": 121.466831
+          }
+        },
+        {
+          "id": "metro-NTMC-Y18",
+          "kind": "Metro",
+          "name": "頭前庄",
+          "operator": "新北捷運",
+          "position": {
+            "lat": 25.039862,
+            "lng": 121.460479
+          }
+        },
+        {
+          "id": "metro-NTMC-Y19",
+          "kind": "Metro",
+          "name": "幸福",
+          "operator": "新北捷運",
+          "position": {
+            "lat": 25.049984,
+            "lng": 121.45998
+          }
+        },
+        {
+          "id": "metro-NTMC-Y20",
+          "kind": "Metro",
+          "name": "新北產業園區",
+          "operator": "新北捷運",
+          "position": {
+            "lat": 25.061548,
+            "lng": 121.459926
+          }
+        }
+      ]
+    },
+    "TMRT": {
+      "lines": [
+        {
+          "color": "#84BD00",
+          "lineId": "G",
+          "name": "烏日文心北屯線",
+          "stationCount": 18,
+          "systemName": "臺中捷運"
+        }
+      ],
+      "stations": [
+        {
+          "id": "metro-TMRT-G0",
+          "kind": "Metro",
+          "name": "北屯總站",
+          "operator": "臺中捷運",
+          "position": {
+            "lat": 24.18913,
+            "lng": 120.70864
+          }
+        },
+        {
+          "id": "metro-TMRT-G3",
+          "kind": "Metro",
+          "name": "舊社",
+          "operator": "臺中捷運",
+          "position": {
+            "lat": 24.18228,
+            "lng": 120.70729
+          }
+        },
+        {
+          "id": "metro-TMRT-G4",
+          "kind": "Metro",
+          "name": "松竹",
+          "operator": "臺中捷運",
+          "position": {
+            "lat": 24.1808,
+            "lng": 120.70145
+          }
+        },
+        {
+          "id": "metro-TMRT-G5",
+          "kind": "Metro",
+          "name": "四維國小",
+          "operator": "臺中捷運",
+          "position": {
+            "lat": 24.17124,
+            "lng": 120.69329
+          }
+        },
+        {
+          "id": "metro-TMRT-G6",
+          "kind": "Metro",
+          "name": "文心崇德",
+          "operator": "臺中捷運",
+          "position": {
+            "lat": 24.17219,
+            "lng": 120.68486
+          }
+        },
+        {
+          "id": "metro-TMRT-G7",
+          "kind": "Metro",
+          "name": "文心中清",
+          "operator": "臺中捷運",
+          "position": {
+            "lat": 24.17368,
+            "lng": 120.67059
+          }
+        },
+        {
+          "id": "metro-TMRT-G8",
+          "kind": "Metro",
+          "name": "文華高中",
+          "operator": "臺中捷運",
+          "position": {
+            "lat": 24.17141,
+            "lng": 120.66045
+          }
+        },
+        {
+          "id": "metro-TMRT-G8a",
+          "kind": "Metro",
+          "name": "文心櫻花",
+          "operator": "臺中捷運",
+          "position": {
+            "lat": 24.16763,
+            "lng": 120.65367
+          }
+        },
+        {
+          "id": "metro-TMRT-G9",
+          "kind": "Metro",
+          "name": "市政府",
+          "operator": "臺中捷運",
+          "position": {
+            "lat": 24.16199,
+            "lng": 120.64903
+          }
+        },
+        {
+          "id": "metro-TMRT-G10",
+          "kind": "Metro",
+          "name": "水安宮",
+          "operator": "臺中捷運",
+          "position": {
+            "lat": 24.15311,
+            "lng": 120.64668
+          }
+        },
+        {
+          "id": "metro-TMRT-G10a",
+          "kind": "Metro",
+          "name": "文心森林公園",
+          "operator": "臺中捷運",
+          "position": {
+            "lat": 24.1454,
+            "lng": 120.6466
+          }
+        },
+        {
+          "id": "metro-TMRT-G11",
+          "kind": "Metro",
+          "name": "南屯",
+          "operator": "臺中捷運",
+          "position": {
+            "lat": 24.1405,
+            "lng": 120.6466
+          }
+        },
+        {
+          "id": "metro-TMRT-G12",
+          "kind": "Metro",
+          "name": "豐樂公園",
+          "operator": "臺中捷運",
+          "position": {
+            "lat": 24.1326,
+            "lng": 120.64635
+          }
+        },
+        {
+          "id": "metro-TMRT-G13",
+          "kind": "Metro",
+          "name": "大慶",
+          "operator": "臺中捷運",
+          "position": {
+            "lat": 24.1191,
+            "lng": 120.6476
+          }
+        },
+        {
+          "id": "metro-TMRT-G14",
+          "kind": "Metro",
+          "name": "九張犁",
+          "operator": "臺中捷運",
+          "position": {
+            "lat": 24.1145,
+            "lng": 120.6401
+          }
+        },
+        {
+          "id": "metro-TMRT-G15",
+          "kind": "Metro",
+          "name": "九德",
+          "operator": "臺中捷運",
+          "position": {
+            "lat": 24.11104,
+            "lng": 120.63448
+          }
+        },
+        {
+          "id": "metro-TMRT-G16",
+          "kind": "Metro",
+          "name": "烏日",
+          "operator": "臺中捷運",
+          "position": {
+            "lat": 24.1089,
+            "lng": 120.6249
+          }
+        },
+        {
+          "id": "metro-TMRT-G17",
+          "kind": "Metro",
+          "name": "高鐵臺中站",
+          "operator": "臺中捷運",
+          "position": {
+            "lat": 24.11011,
+            "lng": 120.61405
+          }
+        }
+      ]
+    },
+    "TRTC": {
+      "lines": [
+        {
+          "color": "#0a59ae",
+          "lineId": "BL",
+          "name": "板南線",
+          "stationCount": 23,
+          "systemName": "臺北捷運"
+        },
+        {
+          "color": "#b57a25",
+          "lineId": "BR",
+          "name": "文湖線",
+          "stationCount": 24,
+          "systemName": "臺北捷運"
+        },
+        {
+          "color": "#107547",
+          "lineId": "G",
+          "name": "松山新店線",
+          "stationCount": 20,
+          "systemName": "臺北捷運"
+        },
+        {
+          "color": "#f5a818",
+          "lineId": "O",
+          "name": "中和新蘆線",
+          "stationCount": 26,
+          "systemName": "臺北捷運"
+        },
+        {
+          "color": "#d90023",
+          "lineId": "R",
+          "name": "淡水信義線",
+          "stationCount": 29,
+          "systemName": "臺北捷運"
+        }
+      ],
+      "stations": [
+        {
+          "id": "metro-TRTC-BL01",
+          "kind": "Metro",
+          "name": "頂埔",
+          "operator": "臺北捷運",
+          "position": {
+            "lat": 24.959351,
+            "lng": 121.418744
+          }
+        },
+        {
+          "id": "metro-TRTC-BL02",
+          "kind": "Metro",
+          "name": "永寧",
+          "operator": "臺北捷運",
+          "position": {
+            "lat": 24.96682,
+            "lng": 121.43613
+          }
+        },
+        {
+          "id": "metro-TRTC-BL03",
+          "kind": "Metro",
+          "name": "土城",
+          "operator": "臺北捷運",
+          "position": {
+            "lat": 24.97313,
+            "lng": 121.44432
+          }
+        },
+        {
+          "id": "metro-TRTC-BL04",
+          "kind": "Metro",
+          "name": "海山",
+          "operator": "臺北捷運",
+          "position": {
+            "lat": 24.985705,
+            "lng": 121.448823
+          }
+        },
+        {
+          "id": "metro-TRTC-BL05",
+          "kind": "Metro",
+          "name": "亞東醫院",
+          "operator": "臺北捷運",
+          "position": {
+            "lat": 24.99828,
+            "lng": 121.452465
+          }
+        },
+        {
+          "id": "metro-TRTC-BL06",
+          "kind": "Metro",
+          "name": "府中",
+          "operator": "臺北捷運",
+          "position": {
+            "lat": 25.008465,
+            "lng": 121.459276
+          }
+        },
+        {
+          "id": "metro-TRTC-BL07",
+          "kind": "Metro",
+          "name": "板橋",
+          "operator": "臺北捷運",
+          "position": {
+            "lat": 25.014098,
+            "lng": 121.462671
+          }
+        },
+        {
+          "id": "metro-TRTC-BL08",
+          "kind": "Metro",
+          "name": "新埔",
+          "operator": "臺北捷運",
+          "position": {
+            "lat": 25.023736,
+            "lng": 121.468363
+          }
+        },
+        {
+          "id": "metro-TRTC-BL09",
+          "kind": "Metro",
+          "name": "江子翠",
+          "operator": "臺北捷運",
+          "position": {
+            "lat": 25.030265,
+            "lng": 121.47257
+          }
+        },
+        {
+          "id": "metro-TRTC-BL10",
+          "kind": "Metro",
+          "name": "龍山寺",
+          "operator": "臺北捷運",
+          "position": {
+            "lat": 25.03528,
+            "lng": 121.500325
+          }
+        },
+        {
+          "id": "metro-TRTC-BL11",
+          "kind": "Metro",
+          "name": "西門",
+          "operator": "臺北捷運",
+          "position": {
+            "lat": 25.042274,
+            "lng": 121.508511
+          }
+        },
+        {
+          "id": "metro-TRTC-BL12",
+          "kind": "Metro",
+          "name": "台北車站",
+          "operator": "臺北捷運",
+          "position": {
+            "lat": 25.04631,
+            "lng": 121.517415
+          }
+        },
+        {
+          "id": "metro-TRTC-BL13",
+          "kind": "Metro",
+          "name": "善導寺",
+          "operator": "臺北捷運",
+          "position": {
+            "lat": 25.04468,
+            "lng": 121.523885
+          }
+        },
+        {
+          "id": "metro-TRTC-BL14",
+          "kind": "Metro",
+          "name": "忠孝新生",
+          "operator": "臺北捷運",
+          "position": {
+            "lat": 25.042383,
+            "lng": 121.532886
+          }
+        },
+        {
+          "id": "metro-TRTC-BL15",
+          "kind": "Metro",
+          "name": "忠孝復興",
+          "operator": "臺北捷運",
+          "position": {
+            "lat": 25.041633,
+            "lng": 121.543769
+          }
+        },
+        {
+          "id": "metro-TRTC-BL16",
+          "kind": "Metro",
+          "name": "忠孝敦化",
+          "operator": "臺北捷運",
+          "position": {
+            "lat": 25.041505,
+            "lng": 121.55045
+          }
+        },
+        {
+          "id": "metro-TRTC-BL17",
+          "kind": "Metro",
+          "name": "國父紀念館",
+          "operator": "臺北捷運",
+          "position": {
+            "lat": 25.04137,
+            "lng": 121.557815
+          }
+        },
+        {
+          "id": "metro-TRTC-BL18",
+          "kind": "Metro",
+          "name": "市政府",
+          "operator": "臺北捷運",
+          "position": {
+            "lat": 25.041135,
+            "lng": 121.565685
+          }
+        },
+        {
+          "id": "metro-TRTC-BL19",
+          "kind": "Metro",
+          "name": "永春",
+          "operator": "臺北捷運",
+          "position": {
+            "lat": 25.040855,
+            "lng": 121.5762
+          }
+        },
+        {
+          "id": "metro-TRTC-BL20",
+          "kind": "Metro",
+          "name": "後山埤",
+          "operator": "臺北捷運",
+          "position": {
+            "lat": 25.044715,
+            "lng": 121.58227
+          }
+        },
+        {
+          "id": "metro-TRTC-BL21",
+          "kind": "Metro",
+          "name": "昆陽",
+          "operator": "臺北捷運",
+          "position": {
+            "lat": 25.050459,
+            "lng": 121.593228
+          }
+        },
+        {
+          "id": "metro-TRTC-BL22",
+          "kind": "Metro",
+          "name": "南港",
+          "operator": "臺北捷運",
+          "position": {
+            "lat": 25.052035,
+            "lng": 121.60697
+          }
+        },
+        {
+          "id": "metro-TRTC-BL23",
+          "kind": "Metro",
+          "name": "南港展覽館",
+          "operator": "臺北捷運",
+          "position": {
+            "lat": 25.054919,
+            "lng": 121.616861
+          }
+        },
+        {
+          "id": "metro-TRTC-BR01",
+          "kind": "Metro",
+          "name": "動物園",
+          "operator": "臺北捷運",
+          "position": {
+            "lat": 24.998205,
+            "lng": 121.579501
+          }
+        },
+        {
+          "id": "metro-TRTC-BR02",
+          "kind": "Metro",
+          "name": "木柵",
+          "operator": "臺北捷運",
+          "position": {
+            "lat": 24.99824,
+            "lng": 121.573127
+          }
+        },
+        {
+          "id": "metro-TRTC-BR03",
+          "kind": "Metro",
+          "name": "萬芳社區",
+          "operator": "臺北捷運",
+          "position": {
+            "lat": 24.99857,
+            "lng": 121.568088
+          }
+        },
+        {
+          "id": "metro-TRTC-BR04",
+          "kind": "Metro",
+          "name": "萬芳醫院",
+          "operator": "臺北捷運",
+          "position": {
+            "lat": 24.99932,
+            "lng": 121.558092
+          }
+        },
+        {
+          "id": "metro-TRTC-BR05",
+          "kind": "Metro",
+          "name": "辛亥",
+          "operator": "臺北捷運",
+          "position": {
+            "lat": 25.005455,
+            "lng": 121.557046
+          }
+        },
+        {
+          "id": "metro-TRTC-BR06",
+          "kind": "Metro",
+          "name": "麟光",
+          "operator": "臺北捷運",
+          "position": {
+            "lat": 25.018495,
+            "lng": 121.558834
+          }
+        },
+        {
+          "id": "metro-TRTC-BR07",
+          "kind": "Metro",
+          "name": "六張犁",
+          "operator": "臺北捷運",
+          "position": {
+            "lat": 25.02381,
+            "lng": 121.55302
+          }
+        },
+        {
+          "id": "metro-TRTC-BR08",
+          "kind": "Metro",
+          "name": "科技大樓",
+          "operator": "臺北捷運",
+          "position": {
+            "lat": 25.02612,
+            "lng": 121.543462
+          }
+        },
+        {
+          "id": "metro-TRTC-BR09",
+          "kind": "Metro",
+          "name": "大安",
+          "operator": "臺北捷運",
+          "position": {
+            "lat": 25.033311,
+            "lng": 121.54237
+          }
+        },
+        {
+          "id": "metro-TRTC-BR10",
+          "kind": "Metro",
+          "name": "忠孝復興",
+          "operator": "臺北捷運",
+          "position": {
+            "lat": 25.041104,
+            "lng": 121.543703
+          }
+        },
+        {
+          "id": "metro-TRTC-BR11",
+          "kind": "Metro",
+          "name": "南京復興",
+          "operator": "臺北捷運",
+          "position": {
+            "lat": 25.052044,
+            "lng": 121.544303
+          }
+        },
+        {
+          "id": "metro-TRTC-BR12",
+          "kind": "Metro",
+          "name": "中山國中",
+          "operator": "臺北捷運",
+          "position": {
+            "lat": 25.06085,
+            "lng": 121.544215
+          }
+        },
+        {
+          "id": "metro-TRTC-BR13",
+          "kind": "Metro",
+          "name": "松山機場",
+          "operator": "臺北捷運",
+          "position": {
+            "lat": 25.063111,
+            "lng": 121.55162
+          }
+        },
+        {
+          "id": "metro-TRTC-BR14",
+          "kind": "Metro",
+          "name": "大直",
+          "operator": "臺北捷運",
+          "position": {
+            "lat": 25.07943,
+            "lng": 121.54679
+          }
+        },
+        {
+          "id": "metro-TRTC-BR15",
+          "kind": "Metro",
+          "name": "劍南路",
+          "operator": "臺北捷運",
+          "position": {
+            "lat": 25.08483,
+            "lng": 121.555582
+          }
+        },
+        {
+          "id": "metro-TRTC-BR16",
+          "kind": "Metro",
+          "name": "西湖",
+          "operator": "臺北捷運",
+          "position": {
+            "lat": 25.08216,
+            "lng": 121.567227
+          }
+        },
+        {
+          "id": "metro-TRTC-BR17",
+          "kind": "Metro",
+          "name": "港墘",
+          "operator": "臺北捷運",
+          "position": {
+            "lat": 25.08007,
+            "lng": 121.57516
+          }
+        },
+        {
+          "id": "metro-TRTC-BR18",
+          "kind": "Metro",
+          "name": "文德",
+          "operator": "臺北捷運",
+          "position": {
+            "lat": 25.078567,
+            "lng": 121.584973
+          }
+        },
+        {
+          "id": "metro-TRTC-BR19",
+          "kind": "Metro",
+          "name": "內湖",
+          "operator": "臺北捷運",
+          "position": {
+            "lat": 25.083675,
+            "lng": 121.594363
+          }
+        },
+        {
+          "id": "metro-TRTC-BR20",
+          "kind": "Metro",
+          "name": "大湖公園",
+          "operator": "臺北捷運",
+          "position": {
+            "lat": 25.083805,
+            "lng": 121.602214
+          }
+        },
+        {
+          "id": "metro-TRTC-BR21",
+          "kind": "Metro",
+          "name": "葫洲",
+          "operator": "臺北捷運",
+          "position": {
+            "lat": 25.07271,
+            "lng": 121.607146
+          }
+        },
+        {
+          "id": "metro-TRTC-BR22",
+          "kind": "Metro",
+          "name": "東湖",
+          "operator": "臺北捷運",
+          "position": {
+            "lat": 25.067455,
+            "lng": 121.611535
+          }
+        },
+        {
+          "id": "metro-TRTC-BR23",
+          "kind": "Metro",
+          "name": "南港軟體園區",
+          "operator": "臺北捷運",
+          "position": {
+            "lat": 25.059946,
+            "lng": 121.615908
+          }
+        },
+        {
+          "id": "metro-TRTC-BR24",
+          "kind": "Metro",
+          "name": "南港展覽館",
+          "operator": "臺北捷運",
+          "position": {
+            "lat": 25.054919,
+            "lng": 121.616861
+          }
+        },
+        {
+          "id": "metro-TRTC-G01",
+          "kind": "Metro",
+          "name": "新店",
+          "operator": "臺北捷運",
+          "position": {
+            "lat": 24.958181,
+            "lng": 121.5377
+          }
+        },
+        {
+          "id": "metro-TRTC-G02",
+          "kind": "Metro",
+          "name": "新店區公所",
+          "operator": "臺北捷運",
+          "position": {
+            "lat": 24.96744,
+            "lng": 121.5413
+          }
+        },
+        {
+          "id": "metro-TRTC-G03",
+          "kind": "Metro",
+          "name": "七張",
+          "operator": "臺北捷運",
+          "position": {
+            "lat": 24.975036,
+            "lng": 121.543129
+          }
+        },
+        {
+          "id": "metro-TRTC-G04",
+          "kind": "Metro",
+          "name": "大坪林",
+          "operator": "臺北捷運",
+          "position": {
+            "lat": 24.98272,
+            "lng": 121.54134
+          }
+        },
+        {
+          "id": "metro-TRTC-G05",
+          "kind": "Metro",
+          "name": "景美",
+          "operator": "臺北捷運",
+          "position": {
+            "lat": 24.992824,
+            "lng": 121.540697
+          }
+        },
+        {
+          "id": "metro-TRTC-G06",
+          "kind": "Metro",
+          "name": "萬隆",
+          "operator": "臺北捷運",
+          "position": {
+            "lat": 25.001978,
+            "lng": 121.539008
+          }
+        },
+        {
+          "id": "metro-TRTC-G07",
+          "kind": "Metro",
+          "name": "公館",
+          "operator": "臺北捷運",
+          "position": {
+            "lat": 25.014781,
+            "lng": 121.534358
+          }
+        },
+        {
+          "id": "metro-TRTC-G08",
+          "kind": "Metro",
+          "name": "台電大樓",
+          "operator": "臺北捷運",
+          "position": {
+            "lat": 25.020733,
+            "lng": 121.528143
+          }
+        },
+        {
+          "id": "metro-TRTC-G09",
+          "kind": "Metro",
+          "name": "古亭",
+          "operator": "臺北捷運",
+          "position": {
+            "lat": 25.026373,
+            "lng": 121.522868
+          }
+        },
+        {
+          "id": "metro-TRTC-G10",
+          "kind": "Metro",
+          "name": "中正紀念堂",
+          "operator": "臺北捷運",
+          "position": {
+            "lat": 25.032767,
+            "lng": 121.518273
+          }
+        },
+        {
+          "id": "metro-TRTC-G11",
+          "kind": "Metro",
+          "name": "小南門",
+          "operator": "臺北捷運",
+          "position": {
+            "lat": 25.03531,
+            "lng": 121.511097
+          }
+        },
+        {
+          "id": "metro-TRTC-G12",
+          "kind": "Metro",
+          "name": "西門",
+          "operator": "臺北捷運",
+          "position": {
+            "lat": 25.042274,
+            "lng": 121.508511
+          }
+        },
+        {
+          "id": "metro-TRTC-G13",
+          "kind": "Metro",
+          "name": "北門",
+          "operator": "臺北捷運",
+          "position": {
+            "lat": 25.049554,
+            "lng": 121.510184
+          }
+        },
+        {
+          "id": "metro-TRTC-G14",
+          "kind": "Metro",
+          "name": "中山",
+          "operator": "臺北捷運",
+          "position": {
+            "lat": 25.052621,
+            "lng": 121.520364
+          }
+        },
+        {
+          "id": "metro-TRTC-G15",
+          "kind": "Metro",
+          "name": "松江南京",
+          "operator": "臺北捷運",
+          "position": {
+            "lat": 25.052693,
+            "lng": 121.53285
+          }
+        },
+        {
+          "id": "metro-TRTC-G16",
+          "kind": "Metro",
+          "name": "南京復興",
+          "operator": "臺北捷運",
+          "position": {
+            "lat": 25.052044,
+            "lng": 121.544303
+          }
+        },
+        {
+          "id": "metro-TRTC-G17",
+          "kind": "Metro",
+          "name": "台北小巨蛋",
+          "operator": "臺北捷運",
+          "position": {
+            "lat": 25.05152,
+            "lng": 121.552549
+          }
+        },
+        {
+          "id": "metro-TRTC-G18",
+          "kind": "Metro",
+          "name": "南京三民",
+          "operator": "臺北捷運",
+          "position": {
+            "lat": 25.051588,
+            "lng": 121.56471
+          }
+        },
+        {
+          "id": "metro-TRTC-G19",
+          "kind": "Metro",
+          "name": "松山",
+          "operator": "臺北捷運",
+          "position": {
+            "lat": 25.050118,
+            "lng": 121.577706
+          }
+        },
+        {
+          "id": "metro-TRTC-G03A",
+          "kind": "Metro",
+          "name": "小碧潭",
+          "operator": "臺北捷運",
+          "position": {
+            "lat": 24.97188,
+            "lng": 121.53058
+          }
+        },
+        {
+          "id": "metro-TRTC-O01",
+          "kind": "Metro",
+          "name": "南勢角",
+          "operator": "臺北捷運",
+          "position": {
+            "lat": 24.990065,
+            "lng": 121.509237
+          }
+        },
+        {
+          "id": "metro-TRTC-O02",
+          "kind": "Metro",
+          "name": "景安",
+          "operator": "臺北捷運",
+          "position": {
+            "lat": 24.99392,
+            "lng": 121.505114
+          }
+        },
+        {
+          "id": "metro-TRTC-O03",
+          "kind": "Metro",
+          "name": "永安市場",
+          "operator": "臺北捷運",
+          "position": {
+            "lat": 25.002895,
+            "lng": 121.511225
+          }
+        },
+        {
+          "id": "metro-TRTC-O04",
+          "kind": "Metro",
+          "name": "頂溪",
+          "operator": "臺北捷運",
+          "position": {
+            "lat": 25.01343,
+            "lng": 121.515412
+          }
+        },
+        {
+          "id": "metro-TRTC-O05",
+          "kind": "Metro",
+          "name": "古亭",
+          "operator": "臺北捷運",
+          "position": {
+            "lat": 25.026373,
+            "lng": 121.522868
+          }
+        },
+        {
+          "id": "metro-TRTC-O06",
+          "kind": "Metro",
+          "name": "東門",
+          "operator": "臺北捷運",
+          "position": {
+            "lat": 25.033894,
+            "lng": 121.528766
+          }
+        },
+        {
+          "id": "metro-TRTC-O07",
+          "kind": "Metro",
+          "name": "忠孝新生",
+          "operator": "臺北捷運",
+          "position": {
+            "lat": 25.042383,
+            "lng": 121.532886
+          }
+        },
+        {
+          "id": "metro-TRTC-O08",
+          "kind": "Metro",
+          "name": "松江南京",
+          "operator": "臺北捷運",
+          "position": {
+            "lat": 25.052693,
+            "lng": 121.53285
+          }
+        },
+        {
+          "id": "metro-TRTC-O09",
+          "kind": "Metro",
+          "name": "行天宮",
+          "operator": "臺北捷運",
+          "position": {
+            "lat": 25.05924,
+            "lng": 121.53315
+          }
+        },
+        {
+          "id": "metro-TRTC-O10",
+          "kind": "Metro",
+          "name": "中山國小",
+          "operator": "臺北捷運",
+          "position": {
+            "lat": 25.062665,
+            "lng": 121.526609
+          }
+        },
+        {
+          "id": "metro-TRTC-O11",
+          "kind": "Metro",
+          "name": "民權西路",
+          "operator": "臺北捷運",
+          "position": {
+            "lat": 25.06235,
+            "lng": 121.519585
+          }
+        },
+        {
+          "id": "metro-TRTC-O12",
+          "kind": "Metro",
+          "name": "大橋頭",
+          "operator": "臺北捷運",
+          "position": {
+            "lat": 25.06322,
+            "lng": 121.513003
+          }
+        },
+        {
+          "id": "metro-TRTC-O13",
+          "kind": "Metro",
+          "name": "台北橋",
+          "operator": "臺北捷運",
+          "position": {
+            "lat": 25.063075,
+            "lng": 121.500575
+          }
+        },
+        {
+          "id": "metro-TRTC-O14",
+          "kind": "Metro",
+          "name": "菜寮",
+          "operator": "臺北捷運",
+          "position": {
+            "lat": 25.05987,
+            "lng": 121.491512
+          }
+        },
+        {
+          "id": "metro-TRTC-O15",
+          "kind": "Metro",
+          "name": "三重",
+          "operator": "臺北捷運",
+          "position": {
+            "lat": 25.05571,
+            "lng": 121.48422
+          }
+        },
+        {
+          "id": "metro-TRTC-O16",
+          "kind": "Metro",
+          "name": "先嗇宮",
+          "operator": "臺北捷運",
+          "position": {
+            "lat": 25.04632,
+            "lng": 121.47165
+          }
+        },
+        {
+          "id": "metro-TRTC-O17",
+          "kind": "Metro",
+          "name": "頭前庄",
+          "operator": "臺北捷運",
+          "position": {
+            "lat": 25.039862,
+            "lng": 121.460479
+          }
+        },
+        {
+          "id": "metro-TRTC-O18",
+          "kind": "Metro",
+          "name": "新莊",
+          "operator": "臺北捷運",
+          "position": {
+            "lat": 25.03608,
+            "lng": 121.45218
+          }
+        },
+        {
+          "id": "metro-TRTC-O19",
+          "kind": "Metro",
+          "name": "輔大",
+          "operator": "臺北捷運",
+          "position": {
+            "lat": 25.03279,
+            "lng": 121.435735
+          }
+        },
+        {
+          "id": "metro-TRTC-O20",
+          "kind": "Metro",
+          "name": "丹鳳",
+          "operator": "臺北捷運",
+          "position": {
+            "lat": 25.029073,
+            "lng": 121.422422
+          }
+        },
+        {
+          "id": "metro-TRTC-O21",
+          "kind": "Metro",
+          "name": "迴龍",
+          "operator": "臺北捷運",
+          "position": {
+            "lat": 25.022107,
+            "lng": 121.411757
+          }
+        },
+        {
+          "id": "metro-TRTC-O50",
+          "kind": "Metro",
+          "name": "三重國小",
+          "operator": "臺北捷運",
+          "position": {
+            "lat": 25.070275,
+            "lng": 121.49701
+          }
+        },
+        {
+          "id": "metro-TRTC-O51",
+          "kind": "Metro",
+          "name": "三和國中",
+          "operator": "臺北捷運",
+          "position": {
+            "lat": 25.076794,
+            "lng": 121.486455
+          }
+        },
+        {
+          "id": "metro-TRTC-O52",
+          "kind": "Metro",
+          "name": "徐匯中學",
+          "operator": "臺北捷運",
+          "position": {
+            "lat": 25.080485,
+            "lng": 121.479945
+          }
+        },
+        {
+          "id": "metro-TRTC-O53",
+          "kind": "Metro",
+          "name": "三民高中",
+          "operator": "臺北捷運",
+          "position": {
+            "lat": 25.085425,
+            "lng": 121.473365
+          }
+        },
+        {
+          "id": "metro-TRTC-O54",
+          "kind": "Metro",
+          "name": "蘆洲",
+          "operator": "臺北捷運",
+          "position": {
+            "lat": 25.09152,
+            "lng": 121.46471
+          }
+        },
+        {
+          "id": "metro-TRTC-R01",
+          "kind": "Metro",
+          "name": "廣慈/奉天宮",
+          "operator": "臺北捷運",
+          "position": {
+            "lat": 25.037488,
+            "lng": 121.582475
+          }
+        },
+        {
+          "id": "metro-TRTC-R02",
+          "kind": "Metro",
+          "name": "象山",
+          "operator": "臺北捷運",
+          "position": {
+            "lat": 25.032871,
+            "lng": 121.570029
+          }
+        },
+        {
+          "id": "metro-TRTC-R03",
+          "kind": "Metro",
+          "name": "台北101/世貿",
+          "operator": "臺北捷運",
+          "position": {
+            "lat": 25.032953,
+            "lng": 121.563401
+          }
+        },
+        {
+          "id": "metro-TRTC-R04",
+          "kind": "Metro",
+          "name": "信義安和",
+          "operator": "臺北捷運",
+          "position": {
+            "lat": 25.03331,
+            "lng": 121.55265
+          }
+        },
+        {
+          "id": "metro-TRTC-R05",
+          "kind": "Metro",
+          "name": "大安",
+          "operator": "臺北捷運",
+          "position": {
+            "lat": 25.033311,
+            "lng": 121.54237
+          }
+        },
+        {
+          "id": "metro-TRTC-R06",
+          "kind": "Metro",
+          "name": "大安森林公園",
+          "operator": "臺北捷運",
+          "position": {
+            "lat": 25.033225,
+            "lng": 121.536151
+          }
+        },
+        {
+          "id": "metro-TRTC-R07",
+          "kind": "Metro",
+          "name": "東門",
+          "operator": "臺北捷運",
+          "position": {
+            "lat": 25.033894,
+            "lng": 121.528766
+          }
+        },
+        {
+          "id": "metro-TRTC-R08",
+          "kind": "Metro",
+          "name": "中正紀念堂",
+          "operator": "臺北捷運",
+          "position": {
+            "lat": 25.032767,
+            "lng": 121.518273
+          }
+        },
+        {
+          "id": "metro-TRTC-R09",
+          "kind": "Metro",
+          "name": "台大醫院",
+          "operator": "臺北捷運",
+          "position": {
+            "lat": 25.041399,
+            "lng": 121.51602
+          }
+        },
+        {
+          "id": "metro-TRTC-R10",
+          "kind": "Metro",
+          "name": "台北車站",
+          "operator": "臺北捷運",
+          "position": {
+            "lat": 25.04631,
+            "lng": 121.517415
+          }
+        },
+        {
+          "id": "metro-TRTC-R11",
+          "kind": "Metro",
+          "name": "中山",
+          "operator": "臺北捷運",
+          "position": {
+            "lat": 25.052621,
+            "lng": 121.520364
+          }
+        },
+        {
+          "id": "metro-TRTC-R12",
+          "kind": "Metro",
+          "name": "雙連",
+          "operator": "臺北捷運",
+          "position": {
+            "lat": 25.057575,
+            "lng": 121.520685
+          }
+        },
+        {
+          "id": "metro-TRTC-R13",
+          "kind": "Metro",
+          "name": "民權西路",
+          "operator": "臺北捷運",
+          "position": {
+            "lat": 25.06235,
+            "lng": 121.519585
+          }
+        },
+        {
+          "id": "metro-TRTC-R14",
+          "kind": "Metro",
+          "name": "圓山",
+          "operator": "臺北捷運",
+          "position": {
+            "lat": 25.071409,
+            "lng": 121.520074
+          }
+        },
+        {
+          "id": "metro-TRTC-R15",
+          "kind": "Metro",
+          "name": "劍潭",
+          "operator": "臺北捷運",
+          "position": {
+            "lat": 25.084201,
+            "lng": 121.524955
+          }
+        },
+        {
+          "id": "metro-TRTC-R16",
+          "kind": "Metro",
+          "name": "士林",
+          "operator": "臺北捷運",
+          "position": {
+            "lat": 25.093492,
+            "lng": 121.52623
+          }
+        },
+        {
+          "id": "metro-TRTC-R17",
+          "kind": "Metro",
+          "name": "芝山",
+          "operator": "臺北捷運",
+          "position": {
+            "lat": 25.102718,
+            "lng": 121.522546
+          }
+        },
+        {
+          "id": "metro-TRTC-R18",
+          "kind": "Metro",
+          "name": "明德",
+          "operator": "臺北捷運",
+          "position": {
+            "lat": 25.109815,
+            "lng": 121.518785
+          }
+        },
+        {
+          "id": "metro-TRTC-R19",
+          "kind": "Metro",
+          "name": "石牌",
+          "operator": "臺北捷運",
+          "position": {
+            "lat": 25.114455,
+            "lng": 121.515572
+          }
+        },
+        {
+          "id": "metro-TRTC-R20",
+          "kind": "Metro",
+          "name": "唭哩岸",
+          "operator": "臺北捷運",
+          "position": {
+            "lat": 25.120852,
+            "lng": 121.506234
+          }
+        },
+        {
+          "id": "metro-TRTC-R21",
+          "kind": "Metro",
+          "name": "奇岩",
+          "operator": "臺北捷運",
+          "position": {
+            "lat": 25.12547,
+            "lng": 121.50114
+          }
+        },
+        {
+          "id": "metro-TRTC-R22",
+          "kind": "Metro",
+          "name": "北投",
+          "operator": "臺北捷運",
+          "position": {
+            "lat": 25.131819,
+            "lng": 121.498648
+          }
+        },
+        {
+          "id": "metro-TRTC-R23",
+          "kind": "Metro",
+          "name": "復興崗",
+          "operator": "臺北捷運",
+          "position": {
+            "lat": 25.137474,
+            "lng": 121.485457
+          }
+        },
+        {
+          "id": "metro-TRTC-R24",
+          "kind": "Metro",
+          "name": "忠義",
+          "operator": "臺北捷運",
+          "position": {
+            "lat": 25.131041,
+            "lng": 121.473293
+          }
+        },
+        {
+          "id": "metro-TRTC-R25",
+          "kind": "Metro",
+          "name": "關渡",
+          "operator": "臺北捷運",
+          "position": {
+            "lat": 25.12563,
+            "lng": 121.4671
+          }
+        },
+        {
+          "id": "metro-TRTC-R26",
+          "kind": "Metro",
+          "name": "竹圍",
+          "operator": "臺北捷運",
+          "position": {
+            "lat": 25.1369,
+            "lng": 121.45955
+          }
+        },
+        {
+          "id": "metro-TRTC-R27",
+          "kind": "Metro",
+          "name": "紅樹林",
+          "operator": "臺北捷運",
+          "position": {
+            "lat": 25.15399,
+            "lng": 121.4588
+          }
+        },
+        {
+          "id": "metro-TRTC-R28",
+          "kind": "Metro",
+          "name": "淡水",
+          "operator": "臺北捷運",
+          "position": {
+            "lat": 25.167745,
+            "lng": 121.445805
+          }
+        },
+        {
+          "id": "metro-TRTC-R22A",
+          "kind": "Metro",
+          "name": "新北投",
+          "operator": "臺北捷運",
+          "position": {
+            "lat": 25.136931,
+            "lng": 121.502595
+          }
+        }
+      ]
+    },
+    "TYMC": {
+      "lines": [
+        {
+          "color": "#8246AF",
+          "lineId": "A",
+          "name": "桃園機場捷運線",
+          "stationCount": 22,
+          "systemName": "桃園捷運"
+        }
+      ],
+      "stations": [
+        {
+          "id": "metro-TYMC-A1",
+          "kind": "Metro",
+          "name": "台北車站",
+          "operator": "桃園捷運",
+          "position": {
+            "lat": 25.04869,
+            "lng": 121.51428
+          }
+        },
+        {
+          "id": "metro-TYMC-A2",
+          "kind": "Metro",
+          "name": "三重站",
+          "operator": "桃園捷運",
+          "position": {
+            "lat": 25.0548,
+            "lng": 121.48273
+          }
+        },
+        {
+          "id": "metro-TYMC-A3",
+          "kind": "Metro",
+          "name": "新北產業園區站",
+          "operator": "桃園捷運",
+          "position": {
+            "lat": 25.06171,
+            "lng": 121.45918
+          }
+        },
+        {
+          "id": "metro-TYMC-A4",
+          "kind": "Metro",
+          "name": "新莊副都心站",
+          "operator": "桃園捷運",
+          "position": {
+            "lat": 25.05924,
+            "lng": 121.44561
+          }
+        },
+        {
+          "id": "metro-TYMC-A5",
+          "kind": "Metro",
+          "name": "泰山站",
+          "operator": "桃園捷運",
+          "position": {
+            "lat": 25.05321,
+            "lng": 121.43943
+          }
+        },
+        {
+          "id": "metro-TYMC-A6",
+          "kind": "Metro",
+          "name": "泰山貴和站",
+          "operator": "桃園捷運",
+          "position": {
+            "lat": 25.03321,
+            "lng": 121.42262
+          }
+        },
+        {
+          "id": "metro-TYMC-A7",
+          "kind": "Metro",
+          "name": "體育大學站",
+          "operator": "桃園捷運",
+          "position": {
+            "lat": 25.04124,
+            "lng": 121.38543
+          }
+        },
+        {
+          "id": "metro-TYMC-A8",
+          "kind": "Metro",
+          "name": "長庚醫院站",
+          "operator": "桃園捷運",
+          "position": {
+            "lat": 25.06053,
+            "lng": 121.37073
+          }
+        },
+        {
+          "id": "metro-TYMC-A9",
+          "kind": "Metro",
+          "name": "林口站",
+          "operator": "桃園捷運",
+          "position": {
+            "lat": 25.0658,
+            "lng": 121.36134
+          }
+        },
+        {
+          "id": "metro-TYMC-A10",
+          "kind": "Metro",
+          "name": "山鼻站",
+          "operator": "桃園捷運",
+          "position": {
+            "lat": 25.0808,
+            "lng": 121.28476
+          }
+        },
+        {
+          "id": "metro-TYMC-A11",
+          "kind": "Metro",
+          "name": "坑口站",
+          "operator": "桃園捷運",
+          "position": {
+            "lat": 25.08646,
+            "lng": 121.26637
+          }
+        },
+        {
+          "id": "metro-TYMC-A12",
+          "kind": "Metro",
+          "name": "機場第一航廈站",
+          "operator": "桃園捷運",
+          "position": {
+            "lat": 25.0814,
+            "lng": 121.23783
+          }
+        },
+        {
+          "id": "metro-TYMC-A13",
+          "kind": "Metro",
+          "name": "機場第二航廈站",
+          "operator": "桃園捷運",
+          "position": {
+            "lat": 25.07735,
+            "lng": 121.23213
+          }
+        },
+        {
+          "id": "metro-TYMC-A14a",
+          "kind": "Metro",
+          "name": "機場旅館站",
+          "operator": "桃園捷運",
+          "position": {
+            "lat": 25.07007,
+            "lng": 121.22142
+          }
+        },
+        {
+          "id": "metro-TYMC-A15",
+          "kind": "Metro",
+          "name": "大園站",
+          "operator": "桃園捷運",
+          "position": {
+            "lat": 25.05595,
+            "lng": 121.21048
+          }
+        },
+        {
+          "id": "metro-TYMC-A16",
+          "kind": "Metro",
+          "name": "橫山站",
+          "operator": "桃園捷運",
+          "position": {
+            "lat": 25.03665,
+            "lng": 121.21556
+          }
+        },
+        {
+          "id": "metro-TYMC-A17",
+          "kind": "Metro",
+          "name": "領航站",
+          "operator": "桃園捷運",
+          "position": {
+            "lat": 25.02417,
+            "lng": 121.22095
+          }
+        },
+        {
+          "id": "metro-TYMC-A18",
+          "kind": "Metro",
+          "name": "高鐵桃園站",
+          "operator": "桃園捷運",
+          "position": {
+            "lat": 25.01374,
+            "lng": 121.21406
+          }
+        },
+        {
+          "id": "metro-TYMC-A19",
+          "kind": "Metro",
+          "name": "桃園體育園區站",
+          "operator": "桃園捷運",
+          "position": {
+            "lat": 25.00199,
+            "lng": 121.20349
+          }
+        },
+        {
+          "id": "metro-TYMC-A20",
+          "kind": "Metro",
+          "name": "興南站",
+          "operator": "桃園捷運",
+          "position": {
+            "lat": 24.98025,
+            "lng": 121.21627
+          }
+        },
+        {
+          "id": "metro-TYMC-A21",
+          "kind": "Metro",
+          "name": "環北站",
+          "operator": "桃園捷運",
+          "position": {
+            "lat": 24.96722,
+            "lng": 121.22114
+          }
+        },
+        {
+          "id": "metro-TYMC-A22",
+          "kind": "Metro",
+          "name": "老街溪站",
+          "operator": "桃園捷運",
+          "position": {
+            "lat": 24.95823,
+            "lng": 121.21936
+          }
+        }
+      ]
+    }
+  },
+  "cyclingKm": {
+    "ChanghuaCounty": 562.5,
+    "Chiayi": 44.4,
+    "ChiayiCounty": 246.5,
+    "HsinchuCounty": 237.9,
+    "HualienCounty": 831.6,
+    "Kaohsiung": 1818.5,
+    "Keelung": 76.5,
+    "KinmenCounty": 117.9,
+    "MiaoliCounty": 315.5,
+    "NantouCounty": 497.1,
+    "NewTaipei": 764.3,
+    "PenghuCounty": 174.8,
+    "PingtungCounty": 793.7,
+    "Taichung": 786.9,
+    "Tainan": 538.6,
+    "Taipei": 542,
+    "TaitungCounty": 572.8,
+    "Taoyuan": 517,
+    "YilanCounty": 542.4,
+    "YunlinCounty": 445.8
+  }
+}

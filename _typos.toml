@@ -13,4 +13,5 @@ extend-exclude = [
   "libs/tdx*/specs/**",
   "libs/tdx*/fixtures/**",
   "apps/*/src/fixtures/**",
+  "apps/scene/src/data/transport-snapshot.json",
 ]
