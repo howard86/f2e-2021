@@ -14,12 +14,16 @@ import {
 import type {
   PtxServiceDtoBusSpecificationV2BusDisplayStopOfRoute,
   PtxServiceDtoBusSpecificationV2BusN1EstimateTime,
+  PtxServiceDtoBusSpecificationV2BusNews,
   PtxServiceDtoBusSpecificationV2BusRoute,
   PtxServiceDtoBusSpecificationV2BusShape,
+  PtxServiceDtoSharedSpecificationV2BaseOperator,
 } from './generated/bus-basic-v2';
 import {
   cityBusApiDisplayStopOfRoute20381,
   cityBusApiEstimatedTimeOfArrival20321,
+  cityBusApiNews2044,
+  cityBusApiOperator2034,
   cityBusApiRoute2035,
   cityBusApiRoute20351,
   cityBusApiShape20421,
@@ -42,6 +46,10 @@ export type BusStopOfRoute = Omit<
 export type BusStation = PtxServiceDtoBusSpecificationV2BusStation;
 
 export type BusShape = PtxServiceDtoBusSpecificationV2BusShape;
+
+export type BusOperator = PtxServiceDtoSharedSpecificationV2BaseOperator;
+
+export type BusNews = PtxServiceDtoBusSpecificationV2BusNews;
 
 export const BusDirection = {
   去程: 0,
@@ -172,5 +180,27 @@ export class BusService {
     });
 
     return data as BusStopOfRoute[];
+  }
+
+  async getBusOperatorsByCity(city: City, params: ApiParam = {}) {
+    const { data } = await cityBusApiOperator2034({
+      client: this.basic,
+      path: { City: city as never },
+      query: toODataQuery(params),
+      throwOnError: true,
+    });
+
+    return data as BusOperator[];
+  }
+
+  async getBusNewsByCity(city: City, params: ApiParam = {}) {
+    const { data } = await cityBusApiNews2044({
+      client: this.basic,
+      path: { City: city as never },
+      query: toODataQuery(params),
+      throwOnError: true,
+    });
+
+    return data as BusNews[];
   }
 }
