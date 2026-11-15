@@ -42,7 +42,7 @@
     "@f2e/tdx-rail": "workspace:*",
     "@f2e/tdx-tourism": "workspace:*",
     "@f2e/ui": "workspace:*",
-    "next": "16.4.5",
+    "next": "16.4.6",
     "next-themes": "^0.4.6",
     "react": "19.3.1",
     "react-dom": "19.3.1",
