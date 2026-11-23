@@ -93,6 +93,7 @@ bun run check
 bun run fix
 bun run typecheck
 bun run knip
+bun run clean   # full reset: node_modules, .turbo, .next, generated; then bun install
 ```
 
 There is no test framework or test command yet. Add one when the repository

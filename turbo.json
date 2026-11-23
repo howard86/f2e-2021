@@ -20,6 +20,9 @@
       "inputs": ["$TURBO_DEFAULT$", ".env.*local", "$TURBO_ROOT$/.env*.local"],
       "outputs": [".next/**", "!.next/cache/**"]
     },
+    "clean": {
+      "cache": false
+    },
     "dev": {
       "dependsOn": ["^generate", "generate"],
       "cache": false,

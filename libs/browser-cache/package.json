@@ -9,6 +9,7 @@
     ".": "./index.ts"
   },
   "scripts": {
+    "clean": "rm -rf .turbo node_modules tsconfig.tsbuildinfo",
     "test": "bun test",
     "typecheck": "bun check"
   }

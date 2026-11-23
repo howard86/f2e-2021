@@ -28,6 +28,7 @@
   "author": "Howard Tai <howard@howardism.dev>",
   "scripts": {
     "build": "bun --bun next build",
+    "clean": "rm -rf .turbo node_modules tsconfig.tsbuildinfo .next",
     "dev": "bun --bun next dev",
     "start": "bun --bun next start",
     "test": "bun test",
