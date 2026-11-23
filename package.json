@@ -35,6 +35,7 @@
     "build:scene": "turbo run build --filter=@f2e/scene",
     "build:ubike": "turbo run build --filter=@f2e/ubike",
     "check": "ultracite check",
+    "clean": "turbo run clean && rm -rf .turbo node_modules",
     "dev:bus": "turbo run dev --filter=@f2e/bus",
     "dev:scene": "turbo run dev --filter=@f2e/scene",
     "dev:ubike": "turbo run dev --filter=@f2e/ubike",
